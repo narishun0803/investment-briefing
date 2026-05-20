@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f1117" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <title>投資情報ブリーフィング [朝]</title>
+  <style>
+    :root[data-theme="dark"] {
+      --bg: #0f1117;
+      --bg2: #1a1d27;
+      --bg3: #222636;
+      --border: #2e3347;
+      --text: #e2e8f0;
+      --text2: #94a3b8;
+      --accent: #6366f1;
+      --up: #22c55e;
+      --down: #ef4444;
+      --flat: #94a3b8;
+      --badge-bg: #1e2340;
+      --card-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    :root[data-theme="light"] {
+      --bg: #f1f5f9;
+      --bg2: #ffffff;
+      --bg3: #e8eef7;
+      --border: #cbd5e1;
+      --text: #1e293b;
+      --text2: #64748b;
+      --accent: #4f46e5;
+      --up: #16a34a;
+      --down: #dc2626;
+      --flat: #64748b;
+      --badge-bg: #dbeafe;
+      --card-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 0 0 40px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: 0.02em;
+    }
+
+    .slot-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.05em;
+    }
+
+    .slot-desc {
+      font-size: 0.72rem;
+      color: var(--text2);
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .updated {
+      font-size: 0.72rem;
+      color: var(--text2);
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      transition: opacity 0.15s, background 0.2s;
+    }
+    button:hover { opacity: 0.85; }
+
+    .btn-theme {
+      background: var(--bg3);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    /* ── Reload button with tooltip ── */
+    .btn-reload {
+      background: var(--bg3);
+      color: var(--text2);
+      border: 1px solid var(--border);
+      position: relative;
+    }
+    .btn-reload:hover { opacity: 1; color: var(--text); }
+    .btn-reload .tooltip {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 0;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 7px 12px;
+      font-size: 0.72rem;
+      font-weight: 400;
+      color: var(--text2);
+      white-space: nowrap;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      z-index: 200;
+    }
+    .btn-reload:hover .tooltip,
+    .btn-reload:focus .tooltip { display: block; }
+
+    .claude-btns {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .btn-claude {
+      background: var(--bg3);
+      color: var(--text);
+      border: 1px solid var(--border);
+      font-size: 0.75rem;
+      padding: 5px 10px;
+      white-space: nowrap;
+    }
+    .btn-claude:hover { border-color: var(--accent); color: var(--accent); opacity: 1; }
+    .btn-claude.copied { background: var(--up); color: #fff; border-color: var(--up); }
+
+    /* ── Toast notification ── */
+    #toast {
+      position: fixed;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: #1e293b;
+      color: #e2e8f0;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 10px 22px;
+      border-radius: 999px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s, transform 0.2s;
+      z-index: 9999;
+      white-space: nowrap;
+    }
+    #toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* ── Main layout ── */
+    main {
+      max-width: 1280px;
+      margin: 24px auto 0;
+      padding: 0 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 860px) {
+      main { grid-template-columns: 1fr; }
+    }
+
+    /* ── Card ── */
+    .card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: var(--card-shadow);
+    }
+
+    .card-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text2);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+
+    /* ── Market grid ── */
+    .market-section {
+      grid-column: 1 / -1;
+    }
+
+    .market-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 10px;
+    }
+
+    .market-tile {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      transition: box-shadow 0.15s;
+    }
+    .market-tile:hover {
+      box-shadow: 0 0 0 2px var(--accent);
+    }
+    .market-tile.primary {
+      border-color: var(--accent);
+      background: color-mix(in srgb, var(--accent) 8%, var(--bg3));
+    }
+
+    .tile-name {
+      font-size: 0.7rem;
+      color: var(--text2);
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tile-price {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .tile-unit {
+      font-size: 0.65rem;
+      color: var(--text2);
+    }
+
+    .tile-change {
+      font-size: 0.75rem;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+    }
+    .up   { color: var(--up); }
+    .down { color: var(--down); }
+    .flat { color: var(--flat); }
+
+    .tile-note {
+      font-size: 0.62rem;
+      color: var(--text2);
+      margin-top: 1px;
+    }
+
+    .tile-failed {
+      color: var(--flat);
+      font-size: 0.8rem;
+    }
+
+    /* ── News ── */
+    .news-section {
+      grid-column: 1 / -1;
+    }
+
+    .news-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 720px) {
+      .news-columns { grid-template-columns: 1fr; }
+    }
+
+    .news-group {
+      min-width: 0;
+    }
+
+    .news-group-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 5px;
+      margin-bottom: 8px;
+      letter-spacing: 0.04em;
+    }
+
+    .news-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .news-item {
+      padding: 9px 2px;
+      border-bottom: 1px solid var(--border);
+    }
+    .news-item:last-child { border-bottom: none; }
+
+    .news-title a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.85rem;
+      line-height: 1.45;
+    }
+    .news-title a:hover { color: var(--accent); text-decoration: underline; }
+
+    .news-meta {
+      font-size: 0.68rem;
+      color: var(--text2);
+      margin-top: 3px;
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .news-source {
+      background: var(--badge-bg);
+      color: var(--accent);
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .news-summary {
+      font-size: 0.72rem;
+      color: var(--text2);
+      margin-top: 2px;
+      line-height: 1.4;
+    }
+
+    .news-empty {
+      font-size: 0.8rem;
+      color: var(--flat);
+      padding: 8px 0;
+    }
+
+    /* ── Contribution rankings ── */
+    .contrib-section {
+      grid-column: 1 / -1;
+    }
+
+    .contrib-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    @media (max-width: 720px) {
+      .contrib-columns { grid-template-columns: 1fr; }
+    }
+
+    .contrib-group-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .contrib-sub {
+      margin-bottom: 10px;
+    }
+
+    .contrib-sub-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      margin-bottom: 5px;
+    }
+    .contrib-sub-label.up   { color: var(--up); }
+    .contrib-sub-label.down { color: var(--down); }
+
+    .contrib-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.78rem;
+    }
+    .contrib-table th {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--text2);
+      text-align: right;
+      padding: 2px 6px 4px;
+      border-bottom: 1px solid var(--border);
+    }
+    .contrib-table th:first-child { text-align: left; padding-left: 0; }
+    .contrib-table td {
+      padding: 4px 6px;
+      text-align: right;
+      border-bottom: 1px solid var(--border);
+      font-variant-numeric: tabular-nums;
+      vertical-align: middle;
+    }
+    .contrib-table td:first-child { text-align: left; padding-left: 0; }
+    .contrib-table tr:last-child td { border-bottom: none; }
+
+    .contrib-name {
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.78rem;
+    }
+    .contrib-name:hover { color: var(--accent); text-decoration: underline; }
+
+    .contrib-sector {
+      display: block;
+      font-size: 0.62rem;
+      color: var(--text2);
+      margin-top: 1px;
+    }
+
+    .contrib-empty {
+      color: var(--flat);
+      font-size: 0.78rem;
+      padding: 4px 0;
+    }
+
+    /* ── Clipboard textarea (hidden) ── */
+
+    /* ── Mobile optimizations ── */
+    @media (max-width: 640px) {
+      header {
+        padding: 10px 12px;
+        gap: 8px;
+      }
+      h1 { font-size: 0.95rem; }
+      .slot-desc { display: none; }
+
+      .header-right {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+      .updated { font-size: 0.68rem; width: 100%; }
+      .claude-btns { width: 100%; }
+      .btn-claude {
+        flex: 1 1 auto;
+        font-size: 0.7rem;
+        padding: 6px 6px;
+        text-align: center;
+        min-width: 0;
+      }
+      .btn-reload, .btn-theme {
+        font-size: 0.7rem;
+        padding: 5px 8px;
+      }
+
+      main {
+        margin-top: 14px;
+        padding: 0 10px;
+        gap: 14px;
+      }
+      .card { padding: 14px 12px; }
+
+      .market-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 8px;
+      }
+      .tile-price { font-size: 1rem; }
+
+      .contrib-columns { grid-template-columns: 1fr; gap: 16px; }
+      .contrib-sub { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+      .news-columns { grid-template-columns: 1fr; }
+
+      /* Larger tap targets */
+      .news-title a { padding: 2px 0; display: inline-block; }
+      .contrib-name { padding: 2px 0; display: inline-block; }
+    }
+
+    @media (max-width: 400px) {
+      .btn-claude { font-size: 0.65rem; padding: 5px 4px; }
+      .market-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <h1>📊 投資情報ブリーフィング</h1>
+    <span class="slot-badge">朝</span>
+    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+  </div>
+  <div class="header-right">
+    <span class="updated">更新: 2026年05月20日 21:56 JST</span>
+    <div class="claude-btns">
+      <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
+      <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
+      <button class="btn-claude" onclick="copyClip('clip-risk', this)" title="リスク・注目点の抽出依頼">⚠️ リスク・注目点</button>
+    </div>
+    <button class="btn-reload" tabindex="0">
+      🔄 更新
+      <span class="tooltip">データを更新するにはアプリを再起動してください<br>（run_briefing.command / run_briefing.bat）</span>
+    </button>
+    <button class="btn-theme" id="themeBtn" onclick="toggleTheme()">☀️ ライトモード</button>
+  </div>
+</header>
+
+<main>
+  <!-- Market Data -->
+  <section class="card market-section">
+    <div class="card-title">📈 マーケットデータ</div>
+    <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">S&P 500</div>
+        
+          <div class="tile-price">7,353.61 <span class="tile-unit"></span></div>
+          <div class="tile-change down">
+            -49.44&nbsp;&nbsp;-0.67%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">NASDAQ</div>
+        
+          <div class="tile-price">25,870.71 <span class="tile-unit"></span></div>
+          <div class="tile-change down">
+            -220.02&nbsp;&nbsp;-0.84%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ダウ</div>
+        
+          <div class="tile-price">49,363.88 <span class="tile-unit"></span></div>
+          <div class="tile-change down">
+            -322.24&nbsp;&nbsp;-0.65%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">159.02 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.16&nbsp;&nbsp;+0.10%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">米10年債利回り</div>
+        
+          <div class="tile-price">4.647 <span class="tile-unit">%</span></div>
+          <div class="tile-change down">
+            -0.02&nbsp;&nbsp;-0.43%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile ">
+        <div class="tile-name">WTI原油</div>
+        
+          <div class="tile-price">101.28 <span class="tile-unit">USD</span></div>
+          <div class="tile-change down">
+            -6.49&nbsp;&nbsp;-6.02%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile ">
+        <div class="tile-name">金</div>
+        
+          <div class="tile-price">4506.10 <span class="tile-unit">USD</span></div>
+          <div class="tile-change down">
+            -0.20&nbsp;&nbsp;-0.00%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile ">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">59,804.41 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -746.18&nbsp;&nbsp;-1.23%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile ">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">402.2 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -6.10&nbsp;&nbsp;-1.49%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Contribution Rankings -->
+  <section class="card contrib-section">
+    <div class="card-title">🏆 個別株の動き</div>
+    <div class="contrib-columns">
+
+      <!-- Nikkei 225 -->
+      <div>
+        <div class="contrib-group-title">日経225 寄与度ランキング（30銘柄中・除数28）</div>
+
+        <div class="contrib-sub">
+          <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(円)</th><th>騰落</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9983:TYO" target="_blank" rel="noopener">ファーストリテイリング</a>
+                <span class="contrib-sector">小売</span>
+              </td>
+              <td class="up">+38.93</td>
+              <td class="up">+1.48%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6857:TYO" target="_blank" rel="noopener">アドバンテスト</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="up">+11.96</td>
+              <td class="up">+1.32%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/8411:TYO" target="_blank" rel="noopener">みずほFG</a>
+                <span class="contrib-sector">銀行</span>
+              </td>
+              <td class="up">+3.43</td>
+              <td class="up">+1.39%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9433:TYO" target="_blank" rel="noopener">KDDI</a>
+                <span class="contrib-sector">通信</span>
+              </td>
+              <td class="up">+0.57</td>
+              <td class="up">+0.58%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/4661:TYO" target="_blank" rel="noopener">オリエンタルランド</a>
+                <span class="contrib-sector">サービス</span>
+              </td>
+              <td class="up">+0.43</td>
+              <td class="up">+0.54%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
+        </div>
+
+        <div class="contrib-sub">
+          <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(円)</th><th>騰落</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="down">-74.64</td>
+              <td class="down">-2.79%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/8035:TYO" target="_blank" rel="noopener">東京エレクトロン</a>
+                <span class="contrib-sector">半導体製造装置</span>
+              </td>
+              <td class="down">-37.86</td>
+              <td class="down">-2.25%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/7741:TYO" target="_blank" rel="noopener">HOYA</a>
+                <span class="contrib-sector">精密機器</span>
+              </td>
+              <td class="down">-14.11</td>
+              <td class="down">-1.47%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6954:TYO" target="_blank" rel="noopener">ファナック</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="down">-12.14</td>
+              <td class="down">-4.44%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9984:TYO" target="_blank" rel="noopener">ソフトバンクG</a>
+                <span class="contrib-sector">通信</span>
+              </td>
+              <td class="down">-11.50</td>
+              <td class="down">-6.01%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
+        </div>
+      </div>
+
+      <!-- S&P 500 -->
+      <div>
+        <div class="contrib-group-title">S&amp;P500 寄与度ランキング（時価総額上位50銘柄）</div>
+
+        <div class="contrib-sub">
+          <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/LLY:NYSE" target="_blank" rel="noopener">LLY</a>
+                <span class="contrib-sector">Lilly (Eli)</span>
+              </td>
+              <td class="up">+4.64</td>
+              <td class="up">+3.37%</td>
+              <td style="color:var(--text2)">1.86%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/MU:NASDAQ" target="_blank" rel="noopener">MU</a>
+                <span class="contrib-sector">Micron Technology</span>
+              </td>
+              <td class="up">+3.17</td>
+              <td class="up">+2.52%</td>
+              <td style="color:var(--text2)">1.70%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AAPL:NASDAQ" target="_blank" rel="noopener">AAPL</a>
+                <span class="contrib-sector">Apple Inc.</span>
+              </td>
+              <td class="up">+2.57</td>
+              <td class="up">+0.38%</td>
+              <td style="color:var(--text2)">9.15%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/INTC:NASDAQ" target="_blank" rel="noopener">INTC</a>
+                <span class="contrib-sector">Intel</span>
+              </td>
+              <td class="up">+2.04</td>
+              <td class="up">+2.43%</td>
+              <td style="color:var(--text2)">1.13%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/XOM:NYSE" target="_blank" rel="noopener">XOM</a>
+                <span class="contrib-sector">ExxonMobil</span>
+              </td>
+              <td class="up">+1.29</td>
+              <td class="up">+1.28%</td>
+              <td style="color:var(--text2)">1.36%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
+        </div>
+
+        <div class="contrib-sub">
+          <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOGL:NASDAQ" target="_blank" rel="noopener">GOOGL</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="down">-17.27</td>
+              <td class="down">-2.34%</td>
+              <td style="color:var(--text2)">9.98%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOG:NASDAQ" target="_blank" rel="noopener">GOOG</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="down">-15.30</td>
+              <td class="down">-2.09%</td>
+              <td style="color:var(--text2)">9.89%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AMZN:NASDAQ" target="_blank" rel="noopener">AMZN</a>
+                <span class="contrib-sector">Amazon</span>
+              </td>
+              <td class="down">-9.10</td>
+              <td class="down">-2.08%</td>
+              <td style="color:var(--text2)">5.90%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AVGO:NASDAQ" target="_blank" rel="noopener">AVGO</a>
+                <span class="contrib-sector">Broadcom</span>
+              </td>
+              <td class="down">-7.09</td>
+              <td class="down">-2.29%</td>
+              <td style="color:var(--text2)">4.18%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/MSFT:NASDAQ" target="_blank" rel="noopener">MSFT</a>
+                <span class="contrib-sector">Microsoft</span>
+              </td>
+              <td class="down">-6.96</td>
+              <td class="down">-1.44%</td>
+              <td style="color:var(--text2)">6.51%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="card news-section">
+    <div class="card-title">📰 最新ニュース (16件)</div>
+    
+    
+    
+    
+    <div class="news-columns">
+      
+        
+        
+        <div class="news-group">
+          <div class="news-group-title">📈 マーケット全般 (10件)</div>
+          <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/4346e8ca466683a78ade022a490614656db446f7?source=rss" target="_blank" rel="noopener">NY円、158円93銭～159円03銭(共同通信)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>05/20 21:50</span>
+              </div>
+              
+              <div class="news-summary">【ニューヨーク共同】20日のニューヨーク外国為替市場の円相場は午前8時40分現在、前日比09銭円高ドル安の1ドル＝158円93銭～159円03銭を付けた。</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1543593" target="_blank" rel="noopener">ソサエティ・パス株、ナスダック上場廃止通知を受けて急落</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>05/20 21:39</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1543577" target="_blank" rel="noopener">Draganfly、防衛契約獲得で株価4%上昇</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>05/20 21:34</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1543572" target="_blank" rel="noopener">WisekeyのAIロボティクスプラットフォーム立ち上げを受け、株価が上昇</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>05/20 21:34</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1543555" target="_blank" rel="noopener">NRCがナノ・ニュークリア・エナジーの建設許可申請を受理、株価上昇</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>05/20 21:28</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1543546" target="_blank" rel="noopener">ラムリサーチの株価が本日上昇している理由とは</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>05/20 21:27</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1543539" target="_blank" rel="noopener">AmpliTech GroupがFCCの5Gシステム認証取得で株価が急騰</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>05/20 21:25</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1543557" target="_blank" rel="noopener">S&P 500の第1四半期決算、2021年以来最強の決算シーズンへ</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>05/20 21:19</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/301941" target="_blank" rel="noopener">日々是相場［夕刊］――  2026年5月20日（水）</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>05/20 20:00</span>
+              </div>
+              
+              <div class="news-summary">日経平均 59,804.41円 ▼746.18円 為替 １ドル＝158.89円 売買高（東証プライム、以下同） 29億5,563万株 売買代金 9兆5429億39百万円 値上り銘柄数 264銘柄 値下…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260520/k10015127051000.html" target="_blank" rel="noopener">みずほ銀行が楽天銀行の株式取得 預金獲得などで連携強化へ</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>05/20 19:39</span>
+              </div>
+              
+              <div class="news-summary">メガバンクのみずほ銀行は、ネット銀行最大手の楽天銀行の株式を取得し、預金の獲得などで連携を強化していくことになりました。金利のある世界が本格化する中、銀行業界では異業種も含めた連携強化の動きが加速して…</div>
+              
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        
+        <div class="news-group">
+          <div class="news-group-title">🌐 マクロ・金利 (1件)</div>
+          <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260520/k10015127061000.html" target="_blank" rel="noopener">日韓経済人会議日本側トップ“中東情勢不安定は両国のリスク”</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>05/20 20:32</span>
+              </div>
+              
+              <div class="news-summary">日本と韓国の企業経営者らが集まる「日韓経済人会議」が東京都内で開かれ、日本側のトップは、エネルギーの輸入依存度が高い日韓にとって中東情勢の不安定化が経済面での重大リスクだと指摘し、情報収集や対策の面で…</div>
+              
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        
+        <div class="news-group">
+          <div class="news-group-title">📋 決算・個別銘柄 (1件)</div>
+          <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.reuters.com/markets/global-markets/CJ7UFAYVBVJXDOULEZMDPQB7SE-2026-05-20/" target="_blank" rel="noopener">コメルツ銀株主総会、ウニクレディトの買収提案に批判相次ぐ</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ロイター日本ビジネス</span>
+                <span>05/20 18:14</span>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        
+        <div class="news-group">
+          <div class="news-group-title">📌 その他 (4件)</div>
+          <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1543556" target="_blank" rel="noopener">エイサー・ホールディングス、個人投資家向けAIリサーチプラットフォームの先行登録を開始へ</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>05/20 21:27</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/301827" target="_blank" rel="noopener">約200名の不動産投資オーナーが集合！ RENOSY Owner’s Partyレポート</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>05/20 19:02</span>
+              </div>
+              
+              <div class="news-summary">RENOSY（リノシー）の不動産投資オーナー様がリアルに集まる機会 RENOSYの不動産投資は、オンラインで始めることができ、専用アプリが運用をサポートします。定期的に家賃収入があり、比較的安定した運…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/301780" target="_blank" rel="noopener">【攻めのマンション管理 #4】「めんどくさい」はもったいない！ 役員になるメリット3選</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>05/20 18:02</span>
+              </div>
+              
+              <div class="news-summary">資産を守る最強のポジション「役員」とは 不動産投資にピリッと「攻めのスパイス」を！ 今回は、多くのオーナー様が避けがちな「管理組合の役員（理事長など）」についてです。 「めんどくさい」という先入観を持…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/301686" target="_blank" rel="noopener">ボーナスは一括？　積立？　迷ったときの最適解【投資家ぽんちよ解説】</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>05/20 16:00</span>
+              </div>
+              
+              <div class="news-summary">待ちわびたボーナス！　投資先の迷うポイント？　私が会社員だったころ… 社会人にとって働く上での大きな喜びのひとつは、給料日であり、とりわけボーナスは格別なものです。個人投資家の方なら、生活費を除いた余…</div>
+              
+            </div>
+            
+          </div>
+        </div>
+        
+      
+    </div>
+    
+  </section>
+</main>
+
+<!-- Hidden clipboard data -->
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-05-20 21:56）の投資ブリーフィング情報です。
+
+【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+
+【マーケットデータ】
+- S&P 500: 7,353.61 (-0.67%)
+- NASDAQ: 25,870.71 (-0.84%)
+- ダウ: 49,363.88 (-0.65%)
+- ドル円: 159.02 円 (+0.10%)
+- 米10年債利回り: 4.647 % (-0.43%)
+- WTI原油: 101.28 USD (-6.02%)
+- 金: 4506.10 USD (-0.00%)
+- 日経225: 59,804.41 pt (-1.23%)
+- TOPIX (1306連動ETF): 402.2 円 (-1.49%)
+
+【個別株の寄与度ランキング】
+▼ 日経225 (上昇寄与TOP5)
+  ++38.93円  ファーストリテイリング(9983)  +1.48%  [小売]
+  ++11.96円  アドバンテスト(6857)  +1.32%  [電機]
+  ++3.43円  みずほFG(8411)  +1.39%  [銀行]
+  ++0.57円  KDDI(9433)  +0.58%  [通信]
+  ++0.43円  オリエンタルランド(4661)  +0.54%  [サービス]
+▼ 日経225 (下落寄与TOP5)
+  -74.64円  キーエンス(6861)  -2.79%  [電機]
+  -37.86円  東京エレクトロン(8035)  -2.25%  [半導体製造装置]
+  -14.11円  HOYA(7741)  -1.47%  [精密機器]
+  -12.14円  ファナック(6954)  -4.44%  [電機]
+  -11.50円  ソフトバンクG(9984)  -6.01%  [通信]
+▼ S&P500 (上昇寄与TOP5)
+  ++4.64pt  Lilly (Eli)(LLY)  +3.37%  wt:1.86%  [Health Care]
+  ++3.17pt  Micron Technology(MU)  +2.52%  wt:1.70%  [Information Technology]
+  ++2.57pt  Apple Inc.(AAPL)  +0.38%  wt:9.15%  [Information Technology]
+  ++2.04pt  Intel(INTC)  +2.43%  wt:1.13%  [Information Technology]
+  ++1.29pt  ExxonMobil(XOM)  +1.28%  wt:1.36%  [Energy]
+▼ S&P500 (下落寄与TOP5)
+  -17.27pt  Alphabet Inc. (Class A)(GOOGL)  -2.34%  wt:9.98%  [Communication Services]
+  -15.30pt  Alphabet Inc. (Class C)(GOOG)  -2.09%  wt:9.89%  [Communication Services]
+  -9.10pt  Amazon(AMZN)  -2.08%  wt:5.90%  [Consumer Discretionary]
+  -7.09pt  Broadcom(AVGO)  -2.29%  wt:4.18%  [Information Technology]
+  -6.96pt  Microsoft(MSFT)  -1.44%  wt:6.51%  [Information Technology]
+
+【関連ニュース見出し】
+- [Yahoo!ファイナンス] NY円、158円93銭～159円03銭(共同通信) (05/20 21:50)
+  概要: 【ニューヨーク共同】20日のニューヨーク外国為替市場の円相場は午前8時40分現在、前日比09銭円高ドル安の1ドル＝158円93銭～159円03銭を付けた。
+- [Investing.com日本] ソサエティ・パス株、ナスダック上場廃止通知を受けて急落 (05/20 21:39)
+- [Investing.com日本] Draganfly、防衛契約獲得で株価4%上昇 (05/20 21:34)
+- [Investing.com日本] WisekeyのAIロボティクスプラットフォーム立ち上げを受け、株価が上昇 (05/20 21:34)
+- [Investing.com日本] NRCがナノ・ニュークリア・エナジーの建設許可申請を受理、株価上昇 (05/20 21:28)
+- [Investing.com日本] ラムリサーチの株価が本日上昇している理由とは (05/20 21:27)
+- [Investing.com日本] AmpliTech GroupがFCCの5Gシステム認証取得で株価が急騰 (05/20 21:25)
+- [Investing.com日本] S&P 500の第1四半期決算、2021年以来最強の決算シーズンへ (05/20 21:19)
+- [ZUU online] 日々是相場［夕刊］――  2026年5月20日（水） (05/20 20:00)
+  概要: 日経平均 59,804.41円 ▼746.18円 為替 １ドル＝158.89円 売買高（東証プライム、以下同） 29億5,563万株 売買代金 9兆5429億39百万円 値上り銘柄数 264銘柄 値下
+- [NHK経済] みずほ銀行が楽天銀行の株式取得 預金獲得などで連携強化へ (05/20 19:39)
+  概要: メガバンクのみずほ銀行は、ネット銀行最大手の楽天銀行の株式を取得し、預金の獲得などで連携を強化していくことになりました。金利のある世界が本格化する中、銀行業界では異業種も含めた連携強化の動きが加速して
+- [NHK経済] 日韓経済人会議日本側トップ“中東情勢不安定は両国のリスク” (05/20 20:32)
+  概要: 日本と韓国の企業経営者らが集まる「日韓経済人会議」が東京都内で開かれ、日本側のトップは、エネルギーの輸入依存度が高い日韓にとって中東情勢の不安定化が経済面での重大リスクだと指摘し、情報収集や対策の面で
+- [ロイター日本ビジネス] コメルツ銀株主総会、ウニクレディトの買収提案に批判相次ぐ (05/20 18:14)
+- [Investing.com日本] エイサー・ホールディングス、個人投資家向けAIリサーチプラットフォームの先行登録を開始へ (05/20 21:27)
+- [ZUU online] 約200名の不動産投資オーナーが集合！ RENOSY Owner’s Partyレポート (05/20 19:02)
+  概要: RENOSY（リノシー）の不動産投資オーナー様がリアルに集まる機会 RENOSYの不動産投資は、オンラインで始めることができ、専用アプリが運用をサポートします。定期的に家賃収入があり、比較的安定した運
+- [ZUU online] 【攻めのマンション管理 #4】「めんどくさい」はもったいない！ 役員になるメリット3選 (05/20 18:02)
+  概要: 資産を守る最強のポジション「役員」とは 不動産投資にピリッと「攻めのスパイス」を！ 今回は、多くのオーナー様が避けがちな「管理組合の役員（理事長など）」についてです。 「めんどくさい」という先入観を持
+- [ZUU online] ボーナスは一括？　積立？　迷ったときの最適解【投資家ぽんちよ解説】 (05/20 16:00)
+  概要: 待ちわびたボーナス！　投資先の迷うポイント？　私が会社員だったころ… 社会人にとって働く上での大きな喜びのひとつは、給料日であり、とりわけボーナスは格別なものです。個人投資家の方なら、生活費を除いた余
+
+【依頼内容】
+上記の指数の動きについて、ニュースの内容と紐付けて解説してください。
+特に以下を含めてください：
+1. 主要指数の動きの背景（特に大きく動いた指標）
+2. 相互の関連（例：金利↑とNASDAQ↓の関係）
+3. 注目すべきリスク要因
+4. 短期的に注視すべきポイント
+
+簡潔に、結論先出しでお願いします。</textarea>
+<textarea id="clip-deep"     readonly style="position:absolute;left:-9999px;top:0">以下のマーケットデータとニュースを見て、
+特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
+
+【マーケットデータ】
+- S&P 500: 7,353.61 (-0.67%)
+- NASDAQ: 25,870.71 (-0.84%)
+- ダウ: 49,363.88 (-0.65%)
+- ドル円: 159.02 円 (+0.10%)
+- 米10年債利回り: 4.647 % (-0.43%)
+- WTI原油: 101.28 USD (-6.02%)
+- 金: 4506.10 USD (-0.00%)
+- 日経225: 59,804.41 pt (-1.23%)
+- TOPIX (1306連動ETF): 402.2 円 (-1.49%)
+
+【個別株の寄与度ランキング】
+▼ 日経225 (上昇寄与TOP5)
+  ++38.93円  ファーストリテイリング(9983)  +1.48%  [小売]
+  ++11.96円  アドバンテスト(6857)  +1.32%  [電機]
+  ++3.43円  みずほFG(8411)  +1.39%  [銀行]
+  ++0.57円  KDDI(9433)  +0.58%  [通信]
+  ++0.43円  オリエンタルランド(4661)  +0.54%  [サービス]
+▼ 日経225 (下落寄与TOP5)
+  -74.64円  キーエンス(6861)  -2.79%  [電機]
+  -37.86円  東京エレクトロン(8035)  -2.25%  [半導体製造装置]
+  -14.11円  HOYA(7741)  -1.47%  [精密機器]
+  -12.14円  ファナック(6954)  -4.44%  [電機]
+  -11.50円  ソフトバンクG(9984)  -6.01%  [通信]
+▼ S&P500 (上昇寄与TOP5)
+  ++4.64pt  Lilly (Eli)(LLY)  +3.37%  wt:1.86%  [Health Care]
+  ++3.17pt  Micron Technology(MU)  +2.52%  wt:1.70%  [Information Technology]
+  ++2.57pt  Apple Inc.(AAPL)  +0.38%  wt:9.15%  [Information Technology]
+  ++2.04pt  Intel(INTC)  +2.43%  wt:1.13%  [Information Technology]
+  ++1.29pt  ExxonMobil(XOM)  +1.28%  wt:1.36%  [Energy]
+▼ S&P500 (下落寄与TOP5)
+  -17.27pt  Alphabet Inc. (Class A)(GOOGL)  -2.34%  wt:9.98%  [Communication Services]
+  -15.30pt  Alphabet Inc. (Class C)(GOOG)  -2.09%  wt:9.89%  [Communication Services]
+  -9.10pt  Amazon(AMZN)  -2.08%  wt:5.90%  [Consumer Discretionary]
+  -7.09pt  Broadcom(AVGO)  -2.29%  wt:4.18%  [Information Technology]
+  -6.96pt  Microsoft(MSFT)  -1.44%  wt:6.51%  [Information Technology]
+
+【関連ニュース見出し】
+- [Yahoo!ファイナンス] NY円、158円93銭～159円03銭(共同通信) (05/20 21:50)
+  概要: 【ニューヨーク共同】20日のニューヨーク外国為替市場の円相場は午前8時40分現在、前日比09銭円高ドル安の1ドル＝158円93銭～159円03銭を付けた。
+- [Investing.com日本] ソサエティ・パス株、ナスダック上場廃止通知を受けて急落 (05/20 21:39)
+- [Investing.com日本] Draganfly、防衛契約獲得で株価4%上昇 (05/20 21:34)
+- [Investing.com日本] WisekeyのAIロボティクスプラットフォーム立ち上げを受け、株価が上昇 (05/20 21:34)
+- [Investing.com日本] NRCがナノ・ニュークリア・エナジーの建設許可申請を受理、株価上昇 (05/20 21:28)
+- [Investing.com日本] ラムリサーチの株価が本日上昇している理由とは (05/20 21:27)
+- [Investing.com日本] AmpliTech GroupがFCCの5Gシステム認証取得で株価が急騰 (05/20 21:25)
+- [Investing.com日本] S&P 500の第1四半期決算、2021年以来最強の決算シーズンへ (05/20 21:19)
+- [ZUU online] 日々是相場［夕刊］――  2026年5月20日（水） (05/20 20:00)
+  概要: 日経平均 59,804.41円 ▼746.18円 為替 １ドル＝158.89円 売買高（東証プライム、以下同） 29億5,563万株 売買代金 9兆5429億39百万円 値上り銘柄数 264銘柄 値下
+- [NHK経済] みずほ銀行が楽天銀行の株式取得 預金獲得などで連携強化へ (05/20 19:39)
+  概要: メガバンクのみずほ銀行は、ネット銀行最大手の楽天銀行の株式を取得し、預金の獲得などで連携を強化していくことになりました。金利のある世界が本格化する中、銀行業界では異業種も含めた連携強化の動きが加速して
+- [NHK経済] 日韓経済人会議日本側トップ“中東情勢不安定は両国のリスク” (05/20 20:32)
+  概要: 日本と韓国の企業経営者らが集まる「日韓経済人会議」が東京都内で開かれ、日本側のトップは、エネルギーの輸入依存度が高い日韓にとって中東情勢の不安定化が経済面での重大リスクだと指摘し、情報収集や対策の面で
+- [ロイター日本ビジネス] コメルツ銀株主総会、ウニクレディトの買収提案に批判相次ぐ (05/20 18:14)
+- [Investing.com日本] エイサー・ホールディングス、個人投資家向けAIリサーチプラットフォームの先行登録を開始へ (05/20 21:27)
+- [ZUU online] 約200名の不動産投資オーナーが集合！ RENOSY Owner’s Partyレポート (05/20 19:02)
+  概要: RENOSY（リノシー）の不動産投資オーナー様がリアルに集まる機会 RENOSYの不動産投資は、オンラインで始めることができ、専用アプリが運用をサポートします。定期的に家賃収入があり、比較的安定した運
+- [ZUU online] 【攻めのマンション管理 #4】「めんどくさい」はもったいない！ 役員になるメリット3選 (05/20 18:02)
+  概要: 資産を守る最強のポジション「役員」とは 不動産投資にピリッと「攻めのスパイス」を！ 今回は、多くのオーナー様が避けがちな「管理組合の役員（理事長など）」についてです。 「めんどくさい」という先入観を持
+- [ZUU online] ボーナスは一括？　積立？　迷ったときの最適解【投資家ぽんちよ解説】 (05/20 16:00)
+  概要: 待ちわびたボーナス！　投資先の迷うポイント？　私が会社員だったころ… 社会人にとって働く上での大きな喜びのひとつは、給料日であり、とりわけボーナスは格別なものです。個人投資家の方なら、生活費を除いた余
+
+【依頼内容】
+- 最も動きが大きかった指標トップ3を特定
+- それぞれの動きの背景にあるニュース・要因を推測
+- 「明確にニュースで説明できる動き」と「ニュースでは説明できない動き」を区別して提示</textarea>
+<textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
+
+【マーケットデータ】
+- S&P 500: 7,353.61 (-0.67%)
+- NASDAQ: 25,870.71 (-0.84%)
+- ダウ: 49,363.88 (-0.65%)
+- ドル円: 159.02 円 (+0.10%)
+- 米10年債利回り: 4.647 % (-0.43%)
+- WTI原油: 101.28 USD (-6.02%)
+- 金: 4506.10 USD (-0.00%)
+- 日経225: 59,804.41 pt (-1.23%)
+- TOPIX (1306連動ETF): 402.2 円 (-1.49%)
+
+【個別株の寄与度ランキング】
+▼ 日経225 (上昇寄与TOP5)
+  ++38.93円  ファーストリテイリング(9983)  +1.48%  [小売]
+  ++11.96円  アドバンテスト(6857)  +1.32%  [電機]
+  ++3.43円  みずほFG(8411)  +1.39%  [銀行]
+  ++0.57円  KDDI(9433)  +0.58%  [通信]
+  ++0.43円  オリエンタルランド(4661)  +0.54%  [サービス]
+▼ 日経225 (下落寄与TOP5)
+  -74.64円  キーエンス(6861)  -2.79%  [電機]
+  -37.86円  東京エレクトロン(8035)  -2.25%  [半導体製造装置]
+  -14.11円  HOYA(7741)  -1.47%  [精密機器]
+  -12.14円  ファナック(6954)  -4.44%  [電機]
+  -11.50円  ソフトバンクG(9984)  -6.01%  [通信]
+▼ S&P500 (上昇寄与TOP5)
+  ++4.64pt  Lilly (Eli)(LLY)  +3.37%  wt:1.86%  [Health Care]
+  ++3.17pt  Micron Technology(MU)  +2.52%  wt:1.70%  [Information Technology]
+  ++2.57pt  Apple Inc.(AAPL)  +0.38%  wt:9.15%  [Information Technology]
+  ++2.04pt  Intel(INTC)  +2.43%  wt:1.13%  [Information Technology]
+  ++1.29pt  ExxonMobil(XOM)  +1.28%  wt:1.36%  [Energy]
+▼ S&P500 (下落寄与TOP5)
+  -17.27pt  Alphabet Inc. (Class A)(GOOGL)  -2.34%  wt:9.98%  [Communication Services]
+  -15.30pt  Alphabet Inc. (Class C)(GOOG)  -2.09%  wt:9.89%  [Communication Services]
+  -9.10pt  Amazon(AMZN)  -2.08%  wt:5.90%  [Consumer Discretionary]
+  -7.09pt  Broadcom(AVGO)  -2.29%  wt:4.18%  [Information Technology]
+  -6.96pt  Microsoft(MSFT)  -1.44%  wt:6.51%  [Information Technology]
+
+【関連ニュース見出し】
+- [Yahoo!ファイナンス] NY円、158円93銭～159円03銭(共同通信) (05/20 21:50)
+  概要: 【ニューヨーク共同】20日のニューヨーク外国為替市場の円相場は午前8時40分現在、前日比09銭円高ドル安の1ドル＝158円93銭～159円03銭を付けた。
+- [Investing.com日本] ソサエティ・パス株、ナスダック上場廃止通知を受けて急落 (05/20 21:39)
+- [Investing.com日本] Draganfly、防衛契約獲得で株価4%上昇 (05/20 21:34)
+- [Investing.com日本] WisekeyのAIロボティクスプラットフォーム立ち上げを受け、株価が上昇 (05/20 21:34)
+- [Investing.com日本] NRCがナノ・ニュークリア・エナジーの建設許可申請を受理、株価上昇 (05/20 21:28)
+- [Investing.com日本] ラムリサーチの株価が本日上昇している理由とは (05/20 21:27)
+- [Investing.com日本] AmpliTech GroupがFCCの5Gシステム認証取得で株価が急騰 (05/20 21:25)
+- [Investing.com日本] S&P 500の第1四半期決算、2021年以来最強の決算シーズンへ (05/20 21:19)
+- [ZUU online] 日々是相場［夕刊］――  2026年5月20日（水） (05/20 20:00)
+  概要: 日経平均 59,804.41円 ▼746.18円 為替 １ドル＝158.89円 売買高（東証プライム、以下同） 29億5,563万株 売買代金 9兆5429億39百万円 値上り銘柄数 264銘柄 値下
+- [NHK経済] みずほ銀行が楽天銀行の株式取得 預金獲得などで連携強化へ (05/20 19:39)
+  概要: メガバンクのみずほ銀行は、ネット銀行最大手の楽天銀行の株式を取得し、預金の獲得などで連携を強化していくことになりました。金利のある世界が本格化する中、銀行業界では異業種も含めた連携強化の動きが加速して
+- [NHK経済] 日韓経済人会議日本側トップ“中東情勢不安定は両国のリスク” (05/20 20:32)
+  概要: 日本と韓国の企業経営者らが集まる「日韓経済人会議」が東京都内で開かれ、日本側のトップは、エネルギーの輸入依存度が高い日韓にとって中東情勢の不安定化が経済面での重大リスクだと指摘し、情報収集や対策の面で
+- [ロイター日本ビジネス] コメルツ銀株主総会、ウニクレディトの買収提案に批判相次ぐ (05/20 18:14)
+- [Investing.com日本] エイサー・ホールディングス、個人投資家向けAIリサーチプラットフォームの先行登録を開始へ (05/20 21:27)
+- [ZUU online] 約200名の不動産投資オーナーが集合！ RENOSY Owner’s Partyレポート (05/20 19:02)
+  概要: RENOSY（リノシー）の不動産投資オーナー様がリアルに集まる機会 RENOSYの不動産投資は、オンラインで始めることができ、専用アプリが運用をサポートします。定期的に家賃収入があり、比較的安定した運
+- [ZUU online] 【攻めのマンション管理 #4】「めんどくさい」はもったいない！ 役員になるメリット3選 (05/20 18:02)
+  概要: 資産を守る最強のポジション「役員」とは 不動産投資にピリッと「攻めのスパイス」を！ 今回は、多くのオーナー様が避けがちな「管理組合の役員（理事長など）」についてです。 「めんどくさい」という先入観を持
+- [ZUU online] ボーナスは一括？　積立？　迷ったときの最適解【投資家ぽんちよ解説】 (05/20 16:00)
+  概要: 待ちわびたボーナス！　投資先の迷うポイント？　私が会社員だったころ… 社会人にとって働く上での大きな喜びのひとつは、給料日であり、とりわけボーナスは格別なものです。個人投資家の方なら、生活費を除いた余
+
+【依頼内容】
+- 短期的なリスク要因（今後1週間以内）
+- 中期的な注目イベント（決算・経済指標・政策発表など）
+- 個別銘柄で動きがあった主要企業
+- 私が見逃しそうなポイント</textarea>
+
+<!-- Toast -->
+<div id="toast">✅ コピーしました</div>
+
+<script>
+  // Theme toggle
+  function toggleTheme() {
+    const html = document.documentElement;
+    const isDark = html.getAttribute("data-theme") === "dark";
+    html.setAttribute("data-theme", isDark ? "light" : "dark");
+    document.getElementById("themeBtn").textContent = isDark ? "🌙 ダークモード" : "☀️ ライトモード";
+    localStorage.setItem("theme", isDark ? "light" : "dark");
+  }
+
+  // Restore theme
+  (function() {
+    const saved = localStorage.getItem("theme");
+    if (saved) {
+      document.documentElement.setAttribute("data-theme", saved);
+      if (saved === "light") {
+        document.getElementById("themeBtn").textContent = "🌙 ダークモード";
+      }
+    }
+  })();
+
+  // Copy and show toast
+  function copyClip(textareaId, btn) {
+    const text = document.getElementById(textareaId).value;
+    const originalLabel = btn.textContent;
+
+    const done = () => {
+      btn.classList.add("copied");
+      setTimeout(() => btn.classList.remove("copied"), 2000);
+      showToast();
+    };
+
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(textareaId, done));
+    } else {
+      fallbackCopy(textareaId, done);
+    }
+  }
+
+  function fallbackCopy(textareaId, callback) {
+    const ta = document.getElementById(textareaId);
+    ta.style.cssText = "position:static";
+    ta.select();
+    document.execCommand("copy");
+    ta.style.cssText = "position:absolute;left:-9999px;top:0";
+    callback();
+  }
+
+  let toastTimer = null;
+  function showToast() {
+    const toast = document.getElementById("toast");
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove("show"), 2200);
+  }
+</script>
+</body>
+</html>
