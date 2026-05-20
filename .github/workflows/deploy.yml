@@ -1,0 +1,55 @@
+name: 投資ブリーフィング 自動生成・デプロイ
+
+on:
+  schedule:
+    # JST = UTC+9 なので UTC時刻で指定
+    - cron: '50 20 * * *'   # 05:50 JST → 朝スロット
+    - cron: '20  2 * * *'   # 11:20 JST → 昼スロット
+    - cron: '0   8 * * 1-5' # 17:00 JST → 夕スロット（平日）
+    - cron: '0  13 * * *'   # 22:00 JST → 夜スロット
+  workflow_dispatch:         # GitHub画面から手動実行も可能
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python 3.11 セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存ライブラリをキャッシュ
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ hashFiles('requirements.txt') }}
+
+      - name: 依存ライブラリをインストール
+        run: pip install -r requirements.txt
+
+      - name: S&P500時価総額キャッシュを復元
+        uses: actions/cache@v4
+        with:
+          path: data/sp500_mcap_cache.json
+          key: sp500-mcap-${{ github.run_id }}
+          restore-keys: sp500-mcap-
+
+      - name: ブリーフィングHTMLを生成
+        run: |
+          # 実行時刻(UTC)からスロットを自動判定
+          python fetch_briefing.py
+
+      - name: index.html を追加（GitHub Pages用リダイレクト）
+        run: |
+          echo '<meta http-equiv="refresh" content="0;url=briefing.html">' > output/index.html
+
+      - name: GitHub Pages にデプロイ
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          commit_message: "📊 ブリーフィング自動更新 (${{ github.run_id }})"

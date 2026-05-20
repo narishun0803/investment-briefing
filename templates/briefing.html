@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f1117" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <title>投資情報ブリーフィング [{{ slot_label }}]</title>
+  <style>
+    :root[data-theme="dark"] {
+      --bg: #0f1117;
+      --bg2: #1a1d27;
+      --bg3: #222636;
+      --border: #2e3347;
+      --text: #e2e8f0;
+      --text2: #94a3b8;
+      --accent: #6366f1;
+      --up: #22c55e;
+      --down: #ef4444;
+      --flat: #94a3b8;
+      --badge-bg: #1e2340;
+      --card-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    :root[data-theme="light"] {
+      --bg: #f1f5f9;
+      --bg2: #ffffff;
+      --bg3: #e8eef7;
+      --border: #cbd5e1;
+      --text: #1e293b;
+      --text2: #64748b;
+      --accent: #4f46e5;
+      --up: #16a34a;
+      --down: #dc2626;
+      --flat: #64748b;
+      --badge-bg: #dbeafe;
+      --card-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 0 0 40px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: 0.02em;
+    }
+
+    .slot-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.05em;
+    }
+
+    .slot-desc {
+      font-size: 0.72rem;
+      color: var(--text2);
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .updated {
+      font-size: 0.72rem;
+      color: var(--text2);
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      transition: opacity 0.15s, background 0.2s;
+    }
+    button:hover { opacity: 0.85; }
+
+    .btn-theme {
+      background: var(--bg3);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    /* ── Reload button with tooltip ── */
+    .btn-reload {
+      background: var(--bg3);
+      color: var(--text2);
+      border: 1px solid var(--border);
+      position: relative;
+    }
+    .btn-reload:hover { opacity: 1; color: var(--text); }
+    .btn-reload .tooltip {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 0;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 7px 12px;
+      font-size: 0.72rem;
+      font-weight: 400;
+      color: var(--text2);
+      white-space: nowrap;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      z-index: 200;
+    }
+    .btn-reload:hover .tooltip,
+    .btn-reload:focus .tooltip { display: block; }
+
+    .claude-btns {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .btn-claude {
+      background: var(--bg3);
+      color: var(--text);
+      border: 1px solid var(--border);
+      font-size: 0.75rem;
+      padding: 5px 10px;
+      white-space: nowrap;
+    }
+    .btn-claude:hover { border-color: var(--accent); color: var(--accent); opacity: 1; }
+    .btn-claude.copied { background: var(--up); color: #fff; border-color: var(--up); }
+
+    /* ── Toast notification ── */
+    #toast {
+      position: fixed;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: #1e293b;
+      color: #e2e8f0;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 10px 22px;
+      border-radius: 999px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s, transform 0.2s;
+      z-index: 9999;
+      white-space: nowrap;
+    }
+    #toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* ── Main layout ── */
+    main {
+      max-width: 1280px;
+      margin: 24px auto 0;
+      padding: 0 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 860px) {
+      main { grid-template-columns: 1fr; }
+    }
+
+    /* ── Card ── */
+    .card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: var(--card-shadow);
+    }
+
+    .card-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text2);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+
+    /* ── Market grid ── */
+    .market-section {
+      grid-column: 1 / -1;
+    }
+
+    .market-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 10px;
+    }
+
+    .market-tile {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      transition: box-shadow 0.15s;
+    }
+    .market-tile:hover {
+      box-shadow: 0 0 0 2px var(--accent);
+    }
+    .market-tile.primary {
+      border-color: var(--accent);
+      background: color-mix(in srgb, var(--accent) 8%, var(--bg3));
+    }
+
+    .tile-name {
+      font-size: 0.7rem;
+      color: var(--text2);
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tile-price {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .tile-unit {
+      font-size: 0.65rem;
+      color: var(--text2);
+    }
+
+    .tile-change {
+      font-size: 0.75rem;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+    }
+    .up   { color: var(--up); }
+    .down { color: var(--down); }
+    .flat { color: var(--flat); }
+
+    .tile-note {
+      font-size: 0.62rem;
+      color: var(--text2);
+      margin-top: 1px;
+    }
+
+    .tile-failed {
+      color: var(--flat);
+      font-size: 0.8rem;
+    }
+
+    /* ── News ── */
+    .news-section {
+      grid-column: 1 / -1;
+    }
+
+    .news-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 720px) {
+      .news-columns { grid-template-columns: 1fr; }
+    }
+
+    .news-group {
+      min-width: 0;
+    }
+
+    .news-group-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 5px;
+      margin-bottom: 8px;
+      letter-spacing: 0.04em;
+    }
+
+    .news-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .news-item {
+      padding: 9px 2px;
+      border-bottom: 1px solid var(--border);
+    }
+    .news-item:last-child { border-bottom: none; }
+
+    .news-title a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.85rem;
+      line-height: 1.45;
+    }
+    .news-title a:hover { color: var(--accent); text-decoration: underline; }
+
+    .news-meta {
+      font-size: 0.68rem;
+      color: var(--text2);
+      margin-top: 3px;
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .news-source {
+      background: var(--badge-bg);
+      color: var(--accent);
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .news-summary {
+      font-size: 0.72rem;
+      color: var(--text2);
+      margin-top: 2px;
+      line-height: 1.4;
+    }
+
+    .news-empty {
+      font-size: 0.8rem;
+      color: var(--flat);
+      padding: 8px 0;
+    }
+
+    /* ── Contribution rankings ── */
+    .contrib-section {
+      grid-column: 1 / -1;
+    }
+
+    .contrib-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    @media (max-width: 720px) {
+      .contrib-columns { grid-template-columns: 1fr; }
+    }
+
+    .contrib-group-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .contrib-sub {
+      margin-bottom: 10px;
+    }
+
+    .contrib-sub-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      margin-bottom: 5px;
+    }
+    .contrib-sub-label.up   { color: var(--up); }
+    .contrib-sub-label.down { color: var(--down); }
+
+    .contrib-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.78rem;
+    }
+    .contrib-table th {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--text2);
+      text-align: right;
+      padding: 2px 6px 4px;
+      border-bottom: 1px solid var(--border);
+    }
+    .contrib-table th:first-child { text-align: left; padding-left: 0; }
+    .contrib-table td {
+      padding: 4px 6px;
+      text-align: right;
+      border-bottom: 1px solid var(--border);
+      font-variant-numeric: tabular-nums;
+      vertical-align: middle;
+    }
+    .contrib-table td:first-child { text-align: left; padding-left: 0; }
+    .contrib-table tr:last-child td { border-bottom: none; }
+
+    .contrib-name {
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.78rem;
+    }
+    .contrib-name:hover { color: var(--accent); text-decoration: underline; }
+
+    .contrib-sector {
+      display: block;
+      font-size: 0.62rem;
+      color: var(--text2);
+      margin-top: 1px;
+    }
+
+    .contrib-empty {
+      color: var(--flat);
+      font-size: 0.78rem;
+      padding: 4px 0;
+    }
+
+    /* ── Clipboard textarea (hidden) ── */
+
+    /* ── Mobile optimizations ── */
+    @media (max-width: 640px) {
+      header {
+        padding: 10px 12px;
+        gap: 8px;
+      }
+      h1 { font-size: 0.95rem; }
+      .slot-desc { display: none; }
+
+      .header-right {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+      .updated { font-size: 0.68rem; width: 100%; }
+      .claude-btns { width: 100%; }
+      .btn-claude {
+        flex: 1 1 auto;
+        font-size: 0.7rem;
+        padding: 6px 6px;
+        text-align: center;
+        min-width: 0;
+      }
+      .btn-reload, .btn-theme {
+        font-size: 0.7rem;
+        padding: 5px 8px;
+      }
+
+      main {
+        margin-top: 14px;
+        padding: 0 10px;
+        gap: 14px;
+      }
+      .card { padding: 14px 12px; }
+
+      .market-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 8px;
+      }
+      .tile-price { font-size: 1rem; }
+
+      .contrib-columns { grid-template-columns: 1fr; gap: 16px; }
+      .contrib-sub { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+      .news-columns { grid-template-columns: 1fr; }
+
+      /* Larger tap targets */
+      .news-title a { padding: 2px 0; display: inline-block; }
+      .contrib-name { padding: 2px 0; display: inline-block; }
+    }
+
+    @media (max-width: 400px) {
+      .btn-claude { font-size: 0.65rem; padding: 5px 4px; }
+      .market-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <h1>📊 投資情報ブリーフィング</h1>
+    <span class="slot-badge">{{ slot_label }}</span>
+    <span class="slot-desc">{{ slot_desc }}</span>
+  </div>
+  <div class="header-right">
+    <span class="updated">更新: {{ updated }}</span>
+    <div class="claude-btns">
+      <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
+      <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
+      <button class="btn-claude" onclick="copyClip('clip-risk', this)" title="リスク・注目点の抽出依頼">⚠️ リスク・注目点</button>
+    </div>
+    <button class="btn-reload" tabindex="0">
+      🔄 更新
+      <span class="tooltip">データを更新するにはアプリを再起動してください<br>（run_briefing.command / run_briefing.bat）</span>
+    </button>
+    <button class="btn-theme" id="themeBtn" onclick="toggleTheme()">☀️ ライトモード</button>
+  </div>
+</header>
+
+<main>
+  <!-- Market Data -->
+  <section class="card market-section">
+    <div class="card-title">📈 マーケットデータ</div>
+    <div class="market-grid">
+      {% for m in market %}
+      <div class="market-tile {% if m.primary %}primary{% endif %}">
+        <div class="tile-name">{{ m.name }}</div>
+        {% if m.price == "取得失敗" %}
+          <div class="tile-failed">取得失敗</div>
+        {% else %}
+          <div class="tile-price">{{ m.price }} <span class="tile-unit">{{ m.unit }}</span></div>
+          <div class="tile-change {{ m.direction }}">
+            {{ m.change }}&nbsp;&nbsp;{{ m.pct }}
+          </div>
+        {% endif %}
+        {% if m.note %}
+          <div class="tile-note">{{ m.note }}</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Contribution Rankings -->
+  <section class="card contrib-section">
+    <div class="card-title">🏆 個別株の動き</div>
+    <div class="contrib-columns">
+
+      <!-- Nikkei 225 -->
+      <div>
+        <div class="contrib-group-title">日経225 寄与度ランキング（{{ nk_contrib.total }}銘柄中・除数{{ "28" }}）</div>
+
+        <div class="contrib-sub">
+          <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
+          {% if nk_contrib.up %}
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(円)</th><th>騰落</th>
+            </tr></thead>
+            <tbody>
+            {% for r in nk_contrib.up %}
+            <tr>
+              <td>
+                <a class="contrib-name" href="{{ r.gf_url }}" target="_blank" rel="noopener">{{ r.name }}</a>
+                <span class="contrib-sector">{{ r.sector }}</span>
+              </td>
+              <td class="up">{{ r.contrib_str }}</td>
+              <td class="up">{{ r.pct }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+          {% else %}<p class="contrib-empty">データなし</p>{% endif %}
+        </div>
+
+        <div class="contrib-sub">
+          <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
+          {% if nk_contrib.down %}
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(円)</th><th>騰落</th>
+            </tr></thead>
+            <tbody>
+            {% for r in nk_contrib.down %}
+            <tr>
+              <td>
+                <a class="contrib-name" href="{{ r.gf_url }}" target="_blank" rel="noopener">{{ r.name }}</a>
+                <span class="contrib-sector">{{ r.sector }}</span>
+              </td>
+              <td class="down">{{ r.contrib_str }}</td>
+              <td class="down">{{ r.pct }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+          {% else %}<p class="contrib-empty">データなし</p>{% endif %}
+        </div>
+      </div>
+
+      <!-- S&P 500 -->
+      <div>
+        <div class="contrib-group-title">S&amp;P500 寄与度ランキング（時価総額上位{{ sp_contrib.total }}銘柄）</div>
+
+        <div class="contrib-sub">
+          <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
+          {% if sp_contrib.up %}
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            {% for r in sp_contrib.up %}
+            <tr>
+              <td>
+                <a class="contrib-name" href="{{ r.gf_url }}" target="_blank" rel="noopener">{{ r.ticker }}</a>
+                <span class="contrib-sector">{{ r.name[:20] }}{% if r.name|length > 20 %}…{% endif %}</span>
+              </td>
+              <td class="up">{{ r.contrib_str }}</td>
+              <td class="up">{{ r.pct }}</td>
+              <td style="color:var(--text2)">{{ r.weight }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+          {% else %}<p class="contrib-empty">データなし</p>{% endif %}
+        </div>
+
+        <div class="contrib-sub">
+          <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
+          {% if sp_contrib.down %}
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            {% for r in sp_contrib.down %}
+            <tr>
+              <td>
+                <a class="contrib-name" href="{{ r.gf_url }}" target="_blank" rel="noopener">{{ r.ticker }}</a>
+                <span class="contrib-sector">{{ r.name[:20] }}{% if r.name|length > 20 %}…{% endif %}</span>
+              </td>
+              <td class="down">{{ r.contrib_str }}</td>
+              <td class="down">{{ r.pct }}</td>
+              <td style="color:var(--text2)">{{ r.weight }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+          {% else %}<p class="contrib-empty">データなし</p>{% endif %}
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="card news-section">
+    <div class="card-title">📰 最新ニュース ({{ total_news }}件)</div>
+    {% set cat_order = [("market","📈"), ("macro","🌐"), ("earnings","📋"), ("other","📌")] %}
+    {% set non_empty = namespace(count=0) %}
+    {% for cat_key, _ in cat_order %}{% if news[cat_key] %}{% set non_empty.count = non_empty.count + 1 %}{% endif %}{% endfor %}
+    {% if total_news > 0 %}
+    <div class="news-columns">
+      {% for cat_key, icon in cat_order %}
+        {% set items = news[cat_key] %}
+        {% if items %}
+        <div class="news-group">
+          <div class="news-group-title">{{ icon }} {{ section_labels[cat_key] }} ({{ items|length }}件)</div>
+          <div class="news-list">
+            {% for n in items %}
+            <div class="news-item">
+              <div class="news-title">
+                <a href="{{ n.link }}" target="_blank" rel="noopener">{{ n.title }}</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">{{ n.source }}</span>
+                <span>{{ n.published }}</span>
+              </div>
+              {% if n.summary %}
+              <div class="news-summary">{{ n.summary }}{% if n.summary|length >= 100 %}…{% endif %}</div>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% else %}
+    <p style="color:var(--flat);font-size:0.85rem;">ニュースを取得できませんでした。</p>
+    {% endif %}
+  </section>
+</main>
+
+<!-- Hidden clipboard data -->
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">{{ clip_overview }}</textarea>
+<textarea id="clip-deep"     readonly style="position:absolute;left:-9999px;top:0">{{ clip_deep }}</textarea>
+<textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">{{ clip_risk }}</textarea>
+
+<!-- Toast -->
+<div id="toast">✅ コピーしました</div>
+
+<script>
+  // Theme toggle
+  function toggleTheme() {
+    const html = document.documentElement;
+    const isDark = html.getAttribute("data-theme") === "dark";
+    html.setAttribute("data-theme", isDark ? "light" : "dark");
+    document.getElementById("themeBtn").textContent = isDark ? "🌙 ダークモード" : "☀️ ライトモード";
+    localStorage.setItem("theme", isDark ? "light" : "dark");
+  }
+
+  // Restore theme
+  (function() {
+    const saved = localStorage.getItem("theme");
+    if (saved) {
+      document.documentElement.setAttribute("data-theme", saved);
+      if (saved === "light") {
+        document.getElementById("themeBtn").textContent = "🌙 ダークモード";
+      }
+    }
+  })();
+
+  // Copy and show toast
+  function copyClip(textareaId, btn) {
+    const text = document.getElementById(textareaId).value;
+    const originalLabel = btn.textContent;
+
+    const done = () => {
+      btn.classList.add("copied");
+      setTimeout(() => btn.classList.remove("copied"), 2000);
+      showToast();
+    };
+
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(textareaId, done));
+    } else {
+      fallbackCopy(textareaId, done);
+    }
+  }
+
+  function fallbackCopy(textareaId, callback) {
+    const ta = document.getElementById(textareaId);
+    ta.style.cssText = "position:static";
+    ta.select();
+    document.execCommand("copy");
+    ta.style.cssText = "position:absolute;left:-9999px;top:0";
+    callback();
+  }
+
+  let toastTimer = null;
+  function showToast() {
+    const toast = document.getElementById("toast");
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove("show"), 2200);
+  }
+</script>
+</body>
+</html>

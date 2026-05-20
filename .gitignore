@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+icon_preview.png
+icon.ico
+
+# S&P500時価総額キャッシュはActionsでも使えるよう含める（除外しない）
+# data/ は含める
