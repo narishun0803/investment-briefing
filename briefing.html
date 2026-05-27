@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年05月27日 15:42 JST</span>
+    <span class="updated">更新: 2026年05月27日 20:32 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">64,999.41 <span class="tile-unit">pt</span></div>
+          <div class="tile-change up">
+            +3.32&nbsp;&nbsp;+0.01%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">415.6 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -1.80&nbsp;&nbsp;-0.43%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">159.43 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.47&nbsp;&nbsp;+0.30%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">50,461.68 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">159.35 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.40&nbsp;&nbsp;+0.25%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.493 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">92.01 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">90.28 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -1.88&nbsp;&nbsp;-2.00%
+            -3.61&nbsp;&nbsp;-3.84%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4481.90 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4474.00 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -18.50&nbsp;&nbsp;-0.41%
+            -26.40&nbsp;&nbsp;-0.59%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">65,095.56 <span class="tile-unit">pt</span></div>
-          <div class="tile-change up">
-            +99.47&nbsp;&nbsp;+0.15%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">415.5 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -1.90&nbsp;&nbsp;-0.46%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -672,17 +672,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/9983:TYO" target="_blank" rel="noopener">ファーストリテイリング</a>
                 <span class="contrib-sector">小売</span>
               </td>
-              <td class="up">+92.14</td>
-              <td class="up">+3.42%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/8035:TYO" target="_blank" rel="noopener">東京エレクトロン</a>
-                <span class="contrib-sector">半導体製造装置</span>
-              </td>
-              <td class="up">+45.00</td>
-              <td class="up">+2.45%</td>
+              <td class="up">+82.50</td>
+              <td class="up">+3.06%</td>
             </tr>
             
             <tr>
@@ -690,8 +681,17 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/7741:TYO" target="_blank" rel="noopener">HOYA</a>
                 <span class="contrib-sector">精密機器</span>
               </td>
-              <td class="up">+41.25</td>
-              <td class="up">+4.45%</td>
+              <td class="up">+43.75</td>
+              <td class="up">+4.72%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/8035:TYO" target="_blank" rel="noopener">東京エレクトロン</a>
+                <span class="contrib-sector">半導体製造装置</span>
+              </td>
+              <td class="up">+38.57</td>
+              <td class="up">+2.10%</td>
             </tr>
             
             <tr>
@@ -699,8 +699,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6857:TYO" target="_blank" rel="noopener">アドバンテスト</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="up">+40.18</td>
-              <td class="up">+4.31%</td>
+              <td class="up">+37.68</td>
+              <td class="up">+4.05%</td>
             </tr>
             
             <tr>
@@ -708,8 +708,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/4063:TYO" target="_blank" rel="noopener">信越化学</a>
                 <span class="contrib-sector">化学</span>
               </td>
-              <td class="up">+12.96</td>
-              <td class="up">+5.17%</td>
+              <td class="up">+13.71</td>
+              <td class="up">+5.47%</td>
             </tr>
             
             </tbody>
@@ -731,8 +731,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-50.00</td>
-              <td class="down">-1.82%</td>
+              <td class="down">-47.86</td>
+              <td class="down">-1.74%</td>
             </tr>
             
             <tr>
@@ -740,8 +740,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/9984:TYO" target="_blank" rel="noopener">ソフトバンクG</a>
                 <span class="contrib-sector">通信</span>
               </td>
-              <td class="down">-20.14</td>
-              <td class="down">-7.19%</td>
+              <td class="down">-20.32</td>
+              <td class="down">-7.26%</td>
             </tr>
             
             <tr>
@@ -749,8 +749,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6981:TYO" target="_blank" rel="noopener">村田製作所</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-9.89</td>
-              <td class="down">-3.43%</td>
+              <td class="down">-9.18</td>
+              <td class="down">-3.18%</td>
             </tr>
             
             <tr>
@@ -758,8 +758,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6954:TYO" target="_blank" rel="noopener">ファナック</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-8.00</td>
-              <td class="down">-2.67%</td>
+              <td class="down">-8.75</td>
+              <td class="down">-2.92%</td>
             </tr>
             
             <tr>
@@ -767,8 +767,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/7012:TYO" target="_blank" rel="noopener">川崎重工</a>
                 <span class="contrib-sector">機械</span>
               </td>
-              <td class="down">-7.14</td>
-              <td class="down">-5.95%</td>
+              <td class="down">-6.57</td>
+              <td class="down">-5.47%</td>
             </tr>
             
             </tbody>
@@ -915,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (21件)</div>
+    <div class="card-title">📰 最新ニュース (19件)</div>
     
     
     
@@ -930,131 +930,139 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/a409cfa595c811669e1af432f895f9fbb60ee489?source=rss" target="_blank" rel="noopener">東証反発、終値3円高　米ハイテク株高の流れで買い優勢(共同通信)</a>
+                <a href="https://news.yahoo.co.jp/articles/8131901a2c87d7ca2a4e62b7cad2e5dbe798f82c?source=rss" target="_blank" rel="noopener">シスメックス（6869）の株式を3か月間保有した投資家の株価リターンは？高値・安値も確認する【2026年5月27日】(LIMO)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>05/27 15:37</span>
+                <span>05/27 20:31</span>
               </div>
               
-              <div class="news-summary">27日の東京株式市場の日経平均株価（225種）は反発した。前日の米ハイテク株高の流れを引き継ぎ、買い注文が優勢となった。上げ幅は一時1400円を超えた。
+              <div class="news-summary">東証プライムに上場する電気機器銘柄のシスメックス  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
 
-　終値は前日比3円32銭高の6万4999円</div>
+あわせて、シスメックスの</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/c1459013ec409994cfc8cd24afc32f2bf9609d95?source=rss" target="_blank" rel="noopener">東証終値3円高(共同通信)</a>
+                <a href="https://news.yahoo.co.jp/articles/2d2de1bd1274b70bb821c281dc3c4b0a52b6b7fd?source=rss" target="_blank" rel="noopener">アンリツ（6754）の3か月間の株価はどう動き、高値・安値はどこだった？【2026年5月27日】(LIMO)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>05/27 15:34</span>
+                <span>05/27 20:31</span>
               </div>
               
-              <div class="news-summary">27日の東京株式市場の日経平均株価（225種）終値は、前日終値比3円32銭高の6万4999円41銭だった。</div>
+              <div class="news-summary">東証プライムに上場する電気機器銘柄のアンリツ  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、アンリツの直近の2</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/d8fbde391d53388e5e6bb884492721b636f0838e?source=rss" target="_blank" rel="noopener">香港、暗号資産アドバイザリー・資産運用サービスのライセンス制度に関するコンサル結果を公表(あたらしい経済)</a>
+                <a href="https://news.yahoo.co.jp/articles/3e57f85fd3c125397c88f8832b426f16bbfce203?source=rss" target="_blank" rel="noopener">三井海洋開発（6269）、3か月間の株価の変動幅と高値・安値は？【2026年5月27日】(LIMO)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>05/27 15:19</span>
+                <span>05/27 20:25</span>
               </div>
               
-              <div class="news-summary">香港財経事務及庫務局（FSTB）と証券先物事務監察委員会（SFC）が、暗号資産（VA）アドバイザリーおよび資産運用サービス提供者を対象としたライセンス制度の立法提案に関するコンサルテーション・コンクル…</div>
+              <div class="news-summary">東証プライムに上場する機械銘柄の三井海洋開発  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、三井海洋開発の直近</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260527/k10015132811000.html" target="_blank" rel="noopener">オートバックスセブンと中国の奇瑞自動車 日本に軽EV投入へ</a>
+                <a href="https://news.yahoo.co.jp/articles/16b2310dadcd49478ac478fd6e154ff1663b6905?source=rss" target="_blank" rel="noopener">横浜ゴム（5101）の3か月間の株価はどう動き、高値・安値はどこだった？【2026年5月27日】(LIMO)</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>05/27 15:12</span>
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>05/27 20:21</span>
               </div>
               
-              <div class="news-summary">自動車用品大手の「オートバックスセブン」や中国の自動車大手「奇瑞自動車」などが組んで来年から日本市場にEVを投入すると発表しました。販売や整備の拠点は、オートバックスの店舗網を活用する計画で、海外メー…</div>
+              <div class="news-summary">東証プライムに上場するゴム製品銘柄の横浜ゴム  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、横浜ゴムの直近の2</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1550410" target="_blank" rel="noopener">Xiaomiの株価、メモリコスト上昇が第1四半期決算に打撃</a>
+                <a href="https://news.yahoo.co.jp/articles/bb991817a8bd67f819a59f352bfebb2fe6d34446?source=rss" target="_blank" rel="noopener">東海旅客鉄道（9022）、3か月間の株価の変動幅と高値・安値は？【2026年5月27日】(LIMO)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>05/27 20:21</span>
+              </div>
+              
+              <div class="news-summary">東証プライムに上場する陸運業銘柄の東海旅客鉄道  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、東海旅客鉄道の直</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/6e198bc24173c0924f12b7d587310add82ea7d68?source=rss" target="_blank" rel="noopener">日本製鋼所（5631）の株価、3か月間でどう動いたか？【2026年5月27日】(LIMO)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>05/27 20:15</span>
+              </div>
+              
+              <div class="news-summary">東証プライムに上場する機械銘柄の日本製鋼所  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、日本製鋼所の直近の2</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1550805" target="_blank" rel="noopener">ムバダラ、グローバルファウンドリーズの株式を19億1000万ドルで売却</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>05/27 14:15</span>
+                <span>05/27 20:14</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://zuuonline.com/archives/301921" target="_blank" rel="noopener">独自の輸入ワインと六本木の施設が優位性──株式会社ソムリエはワイン流通でいかに存在感を発揮したのか</a>
+                <a href="https://zuuonline.com/archives/302014" target="_blank" rel="noopener">日々是相場［夕刊］――  2026年5月27日（水）</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">ZUU online</span>
-                <span>05/27 14:00</span>
+                <span>05/27 20:00</span>
               </div>
               
-              <div class="news-summary">ワイン輸入、直販、飲食店運営などを展開する株式会社ソムリエは、ワインと食を融合させた独自のビジネスモデルを確立している。代表取締役の守川敏氏は、母体となった企業で「社長の同好会」と揶揄された事業を、2…</div>
+              <div class="news-summary">日経平均 64,999.41円 △3.32円 為替 １ドル＝159.34円 売買高（東証プライム、以下同） 26億7,824万株 売買代金 11兆0643億16百万円 値上り銘柄数 721銘柄 値下り…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://zuuonline.com/archives/301802" target="_blank" rel="noopener">「花火のチカラ」で感動を届ける──玩具と煙火の両輪で挑む若松屋の革新</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>05/27 14:00</span>
-              </div>
-              
-              <div class="news-summary">1937年の創業以来、玩具花火と打ち上げ花火の両方を扱う日本唯一の企業として、長きにわたり日本の夏を彩ってきた株式会社若松屋。 代表取締役社長の佐野明正氏は、売り上げの大半が消失したコロナ禍という未曾…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/301909" target="_blank" rel="noopener">営業の属人化を打破する「型化」の極意。プロセルトラクションが導くB2B成長戦略</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>05/27 14:00</span>
-              </div>
-              
-              <div class="news-summary">B2B企業、特に大手企業向けのエンタープライズセールスにおいて、多くの組織が「営業の属人化」という課題に直面している。 株式会社プロセルトラクションの代表取締役、長谷川裕樹氏は、国内最大手の人材広告企…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260527/k10015132451000.html" target="_blank" rel="noopener">株価 初の6万6000円台に 取り引き時間中の最高値を更新</a>
+                <a href="http://www3.nhk.or.jp/news/html/20260527/k10015132451000.html" target="_blank" rel="noopener">株価 取り引き時間中の最高値更新も終値は小幅な値上がり</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">NHK経済</span>
-                <span>05/27 12:05</span>
+                <span>05/27 19:50</span>
               </div>
               
-              <div class="news-summary">27日の東京株式市場、日経平均株価は一時、1400円以上上昇し、初めて6万6000円台をつけ、取り引き時間中の最高値を更新しました。</div>
+              <div class="news-summary">27日の東京株式市場、日経平均株価は一時、1400円以上値上がりし、初めて6万6000円台をつけて取り引き時間中の最高値を更新しましたが、その後は売り注文が増え、小幅な値上がりで取り引きを終えました。…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260527/k10015132431000.html" target="_blank" rel="noopener">NY株式市場 ナスダックとS＆P500が最高値 半導体が押し上げ</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1550683" target="_blank" rel="noopener">ゴールドマン・サックス、好調な企業業績を背景にS&P 500の年末目標を引き上げ</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>05/27 06:57</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>05/27 19:32</span>
               </div>
-              
-              <div class="news-summary">26日のニューヨーク株式市場では半導体関連の銘柄を中心に買い注文が広がり、ハイテク株の比率が高いナスダックの株価指数などが最高値を更新しました。</div>
               
             </div>
             
@@ -1065,19 +1073,41 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (3件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (4件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/52bd06bffc2de5f5e10e1a81a93bf0ec85f8c4e8?source=rss" target="_blank" rel="noopener">中国の希少金属タングステン対日輸出停滞(共同通信)</a>
+                <a href="http://www3.nhk.or.jp/news/html/20260527/k10015133271000.html" target="_blank" rel="noopener">日銀決算 保有国債の含み損が45兆円規模に</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>05/27 15:34</span>
+                <span class="news-source">NHK経済</span>
+                <span>05/27 19:58</span>
               </div>
               
-              <div class="news-summary">【北京共同】レアメタル（希少金属）の一種タングステンの一部加工品の中国から日本への輸出が2月以降停滞していることが27日、分かった。タングステンは製品加工用の切削工具の刃先などに使われる。</div>
+              <div class="news-summary">長期金利が上昇する中、日銀が大量に保有している国債はことし3月末時点で評価損が45兆円規模と、これまでで最大になっていることが分かりました。日銀は満期まで保有することが前提のため、時価での評価は財務に…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.reuters.com/world/us/A5IQ6NG2HBN4DAX2APIG7CFSPM-2026-05-27/" target="_blank" rel="noopener">インフレに留意、金利変更時期の予測は時期尚早＝米ミネアポリス連銀総裁</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ロイター日本トップ</span>
+                <span>05/27 18:41</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.reuters.com/opinion/NQMHA6UEWZOLXM3EIGS3FC7PDY-2026-05-27/" target="_blank" rel="noopener">日銀、25年度の当期剰余金は15％減　利上げで付利が膨らむ</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ロイター日本トップ</span>
+                <span>05/27 18:34</span>
+              </div>
               
             </div>
             
@@ -1087,24 +1117,13 @@
               </div>
               <div class="news-meta">
                 <span class="news-source">NHK経済</span>
-                <span>05/27 15:05</span>
+                <span>05/27 17:07</span>
               </div>
               
               <div class="news-summary">日銀の植田総裁は27日開かれた、金融関連のイベントのあいさつで、今の原油価格について第1次石油危機以降で5つ目のショックに直面しているとした上で、原油価格の動きに加え、賃金動向や為替などが物価をどの程…</div>
               
             </div>
             
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.reuters.com/markets/japan/CTII5QT3KJK5LAXQRQSMD3W6SM-2026-05-27/" target="_blank" rel="noopener">イタリア産業総連盟、景気てこ入れの抜本的経済改革を要求</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本ビジネス</span>
-                <span>05/27 14:24</span>
-              </div>
-              
-            </div>
-            
           </div>
         </div>
         
@@ -1112,111 +1131,75 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (3件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (2件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.reuters.com/markets/global-markets/IHCNMLQM5BN3FAATCV3PCTNOQQ-2026-05-27/" target="_blank" rel="noopener">米反トラスト当局、パラマウントのワーナー買収承認へ＝報道</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本ビジネス</span>
-                <span>05/27 14:45</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.reuters.com/markets/world-indices/A7B4FVTMCNKRPOQ5QWFUHHNQ4Y-2026-05-27/" target="_blank" rel="noopener">Ｓ＆Ｐ５００の年末目標8000に上げ、企業業績堅調＝ゴールドマン</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本ビジネス</span>
-                <span>05/27 14:28</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/301997" target="_blank" rel="noopener">「シャネル」売上高3兆円突破　次なる競争軸のサプライチェーンに1000億円規模の積極投資</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>05/27 13:02</span>
-              </div>
-              
-              <div class="news-summary">「シャネル（CHANEL）」を運営するシャネル・リミテッド（Chanel Limited）は5月19日、2025年12月期の通期決算を発表した。売上高は前年比3.0％増の192億6900万ドル（約3兆…</div>
-              
-            </div>
-            
-          </div>
-        </div>
-        
-      
-        
-        
-        <div class="news-group">
-          <div class="news-group-title">📌 その他 (5件)</div>
-          <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/e8ec12fd2c0c6c5b19cfb0582c1383ac52e4a4e4?source=rss" target="_blank" rel="noopener">食料品の消費税率1％議論と給付付き税額控除の制度設計：拙速な議論は避けるべき(NRI研究員の時事解説)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>05/27 15:39</span>
-              </div>
-              
-              <div class="news-summary">政府内では食料品の消費税率の2年間引き下げをより迅速に実施するため、税率を0％ではなく1％にする方向で議論が進んでいるとされる（コラム「浮上する食料品の消費税率1％案：原油価格高騰と消費税減税の家計へ…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/aa65112588145a6102268cc0e729ed27c7feb0a4?source=rss" target="_blank" rel="noopener">【ヤフコメで話題】「オイルショック再来への懸念」「原油高騰と国際情勢の複雑化」 - 世界経済と日本への影響を巡る議論(Yahoo!ニュース オリジナル THE PAGE)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>05/27 15:29</span>
-              </div>
-              
-              <div class="news-summary">オイルショックの再来や原油価格の高騰について、Yahoo!ニュースのコメント欄で話題になっています。
-コメントでは、原油備蓄の放出停止や中東情勢の緊迫化が続けば、原油価格が1バレル150ドルに達する可…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1550420" target="_blank" rel="noopener">バーンスタインが選ぶ中国半導体トップ3銘柄</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1550614" target="_blank" rel="noopener">ボロレCEO、アックマンによるユニバーサル・ミュージック買収提案の拒否を促す</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>05/27 14:44</span>
+                <span>05/27 18:58</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.reuters.com/world/taiwan/7MPTRLTR3BKY7LBSJ77DJJ2IHI-2026-05-27/" target="_blank" rel="noopener">エヌビディア、台湾に年1500億ドル投資へ　ＡＩ革命「震源地」</a>
+                <a href="https://jp.reuters.com/markets/japan/KA6SPBOXQFPGTCGEXI2IOB2Y6E-2026-05-27/" target="_blank" rel="noopener">ドイツ経済成長率見通し、今年0.5％に下方修正＝専門家評議会</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">ロイター日本ビジネス</span>
-                <span>05/27 14:06</span>
+                <span class="news-source">ロイター日本トップ</span>
+                <span>05/27 17:18</span>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        
+        <div class="news-group">
+          <div class="news-group-title">📌 その他 (3件)</div>
+          <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/949b8009af96af3f2e37cad4a6767e7da5665f36?source=rss" target="_blank" rel="noopener">【おひとりさまの貯蓄】50歳代の中央値は120万円。《20歳代～60歳代》年代別の平均・中央値とは？20歳・30歳代が「投資」を始める理由も(LIMO)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>05/27 20:20</span>
+              </div>
+              
+              <div class="news-summary">梅雨入りを目前に控えた5月終盤。シニア世代であれば6月支給分からの「年金増額」やご自宅に届く「年金額改定通知書」、現役世代であれば「住民税決定通知書」の到着や夏のボーナスなど、世代を問わず何かとお金に…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1550616" target="_blank" rel="noopener">アマゾン、英国に150億ポンド超を投資――400億ポンド目標に向け順調に進捗</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>05/27 19:00</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.reuters.com/markets/global-markets/FHZAQA4NT5LLNB2N2TGV7E2VXY-2026-05-27/" target="_blank" rel="noopener">エヌビディア製半導体、日本経由で中国へ密輸の疑い　台湾が捜査か</a>
+                <a href="https://zuuonline.com/archives/301687" target="_blank" rel="noopener">月1万円の投資に意味はある？　社会人1年目が知るべき“本当の価値”</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">ロイター日本ビジネス</span>
-                <span>05/27 14:04</span>
+                <span class="news-source">ZUU online</span>
+                <span>05/27 16:00</span>
               </div>
+              
+              <div class="news-summary">社会人1年目！月1万円だけでも投資をするべき？ 新生活の中で初めての職場や「社会人」という立場を経験している方も多いでしょう。初任給が振り込まれ、これから始まる長い人生における資産形成の第一歩を踏み出…</div>
               
             </div>
             
@@ -1230,34 +1213,34 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-05-27 15:42）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-05-27 20:32）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 64,999.41 pt (+0.01%)
+- TOPIX (1306連動ETF): 415.6 円 (-0.43%)
+- ドル円: 159.43 円 (+0.30%)
 - S&P 500: 7,519.12 (+0.61%)
 - NASDAQ: 26,656.18 (+1.19%)
 - ダウ: 50,461.68 (-0.23%)
-- ドル円: 159.35 円 (+0.25%)
 - 米10年債利回り: 4.493 % (+0.00%)
-- WTI原油: 92.01 USD (-2.00%)
-- 金: 4481.90 USD (-0.41%)
-- 日経225: 65,095.56 pt (+0.15%)
-- TOPIX (1306連動ETF): 415.5 円 (-0.46%)
+- WTI原油: 90.28 USD (-3.84%)
+- 金: 4474.00 USD (-0.59%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++92.14円  ファーストリテイリング(9983)  +3.42%  [小売]
-  ++45.00円  東京エレクトロン(8035)  +2.45%  [半導体製造装置]
-  ++41.25円  HOYA(7741)  +4.45%  [精密機器]
-  ++40.18円  アドバンテスト(6857)  +4.31%  [電機]
-  ++12.96円  信越化学(4063)  +5.17%  [化学]
+  ++82.50円  ファーストリテイリング(9983)  +3.06%  [小売]
+  ++43.75円  HOYA(7741)  +4.72%  [精密機器]
+  ++38.57円  東京エレクトロン(8035)  +2.10%  [半導体製造装置]
+  ++37.68円  アドバンテスト(6857)  +4.05%  [電機]
+  ++13.71円  信越化学(4063)  +5.47%  [化学]
 ▼ 日経225 (下落寄与TOP5)
-  -50.00円  キーエンス(6861)  -1.82%  [電機]
-  -20.14円  ソフトバンクG(9984)  -7.19%  [通信]
-  -9.89円  村田製作所(6981)  -3.43%  [電機]
-  -8.00円  ファナック(6954)  -2.67%  [電機]
-  -7.14円  川崎重工(7012)  -5.95%  [機械]
+  -47.86円  キーエンス(6861)  -1.74%  [電機]
+  -20.32円  ソフトバンクG(9984)  -7.26%  [通信]
+  -9.18円  村田製作所(6981)  -3.18%  [電機]
+  -8.75円  ファナック(6954)  -2.92%  [電機]
+  -6.57円  川崎重工(7012)  -5.47%  [機械]
 ▼ S&P500 (上昇寄与TOP5)
   ++24.46pt  Micron Technology(MU)  +19.29%  wt:1.70%  [Information Technology]
   ++11.51pt  Alphabet Inc. (Class A)(GOOGL)  +1.54%  wt:9.98%  [Communication Services]
@@ -1272,43 +1255,49 @@
   -1.85pt  Nvidia(NVDA)  -0.22%  wt:11.33%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 東証反発、終値3円高　米ハイテク株高の流れで買い優勢(共同通信) (05/27 15:37)
-  概要: 27日の東京株式市場の日経平均株価（225種）は反発した。前日の米ハイテク株高の流れを引き継ぎ、買い注文が優勢となった。上げ幅は一時1400円を超えた。
+- [Yahoo!ファイナンス] シスメックス（6869）の株式を3か月間保有した投資家の株価リターンは？高値・安値も確認する【2026年5月27日】(LIMO) (05/27 20:31)
+  概要: 東証プライムに上場する電気機器銘柄のシスメックス  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
 
-　終値は前日比3円32銭高の6万4999円
-- [Yahoo!ファイナンス] 東証終値3円高(共同通信) (05/27 15:34)
-  概要: 27日の東京株式市場の日経平均株価（225種）終値は、前日終値比3円32銭高の6万4999円41銭だった。
-- [Yahoo!ファイナンス] 香港、暗号資産アドバイザリー・資産運用サービスのライセンス制度に関するコンサル結果を公表(あたらしい経済) (05/27 15:19)
-  概要: 香港財経事務及庫務局（FSTB）と証券先物事務監察委員会（SFC）が、暗号資産（VA）アドバイザリーおよび資産運用サービス提供者を対象としたライセンス制度の立法提案に関するコンサルテーション・コンクル
-- [NHK経済] オートバックスセブンと中国の奇瑞自動車 日本に軽EV投入へ (05/27 15:12)
-  概要: 自動車用品大手の「オートバックスセブン」や中国の自動車大手「奇瑞自動車」などが組んで来年から日本市場にEVを投入すると発表しました。販売や整備の拠点は、オートバックスの店舗網を活用する計画で、海外メー
-- [Investing.com日本] Xiaomiの株価、メモリコスト上昇が第1四半期決算に打撃 (05/27 14:15)
-- [ZUU online] 独自の輸入ワインと六本木の施設が優位性──株式会社ソムリエはワイン流通でいかに存在感を発揮したのか (05/27 14:00)
-  概要: ワイン輸入、直販、飲食店運営などを展開する株式会社ソムリエは、ワインと食を融合させた独自のビジネスモデルを確立している。代表取締役の守川敏氏は、母体となった企業で「社長の同好会」と揶揄された事業を、2
-- [ZUU online] 「花火のチカラ」で感動を届ける──玩具と煙火の両輪で挑む若松屋の革新 (05/27 14:00)
-  概要: 1937年の創業以来、玩具花火と打ち上げ花火の両方を扱う日本唯一の企業として、長きにわたり日本の夏を彩ってきた株式会社若松屋。 代表取締役社長の佐野明正氏は、売り上げの大半が消失したコロナ禍という未曾
-- [ZUU online] 営業の属人化を打破する「型化」の極意。プロセルトラクションが導くB2B成長戦略 (05/27 14:00)
-  概要: B2B企業、特に大手企業向けのエンタープライズセールスにおいて、多くの組織が「営業の属人化」という課題に直面している。 株式会社プロセルトラクションの代表取締役、長谷川裕樹氏は、国内最大手の人材広告企
-- [NHK経済] 株価 初の6万6000円台に 取り引き時間中の最高値を更新 (05/27 12:05)
-  概要: 27日の東京株式市場、日経平均株価は一時、1400円以上上昇し、初めて6万6000円台をつけ、取り引き時間中の最高値を更新しました。
-- [NHK経済] NY株式市場 ナスダックとS＆P500が最高値 半導体が押し上げ (05/27 06:57)
-  概要: 26日のニューヨーク株式市場では半導体関連の銘柄を中心に買い注文が広がり、ハイテク株の比率が高いナスダックの株価指数などが最高値を更新しました。
-- [Yahoo!ファイナンス] 中国の希少金属タングステン対日輸出停滞(共同通信) (05/27 15:34)
-  概要: 【北京共同】レアメタル（希少金属）の一種タングステンの一部加工品の中国から日本への輸出が2月以降停滞していることが27日、分かった。タングステンは製品加工用の切削工具の刃先などに使われる。
-- [NHK経済] 日銀 植田総裁 “原油高騰に加え賃金・為替等の影響も注視” (05/27 15:05)
+あわせて、シスメックスの
+- [Yahoo!ファイナンス] アンリツ（6754）の3か月間の株価はどう動き、高値・安値はどこだった？【2026年5月27日】(LIMO) (05/27 20:31)
+  概要: 東証プライムに上場する電気機器銘柄のアンリツ  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、アンリツの直近の2
+- [Yahoo!ファイナンス] 三井海洋開発（6269）、3か月間の株価の変動幅と高値・安値は？【2026年5月27日】(LIMO) (05/27 20:25)
+  概要: 東証プライムに上場する機械銘柄の三井海洋開発  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、三井海洋開発の直近
+- [Yahoo!ファイナンス] 横浜ゴム（5101）の3か月間の株価はどう動き、高値・安値はどこだった？【2026年5月27日】(LIMO) (05/27 20:21)
+  概要: 東証プライムに上場するゴム製品銘柄の横浜ゴム  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、横浜ゴムの直近の2
+- [Yahoo!ファイナンス] 東海旅客鉄道（9022）、3か月間の株価の変動幅と高値・安値は？【2026年5月27日】(LIMO) (05/27 20:21)
+  概要: 東証プライムに上場する陸運業銘柄の東海旅客鉄道  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、東海旅客鉄道の直
+- [Yahoo!ファイナンス] 日本製鋼所（5631）の株価、3か月間でどう動いたか？【2026年5月27日】(LIMO) (05/27 20:15)
+  概要: 東証プライムに上場する機械銘柄の日本製鋼所  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、日本製鋼所の直近の2
+- [Investing.com日本] ムバダラ、グローバルファウンドリーズの株式を19億1000万ドルで売却 (05/27 20:14)
+- [ZUU online] 日々是相場［夕刊］――  2026年5月27日（水） (05/27 20:00)
+  概要: 日経平均 64,999.41円 △3.32円 為替 １ドル＝159.34円 売買高（東証プライム、以下同） 26億7,824万株 売買代金 11兆0643億16百万円 値上り銘柄数 721銘柄 値下り
+- [NHK経済] 株価 取り引き時間中の最高値更新も終値は小幅な値上がり (05/27 19:50)
+  概要: 27日の東京株式市場、日経平均株価は一時、1400円以上値上がりし、初めて6万6000円台をつけて取り引き時間中の最高値を更新しましたが、その後は売り注文が増え、小幅な値上がりで取り引きを終えました。
+- [Investing.com日本] ゴールドマン・サックス、好調な企業業績を背景にS&P 500の年末目標を引き上げ (05/27 19:32)
+- [NHK経済] 日銀決算 保有国債の含み損が45兆円規模に (05/27 19:58)
+  概要: 長期金利が上昇する中、日銀が大量に保有している国債はことし3月末時点で評価損が45兆円規模と、これまでで最大になっていることが分かりました。日銀は満期まで保有することが前提のため、時価での評価は財務に
+- [ロイター日本トップ] インフレに留意、金利変更時期の予測は時期尚早＝米ミネアポリス連銀総裁 (05/27 18:41)
+- [ロイター日本トップ] 日銀、25年度の当期剰余金は15％減　利上げで付利が膨らむ (05/27 18:34)
+- [NHK経済] 日銀 植田総裁 “原油高騰に加え賃金・為替等の影響も注視” (05/27 17:07)
   概要: 日銀の植田総裁は27日開かれた、金融関連のイベントのあいさつで、今の原油価格について第1次石油危機以降で5つ目のショックに直面しているとした上で、原油価格の動きに加え、賃金動向や為替などが物価をどの程
-- [ロイター日本ビジネス] イタリア産業総連盟、景気てこ入れの抜本的経済改革を要求 (05/27 14:24)
-- [ロイター日本ビジネス] 米反トラスト当局、パラマウントのワーナー買収承認へ＝報道 (05/27 14:45)
-- [ロイター日本ビジネス] Ｓ＆Ｐ５００の年末目標8000に上げ、企業業績堅調＝ゴールドマン (05/27 14:28)
-- [ZUU online] 「シャネル」売上高3兆円突破　次なる競争軸のサプライチェーンに1000億円規模の積極投資 (05/27 13:02)
-  概要: 「シャネル（CHANEL）」を運営するシャネル・リミテッド（Chanel Limited）は5月19日、2025年12月期の通期決算を発表した。売上高は前年比3.0％増の192億6900万ドル（約3兆
-- [Yahoo!ファイナンス] 食料品の消費税率1％議論と給付付き税額控除の制度設計：拙速な議論は避けるべき(NRI研究員の時事解説) (05/27 15:39)
-  概要: 政府内では食料品の消費税率の2年間引き下げをより迅速に実施するため、税率を0％ではなく1％にする方向で議論が進んでいるとされる（コラム「浮上する食料品の消費税率1％案：原油価格高騰と消費税減税の家計へ
-- [Yahoo!ファイナンス] 【ヤフコメで話題】「オイルショック再来への懸念」「原油高騰と国際情勢の複雑化」 - 世界経済と日本への影響を巡る議論(Yahoo!ニュース オリジナル THE PAGE) (05/27 15:29)
-  概要: オイルショックの再来や原油価格の高騰について、Yahoo!ニュースのコメント欄で話題になっています。
-コメントでは、原油備蓄の放出停止や中東情勢の緊迫化が続けば、原油価格が1バレル150ドルに達する可
-- [Investing.com日本] バーンスタインが選ぶ中国半導体トップ3銘柄 (05/27 14:44)
-- [ロイター日本ビジネス] エヌビディア、台湾に年1500億ドル投資へ　ＡＩ革命「震源地」 (05/27 14:06)
+- [Investing.com日本] ボロレCEO、アックマンによるユニバーサル・ミュージック買収提案の拒否を促す (05/27 18:58)
+- [ロイター日本トップ] ドイツ経済成長率見通し、今年0.5％に下方修正＝専門家評議会 (05/27 17:18)
+- [Yahoo!ファイナンス] 【おひとりさまの貯蓄】50歳代の中央値は120万円。《20歳代～60歳代》年代別の平均・中央値とは？20歳・30歳代が「投資」を始める理由も(LIMO) (05/27 20:20)
+  概要: 梅雨入りを目前に控えた5月終盤。シニア世代であれば6月支給分からの「年金増額」やご自宅に届く「年金額改定通知書」、現役世代であれば「住民税決定通知書」の到着や夏のボーナスなど、世代を問わず何かとお金に
+- [Investing.com日本] アマゾン、英国に150億ポンド超を投資――400億ポンド目標に向け順調に進捗 (05/27 19:00)
+- [ZUU online] 月1万円の投資に意味はある？　社会人1年目が知るべき“本当の価値” (05/27 16:00)
+  概要: 社会人1年目！月1万円だけでも投資をするべき？ 新生活の中で初めての職場や「社会人」という立場を経験している方も多いでしょう。初任給が振り込まれ、これから始まる長い人生における資産形成の第一歩を踏み出
 
 【依頼内容】
 上記の指数の動きについて、ニュースの内容と紐付けて解説してください。
@@ -1323,29 +1312,29 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 64,999.41 pt (+0.01%)
+- TOPIX (1306連動ETF): 415.6 円 (-0.43%)
+- ドル円: 159.43 円 (+0.30%)
 - S&P 500: 7,519.12 (+0.61%)
 - NASDAQ: 26,656.18 (+1.19%)
 - ダウ: 50,461.68 (-0.23%)
-- ドル円: 159.35 円 (+0.25%)
 - 米10年債利回り: 4.493 % (+0.00%)
-- WTI原油: 92.01 USD (-2.00%)
-- 金: 4481.90 USD (-0.41%)
-- 日経225: 65,095.56 pt (+0.15%)
-- TOPIX (1306連動ETF): 415.5 円 (-0.46%)
+- WTI原油: 90.28 USD (-3.84%)
+- 金: 4474.00 USD (-0.59%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++92.14円  ファーストリテイリング(9983)  +3.42%  [小売]
-  ++45.00円  東京エレクトロン(8035)  +2.45%  [半導体製造装置]
-  ++41.25円  HOYA(7741)  +4.45%  [精密機器]
-  ++40.18円  アドバンテスト(6857)  +4.31%  [電機]
-  ++12.96円  信越化学(4063)  +5.17%  [化学]
+  ++82.50円  ファーストリテイリング(9983)  +3.06%  [小売]
+  ++43.75円  HOYA(7741)  +4.72%  [精密機器]
+  ++38.57円  東京エレクトロン(8035)  +2.10%  [半導体製造装置]
+  ++37.68円  アドバンテスト(6857)  +4.05%  [電機]
+  ++13.71円  信越化学(4063)  +5.47%  [化学]
 ▼ 日経225 (下落寄与TOP5)
-  -50.00円  キーエンス(6861)  -1.82%  [電機]
-  -20.14円  ソフトバンクG(9984)  -7.19%  [通信]
-  -9.89円  村田製作所(6981)  -3.43%  [電機]
-  -8.00円  ファナック(6954)  -2.67%  [電機]
-  -7.14円  川崎重工(7012)  -5.95%  [機械]
+  -47.86円  キーエンス(6861)  -1.74%  [電機]
+  -20.32円  ソフトバンクG(9984)  -7.26%  [通信]
+  -9.18円  村田製作所(6981)  -3.18%  [電機]
+  -8.75円  ファナック(6954)  -2.92%  [電機]
+  -6.57円  川崎重工(7012)  -5.47%  [機械]
 ▼ S&P500 (上昇寄与TOP5)
   ++24.46pt  Micron Technology(MU)  +19.29%  wt:1.70%  [Information Technology]
   ++11.51pt  Alphabet Inc. (Class A)(GOOGL)  +1.54%  wt:9.98%  [Communication Services]
@@ -1360,43 +1349,49 @@
   -1.85pt  Nvidia(NVDA)  -0.22%  wt:11.33%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 東証反発、終値3円高　米ハイテク株高の流れで買い優勢(共同通信) (05/27 15:37)
-  概要: 27日の東京株式市場の日経平均株価（225種）は反発した。前日の米ハイテク株高の流れを引き継ぎ、買い注文が優勢となった。上げ幅は一時1400円を超えた。
+- [Yahoo!ファイナンス] シスメックス（6869）の株式を3か月間保有した投資家の株価リターンは？高値・安値も確認する【2026年5月27日】(LIMO) (05/27 20:31)
+  概要: 東証プライムに上場する電気機器銘柄のシスメックス  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
 
-　終値は前日比3円32銭高の6万4999円
-- [Yahoo!ファイナンス] 東証終値3円高(共同通信) (05/27 15:34)
-  概要: 27日の東京株式市場の日経平均株価（225種）終値は、前日終値比3円32銭高の6万4999円41銭だった。
-- [Yahoo!ファイナンス] 香港、暗号資産アドバイザリー・資産運用サービスのライセンス制度に関するコンサル結果を公表(あたらしい経済) (05/27 15:19)
-  概要: 香港財経事務及庫務局（FSTB）と証券先物事務監察委員会（SFC）が、暗号資産（VA）アドバイザリーおよび資産運用サービス提供者を対象としたライセンス制度の立法提案に関するコンサルテーション・コンクル
-- [NHK経済] オートバックスセブンと中国の奇瑞自動車 日本に軽EV投入へ (05/27 15:12)
-  概要: 自動車用品大手の「オートバックスセブン」や中国の自動車大手「奇瑞自動車」などが組んで来年から日本市場にEVを投入すると発表しました。販売や整備の拠点は、オートバックスの店舗網を活用する計画で、海外メー
-- [Investing.com日本] Xiaomiの株価、メモリコスト上昇が第1四半期決算に打撃 (05/27 14:15)
-- [ZUU online] 独自の輸入ワインと六本木の施設が優位性──株式会社ソムリエはワイン流通でいかに存在感を発揮したのか (05/27 14:00)
-  概要: ワイン輸入、直販、飲食店運営などを展開する株式会社ソムリエは、ワインと食を融合させた独自のビジネスモデルを確立している。代表取締役の守川敏氏は、母体となった企業で「社長の同好会」と揶揄された事業を、2
-- [ZUU online] 「花火のチカラ」で感動を届ける──玩具と煙火の両輪で挑む若松屋の革新 (05/27 14:00)
-  概要: 1937年の創業以来、玩具花火と打ち上げ花火の両方を扱う日本唯一の企業として、長きにわたり日本の夏を彩ってきた株式会社若松屋。 代表取締役社長の佐野明正氏は、売り上げの大半が消失したコロナ禍という未曾
-- [ZUU online] 営業の属人化を打破する「型化」の極意。プロセルトラクションが導くB2B成長戦略 (05/27 14:00)
-  概要: B2B企業、特に大手企業向けのエンタープライズセールスにおいて、多くの組織が「営業の属人化」という課題に直面している。 株式会社プロセルトラクションの代表取締役、長谷川裕樹氏は、国内最大手の人材広告企
-- [NHK経済] 株価 初の6万6000円台に 取り引き時間中の最高値を更新 (05/27 12:05)
-  概要: 27日の東京株式市場、日経平均株価は一時、1400円以上上昇し、初めて6万6000円台をつけ、取り引き時間中の最高値を更新しました。
-- [NHK経済] NY株式市場 ナスダックとS＆P500が最高値 半導体が押し上げ (05/27 06:57)
-  概要: 26日のニューヨーク株式市場では半導体関連の銘柄を中心に買い注文が広がり、ハイテク株の比率が高いナスダックの株価指数などが最高値を更新しました。
-- [Yahoo!ファイナンス] 中国の希少金属タングステン対日輸出停滞(共同通信) (05/27 15:34)
-  概要: 【北京共同】レアメタル（希少金属）の一種タングステンの一部加工品の中国から日本への輸出が2月以降停滞していることが27日、分かった。タングステンは製品加工用の切削工具の刃先などに使われる。
-- [NHK経済] 日銀 植田総裁 “原油高騰に加え賃金・為替等の影響も注視” (05/27 15:05)
+あわせて、シスメックスの
+- [Yahoo!ファイナンス] アンリツ（6754）の3か月間の株価はどう動き、高値・安値はどこだった？【2026年5月27日】(LIMO) (05/27 20:31)
+  概要: 東証プライムに上場する電気機器銘柄のアンリツ  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、アンリツの直近の2
+- [Yahoo!ファイナンス] 三井海洋開発（6269）、3か月間の株価の変動幅と高値・安値は？【2026年5月27日】(LIMO) (05/27 20:25)
+  概要: 東証プライムに上場する機械銘柄の三井海洋開発  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、三井海洋開発の直近
+- [Yahoo!ファイナンス] 横浜ゴム（5101）の3か月間の株価はどう動き、高値・安値はどこだった？【2026年5月27日】(LIMO) (05/27 20:21)
+  概要: 東証プライムに上場するゴム製品銘柄の横浜ゴム  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、横浜ゴムの直近の2
+- [Yahoo!ファイナンス] 東海旅客鉄道（9022）、3か月間の株価の変動幅と高値・安値は？【2026年5月27日】(LIMO) (05/27 20:21)
+  概要: 東証プライムに上場する陸運業銘柄の東海旅客鉄道  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、東海旅客鉄道の直
+- [Yahoo!ファイナンス] 日本製鋼所（5631）の株価、3か月間でどう動いたか？【2026年5月27日】(LIMO) (05/27 20:15)
+  概要: 東証プライムに上場する機械銘柄の日本製鋼所  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、日本製鋼所の直近の2
+- [Investing.com日本] ムバダラ、グローバルファウンドリーズの株式を19億1000万ドルで売却 (05/27 20:14)
+- [ZUU online] 日々是相場［夕刊］――  2026年5月27日（水） (05/27 20:00)
+  概要: 日経平均 64,999.41円 △3.32円 為替 １ドル＝159.34円 売買高（東証プライム、以下同） 26億7,824万株 売買代金 11兆0643億16百万円 値上り銘柄数 721銘柄 値下り
+- [NHK経済] 株価 取り引き時間中の最高値更新も終値は小幅な値上がり (05/27 19:50)
+  概要: 27日の東京株式市場、日経平均株価は一時、1400円以上値上がりし、初めて6万6000円台をつけて取り引き時間中の最高値を更新しましたが、その後は売り注文が増え、小幅な値上がりで取り引きを終えました。
+- [Investing.com日本] ゴールドマン・サックス、好調な企業業績を背景にS&P 500の年末目標を引き上げ (05/27 19:32)
+- [NHK経済] 日銀決算 保有国債の含み損が45兆円規模に (05/27 19:58)
+  概要: 長期金利が上昇する中、日銀が大量に保有している国債はことし3月末時点で評価損が45兆円規模と、これまでで最大になっていることが分かりました。日銀は満期まで保有することが前提のため、時価での評価は財務に
+- [ロイター日本トップ] インフレに留意、金利変更時期の予測は時期尚早＝米ミネアポリス連銀総裁 (05/27 18:41)
+- [ロイター日本トップ] 日銀、25年度の当期剰余金は15％減　利上げで付利が膨らむ (05/27 18:34)
+- [NHK経済] 日銀 植田総裁 “原油高騰に加え賃金・為替等の影響も注視” (05/27 17:07)
   概要: 日銀の植田総裁は27日開かれた、金融関連のイベントのあいさつで、今の原油価格について第1次石油危機以降で5つ目のショックに直面しているとした上で、原油価格の動きに加え、賃金動向や為替などが物価をどの程
-- [ロイター日本ビジネス] イタリア産業総連盟、景気てこ入れの抜本的経済改革を要求 (05/27 14:24)
-- [ロイター日本ビジネス] 米反トラスト当局、パラマウントのワーナー買収承認へ＝報道 (05/27 14:45)
-- [ロイター日本ビジネス] Ｓ＆Ｐ５００の年末目標8000に上げ、企業業績堅調＝ゴールドマン (05/27 14:28)
-- [ZUU online] 「シャネル」売上高3兆円突破　次なる競争軸のサプライチェーンに1000億円規模の積極投資 (05/27 13:02)
-  概要: 「シャネル（CHANEL）」を運営するシャネル・リミテッド（Chanel Limited）は5月19日、2025年12月期の通期決算を発表した。売上高は前年比3.0％増の192億6900万ドル（約3兆
-- [Yahoo!ファイナンス] 食料品の消費税率1％議論と給付付き税額控除の制度設計：拙速な議論は避けるべき(NRI研究員の時事解説) (05/27 15:39)
-  概要: 政府内では食料品の消費税率の2年間引き下げをより迅速に実施するため、税率を0％ではなく1％にする方向で議論が進んでいるとされる（コラム「浮上する食料品の消費税率1％案：原油価格高騰と消費税減税の家計へ
-- [Yahoo!ファイナンス] 【ヤフコメで話題】「オイルショック再来への懸念」「原油高騰と国際情勢の複雑化」 - 世界経済と日本への影響を巡る議論(Yahoo!ニュース オリジナル THE PAGE) (05/27 15:29)
-  概要: オイルショックの再来や原油価格の高騰について、Yahoo!ニュースのコメント欄で話題になっています。
-コメントでは、原油備蓄の放出停止や中東情勢の緊迫化が続けば、原油価格が1バレル150ドルに達する可
-- [Investing.com日本] バーンスタインが選ぶ中国半導体トップ3銘柄 (05/27 14:44)
-- [ロイター日本ビジネス] エヌビディア、台湾に年1500億ドル投資へ　ＡＩ革命「震源地」 (05/27 14:06)
+- [Investing.com日本] ボロレCEO、アックマンによるユニバーサル・ミュージック買収提案の拒否を促す (05/27 18:58)
+- [ロイター日本トップ] ドイツ経済成長率見通し、今年0.5％に下方修正＝専門家評議会 (05/27 17:18)
+- [Yahoo!ファイナンス] 【おひとりさまの貯蓄】50歳代の中央値は120万円。《20歳代～60歳代》年代別の平均・中央値とは？20歳・30歳代が「投資」を始める理由も(LIMO) (05/27 20:20)
+  概要: 梅雨入りを目前に控えた5月終盤。シニア世代であれば6月支給分からの「年金増額」やご自宅に届く「年金額改定通知書」、現役世代であれば「住民税決定通知書」の到着や夏のボーナスなど、世代を問わず何かとお金に
+- [Investing.com日本] アマゾン、英国に150億ポンド超を投資――400億ポンド目標に向け順調に進捗 (05/27 19:00)
+- [ZUU online] 月1万円の投資に意味はある？　社会人1年目が知るべき“本当の価値” (05/27 16:00)
+  概要: 社会人1年目！月1万円だけでも投資をするべき？ 新生活の中で初めての職場や「社会人」という立場を経験している方も多いでしょう。初任給が振り込まれ、これから始まる長い人生における資産形成の第一歩を踏み出
 
 【依頼内容】
 - 最も動きが大きかった指標トップ3を特定
@@ -1405,29 +1400,29 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 64,999.41 pt (+0.01%)
+- TOPIX (1306連動ETF): 415.6 円 (-0.43%)
+- ドル円: 159.43 円 (+0.30%)
 - S&P 500: 7,519.12 (+0.61%)
 - NASDAQ: 26,656.18 (+1.19%)
 - ダウ: 50,461.68 (-0.23%)
-- ドル円: 159.35 円 (+0.25%)
 - 米10年債利回り: 4.493 % (+0.00%)
-- WTI原油: 92.01 USD (-2.00%)
-- 金: 4481.90 USD (-0.41%)
-- 日経225: 65,095.56 pt (+0.15%)
-- TOPIX (1306連動ETF): 415.5 円 (-0.46%)
+- WTI原油: 90.28 USD (-3.84%)
+- 金: 4474.00 USD (-0.59%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++92.14円  ファーストリテイリング(9983)  +3.42%  [小売]
-  ++45.00円  東京エレクトロン(8035)  +2.45%  [半導体製造装置]
-  ++41.25円  HOYA(7741)  +4.45%  [精密機器]
-  ++40.18円  アドバンテスト(6857)  +4.31%  [電機]
-  ++12.96円  信越化学(4063)  +5.17%  [化学]
+  ++82.50円  ファーストリテイリング(9983)  +3.06%  [小売]
+  ++43.75円  HOYA(7741)  +4.72%  [精密機器]
+  ++38.57円  東京エレクトロン(8035)  +2.10%  [半導体製造装置]
+  ++37.68円  アドバンテスト(6857)  +4.05%  [電機]
+  ++13.71円  信越化学(4063)  +5.47%  [化学]
 ▼ 日経225 (下落寄与TOP5)
-  -50.00円  キーエンス(6861)  -1.82%  [電機]
-  -20.14円  ソフトバンクG(9984)  -7.19%  [通信]
-  -9.89円  村田製作所(6981)  -3.43%  [電機]
-  -8.00円  ファナック(6954)  -2.67%  [電機]
-  -7.14円  川崎重工(7012)  -5.95%  [機械]
+  -47.86円  キーエンス(6861)  -1.74%  [電機]
+  -20.32円  ソフトバンクG(9984)  -7.26%  [通信]
+  -9.18円  村田製作所(6981)  -3.18%  [電機]
+  -8.75円  ファナック(6954)  -2.92%  [電機]
+  -6.57円  川崎重工(7012)  -5.47%  [機械]
 ▼ S&P500 (上昇寄与TOP5)
   ++24.46pt  Micron Technology(MU)  +19.29%  wt:1.70%  [Information Technology]
   ++11.51pt  Alphabet Inc. (Class A)(GOOGL)  +1.54%  wt:9.98%  [Communication Services]
@@ -1442,43 +1437,49 @@
   -1.85pt  Nvidia(NVDA)  -0.22%  wt:11.33%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 東証反発、終値3円高　米ハイテク株高の流れで買い優勢(共同通信) (05/27 15:37)
-  概要: 27日の東京株式市場の日経平均株価（225種）は反発した。前日の米ハイテク株高の流れを引き継ぎ、買い注文が優勢となった。上げ幅は一時1400円を超えた。
+- [Yahoo!ファイナンス] シスメックス（6869）の株式を3か月間保有した投資家の株価リターンは？高値・安値も確認する【2026年5月27日】(LIMO) (05/27 20:31)
+  概要: 東証プライムに上場する電気機器銘柄のシスメックス  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
 
-　終値は前日比3円32銭高の6万4999円
-- [Yahoo!ファイナンス] 東証終値3円高(共同通信) (05/27 15:34)
-  概要: 27日の東京株式市場の日経平均株価（225種）終値は、前日終値比3円32銭高の6万4999円41銭だった。
-- [Yahoo!ファイナンス] 香港、暗号資産アドバイザリー・資産運用サービスのライセンス制度に関するコンサル結果を公表(あたらしい経済) (05/27 15:19)
-  概要: 香港財経事務及庫務局（FSTB）と証券先物事務監察委員会（SFC）が、暗号資産（VA）アドバイザリーおよび資産運用サービス提供者を対象としたライセンス制度の立法提案に関するコンサルテーション・コンクル
-- [NHK経済] オートバックスセブンと中国の奇瑞自動車 日本に軽EV投入へ (05/27 15:12)
-  概要: 自動車用品大手の「オートバックスセブン」や中国の自動車大手「奇瑞自動車」などが組んで来年から日本市場にEVを投入すると発表しました。販売や整備の拠点は、オートバックスの店舗網を活用する計画で、海外メー
-- [Investing.com日本] Xiaomiの株価、メモリコスト上昇が第1四半期決算に打撃 (05/27 14:15)
-- [ZUU online] 独自の輸入ワインと六本木の施設が優位性──株式会社ソムリエはワイン流通でいかに存在感を発揮したのか (05/27 14:00)
-  概要: ワイン輸入、直販、飲食店運営などを展開する株式会社ソムリエは、ワインと食を融合させた独自のビジネスモデルを確立している。代表取締役の守川敏氏は、母体となった企業で「社長の同好会」と揶揄された事業を、2
-- [ZUU online] 「花火のチカラ」で感動を届ける──玩具と煙火の両輪で挑む若松屋の革新 (05/27 14:00)
-  概要: 1937年の創業以来、玩具花火と打ち上げ花火の両方を扱う日本唯一の企業として、長きにわたり日本の夏を彩ってきた株式会社若松屋。 代表取締役社長の佐野明正氏は、売り上げの大半が消失したコロナ禍という未曾
-- [ZUU online] 営業の属人化を打破する「型化」の極意。プロセルトラクションが導くB2B成長戦略 (05/27 14:00)
-  概要: B2B企業、特に大手企業向けのエンタープライズセールスにおいて、多くの組織が「営業の属人化」という課題に直面している。 株式会社プロセルトラクションの代表取締役、長谷川裕樹氏は、国内最大手の人材広告企
-- [NHK経済] 株価 初の6万6000円台に 取り引き時間中の最高値を更新 (05/27 12:05)
-  概要: 27日の東京株式市場、日経平均株価は一時、1400円以上上昇し、初めて6万6000円台をつけ、取り引き時間中の最高値を更新しました。
-- [NHK経済] NY株式市場 ナスダックとS＆P500が最高値 半導体が押し上げ (05/27 06:57)
-  概要: 26日のニューヨーク株式市場では半導体関連の銘柄を中心に買い注文が広がり、ハイテク株の比率が高いナスダックの株価指数などが最高値を更新しました。
-- [Yahoo!ファイナンス] 中国の希少金属タングステン対日輸出停滞(共同通信) (05/27 15:34)
-  概要: 【北京共同】レアメタル（希少金属）の一種タングステンの一部加工品の中国から日本への輸出が2月以降停滞していることが27日、分かった。タングステンは製品加工用の切削工具の刃先などに使われる。
-- [NHK経済] 日銀 植田総裁 “原油高騰に加え賃金・為替等の影響も注視” (05/27 15:05)
+あわせて、シスメックスの
+- [Yahoo!ファイナンス] アンリツ（6754）の3か月間の株価はどう動き、高値・安値はどこだった？【2026年5月27日】(LIMO) (05/27 20:31)
+  概要: 東証プライムに上場する電気機器銘柄のアンリツ  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、アンリツの直近の2
+- [Yahoo!ファイナンス] 三井海洋開発（6269）、3か月間の株価の変動幅と高値・安値は？【2026年5月27日】(LIMO) (05/27 20:25)
+  概要: 東証プライムに上場する機械銘柄の三井海洋開発  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、三井海洋開発の直近
+- [Yahoo!ファイナンス] 横浜ゴム（5101）の3か月間の株価はどう動き、高値・安値はどこだった？【2026年5月27日】(LIMO) (05/27 20:21)
+  概要: 東証プライムに上場するゴム製品銘柄の横浜ゴム  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、横浜ゴムの直近の2
+- [Yahoo!ファイナンス] 東海旅客鉄道（9022）、3か月間の株価の変動幅と高値・安値は？【2026年5月27日】(LIMO) (05/27 20:21)
+  概要: 東証プライムに上場する陸運業銘柄の東海旅客鉄道  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、東海旅客鉄道の直
+- [Yahoo!ファイナンス] 日本製鋼所（5631）の株価、3か月間でどう動いたか？【2026年5月27日】(LIMO) (05/27 20:15)
+  概要: 東証プライムに上場する機械銘柄の日本製鋼所  について、2026年2月27日から2026年5月27日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、日本製鋼所の直近の2
+- [Investing.com日本] ムバダラ、グローバルファウンドリーズの株式を19億1000万ドルで売却 (05/27 20:14)
+- [ZUU online] 日々是相場［夕刊］――  2026年5月27日（水） (05/27 20:00)
+  概要: 日経平均 64,999.41円 △3.32円 為替 １ドル＝159.34円 売買高（東証プライム、以下同） 26億7,824万株 売買代金 11兆0643億16百万円 値上り銘柄数 721銘柄 値下り
+- [NHK経済] 株価 取り引き時間中の最高値更新も終値は小幅な値上がり (05/27 19:50)
+  概要: 27日の東京株式市場、日経平均株価は一時、1400円以上値上がりし、初めて6万6000円台をつけて取り引き時間中の最高値を更新しましたが、その後は売り注文が増え、小幅な値上がりで取り引きを終えました。
+- [Investing.com日本] ゴールドマン・サックス、好調な企業業績を背景にS&P 500の年末目標を引き上げ (05/27 19:32)
+- [NHK経済] 日銀決算 保有国債の含み損が45兆円規模に (05/27 19:58)
+  概要: 長期金利が上昇する中、日銀が大量に保有している国債はことし3月末時点で評価損が45兆円規模と、これまでで最大になっていることが分かりました。日銀は満期まで保有することが前提のため、時価での評価は財務に
+- [ロイター日本トップ] インフレに留意、金利変更時期の予測は時期尚早＝米ミネアポリス連銀総裁 (05/27 18:41)
+- [ロイター日本トップ] 日銀、25年度の当期剰余金は15％減　利上げで付利が膨らむ (05/27 18:34)
+- [NHK経済] 日銀 植田総裁 “原油高騰に加え賃金・為替等の影響も注視” (05/27 17:07)
   概要: 日銀の植田総裁は27日開かれた、金融関連のイベントのあいさつで、今の原油価格について第1次石油危機以降で5つ目のショックに直面しているとした上で、原油価格の動きに加え、賃金動向や為替などが物価をどの程
-- [ロイター日本ビジネス] イタリア産業総連盟、景気てこ入れの抜本的経済改革を要求 (05/27 14:24)
-- [ロイター日本ビジネス] 米反トラスト当局、パラマウントのワーナー買収承認へ＝報道 (05/27 14:45)
-- [ロイター日本ビジネス] Ｓ＆Ｐ５００の年末目標8000に上げ、企業業績堅調＝ゴールドマン (05/27 14:28)
-- [ZUU online] 「シャネル」売上高3兆円突破　次なる競争軸のサプライチェーンに1000億円規模の積極投資 (05/27 13:02)
-  概要: 「シャネル（CHANEL）」を運営するシャネル・リミテッド（Chanel Limited）は5月19日、2025年12月期の通期決算を発表した。売上高は前年比3.0％増の192億6900万ドル（約3兆
-- [Yahoo!ファイナンス] 食料品の消費税率1％議論と給付付き税額控除の制度設計：拙速な議論は避けるべき(NRI研究員の時事解説) (05/27 15:39)
-  概要: 政府内では食料品の消費税率の2年間引き下げをより迅速に実施するため、税率を0％ではなく1％にする方向で議論が進んでいるとされる（コラム「浮上する食料品の消費税率1％案：原油価格高騰と消費税減税の家計へ
-- [Yahoo!ファイナンス] 【ヤフコメで話題】「オイルショック再来への懸念」「原油高騰と国際情勢の複雑化」 - 世界経済と日本への影響を巡る議論(Yahoo!ニュース オリジナル THE PAGE) (05/27 15:29)
-  概要: オイルショックの再来や原油価格の高騰について、Yahoo!ニュースのコメント欄で話題になっています。
-コメントでは、原油備蓄の放出停止や中東情勢の緊迫化が続けば、原油価格が1バレル150ドルに達する可
-- [Investing.com日本] バーンスタインが選ぶ中国半導体トップ3銘柄 (05/27 14:44)
-- [ロイター日本ビジネス] エヌビディア、台湾に年1500億ドル投資へ　ＡＩ革命「震源地」 (05/27 14:06)
+- [Investing.com日本] ボロレCEO、アックマンによるユニバーサル・ミュージック買収提案の拒否を促す (05/27 18:58)
+- [ロイター日本トップ] ドイツ経済成長率見通し、今年0.5％に下方修正＝専門家評議会 (05/27 17:18)
+- [Yahoo!ファイナンス] 【おひとりさまの貯蓄】50歳代の中央値は120万円。《20歳代～60歳代》年代別の平均・中央値とは？20歳・30歳代が「投資」を始める理由も(LIMO) (05/27 20:20)
+  概要: 梅雨入りを目前に控えた5月終盤。シニア世代であれば6月支給分からの「年金増額」やご自宅に届く「年金額改定通知書」、現役世代であれば「住民税決定通知書」の到着や夏のボーナスなど、世代を問わず何かとお金に
+- [Investing.com日本] アマゾン、英国に150億ポンド超を投資――400億ポンド目標に向け順調に進捗 (05/27 19:00)
+- [ZUU online] 月1万円の投資に意味はある？　社会人1年目が知るべき“本当の価値” (05/27 16:00)
+  概要: 社会人1年目！月1万円だけでも投資をするべき？ 新生活の中で初めての職場や「社会人」という立場を経験している方も多いでしょう。初任給が振り込まれ、これから始まる長い人生における資産形成の第一歩を踏み出
 
 【依頼内容】
 - 短期的なリスク要因（今後1週間以内）
