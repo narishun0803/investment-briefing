@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年06月04日 15:59 JST</span>
+    <span class="updated">更新: 2026年06月04日 19:57 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">67,470.69 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -931.45&nbsp;&nbsp;-1.36%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">418.6 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -5.20&nbsp;&nbsp;-1.23%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">159.87 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -0.10&nbsp;&nbsp;-0.06%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">50,687.07 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">159.89 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -0.08&nbsp;&nbsp;-0.05%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.491 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">95.26 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">95.04 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -0.76&nbsp;&nbsp;-0.79%
+            -0.98&nbsp;&nbsp;-1.02%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4494.00 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4499.80 <span class="tile-unit">USD</span></div>
           <div class="tile-change up">
-            +57.30&nbsp;&nbsp;+1.29%
+            +63.10&nbsp;&nbsp;+1.42%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">67,470.69 <span class="tile-unit">pt</span></div>
-          <div class="tile-change down">
-            -931.45&nbsp;&nbsp;-1.36%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">418.6 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -5.20&nbsp;&nbsp;-1.23%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -915,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (16件)</div>
+    <div class="card-title">📰 最新ニュース (17件)</div>
     
     
     
@@ -930,40 +930,108 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1560653" target="_blank" rel="noopener">新興市場銘柄ダイジェスト:セイワHDが大幅反落、アクセルスペースが続落</a>
+                <a href="https://news.yahoo.co.jp/articles/ccc2ec5a1577e88e80c358c319f7d7cca34bf5de?source=rss" target="_blank" rel="noopener">爆上げの「SOX指数連動ファンド」VS「金ファンド」、いま選ぶならどちらが正解？ 徹底比較して分かった「意外な結論」(Finasee)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>06/04 19:50</span>
+              </div>
+              
+              <div class="news-summary">NISAの普及もあり、話題にのぼることが多くなった投資信託。でも、一体どうやって選べばよいのでしょうか？　投信ライターの德永浩氏が、ちまたで注目されている2本の投資信託を比較・分析してそれぞれの特徴や…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1560984" target="_blank" rel="noopener">BofAとバークレイズ、EUV生産能力見通しを受けエーエスエムエル・ホールディングの目標株価を引き上げ</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>06/04 15:45</span>
+                <span>06/04 19:35</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/fa6fd2bff488b613e80dfd35b55a2188dbfe301a?source=rss" target="_blank" rel="noopener">東証反落、終値931円安　最高値反動、利益確定売り膨らむ(共同通信)</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1560976" target="_blank" rel="noopener">S&P 500の調整は買い場――ヤルデニ・リサーチが見解</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/04 15:38</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>06/04 19:32</span>
               </div>
-              
-              <div class="news-summary">4日の東京株式市場は、日経平均株価（225種）が反落した。前日に終値の最高値を更新した反動で、ハイテク株を中心に利益を確定する売りが膨らんだ。中東情勢の悪化も投資家心理を冷やした。。
-
-　終値は前日</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/d19beb45c31e9bf34910c6bec066fd808501a28f?source=rss" target="_blank" rel="noopener">東証終値931円安(共同通信)</a>
+                <a href="https://zuuonline.com/archives/302092" target="_blank" rel="noopener">米ドル／円 ―― 円買い介入への警戒感を滲ませつつ当局の姿勢を試すかのように緩やかに続伸すると予想</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/04 15:34</span>
+                <span class="news-source">ZUU online</span>
+                <span>06/04 19:00</span>
               </div>
               
-              <div class="news-summary">4日の東京株式市場の日経平均株価（225種）終値は、前日比931円44銭安の6万7470円69銭だった。</div>
+              <div class="news-summary">この記事は2026年6月4日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月4日（木）の午前10時時点に外為どっ…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260604/k10015141331000.html" target="_blank" rel="noopener">円相場 小幅な値動き</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>06/04 18:24</span>
+              </div>
+              
+              <div class="news-summary">4日の東京外国為替市場、円相場は小幅な値動きとなりました。</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.reuters.com/markets/japan/YDNSW2XD7NMSRCMUZUBMD3UL7A-2026-06-04/" target="_blank" rel="noopener">ゴールドマン、新興国株指数の目標値引き上げ　ＡＩ主導の成長で</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ロイター日本ビジネス</span>
+                <span>06/04 17:57</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260604/k10015140361000.html" target="_blank" rel="noopener">日経平均株価 900円以上値下がり</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>06/04 16:36</span>
+              </div>
+              
+              <div class="news-summary">4日の東京株式市場、イラン情勢の先行きへの懸念を背景に3日のニューヨーク市場で主要な株価指数が下落したことなどを受けて、日経平均株価は値下がりしました。</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.reuters.com/markets/japan/76QNMVEOYNNJNDIWXPHSMBJTO4-2026-06-04/" target="_blank" rel="noopener">アジア株式市場サマリー：引け（4日）</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ロイター日本ビジネス</span>
+                <span>06/04 16:33</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.reuters.com/markets/japan/5CGAU5CSYJPAHBWUEFCXGZT74I-2026-06-04/" target="_blank" rel="noopener">日経平均は反落、利益確定売り優勢　ＳＢＧの下げが重し</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ロイター日本ビジネス</span>
+                <span>06/04 16:03</span>
+              </div>
               
             </div>
             
@@ -980,80 +1048,6 @@
               
             </div>
             
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260604/k10015140421000.html" target="_blank" rel="noopener">コメ価格の見通し 在庫増加で下落の見方強まる</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>06/04 14:35</span>
-              </div>
-              
-              <div class="news-summary">コメ価格の先行きについて、業界では値下がりするという見方が強まっています。向こう3か月のコメ価格の見通しを示す先月の指数は、4か月ぶりに低下し、調査した団体ではコメの在庫水準の高さが背景にあるとみてい…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1560617" target="_blank" rel="noopener">フィックスターズ---大幅反発、単価改善や生産性向上反映し国内証券が目標株価引き上げ</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>06/04 14:00</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260604/k10015140511000.html" target="_blank" rel="noopener">米スペースX 上場で12兆円調達へ</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>06/04 13:35</span>
-              </div>
-              
-              <div class="news-summary">実業家のイーロン・マスク氏が率いる「スペースX」は、株式の新規上場に向けてアメリカの証券取引委員会に書類を提出し、日本円でおよそ12兆円を調達する計画を明らかにしました。過去最大規模の上場となる見通し…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260604/k10015140361000.html" target="_blank" rel="noopener">株価 一時 1400円以上値下がり ニューヨーク市場での下落受け</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>06/04 12:16</span>
-              </div>
-              
-              <div class="news-summary">4日の東京株式市場、イラン情勢の先行きへの懸念を背景に3日のニューヨーク市場で主要な株価指数が下落した流れを受けて、日経平均株価は一時、1400円以上値下がりしています。</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.reuters.com/markets/japan/OQ7U5ZTZRZPBFJZH55RP75C5G4-2026-06-04/" target="_blank" rel="noopener">午前の日経平均は反落、短期過熱警戒で利益確定　ソフトバンクＧがマイナス寄与</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本ビジネス</span>
-                <span>06/04 12:11</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260604/k10015140411000.html" target="_blank" rel="noopener">きょうのおはBiz 6月4日(木) 日経平均株価上昇 “NT倍率”とは</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>06/04 11:48</span>
-              </div>
-              
-              <div class="news-summary">NHKニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはBiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けし…</div>
-              
-            </div>
-            
           </div>
         </div>
         
@@ -1066,36 +1060,34 @@
             
             <div class="news-item">
               <div class="news-title">
+                <a href="https://jp.reuters.com/economy/bank-of-japan/HWYSBGIXDNKVBD5XHPTATEFODI-2026-06-04/" target="_blank" rel="noopener">日銀、次回会合で利上げ検討へ　中東リスク見極め最終判断</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ロイター日本ビジネス</span>
+                <span>06/04 15:54</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.reuters.com/opinion/GENBYV4JRJKNZAYX5THYUXGUCI-2026-06-04/" target="_blank" rel="noopener">午後3時のドルは159円後半で小動き、日銀追加利上げの観測報道で一時軟化</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ロイター日本ビジネス</span>
+                <span>06/04 15:50</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
                 <a href="https://jp.reuters.com/markets/commodities/M6EOXYORJJL6RJV5PHK6GIREZA-2026-06-04/" target="_blank" rel="noopener">ＥＵの対米鉄鋼輸出、関税引き上げ以来34％減少＝業界団体</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">ロイター日本ビジネス</span>
                 <span>06/04 14:15</span>
               </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.reuters.com/world/japan/BEQ5ROLPBVLRFLJGE76LGXFTTQ-2026-06-04/" target="_blank" rel="noopener">金融政策の具体的手法、日銀に委ねられるべき＝総裁発言巡り官房長官</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本ビジネス</span>
-                <span>06/04 11:37</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260603/k10015139951000.html" target="_blank" rel="noopener">日銀植田総裁 “利上げ是非の議論が必要” 中東情勢不安定でも</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>06/03 19:31</span>
-              </div>
-              
-              <div class="news-summary">日銀の植田総裁は、3日、都内で行った講演で、「物価の上振れリスクが高まると判断される場合には、利上げの是非についてしっかりと議論する必要がある」と述べ、中東情勢が不安定なままであった場合でも、今月中旬…</div>
               
             </div>
             
@@ -1106,16 +1098,27 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (1件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (2件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1560620" target="_blank" rel="noopener">アジアの半導体・AI関連株、ブロードコムの低調な決算を受けて下落</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1560977" target="_blank" rel="noopener">パラビリス・メディシンズ、米国IPOで最大4億7500万ドルの調達を目指す</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>06/04 14:06</span>
+                <span>06/04 19:33</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-432SI-1560964" target="_blank" rel="noopener">パラビリス・メディシンズ、1株17～19ドルで2500万株のIPOを申請</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>06/04 19:20</span>
               </div>
               
             </div>
@@ -1132,12 +1135,16 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1560631" target="_blank" rel="noopener">TSMCトップ、AI需要に牽引された半導体成長に自信</a>
+                <a href="https://news.yahoo.co.jp/articles/02e625a00115f8f32f958600d94e92718a4d7f2c?source=rss" target="_blank" rel="noopener">今年“夏ボーナス50万円”の夫から「全額NISAに入れる」と相談が！ これまで貯金に回してたのに、突然「全額投資」は不安です…元本割れもありますし、せめて“分散させるべき”ですよね？(ファイナンシャルフィールド)</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>06/04 14:55</span>
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>06/04 19:50</span>
               </div>
+              
+              <div class="news-summary">今まで夏のボーナスは万一の備えや特別支出のために貯金してきたのに、今年から夫が「全額NISAに突っ込む！」と言い出して聞きません……という妻からの相談が増えています。
+ 
+将来への不安から、投資に関心…</div>
               
             </div>
             
@@ -1162,20 +1169,20 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-06-04 15:59）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-06-04 19:57）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 67,470.69 pt (-1.36%)
+- TOPIX (1306連動ETF): 418.6 円 (-1.23%)
+- ドル円: 159.87 円 (-0.06%)
 - S&P 500: 7,553.68 (-0.74%)
 - NASDAQ: 26,853.98 (-0.89%)
 - ダウ: 50,687.07 (-1.21%)
-- ドル円: 159.89 円 (-0.05%)
 - 米10年債利回り: 4.491 % (+0.81%)
-- WTI原油: 95.26 USD (-0.79%)
-- 金: 4494.00 USD (+1.29%)
-- 日経225: 67,470.69 pt (-1.36%)
-- TOPIX (1306連動ETF): 418.6 円 (-1.23%)
+- WTI原油: 95.04 USD (-1.02%)
+- 金: 4499.80 USD (+1.42%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1204,31 +1211,30 @@
   -5.81pt  Alphabet Inc. (Class A)(GOOGL)  -0.79%  wt:9.66%  [Communication Services]
 
 【関連ニュース見出し】
-- [Investing.com日本] 新興市場銘柄ダイジェスト:セイワHDが大幅反落、アクセルスペースが続落 (06/04 15:45)
-- [Yahoo!ファイナンス] 東証反落、終値931円安　最高値反動、利益確定売り膨らむ(共同通信) (06/04 15:38)
-  概要: 4日の東京株式市場は、日経平均株価（225種）が反落した。前日に終値の最高値を更新した反動で、ハイテク株を中心に利益を確定する売りが膨らんだ。中東情勢の悪化も投資家心理を冷やした。。
-
-　終値は前日
-- [Yahoo!ファイナンス] 東証終値931円安(共同通信) (06/04 15:34)
-  概要: 4日の東京株式市場の日経平均株価（225種）終値は、前日比931円44銭安の6万7470円69銭だった。
+- [Yahoo!ファイナンス] 爆上げの「SOX指数連動ファンド」VS「金ファンド」、いま選ぶならどちらが正解？ 徹底比較して分かった「意外な結論」(Finasee) (06/04 19:50)
+  概要: NISAの普及もあり、話題にのぼることが多くなった投資信託。でも、一体どうやって選べばよいのでしょうか？　投信ライターの德永浩氏が、ちまたで注目されている2本の投資信託を比較・分析してそれぞれの特徴や
+- [Investing.com日本] BofAとバークレイズ、EUV生産能力見通しを受けエーエスエムエル・ホールディングの目標株価を引き上げ (06/04 19:35)
+- [Investing.com日本] S&P 500の調整は買い場――ヤルデニ・リサーチが見解 (06/04 19:32)
+- [ZUU online] 米ドル／円 ―― 円買い介入への警戒感を滲ませつつ当局の姿勢を試すかのように緩やかに続伸すると予想 (06/04 19:00)
+  概要: この記事は2026年6月4日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月4日（木）の午前10時時点に外為どっ
+- [NHK経済] 円相場 小幅な値動き (06/04 18:24)
+  概要: 4日の東京外国為替市場、円相場は小幅な値動きとなりました。
+- [ロイター日本ビジネス] ゴールドマン、新興国株指数の目標値引き上げ　ＡＩ主導の成長で (06/04 17:57)
+- [NHK経済] 日経平均株価 900円以上値下がり (06/04 16:36)
+  概要: 4日の東京株式市場、イラン情勢の先行きへの懸念を背景に3日のニューヨーク市場で主要な株価指数が下落したことなどを受けて、日経平均株価は値下がりしました。
+- [ロイター日本ビジネス] アジア株式市場サマリー：引け（4日） (06/04 16:33)
+- [ロイター日本ビジネス] 日経平均は反落、利益確定売り優勢　ＳＢＧの下げが重し (06/04 16:03)
 - [ZUU online] 米国で乖離を続ける消費者信頼感指数と株価 (06/04 15:00)
   概要: この記事は2026年5月22日に「きんざいOnline：週刊金融財政事情」で公開された「米国で乖離を続ける消費者信頼感指数と株価」を一部編集し、転載したものです。 （米ミシガン大学「消費者信頼感指数」
-- [NHK経済] コメ価格の見通し 在庫増加で下落の見方強まる (06/04 14:35)
-  概要: コメ価格の先行きについて、業界では値下がりするという見方が強まっています。向こう3か月のコメ価格の見通しを示す先月の指数は、4か月ぶりに低下し、調査した団体ではコメの在庫水準の高さが背景にあるとみてい
-- [Investing.com日本] フィックスターズ---大幅反発、単価改善や生産性向上反映し国内証券が目標株価引き上げ (06/04 14:00)
-- [NHK経済] 米スペースX 上場で12兆円調達へ (06/04 13:35)
-  概要: 実業家のイーロン・マスク氏が率いる「スペースX」は、株式の新規上場に向けてアメリカの証券取引委員会に書類を提出し、日本円でおよそ12兆円を調達する計画を明らかにしました。過去最大規模の上場となる見通し
-- [NHK経済] 株価 一時 1400円以上値下がり ニューヨーク市場での下落受け (06/04 12:16)
-  概要: 4日の東京株式市場、イラン情勢の先行きへの懸念を背景に3日のニューヨーク市場で主要な株価指数が下落した流れを受けて、日経平均株価は一時、1400円以上値下がりしています。
-- [ロイター日本ビジネス] 午前の日経平均は反落、短期過熱警戒で利益確定　ソフトバンクＧがマイナス寄与 (06/04 12:11)
-- [NHK経済] きょうのおはBiz 6月4日(木) 日経平均株価上昇 “NT倍率”とは (06/04 11:48)
-  概要: NHKニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはBiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けし
+- [ロイター日本ビジネス] 日銀、次回会合で利上げ検討へ　中東リスク見極め最終判断 (06/04 15:54)
+- [ロイター日本ビジネス] 午後3時のドルは159円後半で小動き、日銀追加利上げの観測報道で一時軟化 (06/04 15:50)
 - [ロイター日本ビジネス] ＥＵの対米鉄鋼輸出、関税引き上げ以来34％減少＝業界団体 (06/04 14:15)
-- [ロイター日本ビジネス] 金融政策の具体的手法、日銀に委ねられるべき＝総裁発言巡り官房長官 (06/04 11:37)
-- [NHK経済] 日銀植田総裁 “利上げ是非の議論が必要” 中東情勢不安定でも (06/03 19:31)
-  概要: 日銀の植田総裁は、3日、都内で行った講演で、「物価の上振れリスクが高まると判断される場合には、利上げの是非についてしっかりと議論する必要がある」と述べ、中東情勢が不安定なままであった場合でも、今月中旬
-- [Investing.com日本] アジアの半導体・AI関連株、ブロードコムの低調な決算を受けて下落 (06/04 14:06)
-- [Investing.com日本] TSMCトップ、AI需要に牽引された半導体成長に自信 (06/04 14:55)
+- [Investing.com日本] パラビリス・メディシンズ、米国IPOで最大4億7500万ドルの調達を目指す (06/04 19:33)
+- [Investing.com日本] パラビリス・メディシンズ、1株17～19ドルで2500万株のIPOを申請 (06/04 19:20)
+- [Yahoo!ファイナンス] 今年“夏ボーナス50万円”の夫から「全額NISAに入れる」と相談が！ これまで貯金に回してたのに、突然「全額投資」は不安です…元本割れもありますし、せめて“分散させるべき”ですよね？(ファイナンシャルフィールド) (06/04 19:50)
+  概要: 今まで夏のボーナスは万一の備えや特別支出のために貯金してきたのに、今年から夫が「全額NISAに突っ込む！」と言い出して聞きません……という妻からの相談が増えています。
+ 
+将来への不安から、投資に関心
 - [ロイター日本ビジネス] 米ウーバー、自動運転新興ニューロに5億ドル投資へ＝関係筋 (06/04 14:06)
 
 【依頼内容】
@@ -1244,15 +1250,15 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 67,470.69 pt (-1.36%)
+- TOPIX (1306連動ETF): 418.6 円 (-1.23%)
+- ドル円: 159.87 円 (-0.06%)
 - S&P 500: 7,553.68 (-0.74%)
 - NASDAQ: 26,853.98 (-0.89%)
 - ダウ: 50,687.07 (-1.21%)
-- ドル円: 159.89 円 (-0.05%)
 - 米10年債利回り: 4.491 % (+0.81%)
-- WTI原油: 95.26 USD (-0.79%)
-- 金: 4494.00 USD (+1.29%)
-- 日経225: 67,470.69 pt (-1.36%)
-- TOPIX (1306連動ETF): 418.6 円 (-1.23%)
+- WTI原油: 95.04 USD (-1.02%)
+- 金: 4499.80 USD (+1.42%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1281,31 +1287,30 @@
   -5.81pt  Alphabet Inc. (Class A)(GOOGL)  -0.79%  wt:9.66%  [Communication Services]
 
 【関連ニュース見出し】
-- [Investing.com日本] 新興市場銘柄ダイジェスト:セイワHDが大幅反落、アクセルスペースが続落 (06/04 15:45)
-- [Yahoo!ファイナンス] 東証反落、終値931円安　最高値反動、利益確定売り膨らむ(共同通信) (06/04 15:38)
-  概要: 4日の東京株式市場は、日経平均株価（225種）が反落した。前日に終値の最高値を更新した反動で、ハイテク株を中心に利益を確定する売りが膨らんだ。中東情勢の悪化も投資家心理を冷やした。。
-
-　終値は前日
-- [Yahoo!ファイナンス] 東証終値931円安(共同通信) (06/04 15:34)
-  概要: 4日の東京株式市場の日経平均株価（225種）終値は、前日比931円44銭安の6万7470円69銭だった。
+- [Yahoo!ファイナンス] 爆上げの「SOX指数連動ファンド」VS「金ファンド」、いま選ぶならどちらが正解？ 徹底比較して分かった「意外な結論」(Finasee) (06/04 19:50)
+  概要: NISAの普及もあり、話題にのぼることが多くなった投資信託。でも、一体どうやって選べばよいのでしょうか？　投信ライターの德永浩氏が、ちまたで注目されている2本の投資信託を比較・分析してそれぞれの特徴や
+- [Investing.com日本] BofAとバークレイズ、EUV生産能力見通しを受けエーエスエムエル・ホールディングの目標株価を引き上げ (06/04 19:35)
+- [Investing.com日本] S&P 500の調整は買い場――ヤルデニ・リサーチが見解 (06/04 19:32)
+- [ZUU online] 米ドル／円 ―― 円買い介入への警戒感を滲ませつつ当局の姿勢を試すかのように緩やかに続伸すると予想 (06/04 19:00)
+  概要: この記事は2026年6月4日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月4日（木）の午前10時時点に外為どっ
+- [NHK経済] 円相場 小幅な値動き (06/04 18:24)
+  概要: 4日の東京外国為替市場、円相場は小幅な値動きとなりました。
+- [ロイター日本ビジネス] ゴールドマン、新興国株指数の目標値引き上げ　ＡＩ主導の成長で (06/04 17:57)
+- [NHK経済] 日経平均株価 900円以上値下がり (06/04 16:36)
+  概要: 4日の東京株式市場、イラン情勢の先行きへの懸念を背景に3日のニューヨーク市場で主要な株価指数が下落したことなどを受けて、日経平均株価は値下がりしました。
+- [ロイター日本ビジネス] アジア株式市場サマリー：引け（4日） (06/04 16:33)
+- [ロイター日本ビジネス] 日経平均は反落、利益確定売り優勢　ＳＢＧの下げが重し (06/04 16:03)
 - [ZUU online] 米国で乖離を続ける消費者信頼感指数と株価 (06/04 15:00)
   概要: この記事は2026年5月22日に「きんざいOnline：週刊金融財政事情」で公開された「米国で乖離を続ける消費者信頼感指数と株価」を一部編集し、転載したものです。 （米ミシガン大学「消費者信頼感指数」
-- [NHK経済] コメ価格の見通し 在庫増加で下落の見方強まる (06/04 14:35)
-  概要: コメ価格の先行きについて、業界では値下がりするという見方が強まっています。向こう3か月のコメ価格の見通しを示す先月の指数は、4か月ぶりに低下し、調査した団体ではコメの在庫水準の高さが背景にあるとみてい
-- [Investing.com日本] フィックスターズ---大幅反発、単価改善や生産性向上反映し国内証券が目標株価引き上げ (06/04 14:00)
-- [NHK経済] 米スペースX 上場で12兆円調達へ (06/04 13:35)
-  概要: 実業家のイーロン・マスク氏が率いる「スペースX」は、株式の新規上場に向けてアメリカの証券取引委員会に書類を提出し、日本円でおよそ12兆円を調達する計画を明らかにしました。過去最大規模の上場となる見通し
-- [NHK経済] 株価 一時 1400円以上値下がり ニューヨーク市場での下落受け (06/04 12:16)
-  概要: 4日の東京株式市場、イラン情勢の先行きへの懸念を背景に3日のニューヨーク市場で主要な株価指数が下落した流れを受けて、日経平均株価は一時、1400円以上値下がりしています。
-- [ロイター日本ビジネス] 午前の日経平均は反落、短期過熱警戒で利益確定　ソフトバンクＧがマイナス寄与 (06/04 12:11)
-- [NHK経済] きょうのおはBiz 6月4日(木) 日経平均株価上昇 “NT倍率”とは (06/04 11:48)
-  概要: NHKニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはBiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けし
+- [ロイター日本ビジネス] 日銀、次回会合で利上げ検討へ　中東リスク見極め最終判断 (06/04 15:54)
+- [ロイター日本ビジネス] 午後3時のドルは159円後半で小動き、日銀追加利上げの観測報道で一時軟化 (06/04 15:50)
 - [ロイター日本ビジネス] ＥＵの対米鉄鋼輸出、関税引き上げ以来34％減少＝業界団体 (06/04 14:15)
-- [ロイター日本ビジネス] 金融政策の具体的手法、日銀に委ねられるべき＝総裁発言巡り官房長官 (06/04 11:37)
-- [NHK経済] 日銀植田総裁 “利上げ是非の議論が必要” 中東情勢不安定でも (06/03 19:31)
-  概要: 日銀の植田総裁は、3日、都内で行った講演で、「物価の上振れリスクが高まると判断される場合には、利上げの是非についてしっかりと議論する必要がある」と述べ、中東情勢が不安定なままであった場合でも、今月中旬
-- [Investing.com日本] アジアの半導体・AI関連株、ブロードコムの低調な決算を受けて下落 (06/04 14:06)
-- [Investing.com日本] TSMCトップ、AI需要に牽引された半導体成長に自信 (06/04 14:55)
+- [Investing.com日本] パラビリス・メディシンズ、米国IPOで最大4億7500万ドルの調達を目指す (06/04 19:33)
+- [Investing.com日本] パラビリス・メディシンズ、1株17～19ドルで2500万株のIPOを申請 (06/04 19:20)
+- [Yahoo!ファイナンス] 今年“夏ボーナス50万円”の夫から「全額NISAに入れる」と相談が！ これまで貯金に回してたのに、突然「全額投資」は不安です…元本割れもありますし、せめて“分散させるべき”ですよね？(ファイナンシャルフィールド) (06/04 19:50)
+  概要: 今まで夏のボーナスは万一の備えや特別支出のために貯金してきたのに、今年から夫が「全額NISAに突っ込む！」と言い出して聞きません……という妻からの相談が増えています。
+ 
+将来への不安から、投資に関心
 - [ロイター日本ビジネス] 米ウーバー、自動運転新興ニューロに5億ドル投資へ＝関係筋 (06/04 14:06)
 
 【依頼内容】
@@ -1315,15 +1320,15 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 67,470.69 pt (-1.36%)
+- TOPIX (1306連動ETF): 418.6 円 (-1.23%)
+- ドル円: 159.87 円 (-0.06%)
 - S&P 500: 7,553.68 (-0.74%)
 - NASDAQ: 26,853.98 (-0.89%)
 - ダウ: 50,687.07 (-1.21%)
-- ドル円: 159.89 円 (-0.05%)
 - 米10年債利回り: 4.491 % (+0.81%)
-- WTI原油: 95.26 USD (-0.79%)
-- 金: 4494.00 USD (+1.29%)
-- 日経225: 67,470.69 pt (-1.36%)
-- TOPIX (1306連動ETF): 418.6 円 (-1.23%)
+- WTI原油: 95.04 USD (-1.02%)
+- 金: 4499.80 USD (+1.42%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1352,31 +1357,30 @@
   -5.81pt  Alphabet Inc. (Class A)(GOOGL)  -0.79%  wt:9.66%  [Communication Services]
 
 【関連ニュース見出し】
-- [Investing.com日本] 新興市場銘柄ダイジェスト:セイワHDが大幅反落、アクセルスペースが続落 (06/04 15:45)
-- [Yahoo!ファイナンス] 東証反落、終値931円安　最高値反動、利益確定売り膨らむ(共同通信) (06/04 15:38)
-  概要: 4日の東京株式市場は、日経平均株価（225種）が反落した。前日に終値の最高値を更新した反動で、ハイテク株を中心に利益を確定する売りが膨らんだ。中東情勢の悪化も投資家心理を冷やした。。
-
-　終値は前日
-- [Yahoo!ファイナンス] 東証終値931円安(共同通信) (06/04 15:34)
-  概要: 4日の東京株式市場の日経平均株価（225種）終値は、前日比931円44銭安の6万7470円69銭だった。
+- [Yahoo!ファイナンス] 爆上げの「SOX指数連動ファンド」VS「金ファンド」、いま選ぶならどちらが正解？ 徹底比較して分かった「意外な結論」(Finasee) (06/04 19:50)
+  概要: NISAの普及もあり、話題にのぼることが多くなった投資信託。でも、一体どうやって選べばよいのでしょうか？　投信ライターの德永浩氏が、ちまたで注目されている2本の投資信託を比較・分析してそれぞれの特徴や
+- [Investing.com日本] BofAとバークレイズ、EUV生産能力見通しを受けエーエスエムエル・ホールディングの目標株価を引き上げ (06/04 19:35)
+- [Investing.com日本] S&P 500の調整は買い場――ヤルデニ・リサーチが見解 (06/04 19:32)
+- [ZUU online] 米ドル／円 ―― 円買い介入への警戒感を滲ませつつ当局の姿勢を試すかのように緩やかに続伸すると予想 (06/04 19:00)
+  概要: この記事は2026年6月4日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月4日（木）の午前10時時点に外為どっ
+- [NHK経済] 円相場 小幅な値動き (06/04 18:24)
+  概要: 4日の東京外国為替市場、円相場は小幅な値動きとなりました。
+- [ロイター日本ビジネス] ゴールドマン、新興国株指数の目標値引き上げ　ＡＩ主導の成長で (06/04 17:57)
+- [NHK経済] 日経平均株価 900円以上値下がり (06/04 16:36)
+  概要: 4日の東京株式市場、イラン情勢の先行きへの懸念を背景に3日のニューヨーク市場で主要な株価指数が下落したことなどを受けて、日経平均株価は値下がりしました。
+- [ロイター日本ビジネス] アジア株式市場サマリー：引け（4日） (06/04 16:33)
+- [ロイター日本ビジネス] 日経平均は反落、利益確定売り優勢　ＳＢＧの下げが重し (06/04 16:03)
 - [ZUU online] 米国で乖離を続ける消費者信頼感指数と株価 (06/04 15:00)
   概要: この記事は2026年5月22日に「きんざいOnline：週刊金融財政事情」で公開された「米国で乖離を続ける消費者信頼感指数と株価」を一部編集し、転載したものです。 （米ミシガン大学「消費者信頼感指数」
-- [NHK経済] コメ価格の見通し 在庫増加で下落の見方強まる (06/04 14:35)
-  概要: コメ価格の先行きについて、業界では値下がりするという見方が強まっています。向こう3か月のコメ価格の見通しを示す先月の指数は、4か月ぶりに低下し、調査した団体ではコメの在庫水準の高さが背景にあるとみてい
-- [Investing.com日本] フィックスターズ---大幅反発、単価改善や生産性向上反映し国内証券が目標株価引き上げ (06/04 14:00)
-- [NHK経済] 米スペースX 上場で12兆円調達へ (06/04 13:35)
-  概要: 実業家のイーロン・マスク氏が率いる「スペースX」は、株式の新規上場に向けてアメリカの証券取引委員会に書類を提出し、日本円でおよそ12兆円を調達する計画を明らかにしました。過去最大規模の上場となる見通し
-- [NHK経済] 株価 一時 1400円以上値下がり ニューヨーク市場での下落受け (06/04 12:16)
-  概要: 4日の東京株式市場、イラン情勢の先行きへの懸念を背景に3日のニューヨーク市場で主要な株価指数が下落した流れを受けて、日経平均株価は一時、1400円以上値下がりしています。
-- [ロイター日本ビジネス] 午前の日経平均は反落、短期過熱警戒で利益確定　ソフトバンクＧがマイナス寄与 (06/04 12:11)
-- [NHK経済] きょうのおはBiz 6月4日(木) 日経平均株価上昇 “NT倍率”とは (06/04 11:48)
-  概要: NHKニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはBiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けし
+- [ロイター日本ビジネス] 日銀、次回会合で利上げ検討へ　中東リスク見極め最終判断 (06/04 15:54)
+- [ロイター日本ビジネス] 午後3時のドルは159円後半で小動き、日銀追加利上げの観測報道で一時軟化 (06/04 15:50)
 - [ロイター日本ビジネス] ＥＵの対米鉄鋼輸出、関税引き上げ以来34％減少＝業界団体 (06/04 14:15)
-- [ロイター日本ビジネス] 金融政策の具体的手法、日銀に委ねられるべき＝総裁発言巡り官房長官 (06/04 11:37)
-- [NHK経済] 日銀植田総裁 “利上げ是非の議論が必要” 中東情勢不安定でも (06/03 19:31)
-  概要: 日銀の植田総裁は、3日、都内で行った講演で、「物価の上振れリスクが高まると判断される場合には、利上げの是非についてしっかりと議論する必要がある」と述べ、中東情勢が不安定なままであった場合でも、今月中旬
-- [Investing.com日本] アジアの半導体・AI関連株、ブロードコムの低調な決算を受けて下落 (06/04 14:06)
-- [Investing.com日本] TSMCトップ、AI需要に牽引された半導体成長に自信 (06/04 14:55)
+- [Investing.com日本] パラビリス・メディシンズ、米国IPOで最大4億7500万ドルの調達を目指す (06/04 19:33)
+- [Investing.com日本] パラビリス・メディシンズ、1株17～19ドルで2500万株のIPOを申請 (06/04 19:20)
+- [Yahoo!ファイナンス] 今年“夏ボーナス50万円”の夫から「全額NISAに入れる」と相談が！ これまで貯金に回してたのに、突然「全額投資」は不安です…元本割れもありますし、せめて“分散させるべき”ですよね？(ファイナンシャルフィールド) (06/04 19:50)
+  概要: 今まで夏のボーナスは万一の備えや特別支出のために貯金してきたのに、今年から夫が「全額NISAに突っ込む！」と言い出して聞きません……という妻からの相談が増えています。
+ 
+将来への不安から、投資に関心
 - [ロイター日本ビジネス] 米ウーバー、自動運転新興ニューロに5億ドル投資へ＝関係筋 (06/04 14:06)
 
 【依頼内容】
