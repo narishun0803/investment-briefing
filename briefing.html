@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年06月05日 15:46 JST</span>
+    <span class="updated">更新: 2026年06月05日 20:20 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">66,588.12 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -882.57&nbsp;&nbsp;-1.31%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">418.6 <span class="tile-unit">円</span></div>
+          <div class="tile-change flat">
+            +0.00&nbsp;&nbsp;+0.00%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">159.91 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -0.03&nbsp;&nbsp;-0.02%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">51,561.93 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">159.95 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.01&nbsp;&nbsp;+0.00%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.477 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">92.71 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">92.89 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -0.33&nbsp;&nbsp;-0.35%
+            -0.15&nbsp;&nbsp;-0.16%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4475.40 <span class="tile-unit">USD</span></div>
-          <div class="tile-change down">
-            -0.40&nbsp;&nbsp;-0.01%
+          <div class="tile-price">4493.20 <span class="tile-unit">USD</span></div>
+          <div class="tile-change up">
+            +17.40&nbsp;&nbsp;+0.39%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">66,588.12 <span class="tile-unit">pt</span></div>
-          <div class="tile-change down">
-            -882.57&nbsp;&nbsp;-1.31%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">418.6 <span class="tile-unit">円</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -915,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (10件)</div>
+    <div class="card-title">📰 最新ニュース (13件)</div>
     
     
     
@@ -925,84 +925,131 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📈 マーケット全般 (6件)</div>
+          <div class="news-group-title">📈 マーケット全般 (10件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/09523f974d8e4c586c7a2e46d2f1169fc97c9a82?source=rss" target="_blank" rel="noopener">東証終値882円安(共同通信)</a>
+                <a href="https://news.yahoo.co.jp/articles/d01eef7e1742d3737412a31714582cf12c77c829?source=rss" target="_blank" rel="noopener">6月高配当株ランキング！ 最高益企業も/三菱UFJが上場来高値/日経平均続落【今日の注目株＆日本株市場見通し】「デイリーZAi」6月5日号(ダイヤモンド・ザイ)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/05 15:33</span>
+                <span>06/05 20:10</span>
               </div>
               
-              <div class="news-summary">5日の東京株式市場の日経平均株価（225種）終値は、前日比882円57銭安の6万6588円12銭だった。</div>
+              <div class="news-summary">◆今日の内容を10秒でチェック！　
+・日経平均は続落、AI関連株に売りも出遅れ銘柄に買い
+・AI脅威を払拭するトレンドマイクロ、T＆Dは更に資本効率を改善へ
+・6月高配当株ランキング！　 JACなど最…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260605/k10015141891000.html" target="_blank" rel="noopener">外貨準備高 日本円で12兆円余減少 介入実施が影響で大幅減</a>
+                <a href="https://news.yahoo.co.jp/articles/2d594cf845e02c7812c67c5e7e48a1d4f952c287?source=rss" target="_blank" rel="noopener">ＳＷＣＣ（5805）、3か月間の株価の変動幅と高値・安値は？【2026年6月5日】(LIMO)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>06/05 20:05</span>
+              </div>
+              
+              <div class="news-summary">東証プライムに上場する非鉄金属銘柄のSWCC  について、2026年3月5日から2026年6月5日まで保有した場合の株価推移や変動率について紹介します。
+
+あわせて、SWCCの直近の202</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1562508" target="_blank" rel="noopener">5日の香港市場概況：ハンセン指数は3日続落、半導体などの下落で約2カ月ぶりの安値</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>06/05 19:45</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1562484" target="_blank" rel="noopener">シティ、世界株式市場は2008年以来最も過熱した水準と警告</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>06/05 19:34</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1562469" target="_blank" rel="noopener">5日の中国本土市場概況：上海総合は続落、ハイテク株の下落で約1カ月半ぶりの安値</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>06/05 19:30</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/302108" target="_blank" rel="noopener">日々是相場［夕刊］――  2026年6月5日（金）</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>06/05 19:30</span>
+              </div>
+              
+              <div class="news-summary">日経平均 66,588.12円 ▼882.57円 為替 １ドル＝159.95円 売買高（東証プライム、以下同） 24億5,865万株 売買代金 9兆8535億00百万円 値上り銘柄数 1,196銘柄 …</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1562487" target="_blank" rel="noopener">バンク・オブ・アメリカのハートネット氏、6月の株式市場に警鐘</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>06/05 19:28</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260605/k10015142371000.html" target="_blank" rel="noopener">円相場 小幅な値動き 注目は今夜の米雇用統計に</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">NHK経済</span>
-                <span>06/05 13:50</span>
+                <span>06/05 18:07</span>
               </div>
               
-              <div class="news-summary">5月末の日本の外貨準備高は、前の月に比べて771億ドル、日本円で12兆円余り減りました。政府・日銀が市場介入を実施したことが影響し、1か月間の減少幅としては比較可能な2000年以降で最も大きくなりまし…</div>
+              <div class="news-summary">5日の東京外国為替市場、円相場は小幅な値動きとなりました。</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260605/k10015141701000.html" target="_blank" rel="noopener">株価 一時1600円超値下がり 利益確保しようという動き広がる</a>
+                <a href="https://jp.reuters.com/markets/japan/VCHZIXSUMFLQVGSKCH6MP4AZKE-2026-06-05/" target="_blank" rel="noopener">中国・香港株式市場・大引け＝続落、ＡＩ・半導体関連株に利益確定売り</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ロイター日本マーケット</span>
+                <span>06/05 17:50</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260605/k10015142181000.html" target="_blank" rel="noopener">4月の景気動向指数 前月比1.1ポイントの上昇 上昇は2か月連続</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">NHK経済</span>
-                <span>06/05 12:40</span>
+                <span>06/05 16:39</span>
               </div>
               
-              <div class="news-summary">5日の東京株式市場、急ピッチで上昇してきたAIや半導体関連の銘柄を売って利益を確保しようという動きが広がって、日経平均株価は一時1600円以上値下がりしています。</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302076" target="_blank" rel="noopener">メガネトップが「目の日焼け」対策に向けてサングラス普及を本格化　高校球児向けサングラスや犬専用ゴーグルも投入</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>06/05 12:02</span>
-              </div>
-              
-              <div class="news-summary">「眼鏡市場」を展開するメガネトップは6月3日、紫外線対策事業に関する戦略発表会を開催し、新プロジェクト「一億総サングラス計画」を発表した。高校野球対応のサングラスや犬専用ゴーグルの投入など、これまで以…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302099" target="_blank" rel="noopener">FX/為替「ドル/円今日の予想」 外為どっとコム トゥデイ 2026年6月5日号</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>06/05 10:32</span>
-              </div>
-              
-              <div class="news-summary">主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年6月5日8時30分執筆・監修：株式会社外為…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/301825" target="_blank" rel="noopener">相続税調査はどう行われている？ 申告後に来る接触の正体</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>06/05 10:00</span>
-              </div>
-              
-              <div class="news-summary">本記事は、税理士法人チェスター監修、円満相続を支援する士業の会編集、株式会社エッサム著書の『事例でわかる 失敗しない相続対策入門』（あさ出版）の中から一部を抜粋・編集しています。 今、相続税の調査はど…</div>
+              <div class="news-summary">内閣府が発表したことし4月の景気動向指数は、景気の現状を示す「一致指数」が2020年を100として速報値で117.9となり、前の月から1.1ポイント上昇しました。</div>
               
             </div>
             
@@ -1013,32 +1060,17 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (2件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (1件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://zuuonline.com/archives/302006" target="_blank" rel="noopener">海外不動産投資のメリット・デメリットを徹底解説｜見落としがちなリスクと税金の注意点</a>
+                <a href="https://jp.reuters.com/opinion/O5GNZDZHPNKCFNOJLI2RY7HNEM-2026-06-05/" target="_blank" rel="noopener">午後3時のドルは159円後半、イラン情勢の続報と米雇用統計待ち</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>06/05 10:00</span>
+                <span class="news-source">ロイター日本マーケット</span>
+                <span>06/05 15:55</span>
               </div>
-              
-              <div class="news-summary">海外不動産投資のメリット・デメリット 海外不動産投資のメリット ・高い利回りが期待できる ・高いキャピタルゲインを期待できる ・資産の分散投資によるリスク軽減 ・為替差益を期待できる ・日本と異なる税…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302007" target="_blank" rel="noopener">超高利回り物件への不動産投資はアリなのか？リスク・落とし穴と判断基準</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>06/05 10:00</span>
-              </div>
-              
-              <div class="news-summary">超高利回り物件が生まれる理由と、「高利回り＝高収益」とはいえない理由 超高利回り物件が生まれる理由 ・人口減少リスクが高いエリア ・建物のダメージが大きい（修繕負担が重い） ・再建築不可など法的・物理…</div>
               
             </div>
             
@@ -1057,30 +1089,25 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/4594a83dc551c57b9a3c1506bf89efbf34650d1c?source=rss" target="_blank" rel="noopener">政府　ラピダスに1500億の追加出資　2月に続き2度目(テレビ朝日系（ANN）)</a>
+                <a href="http://www3.nhk.or.jp/news/html/20260605/k10015142361000.html" target="_blank" rel="noopener">米アラスカ州とアフリカから代替調達の原油が到着へ</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/05 15:33</span>
+                <span class="news-source">NHK経済</span>
+                <span>06/05 18:18</span>
               </div>
               
-              <div class="news-summary">赤沢経済産業大臣は次世代半導体の量産を目指す「ラピダス」に対し、1500億円の追加出資を行ったと発表しました。
-
-赤沢経産大臣
-「情報処理推進機構＝IPAを通じて同社（ラピダス）に対して1500億円の…</div>
+              <div class="news-summary">中東情勢の悪化で原油の安定供給が懸念される中、アメリカのアラスカ州やアフリカの南スーダンで代替調達された原油が、7日に日本に到着する見込みとなりました。</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260605/k10015141991000.html" target="_blank" rel="noopener">政府 ラピダスに1500億円追加出資を発表</a>
+                <a href="https://jp.reuters.com/markets/japan/KBINLBJSC5PHHO6KTEA4KUNQUQ-2026-06-05/" target="_blank" rel="noopener">キオクシアＨＤ、5月売買代金は34兆円　ＡＩ・半導体関連が上位に</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>06/05 14:50</span>
+                <span class="news-source">ロイター日本マーケット</span>
+                <span>06/05 13:37</span>
               </div>
-              
-              <div class="news-summary">経済産業省は、5日、先端半導体の量産を目指す「ラピダス」に追加で1500億円を出資したと発表しました。国による支援額は合わせて2兆6000億円余りに上り、巨額の支援に見合う成果を出せるかが焦点です。</div>
               
             </div>
             
@@ -1094,20 +1121,20 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-06-05 15:46）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-06-05 20:20）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 66,588.12 pt (-1.31%)
+- TOPIX (1306連動ETF): 418.6 円 (+0.00%)
+- ドル円: 159.91 円 (-0.02%)
 - S&P 500: 7,584.31 (+0.41%)
 - NASDAQ: 26,830.96 (-0.09%)
 - ダウ: 51,561.93 (+1.73%)
-- ドル円: 159.95 円 (+0.00%)
 - 米10年債利回り: 4.477 % (-0.31%)
-- WTI原油: 92.71 USD (-0.35%)
-- 金: 4475.40 USD (-0.01%)
-- 日経225: 66,588.12 pt (-1.31%)
-- TOPIX (1306連動ETF): 418.6 円 (+0.00%)
+- WTI原油: 92.89 USD (-0.16%)
+- 金: 4493.20 USD (+0.39%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1136,29 +1163,30 @@
   -1.32pt  Coca-Cola Company (The)(KO)  -2.46%  wt:0.71%  [Consumer Staples]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 東証終値882円安(共同通信) (06/05 15:33)
-  概要: 5日の東京株式市場の日経平均株価（225種）終値は、前日比882円57銭安の6万6588円12銭だった。
-- [NHK経済] 外貨準備高 日本円で12兆円余減少 介入実施が影響で大幅減 (06/05 13:50)
-  概要: 5月末の日本の外貨準備高は、前の月に比べて771億ドル、日本円で12兆円余り減りました。政府・日銀が市場介入を実施したことが影響し、1か月間の減少幅としては比較可能な2000年以降で最も大きくなりまし
-- [NHK経済] 株価 一時1600円超値下がり 利益確保しようという動き広がる (06/05 12:40)
-  概要: 5日の東京株式市場、急ピッチで上昇してきたAIや半導体関連の銘柄を売って利益を確保しようという動きが広がって、日経平均株価は一時1600円以上値下がりしています。
-- [ZUU online] メガネトップが「目の日焼け」対策に向けてサングラス普及を本格化　高校球児向けサングラスや犬専用ゴーグルも投入 (06/05 12:02)
-  概要: 「眼鏡市場」を展開するメガネトップは6月3日、紫外線対策事業に関する戦略発表会を開催し、新プロジェクト「一億総サングラス計画」を発表した。高校野球対応のサングラスや犬専用ゴーグルの投入など、これまで以
-- [ZUU online] FX/為替「ドル/円今日の予想」 外為どっとコム トゥデイ 2026年6月5日号 (06/05 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年6月5日8時30分執筆・監修：株式会社外為
-- [ZUU online] 相続税調査はどう行われている？ 申告後に来る接触の正体 (06/05 10:00)
-  概要: 本記事は、税理士法人チェスター監修、円満相続を支援する士業の会編集、株式会社エッサム著書の『事例でわかる 失敗しない相続対策入門』（あさ出版）の中から一部を抜粋・編集しています。 今、相続税の調査はど
-- [ZUU online] 海外不動産投資のメリット・デメリットを徹底解説｜見落としがちなリスクと税金の注意点 (06/05 10:00)
-  概要: 海外不動産投資のメリット・デメリット 海外不動産投資のメリット ・高い利回りが期待できる ・高いキャピタルゲインを期待できる ・資産の分散投資によるリスク軽減 ・為替差益を期待できる ・日本と異なる税
-- [ZUU online] 超高利回り物件への不動産投資はアリなのか？リスク・落とし穴と判断基準 (06/05 10:00)
-  概要: 超高利回り物件が生まれる理由と、「高利回り＝高収益」とはいえない理由 超高利回り物件が生まれる理由 ・人口減少リスクが高いエリア ・建物のダメージが大きい（修繕負担が重い） ・再建築不可など法的・物理
-- [Yahoo!ファイナンス] 政府　ラピダスに1500億の追加出資　2月に続き2度目(テレビ朝日系（ANN）) (06/05 15:33)
-  概要: 赤沢経済産業大臣は次世代半導体の量産を目指す「ラピダス」に対し、1500億円の追加出資を行ったと発表しました。
+- [Yahoo!ファイナンス] 6月高配当株ランキング！ 最高益企業も/三菱UFJが上場来高値/日経平均続落【今日の注目株＆日本株市場見通し】「デイリーZAi」6月5日号(ダイヤモンド・ザイ) (06/05 20:10)
+  概要: ◆今日の内容を10秒でチェック！　
+・日経平均は続落、AI関連株に売りも出遅れ銘柄に買い
+・AI脅威を払拭するトレンドマイクロ、T＆Dは更に資本効率を改善へ
+・6月高配当株ランキング！　 JACなど最
+- [Yahoo!ファイナンス] ＳＷＣＣ（5805）、3か月間の株価の変動幅と高値・安値は？【2026年6月5日】(LIMO) (06/05 20:05)
+  概要: 東証プライムに上場する非鉄金属銘柄のSWCC  について、2026年3月5日から2026年6月5日まで保有した場合の株価推移や変動率について紹介します。
 
-赤沢経産大臣
-「情報処理推進機構＝IPAを通じて同社（ラピダス）に対して1500億円の
-- [NHK経済] 政府 ラピダスに1500億円追加出資を発表 (06/05 14:50)
-  概要: 経済産業省は、5日、先端半導体の量産を目指す「ラピダス」に追加で1500億円を出資したと発表しました。国による支援額は合わせて2兆6000億円余りに上り、巨額の支援に見合う成果を出せるかが焦点です。
+あわせて、SWCCの直近の202
+- [Investing.com日本] 5日の香港市場概況：ハンセン指数は3日続落、半導体などの下落で約2カ月ぶりの安値 (06/05 19:45)
+- [Investing.com日本] シティ、世界株式市場は2008年以来最も過熱した水準と警告 (06/05 19:34)
+- [Investing.com日本] 5日の中国本土市場概況：上海総合は続落、ハイテク株の下落で約1カ月半ぶりの安値 (06/05 19:30)
+- [ZUU online] 日々是相場［夕刊］――  2026年6月5日（金） (06/05 19:30)
+  概要: 日経平均 66,588.12円 ▼882.57円 為替 １ドル＝159.95円 売買高（東証プライム、以下同） 24億5,865万株 売買代金 9兆8535億00百万円 値上り銘柄数 1,196銘柄 
+- [Investing.com日本] バンク・オブ・アメリカのハートネット氏、6月の株式市場に警鐘 (06/05 19:28)
+- [NHK経済] 円相場 小幅な値動き 注目は今夜の米雇用統計に (06/05 18:07)
+  概要: 5日の東京外国為替市場、円相場は小幅な値動きとなりました。
+- [ロイター日本マーケット] 中国・香港株式市場・大引け＝続落、ＡＩ・半導体関連株に利益確定売り (06/05 17:50)
+- [NHK経済] 4月の景気動向指数 前月比1.1ポイントの上昇 上昇は2か月連続 (06/05 16:39)
+  概要: 内閣府が発表したことし4月の景気動向指数は、景気の現状を示す「一致指数」が2020年を100として速報値で117.9となり、前の月から1.1ポイント上昇しました。
+- [ロイター日本マーケット] 午後3時のドルは159円後半、イラン情勢の続報と米雇用統計待ち (06/05 15:55)
+- [NHK経済] 米アラスカ州とアフリカから代替調達の原油が到着へ (06/05 18:18)
+  概要: 中東情勢の悪化で原油の安定供給が懸念される中、アメリカのアラスカ州やアフリカの南スーダンで代替調達された原油が、7日に日本に到着する見込みとなりました。
+- [ロイター日本マーケット] キオクシアＨＤ、5月売買代金は34兆円　ＡＩ・半導体関連が上位に (06/05 13:37)
 
 【依頼内容】
 上記の指数の動きについて、ニュースの内容と紐付けて解説してください。
@@ -1173,15 +1201,15 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 66,588.12 pt (-1.31%)
+- TOPIX (1306連動ETF): 418.6 円 (+0.00%)
+- ドル円: 159.91 円 (-0.02%)
 - S&P 500: 7,584.31 (+0.41%)
 - NASDAQ: 26,830.96 (-0.09%)
 - ダウ: 51,561.93 (+1.73%)
-- ドル円: 159.95 円 (+0.00%)
 - 米10年債利回り: 4.477 % (-0.31%)
-- WTI原油: 92.71 USD (-0.35%)
-- 金: 4475.40 USD (-0.01%)
-- 日経225: 66,588.12 pt (-1.31%)
-- TOPIX (1306連動ETF): 418.6 円 (+0.00%)
+- WTI原油: 92.89 USD (-0.16%)
+- 金: 4493.20 USD (+0.39%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1210,29 +1238,30 @@
   -1.32pt  Coca-Cola Company (The)(KO)  -2.46%  wt:0.71%  [Consumer Staples]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 東証終値882円安(共同通信) (06/05 15:33)
-  概要: 5日の東京株式市場の日経平均株価（225種）終値は、前日比882円57銭安の6万6588円12銭だった。
-- [NHK経済] 外貨準備高 日本円で12兆円余減少 介入実施が影響で大幅減 (06/05 13:50)
-  概要: 5月末の日本の外貨準備高は、前の月に比べて771億ドル、日本円で12兆円余り減りました。政府・日銀が市場介入を実施したことが影響し、1か月間の減少幅としては比較可能な2000年以降で最も大きくなりまし
-- [NHK経済] 株価 一時1600円超値下がり 利益確保しようという動き広がる (06/05 12:40)
-  概要: 5日の東京株式市場、急ピッチで上昇してきたAIや半導体関連の銘柄を売って利益を確保しようという動きが広がって、日経平均株価は一時1600円以上値下がりしています。
-- [ZUU online] メガネトップが「目の日焼け」対策に向けてサングラス普及を本格化　高校球児向けサングラスや犬専用ゴーグルも投入 (06/05 12:02)
-  概要: 「眼鏡市場」を展開するメガネトップは6月3日、紫外線対策事業に関する戦略発表会を開催し、新プロジェクト「一億総サングラス計画」を発表した。高校野球対応のサングラスや犬専用ゴーグルの投入など、これまで以
-- [ZUU online] FX/為替「ドル/円今日の予想」 外為どっとコム トゥデイ 2026年6月5日号 (06/05 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年6月5日8時30分執筆・監修：株式会社外為
-- [ZUU online] 相続税調査はどう行われている？ 申告後に来る接触の正体 (06/05 10:00)
-  概要: 本記事は、税理士法人チェスター監修、円満相続を支援する士業の会編集、株式会社エッサム著書の『事例でわかる 失敗しない相続対策入門』（あさ出版）の中から一部を抜粋・編集しています。 今、相続税の調査はど
-- [ZUU online] 海外不動産投資のメリット・デメリットを徹底解説｜見落としがちなリスクと税金の注意点 (06/05 10:00)
-  概要: 海外不動産投資のメリット・デメリット 海外不動産投資のメリット ・高い利回りが期待できる ・高いキャピタルゲインを期待できる ・資産の分散投資によるリスク軽減 ・為替差益を期待できる ・日本と異なる税
-- [ZUU online] 超高利回り物件への不動産投資はアリなのか？リスク・落とし穴と判断基準 (06/05 10:00)
-  概要: 超高利回り物件が生まれる理由と、「高利回り＝高収益」とはいえない理由 超高利回り物件が生まれる理由 ・人口減少リスクが高いエリア ・建物のダメージが大きい（修繕負担が重い） ・再建築不可など法的・物理
-- [Yahoo!ファイナンス] 政府　ラピダスに1500億の追加出資　2月に続き2度目(テレビ朝日系（ANN）) (06/05 15:33)
-  概要: 赤沢経済産業大臣は次世代半導体の量産を目指す「ラピダス」に対し、1500億円の追加出資を行ったと発表しました。
+- [Yahoo!ファイナンス] 6月高配当株ランキング！ 最高益企業も/三菱UFJが上場来高値/日経平均続落【今日の注目株＆日本株市場見通し】「デイリーZAi」6月5日号(ダイヤモンド・ザイ) (06/05 20:10)
+  概要: ◆今日の内容を10秒でチェック！　
+・日経平均は続落、AI関連株に売りも出遅れ銘柄に買い
+・AI脅威を払拭するトレンドマイクロ、T＆Dは更に資本効率を改善へ
+・6月高配当株ランキング！　 JACなど最
+- [Yahoo!ファイナンス] ＳＷＣＣ（5805）、3か月間の株価の変動幅と高値・安値は？【2026年6月5日】(LIMO) (06/05 20:05)
+  概要: 東証プライムに上場する非鉄金属銘柄のSWCC  について、2026年3月5日から2026年6月5日まで保有した場合の株価推移や変動率について紹介します。
 
-赤沢経産大臣
-「情報処理推進機構＝IPAを通じて同社（ラピダス）に対して1500億円の
-- [NHK経済] 政府 ラピダスに1500億円追加出資を発表 (06/05 14:50)
-  概要: 経済産業省は、5日、先端半導体の量産を目指す「ラピダス」に追加で1500億円を出資したと発表しました。国による支援額は合わせて2兆6000億円余りに上り、巨額の支援に見合う成果を出せるかが焦点です。
+あわせて、SWCCの直近の202
+- [Investing.com日本] 5日の香港市場概況：ハンセン指数は3日続落、半導体などの下落で約2カ月ぶりの安値 (06/05 19:45)
+- [Investing.com日本] シティ、世界株式市場は2008年以来最も過熱した水準と警告 (06/05 19:34)
+- [Investing.com日本] 5日の中国本土市場概況：上海総合は続落、ハイテク株の下落で約1カ月半ぶりの安値 (06/05 19:30)
+- [ZUU online] 日々是相場［夕刊］――  2026年6月5日（金） (06/05 19:30)
+  概要: 日経平均 66,588.12円 ▼882.57円 為替 １ドル＝159.95円 売買高（東証プライム、以下同） 24億5,865万株 売買代金 9兆8535億00百万円 値上り銘柄数 1,196銘柄 
+- [Investing.com日本] バンク・オブ・アメリカのハートネット氏、6月の株式市場に警鐘 (06/05 19:28)
+- [NHK経済] 円相場 小幅な値動き 注目は今夜の米雇用統計に (06/05 18:07)
+  概要: 5日の東京外国為替市場、円相場は小幅な値動きとなりました。
+- [ロイター日本マーケット] 中国・香港株式市場・大引け＝続落、ＡＩ・半導体関連株に利益確定売り (06/05 17:50)
+- [NHK経済] 4月の景気動向指数 前月比1.1ポイントの上昇 上昇は2か月連続 (06/05 16:39)
+  概要: 内閣府が発表したことし4月の景気動向指数は、景気の現状を示す「一致指数」が2020年を100として速報値で117.9となり、前の月から1.1ポイント上昇しました。
+- [ロイター日本マーケット] 午後3時のドルは159円後半、イラン情勢の続報と米雇用統計待ち (06/05 15:55)
+- [NHK経済] 米アラスカ州とアフリカから代替調達の原油が到着へ (06/05 18:18)
+  概要: 中東情勢の悪化で原油の安定供給が懸念される中、アメリカのアラスカ州やアフリカの南スーダンで代替調達された原油が、7日に日本に到着する見込みとなりました。
+- [ロイター日本マーケット] キオクシアＨＤ、5月売買代金は34兆円　ＡＩ・半導体関連が上位に (06/05 13:37)
 
 【依頼内容】
 - 最も動きが大きかった指標トップ3を特定
@@ -1241,15 +1270,15 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 66,588.12 pt (-1.31%)
+- TOPIX (1306連動ETF): 418.6 円 (+0.00%)
+- ドル円: 159.91 円 (-0.02%)
 - S&P 500: 7,584.31 (+0.41%)
 - NASDAQ: 26,830.96 (-0.09%)
 - ダウ: 51,561.93 (+1.73%)
-- ドル円: 159.95 円 (+0.00%)
 - 米10年債利回り: 4.477 % (-0.31%)
-- WTI原油: 92.71 USD (-0.35%)
-- 金: 4475.40 USD (-0.01%)
-- 日経225: 66,588.12 pt (-1.31%)
-- TOPIX (1306連動ETF): 418.6 円 (+0.00%)
+- WTI原油: 92.89 USD (-0.16%)
+- 金: 4493.20 USD (+0.39%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1278,29 +1307,30 @@
   -1.32pt  Coca-Cola Company (The)(KO)  -2.46%  wt:0.71%  [Consumer Staples]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 東証終値882円安(共同通信) (06/05 15:33)
-  概要: 5日の東京株式市場の日経平均株価（225種）終値は、前日比882円57銭安の6万6588円12銭だった。
-- [NHK経済] 外貨準備高 日本円で12兆円余減少 介入実施が影響で大幅減 (06/05 13:50)
-  概要: 5月末の日本の外貨準備高は、前の月に比べて771億ドル、日本円で12兆円余り減りました。政府・日銀が市場介入を実施したことが影響し、1か月間の減少幅としては比較可能な2000年以降で最も大きくなりまし
-- [NHK経済] 株価 一時1600円超値下がり 利益確保しようという動き広がる (06/05 12:40)
-  概要: 5日の東京株式市場、急ピッチで上昇してきたAIや半導体関連の銘柄を売って利益を確保しようという動きが広がって、日経平均株価は一時1600円以上値下がりしています。
-- [ZUU online] メガネトップが「目の日焼け」対策に向けてサングラス普及を本格化　高校球児向けサングラスや犬専用ゴーグルも投入 (06/05 12:02)
-  概要: 「眼鏡市場」を展開するメガネトップは6月3日、紫外線対策事業に関する戦略発表会を開催し、新プロジェクト「一億総サングラス計画」を発表した。高校野球対応のサングラスや犬専用ゴーグルの投入など、これまで以
-- [ZUU online] FX/為替「ドル/円今日の予想」 外為どっとコム トゥデイ 2026年6月5日号 (06/05 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年6月5日8時30分執筆・監修：株式会社外為
-- [ZUU online] 相続税調査はどう行われている？ 申告後に来る接触の正体 (06/05 10:00)
-  概要: 本記事は、税理士法人チェスター監修、円満相続を支援する士業の会編集、株式会社エッサム著書の『事例でわかる 失敗しない相続対策入門』（あさ出版）の中から一部を抜粋・編集しています。 今、相続税の調査はど
-- [ZUU online] 海外不動産投資のメリット・デメリットを徹底解説｜見落としがちなリスクと税金の注意点 (06/05 10:00)
-  概要: 海外不動産投資のメリット・デメリット 海外不動産投資のメリット ・高い利回りが期待できる ・高いキャピタルゲインを期待できる ・資産の分散投資によるリスク軽減 ・為替差益を期待できる ・日本と異なる税
-- [ZUU online] 超高利回り物件への不動産投資はアリなのか？リスク・落とし穴と判断基準 (06/05 10:00)
-  概要: 超高利回り物件が生まれる理由と、「高利回り＝高収益」とはいえない理由 超高利回り物件が生まれる理由 ・人口減少リスクが高いエリア ・建物のダメージが大きい（修繕負担が重い） ・再建築不可など法的・物理
-- [Yahoo!ファイナンス] 政府　ラピダスに1500億の追加出資　2月に続き2度目(テレビ朝日系（ANN）) (06/05 15:33)
-  概要: 赤沢経済産業大臣は次世代半導体の量産を目指す「ラピダス」に対し、1500億円の追加出資を行ったと発表しました。
+- [Yahoo!ファイナンス] 6月高配当株ランキング！ 最高益企業も/三菱UFJが上場来高値/日経平均続落【今日の注目株＆日本株市場見通し】「デイリーZAi」6月5日号(ダイヤモンド・ザイ) (06/05 20:10)
+  概要: ◆今日の内容を10秒でチェック！　
+・日経平均は続落、AI関連株に売りも出遅れ銘柄に買い
+・AI脅威を払拭するトレンドマイクロ、T＆Dは更に資本効率を改善へ
+・6月高配当株ランキング！　 JACなど最
+- [Yahoo!ファイナンス] ＳＷＣＣ（5805）、3か月間の株価の変動幅と高値・安値は？【2026年6月5日】(LIMO) (06/05 20:05)
+  概要: 東証プライムに上場する非鉄金属銘柄のSWCC  について、2026年3月5日から2026年6月5日まで保有した場合の株価推移や変動率について紹介します。
 
-赤沢経産大臣
-「情報処理推進機構＝IPAを通じて同社（ラピダス）に対して1500億円の
-- [NHK経済] 政府 ラピダスに1500億円追加出資を発表 (06/05 14:50)
-  概要: 経済産業省は、5日、先端半導体の量産を目指す「ラピダス」に追加で1500億円を出資したと発表しました。国による支援額は合わせて2兆6000億円余りに上り、巨額の支援に見合う成果を出せるかが焦点です。
+あわせて、SWCCの直近の202
+- [Investing.com日本] 5日の香港市場概況：ハンセン指数は3日続落、半導体などの下落で約2カ月ぶりの安値 (06/05 19:45)
+- [Investing.com日本] シティ、世界株式市場は2008年以来最も過熱した水準と警告 (06/05 19:34)
+- [Investing.com日本] 5日の中国本土市場概況：上海総合は続落、ハイテク株の下落で約1カ月半ぶりの安値 (06/05 19:30)
+- [ZUU online] 日々是相場［夕刊］――  2026年6月5日（金） (06/05 19:30)
+  概要: 日経平均 66,588.12円 ▼882.57円 為替 １ドル＝159.95円 売買高（東証プライム、以下同） 24億5,865万株 売買代金 9兆8535億00百万円 値上り銘柄数 1,196銘柄 
+- [Investing.com日本] バンク・オブ・アメリカのハートネット氏、6月の株式市場に警鐘 (06/05 19:28)
+- [NHK経済] 円相場 小幅な値動き 注目は今夜の米雇用統計に (06/05 18:07)
+  概要: 5日の東京外国為替市場、円相場は小幅な値動きとなりました。
+- [ロイター日本マーケット] 中国・香港株式市場・大引け＝続落、ＡＩ・半導体関連株に利益確定売り (06/05 17:50)
+- [NHK経済] 4月の景気動向指数 前月比1.1ポイントの上昇 上昇は2か月連続 (06/05 16:39)
+  概要: 内閣府が発表したことし4月の景気動向指数は、景気の現状を示す「一致指数」が2020年を100として速報値で117.9となり、前の月から1.1ポイント上昇しました。
+- [ロイター日本マーケット] 午後3時のドルは159円後半、イラン情勢の続報と米雇用統計待ち (06/05 15:55)
+- [NHK経済] 米アラスカ州とアフリカから代替調達の原油が到着へ (06/05 18:18)
+  概要: 中東情勢の悪化で原油の安定供給が懸念される中、アメリカのアラスカ州やアフリカの南スーダンで代替調達された原油が、7日に日本に到着する見込みとなりました。
+- [ロイター日本マーケット] キオクシアＨＤ、5月売買代金は34兆円　ＡＩ・半導体関連が上位に (06/05 13:37)
 
 【依頼内容】
 - 短期的なリスク要因（今後1週間以内）
