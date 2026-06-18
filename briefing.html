@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年06月18日 16:14 JST</span>
+    <span class="updated">更新: 2026年06月18日 20:46 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">71,053.49 <span class="tile-unit">pt</span></div>
+          <div class="tile-change up">
+            +1151.24&nbsp;&nbsp;+1.65%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">432.3 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +6.80&nbsp;&nbsp;+1.60%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">160.92 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.50&nbsp;&nbsp;+0.31%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">51,492.55 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">160.60 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.18&nbsp;&nbsp;+0.11%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.463 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">74.01 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">74.77 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -2.78&nbsp;&nbsp;-3.62%
+            -2.02&nbsp;&nbsp;-2.63%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4324.40 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4268.70 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -34.50&nbsp;&nbsp;-0.79%
+            -90.20&nbsp;&nbsp;-2.07%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">71,053.49 <span class="tile-unit">pt</span></div>
-          <div class="tile-change up">
-            +1151.24&nbsp;&nbsp;+1.65%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">432.3 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +6.80&nbsp;&nbsp;+1.60%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -915,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (13件)</div>
+    <div class="card-title">📰 最新ニュース (12件)</div>
     
     
     
@@ -925,72 +925,89 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📈 マーケット全般 (10件)</div>
+          <div class="news-group-title">📈 マーケット全般 (9件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/dcb424f5f509f8916c80e7a05221a10306790c0d?source=rss" target="_blank" rel="noopener">ソニーG、役員報酬1億円以上は1名のみ(東京商工リサーチ)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/18 16:10</span>
-              </div>
-              
-              <div class="news-summary">ソニーグループ（株）（TSRコード:291064280、東証プライム）の十時裕樹・代表執行役社長CEOの報酬総額は2億4000万円だった。1億円以上で開示されたのは十時氏のみ。
-　6月18日に開示さ</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/624fb2a7d90ae4d6d6582d65e41e6e26b3f84357?source=rss" target="_blank" rel="noopener">ホンダ三部社長3人が報酬額1億円超 前年6人から半減の3人(東京商工リサーチ)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/18 16:08</span>
-              </div>
-              
-              <div class="news-summary">6月18日、本田技研工業（株）（TSRコード:291038689、東証プライム）が有価証券報告書を公表した。報酬額が1億円以上だったのは三部敏宏社長ら3人だったが、前年の6人から半減した。
-　報酬額</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/6d3571b7cbd60f3590a1ec22dc99538cbb357437?source=rss" target="_blank" rel="noopener">ヨークHDの石橋社長「IPO、最速のタイミングで」　28年2月期以降の見通し(産経新聞)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/18 16:03</span>
-              </div>
-              
-              <div class="news-summary">イトーヨーカ堂やヨークベニマルなど26社を束ねるヨーク・ホールディングス（HD）の石橋誠一郎社長は18日、東京都内で会見し、「最速のタイミングで株式公開（IPO）目指す」と述べた。具体的には、2028…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/5ee97de5ea924ba3566633ee51f22d3875484c11?source=rss" target="_blank" rel="noopener">NEC、報酬1億円以上の開示人数が4倍超(東京商工リサーチ)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/18 16:01</span>
-              </div>
-              
-              <div class="news-summary">日本電気（株）（TSRコード:291138080、東証プライム、NEC）の報酬1億円以上の開示人数は14人だった。6月18日に開示された2026年3月期有価証券報告書で判明した。
-　前期（2025年</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1576525" target="_blank" rel="noopener">新興市場銘柄ダイジェスト:TalentXが急騰、HPCシステムズが反落</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1576863" target="_blank" rel="noopener">MidjourneyスキャナーのAnnounceを受け、Butterfly Networkの株価が急騰</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>06/18 16:00</span>
+                <span>06/18 20:33</span>
               </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1576855" target="_blank" rel="noopener">IBMの株価が本日下落している理由とは</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>06/18 20:30</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1576831" target="_blank" rel="noopener">ファイザーCFOが8月に退任、株価1.7%下落</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>06/18 20:17</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1576812" target="_blank" rel="noopener">FreeCastの株価、Starlinkの再販契約締結で170%急騰</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>06/18 20:08</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/302245" target="_blank" rel="noopener">日々是相場［夕刊］――  2026年6月18日（木）</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>06/18 19:30</span>
+              </div>
+              
+              <div class="news-summary">日経平均 71,053.49円 △1,151.24円 為替 １ドル＝160.64円 売買高（東証プライム、以下同） 25億5,563万株 売買代金 11兆8691億29百万円 値上り銘柄数 938銘柄…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/302244" target="_blank" rel="noopener">米ドル／円 ―― 161円台への上伸が介入のトリガーとなる可能性は否定できないだろう</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>06/18 19:00</span>
+              </div>
+              
+              <div class="news-summary">この記事は2026年6月18日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月18日（木）の午前10時時点に外為…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260618/k10015153731000.html" target="_blank" rel="noopener">円相場 1ドル＝160円台後半に値下がり 米利上げ観測広がり</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>06/18 18:36</span>
+              </div>
+              
+              <div class="news-summary">18日の東京外国為替市場は、FRB＝連邦準備制度理事会が年内に利上げに踏み切るのではないかとの観測からドルを買う動きが進み、円相場は一時、1ドル＝160円台後半まで値下がりしました。</div>
               
             </div>
             
@@ -1000,10 +1017,10 @@
               </div>
               <div class="news-meta">
                 <span class="news-source">NHK経済</span>
-                <span>06/18 15:46</span>
+                <span>06/18 16:29</span>
               </div>
               
-              <div class="news-summary">18日の東京株式市場は、アメリカとイランが戦闘終結に向けた覚書に署名したことなどを受けて多くの銘柄に買い注文が入り、日経平均株価は、7万1053円49銭で取り引きを終え、終値として初めて7万円を超えて…</div>
+              <div class="news-summary">18日の東京株式市場は、アメリカとイランが戦闘終結に向けた覚書に署名したことなどを受けて多くの銘柄に買い注文が入り、日経平均株価は終値として初めて7万円を超え、4日連続で最高値を更新しました。</div>
               
             </div>
             
@@ -1020,45 +1037,6 @@
               
             </div>
             
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260618/k10015153081000.html" target="_blank" rel="noopener">NY市場 一時1ドル＝160円台後半まで値下がり</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>06/18 06:09</span>
-              </div>
-              
-              <div class="news-summary">17日のニューヨーク外国為替市場では、FRB＝連邦準備制度理事会が年内に利上げに踏み切るのではないかとの観測から円を売ってドルを買う動きが進み、円相場は一時、1ドル＝160円台後半まで値下がりしました…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260618/k10015153071000.html" target="_blank" rel="noopener">NYダウ FRBの政策金利見通しや会見で一時600ドルあまり下落</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>06/18 04:51</span>
-              </div>
-              
-              <div class="news-summary">17日のニューヨーク株式市場では、FRB＝連邦準備制度理事会がインフレを抑え込むために年内に利上げに踏み切るのではないかとの観測から売り注文が出て、ダウ平均株価は一時、前日の終値と比べて600ドルあま…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260618/k10015153001000.html" target="_blank" rel="noopener">米 5月の小売業売上高 前月比0.9％増 個人消費は堅調さ維持</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>06/18 02:34</span>
-              </div>
-              
-              <div class="news-summary">アメリカの5月の小売業の売上高は、前の月と比べて0.9％増加しました。市場予想を上回り、イラン情勢の影響が広がる中でも個人消費は堅調さを維持していることが示された形です。</div>
-              
-            </div>
-            
           </div>
         </div>
         
@@ -1068,43 +1046,36 @@
       
         
         
-        <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (2件)</div>
-          <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.reuters.com/markets/japan/YXHLFCYUINKVVAEGETHMOS7U5Y-2026-06-18/" target="_blank" rel="noopener">スウェーデン、27年成長予想を2.5％に下方修正　イラン戦争が影響</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本トップ</span>
-                <span>06/18 14:32</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260618/k10015153341000.html" target="_blank" rel="noopener">ニデック 株主総会始まる 不正会計問題で社長が陳謝</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>06/18 13:43</span>
-              </div>
-              
-              <div class="news-summary">不正な会計処理が明らかになった電子部品大手のニデックの株主総会が開かれています。この中で岸田光哉社長は、一連の問題の影響で昨年度の決算の報告ができていないことなどについて陳謝した上で、企業風土の抜本的…</div>
-              
-            </div>
-            
-          </div>
-        </div>
-        
       
         
         
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (1件)</div>
+          <div class="news-group-title">📌 その他 (3件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1576832" target="_blank" rel="noopener">ライト・ストラテジー、ライトコインLayer 2プラットフォームLitVMに100万ドルを投資</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>06/18 20:15</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260618/k10015153671000.html" target="_blank" rel="noopener">日本経済はどうなる？ 米・イランが覚書署名で【詳しく】</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>06/18 19:42</span>
+              </div>
+              
+              <div class="news-summary">アメリカとイランが戦闘終結に向けた覚書に署名し、イラン情勢は大きな節目を迎えました。原油などの供給は今後どうなるのか？日本経済の見通しについて、専門家の見解や、関係者の反応などをまとめてお伝えします。…</div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1129,20 +1100,20 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-06-18 16:14）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-06-18 20:46）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 71,053.49 pt (+1.65%)
+- TOPIX (1306連動ETF): 432.3 円 (+1.60%)
+- ドル円: 160.92 円 (+0.31%)
 - S&P 500: 7,420.10 (-1.21%)
 - NASDAQ: 26,021.66 (-1.34%)
 - ダウ: 51,492.55 (-0.98%)
-- ドル円: 160.60 円 (+0.11%)
 - 米10年債利回り: 4.463 % (+0.00%)
-- WTI原油: 74.01 USD (-3.62%)
-- 金: 4324.40 USD (-0.79%)
-- 日経225: 71,053.49 pt (+1.65%)
-- TOPIX (1306連動ETF): 432.3 円 (+1.60%)
+- WTI原油: 74.77 USD (-2.63%)
+- 金: 4268.70 USD (-2.07%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1171,31 +1142,23 @@
   -12.44pt  Meta Platforms(META)  -5.44%  wt:3.05%  [Communication Services]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] ソニーG、役員報酬1億円以上は1名のみ(東京商工リサーチ) (06/18 16:10)
-  概要: ソニーグループ（株）（TSRコード:291064280、東証プライム）の十時裕樹・代表執行役社長CEOの報酬総額は2億4000万円だった。1億円以上で開示されたのは十時氏のみ。
-　6月18日に開示さ
-- [Yahoo!ファイナンス] ホンダ三部社長3人が報酬額1億円超 前年6人から半減の3人(東京商工リサーチ) (06/18 16:08)
-  概要: 6月18日、本田技研工業（株）（TSRコード:291038689、東証プライム）が有価証券報告書を公表した。報酬額が1億円以上だったのは三部敏宏社長ら3人だったが、前年の6人から半減した。
-　報酬額
-- [Yahoo!ファイナンス] ヨークHDの石橋社長「IPO、最速のタイミングで」　28年2月期以降の見通し(産経新聞) (06/18 16:03)
-  概要: イトーヨーカ堂やヨークベニマルなど26社を束ねるヨーク・ホールディングス（HD）の石橋誠一郎社長は18日、東京都内で会見し、「最速のタイミングで株式公開（IPO）目指す」と述べた。具体的には、2028
-- [Yahoo!ファイナンス] NEC、報酬1億円以上の開示人数が4倍超(東京商工リサーチ) (06/18 16:01)
-  概要: 日本電気（株）（TSRコード:291138080、東証プライム、NEC）の報酬1億円以上の開示人数は14人だった。6月18日に開示された2026年3月期有価証券報告書で判明した。
-　前期（2025年
-- [Investing.com日本] 新興市場銘柄ダイジェスト:TalentXが急騰、HPCシステムズが反落 (06/18 16:00)
-- [NHK経済] 株価 終値として初の7万円超え 最高値を更新 (06/18 15:46)
-  概要: 18日の東京株式市場は、アメリカとイランが戦闘終結に向けた覚書に署名したことなどを受けて多くの銘柄に買い注文が入り、日経平均株価は、7万1053円49銭で取り引きを終え、終値として初めて7万円を超えて
+- [Investing.com日本] MidjourneyスキャナーのAnnounceを受け、Butterfly Networkの株価が急騰 (06/18 20:33)
+- [Investing.com日本] IBMの株価が本日下落している理由とは (06/18 20:30)
+- [Investing.com日本] ファイザーCFOが8月に退任、株価1.7%下落 (06/18 20:17)
+- [Investing.com日本] FreeCastの株価、Starlinkの再販契約締結で170%急騰 (06/18 20:08)
+- [ZUU online] 日々是相場［夕刊］――  2026年6月18日（木） (06/18 19:30)
+  概要: 日経平均 71,053.49円 △1,151.24円 為替 １ドル＝160.64円 売買高（東証プライム、以下同） 25億5,563万株 売買代金 11兆8691億29百万円 値上り銘柄数 938銘柄
+- [ZUU online] 米ドル／円 ―― 161円台への上伸が介入のトリガーとなる可能性は否定できないだろう (06/18 19:00)
+  概要: この記事は2026年6月18日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月18日（木）の午前10時時点に外為
+- [NHK経済] 円相場 1ドル＝160円台後半に値下がり 米利上げ観測広がり (06/18 18:36)
+  概要: 18日の東京外国為替市場は、FRB＝連邦準備制度理事会が年内に利上げに踏み切るのではないかとの観測からドルを買う動きが進み、円相場は一時、1ドル＝160円台後半まで値下がりしました。
+- [NHK経済] 株価 終値として初の7万円超え 最高値を更新 (06/18 16:29)
+  概要: 18日の東京株式市場は、アメリカとイランが戦闘終結に向けた覚書に署名したことなどを受けて多くの銘柄に買い注文が入り、日経平均株価は終値として初めて7万円を超え、4日連続で最高値を更新しました。
 - [ZUU online] FX/為替「ドル/円今日の見通し｜FOMC受けドル円が高値更新」 外為どっとコム トゥデイ 2026年6月18日号 (06/18 10:32)
   概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年6月18日8時30分執筆・監修：株式会社外
-- [NHK経済] NY市場 一時1ドル＝160円台後半まで値下がり (06/18 06:09)
-  概要: 17日のニューヨーク外国為替市場では、FRB＝連邦準備制度理事会が年内に利上げに踏み切るのではないかとの観測から円を売ってドルを買う動きが進み、円相場は一時、1ドル＝160円台後半まで値下がりしました
-- [NHK経済] NYダウ FRBの政策金利見通しや会見で一時600ドルあまり下落 (06/18 04:51)
-  概要: 17日のニューヨーク株式市場では、FRB＝連邦準備制度理事会がインフレを抑え込むために年内に利上げに踏み切るのではないかとの観測から売り注文が出て、ダウ平均株価は一時、前日の終値と比べて600ドルあま
-- [NHK経済] 米 5月の小売業売上高 前月比0.9％増 個人消費は堅調さ維持 (06/18 02:34)
-  概要: アメリカの5月の小売業の売上高は、前の月と比べて0.9％増加しました。市場予想を上回り、イラン情勢の影響が広がる中でも個人消費は堅調さを維持していることが示された形です。
-- [ロイター日本トップ] スウェーデン、27年成長予想を2.5％に下方修正　イラン戦争が影響 (06/18 14:32)
-- [NHK経済] ニデック 株主総会始まる 不正会計問題で社長が陳謝 (06/18 13:43)
-  概要: 不正な会計処理が明らかになった電子部品大手のニデックの株主総会が開かれています。この中で岸田光哉社長は、一連の問題の影響で昨年度の決算の報告ができていないことなどについて陳謝した上で、企業風土の抜本的
+- [Investing.com日本] ライト・ストラテジー、ライトコインLayer 2プラットフォームLitVMに100万ドルを投資 (06/18 20:15)
+- [NHK経済] 日本経済はどうなる？ 米・イランが覚書署名で【詳しく】 (06/18 19:42)
+  概要: アメリカとイランが戦闘終結に向けた覚書に署名し、イラン情勢は大きな節目を迎えました。原油などの供給は今後どうなるのか？日本経済の見通しについて、専門家の見解や、関係者の反応などをまとめてお伝えします。
 - [ZUU online] EV時代のカーオーディオが変わる？ インフィニオンが示した「GaNアンプ」の可能性 (06/18 11:02)
   概要: ドイツの半導体メーカー、インフィニオン・テクノロジーズは6月17日、窒化ガリウム（GaN）を活用した次世代オーディオアンプに関する説明会を開催した。GaNは近年、EV（電気自動車）や急速充電器などの分
 
@@ -1212,15 +1175,15 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 71,053.49 pt (+1.65%)
+- TOPIX (1306連動ETF): 432.3 円 (+1.60%)
+- ドル円: 160.92 円 (+0.31%)
 - S&P 500: 7,420.10 (-1.21%)
 - NASDAQ: 26,021.66 (-1.34%)
 - ダウ: 51,492.55 (-0.98%)
-- ドル円: 160.60 円 (+0.11%)
 - 米10年債利回り: 4.463 % (+0.00%)
-- WTI原油: 74.01 USD (-3.62%)
-- 金: 4324.40 USD (-0.79%)
-- 日経225: 71,053.49 pt (+1.65%)
-- TOPIX (1306連動ETF): 432.3 円 (+1.60%)
+- WTI原油: 74.77 USD (-2.63%)
+- 金: 4268.70 USD (-2.07%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1249,31 +1212,23 @@
   -12.44pt  Meta Platforms(META)  -5.44%  wt:3.05%  [Communication Services]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] ソニーG、役員報酬1億円以上は1名のみ(東京商工リサーチ) (06/18 16:10)
-  概要: ソニーグループ（株）（TSRコード:291064280、東証プライム）の十時裕樹・代表執行役社長CEOの報酬総額は2億4000万円だった。1億円以上で開示されたのは十時氏のみ。
-　6月18日に開示さ
-- [Yahoo!ファイナンス] ホンダ三部社長3人が報酬額1億円超 前年6人から半減の3人(東京商工リサーチ) (06/18 16:08)
-  概要: 6月18日、本田技研工業（株）（TSRコード:291038689、東証プライム）が有価証券報告書を公表した。報酬額が1億円以上だったのは三部敏宏社長ら3人だったが、前年の6人から半減した。
-　報酬額
-- [Yahoo!ファイナンス] ヨークHDの石橋社長「IPO、最速のタイミングで」　28年2月期以降の見通し(産経新聞) (06/18 16:03)
-  概要: イトーヨーカ堂やヨークベニマルなど26社を束ねるヨーク・ホールディングス（HD）の石橋誠一郎社長は18日、東京都内で会見し、「最速のタイミングで株式公開（IPO）目指す」と述べた。具体的には、2028
-- [Yahoo!ファイナンス] NEC、報酬1億円以上の開示人数が4倍超(東京商工リサーチ) (06/18 16:01)
-  概要: 日本電気（株）（TSRコード:291138080、東証プライム、NEC）の報酬1億円以上の開示人数は14人だった。6月18日に開示された2026年3月期有価証券報告書で判明した。
-　前期（2025年
-- [Investing.com日本] 新興市場銘柄ダイジェスト:TalentXが急騰、HPCシステムズが反落 (06/18 16:00)
-- [NHK経済] 株価 終値として初の7万円超え 最高値を更新 (06/18 15:46)
-  概要: 18日の東京株式市場は、アメリカとイランが戦闘終結に向けた覚書に署名したことなどを受けて多くの銘柄に買い注文が入り、日経平均株価は、7万1053円49銭で取り引きを終え、終値として初めて7万円を超えて
+- [Investing.com日本] MidjourneyスキャナーのAnnounceを受け、Butterfly Networkの株価が急騰 (06/18 20:33)
+- [Investing.com日本] IBMの株価が本日下落している理由とは (06/18 20:30)
+- [Investing.com日本] ファイザーCFOが8月に退任、株価1.7%下落 (06/18 20:17)
+- [Investing.com日本] FreeCastの株価、Starlinkの再販契約締結で170%急騰 (06/18 20:08)
+- [ZUU online] 日々是相場［夕刊］――  2026年6月18日（木） (06/18 19:30)
+  概要: 日経平均 71,053.49円 △1,151.24円 為替 １ドル＝160.64円 売買高（東証プライム、以下同） 25億5,563万株 売買代金 11兆8691億29百万円 値上り銘柄数 938銘柄
+- [ZUU online] 米ドル／円 ―― 161円台への上伸が介入のトリガーとなる可能性は否定できないだろう (06/18 19:00)
+  概要: この記事は2026年6月18日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月18日（木）の午前10時時点に外為
+- [NHK経済] 円相場 1ドル＝160円台後半に値下がり 米利上げ観測広がり (06/18 18:36)
+  概要: 18日の東京外国為替市場は、FRB＝連邦準備制度理事会が年内に利上げに踏み切るのではないかとの観測からドルを買う動きが進み、円相場は一時、1ドル＝160円台後半まで値下がりしました。
+- [NHK経済] 株価 終値として初の7万円超え 最高値を更新 (06/18 16:29)
+  概要: 18日の東京株式市場は、アメリカとイランが戦闘終結に向けた覚書に署名したことなどを受けて多くの銘柄に買い注文が入り、日経平均株価は終値として初めて7万円を超え、4日連続で最高値を更新しました。
 - [ZUU online] FX/為替「ドル/円今日の見通し｜FOMC受けドル円が高値更新」 外為どっとコム トゥデイ 2026年6月18日号 (06/18 10:32)
   概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年6月18日8時30分執筆・監修：株式会社外
-- [NHK経済] NY市場 一時1ドル＝160円台後半まで値下がり (06/18 06:09)
-  概要: 17日のニューヨーク外国為替市場では、FRB＝連邦準備制度理事会が年内に利上げに踏み切るのではないかとの観測から円を売ってドルを買う動きが進み、円相場は一時、1ドル＝160円台後半まで値下がりしました
-- [NHK経済] NYダウ FRBの政策金利見通しや会見で一時600ドルあまり下落 (06/18 04:51)
-  概要: 17日のニューヨーク株式市場では、FRB＝連邦準備制度理事会がインフレを抑え込むために年内に利上げに踏み切るのではないかとの観測から売り注文が出て、ダウ平均株価は一時、前日の終値と比べて600ドルあま
-- [NHK経済] 米 5月の小売業売上高 前月比0.9％増 個人消費は堅調さ維持 (06/18 02:34)
-  概要: アメリカの5月の小売業の売上高は、前の月と比べて0.9％増加しました。市場予想を上回り、イラン情勢の影響が広がる中でも個人消費は堅調さを維持していることが示された形です。
-- [ロイター日本トップ] スウェーデン、27年成長予想を2.5％に下方修正　イラン戦争が影響 (06/18 14:32)
-- [NHK経済] ニデック 株主総会始まる 不正会計問題で社長が陳謝 (06/18 13:43)
-  概要: 不正な会計処理が明らかになった電子部品大手のニデックの株主総会が開かれています。この中で岸田光哉社長は、一連の問題の影響で昨年度の決算の報告ができていないことなどについて陳謝した上で、企業風土の抜本的
+- [Investing.com日本] ライト・ストラテジー、ライトコインLayer 2プラットフォームLitVMに100万ドルを投資 (06/18 20:15)
+- [NHK経済] 日本経済はどうなる？ 米・イランが覚書署名で【詳しく】 (06/18 19:42)
+  概要: アメリカとイランが戦闘終結に向けた覚書に署名し、イラン情勢は大きな節目を迎えました。原油などの供給は今後どうなるのか？日本経済の見通しについて、専門家の見解や、関係者の反応などをまとめてお伝えします。
 - [ZUU online] EV時代のカーオーディオが変わる？ インフィニオンが示した「GaNアンプ」の可能性 (06/18 11:02)
   概要: ドイツの半導体メーカー、インフィニオン・テクノロジーズは6月17日、窒化ガリウム（GaN）を活用した次世代オーディオアンプに関する説明会を開催した。GaNは近年、EV（電気自動車）や急速充電器などの分
 
@@ -1284,15 +1239,15 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 71,053.49 pt (+1.65%)
+- TOPIX (1306連動ETF): 432.3 円 (+1.60%)
+- ドル円: 160.92 円 (+0.31%)
 - S&P 500: 7,420.10 (-1.21%)
 - NASDAQ: 26,021.66 (-1.34%)
 - ダウ: 51,492.55 (-0.98%)
-- ドル円: 160.60 円 (+0.11%)
 - 米10年債利回り: 4.463 % (+0.00%)
-- WTI原油: 74.01 USD (-3.62%)
-- 金: 4324.40 USD (-0.79%)
-- 日経225: 71,053.49 pt (+1.65%)
-- TOPIX (1306連動ETF): 432.3 円 (+1.60%)
+- WTI原油: 74.77 USD (-2.63%)
+- 金: 4268.70 USD (-2.07%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1321,31 +1276,23 @@
   -12.44pt  Meta Platforms(META)  -5.44%  wt:3.05%  [Communication Services]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] ソニーG、役員報酬1億円以上は1名のみ(東京商工リサーチ) (06/18 16:10)
-  概要: ソニーグループ（株）（TSRコード:291064280、東証プライム）の十時裕樹・代表執行役社長CEOの報酬総額は2億4000万円だった。1億円以上で開示されたのは十時氏のみ。
-　6月18日に開示さ
-- [Yahoo!ファイナンス] ホンダ三部社長3人が報酬額1億円超 前年6人から半減の3人(東京商工リサーチ) (06/18 16:08)
-  概要: 6月18日、本田技研工業（株）（TSRコード:291038689、東証プライム）が有価証券報告書を公表した。報酬額が1億円以上だったのは三部敏宏社長ら3人だったが、前年の6人から半減した。
-　報酬額
-- [Yahoo!ファイナンス] ヨークHDの石橋社長「IPO、最速のタイミングで」　28年2月期以降の見通し(産経新聞) (06/18 16:03)
-  概要: イトーヨーカ堂やヨークベニマルなど26社を束ねるヨーク・ホールディングス（HD）の石橋誠一郎社長は18日、東京都内で会見し、「最速のタイミングで株式公開（IPO）目指す」と述べた。具体的には、2028
-- [Yahoo!ファイナンス] NEC、報酬1億円以上の開示人数が4倍超(東京商工リサーチ) (06/18 16:01)
-  概要: 日本電気（株）（TSRコード:291138080、東証プライム、NEC）の報酬1億円以上の開示人数は14人だった。6月18日に開示された2026年3月期有価証券報告書で判明した。
-　前期（2025年
-- [Investing.com日本] 新興市場銘柄ダイジェスト:TalentXが急騰、HPCシステムズが反落 (06/18 16:00)
-- [NHK経済] 株価 終値として初の7万円超え 最高値を更新 (06/18 15:46)
-  概要: 18日の東京株式市場は、アメリカとイランが戦闘終結に向けた覚書に署名したことなどを受けて多くの銘柄に買い注文が入り、日経平均株価は、7万1053円49銭で取り引きを終え、終値として初めて7万円を超えて
+- [Investing.com日本] MidjourneyスキャナーのAnnounceを受け、Butterfly Networkの株価が急騰 (06/18 20:33)
+- [Investing.com日本] IBMの株価が本日下落している理由とは (06/18 20:30)
+- [Investing.com日本] ファイザーCFOが8月に退任、株価1.7%下落 (06/18 20:17)
+- [Investing.com日本] FreeCastの株価、Starlinkの再販契約締結で170%急騰 (06/18 20:08)
+- [ZUU online] 日々是相場［夕刊］――  2026年6月18日（木） (06/18 19:30)
+  概要: 日経平均 71,053.49円 △1,151.24円 為替 １ドル＝160.64円 売買高（東証プライム、以下同） 25億5,563万株 売買代金 11兆8691億29百万円 値上り銘柄数 938銘柄
+- [ZUU online] 米ドル／円 ―― 161円台への上伸が介入のトリガーとなる可能性は否定できないだろう (06/18 19:00)
+  概要: この記事は2026年6月18日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月18日（木）の午前10時時点に外為
+- [NHK経済] 円相場 1ドル＝160円台後半に値下がり 米利上げ観測広がり (06/18 18:36)
+  概要: 18日の東京外国為替市場は、FRB＝連邦準備制度理事会が年内に利上げに踏み切るのではないかとの観測からドルを買う動きが進み、円相場は一時、1ドル＝160円台後半まで値下がりしました。
+- [NHK経済] 株価 終値として初の7万円超え 最高値を更新 (06/18 16:29)
+  概要: 18日の東京株式市場は、アメリカとイランが戦闘終結に向けた覚書に署名したことなどを受けて多くの銘柄に買い注文が入り、日経平均株価は終値として初めて7万円を超え、4日連続で最高値を更新しました。
 - [ZUU online] FX/為替「ドル/円今日の見通し｜FOMC受けドル円が高値更新」 外為どっとコム トゥデイ 2026年6月18日号 (06/18 10:32)
   概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年6月18日8時30分執筆・監修：株式会社外
-- [NHK経済] NY市場 一時1ドル＝160円台後半まで値下がり (06/18 06:09)
-  概要: 17日のニューヨーク外国為替市場では、FRB＝連邦準備制度理事会が年内に利上げに踏み切るのではないかとの観測から円を売ってドルを買う動きが進み、円相場は一時、1ドル＝160円台後半まで値下がりしました
-- [NHK経済] NYダウ FRBの政策金利見通しや会見で一時600ドルあまり下落 (06/18 04:51)
-  概要: 17日のニューヨーク株式市場では、FRB＝連邦準備制度理事会がインフレを抑え込むために年内に利上げに踏み切るのではないかとの観測から売り注文が出て、ダウ平均株価は一時、前日の終値と比べて600ドルあま
-- [NHK経済] 米 5月の小売業売上高 前月比0.9％増 個人消費は堅調さ維持 (06/18 02:34)
-  概要: アメリカの5月の小売業の売上高は、前の月と比べて0.9％増加しました。市場予想を上回り、イラン情勢の影響が広がる中でも個人消費は堅調さを維持していることが示された形です。
-- [ロイター日本トップ] スウェーデン、27年成長予想を2.5％に下方修正　イラン戦争が影響 (06/18 14:32)
-- [NHK経済] ニデック 株主総会始まる 不正会計問題で社長が陳謝 (06/18 13:43)
-  概要: 不正な会計処理が明らかになった電子部品大手のニデックの株主総会が開かれています。この中で岸田光哉社長は、一連の問題の影響で昨年度の決算の報告ができていないことなどについて陳謝した上で、企業風土の抜本的
+- [Investing.com日本] ライト・ストラテジー、ライトコインLayer 2プラットフォームLitVMに100万ドルを投資 (06/18 20:15)
+- [NHK経済] 日本経済はどうなる？ 米・イランが覚書署名で【詳しく】 (06/18 19:42)
+  概要: アメリカとイランが戦闘終結に向けた覚書に署名し、イラン情勢は大きな節目を迎えました。原油などの供給は今後どうなるのか？日本経済の見通しについて、専門家の見解や、関係者の反応などをまとめてお伝えします。
 - [ZUU online] EV時代のカーオーディオが変わる？ インフィニオンが示した「GaNアンプ」の可能性 (06/18 11:02)
   概要: ドイツの半導体メーカー、インフィニオン・テクノロジーズは6月17日、窒化ガリウム（GaN）を活用した次世代オーディオアンプに関する説明会を開催した。GaNは近年、EV（電気自動車）や急速充電器などの分
 
