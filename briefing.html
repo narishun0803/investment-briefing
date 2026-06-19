@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [夜]</title>
+  <title>投資情報ブリーフィング [朝]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">夜</span>
-    <span class="slot-desc">米国寄り付き直前・経済指標・欧州市場</span>
+    <span class="slot-badge">朝</span>
+    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年06月20日 00:57 JST</span>
+    <span class="updated">更新: 2026年06月20日 06:54 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -581,9 +581,9 @@
       <div class="market-tile primary">
         <div class="tile-name">ドル円</div>
         
-          <div class="tile-price">161.29 <span class="tile-unit">円</span></div>
+          <div class="tile-price">161.28 <span class="tile-unit">円</span></div>
           <div class="tile-change up">
-            +0.69&nbsp;&nbsp;+0.43%
+            +0.68&nbsp;&nbsp;+0.42%
           </div>
         
         
@@ -603,9 +603,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">76.33 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">76.54 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -0.27&nbsp;&nbsp;-0.35%
+            -0.06&nbsp;&nbsp;-0.08%
           </div>
         
         
@@ -614,9 +614,9 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4168.00 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4172.90 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -56.10&nbsp;&nbsp;-1.33%
+            -51.20&nbsp;&nbsp;-1.21%
           </div>
         
         
@@ -660,12 +660,120 @@
 
         <div class="contrib-sub">
           <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(円)</th><th>騰落</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6857:TYO" target="_blank" rel="noopener">アドバンテスト</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="up">+51.43</td>
+              <td class="up">+4.75%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="up">+6.43</td>
+              <td class="up">+0.23%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6367:TYO" target="_blank" rel="noopener">ダイキン</a>
+                <span class="contrib-sector">機械</span>
+              </td>
+              <td class="up">+3.39</td>
+              <td class="up">+0.40%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6762:TYO" target="_blank" rel="noopener">TDK</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="up">+1.93</td>
+              <td class="up">+1.40%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/4661:TYO" target="_blank" rel="noopener">オリエンタルランド</a>
+                <span class="contrib-sector">サービス</span>
+              </td>
+              <td class="up">+1.30</td>
+              <td class="up">+1.59%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
 
         <div class="contrib-sub">
           <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(円)</th><th>騰落</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/7741:TYO" target="_blank" rel="noopener">HOYA</a>
+                <span class="contrib-sector">精密機器</span>
+              </td>
+              <td class="down">-45.36</td>
+              <td class="down">-4.45%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9983:TYO" target="_blank" rel="noopener">ファーストリテイリング</a>
+                <span class="contrib-sector">小売</span>
+              </td>
+              <td class="down">-35.71</td>
+              <td class="down">-1.19%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/8035:TYO" target="_blank" rel="noopener">東京エレクトロン</a>
+                <span class="contrib-sector">半導体製造装置</span>
+              </td>
+              <td class="down">-25.71</td>
+              <td class="down">-0.95%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/8411:TYO" target="_blank" rel="noopener">みずほFG</a>
+                <span class="contrib-sector">銀行</span>
+              </td>
+              <td class="down">-13.04</td>
+              <td class="down">-4.42%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6098:TYO" target="_blank" rel="noopener">リクルートHD</a>
+                <span class="contrib-sector">サービス</span>
+              </td>
+              <td class="down">-10.71</td>
+              <td class="down">-2.69%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
       </div>
 
@@ -675,12 +783,130 @@
 
         <div class="contrib-sub">
           <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/NVDA:NASDAQ" target="_blank" rel="noopener">NVDA</a>
+                <span class="contrib-sector">Nvidia</span>
+              </td>
+              <td class="up">+22.93</td>
+              <td class="up">+2.95%</td>
+              <td style="color:var(--text2)">10.47%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/MU:NASDAQ" target="_blank" rel="noopener">MU</a>
+                <span class="contrib-sector">Micron Technology</span>
+              </td>
+              <td class="up">+16.05</td>
+              <td class="up">+8.70%</td>
+              <td style="color:var(--text2)">2.49%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AVGO:NASDAQ" target="_blank" rel="noopener">AVGO</a>
+                <span class="contrib-sector">Broadcom</span>
+              </td>
+              <td class="up">+13.76</td>
+              <td class="up">+4.70%</td>
+              <td style="color:var(--text2)">3.95%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AMZN:NASDAQ" target="_blank" rel="noopener">AMZN</a>
+                <span class="contrib-sector">Amazon</span>
+              </td>
+              <td class="up">+11.62</td>
+              <td class="up">+2.90%</td>
+              <td style="color:var(--text2)">5.40%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOG:NASDAQ" target="_blank" rel="noopener">GOOG</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="up">+10.25</td>
+              <td class="up">+1.48%</td>
+              <td style="color:var(--text2)">9.33%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
 
         <div class="contrib-sub">
           <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/JPM:NYSE" target="_blank" rel="noopener">JPM</a>
+                <span class="contrib-sector">JPMorgan Chase</span>
+              </td>
+              <td class="down">-3.46</td>
+              <td class="down">-2.47%</td>
+              <td style="color:var(--text2)">1.89%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/JNJ:NYSE" target="_blank" rel="noopener">JNJ</a>
+                <span class="contrib-sector">Johnson & Johnson</span>
+              </td>
+              <td class="down">-2.19</td>
+              <td class="down">-2.48%</td>
+              <td style="color:var(--text2)">1.19%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/IBM:NYSE" target="_blank" rel="noopener">IBM</a>
+                <span class="contrib-sector">IBM</span>
+              </td>
+              <td class="down">-1.95</td>
+              <td class="down">-5.05%</td>
+              <td style="color:var(--text2)">0.52%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/XOM:NYSE" target="_blank" rel="noopener">XOM</a>
+                <span class="contrib-sector">ExxonMobil</span>
+              </td>
+              <td class="down">-1.90</td>
+              <td class="down">-2.08%</td>
+              <td style="color:var(--text2)">1.23%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/LLY:NYSE" target="_blank" rel="noopener">LLY</a>
+                <span class="contrib-sector">Lilly (Eli)</span>
+              </td>
+              <td class="down">-1.88</td>
+              <td class="down">-1.21%</td>
+              <td style="color:var(--text2)">2.09%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
       </div>
 
@@ -689,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (21件)</div>
+    <div class="card-title">📰 最新ニュース (19件)</div>
     
     
     
@@ -704,14 +930,75 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/a22940f88220bfd5338e2587efbedc5a024fc255?source=rss" target="_blank" rel="noopener">キューバが市場開放方針　米圧力で規制緩和(共同通信)</a>
+                <a href="https://news.yahoo.co.jp/articles/4228a6007fcba9b8c0b4683ef799383b56444ee0?source=rss" target="_blank" rel="noopener">年収260万円時代に知りたかった！ 「死ぬほど節約しても貯まらない」お金の真実(ダイヤモンド・オンライン)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/19 22:45</span>
+                <span>06/20 06:45</span>
               </div>
               
-              <div class="news-summary">【サンパウロ共同】キューバのマレロ首相は18日、国内外の民間企業に対する規制緩和など市場開放につながる経済改革案を発表した。トランプ米政権からの要求に応じて開放路線へとかじを切った格好だ。実際に改革</div>
+              <div class="news-summary">日経平均が6万5000円を突破する裏側で、物価の値上がりが半端ない！どうすれば、すさまじいインフレと実質賃金の低下におびえず、確実にお金を増やせるのか。だが、その一歩が踏み出せない……。そんなときにお…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/dba58e8f474ec8bf79d973aa15c1eac827ccaea3?source=rss" target="_blank" rel="noopener">【新製品】サイン・ハウス「B+COM 7X」 6/26に4万9500円で発売！「EVO」の一部機能なしで1万円のプライスダウン(Webikeプラス)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>06/20 06:40</span>
+              </div>
+              
+              <div class="news-summary">株式会社サイン・ハウスは、ハイエンドインカム「B+COM 6XR」の後継機となる「B+COM 7X」を2026年6月26日に発売すると発表した。予約は5月29日より開始され、希望小売価格は49,500…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/eab91e624e965413a6d3664075a6e93420c1b9fa?source=rss" target="_blank" rel="noopener">結局「覚書」締結で、当面の相場は「TACO」に賭けていた側の勝ち、だが「イラン戦争」は本当に終結できるのだろうか(東洋経済オンライン)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>06/20 06:30</span>
+              </div>
+              
+              <div class="news-summary">日本銀行が16日に利上げを決定して、政策金利が31年ぶりに1.0％となった。にもかかわらず、日経平均株価は同日、ついに7万円の大台に乗せた。年初は5万1010円で始まったのだから、わずか半年で4割も</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/dd538cabb348c917963dbad231307ee127761a87?source=rss" target="_blank" rel="noopener">リトルカブの“カブラ”仕様がリトルカブラ！希少パーツで仕上げた愛ある一台！(MotorFan)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>06/20 06:30</span>
+              </div>
+              
+              <div class="news-summary">カフェカブ関西の会場で目を引いたのが、このリトルカブラ。1990年代に販売された純正ドレスアップモデルをベースに、前オーナーであるガチャピンさんから受け継いだ1台だ。希少な純正オプションスクリーンやベ…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.reuters.com/opinion/4OWLJR3FOBPTNHJ6O2CO3SPZAA-2026-06-19/" target="_blank" rel="noopener">欧州市場サマリー（19日）</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ロイター日本マーケット</span>
+                <span>06/20 02:19</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.reuters.com/opinion/EQYZPKCC7RK6PAR5VBPUNYLVGU-2026-06-19/" target="_blank" rel="noopener">欧州外為市場＝円は40年ぶり安値が視野に、ポンドは堅調</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ロイター日本マーケット</span>
+                <span>06/20 00:16</span>
+              </div>
               
             </div>
             
@@ -763,65 +1050,6 @@
               
             </div>
             
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260619/k10015154071000.html" target="_blank" rel="noopener">5月の消費者物価指数 前年比+1.4％ 食料品が物価押し上げる</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>06/19 18:17</span>
-              </div>
-              
-              <div class="news-summary">5月の全国の消費者物価指数は、天候による変動が大きい生鮮食品を除いた指数が去年の同じ月より1.4％上昇しました。上昇率は前の月と変わらず横ばいでした。</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.reuters.com/markets/japan/KS2JO5YMVNLMZOIRG5YLY7DIFA-2026-06-19/" target="_blank" rel="noopener">アジア株式市場サマリー：引け（19日）</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本マーケット</span>
-                <span>06/19 16:46</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.reuters.com/markets/japan/WN66FNHDLBOOTCAKKAINGRIBSU-2026-06-19/" target="_blank" rel="noopener">日経平均は7日続伸、半導体主導で一時最高値　ＴＯＰＩＸは反落</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本マーケット</span>
-                <span>06/19 16:36</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302196" target="_blank" rel="noopener">元刑事が立ち上げた太陽光発電販売・施工のトラーチ。創業4年で年商21億円をどう達成したのか？</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>06/19 13:03</span>
-              </div>
-              
-              <div class="news-summary">元刑事という異色の経歴を持ち、創業からわずか4年で年商21億円を達成した株式会社トラーチ代表取締役の稲場基泰氏。太陽光発電や蓄電池の販売・施工を手がける同社は、東京都の太陽光発電設置義務化などの追い風…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.reuters.com/markets/japan/O27KPAYJP5NU7GBEH4MKNEDW2Y-2026-06-19/" target="_blank" rel="noopener">午前の日経平均は続伸、最高値　米半導体株高で関連株上昇</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本マーケット</span>
-                <span>06/19 11:54</span>
-              </div>
-              
-            </div>
-            
           </div>
         </div>
         
@@ -829,7 +1057,7 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (3件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (2件)</div>
           <div class="news-list">
             
             <div class="news-item">
@@ -853,17 +1081,6 @@
               </div>
               
               <div class="news-summary">日銀は、感染症の治療のため入院していた植田総裁が19日に退院したと発表しました。来週23日から公務にあたるということです。</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.reuters.com/opinion/SVE77L73PVI47HQNWF22BZSKZ4-2026-06-19/" target="_blank" rel="noopener">英5月財政赤字、インフレ高進で前年比30％増</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本マーケット</span>
-                <span>06/19 16:58</span>
-              </div>
               
             </div>
             
@@ -917,7 +1134,7 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (5件)</div>
+          <div class="news-group-title">📌 その他 (4件)</div>
           <div class="news-list">
             
             <div class="news-item">
@@ -930,19 +1147,6 @@
               </div>
               
               <div class="news-summary">経営の抜本的な改善に向けて広く提携先を募ってきた、東京電力ホールディングスは、提案内容を精査した結果、日米の投資ファンドや通信大手のあわせて5つの陣営を軸に交渉を進めていく方針を固めました。5つの陣営…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/f9863936b94ea92c6c25e44d1aa3ef46822b8bc8?source=rss" target="_blank" rel="noopener">東電の提携先、5陣営有力　ソフトバンクなど交渉(共同通信)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/19 23:05</span>
-              </div>
-              
-              <div class="news-summary">東京電力ホールディングスが、ソフトバンクグループや日本産業パートナーズ（JIP）、米投資ファンドKKRなど5陣営を有力候補として資本提携の交渉を進めていることが19日分かった。東電は外部企業との提携</div>
               
             </div>
             
@@ -993,58 +1197,77 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-06-20 00:57）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-06-20 06:54）の投資ブリーフィング情報です。
 
-【時間帯】夜（米国寄り付き直前・経済指標・欧州市場）
+【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
 
 【マーケットデータ】
 - S&P 500: nan (+nan%)
 - NASDAQ: nan (+nan%)
 - ダウ: nan (+nan%)
-- ドル円: 161.29 円 (+0.43%)
+- ドル円: 161.28 円 (+0.42%)
 - 米10年債利回り: 4.451 % (+0.00%)
-- WTI原油: 76.33 USD (-0.35%)
-- 金: 4168.00 USD (-1.33%)
+- WTI原油: 76.54 USD (-0.08%)
+- 金: 4172.90 USD (-1.21%)
 - 日経225: 71,250.06 pt (+0.00%)
 - TOPIX (1306連動ETF): 429.7 円 (-0.60%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
+  ++51.43円  アドバンテスト(6857)  +4.75%  [電機]
+  ++6.43円  キーエンス(6861)  +0.23%  [電機]
+  ++3.39円  ダイキン(6367)  +0.40%  [機械]
+  ++1.93円  TDK(6762)  +1.40%  [電機]
+  ++1.30円  オリエンタルランド(4661)  +1.59%  [サービス]
 ▼ 日経225 (下落寄与TOP5)
+  -45.36円  HOYA(7741)  -4.45%  [精密機器]
+  -35.71円  ファーストリテイリング(9983)  -1.19%  [小売]
+  -25.71円  東京エレクトロン(8035)  -0.95%  [半導体製造装置]
+  -13.04円  みずほFG(8411)  -4.42%  [銀行]
+  -10.71円  リクルートHD(6098)  -2.69%  [サービス]
 ▼ S&P500 (上昇寄与TOP5)
+  ++22.93pt  Nvidia(NVDA)  +2.95%  wt:10.47%  [Information Technology]
+  ++16.05pt  Micron Technology(MU)  +8.70%  wt:2.49%  [Information Technology]
+  ++13.76pt  Broadcom(AVGO)  +4.70%  wt:3.95%  [Information Technology]
+  ++11.62pt  Amazon(AMZN)  +2.90%  wt:5.40%  [Consumer Discretionary]
+  ++10.25pt  Alphabet Inc. (Class C)(GOOG)  +1.48%  wt:9.33%  [Communication Services]
 ▼ S&P500 (下落寄与TOP5)
+  -3.46pt  JPMorgan Chase(JPM)  -2.47%  wt:1.89%  [Financials]
+  -2.19pt  Johnson & Johnson(JNJ)  -2.48%  wt:1.19%  [Health Care]
+  -1.95pt  IBM(IBM)  -5.05%  wt:0.52%  [Information Technology]
+  -1.90pt  ExxonMobil(XOM)  -2.08%  wt:1.23%  [Energy]
+  -1.88pt  Lilly (Eli)(LLY)  -1.21%  wt:2.09%  [Health Care]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] キューバが市場開放方針　米圧力で規制緩和(共同通信) (06/19 22:45)
-  概要: 【サンパウロ共同】キューバのマレロ首相は18日、国内外の民間企業に対する規制緩和など市場開放につながる経済改革案を発表した。トランプ米政権からの要求に応じて開放路線へとかじを切った格好だ。実際に改革
+- [Yahoo!ファイナンス] 年収260万円時代に知りたかった！ 「死ぬほど節約しても貯まらない」お金の真実(ダイヤモンド・オンライン) (06/20 06:45)
+  概要: 日経平均が6万5000円を突破する裏側で、物価の値上がりが半端ない！どうすれば、すさまじいインフレと実質賃金の低下におびえず、確実にお金を増やせるのか。だが、その一歩が踏み出せない……。そんなときにお
+- [Yahoo!ファイナンス] 【新製品】サイン・ハウス「B+COM 7X」 6/26に4万9500円で発売！「EVO」の一部機能なしで1万円のプライスダウン(Webikeプラス) (06/20 06:40)
+  概要: 株式会社サイン・ハウスは、ハイエンドインカム「B+COM 6XR」の後継機となる「B+COM 7X」を2026年6月26日に発売すると発表した。予約は5月29日より開始され、希望小売価格は49,500
+- [Yahoo!ファイナンス] 結局「覚書」締結で、当面の相場は「TACO」に賭けていた側の勝ち、だが「イラン戦争」は本当に終結できるのだろうか(東洋経済オンライン) (06/20 06:30)
+  概要: 日本銀行が16日に利上げを決定して、政策金利が31年ぶりに1.0％となった。にもかかわらず、日経平均株価は同日、ついに7万円の大台に乗せた。年初は5万1010円で始まったのだから、わずか半年で4割も
+- [Yahoo!ファイナンス] リトルカブの“カブラ”仕様がリトルカブラ！希少パーツで仕上げた愛ある一台！(MotorFan) (06/20 06:30)
+  概要: カフェカブ関西の会場で目を引いたのが、このリトルカブラ。1990年代に販売された純正ドレスアップモデルをベースに、前オーナーであるガチャピンさんから受け継いだ1台だ。希少な純正オプションスクリーンやベ
+- [ロイター日本マーケット] 欧州市場サマリー（19日） (06/20 02:19)
+- [ロイター日本マーケット] 欧州外為市場＝円は40年ぶり安値が視野に、ポンドは堅調 (06/20 00:16)
 - [Investing.com日本] タカ派中央銀行の台頭が株式市場に与える影響——バークレイズが分析 (06/19 20:56)
 - [Investing.com日本] エボニック株が本日急騰、ドイツ銀行が目標株価を引き上げ (06/19 20:43)
 - [ZUU online] 日々是相場［夕刊］――  2026年6月19日（金） (06/19 19:30)
   概要: 日経平均 71,250.06円 △196.57円 為替 １ドル＝161.35円 売買高（東証プライム、以下同） 33億9,753万株 売買代金 14兆0609億25百万円 値上り銘柄数 649銘柄 値
 - [NHK経済] 円相場 1ドル＝161円台に値下がり (06/19 18:44)
   概要: 19日の東京外国為替市場、アメリカで利上げ観測が強まり、日本との金利差の広がりが意識されたことから円を売ってドルを買う動きが多く、1ドル＝161円台での取り引きが続きました。
-- [NHK経済] 5月の消費者物価指数 前年比+1.4％ 食料品が物価押し上げる (06/19 18:17)
-  概要: 5月の全国の消費者物価指数は、天候による変動が大きい生鮮食品を除いた指数が去年の同じ月より1.4％上昇しました。上昇率は前の月と変わらず横ばいでした。
-- [ロイター日本マーケット] アジア株式市場サマリー：引け（19日） (06/19 16:46)
-- [ロイター日本マーケット] 日経平均は7日続伸、半導体主導で一時最高値　ＴＯＰＩＸは反落 (06/19 16:36)
-- [ZUU online] 元刑事が立ち上げた太陽光発電販売・施工のトラーチ。創業4年で年商21億円をどう達成したのか？ (06/19 13:03)
-  概要: 元刑事という異色の経歴を持ち、創業からわずか4年で年商21億円を達成した株式会社トラーチ代表取締役の稲場基泰氏。太陽光発電や蓄電池の販売・施工を手がける同社は、東京都の太陽光発電設置義務化などの追い風
-- [ロイター日本マーケット] 午前の日経平均は続伸、最高値　米半導体株高で関連株上昇 (06/19 11:54)
 - [ロイター日本マーケット] インタビュー：日銀はインフレ対応優先に転換、年度内2回追加利上げの可能性＝桜井元委員 (06/19 19:58)
 - [NHK経済] 日銀植田総裁が19日退院 来週23日から公務に (06/19 18:55)
   概要: 日銀は、感染症の治療のため入院していた植田総裁が19日に退院したと発表しました。来週23日から公務にあたるということです。
-- [ロイター日本マーケット] 英5月財政赤字、インフレ高進で前年比30％増 (06/19 16:58)
 - [Investing.com日本] Joshin Research Memo（9）：27年3月期も増収増益の見通し、商品構成の変化等で利益改善を期待（4） (06/19 19:30)
 - [Investing.com日本] Joshin Research Memo（10）：配当性向40%以上・DOE2.5%以上を目安に、安定配当と増配を目指す (06/19 19:15)
 - [Investing.com日本] Joshin Research Memo（8）：27年3月期も増収増益の見通し、商品構成の変化等で利益改善を期待（3） (06/19 19:15)
 - [NHK経済] 東電の提携交渉 日米の投資ファンドや通信大手の5陣営が軸に (06/20 00:10)
   概要: 経営の抜本的な改善に向けて広く提携先を募ってきた、東京電力ホールディングスは、提案内容を精査した結果、日米の投資ファンドや通信大手のあわせて5つの陣営を軸に交渉を進めていく方針を固めました。5つの陣営
-- [Yahoo!ファイナンス] 東電の提携先、5陣営有力　ソフトバンクなど交渉(共同通信) (06/19 23:05)
-  概要: 東京電力ホールディングスが、ソフトバンクグループや日本産業パートナーズ（JIP）、米投資ファンドKKRなど5陣営を有力候補として資本提携の交渉を進めていることが19日分かった。東電は外部企業との提携
 - [NHK経済] NISA対象と偽って不適切販売 外資系ネット証券に行政処分 (06/19 20:24)
   概要: 個人投資家を対象にした「NISA」の普及が進む中、制度の対象になっていない金融商品を対象のように偽って販売していたなどとして、関東財務局は19日、外資系ネット証券の「moomoo証券」に対して、新規口
 - [NHK経済] JBIC新総裁に天川和彦氏就任 “対米投資サポートする” (06/19 19:56)
   概要: JBIC＝国際協力銀行の天川和彦新総裁が19日、就任会見を開き、日米合意にもとづく対米投資について「これまでに経験したものとは違う特殊なプロジェクトだが、JBICならではの知識を使ってサポートしていき
+- [Investing.com日本] バーンスタイン、英仏の大規模投資サイクル入りを受け水道セクターの有望銘柄を選定 (06/19 19:46)
 
 【依頼内容】
 上記の指数の動きについて、ニュースの内容と紐付けて解説してください。
@@ -1062,50 +1285,69 @@
 - S&P 500: nan (+nan%)
 - NASDAQ: nan (+nan%)
 - ダウ: nan (+nan%)
-- ドル円: 161.29 円 (+0.43%)
+- ドル円: 161.28 円 (+0.42%)
 - 米10年債利回り: 4.451 % (+0.00%)
-- WTI原油: 76.33 USD (-0.35%)
-- 金: 4168.00 USD (-1.33%)
+- WTI原油: 76.54 USD (-0.08%)
+- 金: 4172.90 USD (-1.21%)
 - 日経225: 71,250.06 pt (+0.00%)
 - TOPIX (1306連動ETF): 429.7 円 (-0.60%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
+  ++51.43円  アドバンテスト(6857)  +4.75%  [電機]
+  ++6.43円  キーエンス(6861)  +0.23%  [電機]
+  ++3.39円  ダイキン(6367)  +0.40%  [機械]
+  ++1.93円  TDK(6762)  +1.40%  [電機]
+  ++1.30円  オリエンタルランド(4661)  +1.59%  [サービス]
 ▼ 日経225 (下落寄与TOP5)
+  -45.36円  HOYA(7741)  -4.45%  [精密機器]
+  -35.71円  ファーストリテイリング(9983)  -1.19%  [小売]
+  -25.71円  東京エレクトロン(8035)  -0.95%  [半導体製造装置]
+  -13.04円  みずほFG(8411)  -4.42%  [銀行]
+  -10.71円  リクルートHD(6098)  -2.69%  [サービス]
 ▼ S&P500 (上昇寄与TOP5)
+  ++22.93pt  Nvidia(NVDA)  +2.95%  wt:10.47%  [Information Technology]
+  ++16.05pt  Micron Technology(MU)  +8.70%  wt:2.49%  [Information Technology]
+  ++13.76pt  Broadcom(AVGO)  +4.70%  wt:3.95%  [Information Technology]
+  ++11.62pt  Amazon(AMZN)  +2.90%  wt:5.40%  [Consumer Discretionary]
+  ++10.25pt  Alphabet Inc. (Class C)(GOOG)  +1.48%  wt:9.33%  [Communication Services]
 ▼ S&P500 (下落寄与TOP5)
+  -3.46pt  JPMorgan Chase(JPM)  -2.47%  wt:1.89%  [Financials]
+  -2.19pt  Johnson & Johnson(JNJ)  -2.48%  wt:1.19%  [Health Care]
+  -1.95pt  IBM(IBM)  -5.05%  wt:0.52%  [Information Technology]
+  -1.90pt  ExxonMobil(XOM)  -2.08%  wt:1.23%  [Energy]
+  -1.88pt  Lilly (Eli)(LLY)  -1.21%  wt:2.09%  [Health Care]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] キューバが市場開放方針　米圧力で規制緩和(共同通信) (06/19 22:45)
-  概要: 【サンパウロ共同】キューバのマレロ首相は18日、国内外の民間企業に対する規制緩和など市場開放につながる経済改革案を発表した。トランプ米政権からの要求に応じて開放路線へとかじを切った格好だ。実際に改革
+- [Yahoo!ファイナンス] 年収260万円時代に知りたかった！ 「死ぬほど節約しても貯まらない」お金の真実(ダイヤモンド・オンライン) (06/20 06:45)
+  概要: 日経平均が6万5000円を突破する裏側で、物価の値上がりが半端ない！どうすれば、すさまじいインフレと実質賃金の低下におびえず、確実にお金を増やせるのか。だが、その一歩が踏み出せない……。そんなときにお
+- [Yahoo!ファイナンス] 【新製品】サイン・ハウス「B+COM 7X」 6/26に4万9500円で発売！「EVO」の一部機能なしで1万円のプライスダウン(Webikeプラス) (06/20 06:40)
+  概要: 株式会社サイン・ハウスは、ハイエンドインカム「B+COM 6XR」の後継機となる「B+COM 7X」を2026年6月26日に発売すると発表した。予約は5月29日より開始され、希望小売価格は49,500
+- [Yahoo!ファイナンス] 結局「覚書」締結で、当面の相場は「TACO」に賭けていた側の勝ち、だが「イラン戦争」は本当に終結できるのだろうか(東洋経済オンライン) (06/20 06:30)
+  概要: 日本銀行が16日に利上げを決定して、政策金利が31年ぶりに1.0％となった。にもかかわらず、日経平均株価は同日、ついに7万円の大台に乗せた。年初は5万1010円で始まったのだから、わずか半年で4割も
+- [Yahoo!ファイナンス] リトルカブの“カブラ”仕様がリトルカブラ！希少パーツで仕上げた愛ある一台！(MotorFan) (06/20 06:30)
+  概要: カフェカブ関西の会場で目を引いたのが、このリトルカブラ。1990年代に販売された純正ドレスアップモデルをベースに、前オーナーであるガチャピンさんから受け継いだ1台だ。希少な純正オプションスクリーンやベ
+- [ロイター日本マーケット] 欧州市場サマリー（19日） (06/20 02:19)
+- [ロイター日本マーケット] 欧州外為市場＝円は40年ぶり安値が視野に、ポンドは堅調 (06/20 00:16)
 - [Investing.com日本] タカ派中央銀行の台頭が株式市場に与える影響——バークレイズが分析 (06/19 20:56)
 - [Investing.com日本] エボニック株が本日急騰、ドイツ銀行が目標株価を引き上げ (06/19 20:43)
 - [ZUU online] 日々是相場［夕刊］――  2026年6月19日（金） (06/19 19:30)
   概要: 日経平均 71,250.06円 △196.57円 為替 １ドル＝161.35円 売買高（東証プライム、以下同） 33億9,753万株 売買代金 14兆0609億25百万円 値上り銘柄数 649銘柄 値
 - [NHK経済] 円相場 1ドル＝161円台に値下がり (06/19 18:44)
   概要: 19日の東京外国為替市場、アメリカで利上げ観測が強まり、日本との金利差の広がりが意識されたことから円を売ってドルを買う動きが多く、1ドル＝161円台での取り引きが続きました。
-- [NHK経済] 5月の消費者物価指数 前年比+1.4％ 食料品が物価押し上げる (06/19 18:17)
-  概要: 5月の全国の消費者物価指数は、天候による変動が大きい生鮮食品を除いた指数が去年の同じ月より1.4％上昇しました。上昇率は前の月と変わらず横ばいでした。
-- [ロイター日本マーケット] アジア株式市場サマリー：引け（19日） (06/19 16:46)
-- [ロイター日本マーケット] 日経平均は7日続伸、半導体主導で一時最高値　ＴＯＰＩＸは反落 (06/19 16:36)
-- [ZUU online] 元刑事が立ち上げた太陽光発電販売・施工のトラーチ。創業4年で年商21億円をどう達成したのか？ (06/19 13:03)
-  概要: 元刑事という異色の経歴を持ち、創業からわずか4年で年商21億円を達成した株式会社トラーチ代表取締役の稲場基泰氏。太陽光発電や蓄電池の販売・施工を手がける同社は、東京都の太陽光発電設置義務化などの追い風
-- [ロイター日本マーケット] 午前の日経平均は続伸、最高値　米半導体株高で関連株上昇 (06/19 11:54)
 - [ロイター日本マーケット] インタビュー：日銀はインフレ対応優先に転換、年度内2回追加利上げの可能性＝桜井元委員 (06/19 19:58)
 - [NHK経済] 日銀植田総裁が19日退院 来週23日から公務に (06/19 18:55)
   概要: 日銀は、感染症の治療のため入院していた植田総裁が19日に退院したと発表しました。来週23日から公務にあたるということです。
-- [ロイター日本マーケット] 英5月財政赤字、インフレ高進で前年比30％増 (06/19 16:58)
 - [Investing.com日本] Joshin Research Memo（9）：27年3月期も増収増益の見通し、商品構成の変化等で利益改善を期待（4） (06/19 19:30)
 - [Investing.com日本] Joshin Research Memo（10）：配当性向40%以上・DOE2.5%以上を目安に、安定配当と増配を目指す (06/19 19:15)
 - [Investing.com日本] Joshin Research Memo（8）：27年3月期も増収増益の見通し、商品構成の変化等で利益改善を期待（3） (06/19 19:15)
 - [NHK経済] 東電の提携交渉 日米の投資ファンドや通信大手の5陣営が軸に (06/20 00:10)
   概要: 経営の抜本的な改善に向けて広く提携先を募ってきた、東京電力ホールディングスは、提案内容を精査した結果、日米の投資ファンドや通信大手のあわせて5つの陣営を軸に交渉を進めていく方針を固めました。5つの陣営
-- [Yahoo!ファイナンス] 東電の提携先、5陣営有力　ソフトバンクなど交渉(共同通信) (06/19 23:05)
-  概要: 東京電力ホールディングスが、ソフトバンクグループや日本産業パートナーズ（JIP）、米投資ファンドKKRなど5陣営を有力候補として資本提携の交渉を進めていることが19日分かった。東電は外部企業との提携
 - [NHK経済] NISA対象と偽って不適切販売 外資系ネット証券に行政処分 (06/19 20:24)
   概要: 個人投資家を対象にした「NISA」の普及が進む中、制度の対象になっていない金融商品を対象のように偽って販売していたなどとして、関東財務局は19日、外資系ネット証券の「moomoo証券」に対して、新規口
 - [NHK経済] JBIC新総裁に天川和彦氏就任 “対米投資サポートする” (06/19 19:56)
   概要: JBIC＝国際協力銀行の天川和彦新総裁が19日、就任会見を開き、日米合意にもとづく対米投資について「これまでに経験したものとは違う特殊なプロジェクトだが、JBICならではの知識を使ってサポートしていき
+- [Investing.com日本] バーンスタイン、英仏の大規模投資サイクル入りを受け水道セクターの有望銘柄を選定 (06/19 19:46)
 
 【依頼内容】
 - 最も動きが大きかった指標トップ3を特定
@@ -1117,50 +1359,69 @@
 - S&P 500: nan (+nan%)
 - NASDAQ: nan (+nan%)
 - ダウ: nan (+nan%)
-- ドル円: 161.29 円 (+0.43%)
+- ドル円: 161.28 円 (+0.42%)
 - 米10年債利回り: 4.451 % (+0.00%)
-- WTI原油: 76.33 USD (-0.35%)
-- 金: 4168.00 USD (-1.33%)
+- WTI原油: 76.54 USD (-0.08%)
+- 金: 4172.90 USD (-1.21%)
 - 日経225: 71,250.06 pt (+0.00%)
 - TOPIX (1306連動ETF): 429.7 円 (-0.60%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
+  ++51.43円  アドバンテスト(6857)  +4.75%  [電機]
+  ++6.43円  キーエンス(6861)  +0.23%  [電機]
+  ++3.39円  ダイキン(6367)  +0.40%  [機械]
+  ++1.93円  TDK(6762)  +1.40%  [電機]
+  ++1.30円  オリエンタルランド(4661)  +1.59%  [サービス]
 ▼ 日経225 (下落寄与TOP5)
+  -45.36円  HOYA(7741)  -4.45%  [精密機器]
+  -35.71円  ファーストリテイリング(9983)  -1.19%  [小売]
+  -25.71円  東京エレクトロン(8035)  -0.95%  [半導体製造装置]
+  -13.04円  みずほFG(8411)  -4.42%  [銀行]
+  -10.71円  リクルートHD(6098)  -2.69%  [サービス]
 ▼ S&P500 (上昇寄与TOP5)
+  ++22.93pt  Nvidia(NVDA)  +2.95%  wt:10.47%  [Information Technology]
+  ++16.05pt  Micron Technology(MU)  +8.70%  wt:2.49%  [Information Technology]
+  ++13.76pt  Broadcom(AVGO)  +4.70%  wt:3.95%  [Information Technology]
+  ++11.62pt  Amazon(AMZN)  +2.90%  wt:5.40%  [Consumer Discretionary]
+  ++10.25pt  Alphabet Inc. (Class C)(GOOG)  +1.48%  wt:9.33%  [Communication Services]
 ▼ S&P500 (下落寄与TOP5)
+  -3.46pt  JPMorgan Chase(JPM)  -2.47%  wt:1.89%  [Financials]
+  -2.19pt  Johnson & Johnson(JNJ)  -2.48%  wt:1.19%  [Health Care]
+  -1.95pt  IBM(IBM)  -5.05%  wt:0.52%  [Information Technology]
+  -1.90pt  ExxonMobil(XOM)  -2.08%  wt:1.23%  [Energy]
+  -1.88pt  Lilly (Eli)(LLY)  -1.21%  wt:2.09%  [Health Care]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] キューバが市場開放方針　米圧力で規制緩和(共同通信) (06/19 22:45)
-  概要: 【サンパウロ共同】キューバのマレロ首相は18日、国内外の民間企業に対する規制緩和など市場開放につながる経済改革案を発表した。トランプ米政権からの要求に応じて開放路線へとかじを切った格好だ。実際に改革
+- [Yahoo!ファイナンス] 年収260万円時代に知りたかった！ 「死ぬほど節約しても貯まらない」お金の真実(ダイヤモンド・オンライン) (06/20 06:45)
+  概要: 日経平均が6万5000円を突破する裏側で、物価の値上がりが半端ない！どうすれば、すさまじいインフレと実質賃金の低下におびえず、確実にお金を増やせるのか。だが、その一歩が踏み出せない……。そんなときにお
+- [Yahoo!ファイナンス] 【新製品】サイン・ハウス「B+COM 7X」 6/26に4万9500円で発売！「EVO」の一部機能なしで1万円のプライスダウン(Webikeプラス) (06/20 06:40)
+  概要: 株式会社サイン・ハウスは、ハイエンドインカム「B+COM 6XR」の後継機となる「B+COM 7X」を2026年6月26日に発売すると発表した。予約は5月29日より開始され、希望小売価格は49,500
+- [Yahoo!ファイナンス] 結局「覚書」締結で、当面の相場は「TACO」に賭けていた側の勝ち、だが「イラン戦争」は本当に終結できるのだろうか(東洋経済オンライン) (06/20 06:30)
+  概要: 日本銀行が16日に利上げを決定して、政策金利が31年ぶりに1.0％となった。にもかかわらず、日経平均株価は同日、ついに7万円の大台に乗せた。年初は5万1010円で始まったのだから、わずか半年で4割も
+- [Yahoo!ファイナンス] リトルカブの“カブラ”仕様がリトルカブラ！希少パーツで仕上げた愛ある一台！(MotorFan) (06/20 06:30)
+  概要: カフェカブ関西の会場で目を引いたのが、このリトルカブラ。1990年代に販売された純正ドレスアップモデルをベースに、前オーナーであるガチャピンさんから受け継いだ1台だ。希少な純正オプションスクリーンやベ
+- [ロイター日本マーケット] 欧州市場サマリー（19日） (06/20 02:19)
+- [ロイター日本マーケット] 欧州外為市場＝円は40年ぶり安値が視野に、ポンドは堅調 (06/20 00:16)
 - [Investing.com日本] タカ派中央銀行の台頭が株式市場に与える影響——バークレイズが分析 (06/19 20:56)
 - [Investing.com日本] エボニック株が本日急騰、ドイツ銀行が目標株価を引き上げ (06/19 20:43)
 - [ZUU online] 日々是相場［夕刊］――  2026年6月19日（金） (06/19 19:30)
   概要: 日経平均 71,250.06円 △196.57円 為替 １ドル＝161.35円 売買高（東証プライム、以下同） 33億9,753万株 売買代金 14兆0609億25百万円 値上り銘柄数 649銘柄 値
 - [NHK経済] 円相場 1ドル＝161円台に値下がり (06/19 18:44)
   概要: 19日の東京外国為替市場、アメリカで利上げ観測が強まり、日本との金利差の広がりが意識されたことから円を売ってドルを買う動きが多く、1ドル＝161円台での取り引きが続きました。
-- [NHK経済] 5月の消費者物価指数 前年比+1.4％ 食料品が物価押し上げる (06/19 18:17)
-  概要: 5月の全国の消費者物価指数は、天候による変動が大きい生鮮食品を除いた指数が去年の同じ月より1.4％上昇しました。上昇率は前の月と変わらず横ばいでした。
-- [ロイター日本マーケット] アジア株式市場サマリー：引け（19日） (06/19 16:46)
-- [ロイター日本マーケット] 日経平均は7日続伸、半導体主導で一時最高値　ＴＯＰＩＸは反落 (06/19 16:36)
-- [ZUU online] 元刑事が立ち上げた太陽光発電販売・施工のトラーチ。創業4年で年商21億円をどう達成したのか？ (06/19 13:03)
-  概要: 元刑事という異色の経歴を持ち、創業からわずか4年で年商21億円を達成した株式会社トラーチ代表取締役の稲場基泰氏。太陽光発電や蓄電池の販売・施工を手がける同社は、東京都の太陽光発電設置義務化などの追い風
-- [ロイター日本マーケット] 午前の日経平均は続伸、最高値　米半導体株高で関連株上昇 (06/19 11:54)
 - [ロイター日本マーケット] インタビュー：日銀はインフレ対応優先に転換、年度内2回追加利上げの可能性＝桜井元委員 (06/19 19:58)
 - [NHK経済] 日銀植田総裁が19日退院 来週23日から公務に (06/19 18:55)
   概要: 日銀は、感染症の治療のため入院していた植田総裁が19日に退院したと発表しました。来週23日から公務にあたるということです。
-- [ロイター日本マーケット] 英5月財政赤字、インフレ高進で前年比30％増 (06/19 16:58)
 - [Investing.com日本] Joshin Research Memo（9）：27年3月期も増収増益の見通し、商品構成の変化等で利益改善を期待（4） (06/19 19:30)
 - [Investing.com日本] Joshin Research Memo（10）：配当性向40%以上・DOE2.5%以上を目安に、安定配当と増配を目指す (06/19 19:15)
 - [Investing.com日本] Joshin Research Memo（8）：27年3月期も増収増益の見通し、商品構成の変化等で利益改善を期待（3） (06/19 19:15)
 - [NHK経済] 東電の提携交渉 日米の投資ファンドや通信大手の5陣営が軸に (06/20 00:10)
   概要: 経営の抜本的な改善に向けて広く提携先を募ってきた、東京電力ホールディングスは、提案内容を精査した結果、日米の投資ファンドや通信大手のあわせて5つの陣営を軸に交渉を進めていく方針を固めました。5つの陣営
-- [Yahoo!ファイナンス] 東電の提携先、5陣営有力　ソフトバンクなど交渉(共同通信) (06/19 23:05)
-  概要: 東京電力ホールディングスが、ソフトバンクグループや日本産業パートナーズ（JIP）、米投資ファンドKKRなど5陣営を有力候補として資本提携の交渉を進めていることが19日分かった。東電は外部企業との提携
 - [NHK経済] NISA対象と偽って不適切販売 外資系ネット証券に行政処分 (06/19 20:24)
   概要: 個人投資家を対象にした「NISA」の普及が進む中、制度の対象になっていない金融商品を対象のように偽って販売していたなどとして、関東財務局は19日、外資系ネット証券の「moomoo証券」に対して、新規口
 - [NHK経済] JBIC新総裁に天川和彦氏就任 “対米投資サポートする” (06/19 19:56)
   概要: JBIC＝国際協力銀行の天川和彦新総裁が19日、就任会見を開き、日米合意にもとづく対米投資について「これまでに経験したものとは違う特殊なプロジェクトだが、JBICならではの知識を使ってサポートしていき
+- [Investing.com日本] バーンスタイン、英仏の大規模投資サイクル入りを受け水道セクターの有望銘柄を選定 (06/19 19:46)
 
 【依頼内容】
 - 短期的なリスク要因（今後1週間以内）
