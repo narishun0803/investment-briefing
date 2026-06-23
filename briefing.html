@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年06月23日 15:30 JST</span>
+    <span class="updated">更新: 2026年06月23日 19:57 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">69,788.38 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -2565.58&nbsp;&nbsp;-3.55%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">422.8 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -11.70&nbsp;&nbsp;-2.69%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">161.46 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.03&nbsp;&nbsp;+0.02%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">51,712.71 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">161.70 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.27&nbsp;&nbsp;+0.17%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.451 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">72.92 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">73.74 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -1.90&nbsp;&nbsp;-2.54%
+            -1.08&nbsp;&nbsp;-1.44%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4140.50 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4142.30 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -41.40&nbsp;&nbsp;-0.99%
+            -39.60&nbsp;&nbsp;-0.95%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">70,124.88 <span class="tile-unit">pt</span></div>
-          <div class="tile-change down">
-            -2229.08&nbsp;&nbsp;-3.08%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">425.0 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -9.50&nbsp;&nbsp;-2.19%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -672,8 +672,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/9983:TYO" target="_blank" rel="noopener">ファーストリテイリング</a>
                 <span class="contrib-sector">小売</span>
               </td>
-              <td class="up">+31.07</td>
-              <td class="up">+1.07%</td>
+              <td class="up">+22.86</td>
+              <td class="up">+0.78%</td>
             </tr>
             
             <tr>
@@ -681,17 +681,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6098:TYO" target="_blank" rel="noopener">リクルートHD</a>
                 <span class="contrib-sector">サービス</span>
               </td>
-              <td class="up">+2.68</td>
-              <td class="up">+0.68%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/4502:TYO" target="_blank" rel="noopener">武田薬品</a>
-                <span class="contrib-sector">医薬品</span>
-              </td>
-              <td class="up">+2.36</td>
-              <td class="up">+1.33%</td>
+              <td class="up">+2.32</td>
+              <td class="up">+0.59%</td>
             </tr>
             
             <tr>
@@ -699,17 +690,26 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/4661:TYO" target="_blank" rel="noopener">オリエンタルランド</a>
                 <span class="contrib-sector">サービス</span>
               </td>
-              <td class="up">+1.89</td>
-              <td class="up">+2.28%</td>
+              <td class="up">+1.45</td>
+              <td class="up">+1.74%</td>
             </tr>
             
             <tr>
               <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/8766:TYO" target="_blank" rel="noopener">東京海上HD</a>
-                <span class="contrib-sector">保険</span>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/4502:TYO" target="_blank" rel="noopener">武田薬品</a>
+                <span class="contrib-sector">医薬品</span>
               </td>
-              <td class="up">+1.36</td>
-              <td class="up">+0.52%</td>
+              <td class="up">+1.29</td>
+              <td class="up">+0.72%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9433:TYO" target="_blank" rel="noopener">KDDI</a>
+                <span class="contrib-sector">通信</span>
+              </td>
+              <td class="up">+1.02</td>
+              <td class="up">+1.08%</td>
             </tr>
             
             </tbody>
@@ -731,8 +731,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/8035:TYO" target="_blank" rel="noopener">東京エレクトロン</a>
                 <span class="contrib-sector">半導体製造装置</span>
               </td>
-              <td class="down">-141.43</td>
-              <td class="down">-5.09%</td>
+              <td class="down">-172.86</td>
+              <td class="down">-6.22%</td>
             </tr>
             
             <tr>
@@ -740,8 +740,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-78.57</td>
-              <td class="down">-2.82%</td>
+              <td class="down">-82.50</td>
+              <td class="down">-2.96%</td>
             </tr>
             
             <tr>
@@ -749,17 +749,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6981:TYO" target="_blank" rel="noopener">村田製作所</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-36.07</td>
-              <td class="down">-8.24%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/9984:TYO" target="_blank" rel="noopener">ソフトバンクG</a>
-                <span class="contrib-sector">通信</span>
-              </td>
-              <td class="down">-25.46</td>
-              <td class="down">-9.84%</td>
+              <td class="down">-44.46</td>
+              <td class="down">-10.16%</td>
             </tr>
             
             <tr>
@@ -767,8 +758,17 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6857:TYO" target="_blank" rel="noopener">アドバンテスト</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-21.43</td>
-              <td class="down">-1.87%</td>
+              <td class="down">-26.43</td>
+              <td class="down">-2.30%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9984:TYO" target="_blank" rel="noopener">ソフトバンクG</a>
+                <span class="contrib-sector">通信</span>
+              </td>
+              <td class="down">-26.11</td>
+              <td class="down">-10.09%</td>
             </tr>
             
             </tbody>
@@ -915,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (22件)</div>
+    <div class="card-title">📰 最新ニュース (14件)</div>
     
     
     
@@ -930,55 +930,97 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260623/k10015157011000.html" target="_blank" rel="noopener">株価 午後に下落幅が拡大 一時7万円割れ</a>
+                <a href="https://zuuonline.com/archives/302281" target="_blank" rel="noopener">米ドル／円 ―― FIMAを使った為替介入の可能性には注意したい</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>06/23 19:30</span>
+              </div>
+              
+              <div class="news-summary">この記事は2026年6月23日（火）に「羊飼いのFXブログ」公開された「志摩力男氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月23日（火）の午後14時過ぎに現役ト…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1580172" target="_blank" rel="noopener">スモールキャップへの資金流入、市場の幅広い参加を示唆＝シティ</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>06/23 19:28</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1580139" target="_blank" rel="noopener">モルガン・スタンレー、モンクレールの目標株価を57ユーロに引き下げ</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>06/23 19:08</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260623/k10015157371000.html" target="_blank" rel="noopener">円相場 1ドル＝161円台で神経質な取引 介入への警戒続く</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">NHK経済</span>
-                <span>06/23 15:26</span>
+                <span>06/23 19:00</span>
               </div>
               
-              <div class="news-summary">23日の東京株式市場、午後に入って売り注文が膨らみ、日経平均株価は下落幅が2300円を超え、一時7万円を割り込みました。</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/e4f0476d03508b6cd3807a41f7047e7556b85dd7?source=rss" target="_blank" rel="noopener">東証、一時7万円の大台割れ(共同通信)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/23 15:21</span>
-              </div>
-              
-              <div class="news-summary">23日の東京株式市場で日経平均株価（225種）が一時7万円の大台を割った。</div>
+              <div class="news-summary">23日の東京外国為替市場、円安の進行を食い止めるための政府・日銀による市場介入への警戒が強まる中、円相場は1ドル＝161円台での神経質な値動きになりました。</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/9783866f083ec76d2331743cc43ad37dfe9f0158?source=rss" target="_blank" rel="noopener">「ちゃんと動いてますか？」…夏を前にダイキンから電話でお伺い、内容は2年前に購入したエアコンの状況確認　同社に取り組みの真意を聞いてみた(マネーポストWEB)</a>
+                <a href="https://zuuonline.com/archives/302280" target="_blank" rel="noopener">米ドル／円 ―― 跳ねるのを待って介入が入ったと思ったらそこからショートエントリーで売っていきたい</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/23 15:15</span>
+                <span class="news-source">ZUU online</span>
+                <span>06/23 19:00</span>
               </div>
               
-              <div class="news-summary">ある日突然、見知らぬ番号から電話がかかって来た。何の心当たりもなく、一瞬、証券会社や不動産などの営業電話かと思ったものの、なんとなく電話を取ったところ、「ダイキン工業株式会社」だという。</div>
+              <div class="news-summary">この記事は2026年6月23日（火）に「羊飼いのFXブログ」で公開された「小林芳彦氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月23日（火）の午後12時半時点に現…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/a72a30354a8c1caf0ea6fc0072b0af11a43a3efb?source=rss" target="_blank" rel="noopener">39年ぶり円安水準が目前 日米財務相が会談(ABEMA TIMES)</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1580125" target="_blank" rel="noopener">マーベル・テクノロジー・グループの株価が本日下落している理由</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/23 15:09</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>06/23 18:50</span>
               </div>
               
-              <div class="news-summary">外国為替市場で39年ぶりの円安水準が迫るなか、片山財務大臣は昨夜、アメリカのベッセント財務長官とオンラインで会談したと明らかにしました。
-
-　1時間弱の会談では、金融市場の動向や中東情勢のほか、先端</div>
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1580116" target="_blank" rel="noopener">23日の香港市場概況：香港市場は5日続落、約1年ぶりの安値を更新</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>06/23 18:45</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260623/k10015157011000.html" target="_blank" rel="noopener">株価 2500円超下落で7万円割れ 利益確保の売り膨らむ</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>06/23 16:44</span>
+              </div>
+              
+              <div class="news-summary">23日の東京株式市場、このところの株価の急ピッチな上昇を警戒していったん利益を確定させようという売り注文が膨らみ、日経平均株価は2500円を超える大幅な下落となり、7万円を割り込みました。</div>
               
             </div>
             
@@ -997,28 +1039,6 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1579941" target="_blank" rel="noopener">ジェフリーズ、農家収入のマイナス転落でヤラの目標株価を470クローネに引き下げ</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>06/23 14:45</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1579929" target="_blank" rel="noopener">ＴＯＫＡＩ Research Memo（10）：配当性向45%以上へ、自己株式取得も含め還元強化</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>06/23 14:15</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
                 <a href="http://www3.nhk.or.jp/news/html/20260623/k10015156971000.html" target="_blank" rel="noopener">片山財務相 為替市場“断固たる措置 日米合意揺るぎない”</a>
               </div>
               <div class="news-meta">
@@ -1030,30 +1050,6 @@
               
             </div>
             
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302266" target="_blank" rel="noopener">アクティビスト系ファンドの大量保有　大丸松坂屋百貨店を傘下に持つJ.フロント株が一時18％高と急騰</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>06/23 12:02</span>
-              </div>
-              
-              <div class="news-summary">大丸松坂屋百貨店を傘下に持つJ.フロント リテイリングの株価が6月22日、急騰した。前営業日比で一時18％超上昇し、年初来高値を更新。前場には一時2,999円まで買われ、市場の注目を集めている。 株価…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.reuters.com/markets/japan/HH5YKNOFONJ7PF7GD774WYVBCM-2026-06-23/" target="_blank" rel="noopener">午前の日経平均は反落、過熱感でＡＩ関連株売られる　一時900円超安</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本マーケット</span>
-                <span>06/23 12:01</span>
-              </div>
-              
-            </div>
-            
           </div>
         </div>
         
@@ -1061,19 +1057,21 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (4件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (3件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/02cf159cf8e24e0814b6a70229abefb9135c5338?source=rss" target="_blank" rel="noopener">個人向け国債「魅力」向上　骨太案、投資層拡大へ(共同通信)</a>
+                <a href="https://news.yahoo.co.jp/articles/2312f1a8d23dd60bf46cb90c9df715aa9ab648b0?source=rss" target="_blank" rel="noopener">「楽天日本株4.3倍ブル」は“年644.5％”のリターン!?「100万円投資すれば744万円になる」…信じて持ち続けると“手元のお金”はガリガリ削られる？ レバレッジ投信の「冷徹な罠」(ファイナンシャルフィールド)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/23 15:14</span>
+                <span>06/23 19:50</span>
               </div>
               
-              <div class="news-summary">政府が7月に策定する経済財政運営の指針「骨太方針」のうち、金融分野の素案が23日判明した。日銀が金融政策の正常化により国債の購入量を減らす中、「個人向け国債の魅力向上や国内投資家層の拡大を図る」と明</div>
+              <div class="news-summary">できるだけ利回りの高い投資信託を選びたい、と考える人は多いでしょう。リターンの高い順に並べると、上位には「楽天日本株4.3倍ブル」のようなレバレッジ型が目立ちます。
+ 
+運用会社の月次レポートによると…</div>
               
             </div>
             
@@ -1083,21 +1081,10 @@
               </div>
               <div class="news-meta">
                 <span class="news-source">NHK経済</span>
-                <span>06/23 14:37</span>
+                <span>06/23 18:29</span>
               </div>
               
               <div class="news-summary">先月、東京23区で販売された中古マンションの平均価格は、70平方メートルに換算して1億2800万円あまりとなり、去年の同じ月と比べておよそ27％上昇しました。日銀が今月、利上げに踏み切ったことで、住宅…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.reuters.com/opinion/SZZVFKKGGBMEHEF7SGWQDSML6E-2026-06-23/" target="_blank" rel="noopener">為替には必要に応じていつでも適切に対応する＝木原官房長官</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本マーケット</span>
-                <span>06/23 11:38</span>
-              </div>
               
             </div>
             
@@ -1120,89 +1107,12 @@
       
         
         
-        <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (3件)</div>
-          <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1579947" target="_blank" rel="noopener">シグニファイ、自社株買いを停止し2029年までの売上高・利益率目標を設定</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>06/23 15:08</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1579937" target="_blank" rel="noopener">テクセンドフォトマスク---26年3月期は増収増益、外販フォトマスク需要の拡大が寄与</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>06/23 14:30</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1579928" target="_blank" rel="noopener">ＴＯＫＡＩ Research Memo（9）：2027年3月期はシステム費用や人件費増を増収効果で吸収、連続増収増益へ</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>06/23 14:15</span>
-              </div>
-              
-            </div>
-            
-          </div>
-        </div>
-        
       
         
         
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (5件)</div>
+          <div class="news-group-title">📌 その他 (1件)</div>
           <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/8ad39d8b3da2b0069e5392b8e1e36db1b81b6170?source=rss" target="_blank" rel="noopener">元手が少なくても始められる「不動産投資」　最大の特徴は「定期的な収入源をつくりやすいこと」、売却せずに亡くなっても相続税対策につながるメリット(マネーポストWEB)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/23 15:16</span>
-              </div>
-              
-              <div class="news-summary">人生100年時代になっても、年を重ねれば、若い頃のようには稼げなくなる。体力とともに収入も減少し、医療や介護のお金も出ていくからこそ、できるだけ早く賢く、老後資産を増やしておかなければならない。そこ</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/6d913a767507ec4e3355a85e4a6df15eff774a6a?source=rss" target="_blank" rel="noopener">低損失・短絡耐量向上を両立…東芝D＆Sが開発、SiCMOSFETで新技術の中身(ニュースイッチ)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/23 15:10</span>
-              </div>
-              
-              <div class="news-summary">東芝デバイス＆ストレージ（川崎市幸区、牛島知巳社長）は、トレンチゲート型炭化ケイ素（SiC）金属酸化膜半導体電界効果トランジスタ（MOSFET）で、損失低減とデバイスに過大な電流が急激に流れる短絡状態…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1579946" target="_blank" rel="noopener">テンセント、日本のゲームスタジオへの投資からの撤退を検討</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>06/23 15:08</span>
-              </div>
-              
-            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1217,17 +1127,6 @@
               
             </div>
             
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.reuters.com/markets/world-indices/5CSOQ7XTXNIXBKFUZAOE3C4NVA-2026-06-23/" target="_blank" rel="noopener">アングル：スペースＸ株取引、上場1週目から熱狂的　個人投資家が殺到</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本マーケット</span>
-                <span>06/23 09:20</span>
-              </div>
-              
-            </div>
-            
           </div>
         </div>
         
@@ -1238,34 +1137,34 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-06-23 15:30）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-06-23 19:57）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 69,788.38 pt (-3.55%)
+- TOPIX (1306連動ETF): 422.8 円 (-2.69%)
+- ドル円: 161.46 円 (+0.02%)
 - S&P 500: 7,472.79 (-0.37%)
 - NASDAQ: 26,166.60 (-1.32%)
 - ダウ: 51,712.71 (+0.29%)
-- ドル円: 161.70 円 (+0.17%)
 - 米10年債利回り: 4.451 % (+0.00%)
-- WTI原油: 72.92 USD (-2.54%)
-- 金: 4140.50 USD (-0.99%)
-- 日経225: 70,124.88 pt (-3.08%)
-- TOPIX (1306連動ETF): 425.0 円 (-2.19%)
+- WTI原油: 73.74 USD (-1.44%)
+- 金: 4142.30 USD (-0.95%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++31.07円  ファーストリテイリング(9983)  +1.07%  [小売]
-  ++2.68円  リクルートHD(6098)  +0.68%  [サービス]
-  ++2.36円  武田薬品(4502)  +1.33%  [医薬品]
-  ++1.89円  オリエンタルランド(4661)  +2.28%  [サービス]
-  ++1.36円  東京海上HD(8766)  +0.52%  [保険]
+  ++22.86円  ファーストリテイリング(9983)  +0.78%  [小売]
+  ++2.32円  リクルートHD(6098)  +0.59%  [サービス]
+  ++1.45円  オリエンタルランド(4661)  +1.74%  [サービス]
+  ++1.29円  武田薬品(4502)  +0.72%  [医薬品]
+  ++1.02円  KDDI(9433)  +1.08%  [通信]
 ▼ 日経225 (下落寄与TOP5)
-  -141.43円  東京エレクトロン(8035)  -5.09%  [半導体製造装置]
-  -78.57円  キーエンス(6861)  -2.82%  [電機]
-  -36.07円  村田製作所(6981)  -8.24%  [電機]
-  -25.46円  ソフトバンクG(9984)  -9.84%  [通信]
-  -21.43円  アドバンテスト(6857)  -1.87%  [電機]
+  -172.86円  東京エレクトロン(8035)  -6.22%  [半導体製造装置]
+  -82.50円  キーエンス(6861)  -2.96%  [電機]
+  -44.46円  村田製作所(6981)  -10.16%  [電機]
+  -26.43円  アドバンテスト(6857)  -2.30%  [電機]
+  -26.11円  ソフトバンクG(9984)  -10.09%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
   ++12.72pt  Micron Technology(MU)  +6.82%  wt:2.49%  [Information Technology]
   ++5.00pt  Intel(INTC)  +5.19%  wt:1.29%  [Information Technology]
@@ -1280,40 +1179,32 @@
   -13.39pt  Broadcom(AVGO)  -4.52%  wt:3.95%  [Information Technology]
 
 【関連ニュース見出し】
-- [NHK経済] 株価 午後に下落幅が拡大 一時7万円割れ (06/23 15:26)
-  概要: 23日の東京株式市場、午後に入って売り注文が膨らみ、日経平均株価は下落幅が2300円を超え、一時7万円を割り込みました。
-- [Yahoo!ファイナンス] 東証、一時7万円の大台割れ(共同通信) (06/23 15:21)
-  概要: 23日の東京株式市場で日経平均株価（225種）が一時7万円の大台を割った。
-- [Yahoo!ファイナンス] 「ちゃんと動いてますか？」…夏を前にダイキンから電話でお伺い、内容は2年前に購入したエアコンの状況確認　同社に取り組みの真意を聞いてみた(マネーポストWEB) (06/23 15:15)
-  概要: ある日突然、見知らぬ番号から電話がかかって来た。何の心当たりもなく、一瞬、証券会社や不動産などの営業電話かと思ったものの、なんとなく電話を取ったところ、「ダイキン工業株式会社」だという。
-- [Yahoo!ファイナンス] 39年ぶり円安水準が目前 日米財務相が会談(ABEMA TIMES) (06/23 15:09)
-  概要: 外国為替市場で39年ぶりの円安水準が迫るなか、片山財務大臣は昨夜、アメリカのベッセント財務長官とオンラインで会談したと明らかにしました。
-
-　1時間弱の会談では、金融市場の動向や中東情勢のほか、先端
+- [ZUU online] 米ドル／円 ―― FIMAを使った為替介入の可能性には注意したい (06/23 19:30)
+  概要: この記事は2026年6月23日（火）に「羊飼いのFXブログ」公開された「志摩力男氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月23日（火）の午後14時過ぎに現役ト
+- [Investing.com日本] スモールキャップへの資金流入、市場の幅広い参加を示唆＝シティ (06/23 19:28)
+- [Investing.com日本] モルガン・スタンレー、モンクレールの目標株価を57ユーロに引き下げ (06/23 19:08)
+- [NHK経済] 円相場 1ドル＝161円台で神経質な取引 介入への警戒続く (06/23 19:00)
+  概要: 23日の東京外国為替市場、円安の進行を食い止めるための政府・日銀による市場介入への警戒が強まる中、円相場は1ドル＝161円台での神経質な値動きになりました。
+- [ZUU online] 米ドル／円 ―― 跳ねるのを待って介入が入ったと思ったらそこからショートエントリーで売っていきたい (06/23 19:00)
+  概要: この記事は2026年6月23日（火）に「羊飼いのFXブログ」で公開された「小林芳彦氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月23日（火）の午後12時半時点に現
+- [Investing.com日本] マーベル・テクノロジー・グループの株価が本日下落している理由 (06/23 18:50)
+- [Investing.com日本] 23日の香港市場概況：香港市場は5日続落、約1年ぶりの安値を更新 (06/23 18:45)
+- [NHK経済] 株価 2500円超下落で7万円割れ 利益確保の売り膨らむ (06/23 16:44)
+  概要: 23日の東京株式市場、このところの株価の急ピッチな上昇を警戒していったん利益を確定させようという売り注文が膨らみ、日経平均株価は2500円を超える大幅な下落となり、7万円を割り込みました。
 - [ZUU online] 為替介入は逆効果、ドル円相場はフリーフォール状態に突入か (06/23 15:00)
   概要: この記事は2026年6月12日に「きんざいOnline：週刊金融財政事情」で公開された「為替介入は逆効果、ドル円相場はフリーフォール状態に突入か」を一部編集し、転載したものです。 外国為替市場で円安が
-- [Investing.com日本] ジェフリーズ、農家収入のマイナス転落でヤラの目標株価を470クローネに引き下げ (06/23 14:45)
-- [Investing.com日本] ＴＯＫＡＩ Research Memo（10）：配当性向45%以上へ、自己株式取得も含め還元強化 (06/23 14:15)
 - [NHK経済] 片山財務相 為替市場“断固たる措置 日米合意揺るぎない” (06/23 12:35)
   概要: 外国為替市場で39年半ぶりの円安水準が迫る中、片山財務大臣は、アメリカのベッセント財務長官と22日夜、為替の動向などをテーマにオンラインで会談したことを記者団の取材に明らかにし、「日米間で必要とあれば
-- [ZUU online] アクティビスト系ファンドの大量保有　大丸松坂屋百貨店を傘下に持つJ.フロント株が一時18％高と急騰 (06/23 12:02)
-  概要: 大丸松坂屋百貨店を傘下に持つJ.フロント リテイリングの株価が6月22日、急騰した。前営業日比で一時18％超上昇し、年初来高値を更新。前場には一時2,999円まで買われ、市場の注目を集めている。 株価
-- [ロイター日本マーケット] 午前の日経平均は反落、過熱感でＡＩ関連株売られる　一時900円超安 (06/23 12:01)
-- [Yahoo!ファイナンス] 個人向け国債「魅力」向上　骨太案、投資層拡大へ(共同通信) (06/23 15:14)
-  概要: 政府が7月に策定する経済財政運営の指針「骨太方針」のうち、金融分野の素案が23日判明した。日銀が金融政策の正常化により国債の購入量を減らす中、「個人向け国債の魅力向上や国内投資家層の拡大を図る」と明
-- [NHK経済] 東京23区中古マンション 平均1億2800万円余 賃貸の家賃も上昇 (06/23 14:37)
+- [Yahoo!ファイナンス] 「楽天日本株4.3倍ブル」は“年644.5％”のリターン!?「100万円投資すれば744万円になる」…信じて持ち続けると“手元のお金”はガリガリ削られる？ レバレッジ投信の「冷徹な罠」(ファイナンシャルフィールド) (06/23 19:50)
+  概要: できるだけ利回りの高い投資信託を選びたい、と考える人は多いでしょう。リターンの高い順に並べると、上位には「楽天日本株4.3倍ブル」のようなレバレッジ型が目立ちます。
+ 
+運用会社の月次レポートによると
+- [NHK経済] 東京23区中古マンション 平均1億2800万円余 賃貸の家賃も上昇 (06/23 18:29)
   概要: 先月、東京23区で販売された中古マンションの平均価格は、70平方メートルに換算して1億2800万円あまりとなり、去年の同じ月と比べておよそ27％上昇しました。日銀が今月、利上げに踏み切ったことで、住宅
-- [ロイター日本マーケット] 為替には必要に応じていつでも適切に対応する＝木原官房長官 (06/23 11:38)
 - [NHK経済] 米FRB グリーンスパン元議長が死去 危機対応で名指揮者の異名 (06/23 08:52)
   概要: アメリカのFRB＝連邦準備制度理事会の議長をおよそ18年半にわたって務め、金融危機への対応などで「マエストロ＝名指揮者」と言われたアラン・グリーンスパン氏が亡くなりました。100歳でした。
-- [Investing.com日本] シグニファイ、自社株買いを停止し2029年までの売上高・利益率目標を設定 (06/23 15:08)
-- [Investing.com日本] テクセンドフォトマスク---26年3月期は増収増益、外販フォトマスク需要の拡大が寄与 (06/23 14:30)
-- [Investing.com日本] ＴＯＫＡＩ Research Memo（9）：2027年3月期はシステム費用や人件費増を増収効果で吸収、連続増収増益へ (06/23 14:15)
-- [Yahoo!ファイナンス] 元手が少なくても始められる「不動産投資」　最大の特徴は「定期的な収入源をつくりやすいこと」、売却せずに亡くなっても相続税対策につながるメリット(マネーポストWEB) (06/23 15:16)
-  概要: 人生100年時代になっても、年を重ねれば、若い頃のようには稼げなくなる。体力とともに収入も減少し、医療や介護のお金も出ていくからこそ、できるだけ早く賢く、老後資産を増やしておかなければならない。そこ
-- [Yahoo!ファイナンス] 低損失・短絡耐量向上を両立…東芝D＆Sが開発、SiCMOSFETで新技術の中身(ニュースイッチ) (06/23 15:10)
-  概要: 東芝デバイス＆ストレージ（川崎市幸区、牛島知巳社長）は、トレンチゲート型炭化ケイ素（SiC）金属酸化膜半導体電界効果トランジスタ（MOSFET）で、損失低減とデバイスに過大な電流が急激に流れる短絡状態
-- [Investing.com日本] テンセント、日本のゲームスタジオへの投資からの撤退を検討 (06/23 15:08)
+- [ZUU online] メイコー、堀場製作所etc　日本株の次の主役は!?　利益成長が期待される10銘柄 ―― 日本株投資戦略 (06/23 13:00)
+  概要: この記事は2026年6月19日にSBI証券で公開された「メイコー、堀場製作所etc　日本株の次の主役は!?　利益成長が期待される10銘柄」を一部編集し、転載したものです。 目次メイコー、堀場製作所et
 
 【依頼内容】
 上記の指数の動きについて、ニュースの内容と紐付けて解説してください。
@@ -1328,29 +1219,29 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 69,788.38 pt (-3.55%)
+- TOPIX (1306連動ETF): 422.8 円 (-2.69%)
+- ドル円: 161.46 円 (+0.02%)
 - S&P 500: 7,472.79 (-0.37%)
 - NASDAQ: 26,166.60 (-1.32%)
 - ダウ: 51,712.71 (+0.29%)
-- ドル円: 161.70 円 (+0.17%)
 - 米10年債利回り: 4.451 % (+0.00%)
-- WTI原油: 72.92 USD (-2.54%)
-- 金: 4140.50 USD (-0.99%)
-- 日経225: 70,124.88 pt (-3.08%)
-- TOPIX (1306連動ETF): 425.0 円 (-2.19%)
+- WTI原油: 73.74 USD (-1.44%)
+- 金: 4142.30 USD (-0.95%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++31.07円  ファーストリテイリング(9983)  +1.07%  [小売]
-  ++2.68円  リクルートHD(6098)  +0.68%  [サービス]
-  ++2.36円  武田薬品(4502)  +1.33%  [医薬品]
-  ++1.89円  オリエンタルランド(4661)  +2.28%  [サービス]
-  ++1.36円  東京海上HD(8766)  +0.52%  [保険]
+  ++22.86円  ファーストリテイリング(9983)  +0.78%  [小売]
+  ++2.32円  リクルートHD(6098)  +0.59%  [サービス]
+  ++1.45円  オリエンタルランド(4661)  +1.74%  [サービス]
+  ++1.29円  武田薬品(4502)  +0.72%  [医薬品]
+  ++1.02円  KDDI(9433)  +1.08%  [通信]
 ▼ 日経225 (下落寄与TOP5)
-  -141.43円  東京エレクトロン(8035)  -5.09%  [半導体製造装置]
-  -78.57円  キーエンス(6861)  -2.82%  [電機]
-  -36.07円  村田製作所(6981)  -8.24%  [電機]
-  -25.46円  ソフトバンクG(9984)  -9.84%  [通信]
-  -21.43円  アドバンテスト(6857)  -1.87%  [電機]
+  -172.86円  東京エレクトロン(8035)  -6.22%  [半導体製造装置]
+  -82.50円  キーエンス(6861)  -2.96%  [電機]
+  -44.46円  村田製作所(6981)  -10.16%  [電機]
+  -26.43円  アドバンテスト(6857)  -2.30%  [電機]
+  -26.11円  ソフトバンクG(9984)  -10.09%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
   ++12.72pt  Micron Technology(MU)  +6.82%  wt:2.49%  [Information Technology]
   ++5.00pt  Intel(INTC)  +5.19%  wt:1.29%  [Information Technology]
@@ -1365,40 +1256,32 @@
   -13.39pt  Broadcom(AVGO)  -4.52%  wt:3.95%  [Information Technology]
 
 【関連ニュース見出し】
-- [NHK経済] 株価 午後に下落幅が拡大 一時7万円割れ (06/23 15:26)
-  概要: 23日の東京株式市場、午後に入って売り注文が膨らみ、日経平均株価は下落幅が2300円を超え、一時7万円を割り込みました。
-- [Yahoo!ファイナンス] 東証、一時7万円の大台割れ(共同通信) (06/23 15:21)
-  概要: 23日の東京株式市場で日経平均株価（225種）が一時7万円の大台を割った。
-- [Yahoo!ファイナンス] 「ちゃんと動いてますか？」…夏を前にダイキンから電話でお伺い、内容は2年前に購入したエアコンの状況確認　同社に取り組みの真意を聞いてみた(マネーポストWEB) (06/23 15:15)
-  概要: ある日突然、見知らぬ番号から電話がかかって来た。何の心当たりもなく、一瞬、証券会社や不動産などの営業電話かと思ったものの、なんとなく電話を取ったところ、「ダイキン工業株式会社」だという。
-- [Yahoo!ファイナンス] 39年ぶり円安水準が目前 日米財務相が会談(ABEMA TIMES) (06/23 15:09)
-  概要: 外国為替市場で39年ぶりの円安水準が迫るなか、片山財務大臣は昨夜、アメリカのベッセント財務長官とオンラインで会談したと明らかにしました。
-
-　1時間弱の会談では、金融市場の動向や中東情勢のほか、先端
+- [ZUU online] 米ドル／円 ―― FIMAを使った為替介入の可能性には注意したい (06/23 19:30)
+  概要: この記事は2026年6月23日（火）に「羊飼いのFXブログ」公開された「志摩力男氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月23日（火）の午後14時過ぎに現役ト
+- [Investing.com日本] スモールキャップへの資金流入、市場の幅広い参加を示唆＝シティ (06/23 19:28)
+- [Investing.com日本] モルガン・スタンレー、モンクレールの目標株価を57ユーロに引き下げ (06/23 19:08)
+- [NHK経済] 円相場 1ドル＝161円台で神経質な取引 介入への警戒続く (06/23 19:00)
+  概要: 23日の東京外国為替市場、円安の進行を食い止めるための政府・日銀による市場介入への警戒が強まる中、円相場は1ドル＝161円台での神経質な値動きになりました。
+- [ZUU online] 米ドル／円 ―― 跳ねるのを待って介入が入ったと思ったらそこからショートエントリーで売っていきたい (06/23 19:00)
+  概要: この記事は2026年6月23日（火）に「羊飼いのFXブログ」で公開された「小林芳彦氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月23日（火）の午後12時半時点に現
+- [Investing.com日本] マーベル・テクノロジー・グループの株価が本日下落している理由 (06/23 18:50)
+- [Investing.com日本] 23日の香港市場概況：香港市場は5日続落、約1年ぶりの安値を更新 (06/23 18:45)
+- [NHK経済] 株価 2500円超下落で7万円割れ 利益確保の売り膨らむ (06/23 16:44)
+  概要: 23日の東京株式市場、このところの株価の急ピッチな上昇を警戒していったん利益を確定させようという売り注文が膨らみ、日経平均株価は2500円を超える大幅な下落となり、7万円を割り込みました。
 - [ZUU online] 為替介入は逆効果、ドル円相場はフリーフォール状態に突入か (06/23 15:00)
   概要: この記事は2026年6月12日に「きんざいOnline：週刊金融財政事情」で公開された「為替介入は逆効果、ドル円相場はフリーフォール状態に突入か」を一部編集し、転載したものです。 外国為替市場で円安が
-- [Investing.com日本] ジェフリーズ、農家収入のマイナス転落でヤラの目標株価を470クローネに引き下げ (06/23 14:45)
-- [Investing.com日本] ＴＯＫＡＩ Research Memo（10）：配当性向45%以上へ、自己株式取得も含め還元強化 (06/23 14:15)
 - [NHK経済] 片山財務相 為替市場“断固たる措置 日米合意揺るぎない” (06/23 12:35)
   概要: 外国為替市場で39年半ぶりの円安水準が迫る中、片山財務大臣は、アメリカのベッセント財務長官と22日夜、為替の動向などをテーマにオンラインで会談したことを記者団の取材に明らかにし、「日米間で必要とあれば
-- [ZUU online] アクティビスト系ファンドの大量保有　大丸松坂屋百貨店を傘下に持つJ.フロント株が一時18％高と急騰 (06/23 12:02)
-  概要: 大丸松坂屋百貨店を傘下に持つJ.フロント リテイリングの株価が6月22日、急騰した。前営業日比で一時18％超上昇し、年初来高値を更新。前場には一時2,999円まで買われ、市場の注目を集めている。 株価
-- [ロイター日本マーケット] 午前の日経平均は反落、過熱感でＡＩ関連株売られる　一時900円超安 (06/23 12:01)
-- [Yahoo!ファイナンス] 個人向け国債「魅力」向上　骨太案、投資層拡大へ(共同通信) (06/23 15:14)
-  概要: 政府が7月に策定する経済財政運営の指針「骨太方針」のうち、金融分野の素案が23日判明した。日銀が金融政策の正常化により国債の購入量を減らす中、「個人向け国債の魅力向上や国内投資家層の拡大を図る」と明
-- [NHK経済] 東京23区中古マンション 平均1億2800万円余 賃貸の家賃も上昇 (06/23 14:37)
+- [Yahoo!ファイナンス] 「楽天日本株4.3倍ブル」は“年644.5％”のリターン!?「100万円投資すれば744万円になる」…信じて持ち続けると“手元のお金”はガリガリ削られる？ レバレッジ投信の「冷徹な罠」(ファイナンシャルフィールド) (06/23 19:50)
+  概要: できるだけ利回りの高い投資信託を選びたい、と考える人は多いでしょう。リターンの高い順に並べると、上位には「楽天日本株4.3倍ブル」のようなレバレッジ型が目立ちます。
+ 
+運用会社の月次レポートによると
+- [NHK経済] 東京23区中古マンション 平均1億2800万円余 賃貸の家賃も上昇 (06/23 18:29)
   概要: 先月、東京23区で販売された中古マンションの平均価格は、70平方メートルに換算して1億2800万円あまりとなり、去年の同じ月と比べておよそ27％上昇しました。日銀が今月、利上げに踏み切ったことで、住宅
-- [ロイター日本マーケット] 為替には必要に応じていつでも適切に対応する＝木原官房長官 (06/23 11:38)
 - [NHK経済] 米FRB グリーンスパン元議長が死去 危機対応で名指揮者の異名 (06/23 08:52)
   概要: アメリカのFRB＝連邦準備制度理事会の議長をおよそ18年半にわたって務め、金融危機への対応などで「マエストロ＝名指揮者」と言われたアラン・グリーンスパン氏が亡くなりました。100歳でした。
-- [Investing.com日本] シグニファイ、自社株買いを停止し2029年までの売上高・利益率目標を設定 (06/23 15:08)
-- [Investing.com日本] テクセンドフォトマスク---26年3月期は増収増益、外販フォトマスク需要の拡大が寄与 (06/23 14:30)
-- [Investing.com日本] ＴＯＫＡＩ Research Memo（9）：2027年3月期はシステム費用や人件費増を増収効果で吸収、連続増収増益へ (06/23 14:15)
-- [Yahoo!ファイナンス] 元手が少なくても始められる「不動産投資」　最大の特徴は「定期的な収入源をつくりやすいこと」、売却せずに亡くなっても相続税対策につながるメリット(マネーポストWEB) (06/23 15:16)
-  概要: 人生100年時代になっても、年を重ねれば、若い頃のようには稼げなくなる。体力とともに収入も減少し、医療や介護のお金も出ていくからこそ、できるだけ早く賢く、老後資産を増やしておかなければならない。そこ
-- [Yahoo!ファイナンス] 低損失・短絡耐量向上を両立…東芝D＆Sが開発、SiCMOSFETで新技術の中身(ニュースイッチ) (06/23 15:10)
-  概要: 東芝デバイス＆ストレージ（川崎市幸区、牛島知巳社長）は、トレンチゲート型炭化ケイ素（SiC）金属酸化膜半導体電界効果トランジスタ（MOSFET）で、損失低減とデバイスに過大な電流が急激に流れる短絡状態
-- [Investing.com日本] テンセント、日本のゲームスタジオへの投資からの撤退を検討 (06/23 15:08)
+- [ZUU online] メイコー、堀場製作所etc　日本株の次の主役は!?　利益成長が期待される10銘柄 ―― 日本株投資戦略 (06/23 13:00)
+  概要: この記事は2026年6月19日にSBI証券で公開された「メイコー、堀場製作所etc　日本株の次の主役は!?　利益成長が期待される10銘柄」を一部編集し、転載したものです。 目次メイコー、堀場製作所et
 
 【依頼内容】
 - 最も動きが大きかった指標トップ3を特定
@@ -1407,29 +1290,29 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 69,788.38 pt (-3.55%)
+- TOPIX (1306連動ETF): 422.8 円 (-2.69%)
+- ドル円: 161.46 円 (+0.02%)
 - S&P 500: 7,472.79 (-0.37%)
 - NASDAQ: 26,166.60 (-1.32%)
 - ダウ: 51,712.71 (+0.29%)
-- ドル円: 161.70 円 (+0.17%)
 - 米10年債利回り: 4.451 % (+0.00%)
-- WTI原油: 72.92 USD (-2.54%)
-- 金: 4140.50 USD (-0.99%)
-- 日経225: 70,124.88 pt (-3.08%)
-- TOPIX (1306連動ETF): 425.0 円 (-2.19%)
+- WTI原油: 73.74 USD (-1.44%)
+- 金: 4142.30 USD (-0.95%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++31.07円  ファーストリテイリング(9983)  +1.07%  [小売]
-  ++2.68円  リクルートHD(6098)  +0.68%  [サービス]
-  ++2.36円  武田薬品(4502)  +1.33%  [医薬品]
-  ++1.89円  オリエンタルランド(4661)  +2.28%  [サービス]
-  ++1.36円  東京海上HD(8766)  +0.52%  [保険]
+  ++22.86円  ファーストリテイリング(9983)  +0.78%  [小売]
+  ++2.32円  リクルートHD(6098)  +0.59%  [サービス]
+  ++1.45円  オリエンタルランド(4661)  +1.74%  [サービス]
+  ++1.29円  武田薬品(4502)  +0.72%  [医薬品]
+  ++1.02円  KDDI(9433)  +1.08%  [通信]
 ▼ 日経225 (下落寄与TOP5)
-  -141.43円  東京エレクトロン(8035)  -5.09%  [半導体製造装置]
-  -78.57円  キーエンス(6861)  -2.82%  [電機]
-  -36.07円  村田製作所(6981)  -8.24%  [電機]
-  -25.46円  ソフトバンクG(9984)  -9.84%  [通信]
-  -21.43円  アドバンテスト(6857)  -1.87%  [電機]
+  -172.86円  東京エレクトロン(8035)  -6.22%  [半導体製造装置]
+  -82.50円  キーエンス(6861)  -2.96%  [電機]
+  -44.46円  村田製作所(6981)  -10.16%  [電機]
+  -26.43円  アドバンテスト(6857)  -2.30%  [電機]
+  -26.11円  ソフトバンクG(9984)  -10.09%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
   ++12.72pt  Micron Technology(MU)  +6.82%  wt:2.49%  [Information Technology]
   ++5.00pt  Intel(INTC)  +5.19%  wt:1.29%  [Information Technology]
@@ -1444,40 +1327,32 @@
   -13.39pt  Broadcom(AVGO)  -4.52%  wt:3.95%  [Information Technology]
 
 【関連ニュース見出し】
-- [NHK経済] 株価 午後に下落幅が拡大 一時7万円割れ (06/23 15:26)
-  概要: 23日の東京株式市場、午後に入って売り注文が膨らみ、日経平均株価は下落幅が2300円を超え、一時7万円を割り込みました。
-- [Yahoo!ファイナンス] 東証、一時7万円の大台割れ(共同通信) (06/23 15:21)
-  概要: 23日の東京株式市場で日経平均株価（225種）が一時7万円の大台を割った。
-- [Yahoo!ファイナンス] 「ちゃんと動いてますか？」…夏を前にダイキンから電話でお伺い、内容は2年前に購入したエアコンの状況確認　同社に取り組みの真意を聞いてみた(マネーポストWEB) (06/23 15:15)
-  概要: ある日突然、見知らぬ番号から電話がかかって来た。何の心当たりもなく、一瞬、証券会社や不動産などの営業電話かと思ったものの、なんとなく電話を取ったところ、「ダイキン工業株式会社」だという。
-- [Yahoo!ファイナンス] 39年ぶり円安水準が目前 日米財務相が会談(ABEMA TIMES) (06/23 15:09)
-  概要: 外国為替市場で39年ぶりの円安水準が迫るなか、片山財務大臣は昨夜、アメリカのベッセント財務長官とオンラインで会談したと明らかにしました。
-
-　1時間弱の会談では、金融市場の動向や中東情勢のほか、先端
+- [ZUU online] 米ドル／円 ―― FIMAを使った為替介入の可能性には注意したい (06/23 19:30)
+  概要: この記事は2026年6月23日（火）に「羊飼いのFXブログ」公開された「志摩力男氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月23日（火）の午後14時過ぎに現役ト
+- [Investing.com日本] スモールキャップへの資金流入、市場の幅広い参加を示唆＝シティ (06/23 19:28)
+- [Investing.com日本] モルガン・スタンレー、モンクレールの目標株価を57ユーロに引き下げ (06/23 19:08)
+- [NHK経済] 円相場 1ドル＝161円台で神経質な取引 介入への警戒続く (06/23 19:00)
+  概要: 23日の東京外国為替市場、円安の進行を食い止めるための政府・日銀による市場介入への警戒が強まる中、円相場は1ドル＝161円台での神経質な値動きになりました。
+- [ZUU online] 米ドル／円 ―― 跳ねるのを待って介入が入ったと思ったらそこからショートエントリーで売っていきたい (06/23 19:00)
+  概要: この記事は2026年6月23日（火）に「羊飼いのFXブログ」で公開された「小林芳彦氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月23日（火）の午後12時半時点に現
+- [Investing.com日本] マーベル・テクノロジー・グループの株価が本日下落している理由 (06/23 18:50)
+- [Investing.com日本] 23日の香港市場概況：香港市場は5日続落、約1年ぶりの安値を更新 (06/23 18:45)
+- [NHK経済] 株価 2500円超下落で7万円割れ 利益確保の売り膨らむ (06/23 16:44)
+  概要: 23日の東京株式市場、このところの株価の急ピッチな上昇を警戒していったん利益を確定させようという売り注文が膨らみ、日経平均株価は2500円を超える大幅な下落となり、7万円を割り込みました。
 - [ZUU online] 為替介入は逆効果、ドル円相場はフリーフォール状態に突入か (06/23 15:00)
   概要: この記事は2026年6月12日に「きんざいOnline：週刊金融財政事情」で公開された「為替介入は逆効果、ドル円相場はフリーフォール状態に突入か」を一部編集し、転載したものです。 外国為替市場で円安が
-- [Investing.com日本] ジェフリーズ、農家収入のマイナス転落でヤラの目標株価を470クローネに引き下げ (06/23 14:45)
-- [Investing.com日本] ＴＯＫＡＩ Research Memo（10）：配当性向45%以上へ、自己株式取得も含め還元強化 (06/23 14:15)
 - [NHK経済] 片山財務相 為替市場“断固たる措置 日米合意揺るぎない” (06/23 12:35)
   概要: 外国為替市場で39年半ぶりの円安水準が迫る中、片山財務大臣は、アメリカのベッセント財務長官と22日夜、為替の動向などをテーマにオンラインで会談したことを記者団の取材に明らかにし、「日米間で必要とあれば
-- [ZUU online] アクティビスト系ファンドの大量保有　大丸松坂屋百貨店を傘下に持つJ.フロント株が一時18％高と急騰 (06/23 12:02)
-  概要: 大丸松坂屋百貨店を傘下に持つJ.フロント リテイリングの株価が6月22日、急騰した。前営業日比で一時18％超上昇し、年初来高値を更新。前場には一時2,999円まで買われ、市場の注目を集めている。 株価
-- [ロイター日本マーケット] 午前の日経平均は反落、過熱感でＡＩ関連株売られる　一時900円超安 (06/23 12:01)
-- [Yahoo!ファイナンス] 個人向け国債「魅力」向上　骨太案、投資層拡大へ(共同通信) (06/23 15:14)
-  概要: 政府が7月に策定する経済財政運営の指針「骨太方針」のうち、金融分野の素案が23日判明した。日銀が金融政策の正常化により国債の購入量を減らす中、「個人向け国債の魅力向上や国内投資家層の拡大を図る」と明
-- [NHK経済] 東京23区中古マンション 平均1億2800万円余 賃貸の家賃も上昇 (06/23 14:37)
+- [Yahoo!ファイナンス] 「楽天日本株4.3倍ブル」は“年644.5％”のリターン!?「100万円投資すれば744万円になる」…信じて持ち続けると“手元のお金”はガリガリ削られる？ レバレッジ投信の「冷徹な罠」(ファイナンシャルフィールド) (06/23 19:50)
+  概要: できるだけ利回りの高い投資信託を選びたい、と考える人は多いでしょう。リターンの高い順に並べると、上位には「楽天日本株4.3倍ブル」のようなレバレッジ型が目立ちます。
+ 
+運用会社の月次レポートによると
+- [NHK経済] 東京23区中古マンション 平均1億2800万円余 賃貸の家賃も上昇 (06/23 18:29)
   概要: 先月、東京23区で販売された中古マンションの平均価格は、70平方メートルに換算して1億2800万円あまりとなり、去年の同じ月と比べておよそ27％上昇しました。日銀が今月、利上げに踏み切ったことで、住宅
-- [ロイター日本マーケット] 為替には必要に応じていつでも適切に対応する＝木原官房長官 (06/23 11:38)
 - [NHK経済] 米FRB グリーンスパン元議長が死去 危機対応で名指揮者の異名 (06/23 08:52)
   概要: アメリカのFRB＝連邦準備制度理事会の議長をおよそ18年半にわたって務め、金融危機への対応などで「マエストロ＝名指揮者」と言われたアラン・グリーンスパン氏が亡くなりました。100歳でした。
-- [Investing.com日本] シグニファイ、自社株買いを停止し2029年までの売上高・利益率目標を設定 (06/23 15:08)
-- [Investing.com日本] テクセンドフォトマスク---26年3月期は増収増益、外販フォトマスク需要の拡大が寄与 (06/23 14:30)
-- [Investing.com日本] ＴＯＫＡＩ Research Memo（9）：2027年3月期はシステム費用や人件費増を増収効果で吸収、連続増収増益へ (06/23 14:15)
-- [Yahoo!ファイナンス] 元手が少なくても始められる「不動産投資」　最大の特徴は「定期的な収入源をつくりやすいこと」、売却せずに亡くなっても相続税対策につながるメリット(マネーポストWEB) (06/23 15:16)
-  概要: 人生100年時代になっても、年を重ねれば、若い頃のようには稼げなくなる。体力とともに収入も減少し、医療や介護のお金も出ていくからこそ、できるだけ早く賢く、老後資産を増やしておかなければならない。そこ
-- [Yahoo!ファイナンス] 低損失・短絡耐量向上を両立…東芝D＆Sが開発、SiCMOSFETで新技術の中身(ニュースイッチ) (06/23 15:10)
-  概要: 東芝デバイス＆ストレージ（川崎市幸区、牛島知巳社長）は、トレンチゲート型炭化ケイ素（SiC）金属酸化膜半導体電界効果トランジスタ（MOSFET）で、損失低減とデバイスに過大な電流が急激に流れる短絡状態
-- [Investing.com日本] テンセント、日本のゲームスタジオへの投資からの撤退を検討 (06/23 15:08)
+- [ZUU online] メイコー、堀場製作所etc　日本株の次の主役は!?　利益成長が期待される10銘柄 ―― 日本株投資戦略 (06/23 13:00)
+  概要: この記事は2026年6月19日にSBI証券で公開された「メイコー、堀場製作所etc　日本株の次の主役は!?　利益成長が期待される10銘柄」を一部編集し、転載したものです。 目次メイコー、堀場製作所et
 
 【依頼内容】
 - 短期的なリスク要因（今後1週間以内）
