@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年06月25日 15:29 JST</span>
+    <span class="updated">更新: 2026年06月25日 19:36 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">72,366.34 <span class="tile-unit">pt</span></div>
+          <div class="tile-change up">
+            +3191.38&nbsp;&nbsp;+4.61%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">425.9 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +6.00&nbsp;&nbsp;+1.43%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">161.82 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.22&nbsp;&nbsp;+0.14%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">51,848.90 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">161.60 <span class="tile-unit">円</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.402 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">69.47 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">69.49 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -0.87&nbsp;&nbsp;-1.24%
+            -0.85&nbsp;&nbsp;-1.21%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">3991.50 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4002.30 <span class="tile-unit">USD</span></div>
           <div class="tile-change up">
-            +1.20&nbsp;&nbsp;+0.03%
+            +12.00&nbsp;&nbsp;+0.30%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">72,548.29 <span class="tile-unit">pt</span></div>
-          <div class="tile-change up">
-            +3373.32&nbsp;&nbsp;+4.88%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">427.7 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +7.80&nbsp;&nbsp;+1.86%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -672,8 +672,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/8035:TYO" target="_blank" rel="noopener">東京エレクトロン</a>
                 <span class="contrib-sector">半導体製造装置</span>
               </td>
-              <td class="up">+200.00</td>
-              <td class="up">+8.01%</td>
+              <td class="up">+194.29</td>
+              <td class="up">+7.78%</td>
             </tr>
             
             <tr>
@@ -681,8 +681,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6857:TYO" target="_blank" rel="noopener">アドバンテスト</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="up">+165.71</td>
-              <td class="up">+14.87%</td>
+              <td class="up">+167.86</td>
+              <td class="up">+15.06%</td>
             </tr>
             
             <tr>
@@ -690,17 +690,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/9983:TYO" target="_blank" rel="noopener">ファーストリテイリング</a>
                 <span class="contrib-sector">小売</span>
               </td>
-              <td class="up">+103.93</td>
-              <td class="up">+3.57%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
-                <span class="contrib-sector">電機</span>
-              </td>
-              <td class="up">+46.07</td>
-              <td class="up">+1.68%</td>
+              <td class="up">+98.57</td>
+              <td class="up">+3.38%</td>
             </tr>
             
             <tr>
@@ -708,8 +699,17 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6981:TYO" target="_blank" rel="noopener">村田製作所</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="up">+34.82</td>
-              <td class="up">+8.84%</td>
+              <td class="up">+28.39</td>
+              <td class="up">+7.21%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="up">+22.14</td>
+              <td class="up">+0.81%</td>
             </tr>
             
             </tbody>
@@ -728,29 +728,20 @@
             
             <tr>
               <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/7741:TYO" target="_blank" rel="noopener">HOYA</a>
+                <span class="contrib-sector">精密機器</span>
+              </td>
+              <td class="down">-8.21</td>
+              <td class="down">-0.87%</td>
+            </tr>
+            
+            <tr>
+              <td>
                 <a class="contrib-name" href="https://www.google.com/finance/quote/8031:TYO" target="_blank" rel="noopener">三井物産</a>
                 <span class="contrib-sector">商社</span>
               </td>
-              <td class="down">-4.46</td>
-              <td class="down">-2.72%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/7011:TYO" target="_blank" rel="noopener">三菱重工</a>
-                <span class="contrib-sector">機械</span>
-              </td>
-              <td class="down">-4.29</td>
-              <td class="down">-3.21%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/8058:TYO" target="_blank" rel="noopener">三菱商事</a>
-                <span class="contrib-sector">商社</span>
-              </td>
-              <td class="down">-4.00</td>
-              <td class="down">-2.47%</td>
+              <td class="down">-5.36</td>
+              <td class="down">-3.26%</td>
             </tr>
             
             <tr>
@@ -758,17 +749,26 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6501:TYO" target="_blank" rel="noopener">日立製作所</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-3.93</td>
-              <td class="down">-2.34%</td>
+              <td class="down">-4.89</td>
+              <td class="down">-2.92%</td>
             </tr>
             
             <tr>
               <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/8766:TYO" target="_blank" rel="noopener">東京海上HD</a>
-                <span class="contrib-sector">保険</span>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/8058:TYO" target="_blank" rel="noopener">三菱商事</a>
+                <span class="contrib-sector">商社</span>
               </td>
-              <td class="down">-3.71</td>
-              <td class="down">-1.49%</td>
+              <td class="down">-4.64</td>
+              <td class="down">-2.87%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/7011:TYO" target="_blank" rel="noopener">三菱重工</a>
+                <span class="contrib-sector">機械</span>
+              </td>
+              <td class="down">-4.46</td>
+              <td class="down">-3.34%</td>
             </tr>
             
             </tbody>
@@ -915,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (12件)</div>
+    <div class="card-title">📰 最新ニュース (16件)</div>
     
     
     
@@ -925,164 +925,226 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📈 マーケット全般 (7件)</div>
+          <div class="news-group-title">📈 マーケット全般 (9件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/b878306b1f99488c9490c696c331bfe010f20ff8?source=rss" target="_blank" rel="noopener">NY原油 一時70ドル割れ イラン攻撃開始直後以来(ABEMA TIMES)</a>
+                <a href="https://zuuonline.com/archives/302319" target="_blank" rel="noopener">日々是相場［夕刊］――  2026年6月25日（木）</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>06/25 19:30</span>
+              </div>
+              
+              <div class="news-summary">日経平均 72,366.34円 △3,191.37円 為替 １ドル＝161.83円 売買高（東証プライム、以下同） 26億5,728万株 売買代金 10兆9137億94百万円 値上り銘柄数 1,043…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/98a2e3c0642d7399bb442c5a0d7c61f9c2f45d37?source=rss" target="_blank" rel="noopener">予算改革、市場の信認確保注力へ　年度途中の国債増発を回避(共同通信)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/25 15:24</span>
+                <span>06/25 19:25</span>
               </div>
               
-              <div class="news-summary">ホルムズ海峡を通過する船舶の航行が正常化に向かう期待などから、ニューヨーク市場で原油価格が一時、1バレル＝70ドルを割り込みました。
+              <div class="news-summary">片山さつき財務相は25日の経済財政諮問会議で、高市政権が掲げる「責任ある積極財政」の実現に向けた予算編成改革の方向性を説明した。各省庁からの事業費の要求に対し、上限を設けない新たな投資枠を創設し、経</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1583257" target="_blank" rel="noopener">25日の香港市場概況：ハンセン指数は反落、本土マネーの売り越しが重し</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>06/25 19:00</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1583256" target="_blank" rel="noopener">25日の中国本土市場概況：上海総合は続伸、ハイテク株が上げ主導</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>06/25 19:00</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/302318" target="_blank" rel="noopener">米ドル／円 ―― ドル高･円安が進みやすい地合いに変化はなさそうだ</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>06/25 19:00</span>
+              </div>
+              
+              <div class="news-summary">この記事は2026年6月25日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月25日（木）の午前10時時点に外為…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260625/k10015159901000.html" target="_blank" rel="noopener">景気動向指数「改善」に上方修正 71か月上昇傾向続く</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>06/25 18:36</span>
+              </div>
+              
+              <div class="news-summary">ことし4月の景気動向指数の改訂値は、景気の現状を示す「一致指数」が速報値を上回る118.1となり、内閣府は景気の基調判断を「改善を示している」に上方修正しました。景気動向指数の上昇傾向は71か月続いて…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260625/k10015160101000.html" target="_blank" rel="noopener">円相場1ドル＝161円台後半での取り引き 市場介入警戒も</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>06/25 18:18</span>
+              </div>
+              
+              <div class="news-summary">25日の東京外国為替市場、円相場は1ドル＝161円台後半で取り引きされ、神経質な値動きとなりました。</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/302148" target="_blank" rel="noopener">【5月アクティビストサマリー】旧村上系、「紙・パ業界」に接近を強める　香港オアシスは6銘柄を新規保有</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>06/25 17:32</span>
+              </div>
+              
+              <div class="news-summary">5月中、アクティビスト（物言う株主）による株式の新規保有（5％以上）がいつにも増して目立った。その数は少なくとも16銘柄。なかでも旧村上ファンド系と、香港投資ファンドのオアシス・マネジメントの動きが際…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260625/k10015159251000.html" target="_blank" rel="noopener">株価 3100円以上値上がり 終値で最高値を更新</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>06/25 16:15</span>
+              </div>
+              
+              <div class="news-summary">25日の東京株式市場、半導体関連の需要が堅調だという見方から、多くの銘柄に買い注文が広がって日経平均株価は3100円以上値上がりして、終値としての最高値を更新しました。</div>
+              
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        
+        <div class="news-group">
+          <div class="news-group-title">🌐 マクロ・金利 (1件)</div>
+          <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260625/k10015159691000.html" target="_blank" rel="noopener">日銀 田村委員“利上げは物価動向次第でちゅうちょなく”</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>06/25 18:11</span>
+              </div>
+              
+              <div class="news-summary">日銀の金融政策の決定に関わる田村直樹 審議委員が25日、神戸市で講演し、今月の利上げに続いて今後は数か月に一度のペースで利上げを進める必要があり、物価の動向次第ではペースを加速するべきだという考えを示…</div>
+              
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        
+      
+        
+        
+        <div class="news-group">
+          <div class="news-group-title">📌 その他 (6件)</div>
+          <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/76469d8b45cf83f439c76740fe862cf5eb0e3308?source=rss" target="_blank" rel="noopener">東電、新体制で資本提携へ　株主総会で小早川社長「交渉、公平に進める」(産経新聞)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>06/25 19:22</span>
+              </div>
+              
+              <div class="news-summary">大手電力9社が25日、定時株主総会を開いた。それぞれ株主から原発の再稼働中止や脱原発を求める提案が相次いだが全て否決された。東京電力ホールディングス（HD）は産業革新投資機構社長の横尾敬介氏（74）ら…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/11b4c7b8c6bc52e8d83b929918496a08326f5910?source=rss" target="_blank" rel="noopener">電動昇降デスクに投資する価値、大アリ。使ってわかった「座っている時こそ生きる」(ライフハッカー・ジャパン)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>06/25 19:21</span>
+              </div>
+              
+              <div class="news-summary">在宅勤務の普及に合わせて、定番になりつつある電動昇降デスク。とはいえ、実際の使い心地はどうなの？
 
-　ニューヨーク原油市場で24日、ホルムズ海峡を通過する船舶の増</div>
+今回は、現役在宅ワーカーの目線から「電動昇降デスク」の魅力を語ります。
+
+デスク関連のアイテムは、い…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/38a1483454f2f509dc9c670dcc998ba9d2e67d2b?source=rss" target="_blank" rel="noopener">東証、一時3400円超高(共同通信)</a>
+                <a href="https://news.yahoo.co.jp/articles/cbd8ca073bcd2318a71e3f331a115cd07a7b29e3?source=rss" target="_blank" rel="noopener">予算改革「財政需要に確実に対応」と首相(共同通信)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/25 15:21</span>
+                <span>06/25 19:18</span>
               </div>
               
-              <div class="news-summary">25日の東京株式市場で日経平均株価（225種）の前日終値からの上げ幅が一時3400円を超えた。</div>
+              <div class="news-summary">高市早苗首相は25日、官邸で開いた経済財政諮問会議で、予算編成改革を巡り「必要な財政需要に確実に対応する」と述べ、投資拡大や経済成長の加速に向けて積極的に財政措置を講じる考えを表明した。</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260625/k10015159251000.html" target="_blank" rel="noopener">株価 一時3200円以上値上がり 7万2000円台を回復</a>
+                <a href="https://zuuonline.com/archives/302075" target="_blank" rel="noopener">国税OBライターが取材で発見した、富裕層に共通する3つのスタンス</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>06/25 19:02</span>
+              </div>
+              
+              <div class="news-summary">富裕層は「分散投資」を徹底している ライターとして取材活動を続けて感じることの一つに、資産を築いている方々は、ほぼ例外なく複数の資産に分散して投資をしていることが挙げられます。インデックスファンドへの…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260625/k10015160031000.html" target="_blank" rel="noopener">キオクシアが株主総会 時価総額国内トップ AI普及で急成長</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">NHK経済</span>
-                <span>06/25 15:15</span>
+                <span>06/25 17:59</span>
               </div>
               
-              <div class="news-summary">25日の東京株式市場、半導体関連の需要が堅調だという見方から、幅広い銘柄に買い注文が広がって日経平均株価は一時、3200円以上値上がりし、7万2000円台を回復しています。</div>
+              <div class="news-summary">生成AIの普及を背景に手がける半導体の需要が急増し、時価総額が国内首位となった「キオクシアホールディングス」の株主総会が開かれ、太田裕雄社長はAIがけん引する形で今後も半導体の旺盛な需要が続くという見…</div>
               
             </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302303" target="_blank" rel="noopener">FX/為替「ドル/円今日の見通し｜PCEに注目　ドル円40年ぶり高値更新なるか」 外為どっとコム トゥデイ 2026年6月25日号</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>06/25 10:32</span>
-              </div>
-              
-              <div class="news-summary">主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年6月25日8時10分執筆・監修：株式会社外…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260625/k10015158891000.html" target="_blank" rel="noopener">NY原油 一時1バレル＝70ドル割れ 3か月半ぶり安値水準</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>06/25 05:07</span>
-              </div>
-              
-              <div class="news-summary">24日のニューヨーク原油市場では、ホルムズ海峡をめぐる状況が改善し中東からの原油の供給が回復に向かうとの期待感から、国際的な取り引きの指標となるWTIの先物価格はことし3月上旬以来、およそ3か月半ぶり…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302295" target="_blank" rel="noopener">日々是相場［夕刊］――  2026年6月24日（水）</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>06/24 20:00</span>
-              </div>
-              
-              <div class="news-summary">日経平均 69,174.97円 ▼613.41円 為替 １ドル＝161.68円 売買高（東証プライム、以下同） 26億9,575万株 売買代金 12兆5140億18百万円 値上り銘柄数 679銘柄 値…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302293" target="_blank" rel="noopener">米ドル／円 ―― 介入警戒感があるため上値を積極的に追いたくはないが下がったところは押し目を拾うスタンスを維持したい</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>06/24 19:30</span>
-              </div>
-              
-              <div class="news-summary">この記事は2026年6月24日（水）に「羊飼いのFXブログ」で公開された「井口喜雄氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月24日（水）の午後14時すぎにトレ…</div>
-              
-            </div>
-            
-          </div>
-        </div>
-        
-      
-        
-        
-        <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (3件)</div>
-          <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/1638189a9bc1529df4c6aa70512f1d899c55b447?source=rss" target="_blank" rel="noopener">【ヤフコメで話題】「積極財政の是非と減税政策の論点」「財源論や政策効果に多様な意見」 - 財政運営の方向性を巡る議論(Yahoo!ニュース オリジナル THE PAGE)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/25 15:27</span>
-              </div>
-              
-              <div class="news-summary">積極財政の是非や減税政策のあり方について、Yahoo!ニュースのコメント欄で話題になっています。
-コメントでは、財政破綻できない国が予算に上限を設けないのは当然とする意見や、国債発行と為替の関係につい…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302294" target="_blank" rel="noopener">スタグフレーション対策の資産防衛術｜インフレと景気後退を乗り切るポートフォリオ構築法</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>06/25 10:00</span>
-              </div>
-              
-              <div class="news-summary">この記事の結論 スタグフレーションとは、物価が継続的に上昇するインフレと、企業の業績悪化や失業増を伴う景気後退が同時に発生する経済現象のことです。スタグフレーション下では、通常のインフレ対策が通用しま…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260624/k10015158521000.html" target="_blank" rel="noopener">日銀 植田総裁 今後も中東情勢見ながら利上げ検討の姿勢示す</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>06/24 18:40</span>
-              </div>
-              
-              <div class="news-summary">日銀の植田総裁は24日、金融業界の会合に寄せたあいさつで、今月利上げに踏み切った理由について物価上昇のリスクに対応するためだとした上で、今後も中東情勢などを見極めながら利上げを検討する姿勢を示しました…</div>
-              
-            </div>
-            
-          </div>
-        </div>
-        
-      
-        
-        
-      
-        
-        
-        <div class="news-group">
-          <div class="news-group-title">📌 その他 (2件)</div>
-          <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
@@ -1097,19 +1159,6 @@
               
             </div>
             
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260624/k10015157951000.html" target="_blank" rel="noopener">17戦略分野への投資額 2040年度までに「370兆円超」</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>06/24 21:41</span>
-              </div>
-              
-              <div class="news-summary">政府の経済財政諮問会議などの合同会議が開かれ、新たな成長戦略の策定に向けて、AI・半導体や造船など17の戦略分野に官民が連携して投資する規模を2040年度までに「総額370兆円を超える」と想定する計画…</div>
-              
-            </div>
-            
           </div>
         </div>
         
@@ -1120,34 +1169,34 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-06-25 15:29）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-06-25 19:36）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 72,366.34 pt (+4.61%)
+- TOPIX (1306連動ETF): 425.9 円 (+1.43%)
+- ドル円: 161.82 円 (+0.14%)
 - S&P 500: 7,358.22 (-0.10%)
 - NASDAQ: 25,476.64 (-0.43%)
 - ダウ: 51,848.90 (+0.35%)
-- ドル円: 161.60 円 (+0.00%)
 - 米10年債利回り: 4.402 % (+0.00%)
-- WTI原油: 69.47 USD (-1.24%)
-- 金: 3991.50 USD (+0.03%)
-- 日経225: 72,548.29 pt (+4.88%)
-- TOPIX (1306連動ETF): 427.7 円 (+1.86%)
+- WTI原油: 69.49 USD (-1.21%)
+- 金: 4002.30 USD (+0.30%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++200.00円  東京エレクトロン(8035)  +8.01%  [半導体製造装置]
-  ++165.71円  アドバンテスト(6857)  +14.87%  [電機]
-  ++103.93円  ファーストリテイリング(9983)  +3.57%  [小売]
-  ++46.07円  キーエンス(6861)  +1.68%  [電機]
-  ++34.82円  村田製作所(6981)  +8.84%  [電機]
+  ++194.29円  東京エレクトロン(8035)  +7.78%  [半導体製造装置]
+  ++167.86円  アドバンテスト(6857)  +15.06%  [電機]
+  ++98.57円  ファーストリテイリング(9983)  +3.38%  [小売]
+  ++28.39円  村田製作所(6981)  +7.21%  [電機]
+  ++22.14円  キーエンス(6861)  +0.81%  [電機]
 ▼ 日経225 (下落寄与TOP5)
-  -4.46円  三井物産(8031)  -2.72%  [商社]
-  -4.29円  三菱重工(7011)  -3.21%  [機械]
-  -4.00円  三菱商事(8058)  -2.47%  [商社]
-  -3.93円  日立製作所(6501)  -2.34%  [電機]
-  -3.71円  東京海上HD(8766)  -1.49%  [保険]
+  -8.21円  HOYA(7741)  -0.87%  [精密機器]
+  -5.36円  三井物産(8031)  -3.26%  [商社]
+  -4.89円  日立製作所(6501)  -2.92%  [電機]
+  -4.64円  三菱商事(8058)  -2.87%  [商社]
+  -4.46円  三菱重工(7011)  -3.34%  [機械]
 ▼ S&P500 (上昇寄与TOP5)
   ++2.88pt  Home Depot (The)(HD)  +5.67%  wt:0.69%  [Consumer Discretionary]
   ++1.53pt  GE Aerospace(GE)  +2.64%  wt:0.79%  [Industrials]
@@ -1162,33 +1211,40 @@
   -2.80pt  Apple Inc.(AAPL)  -0.41%  wt:9.18%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] NY原油 一時70ドル割れ イラン攻撃開始直後以来(ABEMA TIMES) (06/25 15:24)
-  概要: ホルムズ海峡を通過する船舶の航行が正常化に向かう期待などから、ニューヨーク市場で原油価格が一時、1バレル＝70ドルを割り込みました。
+- [ZUU online] 日々是相場［夕刊］――  2026年6月25日（木） (06/25 19:30)
+  概要: 日経平均 72,366.34円 △3,191.37円 為替 １ドル＝161.83円 売買高（東証プライム、以下同） 26億5,728万株 売買代金 10兆9137億94百万円 値上り銘柄数 1,043
+- [Yahoo!ファイナンス] 予算改革、市場の信認確保注力へ　年度途中の国債増発を回避(共同通信) (06/25 19:25)
+  概要: 片山さつき財務相は25日の経済財政諮問会議で、高市政権が掲げる「責任ある積極財政」の実現に向けた予算編成改革の方向性を説明した。各省庁からの事業費の要求に対し、上限を設けない新たな投資枠を創設し、経
+- [Investing.com日本] 25日の香港市場概況：ハンセン指数は反落、本土マネーの売り越しが重し (06/25 19:00)
+- [Investing.com日本] 25日の中国本土市場概況：上海総合は続伸、ハイテク株が上げ主導 (06/25 19:00)
+- [ZUU online] 米ドル／円 ―― ドル高･円安が進みやすい地合いに変化はなさそうだ (06/25 19:00)
+  概要: この記事は2026年6月25日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月25日（木）の午前10時時点に外為
+- [NHK経済] 景気動向指数「改善」に上方修正 71か月上昇傾向続く (06/25 18:36)
+  概要: ことし4月の景気動向指数の改訂値は、景気の現状を示す「一致指数」が速報値を上回る118.1となり、内閣府は景気の基調判断を「改善を示している」に上方修正しました。景気動向指数の上昇傾向は71か月続いて
+- [NHK経済] 円相場1ドル＝161円台後半での取り引き 市場介入警戒も (06/25 18:18)
+  概要: 25日の東京外国為替市場、円相場は1ドル＝161円台後半で取り引きされ、神経質な値動きとなりました。
+- [ZUU online] 【5月アクティビストサマリー】旧村上系、「紙・パ業界」に接近を強める　香港オアシスは6銘柄を新規保有 (06/25 17:32)
+  概要: 5月中、アクティビスト（物言う株主）による株式の新規保有（5％以上）がいつにも増して目立った。その数は少なくとも16銘柄。なかでも旧村上ファンド系と、香港投資ファンドのオアシス・マネジメントの動きが際
+- [NHK経済] 株価 3100円以上値上がり 終値で最高値を更新 (06/25 16:15)
+  概要: 25日の東京株式市場、半導体関連の需要が堅調だという見方から、多くの銘柄に買い注文が広がって日経平均株価は3100円以上値上がりして、終値としての最高値を更新しました。
+- [NHK経済] 日銀 田村委員“利上げは物価動向次第でちゅうちょなく” (06/25 18:11)
+  概要: 日銀の金融政策の決定に関わる田村直樹 審議委員が25日、神戸市で講演し、今月の利上げに続いて今後は数か月に一度のペースで利上げを進める必要があり、物価の動向次第ではペースを加速するべきだという考えを示
+- [Yahoo!ファイナンス] 東電、新体制で資本提携へ　株主総会で小早川社長「交渉、公平に進める」(産経新聞) (06/25 19:22)
+  概要: 大手電力9社が25日、定時株主総会を開いた。それぞれ株主から原発の再稼働中止や脱原発を求める提案が相次いだが全て否決された。東京電力ホールディングス（HD）は産業革新投資機構社長の横尾敬介氏（74）ら
+- [Yahoo!ファイナンス] 電動昇降デスクに投資する価値、大アリ。使ってわかった「座っている時こそ生きる」(ライフハッカー・ジャパン) (06/25 19:21)
+  概要: 在宅勤務の普及に合わせて、定番になりつつある電動昇降デスク。とはいえ、実際の使い心地はどうなの？
 
-　ニューヨーク原油市場で24日、ホルムズ海峡を通過する船舶の増
-- [Yahoo!ファイナンス] 東証、一時3400円超高(共同通信) (06/25 15:21)
-  概要: 25日の東京株式市場で日経平均株価（225種）の前日終値からの上げ幅が一時3400円を超えた。
-- [NHK経済] 株価 一時3200円以上値上がり 7万2000円台を回復 (06/25 15:15)
-  概要: 25日の東京株式市場、半導体関連の需要が堅調だという見方から、幅広い銘柄に買い注文が広がって日経平均株価は一時、3200円以上値上がりし、7万2000円台を回復しています。
-- [ZUU online] FX/為替「ドル/円今日の見通し｜PCEに注目　ドル円40年ぶり高値更新なるか」 外為どっとコム トゥデイ 2026年6月25日号 (06/25 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年6月25日8時10分執筆・監修：株式会社外
-- [NHK経済] NY原油 一時1バレル＝70ドル割れ 3か月半ぶり安値水準 (06/25 05:07)
-  概要: 24日のニューヨーク原油市場では、ホルムズ海峡をめぐる状況が改善し中東からの原油の供給が回復に向かうとの期待感から、国際的な取り引きの指標となるWTIの先物価格はことし3月上旬以来、およそ3か月半ぶり
-- [ZUU online] 日々是相場［夕刊］――  2026年6月24日（水） (06/24 20:00)
-  概要: 日経平均 69,174.97円 ▼613.41円 為替 １ドル＝161.68円 売買高（東証プライム、以下同） 26億9,575万株 売買代金 12兆5140億18百万円 値上り銘柄数 679銘柄 値
-- [ZUU online] 米ドル／円 ―― 介入警戒感があるため上値を積極的に追いたくはないが下がったところは押し目を拾うスタンスを維持したい (06/24 19:30)
-  概要: この記事は2026年6月24日（水）に「羊飼いのFXブログ」で公開された「井口喜雄氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月24日（水）の午後14時すぎにトレ
-- [Yahoo!ファイナンス] 【ヤフコメで話題】「積極財政の是非と減税政策の論点」「財源論や政策効果に多様な意見」 - 財政運営の方向性を巡る議論(Yahoo!ニュース オリジナル THE PAGE) (06/25 15:27)
-  概要: 積極財政の是非や減税政策のあり方について、Yahoo!ニュースのコメント欄で話題になっています。
-コメントでは、財政破綻できない国が予算に上限を設けないのは当然とする意見や、国債発行と為替の関係につい
-- [ZUU online] スタグフレーション対策の資産防衛術｜インフレと景気後退を乗り切るポートフォリオ構築法 (06/25 10:00)
-  概要: この記事の結論 スタグフレーションとは、物価が継続的に上昇するインフレと、企業の業績悪化や失業増を伴う景気後退が同時に発生する経済現象のことです。スタグフレーション下では、通常のインフレ対策が通用しま
-- [NHK経済] 日銀 植田総裁 今後も中東情勢見ながら利上げ検討の姿勢示す (06/24 18:40)
-  概要: 日銀の植田総裁は24日、金融業界の会合に寄せたあいさつで、今月利上げに踏み切った理由について物価上昇のリスクに対応するためだとした上で、今後も中東情勢などを見極めながら利上げを検討する姿勢を示しました
+今回は、現役在宅ワーカーの目線から「電動昇降デスク」の魅力を語ります。
+
+デスク関連のアイテムは、い
+- [Yahoo!ファイナンス] 予算改革「財政需要に確実に対応」と首相(共同通信) (06/25 19:18)
+  概要: 高市早苗首相は25日、官邸で開いた経済財政諮問会議で、予算編成改革を巡り「必要な財政需要に確実に対応する」と述べ、投資拡大や経済成長の加速に向けて積極的に財政措置を講じる考えを表明した。
+- [ZUU online] 国税OBライターが取材で発見した、富裕層に共通する3つのスタンス (06/25 19:02)
+  概要: 富裕層は「分散投資」を徹底している ライターとして取材活動を続けて感じることの一つに、資産を築いている方々は、ほぼ例外なく複数の資産に分散して投資をしていることが挙げられます。インデックスファンドへの
+- [NHK経済] キオクシアが株主総会 時価総額国内トップ AI普及で急成長 (06/25 17:59)
+  概要: 生成AIの普及を背景に手がける半導体の需要が急増し、時価総額が国内首位となった「キオクシアホールディングス」の株主総会が開かれ、太田裕雄社長はAIがけん引する形で今後も半導体の旺盛な需要が続くという見
 - [ZUU online] アンダースロー：高市政権の投資戦略が描くシナリオについて会田が動画で解説しています (06/25 11:00)
   概要: この記事は2026年6月25日に配信されたメールマガジン「アンダースロー：高市政権の投資戦略が描くシナリオについて会田が動画で解説しています」を一部編集し、転載したものです。 高市政権の投資戦略が描く
-- [NHK経済] 17戦略分野への投資額 2040年度までに「370兆円超」 (06/24 21:41)
-  概要: 政府の経済財政諮問会議などの合同会議が開かれ、新たな成長戦略の策定に向けて、AI・半導体や造船など17の戦略分野に官民が連携して投資する規模を2040年度までに「総額370兆円を超える」と想定する計画
 
 【依頼内容】
 上記の指数の動きについて、ニュースの内容と紐付けて解説してください。
@@ -1203,29 +1259,29 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 72,366.34 pt (+4.61%)
+- TOPIX (1306連動ETF): 425.9 円 (+1.43%)
+- ドル円: 161.82 円 (+0.14%)
 - S&P 500: 7,358.22 (-0.10%)
 - NASDAQ: 25,476.64 (-0.43%)
 - ダウ: 51,848.90 (+0.35%)
-- ドル円: 161.60 円 (+0.00%)
 - 米10年債利回り: 4.402 % (+0.00%)
-- WTI原油: 69.47 USD (-1.24%)
-- 金: 3991.50 USD (+0.03%)
-- 日経225: 72,548.29 pt (+4.88%)
-- TOPIX (1306連動ETF): 427.7 円 (+1.86%)
+- WTI原油: 69.49 USD (-1.21%)
+- 金: 4002.30 USD (+0.30%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++200.00円  東京エレクトロン(8035)  +8.01%  [半導体製造装置]
-  ++165.71円  アドバンテスト(6857)  +14.87%  [電機]
-  ++103.93円  ファーストリテイリング(9983)  +3.57%  [小売]
-  ++46.07円  キーエンス(6861)  +1.68%  [電機]
-  ++34.82円  村田製作所(6981)  +8.84%  [電機]
+  ++194.29円  東京エレクトロン(8035)  +7.78%  [半導体製造装置]
+  ++167.86円  アドバンテスト(6857)  +15.06%  [電機]
+  ++98.57円  ファーストリテイリング(9983)  +3.38%  [小売]
+  ++28.39円  村田製作所(6981)  +7.21%  [電機]
+  ++22.14円  キーエンス(6861)  +0.81%  [電機]
 ▼ 日経225 (下落寄与TOP5)
-  -4.46円  三井物産(8031)  -2.72%  [商社]
-  -4.29円  三菱重工(7011)  -3.21%  [機械]
-  -4.00円  三菱商事(8058)  -2.47%  [商社]
-  -3.93円  日立製作所(6501)  -2.34%  [電機]
-  -3.71円  東京海上HD(8766)  -1.49%  [保険]
+  -8.21円  HOYA(7741)  -0.87%  [精密機器]
+  -5.36円  三井物産(8031)  -3.26%  [商社]
+  -4.89円  日立製作所(6501)  -2.92%  [電機]
+  -4.64円  三菱商事(8058)  -2.87%  [商社]
+  -4.46円  三菱重工(7011)  -3.34%  [機械]
 ▼ S&P500 (上昇寄与TOP5)
   ++2.88pt  Home Depot (The)(HD)  +5.67%  wt:0.69%  [Consumer Discretionary]
   ++1.53pt  GE Aerospace(GE)  +2.64%  wt:0.79%  [Industrials]
@@ -1240,33 +1296,40 @@
   -2.80pt  Apple Inc.(AAPL)  -0.41%  wt:9.18%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] NY原油 一時70ドル割れ イラン攻撃開始直後以来(ABEMA TIMES) (06/25 15:24)
-  概要: ホルムズ海峡を通過する船舶の航行が正常化に向かう期待などから、ニューヨーク市場で原油価格が一時、1バレル＝70ドルを割り込みました。
+- [ZUU online] 日々是相場［夕刊］――  2026年6月25日（木） (06/25 19:30)
+  概要: 日経平均 72,366.34円 △3,191.37円 為替 １ドル＝161.83円 売買高（東証プライム、以下同） 26億5,728万株 売買代金 10兆9137億94百万円 値上り銘柄数 1,043
+- [Yahoo!ファイナンス] 予算改革、市場の信認確保注力へ　年度途中の国債増発を回避(共同通信) (06/25 19:25)
+  概要: 片山さつき財務相は25日の経済財政諮問会議で、高市政権が掲げる「責任ある積極財政」の実現に向けた予算編成改革の方向性を説明した。各省庁からの事業費の要求に対し、上限を設けない新たな投資枠を創設し、経
+- [Investing.com日本] 25日の香港市場概況：ハンセン指数は反落、本土マネーの売り越しが重し (06/25 19:00)
+- [Investing.com日本] 25日の中国本土市場概況：上海総合は続伸、ハイテク株が上げ主導 (06/25 19:00)
+- [ZUU online] 米ドル／円 ―― ドル高･円安が進みやすい地合いに変化はなさそうだ (06/25 19:00)
+  概要: この記事は2026年6月25日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月25日（木）の午前10時時点に外為
+- [NHK経済] 景気動向指数「改善」に上方修正 71か月上昇傾向続く (06/25 18:36)
+  概要: ことし4月の景気動向指数の改訂値は、景気の現状を示す「一致指数」が速報値を上回る118.1となり、内閣府は景気の基調判断を「改善を示している」に上方修正しました。景気動向指数の上昇傾向は71か月続いて
+- [NHK経済] 円相場1ドル＝161円台後半での取り引き 市場介入警戒も (06/25 18:18)
+  概要: 25日の東京外国為替市場、円相場は1ドル＝161円台後半で取り引きされ、神経質な値動きとなりました。
+- [ZUU online] 【5月アクティビストサマリー】旧村上系、「紙・パ業界」に接近を強める　香港オアシスは6銘柄を新規保有 (06/25 17:32)
+  概要: 5月中、アクティビスト（物言う株主）による株式の新規保有（5％以上）がいつにも増して目立った。その数は少なくとも16銘柄。なかでも旧村上ファンド系と、香港投資ファンドのオアシス・マネジメントの動きが際
+- [NHK経済] 株価 3100円以上値上がり 終値で最高値を更新 (06/25 16:15)
+  概要: 25日の東京株式市場、半導体関連の需要が堅調だという見方から、多くの銘柄に買い注文が広がって日経平均株価は3100円以上値上がりして、終値としての最高値を更新しました。
+- [NHK経済] 日銀 田村委員“利上げは物価動向次第でちゅうちょなく” (06/25 18:11)
+  概要: 日銀の金融政策の決定に関わる田村直樹 審議委員が25日、神戸市で講演し、今月の利上げに続いて今後は数か月に一度のペースで利上げを進める必要があり、物価の動向次第ではペースを加速するべきだという考えを示
+- [Yahoo!ファイナンス] 東電、新体制で資本提携へ　株主総会で小早川社長「交渉、公平に進める」(産経新聞) (06/25 19:22)
+  概要: 大手電力9社が25日、定時株主総会を開いた。それぞれ株主から原発の再稼働中止や脱原発を求める提案が相次いだが全て否決された。東京電力ホールディングス（HD）は産業革新投資機構社長の横尾敬介氏（74）ら
+- [Yahoo!ファイナンス] 電動昇降デスクに投資する価値、大アリ。使ってわかった「座っている時こそ生きる」(ライフハッカー・ジャパン) (06/25 19:21)
+  概要: 在宅勤務の普及に合わせて、定番になりつつある電動昇降デスク。とはいえ、実際の使い心地はどうなの？
 
-　ニューヨーク原油市場で24日、ホルムズ海峡を通過する船舶の増
-- [Yahoo!ファイナンス] 東証、一時3400円超高(共同通信) (06/25 15:21)
-  概要: 25日の東京株式市場で日経平均株価（225種）の前日終値からの上げ幅が一時3400円を超えた。
-- [NHK経済] 株価 一時3200円以上値上がり 7万2000円台を回復 (06/25 15:15)
-  概要: 25日の東京株式市場、半導体関連の需要が堅調だという見方から、幅広い銘柄に買い注文が広がって日経平均株価は一時、3200円以上値上がりし、7万2000円台を回復しています。
-- [ZUU online] FX/為替「ドル/円今日の見通し｜PCEに注目　ドル円40年ぶり高値更新なるか」 外為どっとコム トゥデイ 2026年6月25日号 (06/25 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年6月25日8時10分執筆・監修：株式会社外
-- [NHK経済] NY原油 一時1バレル＝70ドル割れ 3か月半ぶり安値水準 (06/25 05:07)
-  概要: 24日のニューヨーク原油市場では、ホルムズ海峡をめぐる状況が改善し中東からの原油の供給が回復に向かうとの期待感から、国際的な取り引きの指標となるWTIの先物価格はことし3月上旬以来、およそ3か月半ぶり
-- [ZUU online] 日々是相場［夕刊］――  2026年6月24日（水） (06/24 20:00)
-  概要: 日経平均 69,174.97円 ▼613.41円 為替 １ドル＝161.68円 売買高（東証プライム、以下同） 26億9,575万株 売買代金 12兆5140億18百万円 値上り銘柄数 679銘柄 値
-- [ZUU online] 米ドル／円 ―― 介入警戒感があるため上値を積極的に追いたくはないが下がったところは押し目を拾うスタンスを維持したい (06/24 19:30)
-  概要: この記事は2026年6月24日（水）に「羊飼いのFXブログ」で公開された「井口喜雄氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月24日（水）の午後14時すぎにトレ
-- [Yahoo!ファイナンス] 【ヤフコメで話題】「積極財政の是非と減税政策の論点」「財源論や政策効果に多様な意見」 - 財政運営の方向性を巡る議論(Yahoo!ニュース オリジナル THE PAGE) (06/25 15:27)
-  概要: 積極財政の是非や減税政策のあり方について、Yahoo!ニュースのコメント欄で話題になっています。
-コメントでは、財政破綻できない国が予算に上限を設けないのは当然とする意見や、国債発行と為替の関係につい
-- [ZUU online] スタグフレーション対策の資産防衛術｜インフレと景気後退を乗り切るポートフォリオ構築法 (06/25 10:00)
-  概要: この記事の結論 スタグフレーションとは、物価が継続的に上昇するインフレと、企業の業績悪化や失業増を伴う景気後退が同時に発生する経済現象のことです。スタグフレーション下では、通常のインフレ対策が通用しま
-- [NHK経済] 日銀 植田総裁 今後も中東情勢見ながら利上げ検討の姿勢示す (06/24 18:40)
-  概要: 日銀の植田総裁は24日、金融業界の会合に寄せたあいさつで、今月利上げに踏み切った理由について物価上昇のリスクに対応するためだとした上で、今後も中東情勢などを見極めながら利上げを検討する姿勢を示しました
+今回は、現役在宅ワーカーの目線から「電動昇降デスク」の魅力を語ります。
+
+デスク関連のアイテムは、い
+- [Yahoo!ファイナンス] 予算改革「財政需要に確実に対応」と首相(共同通信) (06/25 19:18)
+  概要: 高市早苗首相は25日、官邸で開いた経済財政諮問会議で、予算編成改革を巡り「必要な財政需要に確実に対応する」と述べ、投資拡大や経済成長の加速に向けて積極的に財政措置を講じる考えを表明した。
+- [ZUU online] 国税OBライターが取材で発見した、富裕層に共通する3つのスタンス (06/25 19:02)
+  概要: 富裕層は「分散投資」を徹底している ライターとして取材活動を続けて感じることの一つに、資産を築いている方々は、ほぼ例外なく複数の資産に分散して投資をしていることが挙げられます。インデックスファンドへの
+- [NHK経済] キオクシアが株主総会 時価総額国内トップ AI普及で急成長 (06/25 17:59)
+  概要: 生成AIの普及を背景に手がける半導体の需要が急増し、時価総額が国内首位となった「キオクシアホールディングス」の株主総会が開かれ、太田裕雄社長はAIがけん引する形で今後も半導体の旺盛な需要が続くという見
 - [ZUU online] アンダースロー：高市政権の投資戦略が描くシナリオについて会田が動画で解説しています (06/25 11:00)
   概要: この記事は2026年6月25日に配信されたメールマガジン「アンダースロー：高市政権の投資戦略が描くシナリオについて会田が動画で解説しています」を一部編集し、転載したものです。 高市政権の投資戦略が描く
-- [NHK経済] 17戦略分野への投資額 2040年度までに「370兆円超」 (06/24 21:41)
-  概要: 政府の経済財政諮問会議などの合同会議が開かれ、新たな成長戦略の策定に向けて、AI・半導体や造船など17の戦略分野に官民が連携して投資する規模を2040年度までに「総額370兆円を超える」と想定する計画
 
 【依頼内容】
 - 最も動きが大きかった指標トップ3を特定
@@ -1275,29 +1338,29 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 72,366.34 pt (+4.61%)
+- TOPIX (1306連動ETF): 425.9 円 (+1.43%)
+- ドル円: 161.82 円 (+0.14%)
 - S&P 500: 7,358.22 (-0.10%)
 - NASDAQ: 25,476.64 (-0.43%)
 - ダウ: 51,848.90 (+0.35%)
-- ドル円: 161.60 円 (+0.00%)
 - 米10年債利回り: 4.402 % (+0.00%)
-- WTI原油: 69.47 USD (-1.24%)
-- 金: 3991.50 USD (+0.03%)
-- 日経225: 72,548.29 pt (+4.88%)
-- TOPIX (1306連動ETF): 427.7 円 (+1.86%)
+- WTI原油: 69.49 USD (-1.21%)
+- 金: 4002.30 USD (+0.30%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++200.00円  東京エレクトロン(8035)  +8.01%  [半導体製造装置]
-  ++165.71円  アドバンテスト(6857)  +14.87%  [電機]
-  ++103.93円  ファーストリテイリング(9983)  +3.57%  [小売]
-  ++46.07円  キーエンス(6861)  +1.68%  [電機]
-  ++34.82円  村田製作所(6981)  +8.84%  [電機]
+  ++194.29円  東京エレクトロン(8035)  +7.78%  [半導体製造装置]
+  ++167.86円  アドバンテスト(6857)  +15.06%  [電機]
+  ++98.57円  ファーストリテイリング(9983)  +3.38%  [小売]
+  ++28.39円  村田製作所(6981)  +7.21%  [電機]
+  ++22.14円  キーエンス(6861)  +0.81%  [電機]
 ▼ 日経225 (下落寄与TOP5)
-  -4.46円  三井物産(8031)  -2.72%  [商社]
-  -4.29円  三菱重工(7011)  -3.21%  [機械]
-  -4.00円  三菱商事(8058)  -2.47%  [商社]
-  -3.93円  日立製作所(6501)  -2.34%  [電機]
-  -3.71円  東京海上HD(8766)  -1.49%  [保険]
+  -8.21円  HOYA(7741)  -0.87%  [精密機器]
+  -5.36円  三井物産(8031)  -3.26%  [商社]
+  -4.89円  日立製作所(6501)  -2.92%  [電機]
+  -4.64円  三菱商事(8058)  -2.87%  [商社]
+  -4.46円  三菱重工(7011)  -3.34%  [機械]
 ▼ S&P500 (上昇寄与TOP5)
   ++2.88pt  Home Depot (The)(HD)  +5.67%  wt:0.69%  [Consumer Discretionary]
   ++1.53pt  GE Aerospace(GE)  +2.64%  wt:0.79%  [Industrials]
@@ -1312,33 +1375,40 @@
   -2.80pt  Apple Inc.(AAPL)  -0.41%  wt:9.18%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] NY原油 一時70ドル割れ イラン攻撃開始直後以来(ABEMA TIMES) (06/25 15:24)
-  概要: ホルムズ海峡を通過する船舶の航行が正常化に向かう期待などから、ニューヨーク市場で原油価格が一時、1バレル＝70ドルを割り込みました。
+- [ZUU online] 日々是相場［夕刊］――  2026年6月25日（木） (06/25 19:30)
+  概要: 日経平均 72,366.34円 △3,191.37円 為替 １ドル＝161.83円 売買高（東証プライム、以下同） 26億5,728万株 売買代金 10兆9137億94百万円 値上り銘柄数 1,043
+- [Yahoo!ファイナンス] 予算改革、市場の信認確保注力へ　年度途中の国債増発を回避(共同通信) (06/25 19:25)
+  概要: 片山さつき財務相は25日の経済財政諮問会議で、高市政権が掲げる「責任ある積極財政」の実現に向けた予算編成改革の方向性を説明した。各省庁からの事業費の要求に対し、上限を設けない新たな投資枠を創設し、経
+- [Investing.com日本] 25日の香港市場概況：ハンセン指数は反落、本土マネーの売り越しが重し (06/25 19:00)
+- [Investing.com日本] 25日の中国本土市場概況：上海総合は続伸、ハイテク株が上げ主導 (06/25 19:00)
+- [ZUU online] 米ドル／円 ―― ドル高･円安が進みやすい地合いに変化はなさそうだ (06/25 19:00)
+  概要: この記事は2026年6月25日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月25日（木）の午前10時時点に外為
+- [NHK経済] 景気動向指数「改善」に上方修正 71か月上昇傾向続く (06/25 18:36)
+  概要: ことし4月の景気動向指数の改訂値は、景気の現状を示す「一致指数」が速報値を上回る118.1となり、内閣府は景気の基調判断を「改善を示している」に上方修正しました。景気動向指数の上昇傾向は71か月続いて
+- [NHK経済] 円相場1ドル＝161円台後半での取り引き 市場介入警戒も (06/25 18:18)
+  概要: 25日の東京外国為替市場、円相場は1ドル＝161円台後半で取り引きされ、神経質な値動きとなりました。
+- [ZUU online] 【5月アクティビストサマリー】旧村上系、「紙・パ業界」に接近を強める　香港オアシスは6銘柄を新規保有 (06/25 17:32)
+  概要: 5月中、アクティビスト（物言う株主）による株式の新規保有（5％以上）がいつにも増して目立った。その数は少なくとも16銘柄。なかでも旧村上ファンド系と、香港投資ファンドのオアシス・マネジメントの動きが際
+- [NHK経済] 株価 3100円以上値上がり 終値で最高値を更新 (06/25 16:15)
+  概要: 25日の東京株式市場、半導体関連の需要が堅調だという見方から、多くの銘柄に買い注文が広がって日経平均株価は3100円以上値上がりして、終値としての最高値を更新しました。
+- [NHK経済] 日銀 田村委員“利上げは物価動向次第でちゅうちょなく” (06/25 18:11)
+  概要: 日銀の金融政策の決定に関わる田村直樹 審議委員が25日、神戸市で講演し、今月の利上げに続いて今後は数か月に一度のペースで利上げを進める必要があり、物価の動向次第ではペースを加速するべきだという考えを示
+- [Yahoo!ファイナンス] 東電、新体制で資本提携へ　株主総会で小早川社長「交渉、公平に進める」(産経新聞) (06/25 19:22)
+  概要: 大手電力9社が25日、定時株主総会を開いた。それぞれ株主から原発の再稼働中止や脱原発を求める提案が相次いだが全て否決された。東京電力ホールディングス（HD）は産業革新投資機構社長の横尾敬介氏（74）ら
+- [Yahoo!ファイナンス] 電動昇降デスクに投資する価値、大アリ。使ってわかった「座っている時こそ生きる」(ライフハッカー・ジャパン) (06/25 19:21)
+  概要: 在宅勤務の普及に合わせて、定番になりつつある電動昇降デスク。とはいえ、実際の使い心地はどうなの？
 
-　ニューヨーク原油市場で24日、ホルムズ海峡を通過する船舶の増
-- [Yahoo!ファイナンス] 東証、一時3400円超高(共同通信) (06/25 15:21)
-  概要: 25日の東京株式市場で日経平均株価（225種）の前日終値からの上げ幅が一時3400円を超えた。
-- [NHK経済] 株価 一時3200円以上値上がり 7万2000円台を回復 (06/25 15:15)
-  概要: 25日の東京株式市場、半導体関連の需要が堅調だという見方から、幅広い銘柄に買い注文が広がって日経平均株価は一時、3200円以上値上がりし、7万2000円台を回復しています。
-- [ZUU online] FX/為替「ドル/円今日の見通し｜PCEに注目　ドル円40年ぶり高値更新なるか」 外為どっとコム トゥデイ 2026年6月25日号 (06/25 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年6月25日8時10分執筆・監修：株式会社外
-- [NHK経済] NY原油 一時1バレル＝70ドル割れ 3か月半ぶり安値水準 (06/25 05:07)
-  概要: 24日のニューヨーク原油市場では、ホルムズ海峡をめぐる状況が改善し中東からの原油の供給が回復に向かうとの期待感から、国際的な取り引きの指標となるWTIの先物価格はことし3月上旬以来、およそ3か月半ぶり
-- [ZUU online] 日々是相場［夕刊］――  2026年6月24日（水） (06/24 20:00)
-  概要: 日経平均 69,174.97円 ▼613.41円 為替 １ドル＝161.68円 売買高（東証プライム、以下同） 26億9,575万株 売買代金 12兆5140億18百万円 値上り銘柄数 679銘柄 値
-- [ZUU online] 米ドル／円 ―― 介入警戒感があるため上値を積極的に追いたくはないが下がったところは押し目を拾うスタンスを維持したい (06/24 19:30)
-  概要: この記事は2026年6月24日（水）に「羊飼いのFXブログ」で公開された「井口喜雄氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年6月24日（水）の午後14時すぎにトレ
-- [Yahoo!ファイナンス] 【ヤフコメで話題】「積極財政の是非と減税政策の論点」「財源論や政策効果に多様な意見」 - 財政運営の方向性を巡る議論(Yahoo!ニュース オリジナル THE PAGE) (06/25 15:27)
-  概要: 積極財政の是非や減税政策のあり方について、Yahoo!ニュースのコメント欄で話題になっています。
-コメントでは、財政破綻できない国が予算に上限を設けないのは当然とする意見や、国債発行と為替の関係につい
-- [ZUU online] スタグフレーション対策の資産防衛術｜インフレと景気後退を乗り切るポートフォリオ構築法 (06/25 10:00)
-  概要: この記事の結論 スタグフレーションとは、物価が継続的に上昇するインフレと、企業の業績悪化や失業増を伴う景気後退が同時に発生する経済現象のことです。スタグフレーション下では、通常のインフレ対策が通用しま
-- [NHK経済] 日銀 植田総裁 今後も中東情勢見ながら利上げ検討の姿勢示す (06/24 18:40)
-  概要: 日銀の植田総裁は24日、金融業界の会合に寄せたあいさつで、今月利上げに踏み切った理由について物価上昇のリスクに対応するためだとした上で、今後も中東情勢などを見極めながら利上げを検討する姿勢を示しました
+今回は、現役在宅ワーカーの目線から「電動昇降デスク」の魅力を語ります。
+
+デスク関連のアイテムは、い
+- [Yahoo!ファイナンス] 予算改革「財政需要に確実に対応」と首相(共同通信) (06/25 19:18)
+  概要: 高市早苗首相は25日、官邸で開いた経済財政諮問会議で、予算編成改革を巡り「必要な財政需要に確実に対応する」と述べ、投資拡大や経済成長の加速に向けて積極的に財政措置を講じる考えを表明した。
+- [ZUU online] 国税OBライターが取材で発見した、富裕層に共通する3つのスタンス (06/25 19:02)
+  概要: 富裕層は「分散投資」を徹底している ライターとして取材活動を続けて感じることの一つに、資産を築いている方々は、ほぼ例外なく複数の資産に分散して投資をしていることが挙げられます。インデックスファンドへの
+- [NHK経済] キオクシアが株主総会 時価総額国内トップ AI普及で急成長 (06/25 17:59)
+  概要: 生成AIの普及を背景に手がける半導体の需要が急増し、時価総額が国内首位となった「キオクシアホールディングス」の株主総会が開かれ、太田裕雄社長はAIがけん引する形で今後も半導体の旺盛な需要が続くという見
 - [ZUU online] アンダースロー：高市政権の投資戦略が描くシナリオについて会田が動画で解説しています (06/25 11:00)
   概要: この記事は2026年6月25日に配信されたメールマガジン「アンダースロー：高市政権の投資戦略が描くシナリオについて会田が動画で解説しています」を一部編集し、転載したものです。 高市政権の投資戦略が描く
-- [NHK経済] 17戦略分野への投資額 2040年度までに「370兆円超」 (06/24 21:41)
-  概要: 政府の経済財政諮問会議などの合同会議が開かれ、新たな成長戦略の策定に向けて、AI・半導体や造船など17の戦略分野に官民が連携して投資する規模を2040年度までに「総額370兆円を超える」と想定する計画
 
 【依頼内容】
 - 短期的なリスク要因（今後1週間以内）
