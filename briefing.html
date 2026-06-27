@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [夜]</title>
+  <title>投資情報ブリーフィング [朝]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">夜</span>
-    <span class="slot-desc">米国寄り付き直前・経済指標・欧州市場</span>
+    <span class="slot-badge">朝</span>
+    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年06月27日 23:24 JST</span>
+    <span class="updated">更新: 2026年06月28日 06:47 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -548,9 +548,9 @@
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
         
-          <div class="tile-price">nan <span class="tile-unit"></span></div>
-          <div class="tile-change flat">
-            +nan&nbsp;&nbsp;+nan%
+          <div class="tile-price">7,354.02 <span class="tile-unit"></span></div>
+          <div class="tile-change down">
+            -3.47&nbsp;&nbsp;-0.05%
           </div>
         
         
@@ -559,9 +559,9 @@
       <div class="market-tile primary">
         <div class="tile-name">NASDAQ</div>
         
-          <div class="tile-price">nan <span class="tile-unit"></span></div>
-          <div class="tile-change flat">
-            +nan&nbsp;&nbsp;+nan%
+          <div class="tile-price">25,297.62 <span class="tile-unit"></span></div>
+          <div class="tile-change down">
+            -60.98&nbsp;&nbsp;-0.24%
           </div>
         
         
@@ -570,9 +570,9 @@
       <div class="market-tile primary">
         <div class="tile-name">ダウ</div>
         
-          <div class="tile-price">nan <span class="tile-unit"></span></div>
-          <div class="tile-change flat">
-            +nan&nbsp;&nbsp;+nan%
+          <div class="tile-price">51,876.11 <span class="tile-unit"></span></div>
+          <div class="tile-change down">
+            -44.51&nbsp;&nbsp;-0.09%
           </div>
         
         
@@ -625,9 +625,9 @@
       <div class="market-tile ">
         <div class="tile-name">日経225</div>
         
-          <div class="tile-price">72,366.34 <span class="tile-unit">pt</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
+          <div class="tile-price">69,360.88 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -3005.46&nbsp;&nbsp;-4.15%
           </div>
         
         
@@ -783,12 +783,130 @@
 
         <div class="contrib-sub">
           <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/MSFT:NASDAQ" target="_blank" rel="noopener">MSFT</a>
+                <span class="contrib-sector">Microsoft</span>
+              </td>
+              <td class="up">+24.97</td>
+              <td class="up">+5.71%</td>
+              <td style="color:var(--text2)">5.95%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AAPL:NASDAQ" target="_blank" rel="noopener">AAPL</a>
+                <span class="contrib-sector">Apple Inc.</span>
+              </td>
+              <td class="up">+21.19</td>
+              <td class="up">+3.14%</td>
+              <td style="color:var(--text2)">9.18%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/LLY:NYSE" target="_blank" rel="noopener">LLY</a>
+                <span class="contrib-sector">Lilly (Eli)</span>
+              </td>
+              <td class="up">+10.99</td>
+              <td class="up">+7.13%</td>
+              <td style="color:var(--text2)">2.09%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AMZN:NASDAQ" target="_blank" rel="noopener">AMZN</a>
+                <span class="contrib-sector">Amazon</span>
+              </td>
+              <td class="up">+9.94</td>
+              <td class="up">+2.50%</td>
+              <td style="color:var(--text2)">5.40%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/BRK-B:NYSE" target="_blank" rel="noopener">BRK-B</a>
+                <span class="contrib-sector">Berkshire Hathaway</span>
+              </td>
+              <td class="up">+3.66</td>
+              <td class="up">+2.22%</td>
+              <td style="color:var(--text2)">2.24%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
 
         <div class="contrib-sub">
           <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOG:NASDAQ" target="_blank" rel="noopener">GOOG</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="down">-15.05</td>
+              <td class="down">-2.19%</td>
+              <td style="color:var(--text2)">9.33%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOGL:NASDAQ" target="_blank" rel="noopener">GOOGL</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="down">-12.69</td>
+              <td class="down">-1.84%</td>
+              <td style="color:var(--text2)">9.38%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/NVDA:NASDAQ" target="_blank" rel="noopener">NVDA</a>
+                <span class="contrib-sector">Nvidia</span>
+              </td>
+              <td class="down">-12.63</td>
+              <td class="down">-1.64%</td>
+              <td style="color:var(--text2)">10.47%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/MU:NASDAQ" target="_blank" rel="noopener">MU</a>
+                <span class="contrib-sector">Micron Technology</span>
+              </td>
+              <td class="down">-12.24</td>
+              <td class="down">-6.69%</td>
+              <td style="color:var(--text2)">2.49%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AVGO:NASDAQ" target="_blank" rel="noopener">AVGO</a>
+                <span class="contrib-sector">Broadcom</span>
+              </td>
+              <td class="down">-10.65</td>
+              <td class="down">-3.67%</td>
+              <td style="color:var(--text2)">3.95%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
       </div>
 
@@ -797,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (20件)</div>
+    <div class="card-title">📰 最新ニュース (17件)</div>
     
     
     
@@ -807,8 +925,45 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📈 マーケット全般 (10件)</div>
+          <div class="news-group-title">📈 マーケット全般 (9件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/eaec419238b4a1d515e83885faf5134f18f3c817?source=rss" target="_blank" rel="noopener">25mにわたってアワビや霜降り牛がずらり…上野に爆誕の「麻辣湯スタイル高級しゃぶしゃぶ」　銀座八芳・新業態の勝算は？　(東洋経済オンライン)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>06/28 06:30</span>
+              </div>
+              
+              <div class="news-summary">上野の代名詞とも言える「アメ横」ことアメヤ横丁。そのシンボルとも言えるアメ横センタービルに、6月15日、“日本初”の飲食店がオープンした。
+
+　その名も「海鮮市場 八芳」。銀座などでカニやイセエビと</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1585690" target="_blank" rel="noopener">韓国株式市場、世界的な株高の中で最も過熱した市場とBCAが指摘</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>06/28 03:53</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1585686" target="_blank" rel="noopener">UBSが不透明な市場に向けたポートフォリオ戦略を提示</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>06/28 00:14</span>
+              </div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -834,83 +989,6 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1585580" target="_blank" rel="noopener">UBSが2029年のセキュリティ・安全市場を1.19兆ドルと予測、サイバーセキュリティが牽引</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>06/27 08:26</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1585574" target="_blank" rel="noopener">26日のNY市場は下落</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>06/27 08:15</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1585572" target="_blank" rel="noopener">米国株式市場は下落、AIへの懸念が重し</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>06/27 08:15</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.reuters.com/opinion/EKBHMEKADRM4BMS7UVUGO4DTHI-2026-06-26/" target="_blank" rel="noopener">ＮＹ市場サマリー（26日）ドル・Ｓ＆Ｐ小幅安、利回り低下</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本マーケット</span>
-                <span>06/27 06:16</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.reuters.com/markets/japan/ONHSR5XCTZOWPDGV2XGMKCC6OM-2026-06-26/" target="_blank" rel="noopener">米国株式市場＝Ｓ＆Ｐ小幅安、半導体株が急落　モデルナは急伸</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本マーケット</span>
-                <span>06/27 05:38</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.reuters.com/opinion/YRGKWFUJF5OYTCGKXXSCM7KQ5M-2026-06-26/" target="_blank" rel="noopener">ＮＹ外為市場＝ドル小幅安、利上げ観測やや後退　来週の雇用統計に注目</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本マーケット</span>
-                <span>06/27 04:40</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.reuters.com/opinion/W7CUETLXY5LZTEXADDOCTWZR2M-2026-06-26/" target="_blank" rel="noopener">欧州市場サマリー（26日）</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ロイター日本マーケット</span>
-                <span>06/27 04:28</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
                 <a href="https://zuuonline.com/archives/302327" target="_blank" rel="noopener">日々是相場［夕刊］――  2026年6月26日（金）</a>
               </div>
               <div class="news-meta">
@@ -922,6 +1000,45 @@
               
             </div>
             
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260626/k10015161611000.html" target="_blank" rel="noopener">AIブームの韓国株価 一時8％超下落 過熱感を指摘する声も</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>06/26 19:26</span>
+              </div>
+              
+              <div class="news-summary">26日の韓国の株式市場は、代表的な株価指数が一時8％を超える大幅な値下がりとなりました。AIブームを背景に韓国ではことしに入って株価が急速に値上がりしてきましたが、一部で過熱感を指摘する声も出ています…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260626/k10015161581000.html" target="_blank" rel="noopener">円相場1ドル＝161円台後半 神経質な取り引き続く</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>06/26 18:57</span>
+              </div>
+              
+              <div class="news-summary">26日の東京外国為替市場、円相場は25日と比べていくぶん円高ドル安が進んだものの、政府・日銀による市場介入への警戒が続く中、神経質な取り引きが続いています。</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260626/k10015160801000.html" target="_blank" rel="noopener">株価 一時3700円超下落 終値は過去3番目の下落幅に</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>06/26 17:18</span>
+              </div>
+              
+              <div class="news-summary">26日の東京株式市場、このところ株価が大きく上昇していたAIや半導体関連の銘柄を中心に当面の利益を確定させようという売り注文が広がり、日経平均株価は一時、3700円を超える値下がりとなりました。</div>
+              
+            </div>
+            
           </div>
         </div>
         
@@ -929,23 +1046,8 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (5件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (4件)</div>
           <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/1c617ffc2177a81bb965693c807487532ce90bd2?source=rss" target="_blank" rel="noopener">【住宅ローン】返済額が変わらなくても借金は減らない？「残高3000万・残り10年」金利が1％上がると返済額はどうなる？(LIMO)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/27 22:16</span>
-              </div>
-              
-              <div class="news-summary">夏を間近に控えたこの時期は、冷房の使用時間が増え、電気代の請求額が気になり始める方も多いのではないでしょうか。
-
-日々の生活費に加え、住宅ローンを返済している世帯にとっては、金利動向も家計を左右する重…</div>
-              
-            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1038,24 +1140,8 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (3件)</div>
+          <div class="news-group-title">📌 その他 (2件)</div>
           <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/16bef2ccc222f44f15aaab29b9805ae371d88044?source=rss" target="_blank" rel="noopener">【おすすめETF】「気候変動」や「宇宙」など、いまが旬の「注目のテーマ型ETF」4本を紹介！テーマ型ETFや米国株ETFに投資する際の注意点もわかりやすく解説！(ダイヤモンド・ザイ)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>06/27 21:20</span>
-              </div>
-              
-              <div class="news-summary">【ETF】今が旬のテーマ「気候変動」と「宇宙」の関連株に投資するおすすめETF4本を紹介！　
-
-●テーマ株の個別株を選ぶのが難しいときはETFに注目！　
-銘柄は純資産額と出来高を見た上で決めよう！</div>
-              
-            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1093,19 +1179,19 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-06-27 23:24）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-06-28 06:47）の投資ブリーフィング情報です。
 
-【時間帯】夜（米国寄り付き直前・経済指標・欧州市場）
+【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
 
 【マーケットデータ】
-- S&P 500: nan (+nan%)
-- NASDAQ: nan (+nan%)
-- ダウ: nan (+nan%)
+- S&P 500: 7,354.02 (-0.05%)
+- NASDAQ: 25,297.62 (-0.24%)
+- ダウ: 51,876.11 (-0.09%)
 - ドル円: 161.68 円 (-0.07%)
 - 米10年債利回り: 4.372 % (+0.00%)
 - WTI原油: 69.23 USD (-3.74%)
 - 金: 4078.70 USD (+1.20%)
-- 日経225: 72,366.34 pt (+0.00%)
+- 日経225: 69,360.88 pt (-4.15%)
 - TOPIX (1306連動ETF): 420.4 円 (-1.29%)
 
 【個別株の寄与度ランキング】
@@ -1122,24 +1208,35 @@
   -31.86円  ソフトバンクG(9984)  -12.53%  [通信]
   -19.46円  HOYA(7741)  -2.09%  [精密機器]
 ▼ S&P500 (上昇寄与TOP5)
+  ++24.97pt  Microsoft(MSFT)  +5.71%  wt:5.95%  [Information Technology]
+  ++21.19pt  Apple Inc.(AAPL)  +3.14%  wt:9.18%  [Information Technology]
+  ++10.99pt  Lilly (Eli)(LLY)  +7.13%  wt:2.09%  [Health Care]
+  ++9.94pt  Amazon(AMZN)  +2.50%  wt:5.40%  [Consumer Discretionary]
+  ++3.66pt  Berkshire Hathaway(BRK-B)  +2.22%  wt:2.24%  [Financials]
 ▼ S&P500 (下落寄与TOP5)
+  -15.05pt  Alphabet Inc. (Class C)(GOOG)  -2.19%  wt:9.33%  [Communication Services]
+  -12.69pt  Alphabet Inc. (Class A)(GOOGL)  -1.84%  wt:9.38%  [Communication Services]
+  -12.63pt  Nvidia(NVDA)  -1.64%  wt:10.47%  [Information Technology]
+  -12.24pt  Micron Technology(MU)  -6.69%  wt:2.49%  [Information Technology]
+  -10.65pt  Broadcom(AVGO)  -3.67%  wt:3.95%  [Information Technology]
 
 【関連ニュース見出し】
+- [Yahoo!ファイナンス] 25mにわたってアワビや霜降り牛がずらり…上野に爆誕の「麻辣湯スタイル高級しゃぶしゃぶ」　銀座八芳・新業態の勝算は？　(東洋経済オンライン) (06/28 06:30)
+  概要: 上野の代名詞とも言える「アメ横」ことアメヤ横丁。そのシンボルとも言えるアメ横センタービルに、6月15日、“日本初”の飲食店がオープンした。
+
+　その名も「海鮮市場 八芳」。銀座などでカニやイセエビと
+- [Investing.com日本] 韓国株式市場、世界的な株高の中で最も過熱した市場とBCAが指摘 (06/28 03:53)
+- [Investing.com日本] UBSが不透明な市場に向けたポートフォリオ戦略を提示 (06/28 00:14)
 - [Investing.com日本] 債券・株式相関が30年ぶり低水準、ポートフォリオへの影響とは (06/27 22:13)
 - [Investing.com日本] SpaceX、7月7日にナスダック100に採用――数十億ドルの受動的資金流入が見込まれる (06/27 15:37)
-- [Investing.com日本] UBSが2029年のセキュリティ・安全市場を1.19兆ドルと予測、サイバーセキュリティが牽引 (06/27 08:26)
-- [Investing.com日本] 26日のNY市場は下落 (06/27 08:15)
-- [Investing.com日本] 米国株式市場は下落、AIへの懸念が重し (06/27 08:15)
-- [ロイター日本マーケット] ＮＹ市場サマリー（26日）ドル・Ｓ＆Ｐ小幅安、利回り低下 (06/27 06:16)
-- [ロイター日本マーケット] 米国株式市場＝Ｓ＆Ｐ小幅安、半導体株が急落　モデルナは急伸 (06/27 05:38)
-- [ロイター日本マーケット] ＮＹ外為市場＝ドル小幅安、利上げ観測やや後退　来週の雇用統計に注目 (06/27 04:40)
-- [ロイター日本マーケット] 欧州市場サマリー（26日） (06/27 04:28)
 - [ZUU online] 日々是相場［夕刊］――  2026年6月26日（金） (06/26 19:30)
   概要: 日経平均 69,360.88円 ▼3,005.46円 為替 １ドル＝161.68円 売買高（東証プライム、以下同） 27億0,124万株 売買代金 12兆1679億22百万円 値上り銘柄数 916銘柄
-- [Yahoo!ファイナンス] 【住宅ローン】返済額が変わらなくても借金は減らない？「残高3000万・残り10年」金利が1％上がると返済額はどうなる？(LIMO) (06/27 22:16)
-  概要: 夏を間近に控えたこの時期は、冷房の使用時間が増え、電気代の請求額が気になり始める方も多いのではないでしょうか。
-
-日々の生活費に加え、住宅ローンを返済している世帯にとっては、金利動向も家計を左右する重
+- [NHK経済] AIブームの韓国株価 一時8％超下落 過熱感を指摘する声も (06/26 19:26)
+  概要: 26日の韓国の株式市場は、代表的な株価指数が一時8％を超える大幅な値下がりとなりました。AIブームを背景に韓国ではことしに入って株価が急速に値上がりしてきましたが、一部で過熱感を指摘する声も出ています
+- [NHK経済] 円相場1ドル＝161円台後半 神経質な取り引き続く (06/26 18:57)
+  概要: 26日の東京外国為替市場、円相場は25日と比べていくぶん円高ドル安が進んだものの、政府・日銀による市場介入への警戒が続く中、神経質な取り引きが続いています。
+- [NHK経済] 株価 一時3700円超下落 終値は過去3番目の下落幅に (06/26 17:18)
+  概要: 26日の東京株式市場、このところ株価が大きく上昇していたAIや半導体関連の銘柄を中心に当面の利益を確定させようという売り注文が広がり、日経平均株価は一時、3700円を超える値下がりとなりました。
 - [ZUU online] 不動産投資がインフレ対策になる理由は？ 物件選びで注意したいポイント (06/27 18:02)
   概要: 不動産投資がインフレ対策になる3つの理由 インフレが進む局面において、不動産投資が有効とされるのはなぜでしょうか。ここでは、不動産投資がインフレ対策となる主な理由を見ていきましょう。 不動産投資がイン
 - [Investing.com日本] 国内外の注目経済指標：米国の6月雇用者数は前回実績を下回る可能性 (06/27 12:45)
@@ -1150,11 +1247,6 @@
 - [Investing.com日本] 1Q26：ハイパースケーラーの業績はどうだったか (06/27 12:58)
 - [NHK経済] ホンダ株主総会 社長が巨額損失を陳謝 経営陣の選任案は可決 (06/26 16:38)
   概要: EV関連の巨額損失で昨年度、上場以来初めての赤字となった「ホンダ」の株主総会が開かれ、三部敏宏社長は今回の業績の悪化について、「株主の皆様に心配とご迷惑をかけ、深くおわび申し上げます」と陳謝しました。
-- [Yahoo!ファイナンス] 【おすすめETF】「気候変動」や「宇宙」など、いまが旬の「注目のテーマ型ETF」4本を紹介！テーマ型ETFや米国株ETFに投資する際の注意点もわかりやすく解説！(ダイヤモンド・ザイ) (06/27 21:20)
-  概要: 【ETF】今が旬のテーマ「気候変動」と「宇宙」の関連株に投資するおすすめETF4本を紹介！　
-
-●テーマ株の個別株を選ぶのが難しいときはETFに注目！　
-銘柄は純資産額と出来高を見た上で決めよう！
 - [ZUU online] 不動産投資ローンは「固定」か「変動」、どっちを選ぶべきか (06/26 19:02)
   概要: 不動産投資ローンとは 不動産投資ローンは、投資のための不動産を購入するために利用するローンのこと。 不動産投資は、購入した物件を貸すことで家賃収入などの利益を得る投資です。 不動産投資の最大のメリット
 - [ZUU online] 不動産投資会社の選び方は？ 避けるべき会社や面談前の準備を解説 (06/26 18:02)
@@ -1173,14 +1265,14 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
-- S&P 500: nan (+nan%)
-- NASDAQ: nan (+nan%)
-- ダウ: nan (+nan%)
+- S&P 500: 7,354.02 (-0.05%)
+- NASDAQ: 25,297.62 (-0.24%)
+- ダウ: 51,876.11 (-0.09%)
 - ドル円: 161.68 円 (-0.07%)
 - 米10年債利回り: 4.372 % (+0.00%)
 - WTI原油: 69.23 USD (-3.74%)
 - 金: 4078.70 USD (+1.20%)
-- 日経225: 72,366.34 pt (+0.00%)
+- 日経225: 69,360.88 pt (-4.15%)
 - TOPIX (1306連動ETF): 420.4 円 (-1.29%)
 
 【個別株の寄与度ランキング】
@@ -1197,24 +1289,35 @@
   -31.86円  ソフトバンクG(9984)  -12.53%  [通信]
   -19.46円  HOYA(7741)  -2.09%  [精密機器]
 ▼ S&P500 (上昇寄与TOP5)
+  ++24.97pt  Microsoft(MSFT)  +5.71%  wt:5.95%  [Information Technology]
+  ++21.19pt  Apple Inc.(AAPL)  +3.14%  wt:9.18%  [Information Technology]
+  ++10.99pt  Lilly (Eli)(LLY)  +7.13%  wt:2.09%  [Health Care]
+  ++9.94pt  Amazon(AMZN)  +2.50%  wt:5.40%  [Consumer Discretionary]
+  ++3.66pt  Berkshire Hathaway(BRK-B)  +2.22%  wt:2.24%  [Financials]
 ▼ S&P500 (下落寄与TOP5)
+  -15.05pt  Alphabet Inc. (Class C)(GOOG)  -2.19%  wt:9.33%  [Communication Services]
+  -12.69pt  Alphabet Inc. (Class A)(GOOGL)  -1.84%  wt:9.38%  [Communication Services]
+  -12.63pt  Nvidia(NVDA)  -1.64%  wt:10.47%  [Information Technology]
+  -12.24pt  Micron Technology(MU)  -6.69%  wt:2.49%  [Information Technology]
+  -10.65pt  Broadcom(AVGO)  -3.67%  wt:3.95%  [Information Technology]
 
 【関連ニュース見出し】
+- [Yahoo!ファイナンス] 25mにわたってアワビや霜降り牛がずらり…上野に爆誕の「麻辣湯スタイル高級しゃぶしゃぶ」　銀座八芳・新業態の勝算は？　(東洋経済オンライン) (06/28 06:30)
+  概要: 上野の代名詞とも言える「アメ横」ことアメヤ横丁。そのシンボルとも言えるアメ横センタービルに、6月15日、“日本初”の飲食店がオープンした。
+
+　その名も「海鮮市場 八芳」。銀座などでカニやイセエビと
+- [Investing.com日本] 韓国株式市場、世界的な株高の中で最も過熱した市場とBCAが指摘 (06/28 03:53)
+- [Investing.com日本] UBSが不透明な市場に向けたポートフォリオ戦略を提示 (06/28 00:14)
 - [Investing.com日本] 債券・株式相関が30年ぶり低水準、ポートフォリオへの影響とは (06/27 22:13)
 - [Investing.com日本] SpaceX、7月7日にナスダック100に採用――数十億ドルの受動的資金流入が見込まれる (06/27 15:37)
-- [Investing.com日本] UBSが2029年のセキュリティ・安全市場を1.19兆ドルと予測、サイバーセキュリティが牽引 (06/27 08:26)
-- [Investing.com日本] 26日のNY市場は下落 (06/27 08:15)
-- [Investing.com日本] 米国株式市場は下落、AIへの懸念が重し (06/27 08:15)
-- [ロイター日本マーケット] ＮＹ市場サマリー（26日）ドル・Ｓ＆Ｐ小幅安、利回り低下 (06/27 06:16)
-- [ロイター日本マーケット] 米国株式市場＝Ｓ＆Ｐ小幅安、半導体株が急落　モデルナは急伸 (06/27 05:38)
-- [ロイター日本マーケット] ＮＹ外為市場＝ドル小幅安、利上げ観測やや後退　来週の雇用統計に注目 (06/27 04:40)
-- [ロイター日本マーケット] 欧州市場サマリー（26日） (06/27 04:28)
 - [ZUU online] 日々是相場［夕刊］――  2026年6月26日（金） (06/26 19:30)
   概要: 日経平均 69,360.88円 ▼3,005.46円 為替 １ドル＝161.68円 売買高（東証プライム、以下同） 27億0,124万株 売買代金 12兆1679億22百万円 値上り銘柄数 916銘柄
-- [Yahoo!ファイナンス] 【住宅ローン】返済額が変わらなくても借金は減らない？「残高3000万・残り10年」金利が1％上がると返済額はどうなる？(LIMO) (06/27 22:16)
-  概要: 夏を間近に控えたこの時期は、冷房の使用時間が増え、電気代の請求額が気になり始める方も多いのではないでしょうか。
-
-日々の生活費に加え、住宅ローンを返済している世帯にとっては、金利動向も家計を左右する重
+- [NHK経済] AIブームの韓国株価 一時8％超下落 過熱感を指摘する声も (06/26 19:26)
+  概要: 26日の韓国の株式市場は、代表的な株価指数が一時8％を超える大幅な値下がりとなりました。AIブームを背景に韓国ではことしに入って株価が急速に値上がりしてきましたが、一部で過熱感を指摘する声も出ています
+- [NHK経済] 円相場1ドル＝161円台後半 神経質な取り引き続く (06/26 18:57)
+  概要: 26日の東京外国為替市場、円相場は25日と比べていくぶん円高ドル安が進んだものの、政府・日銀による市場介入への警戒が続く中、神経質な取り引きが続いています。
+- [NHK経済] 株価 一時3700円超下落 終値は過去3番目の下落幅に (06/26 17:18)
+  概要: 26日の東京株式市場、このところ株価が大きく上昇していたAIや半導体関連の銘柄を中心に当面の利益を確定させようという売り注文が広がり、日経平均株価は一時、3700円を超える値下がりとなりました。
 - [ZUU online] 不動産投資がインフレ対策になる理由は？ 物件選びで注意したいポイント (06/27 18:02)
   概要: 不動産投資がインフレ対策になる3つの理由 インフレが進む局面において、不動産投資が有効とされるのはなぜでしょうか。ここでは、不動産投資がインフレ対策となる主な理由を見ていきましょう。 不動産投資がイン
 - [Investing.com日本] 国内外の注目経済指標：米国の6月雇用者数は前回実績を下回る可能性 (06/27 12:45)
@@ -1225,11 +1328,6 @@
 - [Investing.com日本] 1Q26：ハイパースケーラーの業績はどうだったか (06/27 12:58)
 - [NHK経済] ホンダ株主総会 社長が巨額損失を陳謝 経営陣の選任案は可決 (06/26 16:38)
   概要: EV関連の巨額損失で昨年度、上場以来初めての赤字となった「ホンダ」の株主総会が開かれ、三部敏宏社長は今回の業績の悪化について、「株主の皆様に心配とご迷惑をかけ、深くおわび申し上げます」と陳謝しました。
-- [Yahoo!ファイナンス] 【おすすめETF】「気候変動」や「宇宙」など、いまが旬の「注目のテーマ型ETF」4本を紹介！テーマ型ETFや米国株ETFに投資する際の注意点もわかりやすく解説！(ダイヤモンド・ザイ) (06/27 21:20)
-  概要: 【ETF】今が旬のテーマ「気候変動」と「宇宙」の関連株に投資するおすすめETF4本を紹介！　
-
-●テーマ株の個別株を選ぶのが難しいときはETFに注目！　
-銘柄は純資産額と出来高を見た上で決めよう！
 - [ZUU online] 不動産投資ローンは「固定」か「変動」、どっちを選ぶべきか (06/26 19:02)
   概要: 不動産投資ローンとは 不動産投資ローンは、投資のための不動産を購入するために利用するローンのこと。 不動産投資は、購入した物件を貸すことで家賃収入などの利益を得る投資です。 不動産投資の最大のメリット
 - [ZUU online] 不動産投資会社の選び方は？ 避けるべき会社や面談前の準備を解説 (06/26 18:02)
@@ -1242,14 +1340,14 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
-- S&P 500: nan (+nan%)
-- NASDAQ: nan (+nan%)
-- ダウ: nan (+nan%)
+- S&P 500: 7,354.02 (-0.05%)
+- NASDAQ: 25,297.62 (-0.24%)
+- ダウ: 51,876.11 (-0.09%)
 - ドル円: 161.68 円 (-0.07%)
 - 米10年債利回り: 4.372 % (+0.00%)
 - WTI原油: 69.23 USD (-3.74%)
 - 金: 4078.70 USD (+1.20%)
-- 日経225: 72,366.34 pt (+0.00%)
+- 日経225: 69,360.88 pt (-4.15%)
 - TOPIX (1306連動ETF): 420.4 円 (-1.29%)
 
 【個別株の寄与度ランキング】
@@ -1266,24 +1364,35 @@
   -31.86円  ソフトバンクG(9984)  -12.53%  [通信]
   -19.46円  HOYA(7741)  -2.09%  [精密機器]
 ▼ S&P500 (上昇寄与TOP5)
+  ++24.97pt  Microsoft(MSFT)  +5.71%  wt:5.95%  [Information Technology]
+  ++21.19pt  Apple Inc.(AAPL)  +3.14%  wt:9.18%  [Information Technology]
+  ++10.99pt  Lilly (Eli)(LLY)  +7.13%  wt:2.09%  [Health Care]
+  ++9.94pt  Amazon(AMZN)  +2.50%  wt:5.40%  [Consumer Discretionary]
+  ++3.66pt  Berkshire Hathaway(BRK-B)  +2.22%  wt:2.24%  [Financials]
 ▼ S&P500 (下落寄与TOP5)
+  -15.05pt  Alphabet Inc. (Class C)(GOOG)  -2.19%  wt:9.33%  [Communication Services]
+  -12.69pt  Alphabet Inc. (Class A)(GOOGL)  -1.84%  wt:9.38%  [Communication Services]
+  -12.63pt  Nvidia(NVDA)  -1.64%  wt:10.47%  [Information Technology]
+  -12.24pt  Micron Technology(MU)  -6.69%  wt:2.49%  [Information Technology]
+  -10.65pt  Broadcom(AVGO)  -3.67%  wt:3.95%  [Information Technology]
 
 【関連ニュース見出し】
+- [Yahoo!ファイナンス] 25mにわたってアワビや霜降り牛がずらり…上野に爆誕の「麻辣湯スタイル高級しゃぶしゃぶ」　銀座八芳・新業態の勝算は？　(東洋経済オンライン) (06/28 06:30)
+  概要: 上野の代名詞とも言える「アメ横」ことアメヤ横丁。そのシンボルとも言えるアメ横センタービルに、6月15日、“日本初”の飲食店がオープンした。
+
+　その名も「海鮮市場 八芳」。銀座などでカニやイセエビと
+- [Investing.com日本] 韓国株式市場、世界的な株高の中で最も過熱した市場とBCAが指摘 (06/28 03:53)
+- [Investing.com日本] UBSが不透明な市場に向けたポートフォリオ戦略を提示 (06/28 00:14)
 - [Investing.com日本] 債券・株式相関が30年ぶり低水準、ポートフォリオへの影響とは (06/27 22:13)
 - [Investing.com日本] SpaceX、7月7日にナスダック100に採用――数十億ドルの受動的資金流入が見込まれる (06/27 15:37)
-- [Investing.com日本] UBSが2029年のセキュリティ・安全市場を1.19兆ドルと予測、サイバーセキュリティが牽引 (06/27 08:26)
-- [Investing.com日本] 26日のNY市場は下落 (06/27 08:15)
-- [Investing.com日本] 米国株式市場は下落、AIへの懸念が重し (06/27 08:15)
-- [ロイター日本マーケット] ＮＹ市場サマリー（26日）ドル・Ｓ＆Ｐ小幅安、利回り低下 (06/27 06:16)
-- [ロイター日本マーケット] 米国株式市場＝Ｓ＆Ｐ小幅安、半導体株が急落　モデルナは急伸 (06/27 05:38)
-- [ロイター日本マーケット] ＮＹ外為市場＝ドル小幅安、利上げ観測やや後退　来週の雇用統計に注目 (06/27 04:40)
-- [ロイター日本マーケット] 欧州市場サマリー（26日） (06/27 04:28)
 - [ZUU online] 日々是相場［夕刊］――  2026年6月26日（金） (06/26 19:30)
   概要: 日経平均 69,360.88円 ▼3,005.46円 為替 １ドル＝161.68円 売買高（東証プライム、以下同） 27億0,124万株 売買代金 12兆1679億22百万円 値上り銘柄数 916銘柄
-- [Yahoo!ファイナンス] 【住宅ローン】返済額が変わらなくても借金は減らない？「残高3000万・残り10年」金利が1％上がると返済額はどうなる？(LIMO) (06/27 22:16)
-  概要: 夏を間近に控えたこの時期は、冷房の使用時間が増え、電気代の請求額が気になり始める方も多いのではないでしょうか。
-
-日々の生活費に加え、住宅ローンを返済している世帯にとっては、金利動向も家計を左右する重
+- [NHK経済] AIブームの韓国株価 一時8％超下落 過熱感を指摘する声も (06/26 19:26)
+  概要: 26日の韓国の株式市場は、代表的な株価指数が一時8％を超える大幅な値下がりとなりました。AIブームを背景に韓国ではことしに入って株価が急速に値上がりしてきましたが、一部で過熱感を指摘する声も出ています
+- [NHK経済] 円相場1ドル＝161円台後半 神経質な取り引き続く (06/26 18:57)
+  概要: 26日の東京外国為替市場、円相場は25日と比べていくぶん円高ドル安が進んだものの、政府・日銀による市場介入への警戒が続く中、神経質な取り引きが続いています。
+- [NHK経済] 株価 一時3700円超下落 終値は過去3番目の下落幅に (06/26 17:18)
+  概要: 26日の東京株式市場、このところ株価が大きく上昇していたAIや半導体関連の銘柄を中心に当面の利益を確定させようという売り注文が広がり、日経平均株価は一時、3700円を超える値下がりとなりました。
 - [ZUU online] 不動産投資がインフレ対策になる理由は？ 物件選びで注意したいポイント (06/27 18:02)
   概要: 不動産投資がインフレ対策になる3つの理由 インフレが進む局面において、不動産投資が有効とされるのはなぜでしょうか。ここでは、不動産投資がインフレ対策となる主な理由を見ていきましょう。 不動産投資がイン
 - [Investing.com日本] 国内外の注目経済指標：米国の6月雇用者数は前回実績を下回る可能性 (06/27 12:45)
@@ -1294,11 +1403,6 @@
 - [Investing.com日本] 1Q26：ハイパースケーラーの業績はどうだったか (06/27 12:58)
 - [NHK経済] ホンダ株主総会 社長が巨額損失を陳謝 経営陣の選任案は可決 (06/26 16:38)
   概要: EV関連の巨額損失で昨年度、上場以来初めての赤字となった「ホンダ」の株主総会が開かれ、三部敏宏社長は今回の業績の悪化について、「株主の皆様に心配とご迷惑をかけ、深くおわび申し上げます」と陳謝しました。
-- [Yahoo!ファイナンス] 【おすすめETF】「気候変動」や「宇宙」など、いまが旬の「注目のテーマ型ETF」4本を紹介！テーマ型ETFや米国株ETFに投資する際の注意点もわかりやすく解説！(ダイヤモンド・ザイ) (06/27 21:20)
-  概要: 【ETF】今が旬のテーマ「気候変動」と「宇宙」の関連株に投資するおすすめETF4本を紹介！　
-
-●テーマ株の個別株を選ぶのが難しいときはETFに注目！　
-銘柄は純資産額と出来高を見た上で決めよう！
 - [ZUU online] 不動産投資ローンは「固定」か「変動」、どっちを選ぶべきか (06/26 19:02)
   概要: 不動産投資ローンとは 不動産投資ローンは、投資のための不動産を購入するために利用するローンのこと。 不動産投資は、購入した物件を貸すことで家賃収入などの利益を得る投資です。 不動産投資の最大のメリット
 - [ZUU online] 不動産投資会社の選び方は？ 避けるべき会社や面談前の準備を解説 (06/26 18:02)
