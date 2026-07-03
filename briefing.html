@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [夜]</title>
+  <title>投資情報ブリーフィング [朝]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">夜</span>
-    <span class="slot-desc">米国寄り付き直前・経済指標・欧州市場</span>
+    <span class="slot-badge">朝</span>
+    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年07月04日 00:03 JST</span>
+    <span class="updated">更新: 2026年07月04日 06:49 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -581,9 +581,9 @@
       <div class="market-tile primary">
         <div class="tile-name">ドル円</div>
         
-          <div class="tile-price">161.31 <span class="tile-unit">円</span></div>
+          <div class="tile-price">161.34 <span class="tile-unit">円</span></div>
           <div class="tile-change down">
-            -1.23&nbsp;&nbsp;-0.76%
+            -1.20&nbsp;&nbsp;-0.74%
           </div>
         
         
@@ -603,9 +603,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">68.70 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">68.78 <span class="tile-unit">USD</span></div>
           <div class="tile-change up">
-            +0.01&nbsp;&nbsp;+0.01%
+            +0.09&nbsp;&nbsp;+0.13%
           </div>
         
         
@@ -614,9 +614,9 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4179.30 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4187.30 <span class="tile-unit">USD</span></div>
           <div class="tile-change up">
-            +66.60&nbsp;&nbsp;+1.62%
+            +74.60&nbsp;&nbsp;+1.81%
           </div>
         
         
@@ -660,12 +660,120 @@
 
         <div class="contrib-sub">
           <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(円)</th><th>騰落</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9983:TYO" target="_blank" rel="noopener">ファーストリテイリング</a>
+                <span class="contrib-sector">小売</span>
+              </td>
+              <td class="up">+77.86</td>
+              <td class="up">+2.65%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6367:TYO" target="_blank" rel="noopener">ダイキン</a>
+                <span class="contrib-sector">機械</span>
+              </td>
+              <td class="up">+21.07</td>
+              <td class="up">+2.35%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6857:TYO" target="_blank" rel="noopener">アドバンテスト</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="up">+18.93</td>
+              <td class="up">+1.84%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/7741:TYO" target="_blank" rel="noopener">HOYA</a>
+                <span class="contrib-sector">精密機器</span>
+              </td>
+              <td class="up">+12.14</td>
+              <td class="up">+1.33%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6098:TYO" target="_blank" rel="noopener">リクルートHD</a>
+                <span class="contrib-sector">サービス</span>
+              </td>
+              <td class="up">+10.36</td>
+              <td class="up">+2.49%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
 
         <div class="contrib-sub">
           <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(円)</th><th>騰落</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="down">-3.57</td>
+              <td class="down">-0.12%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/4063:TYO" target="_blank" rel="noopener">信越化学</a>
+                <span class="contrib-sector">化学</span>
+              </td>
+              <td class="down">-2.36</td>
+              <td class="down">-0.94%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6501:TYO" target="_blank" rel="noopener">日立製作所</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="down">-1.93</td>
+              <td class="down">-1.16%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9984:TYO" target="_blank" rel="noopener">ソフトバンクG</a>
+                <span class="contrib-sector">通信</span>
+              </td>
+              <td class="down">-0.93</td>
+              <td class="down">-0.42%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9433:TYO" target="_blank" rel="noopener">KDDI</a>
+                <span class="contrib-sector">通信</span>
+              </td>
+              <td class="down">-0.75</td>
+              <td class="down">-0.77%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
       </div>
 
@@ -822,14 +930,14 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/f0f74bb73ed69bf66532f12598a677bb5940af67?source=rss" target="_blank" rel="noopener">NY円、161円06～16銭(共同通信)</a>
+                <a href="https://news.yahoo.co.jp/articles/c9d13d89a07b1191a8d1b9acba15060ad8f8f19e?source=rss" target="_blank" rel="noopener">アメリカ版「七人の侍」になるのか？これから上院共和党の「無敵の七人」がトランプ政権を揺さぶるかもしれない(東洋経済オンライン)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>07/03 21:46</span>
+                <span>07/04 06:30</span>
               </div>
               
-              <div class="news-summary">【ニューヨーク共同】3日のニューヨーク外国為替市場の円相場は午前8時40分現在、前日比01銭円高ドル安の1ドル＝161円06～16銭を付けた。</div>
+              <div class="news-summary">アメリカ発のニュースは日々途切れることがない。イランとの交渉あり、NYダウ(工業株30種平均)の最高値更新あり、ワールドカップ情報あり、そして建国250周年である。加えて連日のように、ドナルド・トラ</div>
               
             </div>
             
@@ -951,21 +1059,8 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (2件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (1件)</div>
           <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/0ac9898a68aa3160ee373cd7bf065a46fee101cc?source=rss" target="_blank" rel="noopener">イラン、日本大手に原油購入打診　海峡安全不十分で実現見通せず(共同通信)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>07/03 23:38</span>
-              </div>
-              
-              <div class="news-summary">【テヘラン共同】イラン国営石油会社が、日本の石油元売り大手などにイラン産原油購入を打診したことが3日、イラン外交筋への取材で分かった。米イランが6月に署名した覚書では米国が原油輸出を容認する項目が盛</div>
-              
-            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -987,8 +1082,21 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (1件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (2件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/0493f10e688c3dee0ae528835239231389ff1397?source=rss" target="_blank" rel="noopener">「Switch2」は爆売れなのに、任天堂の利益率が急降下したワケ(ダイヤモンド・オンライン)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>07/04 06:30</span>
+              </div>
+              
+              <div class="news-summary">「Nintendo Switch 2」の大ヒットを背景に2026年3月期の決算では初の「売上高2兆円」を突破した任天堂。しかし、売上高が急増した一方で、営業利益の増加幅は限定的だった。売上高営業利益</div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1049,24 +1157,34 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-04 00:03）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-04 06:49）の投資ブリーフィング情報です。
 
-【時間帯】夜（米国寄り付き直前・経済指標・欧州市場）
+【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
 
 【マーケットデータ】
 - S&P 500: 7,483.24 (+0.00%)
 - NASDAQ: 25,832.67 (-0.80%)
 - ダウ: 52,900.07 (+1.14%)
-- ドル円: 161.31 円 (-0.76%)
+- ドル円: 161.34 円 (-0.74%)
 - 米10年債利回り: 4.485 % (+0.00%)
-- WTI原油: 68.70 USD (+0.01%)
-- 金: 4179.30 USD (+1.62%)
+- WTI原油: 68.78 USD (+0.13%)
+- 金: 4187.30 USD (+1.81%)
 - 日経225: 68,733.15 pt (+0.00%)
 - TOPIX (1306連動ETF): 431.7 円 (+1.24%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
+  ++77.86円  ファーストリテイリング(9983)  +2.65%  [小売]
+  ++21.07円  ダイキン(6367)  +2.35%  [機械]
+  ++18.93円  アドバンテスト(6857)  +1.84%  [電機]
+  ++12.14円  HOYA(7741)  +1.33%  [精密機器]
+  ++10.36円  リクルートHD(6098)  +2.49%  [サービス]
 ▼ 日経225 (下落寄与TOP5)
+  -3.57円  キーエンス(6861)  -0.12%  [電機]
+  -2.36円  信越化学(4063)  -0.94%  [化学]
+  -1.93円  日立製作所(6501)  -1.16%  [電機]
+  -0.93円  ソフトバンクG(9984)  -0.42%  [通信]
+  -0.75円  KDDI(9433)  -0.77%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
   ++33.26pt  Apple Inc.(AAPL)  +4.84%  wt:9.18%  [Information Technology]
   ++7.19pt  Microsoft(MSFT)  +1.62%  wt:5.95%  [Information Technology]
@@ -1081,8 +1199,8 @@
   -7.53pt  Lam Research(LRCX)  -10.19%  wt:0.99%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] NY円、161円06～16銭(共同通信) (07/03 21:46)
-  概要: 【ニューヨーク共同】3日のニューヨーク外国為替市場の円相場は午前8時40分現在、前日比01銭円高ドル安の1ドル＝161円06～16銭を付けた。
+- [Yahoo!ファイナンス] アメリカ版「七人の侍」になるのか？これから上院共和党の「無敵の七人」がトランプ政権を揺さぶるかもしれない(東洋経済オンライン) (07/04 06:30)
+  概要: アメリカ発のニュースは日々途切れることがない。イランとの交渉あり、NYダウ(工業株30種平均)の最高値更新あり、ワールドカップ情報あり、そして建国250周年である。加えて連日のように、ドナルド・トラ
 - [Investing.com日本] BofAがユーロ圏成長見通しの改善を受け、Stoxx 600の目標株価を引き上げ (07/03 21:46)
 - [NHK経済] 長期金利 約29年ぶり一時2.81％に上昇 インフレ加速観測などで (07/03 21:12)
   概要: 3日の債券市場で、長期金利が一時、およそ29年ぶりの高い水準となる2.81％まで上昇しました。今後、インフレが加速するという見方や財政負担への懸念が広がったことなどから、国債を売る動きが強まりました。
@@ -1098,10 +1216,10 @@
   概要: 3日の東京株式市場、日経平均株価は一時、1000円以上、値下がりしましたが、午後にはAIや半導体関連の銘柄を中心に買い注文が広がり、株価は上昇しました。
 - [ZUU online] 青果物加工流通業界の常識を変えた「FSモデル」とは？仕掛け人のデリカフーズHD・大﨑社長に聞く (07/03 14:00)
   概要: 全国の外食産業向けにカット野菜や青果物を供給するデリカフーズホールディングス株式会社。大崎善保社長は、創業者の哲学に感銘を受け、アルバイト入社からトップへ登り詰めた経歴を持つ。 成長の原動力は、調達か
-- [Yahoo!ファイナンス] イラン、日本大手に原油購入打診　海峡安全不十分で実現見通せず(共同通信) (07/03 23:38)
-  概要: 【テヘラン共同】イラン国営石油会社が、日本の石油元売り大手などにイラン産原油購入を打診したことが3日、イラン外交筋への取材で分かった。米イランが6月に署名した覚書では米国が原油輸出を容認する項目が盛
 - [ZUU online] マンションの修繕積立金が不足するとどうなる？投資家が知るべきリスクと対策 (07/03 15:00)
   概要: マンション投資を検討する際に、利回りや立地条件に注目して購入物件を探す人が多いですが、それだけではなく、修繕積立金の水準や回収状況、すでに積み立てられている額はいくらかなど、詳細な状況まで丁寧に確認す
+- [Yahoo!ファイナンス] 「Switch2」は爆売れなのに、任天堂の利益率が急降下したワケ(ダイヤモンド・オンライン) (07/04 06:30)
+  概要: 「Nintendo Switch 2」の大ヒットを背景に2026年3月期の決算では初の「売上高2兆円」を突破した任天堂。しかし、売上高が急増した一方で、営業利益の増加幅は限定的だった。売上高営業利益
 - [NHK経済] 昨年度の税収 84兆2000億円程度 過去最高を更新 (07/03 20:25)
   概要: 昨年度の国の税収は前の年度からおよそ9兆円増加して84兆2000億円程度となりました。賃金の増加や好調な企業業績を背景に所得税や法人税の税収が伸び、過去最高を更新しました。
 - [NHK経済] キオクシア 最先端メモリのサンプル出荷開始 生成AI需要に対応 (07/03 19:07)
@@ -1125,16 +1243,26 @@
 - S&P 500: 7,483.24 (+0.00%)
 - NASDAQ: 25,832.67 (-0.80%)
 - ダウ: 52,900.07 (+1.14%)
-- ドル円: 161.31 円 (-0.76%)
+- ドル円: 161.34 円 (-0.74%)
 - 米10年債利回り: 4.485 % (+0.00%)
-- WTI原油: 68.70 USD (+0.01%)
-- 金: 4179.30 USD (+1.62%)
+- WTI原油: 68.78 USD (+0.13%)
+- 金: 4187.30 USD (+1.81%)
 - 日経225: 68,733.15 pt (+0.00%)
 - TOPIX (1306連動ETF): 431.7 円 (+1.24%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
+  ++77.86円  ファーストリテイリング(9983)  +2.65%  [小売]
+  ++21.07円  ダイキン(6367)  +2.35%  [機械]
+  ++18.93円  アドバンテスト(6857)  +1.84%  [電機]
+  ++12.14円  HOYA(7741)  +1.33%  [精密機器]
+  ++10.36円  リクルートHD(6098)  +2.49%  [サービス]
 ▼ 日経225 (下落寄与TOP5)
+  -3.57円  キーエンス(6861)  -0.12%  [電機]
+  -2.36円  信越化学(4063)  -0.94%  [化学]
+  -1.93円  日立製作所(6501)  -1.16%  [電機]
+  -0.93円  ソフトバンクG(9984)  -0.42%  [通信]
+  -0.75円  KDDI(9433)  -0.77%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
   ++33.26pt  Apple Inc.(AAPL)  +4.84%  wt:9.18%  [Information Technology]
   ++7.19pt  Microsoft(MSFT)  +1.62%  wt:5.95%  [Information Technology]
@@ -1149,8 +1277,8 @@
   -7.53pt  Lam Research(LRCX)  -10.19%  wt:0.99%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] NY円、161円06～16銭(共同通信) (07/03 21:46)
-  概要: 【ニューヨーク共同】3日のニューヨーク外国為替市場の円相場は午前8時40分現在、前日比01銭円高ドル安の1ドル＝161円06～16銭を付けた。
+- [Yahoo!ファイナンス] アメリカ版「七人の侍」になるのか？これから上院共和党の「無敵の七人」がトランプ政権を揺さぶるかもしれない(東洋経済オンライン) (07/04 06:30)
+  概要: アメリカ発のニュースは日々途切れることがない。イランとの交渉あり、NYダウ(工業株30種平均)の最高値更新あり、ワールドカップ情報あり、そして建国250周年である。加えて連日のように、ドナルド・トラ
 - [Investing.com日本] BofAがユーロ圏成長見通しの改善を受け、Stoxx 600の目標株価を引き上げ (07/03 21:46)
 - [NHK経済] 長期金利 約29年ぶり一時2.81％に上昇 インフレ加速観測などで (07/03 21:12)
   概要: 3日の債券市場で、長期金利が一時、およそ29年ぶりの高い水準となる2.81％まで上昇しました。今後、インフレが加速するという見方や財政負担への懸念が広がったことなどから、国債を売る動きが強まりました。
@@ -1166,10 +1294,10 @@
   概要: 3日の東京株式市場、日経平均株価は一時、1000円以上、値下がりしましたが、午後にはAIや半導体関連の銘柄を中心に買い注文が広がり、株価は上昇しました。
 - [ZUU online] 青果物加工流通業界の常識を変えた「FSモデル」とは？仕掛け人のデリカフーズHD・大﨑社長に聞く (07/03 14:00)
   概要: 全国の外食産業向けにカット野菜や青果物を供給するデリカフーズホールディングス株式会社。大崎善保社長は、創業者の哲学に感銘を受け、アルバイト入社からトップへ登り詰めた経歴を持つ。 成長の原動力は、調達か
-- [Yahoo!ファイナンス] イラン、日本大手に原油購入打診　海峡安全不十分で実現見通せず(共同通信) (07/03 23:38)
-  概要: 【テヘラン共同】イラン国営石油会社が、日本の石油元売り大手などにイラン産原油購入を打診したことが3日、イラン外交筋への取材で分かった。米イランが6月に署名した覚書では米国が原油輸出を容認する項目が盛
 - [ZUU online] マンションの修繕積立金が不足するとどうなる？投資家が知るべきリスクと対策 (07/03 15:00)
   概要: マンション投資を検討する際に、利回りや立地条件に注目して購入物件を探す人が多いですが、それだけではなく、修繕積立金の水準や回収状況、すでに積み立てられている額はいくらかなど、詳細な状況まで丁寧に確認す
+- [Yahoo!ファイナンス] 「Switch2」は爆売れなのに、任天堂の利益率が急降下したワケ(ダイヤモンド・オンライン) (07/04 06:30)
+  概要: 「Nintendo Switch 2」の大ヒットを背景に2026年3月期の決算では初の「売上高2兆円」を突破した任天堂。しかし、売上高が急増した一方で、営業利益の増加幅は限定的だった。売上高営業利益
 - [NHK経済] 昨年度の税収 84兆2000億円程度 過去最高を更新 (07/03 20:25)
   概要: 昨年度の国の税収は前の年度からおよそ9兆円増加して84兆2000億円程度となりました。賃金の増加や好調な企業業績を背景に所得税や法人税の税収が伸び、過去最高を更新しました。
 - [NHK経済] キオクシア 最先端メモリのサンプル出荷開始 生成AI需要に対応 (07/03 19:07)
@@ -1187,16 +1315,26 @@
 - S&P 500: 7,483.24 (+0.00%)
 - NASDAQ: 25,832.67 (-0.80%)
 - ダウ: 52,900.07 (+1.14%)
-- ドル円: 161.31 円 (-0.76%)
+- ドル円: 161.34 円 (-0.74%)
 - 米10年債利回り: 4.485 % (+0.00%)
-- WTI原油: 68.70 USD (+0.01%)
-- 金: 4179.30 USD (+1.62%)
+- WTI原油: 68.78 USD (+0.13%)
+- 金: 4187.30 USD (+1.81%)
 - 日経225: 68,733.15 pt (+0.00%)
 - TOPIX (1306連動ETF): 431.7 円 (+1.24%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
+  ++77.86円  ファーストリテイリング(9983)  +2.65%  [小売]
+  ++21.07円  ダイキン(6367)  +2.35%  [機械]
+  ++18.93円  アドバンテスト(6857)  +1.84%  [電機]
+  ++12.14円  HOYA(7741)  +1.33%  [精密機器]
+  ++10.36円  リクルートHD(6098)  +2.49%  [サービス]
 ▼ 日経225 (下落寄与TOP5)
+  -3.57円  キーエンス(6861)  -0.12%  [電機]
+  -2.36円  信越化学(4063)  -0.94%  [化学]
+  -1.93円  日立製作所(6501)  -1.16%  [電機]
+  -0.93円  ソフトバンクG(9984)  -0.42%  [通信]
+  -0.75円  KDDI(9433)  -0.77%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
   ++33.26pt  Apple Inc.(AAPL)  +4.84%  wt:9.18%  [Information Technology]
   ++7.19pt  Microsoft(MSFT)  +1.62%  wt:5.95%  [Information Technology]
@@ -1211,8 +1349,8 @@
   -7.53pt  Lam Research(LRCX)  -10.19%  wt:0.99%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] NY円、161円06～16銭(共同通信) (07/03 21:46)
-  概要: 【ニューヨーク共同】3日のニューヨーク外国為替市場の円相場は午前8時40分現在、前日比01銭円高ドル安の1ドル＝161円06～16銭を付けた。
+- [Yahoo!ファイナンス] アメリカ版「七人の侍」になるのか？これから上院共和党の「無敵の七人」がトランプ政権を揺さぶるかもしれない(東洋経済オンライン) (07/04 06:30)
+  概要: アメリカ発のニュースは日々途切れることがない。イランとの交渉あり、NYダウ(工業株30種平均)の最高値更新あり、ワールドカップ情報あり、そして建国250周年である。加えて連日のように、ドナルド・トラ
 - [Investing.com日本] BofAがユーロ圏成長見通しの改善を受け、Stoxx 600の目標株価を引き上げ (07/03 21:46)
 - [NHK経済] 長期金利 約29年ぶり一時2.81％に上昇 インフレ加速観測などで (07/03 21:12)
   概要: 3日の債券市場で、長期金利が一時、およそ29年ぶりの高い水準となる2.81％まで上昇しました。今後、インフレが加速するという見方や財政負担への懸念が広がったことなどから、国債を売る動きが強まりました。
@@ -1228,10 +1366,10 @@
   概要: 3日の東京株式市場、日経平均株価は一時、1000円以上、値下がりしましたが、午後にはAIや半導体関連の銘柄を中心に買い注文が広がり、株価は上昇しました。
 - [ZUU online] 青果物加工流通業界の常識を変えた「FSモデル」とは？仕掛け人のデリカフーズHD・大﨑社長に聞く (07/03 14:00)
   概要: 全国の外食産業向けにカット野菜や青果物を供給するデリカフーズホールディングス株式会社。大崎善保社長は、創業者の哲学に感銘を受け、アルバイト入社からトップへ登り詰めた経歴を持つ。 成長の原動力は、調達か
-- [Yahoo!ファイナンス] イラン、日本大手に原油購入打診　海峡安全不十分で実現見通せず(共同通信) (07/03 23:38)
-  概要: 【テヘラン共同】イラン国営石油会社が、日本の石油元売り大手などにイラン産原油購入を打診したことが3日、イラン外交筋への取材で分かった。米イランが6月に署名した覚書では米国が原油輸出を容認する項目が盛
 - [ZUU online] マンションの修繕積立金が不足するとどうなる？投資家が知るべきリスクと対策 (07/03 15:00)
   概要: マンション投資を検討する際に、利回りや立地条件に注目して購入物件を探す人が多いですが、それだけではなく、修繕積立金の水準や回収状況、すでに積み立てられている額はいくらかなど、詳細な状況まで丁寧に確認す
+- [Yahoo!ファイナンス] 「Switch2」は爆売れなのに、任天堂の利益率が急降下したワケ(ダイヤモンド・オンライン) (07/04 06:30)
+  概要: 「Nintendo Switch 2」の大ヒットを背景に2026年3月期の決算では初の「売上高2兆円」を突破した任天堂。しかし、売上高が急増した一方で、営業利益の増加幅は限定的だった。売上高営業利益
 - [NHK経済] 昨年度の税収 84兆2000億円程度 過去最高を更新 (07/03 20:25)
   概要: 昨年度の国の税収は前の年度からおよそ9兆円増加して84兆2000億円程度となりました。賃金の増加や好調な企業業績を背景に所得税や法人税の税収が伸び、過去最高を更新しました。
 - [NHK経済] キオクシア 最先端メモリのサンプル出荷開始 生成AI需要に対応 (07/03 19:07)
