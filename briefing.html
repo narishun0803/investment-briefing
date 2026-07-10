@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年07月10日 15:17 JST</span>
+    <span class="updated">更新: 2026年07月10日 19:46 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">68,557.73 <span class="tile-unit">pt</span></div>
+          <div class="tile-change up">
+            +813.88&nbsp;&nbsp;+1.20%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">422.1 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +3.00&nbsp;&nbsp;+0.72%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">161.77 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -0.77&nbsp;&nbsp;-0.47%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">52,487.41 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">161.51 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -1.03&nbsp;&nbsp;-0.63%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.539 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">71.93 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">71.95 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -0.15&nbsp;&nbsp;-0.21%
+            -0.13&nbsp;&nbsp;-0.18%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4126.90 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4117.40 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -3.70&nbsp;&nbsp;-0.09%
+            -13.20&nbsp;&nbsp;-0.32%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">68,699.75 <span class="tile-unit">pt</span></div>
-          <div class="tile-change up">
-            +955.90&nbsp;&nbsp;+1.41%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">421.3 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +2.20&nbsp;&nbsp;+0.52%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -672,8 +672,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/8035:TYO" target="_blank" rel="noopener">東京エレクトロン</a>
                 <span class="contrib-sector">半導体製造装置</span>
               </td>
-              <td class="up">+81.07</td>
-              <td class="up">+3.19%</td>
+              <td class="up">+67.14</td>
+              <td class="up">+2.65%</td>
             </tr>
             
             <tr>
@@ -681,8 +681,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="up">+43.93</td>
-              <td class="up">+1.63%</td>
+              <td class="up">+48.93</td>
+              <td class="up">+1.81%</td>
             </tr>
             
             <tr>
@@ -690,8 +690,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6857:TYO" target="_blank" rel="noopener">アドバンテスト</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="up">+31.43</td>
-              <td class="up">+3.02%</td>
+              <td class="up">+23.93</td>
+              <td class="up">+2.30%</td>
             </tr>
             
             <tr>
@@ -699,17 +699,17 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/9984:TYO" target="_blank" rel="noopener">ソフトバンクG</a>
                 <span class="contrib-sector">通信</span>
               </td>
-              <td class="up">+24.04</td>
-              <td class="up">+11.69%</td>
+              <td class="up">+21.89</td>
+              <td class="up">+10.65%</td>
             </tr>
             
             <tr>
               <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/6954:TYO" target="_blank" rel="noopener">ファナック</a>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6981:TYO" target="_blank" rel="noopener">村田製作所</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="up">+11.75</td>
-              <td class="up">+4.80%</td>
+              <td class="up">+13.75</td>
+              <td class="up">+4.06%</td>
             </tr>
             
             </tbody>
@@ -731,17 +731,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/9983:TYO" target="_blank" rel="noopener">ファーストリテイリング</a>
                 <span class="contrib-sector">小売</span>
               </td>
-              <td class="down">-112.86</td>
-              <td class="down">-3.71%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/8766:TYO" target="_blank" rel="noopener">東京海上HD</a>
-                <span class="contrib-sector">保険</span>
-              </td>
-              <td class="down">-9.57</td>
-              <td class="down">-3.41%</td>
+              <td class="down">-109.29</td>
+              <td class="down">-3.59%</td>
             </tr>
             
             <tr>
@@ -749,8 +740,17 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6098:TYO" target="_blank" rel="noopener">リクルートHD</a>
                 <span class="contrib-sector">サービス</span>
               </td>
-              <td class="down">-8.57</td>
-              <td class="down">-1.92%</td>
+              <td class="down">-9.46</td>
+              <td class="down">-2.12%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/8766:TYO" target="_blank" rel="noopener">東京海上HD</a>
+                <span class="contrib-sector">保険</span>
+              </td>
+              <td class="down">-9.32</td>
+              <td class="down">-3.32%</td>
             </tr>
             
             <tr>
@@ -758,17 +758,17 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/7974:TYO" target="_blank" rel="noopener">任天堂</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-3.29</td>
-              <td class="down">-1.29%</td>
+              <td class="down">-3.21</td>
+              <td class="down">-1.26%</td>
             </tr>
             
             <tr>
               <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/4502:TYO" target="_blank" rel="noopener">武田薬品</a>
-                <span class="contrib-sector">医薬品</span>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6367:TYO" target="_blank" rel="noopener">ダイキン</a>
+                <span class="contrib-sector">機械</span>
               </td>
-              <td class="down">-2.29</td>
-              <td class="down">-1.19%</td>
+              <td class="down">-2.32</td>
+              <td class="down">-0.26%</td>
             </tr>
             
             </tbody>
@@ -915,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (16件)</div>
+    <div class="card-title">📰 最新ニュース (14件)</div>
     
     
     
@@ -930,14 +930,60 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/20eae716b68f577ba79387b812dd00a89115b368?source=rss" target="_blank" rel="noopener">カルシ、金や為替・エネルギーの無期限先物提供を計画。CFTC承認目指す＝幹部(あたらしい経済)</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1599201" target="_blank" rel="noopener">デルタ航空、好決算と強気見通しで株価上昇</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>07/10 15:07</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>07/10 19:40</span>
               </div>
               
-              <div class="news-summary">米予測市場プラットフォーム「カルシ（Kalshi）」は、金属、外国為替（FX）、エネルギー市場などを対象とした満期のないデリバティブ（無期限先物）へ事業を拡大することを目指している。同社幹部がロイター…</div>
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/302469" target="_blank" rel="noopener">日々是相場［夕刊］――  2026年7月10日（金）</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>07/10 19:30</span>
+              </div>
+              
+              <div class="news-summary">日経平均 68,557.73円 △813.88円 為替 １ドル＝161.57円 売買高（東証プライム、以下同） 25億7,413万株 売買代金 10兆4025億30百万円 値上り銘柄数 816銘柄 値…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260710/k10015173891000.html" target="_blank" rel="noopener">円相場 一時1円以上円高 年金資金めぐる片山財務相の発言受け</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>07/10 19:27</span>
+              </div>
+              
+              <div class="news-summary">10日の東京外国為替市場、円相場は一時1円以上値上がりしました。片山財務大臣が日本の年金基金などに国内の金融資産への投資を促す対策を検討する考えを示したことを受け、ドルを売って円を買う動きが広がりまし…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1599184" target="_blank" rel="noopener">バークレイズ：株式市場を動かすのは地政学リスクではなく企業収益</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>07/10 19:23</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1599169" target="_blank" rel="noopener">ゴールドマン・サックス、相場のローテーションはポジション調整が主因と指摘</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>07/10 19:13</span>
+              </div>
               
             </div>
             
@@ -947,10 +993,10 @@
               </div>
               <div class="news-meta">
                 <span class="news-source">NHK経済</span>
-                <span>07/10 12:20</span>
+                <span>07/10 16:54</span>
               </div>
               
-              <div class="news-summary">10日の東京株式市場、AI・半導体関連の銘柄を中心に買い注文が広がり、日経平均株価は、一時1600円以上値上がりしています。</div>
+              <div class="news-summary">10日の東京株式市場、AI市場の拡大が続くという見方が広がったことなどから、AI・半導体関連の銘柄を中心に買い注文が出て、日経平均株価は値上がりしました。</div>
               
             </div>
             
@@ -967,55 +1013,26 @@
               
             </div>
             
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260710/k10015173361000.html" target="_blank" rel="noopener">6月企業物価指数 前年同月比7.1％上昇 価格転嫁進み大幅な上昇</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>07/10 11:35</span>
-              </div>
-              
-              <div class="news-summary">企業の間で取り引きされるモノの価格を示す6月の企業物価指数は、去年の同じ月と比べて7.1％上昇しました。中東情勢を受けた原油価格の上昇に伴い石油関連製品への価格転嫁が進んだことが要因で、上昇幅は202…</div>
-              
-            </div>
+          </div>
+        </div>
+        
+      
+        
+        
+        <div class="news-group">
+          <div class="news-group-title">🌐 マクロ・金利 (1件)</div>
+          <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://zuuonline.com/archives/302464" target="_blank" rel="noopener">FX/為替「ドル/円今日の見通し｜イラン情勢を見極め　40年ぶり高値更新なるか」 外為どっとコム トゥデイ 2026年7月10日号</a>
+                <a href="https://zuuonline.com/archives/302431" target="_blank" rel="noopener">「訪日外国人の受け皿」を創れ。“買わない”民泊・ニューノーマル 〜利回り15%×即時償却可。新時代の民泊経営の在り方に迫る〜</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">ZUU online</span>
-                <span>07/10 10:32</span>
+                <span>07/10 19:20</span>
               </div>
               
-              <div class="news-summary">主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月10日8時30分執筆・監修：株式会社外…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302462" target="_blank" rel="noopener">日々是相場［夕刊］――  2026年7月9日（木）</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/09 19:30</span>
-              </div>
-              
-              <div class="news-summary">日経平均 67,743.85円 △924.80円 為替 １ドル＝162.25円 売買高（東証プライム、以下同） 23億1,271万株 売買代金 9兆6014億71百万円 値上り銘柄数 585銘柄 値下…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302461" target="_blank" rel="noopener">米ドル／円 ―― 163円の大台乗せを視野に入れた動きが続くと見ており引き続き原油価格の動向がカギとなりそうだ</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/09 19:00</span>
-              </div>
-              
-              <div class="news-summary">この記事は2026年7月9日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月9日（木）の午前10時ごろに外為どっ…</div>
+              <div class="news-summary">■ 万博後も続くインバウンド需要を支える民泊 ── 2030年「IR」、2031年「新路線の開業（なにわ筋線）」の追い風 2025年、訪日外国人数は過去最高を更新。なかでも大阪は昨年の万博を経て、宿泊…</div>
               
             </div>
             
@@ -1025,56 +1042,9 @@
       
         
         
-      
-        
-        
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (8件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (4件)</div>
           <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1598864" target="_blank" rel="noopener">TCS好決算がインドIT株を押し上げ、セクター全体に買い</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>07/10 15:00</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1598850" target="_blank" rel="noopener">エミルシュス、好調な第2四半期決算を受け2026年利益予想を引き上げ</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>07/10 14:49</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1598849" target="_blank" rel="noopener">セブンアイ---続落、ガソリン粗利主因に上方修正もポジティブ反応乏しい</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>07/10 14:45</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1598848" target="_blank" rel="noopener">ローツェ---大幅続伸、第1四半期は大幅増益で受注も一段拡大</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>07/10 14:45</span>
-              </div>
-              
-            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1135,17 +1105,30 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (1件)</div>
+          <div class="news-group-title">📌 その他 (2件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1598852" target="_blank" rel="noopener">Tryg、投資収益が法的費用を相殺し第2四半期利益が予想を上回る</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1599181" target="_blank" rel="noopener">ベレンバーグ、EV移行リスクと自動車設備投資依存でデュールを格下げ</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>07/10 14:52</span>
+                <span>07/10 19:21</span>
               </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/302467" target="_blank" rel="noopener">アンダースロー：官民連携の長期投資が必要とされる局面で年金基金は国内への資金供給を大きく拡大できる</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>07/10 15:00</span>
+              </div>
+              
+              <div class="news-summary">この記事は2026年7月10日に配信されたメールマガジン「アンダースロー：官民連携の長期投資が必要とされる局面で年金基金は国内への資金供給を大きく拡大できる」を一部編集し、転載したものです。 目次官民…</div>
               
             </div>
             
@@ -1159,34 +1142,34 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-10 15:17）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-10 19:46）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 68,557.73 pt (+1.20%)
+- TOPIX (1306連動ETF): 422.1 円 (+0.72%)
+- ドル円: 161.77 円 (-0.47%)
 - S&P 500: 7,543.64 (+0.81%)
 - NASDAQ: 26,206.89 (+1.30%)
 - ダウ: 52,487.41 (+0.27%)
-- ドル円: 161.51 円 (-0.63%)
 - 米10年債利回り: 4.539 % (-0.66%)
-- WTI原油: 71.93 USD (-0.21%)
-- 金: 4126.90 USD (-0.09%)
-- 日経225: 68,699.75 pt (+1.41%)
-- TOPIX (1306連動ETF): 421.3 円 (+0.52%)
+- WTI原油: 71.95 USD (-0.18%)
+- 金: 4117.40 USD (-0.32%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++81.07円  東京エレクトロン(8035)  +3.19%  [半導体製造装置]
-  ++43.93円  キーエンス(6861)  +1.63%  [電機]
-  ++31.43円  アドバンテスト(6857)  +3.02%  [電機]
-  ++24.04円  ソフトバンクG(9984)  +11.69%  [通信]
-  ++11.75円  ファナック(6954)  +4.80%  [電機]
+  ++67.14円  東京エレクトロン(8035)  +2.65%  [半導体製造装置]
+  ++48.93円  キーエンス(6861)  +1.81%  [電機]
+  ++23.93円  アドバンテスト(6857)  +2.30%  [電機]
+  ++21.89円  ソフトバンクG(9984)  +10.65%  [通信]
+  ++13.75円  村田製作所(6981)  +4.06%  [電機]
 ▼ 日経225 (下落寄与TOP5)
-  -112.86円  ファーストリテイリング(9983)  -3.71%  [小売]
-  -9.57円  東京海上HD(8766)  -3.41%  [保険]
-  -8.57円  リクルートHD(6098)  -1.92%  [サービス]
-  -3.29円  任天堂(7974)  -1.29%  [電機]
-  -2.29円  武田薬品(4502)  -1.19%  [医薬品]
+  -109.29円  ファーストリテイリング(9983)  -3.59%  [小売]
+  -9.46円  リクルートHD(6098)  -2.12%  [サービス]
+  -9.32円  東京海上HD(8766)  -3.32%  [保険]
+  -3.21円  任天堂(7974)  -1.26%  [電機]
+  -2.32円  ダイキン(6367)  -0.26%  [機械]
 ▼ S&P500 (上昇寄与TOP5)
   ++11.19pt  Meta Platforms(META)  +4.70%  wt:3.18%  [Communication Services]
   ++8.88pt  Broadcom(AVGO)  +3.20%  wt:3.71%  [Information Technology]
@@ -1201,24 +1184,19 @@
   -2.30pt  ExxonMobil(XOM)  -2.60%  wt:1.18%  [Energy]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] カルシ、金や為替・エネルギーの無期限先物提供を計画。CFTC承認目指す＝幹部(あたらしい経済) (07/10 15:07)
-  概要: 米予測市場プラットフォーム「カルシ（Kalshi）」は、金属、外国為替（FX）、エネルギー市場などを対象とした満期のないデリバティブ（無期限先物）へ事業を拡大することを目指している。同社幹部がロイター
-- [NHK経済] 株価 一時1600円超値上がり AI・半導体中心に買い注文広がる (07/10 12:20)
-  概要: 10日の東京株式市場、AI・半導体関連の銘柄を中心に買い注文が広がり、日経平均株価は、一時1600円以上値上がりしています。
+- [Investing.com日本] デルタ航空、好決算と強気見通しで株価上昇 (07/10 19:40)
+- [ZUU online] 日々是相場［夕刊］――  2026年7月10日（金） (07/10 19:30)
+  概要: 日経平均 68,557.73円 △813.88円 為替 １ドル＝161.57円 売買高（東証プライム、以下同） 25億7,413万株 売買代金 10兆4025億30百万円 値上り銘柄数 816銘柄 値
+- [NHK経済] 円相場 一時1円以上円高 年金資金めぐる片山財務相の発言受け (07/10 19:27)
+  概要: 10日の東京外国為替市場、円相場は一時1円以上値上がりしました。片山財務大臣が日本の年金基金などに国内の金融資産への投資を促す対策を検討する考えを示したことを受け、ドルを売って円を買う動きが広がりまし
+- [Investing.com日本] バークレイズ：株式市場を動かすのは地政学リスクではなく企業収益 (07/10 19:23)
+- [Investing.com日本] ゴールドマン・サックス、相場のローテーションはポジション調整が主因と指摘 (07/10 19:13)
+- [NHK経済] 株価 一時1600円超値上がり AI・半導体中心に買い注文広がる (07/10 16:54)
+  概要: 10日の東京株式市場、AI市場の拡大が続くという見方が広がったことなどから、AI・半導体関連の銘柄を中心に買い注文が出て、日経平均株価は値上がりしました。
 - [NHK経済] 日銀に金融政策方向性“事前に示すことない” 城内成長戦略相 (07/10 11:59)
   概要: 「骨太の方針」の原案に明記された表現をめぐり、金融市場で政府が日銀の利上げをけん制しているという見方が出ていることに関連し、城内成長戦略担当大臣は、政府が日銀に対し事前に金融政策の方向性を示すことはな
-- [NHK経済] 6月企業物価指数 前年同月比7.1％上昇 価格転嫁進み大幅な上昇 (07/10 11:35)
-  概要: 企業の間で取り引きされるモノの価格を示す6月の企業物価指数は、去年の同じ月と比べて7.1％上昇しました。中東情勢を受けた原油価格の上昇に伴い石油関連製品への価格転嫁が進んだことが要因で、上昇幅は202
-- [ZUU online] FX/為替「ドル/円今日の見通し｜イラン情勢を見極め　40年ぶり高値更新なるか」 外為どっとコム トゥデイ 2026年7月10日号 (07/10 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月10日8時30分執筆・監修：株式会社外
-- [ZUU online] 日々是相場［夕刊］――  2026年7月9日（木） (07/09 19:30)
-  概要: 日経平均 67,743.85円 △924.80円 為替 １ドル＝162.25円 売買高（東証プライム、以下同） 23億1,271万株 売買代金 9兆6014億71百万円 値上り銘柄数 585銘柄 値下
-- [ZUU online] 米ドル／円 ―― 163円の大台乗せを視野に入れた動きが続くと見ており引き続き原油価格の動向がカギとなりそうだ (07/09 19:00)
-  概要: この記事は2026年7月9日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月9日（木）の午前10時ごろに外為どっ
-- [Investing.com日本] TCS好決算がインドIT株を押し上げ、セクター全体に買い (07/10 15:00)
-- [Investing.com日本] エミルシュス、好調な第2四半期決算を受け2026年利益予想を引き上げ (07/10 14:49)
-- [Investing.com日本] セブンアイ---続落、ガソリン粗利主因に上方修正もポジティブ反応乏しい (07/10 14:45)
-- [Investing.com日本] ローツェ---大幅続伸、第1四半期は大幅増益で受注も一段拡大 (07/10 14:45)
+- [ZUU online] 「訪日外国人の受け皿」を創れ。“買わない”民泊・ニューノーマル 〜利回り15%×即時償却可。新時代の民泊経営の在り方に迫る〜 (07/10 19:20)
+  概要: ■ 万博後も続くインバウンド需要を支える民泊 ── 2030年「IR」、2031年「新路線の開業（なにわ筋線）」の追い風 2025年、訪日外国人数は過去最高を更新。なかでも大阪は昨年の万博を経て、宿泊
 - [NHK経済] 地方税収 初の50兆円超 5年連続過去最高更新 総務省 (07/10 14:00)
   概要: 昨年度の地方税収は、賃上げや好調な企業業績を背景に個人住民税などが伸びたことから、過去最高を更新して初めて50兆円を超えました。
 - [NHK経済] 破産手続き開始の全東信 預金残高の水増しなど粉飾決算の疑い (07/10 12:11)
@@ -1227,7 +1205,9 @@
   概要: オンワードホールディングス（以下、オンワードHD）は7月9日、2027年2月期の第1四半期決算を発表した。売上高は634億6600万円（前年同期比5.5％増）、営業利益は56億4700万円（同5.5％
 - [ZUU online] 3度目の上方修正で売上高4兆円が目前に　ファーストリテイリングの第3四半期は「ユニクロ」が国内外で2兆7000億円を突破 (07/10 12:02)
   概要: 「ユニクロ（UNIQLO）」や「ジーユー（GU）」を展開するファーストリテイリングは7月9日、2026年8月期の第3四半期決算を発表した。売上高にあたる売上収益は3兆651億円（前年同期比17.1％増
-- [Investing.com日本] Tryg、投資収益が法的費用を相殺し第2四半期利益が予想を上回る (07/10 14:52)
+- [Investing.com日本] ベレンバーグ、EV移行リスクと自動車設備投資依存でデュールを格下げ (07/10 19:21)
+- [ZUU online] アンダースロー：官民連携の長期投資が必要とされる局面で年金基金は国内への資金供給を大きく拡大できる (07/10 15:00)
+  概要: この記事は2026年7月10日に配信されたメールマガジン「アンダースロー：官民連携の長期投資が必要とされる局面で年金基金は国内への資金供給を大きく拡大できる」を一部編集し、転載したものです。 目次官民
 
 【依頼内容】
 上記の指数の動きについて、ニュースの内容と紐付けて解説してください。
@@ -1242,29 +1222,29 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 68,557.73 pt (+1.20%)
+- TOPIX (1306連動ETF): 422.1 円 (+0.72%)
+- ドル円: 161.77 円 (-0.47%)
 - S&P 500: 7,543.64 (+0.81%)
 - NASDAQ: 26,206.89 (+1.30%)
 - ダウ: 52,487.41 (+0.27%)
-- ドル円: 161.51 円 (-0.63%)
 - 米10年債利回り: 4.539 % (-0.66%)
-- WTI原油: 71.93 USD (-0.21%)
-- 金: 4126.90 USD (-0.09%)
-- 日経225: 68,699.75 pt (+1.41%)
-- TOPIX (1306連動ETF): 421.3 円 (+0.52%)
+- WTI原油: 71.95 USD (-0.18%)
+- 金: 4117.40 USD (-0.32%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++81.07円  東京エレクトロン(8035)  +3.19%  [半導体製造装置]
-  ++43.93円  キーエンス(6861)  +1.63%  [電機]
-  ++31.43円  アドバンテスト(6857)  +3.02%  [電機]
-  ++24.04円  ソフトバンクG(9984)  +11.69%  [通信]
-  ++11.75円  ファナック(6954)  +4.80%  [電機]
+  ++67.14円  東京エレクトロン(8035)  +2.65%  [半導体製造装置]
+  ++48.93円  キーエンス(6861)  +1.81%  [電機]
+  ++23.93円  アドバンテスト(6857)  +2.30%  [電機]
+  ++21.89円  ソフトバンクG(9984)  +10.65%  [通信]
+  ++13.75円  村田製作所(6981)  +4.06%  [電機]
 ▼ 日経225 (下落寄与TOP5)
-  -112.86円  ファーストリテイリング(9983)  -3.71%  [小売]
-  -9.57円  東京海上HD(8766)  -3.41%  [保険]
-  -8.57円  リクルートHD(6098)  -1.92%  [サービス]
-  -3.29円  任天堂(7974)  -1.29%  [電機]
-  -2.29円  武田薬品(4502)  -1.19%  [医薬品]
+  -109.29円  ファーストリテイリング(9983)  -3.59%  [小売]
+  -9.46円  リクルートHD(6098)  -2.12%  [サービス]
+  -9.32円  東京海上HD(8766)  -3.32%  [保険]
+  -3.21円  任天堂(7974)  -1.26%  [電機]
+  -2.32円  ダイキン(6367)  -0.26%  [機械]
 ▼ S&P500 (上昇寄与TOP5)
   ++11.19pt  Meta Platforms(META)  +4.70%  wt:3.18%  [Communication Services]
   ++8.88pt  Broadcom(AVGO)  +3.20%  wt:3.71%  [Information Technology]
@@ -1279,24 +1259,19 @@
   -2.30pt  ExxonMobil(XOM)  -2.60%  wt:1.18%  [Energy]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] カルシ、金や為替・エネルギーの無期限先物提供を計画。CFTC承認目指す＝幹部(あたらしい経済) (07/10 15:07)
-  概要: 米予測市場プラットフォーム「カルシ（Kalshi）」は、金属、外国為替（FX）、エネルギー市場などを対象とした満期のないデリバティブ（無期限先物）へ事業を拡大することを目指している。同社幹部がロイター
-- [NHK経済] 株価 一時1600円超値上がり AI・半導体中心に買い注文広がる (07/10 12:20)
-  概要: 10日の東京株式市場、AI・半導体関連の銘柄を中心に買い注文が広がり、日経平均株価は、一時1600円以上値上がりしています。
+- [Investing.com日本] デルタ航空、好決算と強気見通しで株価上昇 (07/10 19:40)
+- [ZUU online] 日々是相場［夕刊］――  2026年7月10日（金） (07/10 19:30)
+  概要: 日経平均 68,557.73円 △813.88円 為替 １ドル＝161.57円 売買高（東証プライム、以下同） 25億7,413万株 売買代金 10兆4025億30百万円 値上り銘柄数 816銘柄 値
+- [NHK経済] 円相場 一時1円以上円高 年金資金めぐる片山財務相の発言受け (07/10 19:27)
+  概要: 10日の東京外国為替市場、円相場は一時1円以上値上がりしました。片山財務大臣が日本の年金基金などに国内の金融資産への投資を促す対策を検討する考えを示したことを受け、ドルを売って円を買う動きが広がりまし
+- [Investing.com日本] バークレイズ：株式市場を動かすのは地政学リスクではなく企業収益 (07/10 19:23)
+- [Investing.com日本] ゴールドマン・サックス、相場のローテーションはポジション調整が主因と指摘 (07/10 19:13)
+- [NHK経済] 株価 一時1600円超値上がり AI・半導体中心に買い注文広がる (07/10 16:54)
+  概要: 10日の東京株式市場、AI市場の拡大が続くという見方が広がったことなどから、AI・半導体関連の銘柄を中心に買い注文が出て、日経平均株価は値上がりしました。
 - [NHK経済] 日銀に金融政策方向性“事前に示すことない” 城内成長戦略相 (07/10 11:59)
   概要: 「骨太の方針」の原案に明記された表現をめぐり、金融市場で政府が日銀の利上げをけん制しているという見方が出ていることに関連し、城内成長戦略担当大臣は、政府が日銀に対し事前に金融政策の方向性を示すことはな
-- [NHK経済] 6月企業物価指数 前年同月比7.1％上昇 価格転嫁進み大幅な上昇 (07/10 11:35)
-  概要: 企業の間で取り引きされるモノの価格を示す6月の企業物価指数は、去年の同じ月と比べて7.1％上昇しました。中東情勢を受けた原油価格の上昇に伴い石油関連製品への価格転嫁が進んだことが要因で、上昇幅は202
-- [ZUU online] FX/為替「ドル/円今日の見通し｜イラン情勢を見極め　40年ぶり高値更新なるか」 外為どっとコム トゥデイ 2026年7月10日号 (07/10 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月10日8時30分執筆・監修：株式会社外
-- [ZUU online] 日々是相場［夕刊］――  2026年7月9日（木） (07/09 19:30)
-  概要: 日経平均 67,743.85円 △924.80円 為替 １ドル＝162.25円 売買高（東証プライム、以下同） 23億1,271万株 売買代金 9兆6014億71百万円 値上り銘柄数 585銘柄 値下
-- [ZUU online] 米ドル／円 ―― 163円の大台乗せを視野に入れた動きが続くと見ており引き続き原油価格の動向がカギとなりそうだ (07/09 19:00)
-  概要: この記事は2026年7月9日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月9日（木）の午前10時ごろに外為どっ
-- [Investing.com日本] TCS好決算がインドIT株を押し上げ、セクター全体に買い (07/10 15:00)
-- [Investing.com日本] エミルシュス、好調な第2四半期決算を受け2026年利益予想を引き上げ (07/10 14:49)
-- [Investing.com日本] セブンアイ---続落、ガソリン粗利主因に上方修正もポジティブ反応乏しい (07/10 14:45)
-- [Investing.com日本] ローツェ---大幅続伸、第1四半期は大幅増益で受注も一段拡大 (07/10 14:45)
+- [ZUU online] 「訪日外国人の受け皿」を創れ。“買わない”民泊・ニューノーマル 〜利回り15%×即時償却可。新時代の民泊経営の在り方に迫る〜 (07/10 19:20)
+  概要: ■ 万博後も続くインバウンド需要を支える民泊 ── 2030年「IR」、2031年「新路線の開業（なにわ筋線）」の追い風 2025年、訪日外国人数は過去最高を更新。なかでも大阪は昨年の万博を経て、宿泊
 - [NHK経済] 地方税収 初の50兆円超 5年連続過去最高更新 総務省 (07/10 14:00)
   概要: 昨年度の地方税収は、賃上げや好調な企業業績を背景に個人住民税などが伸びたことから、過去最高を更新して初めて50兆円を超えました。
 - [NHK経済] 破産手続き開始の全東信 預金残高の水増しなど粉飾決算の疑い (07/10 12:11)
@@ -1305,7 +1280,9 @@
   概要: オンワードホールディングス（以下、オンワードHD）は7月9日、2027年2月期の第1四半期決算を発表した。売上高は634億6600万円（前年同期比5.5％増）、営業利益は56億4700万円（同5.5％
 - [ZUU online] 3度目の上方修正で売上高4兆円が目前に　ファーストリテイリングの第3四半期は「ユニクロ」が国内外で2兆7000億円を突破 (07/10 12:02)
   概要: 「ユニクロ（UNIQLO）」や「ジーユー（GU）」を展開するファーストリテイリングは7月9日、2026年8月期の第3四半期決算を発表した。売上高にあたる売上収益は3兆651億円（前年同期比17.1％増
-- [Investing.com日本] Tryg、投資収益が法的費用を相殺し第2四半期利益が予想を上回る (07/10 14:52)
+- [Investing.com日本] ベレンバーグ、EV移行リスクと自動車設備投資依存でデュールを格下げ (07/10 19:21)
+- [ZUU online] アンダースロー：官民連携の長期投資が必要とされる局面で年金基金は国内への資金供給を大きく拡大できる (07/10 15:00)
+  概要: この記事は2026年7月10日に配信されたメールマガジン「アンダースロー：官民連携の長期投資が必要とされる局面で年金基金は国内への資金供給を大きく拡大できる」を一部編集し、転載したものです。 目次官民
 
 【依頼内容】
 - 最も動きが大きかった指標トップ3を特定
@@ -1314,29 +1291,29 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 68,557.73 pt (+1.20%)
+- TOPIX (1306連動ETF): 422.1 円 (+0.72%)
+- ドル円: 161.77 円 (-0.47%)
 - S&P 500: 7,543.64 (+0.81%)
 - NASDAQ: 26,206.89 (+1.30%)
 - ダウ: 52,487.41 (+0.27%)
-- ドル円: 161.51 円 (-0.63%)
 - 米10年債利回り: 4.539 % (-0.66%)
-- WTI原油: 71.93 USD (-0.21%)
-- 金: 4126.90 USD (-0.09%)
-- 日経225: 68,699.75 pt (+1.41%)
-- TOPIX (1306連動ETF): 421.3 円 (+0.52%)
+- WTI原油: 71.95 USD (-0.18%)
+- 金: 4117.40 USD (-0.32%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++81.07円  東京エレクトロン(8035)  +3.19%  [半導体製造装置]
-  ++43.93円  キーエンス(6861)  +1.63%  [電機]
-  ++31.43円  アドバンテスト(6857)  +3.02%  [電機]
-  ++24.04円  ソフトバンクG(9984)  +11.69%  [通信]
-  ++11.75円  ファナック(6954)  +4.80%  [電機]
+  ++67.14円  東京エレクトロン(8035)  +2.65%  [半導体製造装置]
+  ++48.93円  キーエンス(6861)  +1.81%  [電機]
+  ++23.93円  アドバンテスト(6857)  +2.30%  [電機]
+  ++21.89円  ソフトバンクG(9984)  +10.65%  [通信]
+  ++13.75円  村田製作所(6981)  +4.06%  [電機]
 ▼ 日経225 (下落寄与TOP5)
-  -112.86円  ファーストリテイリング(9983)  -3.71%  [小売]
-  -9.57円  東京海上HD(8766)  -3.41%  [保険]
-  -8.57円  リクルートHD(6098)  -1.92%  [サービス]
-  -3.29円  任天堂(7974)  -1.29%  [電機]
-  -2.29円  武田薬品(4502)  -1.19%  [医薬品]
+  -109.29円  ファーストリテイリング(9983)  -3.59%  [小売]
+  -9.46円  リクルートHD(6098)  -2.12%  [サービス]
+  -9.32円  東京海上HD(8766)  -3.32%  [保険]
+  -3.21円  任天堂(7974)  -1.26%  [電機]
+  -2.32円  ダイキン(6367)  -0.26%  [機械]
 ▼ S&P500 (上昇寄与TOP5)
   ++11.19pt  Meta Platforms(META)  +4.70%  wt:3.18%  [Communication Services]
   ++8.88pt  Broadcom(AVGO)  +3.20%  wt:3.71%  [Information Technology]
@@ -1351,24 +1328,19 @@
   -2.30pt  ExxonMobil(XOM)  -2.60%  wt:1.18%  [Energy]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] カルシ、金や為替・エネルギーの無期限先物提供を計画。CFTC承認目指す＝幹部(あたらしい経済) (07/10 15:07)
-  概要: 米予測市場プラットフォーム「カルシ（Kalshi）」は、金属、外国為替（FX）、エネルギー市場などを対象とした満期のないデリバティブ（無期限先物）へ事業を拡大することを目指している。同社幹部がロイター
-- [NHK経済] 株価 一時1600円超値上がり AI・半導体中心に買い注文広がる (07/10 12:20)
-  概要: 10日の東京株式市場、AI・半導体関連の銘柄を中心に買い注文が広がり、日経平均株価は、一時1600円以上値上がりしています。
+- [Investing.com日本] デルタ航空、好決算と強気見通しで株価上昇 (07/10 19:40)
+- [ZUU online] 日々是相場［夕刊］――  2026年7月10日（金） (07/10 19:30)
+  概要: 日経平均 68,557.73円 △813.88円 為替 １ドル＝161.57円 売買高（東証プライム、以下同） 25億7,413万株 売買代金 10兆4025億30百万円 値上り銘柄数 816銘柄 値
+- [NHK経済] 円相場 一時1円以上円高 年金資金めぐる片山財務相の発言受け (07/10 19:27)
+  概要: 10日の東京外国為替市場、円相場は一時1円以上値上がりしました。片山財務大臣が日本の年金基金などに国内の金融資産への投資を促す対策を検討する考えを示したことを受け、ドルを売って円を買う動きが広がりまし
+- [Investing.com日本] バークレイズ：株式市場を動かすのは地政学リスクではなく企業収益 (07/10 19:23)
+- [Investing.com日本] ゴールドマン・サックス、相場のローテーションはポジション調整が主因と指摘 (07/10 19:13)
+- [NHK経済] 株価 一時1600円超値上がり AI・半導体中心に買い注文広がる (07/10 16:54)
+  概要: 10日の東京株式市場、AI市場の拡大が続くという見方が広がったことなどから、AI・半導体関連の銘柄を中心に買い注文が出て、日経平均株価は値上がりしました。
 - [NHK経済] 日銀に金融政策方向性“事前に示すことない” 城内成長戦略相 (07/10 11:59)
   概要: 「骨太の方針」の原案に明記された表現をめぐり、金融市場で政府が日銀の利上げをけん制しているという見方が出ていることに関連し、城内成長戦略担当大臣は、政府が日銀に対し事前に金融政策の方向性を示すことはな
-- [NHK経済] 6月企業物価指数 前年同月比7.1％上昇 価格転嫁進み大幅な上昇 (07/10 11:35)
-  概要: 企業の間で取り引きされるモノの価格を示す6月の企業物価指数は、去年の同じ月と比べて7.1％上昇しました。中東情勢を受けた原油価格の上昇に伴い石油関連製品への価格転嫁が進んだことが要因で、上昇幅は202
-- [ZUU online] FX/為替「ドル/円今日の見通し｜イラン情勢を見極め　40年ぶり高値更新なるか」 外為どっとコム トゥデイ 2026年7月10日号 (07/10 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月10日8時30分執筆・監修：株式会社外
-- [ZUU online] 日々是相場［夕刊］――  2026年7月9日（木） (07/09 19:30)
-  概要: 日経平均 67,743.85円 △924.80円 為替 １ドル＝162.25円 売買高（東証プライム、以下同） 23億1,271万株 売買代金 9兆6014億71百万円 値上り銘柄数 585銘柄 値下
-- [ZUU online] 米ドル／円 ―― 163円の大台乗せを視野に入れた動きが続くと見ており引き続き原油価格の動向がカギとなりそうだ (07/09 19:00)
-  概要: この記事は2026年7月9日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月9日（木）の午前10時ごろに外為どっ
-- [Investing.com日本] TCS好決算がインドIT株を押し上げ、セクター全体に買い (07/10 15:00)
-- [Investing.com日本] エミルシュス、好調な第2四半期決算を受け2026年利益予想を引き上げ (07/10 14:49)
-- [Investing.com日本] セブンアイ---続落、ガソリン粗利主因に上方修正もポジティブ反応乏しい (07/10 14:45)
-- [Investing.com日本] ローツェ---大幅続伸、第1四半期は大幅増益で受注も一段拡大 (07/10 14:45)
+- [ZUU online] 「訪日外国人の受け皿」を創れ。“買わない”民泊・ニューノーマル 〜利回り15%×即時償却可。新時代の民泊経営の在り方に迫る〜 (07/10 19:20)
+  概要: ■ 万博後も続くインバウンド需要を支える民泊 ── 2030年「IR」、2031年「新路線の開業（なにわ筋線）」の追い風 2025年、訪日外国人数は過去最高を更新。なかでも大阪は昨年の万博を経て、宿泊
 - [NHK経済] 地方税収 初の50兆円超 5年連続過去最高更新 総務省 (07/10 14:00)
   概要: 昨年度の地方税収は、賃上げや好調な企業業績を背景に個人住民税などが伸びたことから、過去最高を更新して初めて50兆円を超えました。
 - [NHK経済] 破産手続き開始の全東信 預金残高の水増しなど粉飾決算の疑い (07/10 12:11)
@@ -1377,7 +1349,9 @@
   概要: オンワードホールディングス（以下、オンワードHD）は7月9日、2027年2月期の第1四半期決算を発表した。売上高は634億6600万円（前年同期比5.5％増）、営業利益は56億4700万円（同5.5％
 - [ZUU online] 3度目の上方修正で売上高4兆円が目前に　ファーストリテイリングの第3四半期は「ユニクロ」が国内外で2兆7000億円を突破 (07/10 12:02)
   概要: 「ユニクロ（UNIQLO）」や「ジーユー（GU）」を展開するファーストリテイリングは7月9日、2026年8月期の第3四半期決算を発表した。売上高にあたる売上収益は3兆651億円（前年同期比17.1％増
-- [Investing.com日本] Tryg、投資収益が法的費用を相殺し第2四半期利益が予想を上回る (07/10 14:52)
+- [Investing.com日本] ベレンバーグ、EV移行リスクと自動車設備投資依存でデュールを格下げ (07/10 19:21)
+- [ZUU online] アンダースロー：官民連携の長期投資が必要とされる局面で年金基金は国内への資金供給を大きく拡大できる (07/10 15:00)
+  概要: この記事は2026年7月10日に配信されたメールマガジン「アンダースロー：官民連携の長期投資が必要とされる局面で年金基金は国内への資金供給を大きく拡大できる」を一部編集し、転載したものです。 目次官民
 
 【依頼内容】
 - 短期的なリスク要因（今後1週間以内）
