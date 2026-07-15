@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [夜]</title>
+  <title>投資情報ブリーフィング [朝]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">夜</span>
-    <span class="slot-desc">米国寄り付き直前・経済指標・欧州市場</span>
+    <span class="slot-badge">朝</span>
+    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年07月15日 23:43 JST</span>
+    <span class="updated">更新: 2026年07月16日 06:42 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -548,7 +548,10 @@
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
         
-          <div class="tile-failed">取得失敗</div>
+          <div class="tile-price">7,572.40 <span class="tile-unit"></span></div>
+          <div class="tile-change up">
+            +28.81&nbsp;&nbsp;+0.38%
+          </div>
         
         
       </div>
@@ -556,9 +559,9 @@
       <div class="market-tile primary">
         <div class="tile-name">NASDAQ</div>
         
-          <div class="tile-price">26,132.04 <span class="tile-unit"></span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
+          <div class="tile-price">26,269.23 <span class="tile-unit"></span></div>
+          <div class="tile-change up">
+            +162.22&nbsp;&nbsp;+0.62%
           </div>
         
         
@@ -567,9 +570,9 @@
       <div class="market-tile primary">
         <div class="tile-name">ダウ</div>
         
-          <div class="tile-price">52,717.58 <span class="tile-unit"></span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
+          <div class="tile-price">52,658.64 <span class="tile-unit"></span></div>
+          <div class="tile-change up">
+            +150.37&nbsp;&nbsp;+0.29%
           </div>
         
         
@@ -578,9 +581,9 @@
       <div class="market-tile primary">
         <div class="tile-name">ドル円</div>
         
-          <div class="tile-price">162.43 <span class="tile-unit">円</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
+          <div class="tile-price">162.11 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -0.32&nbsp;&nbsp;-0.20%
           </div>
         
         
@@ -589,9 +592,9 @@
       <div class="market-tile primary">
         <div class="tile-name">米10年債利回り</div>
         
-          <div class="tile-price">4.559 <span class="tile-unit">%</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
+          <div class="tile-price">4.545 <span class="tile-unit">%</span></div>
+          <div class="tile-change down">
+            -0.04&nbsp;&nbsp;-0.87%
           </div>
         
         
@@ -600,9 +603,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">79.16 <span class="tile-unit">USD</span></div>
-          <div class="tile-change down">
-            -0.18&nbsp;&nbsp;-0.23%
+          <div class="tile-price">80.24 <span class="tile-unit">USD</span></div>
+          <div class="tile-change up">
+            +0.90&nbsp;&nbsp;+1.13%
           </div>
         
         
@@ -611,9 +614,9 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4066.20 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4066.90 <span class="tile-unit">USD</span></div>
           <div class="tile-change up">
-            +5.10&nbsp;&nbsp;+0.13%
+            +5.80&nbsp;&nbsp;+0.14%
           </div>
         
         
@@ -622,7 +625,7 @@
       <div class="market-tile ">
         <div class="tile-name">日経225</div>
         
-          <div class="tile-price">68,751.51 <span class="tile-unit">pt</span></div>
+          <div class="tile-price">67,743.50 <span class="tile-unit">pt</span></div>
           <div class="tile-change flat">
             +0.00&nbsp;&nbsp;+0.00%
           </div>
@@ -776,16 +779,134 @@
 
       <!-- S&P 500 -->
       <div>
-        <div class="contrib-group-title">S&amp;P500 寄与度ランキング（時価総額上位45銘柄）</div>
+        <div class="contrib-group-title">S&amp;P500 寄与度ランキング（時価総額上位50銘柄）</div>
 
         <div class="contrib-sub">
           <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AAPL:NASDAQ" target="_blank" rel="noopener">AAPL</a>
+                <span class="contrib-sector">Apple Inc.</span>
+              </td>
+              <td class="up">+29.29</td>
+              <td class="up">+4.01%</td>
+              <td style="color:var(--text2)">9.67%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOG:NASDAQ" target="_blank" rel="noopener">GOOG</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="up">+24.56</td>
+              <td class="up">+3.60%</td>
+              <td style="color:var(--text2)">9.03%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOGL:NASDAQ" target="_blank" rel="noopener">GOOGL</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="up">+21.76</td>
+              <td class="up">+3.17%</td>
+              <td style="color:var(--text2)">9.09%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AMZN:NASDAQ" target="_blank" rel="noopener">AMZN</a>
+                <span class="contrib-sector">Amazon</span>
+              </td>
+              <td class="up">+12.56</td>
+              <td class="up">+3.02%</td>
+              <td style="color:var(--text2)">5.52%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/MSFT:NASDAQ" target="_blank" rel="noopener">MSFT</a>
+                <span class="contrib-sector">Microsoft</span>
+              </td>
+              <td class="up">+12.55</td>
+              <td class="up">+2.78%</td>
+              <td style="color:var(--text2)">5.98%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
 
         <div class="contrib-sub">
           <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/MU:NASDAQ" target="_blank" rel="noopener">MU</a>
+                <span class="contrib-sector">Micron Technology</span>
+              </td>
+              <td class="down">-13.75</td>
+              <td class="down">-8.02%</td>
+              <td style="color:var(--text2)">2.27%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AMD:NASDAQ" target="_blank" rel="noopener">AMD</a>
+                <span class="contrib-sector">Advanced Micro Devic…</span>
+              </td>
+              <td class="down">-4.91</td>
+              <td class="down">-3.46%</td>
+              <td style="color:var(--text2)">1.88%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/DELL:NYSE" target="_blank" rel="noopener">DELL</a>
+                <span class="contrib-sector">Dell Technologies</span>
+              </td>
+              <td class="down">-4.51</td>
+              <td class="down">-9.80%</td>
+              <td style="color:var(--text2)">0.61%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/INTC:NASDAQ" target="_blank" rel="noopener">INTC</a>
+                <span class="contrib-sector">Intel</span>
+              </td>
+              <td class="down">-3.66</td>
+              <td class="down">-4.43%</td>
+              <td style="color:var(--text2)">1.10%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/CSCO:NASDAQ" target="_blank" rel="noopener">CSCO</a>
+                <span class="contrib-sector">Cisco</span>
+              </td>
+              <td class="down">-3.35</td>
+              <td class="down">-4.54%</td>
+              <td style="color:var(--text2)">0.98%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
       </div>
 
@@ -794,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (15件)</div>
+    <div class="card-title">📰 最新ニュース (21件)</div>
     
     
     
@@ -809,29 +930,34 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/d036ca9536a969c4883285aa88558c2544f4c3dc?source=rss" target="_blank" rel="noopener">NY株、続伸して始まる(共同通信)</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1604495" target="_blank" rel="noopener">VivoSim Labsの株価が本日下落した理由とは</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>07/15 23:18</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>07/16 06:17</span>
               </div>
-              
-              <div class="news-summary">【ニューヨーク共同】15日のニューヨーク株式市場のダウ工業株30種平均は続伸し、午前9時45分現在は前日比145.29ドル高の5万2653.56ドルを付けた。</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/f75c360b8c8774cd7424560fdc94b9c299f270b2?source=rss" target="_blank" rel="noopener">ゼリー飲料で異彩放つポッカサッポロの「キレートレモン クエン酸2700ゼリー」　疲れ切る前の小腹満しニーズを獲得して続伸(食品新聞)</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1604382" target="_blank" rel="noopener">AST SpaceMobileの株価、10億ドル規模の転換社債発行計画で急落</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>07/15 22:05</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>07/16 05:08</span>
               </div>
               
-              <div class="news-summary">ポッカサッポロフード＆ビバレッジの「キレートレモン クエン酸2700ゼリー」（以下、クエン酸2700ゼリー）がゼリー飲料市場で異彩を放ち続伸している。
-
-　ゼリー飲料市場が、昨年の酷暑による外出控え</div>
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-432SI-1604347" target="_blank" rel="noopener">Jones Ventures INTL Acquisition1、ナスダックで2億ドルのIPOを完了</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>07/16 03:40</span>
+              </div>
               
             </div>
             
@@ -926,19 +1052,6 @@
               
             </div>
             
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302453" target="_blank" rel="noopener">利上げ警戒の金相場安は一時的、安全資産需要で上昇基調続く</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/15 15:00</span>
-              </div>
-              
-              <div class="news-summary">この記事は2026年7月3日に「きんざいOnline：週刊金融財政事情」で公開された「利上げ警戒の金相場安は一時的、安全資産需要で上昇基調続く」を一部編集し、転載したものです。 2026年上期のNY金…</div>
-              
-            </div>
-            
           </div>
         </div>
         
@@ -951,16 +1064,14 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/615ac45a167e24cc762b81f6fd96c308a8b89a51?source=rss" target="_blank" rel="noopener">レント（372A）、「増配」を発表して、配当利回りが4.6％にアップ！ 年間配当額は1年で6.8％増加し、2027年5月期は前期比15円増の｢1株あたり235円｣に(ダイヤモンド・ザイ)</a>
+                <a href="http://www3.nhk.or.jp/news/html/20260716/k10015177941000.html" target="_blank" rel="noopener">米FRB経済報告 イラン情勢影響で物価は全体として緩やかに上昇</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>07/15 23:40</span>
+                <span class="news-source">NHK経済</span>
+                <span>07/16 06:18</span>
               </div>
               
-              <div class="news-summary">レントは、2027年5月期の配当を前期比で「増配」とする予想を、2026年7月15日の15時30分に発表した。これにより、レントの配当利回り(予想)は4.11％⇒4.60％にアップした。
-
-　レント</div>
+              <div class="news-summary">アメリカのFRB＝連邦準備制度理事会は最新の経済報告を公表し、イラン情勢によるエネルギー価格の上昇などを受けて、物価は全体として緩やかに上昇したと指摘しました。</div>
               
             </div>
             
@@ -983,21 +1094,113 @@
       
         
         
-      
-        
-        
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (3件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (3件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1604071" target="_blank" rel="noopener">原油価格の急騰はリスク資産への強気見通しを変えない＝HSBC</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1604341" target="_blank" rel="noopener">モルガン・スタンレー、第2四半期決算前に航空宇宙・防衛セクターに強気姿勢を維持</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>07/15 23:01</span>
+                <span>07/16 03:38</span>
               </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1604332" target="_blank" rel="noopener">クラウン・キャッスル株、決算発表で5.4%動く可能性</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>07/16 03:28</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1604331" target="_blank" rel="noopener">CME グループ株、7月22日の決算発表で3.8%動く可能性</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>07/16 03:21</span>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        
+        <div class="news-group">
+          <div class="news-group-title">📌 その他 (6件)</div>
+          <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/3a278572057e53846f6c3e29de79a59ab64afe29?source=rss" target="_blank" rel="noopener">【新NISA】買付額が早くも71兆円を突破！ オルカンの陰で猛追する「半導体ファンド」の正体(MONEY PLUS)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>07/16 06:30</span>
+              </div>
+              
+              <div class="news-summary">金融庁の最新調査によると、新NISAの累計買付額は早くも71兆円を突破し、政府目標を前倒しでクリアする急成長を見せています。「オルカン」や「S&amp;P500」といった定番のインデックスファンドが依…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/96c3a401ce57c7f41443fb91060b7612c9df2ffa?source=rss" target="_blank" rel="noopener">骨太方針2026で読む政策テーマ、AI・防衛・電力に広がる投資機会(MONEY PLUS)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>07/16 06:30</span>
+              </div>
+              
+              <div class="news-summary">毎年6月に公表される「骨太の方針」は、政府がどの分野に資金を向け、どの産業を育てようとしているのかを示す政策文書です。2026年の原案では、AI、半導体、防衛、電力インフラ、防災、地域経済などが投資テ…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/302389" target="_blank" rel="noopener">採用で見るべきは実績だけではない！ 挫折経験から見抜く5つの資質</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>07/16 06:00</span>
+              </div>
+              
+              <div class="news-summary">本記事は、岩澤 脩氏の著書『だからベンチャーキャピタルはやめられない 投資家だけが知っている 起業とお金のリアル』（ディスカヴァー・トゥエンティワン）の中から一部を抜粋・編集しています。 キャピタリス…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1604439" target="_blank" rel="noopener">アナログ半導体株が注目、セクター回復が加速</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>07/16 05:29</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260715/k10015178011000.html" target="_blank" rel="noopener">エヌビディアCEOが来日 日本の大手ゲーム会社と交流</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>07/15 23:55</span>
+              </div>
+              
+              <div class="news-summary">アメリカの半導体大手「エヌビディア」のジェンスン・フアンCEOが日本を訪れ、長年、自社製品を提供する日本の大手ゲーム会社と共同で開いたイベントに出席し、経営が苦しかった時代に出資を受けたエピソードなど…</div>
               
             </div>
             
@@ -1014,19 +1217,6 @@
               
             </div>
             
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260715/k10015177471000.html" target="_blank" rel="noopener">暗号資産を「金融商品」に位置づける改正金融商品取引法が成立</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>07/15 16:06</span>
-              </div>
-              
-              <div class="news-summary">ビットコインなどの暗号資産を投資対象とする人が増える中、暗号資産を「金融商品」として位置づける金融商品取引法の改正案が15日に開かれた参議院本会議で可決・成立しました。</div>
-              
-            </div>
-            
           </div>
         </div>
         
@@ -1037,19 +1227,19 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-15 23:43）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-16 06:42）の投資ブリーフィング情報です。
 
-【時間帯】夜（米国寄り付き直前・経済指標・欧州市場）
+【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
 
 【マーケットデータ】
-- S&P 500: 取得失敗
-- NASDAQ: 26,132.04 (+0.00%)
-- ダウ: 52,717.58 (+0.00%)
-- ドル円: 162.43 円 (+0.00%)
-- 米10年債利回り: 4.559 % (+0.00%)
-- WTI原油: 79.16 USD (-0.23%)
-- 金: 4066.20 USD (+0.13%)
-- 日経225: 68,751.51 pt (+0.00%)
+- S&P 500: 7,572.40 (+0.38%)
+- NASDAQ: 26,269.23 (+0.62%)
+- ダウ: 52,658.64 (+0.29%)
+- ドル円: 162.11 円 (-0.20%)
+- 米10年債利回り: 4.545 % (-0.87%)
+- WTI原油: 80.24 USD (+1.13%)
+- 金: 4066.90 USD (+0.14%)
+- 日経225: 67,743.50 pt (+0.00%)
 - TOPIX (1306連動ETF): 425.6 円 (+1.02%)
 
 【個別株の寄与度ランキング】
@@ -1066,15 +1256,22 @@
   -4.39円  オリエンタルランド(4661)  -4.48%  [サービス]
   -4.29円  エーザイ(4523)  -2.74%  [医薬品]
 ▼ S&P500 (上昇寄与TOP5)
+  ++29.29pt  Apple Inc.(AAPL)  +4.01%  wt:9.67%  [Information Technology]
+  ++24.56pt  Alphabet Inc. (Class C)(GOOG)  +3.60%  wt:9.03%  [Communication Services]
+  ++21.76pt  Alphabet Inc. (Class A)(GOOGL)  +3.17%  wt:9.09%  [Communication Services]
+  ++12.56pt  Amazon(AMZN)  +3.02%  wt:5.52%  [Consumer Discretionary]
+  ++12.55pt  Microsoft(MSFT)  +2.78%  wt:5.98%  [Information Technology]
 ▼ S&P500 (下落寄与TOP5)
+  -13.75pt  Micron Technology(MU)  -8.02%  wt:2.27%  [Information Technology]
+  -4.91pt  Advanced Micro Devices(AMD)  -3.46%  wt:1.88%  [Information Technology]
+  -4.51pt  Dell Technologies(DELL)  -9.80%  wt:0.61%  [Information Technology]
+  -3.66pt  Intel(INTC)  -4.43%  wt:1.10%  [Information Technology]
+  -3.35pt  Cisco(CSCO)  -4.54%  wt:0.98%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] NY株、続伸して始まる(共同通信) (07/15 23:18)
-  概要: 【ニューヨーク共同】15日のニューヨーク株式市場のダウ工業株30種平均は続伸し、午前9時45分現在は前日比145.29ドル高の5万2653.56ドルを付けた。
-- [Yahoo!ファイナンス] ゼリー飲料で異彩放つポッカサッポロの「キレートレモン クエン酸2700ゼリー」　疲れ切る前の小腹満しニーズを獲得して続伸(食品新聞) (07/15 22:05)
-  概要: ポッカサッポロフード＆ビバレッジの「キレートレモン クエン酸2700ゼリー」（以下、クエン酸2700ゼリー）がゼリー飲料市場で異彩を放ち続伸している。
-
-　ゼリー飲料市場が、昨年の酷暑による外出控え
+- [Investing.com日本] VivoSim Labsの株価が本日下落した理由とは (07/16 06:17)
+- [Investing.com日本] AST SpaceMobileの株価、10億ドル規模の転換社債発行計画で急落 (07/16 05:08)
+- [Investing.com日本] Jones Ventures INTL Acquisition1、ナスダックで2億ドルのIPOを完了 (07/16 03:40)
 - [ZUU online] 日々是相場［夕刊］――  2026年7月15日（水） (07/15 20:00)
   概要: 日経平均 68,751.51円 △1,008.01円 為替 １ドル＝162.17円 売買高（東証プライム、以下同） 24億7,594万株 売買代金 9兆5675億12百万円 値上り銘柄数 1,153銘
 - [ZUU online] 米ドル／円 ―― レンジで膠着するなら値動きの出やすいNZドル／米ドルやNZドル／円にも目を向けたい (07/15 19:30)
@@ -1089,19 +1286,22 @@
   概要: 15日の東京株式市場、今後も半導体需要は拡大するという見方から、関連する銘柄を中心に買い注文が広がって、日経平均株価は、1000円以上、値上がりしました。
 - [ZUU online] 暗号資産と何が違う？　ブロックチェーン投資信託の仕組みと将来性 (07/15 16:00)
   概要: ［PR］インベスコ・アセット・マネジメント株式会社 この記事の結論 ブロックチェーン投資信託は、暗号資産そのものではなく、関連企業の株式を通じてブロックチェーン技術の成長に投資できる金融商品であり、分
-- [ZUU online] 利上げ警戒の金相場安は一時的、安全資産需要で上昇基調続く (07/15 15:00)
-  概要: この記事は2026年7月3日に「きんざいOnline：週刊金融財政事情」で公開された「利上げ警戒の金相場安は一時的、安全資産需要で上昇基調続く」を一部編集し、転載したものです。 2026年上期のNY金
-- [Yahoo!ファイナンス] レント（372A）、「増配」を発表して、配当利回りが4.6％にアップ！ 年間配当額は1年で6.8％増加し、2027年5月期は前期比15円増の｢1株あたり235円｣に(ダイヤモンド・ザイ) (07/15 23:40)
-  概要: レントは、2027年5月期の配当を前期比で「増配」とする予想を、2026年7月15日の15時30分に発表した。これにより、レントの配当利回り(予想)は4.11％⇒4.60％にアップした。
-
-　レント
+- [NHK経済] 米FRB経済報告 イラン情勢影響で物価は全体として緩やかに上昇 (07/16 06:18)
+  概要: アメリカのFRB＝連邦準備制度理事会は最新の経済報告を公表し、イラン情勢によるエネルギー価格の上昇などを受けて、物価は全体として緩やかに上昇したと指摘しました。
 - [NHK経済] 中国 GDP 4～6月は前年同期比＋4.3％ 景気の減速傾向鮮明に (07/15 18:13)
   概要: 中国のことし4月から先月までのGDP＝国内総生産の伸び率は去年の同じ時期と比べてプラス4.3％となりました。コロナ禍の2022年10月から12月以来の低い水準で、個人消費や投資が振るわず景気の減速傾向
-- [Investing.com日本] 原油価格の急騰はリスク資産への強気見通しを変えない＝HSBC (07/15 23:01)
-- [NHK経済] 石油連盟会長 “中東産油国のパイプライン増強へ支援検討” (07/15 22:05)
-  概要: 石油元売り各社で作る「石油連盟」の木藤会長は15日の定例会見で、ホルムズ海峡を通らないルートでの原油調達を拡大するため、中東の産油国が取り組むパイプラインの増強への支援を日本政府とともに検討する考えを
-- [NHK経済] 暗号資産を「金融商品」に位置づける改正金融商品取引法が成立 (07/15 16:06)
-  概要: ビットコインなどの暗号資産を投資対象とする人が増える中、暗号資産を「金融商品」として位置づける金融商品取引法の改正案が15日に開かれた参議院本会議で可決・成立しました。
+- [Investing.com日本] モルガン・スタンレー、第2四半期決算前に航空宇宙・防衛セクターに強気姿勢を維持 (07/16 03:38)
+- [Investing.com日本] クラウン・キャッスル株、決算発表で5.4%動く可能性 (07/16 03:28)
+- [Investing.com日本] CME グループ株、7月22日の決算発表で3.8%動く可能性 (07/16 03:21)
+- [Yahoo!ファイナンス] 【新NISA】買付額が早くも71兆円を突破！ オルカンの陰で猛追する「半導体ファンド」の正体(MONEY PLUS) (07/16 06:30)
+  概要: 金融庁の最新調査によると、新NISAの累計買付額は早くも71兆円を突破し、政府目標を前倒しでクリアする急成長を見せています。「オルカン」や「S&amp;P500」といった定番のインデックスファンドが依
+- [Yahoo!ファイナンス] 骨太方針2026で読む政策テーマ、AI・防衛・電力に広がる投資機会(MONEY PLUS) (07/16 06:30)
+  概要: 毎年6月に公表される「骨太の方針」は、政府がどの分野に資金を向け、どの産業を育てようとしているのかを示す政策文書です。2026年の原案では、AI、半導体、防衛、電力インフラ、防災、地域経済などが投資テ
+- [ZUU online] 採用で見るべきは実績だけではない！ 挫折経験から見抜く5つの資質 (07/16 06:00)
+  概要: 本記事は、岩澤 脩氏の著書『だからベンチャーキャピタルはやめられない 投資家だけが知っている 起業とお金のリアル』（ディスカヴァー・トゥエンティワン）の中から一部を抜粋・編集しています。 キャピタリス
+- [Investing.com日本] アナログ半導体株が注目、セクター回復が加速 (07/16 05:29)
+- [NHK経済] エヌビディアCEOが来日 日本の大手ゲーム会社と交流 (07/15 23:55)
+  概要: アメリカの半導体大手「エヌビディア」のジェンスン・フアンCEOが日本を訪れ、長年、自社製品を提供する日本の大手ゲーム会社と共同で開いたイベントに出席し、経営が苦しかった時代に出資を受けたエピソードなど
 
 【依頼内容】
 上記の指数の動きについて、ニュースの内容と紐付けて解説してください。
@@ -1116,14 +1316,14 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
-- S&P 500: 取得失敗
-- NASDAQ: 26,132.04 (+0.00%)
-- ダウ: 52,717.58 (+0.00%)
-- ドル円: 162.43 円 (+0.00%)
-- 米10年債利回り: 4.559 % (+0.00%)
-- WTI原油: 79.16 USD (-0.23%)
-- 金: 4066.20 USD (+0.13%)
-- 日経225: 68,751.51 pt (+0.00%)
+- S&P 500: 7,572.40 (+0.38%)
+- NASDAQ: 26,269.23 (+0.62%)
+- ダウ: 52,658.64 (+0.29%)
+- ドル円: 162.11 円 (-0.20%)
+- 米10年債利回り: 4.545 % (-0.87%)
+- WTI原油: 80.24 USD (+1.13%)
+- 金: 4066.90 USD (+0.14%)
+- 日経225: 67,743.50 pt (+0.00%)
 - TOPIX (1306連動ETF): 425.6 円 (+1.02%)
 
 【個別株の寄与度ランキング】
@@ -1140,15 +1340,22 @@
   -4.39円  オリエンタルランド(4661)  -4.48%  [サービス]
   -4.29円  エーザイ(4523)  -2.74%  [医薬品]
 ▼ S&P500 (上昇寄与TOP5)
+  ++29.29pt  Apple Inc.(AAPL)  +4.01%  wt:9.67%  [Information Technology]
+  ++24.56pt  Alphabet Inc. (Class C)(GOOG)  +3.60%  wt:9.03%  [Communication Services]
+  ++21.76pt  Alphabet Inc. (Class A)(GOOGL)  +3.17%  wt:9.09%  [Communication Services]
+  ++12.56pt  Amazon(AMZN)  +3.02%  wt:5.52%  [Consumer Discretionary]
+  ++12.55pt  Microsoft(MSFT)  +2.78%  wt:5.98%  [Information Technology]
 ▼ S&P500 (下落寄与TOP5)
+  -13.75pt  Micron Technology(MU)  -8.02%  wt:2.27%  [Information Technology]
+  -4.91pt  Advanced Micro Devices(AMD)  -3.46%  wt:1.88%  [Information Technology]
+  -4.51pt  Dell Technologies(DELL)  -9.80%  wt:0.61%  [Information Technology]
+  -3.66pt  Intel(INTC)  -4.43%  wt:1.10%  [Information Technology]
+  -3.35pt  Cisco(CSCO)  -4.54%  wt:0.98%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] NY株、続伸して始まる(共同通信) (07/15 23:18)
-  概要: 【ニューヨーク共同】15日のニューヨーク株式市場のダウ工業株30種平均は続伸し、午前9時45分現在は前日比145.29ドル高の5万2653.56ドルを付けた。
-- [Yahoo!ファイナンス] ゼリー飲料で異彩放つポッカサッポロの「キレートレモン クエン酸2700ゼリー」　疲れ切る前の小腹満しニーズを獲得して続伸(食品新聞) (07/15 22:05)
-  概要: ポッカサッポロフード＆ビバレッジの「キレートレモン クエン酸2700ゼリー」（以下、クエン酸2700ゼリー）がゼリー飲料市場で異彩を放ち続伸している。
-
-　ゼリー飲料市場が、昨年の酷暑による外出控え
+- [Investing.com日本] VivoSim Labsの株価が本日下落した理由とは (07/16 06:17)
+- [Investing.com日本] AST SpaceMobileの株価、10億ドル規模の転換社債発行計画で急落 (07/16 05:08)
+- [Investing.com日本] Jones Ventures INTL Acquisition1、ナスダックで2億ドルのIPOを完了 (07/16 03:40)
 - [ZUU online] 日々是相場［夕刊］――  2026年7月15日（水） (07/15 20:00)
   概要: 日経平均 68,751.51円 △1,008.01円 為替 １ドル＝162.17円 売買高（東証プライム、以下同） 24億7,594万株 売買代金 9兆5675億12百万円 値上り銘柄数 1,153銘
 - [ZUU online] 米ドル／円 ―― レンジで膠着するなら値動きの出やすいNZドル／米ドルやNZドル／円にも目を向けたい (07/15 19:30)
@@ -1163,19 +1370,22 @@
   概要: 15日の東京株式市場、今後も半導体需要は拡大するという見方から、関連する銘柄を中心に買い注文が広がって、日経平均株価は、1000円以上、値上がりしました。
 - [ZUU online] 暗号資産と何が違う？　ブロックチェーン投資信託の仕組みと将来性 (07/15 16:00)
   概要: ［PR］インベスコ・アセット・マネジメント株式会社 この記事の結論 ブロックチェーン投資信託は、暗号資産そのものではなく、関連企業の株式を通じてブロックチェーン技術の成長に投資できる金融商品であり、分
-- [ZUU online] 利上げ警戒の金相場安は一時的、安全資産需要で上昇基調続く (07/15 15:00)
-  概要: この記事は2026年7月3日に「きんざいOnline：週刊金融財政事情」で公開された「利上げ警戒の金相場安は一時的、安全資産需要で上昇基調続く」を一部編集し、転載したものです。 2026年上期のNY金
-- [Yahoo!ファイナンス] レント（372A）、「増配」を発表して、配当利回りが4.6％にアップ！ 年間配当額は1年で6.8％増加し、2027年5月期は前期比15円増の｢1株あたり235円｣に(ダイヤモンド・ザイ) (07/15 23:40)
-  概要: レントは、2027年5月期の配当を前期比で「増配」とする予想を、2026年7月15日の15時30分に発表した。これにより、レントの配当利回り(予想)は4.11％⇒4.60％にアップした。
-
-　レント
+- [NHK経済] 米FRB経済報告 イラン情勢影響で物価は全体として緩やかに上昇 (07/16 06:18)
+  概要: アメリカのFRB＝連邦準備制度理事会は最新の経済報告を公表し、イラン情勢によるエネルギー価格の上昇などを受けて、物価は全体として緩やかに上昇したと指摘しました。
 - [NHK経済] 中国 GDP 4～6月は前年同期比＋4.3％ 景気の減速傾向鮮明に (07/15 18:13)
   概要: 中国のことし4月から先月までのGDP＝国内総生産の伸び率は去年の同じ時期と比べてプラス4.3％となりました。コロナ禍の2022年10月から12月以来の低い水準で、個人消費や投資が振るわず景気の減速傾向
-- [Investing.com日本] 原油価格の急騰はリスク資産への強気見通しを変えない＝HSBC (07/15 23:01)
-- [NHK経済] 石油連盟会長 “中東産油国のパイプライン増強へ支援検討” (07/15 22:05)
-  概要: 石油元売り各社で作る「石油連盟」の木藤会長は15日の定例会見で、ホルムズ海峡を通らないルートでの原油調達を拡大するため、中東の産油国が取り組むパイプラインの増強への支援を日本政府とともに検討する考えを
-- [NHK経済] 暗号資産を「金融商品」に位置づける改正金融商品取引法が成立 (07/15 16:06)
-  概要: ビットコインなどの暗号資産を投資対象とする人が増える中、暗号資産を「金融商品」として位置づける金融商品取引法の改正案が15日に開かれた参議院本会議で可決・成立しました。
+- [Investing.com日本] モルガン・スタンレー、第2四半期決算前に航空宇宙・防衛セクターに強気姿勢を維持 (07/16 03:38)
+- [Investing.com日本] クラウン・キャッスル株、決算発表で5.4%動く可能性 (07/16 03:28)
+- [Investing.com日本] CME グループ株、7月22日の決算発表で3.8%動く可能性 (07/16 03:21)
+- [Yahoo!ファイナンス] 【新NISA】買付額が早くも71兆円を突破！ オルカンの陰で猛追する「半導体ファンド」の正体(MONEY PLUS) (07/16 06:30)
+  概要: 金融庁の最新調査によると、新NISAの累計買付額は早くも71兆円を突破し、政府目標を前倒しでクリアする急成長を見せています。「オルカン」や「S&amp;P500」といった定番のインデックスファンドが依
+- [Yahoo!ファイナンス] 骨太方針2026で読む政策テーマ、AI・防衛・電力に広がる投資機会(MONEY PLUS) (07/16 06:30)
+  概要: 毎年6月に公表される「骨太の方針」は、政府がどの分野に資金を向け、どの産業を育てようとしているのかを示す政策文書です。2026年の原案では、AI、半導体、防衛、電力インフラ、防災、地域経済などが投資テ
+- [ZUU online] 採用で見るべきは実績だけではない！ 挫折経験から見抜く5つの資質 (07/16 06:00)
+  概要: 本記事は、岩澤 脩氏の著書『だからベンチャーキャピタルはやめられない 投資家だけが知っている 起業とお金のリアル』（ディスカヴァー・トゥエンティワン）の中から一部を抜粋・編集しています。 キャピタリス
+- [Investing.com日本] アナログ半導体株が注目、セクター回復が加速 (07/16 05:29)
+- [NHK経済] エヌビディアCEOが来日 日本の大手ゲーム会社と交流 (07/15 23:55)
+  概要: アメリカの半導体大手「エヌビディア」のジェンスン・フアンCEOが日本を訪れ、長年、自社製品を提供する日本の大手ゲーム会社と共同で開いたイベントに出席し、経営が苦しかった時代に出資を受けたエピソードなど
 
 【依頼内容】
 - 最も動きが大きかった指標トップ3を特定
@@ -1184,14 +1394,14 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
-- S&P 500: 取得失敗
-- NASDAQ: 26,132.04 (+0.00%)
-- ダウ: 52,717.58 (+0.00%)
-- ドル円: 162.43 円 (+0.00%)
-- 米10年債利回り: 4.559 % (+0.00%)
-- WTI原油: 79.16 USD (-0.23%)
-- 金: 4066.20 USD (+0.13%)
-- 日経225: 68,751.51 pt (+0.00%)
+- S&P 500: 7,572.40 (+0.38%)
+- NASDAQ: 26,269.23 (+0.62%)
+- ダウ: 52,658.64 (+0.29%)
+- ドル円: 162.11 円 (-0.20%)
+- 米10年債利回り: 4.545 % (-0.87%)
+- WTI原油: 80.24 USD (+1.13%)
+- 金: 4066.90 USD (+0.14%)
+- 日経225: 67,743.50 pt (+0.00%)
 - TOPIX (1306連動ETF): 425.6 円 (+1.02%)
 
 【個別株の寄与度ランキング】
@@ -1208,15 +1418,22 @@
   -4.39円  オリエンタルランド(4661)  -4.48%  [サービス]
   -4.29円  エーザイ(4523)  -2.74%  [医薬品]
 ▼ S&P500 (上昇寄与TOP5)
+  ++29.29pt  Apple Inc.(AAPL)  +4.01%  wt:9.67%  [Information Technology]
+  ++24.56pt  Alphabet Inc. (Class C)(GOOG)  +3.60%  wt:9.03%  [Communication Services]
+  ++21.76pt  Alphabet Inc. (Class A)(GOOGL)  +3.17%  wt:9.09%  [Communication Services]
+  ++12.56pt  Amazon(AMZN)  +3.02%  wt:5.52%  [Consumer Discretionary]
+  ++12.55pt  Microsoft(MSFT)  +2.78%  wt:5.98%  [Information Technology]
 ▼ S&P500 (下落寄与TOP5)
+  -13.75pt  Micron Technology(MU)  -8.02%  wt:2.27%  [Information Technology]
+  -4.91pt  Advanced Micro Devices(AMD)  -3.46%  wt:1.88%  [Information Technology]
+  -4.51pt  Dell Technologies(DELL)  -9.80%  wt:0.61%  [Information Technology]
+  -3.66pt  Intel(INTC)  -4.43%  wt:1.10%  [Information Technology]
+  -3.35pt  Cisco(CSCO)  -4.54%  wt:0.98%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] NY株、続伸して始まる(共同通信) (07/15 23:18)
-  概要: 【ニューヨーク共同】15日のニューヨーク株式市場のダウ工業株30種平均は続伸し、午前9時45分現在は前日比145.29ドル高の5万2653.56ドルを付けた。
-- [Yahoo!ファイナンス] ゼリー飲料で異彩放つポッカサッポロの「キレートレモン クエン酸2700ゼリー」　疲れ切る前の小腹満しニーズを獲得して続伸(食品新聞) (07/15 22:05)
-  概要: ポッカサッポロフード＆ビバレッジの「キレートレモン クエン酸2700ゼリー」（以下、クエン酸2700ゼリー）がゼリー飲料市場で異彩を放ち続伸している。
-
-　ゼリー飲料市場が、昨年の酷暑による外出控え
+- [Investing.com日本] VivoSim Labsの株価が本日下落した理由とは (07/16 06:17)
+- [Investing.com日本] AST SpaceMobileの株価、10億ドル規模の転換社債発行計画で急落 (07/16 05:08)
+- [Investing.com日本] Jones Ventures INTL Acquisition1、ナスダックで2億ドルのIPOを完了 (07/16 03:40)
 - [ZUU online] 日々是相場［夕刊］――  2026年7月15日（水） (07/15 20:00)
   概要: 日経平均 68,751.51円 △1,008.01円 為替 １ドル＝162.17円 売買高（東証プライム、以下同） 24億7,594万株 売買代金 9兆5675億12百万円 値上り銘柄数 1,153銘
 - [ZUU online] 米ドル／円 ―― レンジで膠着するなら値動きの出やすいNZドル／米ドルやNZドル／円にも目を向けたい (07/15 19:30)
@@ -1231,19 +1448,22 @@
   概要: 15日の東京株式市場、今後も半導体需要は拡大するという見方から、関連する銘柄を中心に買い注文が広がって、日経平均株価は、1000円以上、値上がりしました。
 - [ZUU online] 暗号資産と何が違う？　ブロックチェーン投資信託の仕組みと将来性 (07/15 16:00)
   概要: ［PR］インベスコ・アセット・マネジメント株式会社 この記事の結論 ブロックチェーン投資信託は、暗号資産そのものではなく、関連企業の株式を通じてブロックチェーン技術の成長に投資できる金融商品であり、分
-- [ZUU online] 利上げ警戒の金相場安は一時的、安全資産需要で上昇基調続く (07/15 15:00)
-  概要: この記事は2026年7月3日に「きんざいOnline：週刊金融財政事情」で公開された「利上げ警戒の金相場安は一時的、安全資産需要で上昇基調続く」を一部編集し、転載したものです。 2026年上期のNY金
-- [Yahoo!ファイナンス] レント（372A）、「増配」を発表して、配当利回りが4.6％にアップ！ 年間配当額は1年で6.8％増加し、2027年5月期は前期比15円増の｢1株あたり235円｣に(ダイヤモンド・ザイ) (07/15 23:40)
-  概要: レントは、2027年5月期の配当を前期比で「増配」とする予想を、2026年7月15日の15時30分に発表した。これにより、レントの配当利回り(予想)は4.11％⇒4.60％にアップした。
-
-　レント
+- [NHK経済] 米FRB経済報告 イラン情勢影響で物価は全体として緩やかに上昇 (07/16 06:18)
+  概要: アメリカのFRB＝連邦準備制度理事会は最新の経済報告を公表し、イラン情勢によるエネルギー価格の上昇などを受けて、物価は全体として緩やかに上昇したと指摘しました。
 - [NHK経済] 中国 GDP 4～6月は前年同期比＋4.3％ 景気の減速傾向鮮明に (07/15 18:13)
   概要: 中国のことし4月から先月までのGDP＝国内総生産の伸び率は去年の同じ時期と比べてプラス4.3％となりました。コロナ禍の2022年10月から12月以来の低い水準で、個人消費や投資が振るわず景気の減速傾向
-- [Investing.com日本] 原油価格の急騰はリスク資産への強気見通しを変えない＝HSBC (07/15 23:01)
-- [NHK経済] 石油連盟会長 “中東産油国のパイプライン増強へ支援検討” (07/15 22:05)
-  概要: 石油元売り各社で作る「石油連盟」の木藤会長は15日の定例会見で、ホルムズ海峡を通らないルートでの原油調達を拡大するため、中東の産油国が取り組むパイプラインの増強への支援を日本政府とともに検討する考えを
-- [NHK経済] 暗号資産を「金融商品」に位置づける改正金融商品取引法が成立 (07/15 16:06)
-  概要: ビットコインなどの暗号資産を投資対象とする人が増える中、暗号資産を「金融商品」として位置づける金融商品取引法の改正案が15日に開かれた参議院本会議で可決・成立しました。
+- [Investing.com日本] モルガン・スタンレー、第2四半期決算前に航空宇宙・防衛セクターに強気姿勢を維持 (07/16 03:38)
+- [Investing.com日本] クラウン・キャッスル株、決算発表で5.4%動く可能性 (07/16 03:28)
+- [Investing.com日本] CME グループ株、7月22日の決算発表で3.8%動く可能性 (07/16 03:21)
+- [Yahoo!ファイナンス] 【新NISA】買付額が早くも71兆円を突破！ オルカンの陰で猛追する「半導体ファンド」の正体(MONEY PLUS) (07/16 06:30)
+  概要: 金融庁の最新調査によると、新NISAの累計買付額は早くも71兆円を突破し、政府目標を前倒しでクリアする急成長を見せています。「オルカン」や「S&amp;P500」といった定番のインデックスファンドが依
+- [Yahoo!ファイナンス] 骨太方針2026で読む政策テーマ、AI・防衛・電力に広がる投資機会(MONEY PLUS) (07/16 06:30)
+  概要: 毎年6月に公表される「骨太の方針」は、政府がどの分野に資金を向け、どの産業を育てようとしているのかを示す政策文書です。2026年の原案では、AI、半導体、防衛、電力インフラ、防災、地域経済などが投資テ
+- [ZUU online] 採用で見るべきは実績だけではない！ 挫折経験から見抜く5つの資質 (07/16 06:00)
+  概要: 本記事は、岩澤 脩氏の著書『だからベンチャーキャピタルはやめられない 投資家だけが知っている 起業とお金のリアル』（ディスカヴァー・トゥエンティワン）の中から一部を抜粋・編集しています。 キャピタリス
+- [Investing.com日本] アナログ半導体株が注目、セクター回復が加速 (07/16 05:29)
+- [NHK経済] エヌビディアCEOが来日 日本の大手ゲーム会社と交流 (07/15 23:55)
+  概要: アメリカの半導体大手「エヌビディア」のジェンスン・フアンCEOが日本を訪れ、長年、自社製品を提供する日本の大手ゲーム会社と共同で開いたイベントに出席し、経営が苦しかった時代に出資を受けたエピソードなど
 
 【依頼内容】
 - 短期的なリスク要因（今後1週間以内）
