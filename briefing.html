@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年07月15日 14:11 JST</span>
+    <span class="updated">更新: 2026年07月15日 18:54 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">68,751.51 <span class="tile-unit">pt</span></div>
+          <div class="tile-change flat">
+            +0.00&nbsp;&nbsp;+0.00%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">425.6 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +4.30&nbsp;&nbsp;+1.02%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">162.34 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -0.09&nbsp;&nbsp;-0.05%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">nan <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">162.20 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -0.23&nbsp;&nbsp;-0.14%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.609 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">79.87 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">79.82 <span class="tile-unit">USD</span></div>
           <div class="tile-change up">
-            +0.53&nbsp;&nbsp;+0.67%
+            +0.48&nbsp;&nbsp;+0.60%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4040.40 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4033.80 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -20.70&nbsp;&nbsp;-0.51%
+            -27.30&nbsp;&nbsp;-0.67%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">68,571.16 <span class="tile-unit">pt</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">424.5 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +3.20&nbsp;&nbsp;+0.76%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -672,8 +672,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/8035:TYO" target="_blank" rel="noopener">東京エレクトロン</a>
                 <span class="contrib-sector">半導体製造装置</span>
               </td>
-              <td class="up">+85.71</td>
-              <td class="up">+3.37%</td>
+              <td class="up">+111.07</td>
+              <td class="up">+4.37%</td>
             </tr>
             
             <tr>
@@ -681,8 +681,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6857:TYO" target="_blank" rel="noopener">アドバンテスト</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="up">+50.89</td>
-              <td class="up">+4.79%</td>
+              <td class="up">+61.96</td>
+              <td class="up">+5.83%</td>
             </tr>
             
             <tr>
@@ -690,8 +690,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="up">+30.71</td>
-              <td class="up">+1.14%</td>
+              <td class="up">+43.93</td>
+              <td class="up">+1.63%</td>
             </tr>
             
             <tr>
@@ -699,8 +699,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/4063:TYO" target="_blank" rel="noopener">信越化学</a>
                 <span class="contrib-sector">化学</span>
               </td>
-              <td class="up">+6.21</td>
-              <td class="up">+2.33%</td>
+              <td class="up">+7.82</td>
+              <td class="up">+2.93%</td>
             </tr>
             
             <tr>
@@ -708,8 +708,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6954:TYO" target="_blank" rel="noopener">ファナック</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="up">+4.86</td>
-              <td class="up">+1.99%</td>
+              <td class="up">+6.04</td>
+              <td class="up">+2.47%</td>
             </tr>
             
             </tbody>
@@ -731,26 +731,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/9983:TYO" target="_blank" rel="noopener">ファーストリテイリング</a>
                 <span class="contrib-sector">小売</span>
               </td>
-              <td class="down">-20.71</td>
-              <td class="down">-0.73%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/6367:TYO" target="_blank" rel="noopener">ダイキン</a>
-                <span class="contrib-sector">機械</span>
-              </td>
-              <td class="down">-9.82</td>
-              <td class="down">-1.10%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/6098:TYO" target="_blank" rel="noopener">リクルートHD</a>
-                <span class="contrib-sector">サービス</span>
-              </td>
-              <td class="down">-6.25</td>
-              <td class="down">-1.38%</td>
+              <td class="down">-34.29</td>
+              <td class="down">-1.20%</td>
             </tr>
             
             <tr>
@@ -758,8 +740,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/7741:TYO" target="_blank" rel="noopener">HOYA</a>
                 <span class="contrib-sector">精密機器</span>
               </td>
-              <td class="down">-5.89</td>
-              <td class="down">-0.65%</td>
+              <td class="down">-8.57</td>
+              <td class="down">-0.94%</td>
             </tr>
             
             <tr>
@@ -767,8 +749,26 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/9984:TYO" target="_blank" rel="noopener">ソフトバンクG</a>
                 <span class="contrib-sector">通信</span>
               </td>
-              <td class="down">-4.79</td>
-              <td class="down">-2.04%</td>
+              <td class="down">-7.64</td>
+              <td class="down">-3.26%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/4661:TYO" target="_blank" rel="noopener">オリエンタルランド</a>
+                <span class="contrib-sector">サービス</span>
+              </td>
+              <td class="down">-4.39</td>
+              <td class="down">-4.48%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/4523:TYO" target="_blank" rel="noopener">エーザイ</a>
+                <span class="contrib-sector">医薬品</span>
+              </td>
+              <td class="down">-4.29</td>
+              <td class="down">-2.74%</td>
             </tr>
             
             </tbody>
@@ -875,7 +875,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (17件)</div>
+    <div class="card-title">📰 最新ニュース (15件)</div>
     
     
     
@@ -890,38 +890,88 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/d5ea5c7d39cfc9dc930bc92f316d4d2b8fc935fb?source=rss" target="_blank" rel="noopener">福岡・長崎でトランクルーム拡大！エリアリンクとJR九州コンサルタンツが提携強化(Yahoo!ニュース PR［PR］)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>07/15 14:06</span>
-              </div>
-              
-              <div class="news-summary">エリアリンク株式会社とJR九州コンサルタンツ株式会社が提携を強化し、福岡・長崎地区でトランクルームを拡大します。合計67物件・1,384室の規模に成長し、新たに運営委託される52物件・955室は、20…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1603005" target="_blank" rel="noopener">クリレスＨＤ---「らぁめん小池」運営のイノセンスの株式取得</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1603382" target="_blank" rel="noopener">15日の香港市場概況： ハンセン指数は4日続伸、米利上げ観測の後退で約1カ月ぶりの高値</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>07/15 13:30</span>
+                <span>07/15 18:45</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260715/k10015177371000.html" target="_blank" rel="noopener">株価 値上がり AI・半導体関連の業績 堅調に推移との見方から</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1603381" target="_blank" rel="noopener">15日の中国本土市場概況：小反落、GDPの下振れなどが足かせ</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>07/15 18:45</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260715/k10015177701000.html" target="_blank" rel="noopener">円相場 ドルに対して小幅な値動き</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">NHK経済</span>
-                <span>07/15 13:17</span>
+                <span>07/15 18:25</span>
               </div>
               
-              <div class="news-summary">15日の東京株式市場、AI・半導体関連の企業の業績が堅調に推移するという見方から、日経平均株価は値上がりしています。</div>
+              <div class="news-summary">15日の東京外国為替市場、円相場はドルに対して小幅な値動きとなりました。</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/302400" target="_blank" rel="noopener">2026年のTOB、節目の50件に到達 3年連続の100件突破が早くも濃厚に</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>07/15 17:32</span>
+              </div>
+              
+              <div class="news-summary">上場企業の買収や非公開化などを目的とするTOB（株式公開買い付け）が快進撃を続けている。2026年の件数が節目の50件（届け出ベース）に到達した。過去最多の年間136件に達した前年のペースは下回るもの…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260715/k10015177371000.html" target="_blank" rel="noopener">株価 値上がり 半導体の需要拡大の見方から関連銘柄値上がり</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>07/15 16:48</span>
+              </div>
+              
+              <div class="news-summary">15日の東京株式市場、今後も半導体需要は拡大するという見方から、関連する銘柄を中心に買い注文が広がって、日経平均株価は、1000円以上、値上がりしました。</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/302081" target="_blank" rel="noopener">暗号資産と何が違う？　ブロックチェーン投資信託の仕組みと将来性</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>07/15 16:00</span>
+              </div>
+              
+              <div class="news-summary">［PR］インベスコ・アセット・マネジメント株式会社 この記事の結論 ブロックチェーン投資信託は、暗号資産そのものではなく、関連企業の株式を通じてブロックチェーン技術の成長に投資できる金融商品であり、分…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/302453" target="_blank" rel="noopener">利上げ警戒の金相場安は一時的、安全資産需要で上昇基調続く</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>07/15 15:00</span>
+              </div>
+              
+              <div class="news-summary">この記事は2026年7月3日に「きんざいOnline：週刊金融財政事情」で公開された「利上げ警戒の金相場安は一時的、安全資産需要で上昇基調続く」を一部編集し、転載したものです。 2026年上期のNY金…</div>
               
             </div>
             
@@ -951,58 +1001,6 @@
               
             </div>
             
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302524" target="_blank" rel="noopener">FX/為替「ドル/円今日の見通し｜米CPI下振れで早期利上げ観測後退 じりじりとした円安基調続く」 外為どっとコム トゥデイ 2026年7月15日号</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/15 10:32</span>
-              </div>
-              
-              <div class="news-summary">主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月15日8時10分執筆・監修：株式会社外…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260714/k10015177041000.html" target="_blank" rel="noopener">米物価上昇率3.5％ 伸び率縮小で早期利上げ観測 やや後退</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>07/15 05:45</span>
-              </div>
-              
-              <div class="news-summary">アメリカの先月の消費者物価指数は、去年の同じ月と比べて3.5％の上昇となりました。伸び率は、依然として高い水準が続いていますが、前の月と比べると0.7ポイント縮小しました。</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302522" target="_blank" rel="noopener">日々是相場［夕刊］――  2026年7月14日（火）</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/14 20:00</span>
-              </div>
-              
-              <div class="news-summary">日経平均 67,743.50円 △500.77円 為替 １ドル＝162.36円 売買高（東証プライム、以下同） 27億3,879万株 売買代金 10兆7628億75百万円 値上り銘柄数 1,186銘柄…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302521" target="_blank" rel="noopener">米ドル／円 ―― 米CPIの結果次第では163円突破の事態も想定しておきたいが逆に下がったとしても買い場となりそうだ</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/14 19:30</span>
-              </div>
-              
-              <div class="news-summary">この記事は2026年7月14日（火）に「羊飼いのFXブログ」公開された「志摩力男氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月14日（火）の午後14時ころに現役ト…</div>
-              
-            </div>
-            
           </div>
         </div>
         
@@ -1010,7 +1008,7 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (3件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (1件)</div>
           <div class="news-list">
             
             <div class="news-item">
@@ -1019,36 +1017,10 @@
               </div>
               <div class="news-meta">
                 <span class="news-source">NHK経済</span>
-                <span>07/15 13:14</span>
+                <span>07/15 18:13</span>
               </div>
               
               <div class="news-summary">中国のことし4月から先月までのGDP＝国内総生産の伸び率は去年の同じ時期と比べてプラス4.3％となりました。コロナ禍の2022年10月から12月以来の低い水準で、個人消費や投資が振るわず景気の減速傾向…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260715/k10015177301000.html" target="_blank" rel="noopener">日銀 10年前のマイナス金利政策導入した会合の議事録を公開</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>07/15 12:46</span>
-              </div>
-              
-              <div class="news-summary">日銀は、黒田総裁のもとで大規模な金融緩和を続けていた10年前の2016年前半に行われた金融政策決定会合の議事録を公開しました。異例のマイナス金利政策を導入した会合は、賛成が反対をわずかに上回るギリギリ…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302525" target="_blank" rel="noopener">アンダースロー：なぜ政府の負債を恐れる必要はないのか？会田と豪経済学者との対談動画です</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/15 10:00</span>
-              </div>
-              
-              <div class="news-summary">この記事は2026年1月5日に配信されたメールマガジン「アンダースロー（ウィークリー）：黒字化したプライマリーバランスの予算は円安の原因に」を一部編集し、転載したものです。 目次シンカー米国：AI需要…</div>
               
             </div>
             
@@ -1064,22 +1036,22 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1603017" target="_blank" rel="noopener">プログレス---大幅に反落、27年2月期第1四半期の営業利益14.6％減、マネジメント層の拡充などで減益</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1603373" target="_blank" rel="noopener">マッコーリー、損失を受けてインドの石油・ガス企業の業績予想を引き下げ</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>07/15 14:00</span>
+                <span>07/15 18:36</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1603003" target="_blank" rel="noopener">クリレスＨＤ---1Q増収増益、通期業績予想に対して順調に進捗</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1603354" target="_blank" rel="noopener">property technologies---2Qは増収増益、中古住宅再生が増益</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>07/15 13:30</span>
+                <span>07/15 18:30</span>
               </div>
               
             </div>
@@ -1122,14 +1094,14 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://zuuonline.com/archives/302388" target="_blank" rel="noopener">「100億円を調達」と「100億円で調達」は何が違う？</a>
+                <a href="http://www3.nhk.or.jp/news/html/20260715/k10015177471000.html" target="_blank" rel="noopener">暗号資産を「金融商品」に位置づける改正金融商品取引法が成立</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/15 06:00</span>
+                <span class="news-source">NHK経済</span>
+                <span>07/15 16:06</span>
               </div>
               
-              <div class="news-summary">本記事は、岩澤 脩氏の著書『だからベンチャーキャピタルはやめられない 投資家だけが知っている 起業とお金のリアル』（ディスカヴァー・トゥエンティワン）の中から一部を抜粋・編集しています。 プレバリュー…</div>
+              <div class="news-summary">ビットコインなどの暗号資産を投資対象とする人が増える中、暗号資産を「金融商品」として位置づける金融商品取引法の改正案が15日に開かれた参議院本会議で可決・成立しました。</div>
               
             </div>
             
@@ -1143,34 +1115,34 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-15 14:11）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-15 18:54）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 68,751.51 pt (+0.00%)
+- TOPIX (1306連動ETF): 425.6 円 (+1.02%)
+- ドル円: 162.34 円 (-0.05%)
 - S&P 500: nan (+nan%)
 - NASDAQ: nan (+nan%)
 - ダウ: nan (+nan%)
-- ドル円: 162.20 円 (-0.14%)
 - 米10年債利回り: 4.609 % (+0.00%)
-- WTI原油: 79.87 USD (+0.67%)
-- 金: 4040.40 USD (-0.51%)
-- 日経225: 68,571.16 pt (+0.00%)
-- TOPIX (1306連動ETF): 424.5 円 (+0.76%)
+- WTI原油: 79.82 USD (+0.60%)
+- 金: 4033.80 USD (-0.67%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++85.71円  東京エレクトロン(8035)  +3.37%  [半導体製造装置]
-  ++50.89円  アドバンテスト(6857)  +4.79%  [電機]
-  ++30.71円  キーエンス(6861)  +1.14%  [電機]
-  ++6.21円  信越化学(4063)  +2.33%  [化学]
-  ++4.86円  ファナック(6954)  +1.99%  [電機]
+  ++111.07円  東京エレクトロン(8035)  +4.37%  [半導体製造装置]
+  ++61.96円  アドバンテスト(6857)  +5.83%  [電機]
+  ++43.93円  キーエンス(6861)  +1.63%  [電機]
+  ++7.82円  信越化学(4063)  +2.93%  [化学]
+  ++6.04円  ファナック(6954)  +2.47%  [電機]
 ▼ 日経225 (下落寄与TOP5)
-  -20.71円  ファーストリテイリング(9983)  -0.73%  [小売]
-  -9.82円  ダイキン(6367)  -1.10%  [機械]
-  -6.25円  リクルートHD(6098)  -1.38%  [サービス]
-  -5.89円  HOYA(7741)  -0.65%  [精密機器]
-  -4.79円  ソフトバンクG(9984)  -2.04%  [通信]
+  -34.29円  ファーストリテイリング(9983)  -1.20%  [小売]
+  -8.57円  HOYA(7741)  -0.94%  [精密機器]
+  -7.64円  ソフトバンクG(9984)  -3.26%  [通信]
+  -4.39円  オリエンタルランド(4661)  -4.48%  [サービス]
+  -4.29円  エーザイ(4523)  -2.74%  [医薬品]
 ▼ S&P500 (上昇寄与TOP5)
   ++12.89pt  Alphabet Inc. (Class C)(GOOG)  +1.90%  wt:9.03%  [Communication Services]
   ++3.27pt  Dell Technologies(DELL)  +7.12%  wt:0.61%  [Information Technology]
@@ -1181,37 +1153,32 @@
   -0.88pt  AbbVie(ABBV)  -1.30%  wt:0.90%  [Health Care]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 福岡・長崎でトランクルーム拡大！エリアリンクとJR九州コンサルタンツが提携強化(Yahoo!ニュース PR［PR］) (07/15 14:06)
-  概要: エリアリンク株式会社とJR九州コンサルタンツ株式会社が提携を強化し、福岡・長崎地区でトランクルームを拡大します。合計67物件・1,384室の規模に成長し、新たに運営委託される52物件・955室は、20
-- [Investing.com日本] クリレスＨＤ---「らぁめん小池」運営のイノセンスの株式取得 (07/15 13:30)
-- [NHK経済] 株価 値上がり AI・半導体関連の業績 堅調に推移との見方から (07/15 13:17)
-  概要: 15日の東京株式市場、AI・半導体関連の企業の業績が堅調に推移するという見方から、日経平均株価は値上がりしています。
+- [Investing.com日本] 15日の香港市場概況： ハンセン指数は4日続伸、米利上げ観測の後退で約1カ月ぶりの高値 (07/15 18:45)
+- [Investing.com日本] 15日の中国本土市場概況：小反落、GDPの下振れなどが足かせ (07/15 18:45)
+- [NHK経済] 円相場 ドルに対して小幅な値動き (07/15 18:25)
+  概要: 15日の東京外国為替市場、円相場はドルに対して小幅な値動きとなりました。
+- [ZUU online] 2026年のTOB、節目の50件に到達 3年連続の100件突破が早くも濃厚に (07/15 17:32)
+  概要: 上場企業の買収や非公開化などを目的とするTOB（株式公開買い付け）が快進撃を続けている。2026年の件数が節目の50件（届け出ベース）に到達した。過去最多の年間136件に達した前年のペースは下回るもの
+- [NHK経済] 株価 値上がり 半導体の需要拡大の見方から関連銘柄値上がり (07/15 16:48)
+  概要: 15日の東京株式市場、今後も半導体需要は拡大するという見方から、関連する銘柄を中心に買い注文が広がって、日経平均株価は、1000円以上、値上がりしました。
+- [ZUU online] 暗号資産と何が違う？　ブロックチェーン投資信託の仕組みと将来性 (07/15 16:00)
+  概要: ［PR］インベスコ・アセット・マネジメント株式会社 この記事の結論 ブロックチェーン投資信託は、暗号資産そのものではなく、関連企業の株式を通じてブロックチェーン技術の成長に投資できる金融商品であり、分
+- [ZUU online] 利上げ警戒の金相場安は一時的、安全資産需要で上昇基調続く (07/15 15:00)
+  概要: この記事は2026年7月3日に「きんざいOnline：週刊金融財政事情」で公開された「利上げ警戒の金相場安は一時的、安全資産需要で上昇基調続く」を一部編集し、転載したものです。 2026年上期のNY金
 - [ZUU online] 「人こそがすべて」のファブレス経営。プレミアアンチエイジング松浦社長が、唯一無二の経営資源である社員の「休養と健康」を育む理由 (07/15 13:00)
   概要: 「アンチエイジング」の力で誰もが輝ける未来を追求する企業、プレミアアンチエイジング株式会社。創業者で代表取締役社長の松浦清氏は、人生100年時代における健康寿命の延伸こそが、社会全体の幸せにつながると
 - [ZUU online] 三菱商事が良品計画の全株式3.9％を売却　第4位株主から協業パートナーへ (07/15 12:02)
   概要: 「無印良品」を展開する良品計画は7月13日、三菱商事と戦略的業務提携契約を締結したと発表した。三菱商事は2001年から保有してきた良品計画株2,156万6000株（発行済株式総数の約3.9％）をすべて
-- [ZUU online] FX/為替「ドル/円今日の見通し｜米CPI下振れで早期利上げ観測後退 じりじりとした円安基調続く」 外為どっとコム トゥデイ 2026年7月15日号 (07/15 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月15日8時10分執筆・監修：株式会社外
-- [NHK経済] 米物価上昇率3.5％ 伸び率縮小で早期利上げ観測 やや後退 (07/15 05:45)
-  概要: アメリカの先月の消費者物価指数は、去年の同じ月と比べて3.5％の上昇となりました。伸び率は、依然として高い水準が続いていますが、前の月と比べると0.7ポイント縮小しました。
-- [ZUU online] 日々是相場［夕刊］――  2026年7月14日（火） (07/14 20:00)
-  概要: 日経平均 67,743.50円 △500.77円 為替 １ドル＝162.36円 売買高（東証プライム、以下同） 27億3,879万株 売買代金 10兆7628億75百万円 値上り銘柄数 1,186銘柄
-- [ZUU online] 米ドル／円 ―― 米CPIの結果次第では163円突破の事態も想定しておきたいが逆に下がったとしても買い場となりそうだ (07/14 19:30)
-  概要: この記事は2026年7月14日（火）に「羊飼いのFXブログ」公開された「志摩力男氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月14日（火）の午後14時ころに現役ト
-- [NHK経済] 中国 GDP 4～6月は前年同期比＋4.3％ 景気の減速傾向鮮明に (07/15 13:14)
+- [NHK経済] 中国 GDP 4～6月は前年同期比＋4.3％ 景気の減速傾向鮮明に (07/15 18:13)
   概要: 中国のことし4月から先月までのGDP＝国内総生産の伸び率は去年の同じ時期と比べてプラス4.3％となりました。コロナ禍の2022年10月から12月以来の低い水準で、個人消費や投資が振るわず景気の減速傾向
-- [NHK経済] 日銀 10年前のマイナス金利政策導入した会合の議事録を公開 (07/15 12:46)
-  概要: 日銀は、黒田総裁のもとで大規模な金融緩和を続けていた10年前の2016年前半に行われた金融政策決定会合の議事録を公開しました。異例のマイナス金利政策を導入した会合は、賛成が反対をわずかに上回るギリギリ
-- [ZUU online] アンダースロー：なぜ政府の負債を恐れる必要はないのか？会田と豪経済学者との対談動画です (07/15 10:00)
-  概要: この記事は2026年1月5日に配信されたメールマガジン「アンダースロー（ウィークリー）：黒字化したプライマリーバランスの予算は円安の原因に」を一部編集し、転載したものです。 目次シンカー米国：AI需要
-- [Investing.com日本] プログレス---大幅に反落、27年2月期第1四半期の営業利益14.6％減、マネジメント層の拡充などで減益 (07/15 14:00)
-- [Investing.com日本] クリレスＨＤ---1Q増収増益、通期業績予想に対して順調に進捗 (07/15 13:30)
+- [Investing.com日本] マッコーリー、損失を受けてインドの石油・ガス企業の業績予想を引き下げ (07/15 18:36)
+- [Investing.com日本] property technologies---2Qは増収増益、中古住宅再生が増益 (07/15 18:30)
 - [ZUU online] 「靴下屋」展開のタビオの第1四半期は増収減益　インバウンド追い風も米関税コスト増が利益圧迫 (07/15 12:02)
   概要: 靴下専門店「靴下屋」や「タビオ（Tabio）」を展開するタビオは7月14日、2027年2月期第1四半期決算を発表した。売上高は42億6300万円（前年同期比1.9％増）と増収を確保した一方、営業利益は
 - [ZUU online] 松屋の第1四半期は百貨店事業が営業利益82.9％増と大幅伸長 (07/15 12:02)
   概要: 百貨店の松屋は7月14日、2027年2月期第1四半期決算を発表した。売上高は120億9500万円（前年同期比5.9％増）、営業利益は6億6100万円（同35.9％増）、親会社株主に帰属する四半期純利益
-- [ZUU online] 「100億円を調達」と「100億円で調達」は何が違う？ (07/15 06:00)
-  概要: 本記事は、岩澤 脩氏の著書『だからベンチャーキャピタルはやめられない 投資家だけが知っている 起業とお金のリアル』（ディスカヴァー・トゥエンティワン）の中から一部を抜粋・編集しています。 プレバリュー
+- [NHK経済] 暗号資産を「金融商品」に位置づける改正金融商品取引法が成立 (07/15 16:06)
+  概要: ビットコインなどの暗号資産を投資対象とする人が増える中、暗号資産を「金融商品」として位置づける金融商品取引法の改正案が15日に開かれた参議院本会議で可決・成立しました。
 
 【依頼内容】
 上記の指数の動きについて、ニュースの内容と紐付けて解説してください。
@@ -1226,29 +1193,29 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 68,751.51 pt (+0.00%)
+- TOPIX (1306連動ETF): 425.6 円 (+1.02%)
+- ドル円: 162.34 円 (-0.05%)
 - S&P 500: nan (+nan%)
 - NASDAQ: nan (+nan%)
 - ダウ: nan (+nan%)
-- ドル円: 162.20 円 (-0.14%)
 - 米10年債利回り: 4.609 % (+0.00%)
-- WTI原油: 79.87 USD (+0.67%)
-- 金: 4040.40 USD (-0.51%)
-- 日経225: 68,571.16 pt (+0.00%)
-- TOPIX (1306連動ETF): 424.5 円 (+0.76%)
+- WTI原油: 79.82 USD (+0.60%)
+- 金: 4033.80 USD (-0.67%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++85.71円  東京エレクトロン(8035)  +3.37%  [半導体製造装置]
-  ++50.89円  アドバンテスト(6857)  +4.79%  [電機]
-  ++30.71円  キーエンス(6861)  +1.14%  [電機]
-  ++6.21円  信越化学(4063)  +2.33%  [化学]
-  ++4.86円  ファナック(6954)  +1.99%  [電機]
+  ++111.07円  東京エレクトロン(8035)  +4.37%  [半導体製造装置]
+  ++61.96円  アドバンテスト(6857)  +5.83%  [電機]
+  ++43.93円  キーエンス(6861)  +1.63%  [電機]
+  ++7.82円  信越化学(4063)  +2.93%  [化学]
+  ++6.04円  ファナック(6954)  +2.47%  [電機]
 ▼ 日経225 (下落寄与TOP5)
-  -20.71円  ファーストリテイリング(9983)  -0.73%  [小売]
-  -9.82円  ダイキン(6367)  -1.10%  [機械]
-  -6.25円  リクルートHD(6098)  -1.38%  [サービス]
-  -5.89円  HOYA(7741)  -0.65%  [精密機器]
-  -4.79円  ソフトバンクG(9984)  -2.04%  [通信]
+  -34.29円  ファーストリテイリング(9983)  -1.20%  [小売]
+  -8.57円  HOYA(7741)  -0.94%  [精密機器]
+  -7.64円  ソフトバンクG(9984)  -3.26%  [通信]
+  -4.39円  オリエンタルランド(4661)  -4.48%  [サービス]
+  -4.29円  エーザイ(4523)  -2.74%  [医薬品]
 ▼ S&P500 (上昇寄与TOP5)
   ++12.89pt  Alphabet Inc. (Class C)(GOOG)  +1.90%  wt:9.03%  [Communication Services]
   ++3.27pt  Dell Technologies(DELL)  +7.12%  wt:0.61%  [Information Technology]
@@ -1259,37 +1226,32 @@
   -0.88pt  AbbVie(ABBV)  -1.30%  wt:0.90%  [Health Care]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 福岡・長崎でトランクルーム拡大！エリアリンクとJR九州コンサルタンツが提携強化(Yahoo!ニュース PR［PR］) (07/15 14:06)
-  概要: エリアリンク株式会社とJR九州コンサルタンツ株式会社が提携を強化し、福岡・長崎地区でトランクルームを拡大します。合計67物件・1,384室の規模に成長し、新たに運営委託される52物件・955室は、20
-- [Investing.com日本] クリレスＨＤ---「らぁめん小池」運営のイノセンスの株式取得 (07/15 13:30)
-- [NHK経済] 株価 値上がり AI・半導体関連の業績 堅調に推移との見方から (07/15 13:17)
-  概要: 15日の東京株式市場、AI・半導体関連の企業の業績が堅調に推移するという見方から、日経平均株価は値上がりしています。
+- [Investing.com日本] 15日の香港市場概況： ハンセン指数は4日続伸、米利上げ観測の後退で約1カ月ぶりの高値 (07/15 18:45)
+- [Investing.com日本] 15日の中国本土市場概況：小反落、GDPの下振れなどが足かせ (07/15 18:45)
+- [NHK経済] 円相場 ドルに対して小幅な値動き (07/15 18:25)
+  概要: 15日の東京外国為替市場、円相場はドルに対して小幅な値動きとなりました。
+- [ZUU online] 2026年のTOB、節目の50件に到達 3年連続の100件突破が早くも濃厚に (07/15 17:32)
+  概要: 上場企業の買収や非公開化などを目的とするTOB（株式公開買い付け）が快進撃を続けている。2026年の件数が節目の50件（届け出ベース）に到達した。過去最多の年間136件に達した前年のペースは下回るもの
+- [NHK経済] 株価 値上がり 半導体の需要拡大の見方から関連銘柄値上がり (07/15 16:48)
+  概要: 15日の東京株式市場、今後も半導体需要は拡大するという見方から、関連する銘柄を中心に買い注文が広がって、日経平均株価は、1000円以上、値上がりしました。
+- [ZUU online] 暗号資産と何が違う？　ブロックチェーン投資信託の仕組みと将来性 (07/15 16:00)
+  概要: ［PR］インベスコ・アセット・マネジメント株式会社 この記事の結論 ブロックチェーン投資信託は、暗号資産そのものではなく、関連企業の株式を通じてブロックチェーン技術の成長に投資できる金融商品であり、分
+- [ZUU online] 利上げ警戒の金相場安は一時的、安全資産需要で上昇基調続く (07/15 15:00)
+  概要: この記事は2026年7月3日に「きんざいOnline：週刊金融財政事情」で公開された「利上げ警戒の金相場安は一時的、安全資産需要で上昇基調続く」を一部編集し、転載したものです。 2026年上期のNY金
 - [ZUU online] 「人こそがすべて」のファブレス経営。プレミアアンチエイジング松浦社長が、唯一無二の経営資源である社員の「休養と健康」を育む理由 (07/15 13:00)
   概要: 「アンチエイジング」の力で誰もが輝ける未来を追求する企業、プレミアアンチエイジング株式会社。創業者で代表取締役社長の松浦清氏は、人生100年時代における健康寿命の延伸こそが、社会全体の幸せにつながると
 - [ZUU online] 三菱商事が良品計画の全株式3.9％を売却　第4位株主から協業パートナーへ (07/15 12:02)
   概要: 「無印良品」を展開する良品計画は7月13日、三菱商事と戦略的業務提携契約を締結したと発表した。三菱商事は2001年から保有してきた良品計画株2,156万6000株（発行済株式総数の約3.9％）をすべて
-- [ZUU online] FX/為替「ドル/円今日の見通し｜米CPI下振れで早期利上げ観測後退 じりじりとした円安基調続く」 外為どっとコム トゥデイ 2026年7月15日号 (07/15 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月15日8時10分執筆・監修：株式会社外
-- [NHK経済] 米物価上昇率3.5％ 伸び率縮小で早期利上げ観測 やや後退 (07/15 05:45)
-  概要: アメリカの先月の消費者物価指数は、去年の同じ月と比べて3.5％の上昇となりました。伸び率は、依然として高い水準が続いていますが、前の月と比べると0.7ポイント縮小しました。
-- [ZUU online] 日々是相場［夕刊］――  2026年7月14日（火） (07/14 20:00)
-  概要: 日経平均 67,743.50円 △500.77円 為替 １ドル＝162.36円 売買高（東証プライム、以下同） 27億3,879万株 売買代金 10兆7628億75百万円 値上り銘柄数 1,186銘柄
-- [ZUU online] 米ドル／円 ―― 米CPIの結果次第では163円突破の事態も想定しておきたいが逆に下がったとしても買い場となりそうだ (07/14 19:30)
-  概要: この記事は2026年7月14日（火）に「羊飼いのFXブログ」公開された「志摩力男氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月14日（火）の午後14時ころに現役ト
-- [NHK経済] 中国 GDP 4～6月は前年同期比＋4.3％ 景気の減速傾向鮮明に (07/15 13:14)
+- [NHK経済] 中国 GDP 4～6月は前年同期比＋4.3％ 景気の減速傾向鮮明に (07/15 18:13)
   概要: 中国のことし4月から先月までのGDP＝国内総生産の伸び率は去年の同じ時期と比べてプラス4.3％となりました。コロナ禍の2022年10月から12月以来の低い水準で、個人消費や投資が振るわず景気の減速傾向
-- [NHK経済] 日銀 10年前のマイナス金利政策導入した会合の議事録を公開 (07/15 12:46)
-  概要: 日銀は、黒田総裁のもとで大規模な金融緩和を続けていた10年前の2016年前半に行われた金融政策決定会合の議事録を公開しました。異例のマイナス金利政策を導入した会合は、賛成が反対をわずかに上回るギリギリ
-- [ZUU online] アンダースロー：なぜ政府の負債を恐れる必要はないのか？会田と豪経済学者との対談動画です (07/15 10:00)
-  概要: この記事は2026年1月5日に配信されたメールマガジン「アンダースロー（ウィークリー）：黒字化したプライマリーバランスの予算は円安の原因に」を一部編集し、転載したものです。 目次シンカー米国：AI需要
-- [Investing.com日本] プログレス---大幅に反落、27年2月期第1四半期の営業利益14.6％減、マネジメント層の拡充などで減益 (07/15 14:00)
-- [Investing.com日本] クリレスＨＤ---1Q増収増益、通期業績予想に対して順調に進捗 (07/15 13:30)
+- [Investing.com日本] マッコーリー、損失を受けてインドの石油・ガス企業の業績予想を引き下げ (07/15 18:36)
+- [Investing.com日本] property technologies---2Qは増収増益、中古住宅再生が増益 (07/15 18:30)
 - [ZUU online] 「靴下屋」展開のタビオの第1四半期は増収減益　インバウンド追い風も米関税コスト増が利益圧迫 (07/15 12:02)
   概要: 靴下専門店「靴下屋」や「タビオ（Tabio）」を展開するタビオは7月14日、2027年2月期第1四半期決算を発表した。売上高は42億6300万円（前年同期比1.9％増）と増収を確保した一方、営業利益は
 - [ZUU online] 松屋の第1四半期は百貨店事業が営業利益82.9％増と大幅伸長 (07/15 12:02)
   概要: 百貨店の松屋は7月14日、2027年2月期第1四半期決算を発表した。売上高は120億9500万円（前年同期比5.9％増）、営業利益は6億6100万円（同35.9％増）、親会社株主に帰属する四半期純利益
-- [ZUU online] 「100億円を調達」と「100億円で調達」は何が違う？ (07/15 06:00)
-  概要: 本記事は、岩澤 脩氏の著書『だからベンチャーキャピタルはやめられない 投資家だけが知っている 起業とお金のリアル』（ディスカヴァー・トゥエンティワン）の中から一部を抜粋・編集しています。 プレバリュー
+- [NHK経済] 暗号資産を「金融商品」に位置づける改正金融商品取引法が成立 (07/15 16:06)
+  概要: ビットコインなどの暗号資産を投資対象とする人が増える中、暗号資産を「金融商品」として位置づける金融商品取引法の改正案が15日に開かれた参議院本会議で可決・成立しました。
 
 【依頼内容】
 - 最も動きが大きかった指標トップ3を特定
@@ -1298,29 +1260,29 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 68,751.51 pt (+0.00%)
+- TOPIX (1306連動ETF): 425.6 円 (+1.02%)
+- ドル円: 162.34 円 (-0.05%)
 - S&P 500: nan (+nan%)
 - NASDAQ: nan (+nan%)
 - ダウ: nan (+nan%)
-- ドル円: 162.20 円 (-0.14%)
 - 米10年債利回り: 4.609 % (+0.00%)
-- WTI原油: 79.87 USD (+0.67%)
-- 金: 4040.40 USD (-0.51%)
-- 日経225: 68,571.16 pt (+0.00%)
-- TOPIX (1306連動ETF): 424.5 円 (+0.76%)
+- WTI原油: 79.82 USD (+0.60%)
+- 金: 4033.80 USD (-0.67%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++85.71円  東京エレクトロン(8035)  +3.37%  [半導体製造装置]
-  ++50.89円  アドバンテスト(6857)  +4.79%  [電機]
-  ++30.71円  キーエンス(6861)  +1.14%  [電機]
-  ++6.21円  信越化学(4063)  +2.33%  [化学]
-  ++4.86円  ファナック(6954)  +1.99%  [電機]
+  ++111.07円  東京エレクトロン(8035)  +4.37%  [半導体製造装置]
+  ++61.96円  アドバンテスト(6857)  +5.83%  [電機]
+  ++43.93円  キーエンス(6861)  +1.63%  [電機]
+  ++7.82円  信越化学(4063)  +2.93%  [化学]
+  ++6.04円  ファナック(6954)  +2.47%  [電機]
 ▼ 日経225 (下落寄与TOP5)
-  -20.71円  ファーストリテイリング(9983)  -0.73%  [小売]
-  -9.82円  ダイキン(6367)  -1.10%  [機械]
-  -6.25円  リクルートHD(6098)  -1.38%  [サービス]
-  -5.89円  HOYA(7741)  -0.65%  [精密機器]
-  -4.79円  ソフトバンクG(9984)  -2.04%  [通信]
+  -34.29円  ファーストリテイリング(9983)  -1.20%  [小売]
+  -8.57円  HOYA(7741)  -0.94%  [精密機器]
+  -7.64円  ソフトバンクG(9984)  -3.26%  [通信]
+  -4.39円  オリエンタルランド(4661)  -4.48%  [サービス]
+  -4.29円  エーザイ(4523)  -2.74%  [医薬品]
 ▼ S&P500 (上昇寄与TOP5)
   ++12.89pt  Alphabet Inc. (Class C)(GOOG)  +1.90%  wt:9.03%  [Communication Services]
   ++3.27pt  Dell Technologies(DELL)  +7.12%  wt:0.61%  [Information Technology]
@@ -1331,37 +1293,32 @@
   -0.88pt  AbbVie(ABBV)  -1.30%  wt:0.90%  [Health Care]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 福岡・長崎でトランクルーム拡大！エリアリンクとJR九州コンサルタンツが提携強化(Yahoo!ニュース PR［PR］) (07/15 14:06)
-  概要: エリアリンク株式会社とJR九州コンサルタンツ株式会社が提携を強化し、福岡・長崎地区でトランクルームを拡大します。合計67物件・1,384室の規模に成長し、新たに運営委託される52物件・955室は、20
-- [Investing.com日本] クリレスＨＤ---「らぁめん小池」運営のイノセンスの株式取得 (07/15 13:30)
-- [NHK経済] 株価 値上がり AI・半導体関連の業績 堅調に推移との見方から (07/15 13:17)
-  概要: 15日の東京株式市場、AI・半導体関連の企業の業績が堅調に推移するという見方から、日経平均株価は値上がりしています。
+- [Investing.com日本] 15日の香港市場概況： ハンセン指数は4日続伸、米利上げ観測の後退で約1カ月ぶりの高値 (07/15 18:45)
+- [Investing.com日本] 15日の中国本土市場概況：小反落、GDPの下振れなどが足かせ (07/15 18:45)
+- [NHK経済] 円相場 ドルに対して小幅な値動き (07/15 18:25)
+  概要: 15日の東京外国為替市場、円相場はドルに対して小幅な値動きとなりました。
+- [ZUU online] 2026年のTOB、節目の50件に到達 3年連続の100件突破が早くも濃厚に (07/15 17:32)
+  概要: 上場企業の買収や非公開化などを目的とするTOB（株式公開買い付け）が快進撃を続けている。2026年の件数が節目の50件（届け出ベース）に到達した。過去最多の年間136件に達した前年のペースは下回るもの
+- [NHK経済] 株価 値上がり 半導体の需要拡大の見方から関連銘柄値上がり (07/15 16:48)
+  概要: 15日の東京株式市場、今後も半導体需要は拡大するという見方から、関連する銘柄を中心に買い注文が広がって、日経平均株価は、1000円以上、値上がりしました。
+- [ZUU online] 暗号資産と何が違う？　ブロックチェーン投資信託の仕組みと将来性 (07/15 16:00)
+  概要: ［PR］インベスコ・アセット・マネジメント株式会社 この記事の結論 ブロックチェーン投資信託は、暗号資産そのものではなく、関連企業の株式を通じてブロックチェーン技術の成長に投資できる金融商品であり、分
+- [ZUU online] 利上げ警戒の金相場安は一時的、安全資産需要で上昇基調続く (07/15 15:00)
+  概要: この記事は2026年7月3日に「きんざいOnline：週刊金融財政事情」で公開された「利上げ警戒の金相場安は一時的、安全資産需要で上昇基調続く」を一部編集し、転載したものです。 2026年上期のNY金
 - [ZUU online] 「人こそがすべて」のファブレス経営。プレミアアンチエイジング松浦社長が、唯一無二の経営資源である社員の「休養と健康」を育む理由 (07/15 13:00)
   概要: 「アンチエイジング」の力で誰もが輝ける未来を追求する企業、プレミアアンチエイジング株式会社。創業者で代表取締役社長の松浦清氏は、人生100年時代における健康寿命の延伸こそが、社会全体の幸せにつながると
 - [ZUU online] 三菱商事が良品計画の全株式3.9％を売却　第4位株主から協業パートナーへ (07/15 12:02)
   概要: 「無印良品」を展開する良品計画は7月13日、三菱商事と戦略的業務提携契約を締結したと発表した。三菱商事は2001年から保有してきた良品計画株2,156万6000株（発行済株式総数の約3.9％）をすべて
-- [ZUU online] FX/為替「ドル/円今日の見通し｜米CPI下振れで早期利上げ観測後退 じりじりとした円安基調続く」 外為どっとコム トゥデイ 2026年7月15日号 (07/15 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月15日8時10分執筆・監修：株式会社外
-- [NHK経済] 米物価上昇率3.5％ 伸び率縮小で早期利上げ観測 やや後退 (07/15 05:45)
-  概要: アメリカの先月の消費者物価指数は、去年の同じ月と比べて3.5％の上昇となりました。伸び率は、依然として高い水準が続いていますが、前の月と比べると0.7ポイント縮小しました。
-- [ZUU online] 日々是相場［夕刊］――  2026年7月14日（火） (07/14 20:00)
-  概要: 日経平均 67,743.50円 △500.77円 為替 １ドル＝162.36円 売買高（東証プライム、以下同） 27億3,879万株 売買代金 10兆7628億75百万円 値上り銘柄数 1,186銘柄
-- [ZUU online] 米ドル／円 ―― 米CPIの結果次第では163円突破の事態も想定しておきたいが逆に下がったとしても買い場となりそうだ (07/14 19:30)
-  概要: この記事は2026年7月14日（火）に「羊飼いのFXブログ」公開された「志摩力男氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月14日（火）の午後14時ころに現役ト
-- [NHK経済] 中国 GDP 4～6月は前年同期比＋4.3％ 景気の減速傾向鮮明に (07/15 13:14)
+- [NHK経済] 中国 GDP 4～6月は前年同期比＋4.3％ 景気の減速傾向鮮明に (07/15 18:13)
   概要: 中国のことし4月から先月までのGDP＝国内総生産の伸び率は去年の同じ時期と比べてプラス4.3％となりました。コロナ禍の2022年10月から12月以来の低い水準で、個人消費や投資が振るわず景気の減速傾向
-- [NHK経済] 日銀 10年前のマイナス金利政策導入した会合の議事録を公開 (07/15 12:46)
-  概要: 日銀は、黒田総裁のもとで大規模な金融緩和を続けていた10年前の2016年前半に行われた金融政策決定会合の議事録を公開しました。異例のマイナス金利政策を導入した会合は、賛成が反対をわずかに上回るギリギリ
-- [ZUU online] アンダースロー：なぜ政府の負債を恐れる必要はないのか？会田と豪経済学者との対談動画です (07/15 10:00)
-  概要: この記事は2026年1月5日に配信されたメールマガジン「アンダースロー（ウィークリー）：黒字化したプライマリーバランスの予算は円安の原因に」を一部編集し、転載したものです。 目次シンカー米国：AI需要
-- [Investing.com日本] プログレス---大幅に反落、27年2月期第1四半期の営業利益14.6％減、マネジメント層の拡充などで減益 (07/15 14:00)
-- [Investing.com日本] クリレスＨＤ---1Q増収増益、通期業績予想に対して順調に進捗 (07/15 13:30)
+- [Investing.com日本] マッコーリー、損失を受けてインドの石油・ガス企業の業績予想を引き下げ (07/15 18:36)
+- [Investing.com日本] property technologies---2Qは増収増益、中古住宅再生が増益 (07/15 18:30)
 - [ZUU online] 「靴下屋」展開のタビオの第1四半期は増収減益　インバウンド追い風も米関税コスト増が利益圧迫 (07/15 12:02)
   概要: 靴下専門店「靴下屋」や「タビオ（Tabio）」を展開するタビオは7月14日、2027年2月期第1四半期決算を発表した。売上高は42億6300万円（前年同期比1.9％増）と増収を確保した一方、営業利益は
 - [ZUU online] 松屋の第1四半期は百貨店事業が営業利益82.9％増と大幅伸長 (07/15 12:02)
   概要: 百貨店の松屋は7月14日、2027年2月期第1四半期決算を発表した。売上高は120億9500万円（前年同期比5.9％増）、営業利益は6億6100万円（同35.9％増）、親会社株主に帰属する四半期純利益
-- [ZUU online] 「100億円を調達」と「100億円で調達」は何が違う？ (07/15 06:00)
-  概要: 本記事は、岩澤 脩氏の著書『だからベンチャーキャピタルはやめられない 投資家だけが知っている 起業とお金のリアル』（ディスカヴァー・トゥエンティワン）の中から一部を抜粋・編集しています。 プレバリュー
+- [NHK経済] 暗号資産を「金融商品」に位置づける改正金融商品取引法が成立 (07/15 16:06)
+  概要: ビットコインなどの暗号資産を投資対象とする人が増える中、暗号資産を「金融商品」として位置づける金融商品取引法の改正案が15日に開かれた参議院本会議で可決・成立しました。
 
 【依頼内容】
 - 短期的なリスク要因（今後1週間以内）
