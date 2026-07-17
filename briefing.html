@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年07月17日 14:24 JST</span>
+    <span class="updated">更新: 2026年07月17日 18:50 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">64,141.12 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -2694.42&nbsp;&nbsp;-4.03%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">407.9 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -11.80&nbsp;&nbsp;-2.81%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">162.41 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.34&nbsp;&nbsp;+0.21%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">52,552.97 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">162.43 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.36&nbsp;&nbsp;+0.22%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.569 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">79.06 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">79.85 <span class="tile-unit">USD</span></div>
           <div class="tile-change up">
-            +0.11&nbsp;&nbsp;+0.14%
+            +0.90&nbsp;&nbsp;+1.14%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">3983.20 <span class="tile-unit">USD</span></div>
-          <div class="tile-change down">
-            -2.40&nbsp;&nbsp;-0.06%
+          <div class="tile-price">4001.30 <span class="tile-unit">USD</span></div>
+          <div class="tile-change up">
+            +15.70&nbsp;&nbsp;+0.39%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">63,214.23 <span class="tile-unit">pt</span></div>
-          <div class="tile-change down">
-            -3621.31&nbsp;&nbsp;-5.42%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">404.2 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -15.50&nbsp;&nbsp;-3.69%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -678,11 +678,29 @@
             
             <tr>
               <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6098:TYO" target="_blank" rel="noopener">リクルートHD</a>
+                <span class="contrib-sector">サービス</span>
+              </td>
+              <td class="up">+7.32</td>
+              <td class="up">+1.63%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/7741:TYO" target="_blank" rel="noopener">HOYA</a>
+                <span class="contrib-sector">精密機器</span>
+              </td>
+              <td class="up">+5.89</td>
+              <td class="up">+0.66%</td>
+            </tr>
+            
+            <tr>
+              <td>
                 <a class="contrib-name" href="https://www.google.com/finance/quote/4502:TYO" target="_blank" rel="noopener">武田薬品</a>
                 <span class="contrib-sector">医薬品</span>
               </td>
-              <td class="up">+3.79</td>
-              <td class="up">+1.98%</td>
+              <td class="up">+4.82</td>
+              <td class="up">+2.53%</td>
             </tr>
             
             <tr>
@@ -690,26 +708,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/4523:TYO" target="_blank" rel="noopener">エーザイ</a>
                 <span class="contrib-sector">医薬品</span>
               </td>
-              <td class="up">+2.21</td>
-              <td class="up">+1.43%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/6098:TYO" target="_blank" rel="noopener">リクルートHD</a>
-                <span class="contrib-sector">サービス</span>
-              </td>
-              <td class="up">+1.79</td>
-              <td class="up">+0.40%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/4661:TYO" target="_blank" rel="noopener">オリエンタルランド</a>
-                <span class="contrib-sector">サービス</span>
-              </td>
-              <td class="up">+1.50</td>
-              <td class="up">+1.56%</td>
+              <td class="up">+4.00</td>
+              <td class="up">+2.58%</td>
             </tr>
             
             </tbody>
@@ -731,8 +731,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/8035:TYO" target="_blank" rel="noopener">東京エレクトロン</a>
                 <span class="contrib-sector">半導体製造装置</span>
               </td>
-              <td class="down">-254.29</td>
-              <td class="down">-10.04%</td>
+              <td class="down">-206.79</td>
+              <td class="down">-8.17%</td>
             </tr>
             
             <tr>
@@ -740,8 +740,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-162.86</td>
-              <td class="down">-6.16%</td>
+              <td class="down">-113.21</td>
+              <td class="down">-4.28%</td>
             </tr>
             
             <tr>
@@ -749,8 +749,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6857:TYO" target="_blank" rel="noopener">アドバンテスト</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-107.50</td>
-              <td class="down">-10.16%</td>
+              <td class="down">-76.25</td>
+              <td class="down">-7.20%</td>
             </tr>
             
             <tr>
@@ -758,8 +758,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6981:TYO" target="_blank" rel="noopener">村田製作所</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-38.50</td>
-              <td class="down">-12.83%</td>
+              <td class="down">-27.43</td>
+              <td class="down">-9.14%</td>
             </tr>
             
             <tr>
@@ -767,8 +767,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/9984:TYO" target="_blank" rel="noopener">ソフトバンクG</a>
                 <span class="contrib-sector">通信</span>
               </td>
-              <td class="down">-25.46</td>
-              <td class="down">-11.96%</td>
+              <td class="down">-19.18</td>
+              <td class="down">-9.01%</td>
             </tr>
             
             </tbody>
@@ -915,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (15件)</div>
+    <div class="card-title">📰 最新ニュース (11件)</div>
     
     
     
@@ -925,56 +925,78 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📈 マーケット全般 (9件)</div>
+          <div class="news-group-title">📈 マーケット全般 (8件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/3dd45c4c500fbc257b08b5b0e443cb99265973c2?source=rss" target="_blank" rel="noopener">Nextorage、全日本スーパーフォーミュラ選手権の「JRE」とパートナーシップ契約(デジカメ Watch)</a>
+                <a href="https://news.yahoo.co.jp/articles/16978eea6c1465ad1edf192770257be4bbe6c93f?source=rss" target="_blank" rel="noopener">Tロウプライスの「アクティブ運用型暗号資産ETF」、NYSEアーカ上場(あたらしい経済)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>07/17 14:06</span>
+                <span>07/17 18:33</span>
               </div>
               
-              <div class="news-summary">Nextorage株式会社は、全日本スーパーフォーミュラ選手権（SUPER FORMULA）を運営する株式会社日本レースプロモーション（JRP）とパートナーシップ契約を締結したことを発表した。
-
-この…</div>
+              <div class="news-summary">米資産運用大手Tロウプライス（T. Rowe Price）が手掛けるアクティブ運用型暗号資産（仮想通貨）のETF（上場投資信託）が、米NYSEアーカ（NYSE Arca）で取引開始された。同社が7月1…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1606375" target="_blank" rel="noopener">Zhipu AIの株価、MoonshotがAIモデル発表後に20%超下落</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1606683" target="_blank" rel="noopener">17日の香港市場概況： ハンセン指数は6日ぶり反落、ほぼ全業種下落</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>07/17 13:57</span>
+                <span>07/17 18:30</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260717/k10015178951000.html" target="_blank" rel="noopener">株価 午後も一段と売り注文膨らむ 一時4000円以上値下がり</a>
+                <a href="http://www3.nhk.or.jp/news/html/20260717/k10015179521000.html" target="_blank" rel="noopener">円相場 小幅な値動き 売り買いが交錯</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">NHK経済</span>
-                <span>07/17 13:44</span>
+                <span>07/17 18:25</span>
               </div>
               
-              <div class="news-summary">17日の東京株式市場、午後も一段と売り注文が膨らみ、日経平均株価は4000円以上値下がりして、およそ1か月ぶりに6万3000円を割り込みました。IT大手の「グーグル」が手がける最新のAIモデルについて…</div>
+              <div class="news-summary">17日の東京外国為替市場、円相場は小幅な値動きとなりました。</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1606361" target="_blank" rel="noopener">後場の日経平均は2614円安でスタート、イビデンやSUMCOなどが下落</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1606659" target="_blank" rel="noopener">17日の中国本土市場概況：上海総合は3日続落、世界的な半導体株安や成長予想の下方修正で</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>07/17 13:15</span>
+                <span>07/17 18:15</span>
               </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1606645" target="_blank" rel="noopener">GSKの株価が本日下落した理由</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>07/17 18:02</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260717/k10015178951000.html" target="_blank" rel="noopener">株価 一時4100円超下落 取引時間中の下落幅 過去3番目の大きさ</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>07/17 16:31</span>
+              </div>
+              
+              <div class="news-summary">17日の東京株式市場は、株高をけん引してきたAIや半導体関連の銘柄に売り注文が膨らみました。日経平均株価の取引時間中の下げ幅は、一時、4100円を超え、過去3番目に大きい記録的な下落となりました。</div>
               
             </div>
             
@@ -1004,45 +1026,6 @@
               
             </div>
             
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302450" target="_blank" rel="noopener">「個別最適」から脱却へ。パーティション大手コマニーが挑む、ものづくり根本改革の全貌</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/17 10:00</span>
-              </div>
-              
-              <div class="news-summary">石川県小松市に本社を置き、パーティションの専業メーカーとして、オフィスや工場、病院、学校など、さまざまな場所の「間づくり」という価値を提供する、コマニー株式会社。 同社では、中期経営計画の達成に向けた…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302549" target="_blank" rel="noopener">日々是相場［夕刊］――  2026年7月16日（木）</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/16 19:30</span>
-              </div>
-              
-              <div class="news-summary">日経平均 66,835.54円 ▼1,915.97円 為替 １ドル＝162.15円 売買高（東証プライム、以下同） 24億6,958万株 売買代金 9兆5639億84百万円 値上り銘柄数 446銘柄 …</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302547" target="_blank" rel="noopener">米ドル／円 ―― ドル以外の通貨に対する円安が続く公算が大きいことから161円台後半は堅いと見る</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/16 19:00</span>
-              </div>
-              
-              <div class="news-summary">この記事は2026年7月16日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月16日（木）の午前10時ごろに外為…</div>
-              
-            </div>
-            
           </div>
         </div>
         
@@ -1055,11 +1038,34 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1606376" target="_blank" rel="noopener">マレーシアの第2四半期GDP成長率、輸出増加で5.8%に加速し予想を上回る</a>
+                <a href="http://www3.nhk.or.jp/news/html/20260717/k10015179291000.html" target="_blank" rel="noopener">日本で開発された種苗 海外流出を防止へ 改正種苗法が成立</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>07/17 14:26</span>
+              </div>
+              
+              <div class="news-summary">日本で開発された農産物の種や苗が無断で海外に持ち出されるのを防ぐため、国に品種を登録する前でも輸出の差し止めを認めるなど規制を強化する改正種苗法が、17日の参議院本会議で可決・成立しました。</div>
+              
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        
+        <div class="news-group">
+          <div class="news-group-title">📋 決算・個別銘柄 (1件)</div>
+          <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1606686" target="_blank" rel="noopener">ワッカー・ノイソン、好調な第2四半期を受けて2026年通期見通しを上方修正</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>07/17 14:01</span>
+                <span>07/17 18:32</span>
               </div>
               
             </div>
@@ -1071,79 +1077,17 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (2件)</div>
+          <div class="news-group-title">📌 その他 (1件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1606371" target="_blank" rel="noopener">いちご---大幅反発、決算受けた前日の下落は過剰反応との見方にも</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1606678" target="_blank" rel="noopener">米半導体株の急落を受け、欧州チップ株も大幅安</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>07/17 13:45</span>
+                <span>07/17 18:16</span>
               </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260716/k10015178681000.html" target="_blank" rel="noopener">台湾 TSMC 4-6月期決算 売り上げ 最終利益 ともに過去最高更新</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>07/16 21:15</span>
-              </div>
-              
-              <div class="news-summary">半導体の受託生産で世界最大手の台湾のTSMCの6月までの3か月間の決算は、AI向けの半導体の販売が好調で、売り上げ、最終的な利益ともに3か月ごとの決算として、過去最高を更新しました。</div>
-              
-            </div>
-            
-          </div>
-        </div>
-        
-      
-        
-        
-        <div class="news-group">
-          <div class="news-group-title">📌 その他 (3件)</div>
-          <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/7a1fe0605b28d0c2ec7a0b0d95d0e6f1ccf77d8c?source=rss" target="_blank" rel="noopener">改正電気事業法が成立(共同通信)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>07/17 14:06</span>
-              </div>
-              
-              <div class="news-summary">原発など大規模な発電所や送配電網の整備に公的融資を可能にする改正電気事業法が17日、参院本会議で可決、成立した。需要増加が見込まれる電力の安定供給につなげるため、民間事業者の投資を後押しする。</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260716/k10015178831000.html" target="_blank" rel="noopener">米 6月の小売業売上高 前月比0.2％増 消費堅調続くか焦点</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>07/16 23:57</span>
-              </div>
-              
-              <div class="news-summary">アメリカの6月の小売業の売上高は、5月と比べて0.2％増加しました。イラン情勢の影響で、原油価格が再び上昇傾向となる中、個人消費の堅調さが維持されるかが焦点となります。</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260716/k10015178411000.html" target="_blank" rel="noopener">国産AI開発「ノエトラ」 エヌビディアから新システム導入へ</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>07/16 23:47</span>
-              </div>
-              
-              <div class="news-summary">国産AIの開発を目指す新会社「ノエトラ」が、アメリカの半導体大手「エヌビディア」から、最新の半導体を搭載した次世代のシステムを導入すると発表しました。自律的にロボットなどを動かす「フィジカルAI」の基…</div>
               
             </div>
             
@@ -1157,34 +1101,34 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-17 14:24）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-17 18:50）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 64,141.12 pt (-4.03%)
+- TOPIX (1306連動ETF): 407.9 円 (-2.81%)
+- ドル円: 162.41 円 (+0.21%)
 - S&P 500: 7,533.77 (-0.51%)
 - NASDAQ: 25,881.95 (-1.47%)
 - ダウ: 52,552.97 (-0.20%)
-- ドル円: 162.43 円 (+0.22%)
 - 米10年債利回り: 4.569 % (+0.53%)
-- WTI原油: 79.06 USD (+0.14%)
-- 金: 3983.20 USD (-0.06%)
-- 日経225: 63,214.23 pt (-5.42%)
-- TOPIX (1306連動ETF): 404.2 円 (-3.69%)
+- WTI原油: 79.85 USD (+1.14%)
+- 金: 4001.30 USD (+0.39%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
   ++7.64円  任天堂(7974)  +3.02%  [電機]
-  ++3.79円  武田薬品(4502)  +1.98%  [医薬品]
-  ++2.21円  エーザイ(4523)  +1.43%  [医薬品]
-  ++1.79円  リクルートHD(6098)  +0.40%  [サービス]
-  ++1.50円  オリエンタルランド(4661)  +1.56%  [サービス]
+  ++7.32円  リクルートHD(6098)  +1.63%  [サービス]
+  ++5.89円  HOYA(7741)  +0.66%  [精密機器]
+  ++4.82円  武田薬品(4502)  +2.53%  [医薬品]
+  ++4.00円  エーザイ(4523)  +2.58%  [医薬品]
 ▼ 日経225 (下落寄与TOP5)
-  -254.29円  東京エレクトロン(8035)  -10.04%  [半導体製造装置]
-  -162.86円  キーエンス(6861)  -6.16%  [電機]
-  -107.50円  アドバンテスト(6857)  -10.16%  [電機]
-  -38.50円  村田製作所(6981)  -12.83%  [電機]
-  -25.46円  ソフトバンクG(9984)  -11.96%  [通信]
+  -206.79円  東京エレクトロン(8035)  -8.17%  [半導体製造装置]
+  -113.21円  キーエンス(6861)  -4.28%  [電機]
+  -76.25円  アドバンテスト(6857)  -7.20%  [電機]
+  -27.43円  村田製作所(6981)  -9.14%  [電機]
+  -19.18円  ソフトバンクG(9984)  -9.01%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
   ++12.88pt  Apple Inc.(AAPL)  +1.76%  wt:9.67%  [Information Technology]
   ++6.26pt  Microsoft(MSFT)  +1.38%  wt:5.98%  [Information Technology]
@@ -1199,34 +1143,23 @@
   -9.73pt  Micron Technology(MU)  -5.65%  wt:2.27%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] Nextorage、全日本スーパーフォーミュラ選手権の「JRE」とパートナーシップ契約(デジカメ Watch) (07/17 14:06)
-  概要: Nextorage株式会社は、全日本スーパーフォーミュラ選手権（SUPER FORMULA）を運営する株式会社日本レースプロモーション（JRP）とパートナーシップ契約を締結したことを発表した。
-
-この
-- [Investing.com日本] Zhipu AIの株価、MoonshotがAIモデル発表後に20%超下落 (07/17 13:57)
-- [NHK経済] 株価 午後も一段と売り注文膨らむ 一時4000円以上値下がり (07/17 13:44)
-  概要: 17日の東京株式市場、午後も一段と売り注文が膨らみ、日経平均株価は4000円以上値下がりして、およそ1か月ぶりに6万3000円を割り込みました。IT大手の「グーグル」が手がける最新のAIモデルについて
-- [Investing.com日本] 後場の日経平均は2614円安でスタート、イビデンやSUMCOなどが下落 (07/17 13:15)
+- [Yahoo!ファイナンス] Tロウプライスの「アクティブ運用型暗号資産ETF」、NYSEアーカ上場(あたらしい経済) (07/17 18:33)
+  概要: 米資産運用大手Tロウプライス（T. Rowe Price）が手掛けるアクティブ運用型暗号資産（仮想通貨）のETF（上場投資信託）が、米NYSEアーカ（NYSE Arca）で取引開始された。同社が7月1
+- [Investing.com日本] 17日の香港市場概況： ハンセン指数は6日ぶり反落、ほぼ全業種下落 (07/17 18:30)
+- [NHK経済] 円相場 小幅な値動き 売り買いが交錯 (07/17 18:25)
+  概要: 17日の東京外国為替市場、円相場は小幅な値動きとなりました。
+- [Investing.com日本] 17日の中国本土市場概況：上海総合は3日続落、世界的な半導体株安や成長予想の下方修正で (07/17 18:15)
+- [Investing.com日本] GSKの株価が本日下落した理由 (07/17 18:02)
+- [NHK経済] 株価 一時4100円超下落 取引時間中の下落幅 過去3番目の大きさ (07/17 16:31)
+  概要: 17日の東京株式市場は、株高をけん引してきたAIや半導体関連の銘柄に売り注文が膨らみました。日経平均株価の取引時間中の下げ幅は、一時、4100円を超え、過去3番目に大きい記録的な下落となりました。
 - [ZUU online] 「バクネ」展開のTENTIALが一時15％超の急騰　第3四半期は売上高245億円、過去最高更新を好感 (07/17 12:02)
   概要: リカバリーウェアブランド「テンシャル（TENTIAL）」や「バクネ（BAKUNE）」を展開するTENTIALの株価が7月16日、前日比が一時、15％超と急騰した。前日の7月15日に発表した2026年8
 - [ZUU online] FX/為替「ドル/円今日の見通し｜原油価格急騰後の消費者心理に注目」 外為どっとコム トゥデイ 2026年7月17日号 (07/17 10:32)
   概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月17日8時20分執筆・監修：株式会社外
-- [ZUU online] 「個別最適」から脱却へ。パーティション大手コマニーが挑む、ものづくり根本改革の全貌 (07/17 10:00)
-  概要: 石川県小松市に本社を置き、パーティションの専業メーカーとして、オフィスや工場、病院、学校など、さまざまな場所の「間づくり」という価値を提供する、コマニー株式会社。 同社では、中期経営計画の達成に向けた
-- [ZUU online] 日々是相場［夕刊］――  2026年7月16日（木） (07/16 19:30)
-  概要: 日経平均 66,835.54円 ▼1,915.97円 為替 １ドル＝162.15円 売買高（東証プライム、以下同） 24億6,958万株 売買代金 9兆5639億84百万円 値上り銘柄数 446銘柄 
-- [ZUU online] 米ドル／円 ―― ドル以外の通貨に対する円安が続く公算が大きいことから161円台後半は堅いと見る (07/16 19:00)
-  概要: この記事は2026年7月16日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月16日（木）の午前10時ごろに外為
-- [Investing.com日本] マレーシアの第2四半期GDP成長率、輸出増加で5.8%に加速し予想を上回る (07/17 14:01)
-- [Investing.com日本] いちご---大幅反発、決算受けた前日の下落は過剰反応との見方にも (07/17 13:45)
-- [NHK経済] 台湾 TSMC 4-6月期決算 売り上げ 最終利益 ともに過去最高更新 (07/16 21:15)
-  概要: 半導体の受託生産で世界最大手の台湾のTSMCの6月までの3か月間の決算は、AI向けの半導体の販売が好調で、売り上げ、最終的な利益ともに3か月ごとの決算として、過去最高を更新しました。
-- [Yahoo!ファイナンス] 改正電気事業法が成立(共同通信) (07/17 14:06)
-  概要: 原発など大規模な発電所や送配電網の整備に公的融資を可能にする改正電気事業法が17日、参院本会議で可決、成立した。需要増加が見込まれる電力の安定供給につなげるため、民間事業者の投資を後押しする。
-- [NHK経済] 米 6月の小売業売上高 前月比0.2％増 消費堅調続くか焦点 (07/16 23:57)
-  概要: アメリカの6月の小売業の売上高は、5月と比べて0.2％増加しました。イラン情勢の影響で、原油価格が再び上昇傾向となる中、個人消費の堅調さが維持されるかが焦点となります。
-- [NHK経済] 国産AI開発「ノエトラ」 エヌビディアから新システム導入へ (07/16 23:47)
-  概要: 国産AIの開発を目指す新会社「ノエトラ」が、アメリカの半導体大手「エヌビディア」から、最新の半導体を搭載した次世代のシステムを導入すると発表しました。自律的にロボットなどを動かす「フィジカルAI」の基
+- [NHK経済] 日本で開発された種苗 海外流出を防止へ 改正種苗法が成立 (07/17 14:26)
+  概要: 日本で開発された農産物の種や苗が無断で海外に持ち出されるのを防ぐため、国に品種を登録する前でも輸出の差し止めを認めるなど規制を強化する改正種苗法が、17日の参議院本会議で可決・成立しました。
+- [Investing.com日本] ワッカー・ノイソン、好調な第2四半期を受けて2026年通期見通しを上方修正 (07/17 18:32)
+- [Investing.com日本] 米半導体株の急落を受け、欧州チップ株も大幅安 (07/17 18:16)
 
 【依頼内容】
 上記の指数の動きについて、ニュースの内容と紐付けて解説してください。
@@ -1241,29 +1174,29 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 64,141.12 pt (-4.03%)
+- TOPIX (1306連動ETF): 407.9 円 (-2.81%)
+- ドル円: 162.41 円 (+0.21%)
 - S&P 500: 7,533.77 (-0.51%)
 - NASDAQ: 25,881.95 (-1.47%)
 - ダウ: 52,552.97 (-0.20%)
-- ドル円: 162.43 円 (+0.22%)
 - 米10年債利回り: 4.569 % (+0.53%)
-- WTI原油: 79.06 USD (+0.14%)
-- 金: 3983.20 USD (-0.06%)
-- 日経225: 63,214.23 pt (-5.42%)
-- TOPIX (1306連動ETF): 404.2 円 (-3.69%)
+- WTI原油: 79.85 USD (+1.14%)
+- 金: 4001.30 USD (+0.39%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
   ++7.64円  任天堂(7974)  +3.02%  [電機]
-  ++3.79円  武田薬品(4502)  +1.98%  [医薬品]
-  ++2.21円  エーザイ(4523)  +1.43%  [医薬品]
-  ++1.79円  リクルートHD(6098)  +0.40%  [サービス]
-  ++1.50円  オリエンタルランド(4661)  +1.56%  [サービス]
+  ++7.32円  リクルートHD(6098)  +1.63%  [サービス]
+  ++5.89円  HOYA(7741)  +0.66%  [精密機器]
+  ++4.82円  武田薬品(4502)  +2.53%  [医薬品]
+  ++4.00円  エーザイ(4523)  +2.58%  [医薬品]
 ▼ 日経225 (下落寄与TOP5)
-  -254.29円  東京エレクトロン(8035)  -10.04%  [半導体製造装置]
-  -162.86円  キーエンス(6861)  -6.16%  [電機]
-  -107.50円  アドバンテスト(6857)  -10.16%  [電機]
-  -38.50円  村田製作所(6981)  -12.83%  [電機]
-  -25.46円  ソフトバンクG(9984)  -11.96%  [通信]
+  -206.79円  東京エレクトロン(8035)  -8.17%  [半導体製造装置]
+  -113.21円  キーエンス(6861)  -4.28%  [電機]
+  -76.25円  アドバンテスト(6857)  -7.20%  [電機]
+  -27.43円  村田製作所(6981)  -9.14%  [電機]
+  -19.18円  ソフトバンクG(9984)  -9.01%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
   ++12.88pt  Apple Inc.(AAPL)  +1.76%  wt:9.67%  [Information Technology]
   ++6.26pt  Microsoft(MSFT)  +1.38%  wt:5.98%  [Information Technology]
@@ -1278,34 +1211,23 @@
   -9.73pt  Micron Technology(MU)  -5.65%  wt:2.27%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] Nextorage、全日本スーパーフォーミュラ選手権の「JRE」とパートナーシップ契約(デジカメ Watch) (07/17 14:06)
-  概要: Nextorage株式会社は、全日本スーパーフォーミュラ選手権（SUPER FORMULA）を運営する株式会社日本レースプロモーション（JRP）とパートナーシップ契約を締結したことを発表した。
-
-この
-- [Investing.com日本] Zhipu AIの株価、MoonshotがAIモデル発表後に20%超下落 (07/17 13:57)
-- [NHK経済] 株価 午後も一段と売り注文膨らむ 一時4000円以上値下がり (07/17 13:44)
-  概要: 17日の東京株式市場、午後も一段と売り注文が膨らみ、日経平均株価は4000円以上値下がりして、およそ1か月ぶりに6万3000円を割り込みました。IT大手の「グーグル」が手がける最新のAIモデルについて
-- [Investing.com日本] 後場の日経平均は2614円安でスタート、イビデンやSUMCOなどが下落 (07/17 13:15)
+- [Yahoo!ファイナンス] Tロウプライスの「アクティブ運用型暗号資産ETF」、NYSEアーカ上場(あたらしい経済) (07/17 18:33)
+  概要: 米資産運用大手Tロウプライス（T. Rowe Price）が手掛けるアクティブ運用型暗号資産（仮想通貨）のETF（上場投資信託）が、米NYSEアーカ（NYSE Arca）で取引開始された。同社が7月1
+- [Investing.com日本] 17日の香港市場概況： ハンセン指数は6日ぶり反落、ほぼ全業種下落 (07/17 18:30)
+- [NHK経済] 円相場 小幅な値動き 売り買いが交錯 (07/17 18:25)
+  概要: 17日の東京外国為替市場、円相場は小幅な値動きとなりました。
+- [Investing.com日本] 17日の中国本土市場概況：上海総合は3日続落、世界的な半導体株安や成長予想の下方修正で (07/17 18:15)
+- [Investing.com日本] GSKの株価が本日下落した理由 (07/17 18:02)
+- [NHK経済] 株価 一時4100円超下落 取引時間中の下落幅 過去3番目の大きさ (07/17 16:31)
+  概要: 17日の東京株式市場は、株高をけん引してきたAIや半導体関連の銘柄に売り注文が膨らみました。日経平均株価の取引時間中の下げ幅は、一時、4100円を超え、過去3番目に大きい記録的な下落となりました。
 - [ZUU online] 「バクネ」展開のTENTIALが一時15％超の急騰　第3四半期は売上高245億円、過去最高更新を好感 (07/17 12:02)
   概要: リカバリーウェアブランド「テンシャル（TENTIAL）」や「バクネ（BAKUNE）」を展開するTENTIALの株価が7月16日、前日比が一時、15％超と急騰した。前日の7月15日に発表した2026年8
 - [ZUU online] FX/為替「ドル/円今日の見通し｜原油価格急騰後の消費者心理に注目」 外為どっとコム トゥデイ 2026年7月17日号 (07/17 10:32)
   概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月17日8時20分執筆・監修：株式会社外
-- [ZUU online] 「個別最適」から脱却へ。パーティション大手コマニーが挑む、ものづくり根本改革の全貌 (07/17 10:00)
-  概要: 石川県小松市に本社を置き、パーティションの専業メーカーとして、オフィスや工場、病院、学校など、さまざまな場所の「間づくり」という価値を提供する、コマニー株式会社。 同社では、中期経営計画の達成に向けた
-- [ZUU online] 日々是相場［夕刊］――  2026年7月16日（木） (07/16 19:30)
-  概要: 日経平均 66,835.54円 ▼1,915.97円 為替 １ドル＝162.15円 売買高（東証プライム、以下同） 24億6,958万株 売買代金 9兆5639億84百万円 値上り銘柄数 446銘柄 
-- [ZUU online] 米ドル／円 ―― ドル以外の通貨に対する円安が続く公算が大きいことから161円台後半は堅いと見る (07/16 19:00)
-  概要: この記事は2026年7月16日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月16日（木）の午前10時ごろに外為
-- [Investing.com日本] マレーシアの第2四半期GDP成長率、輸出増加で5.8%に加速し予想を上回る (07/17 14:01)
-- [Investing.com日本] いちご---大幅反発、決算受けた前日の下落は過剰反応との見方にも (07/17 13:45)
-- [NHK経済] 台湾 TSMC 4-6月期決算 売り上げ 最終利益 ともに過去最高更新 (07/16 21:15)
-  概要: 半導体の受託生産で世界最大手の台湾のTSMCの6月までの3か月間の決算は、AI向けの半導体の販売が好調で、売り上げ、最終的な利益ともに3か月ごとの決算として、過去最高を更新しました。
-- [Yahoo!ファイナンス] 改正電気事業法が成立(共同通信) (07/17 14:06)
-  概要: 原発など大規模な発電所や送配電網の整備に公的融資を可能にする改正電気事業法が17日、参院本会議で可決、成立した。需要増加が見込まれる電力の安定供給につなげるため、民間事業者の投資を後押しする。
-- [NHK経済] 米 6月の小売業売上高 前月比0.2％増 消費堅調続くか焦点 (07/16 23:57)
-  概要: アメリカの6月の小売業の売上高は、5月と比べて0.2％増加しました。イラン情勢の影響で、原油価格が再び上昇傾向となる中、個人消費の堅調さが維持されるかが焦点となります。
-- [NHK経済] 国産AI開発「ノエトラ」 エヌビディアから新システム導入へ (07/16 23:47)
-  概要: 国産AIの開発を目指す新会社「ノエトラ」が、アメリカの半導体大手「エヌビディア」から、最新の半導体を搭載した次世代のシステムを導入すると発表しました。自律的にロボットなどを動かす「フィジカルAI」の基
+- [NHK経済] 日本で開発された種苗 海外流出を防止へ 改正種苗法が成立 (07/17 14:26)
+  概要: 日本で開発された農産物の種や苗が無断で海外に持ち出されるのを防ぐため、国に品種を登録する前でも輸出の差し止めを認めるなど規制を強化する改正種苗法が、17日の参議院本会議で可決・成立しました。
+- [Investing.com日本] ワッカー・ノイソン、好調な第2四半期を受けて2026年通期見通しを上方修正 (07/17 18:32)
+- [Investing.com日本] 米半導体株の急落を受け、欧州チップ株も大幅安 (07/17 18:16)
 
 【依頼内容】
 - 最も動きが大きかった指標トップ3を特定
@@ -1314,29 +1236,29 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 64,141.12 pt (-4.03%)
+- TOPIX (1306連動ETF): 407.9 円 (-2.81%)
+- ドル円: 162.41 円 (+0.21%)
 - S&P 500: 7,533.77 (-0.51%)
 - NASDAQ: 25,881.95 (-1.47%)
 - ダウ: 52,552.97 (-0.20%)
-- ドル円: 162.43 円 (+0.22%)
 - 米10年債利回り: 4.569 % (+0.53%)
-- WTI原油: 79.06 USD (+0.14%)
-- 金: 3983.20 USD (-0.06%)
-- 日経225: 63,214.23 pt (-5.42%)
-- TOPIX (1306連動ETF): 404.2 円 (-3.69%)
+- WTI原油: 79.85 USD (+1.14%)
+- 金: 4001.30 USD (+0.39%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
   ++7.64円  任天堂(7974)  +3.02%  [電機]
-  ++3.79円  武田薬品(4502)  +1.98%  [医薬品]
-  ++2.21円  エーザイ(4523)  +1.43%  [医薬品]
-  ++1.79円  リクルートHD(6098)  +0.40%  [サービス]
-  ++1.50円  オリエンタルランド(4661)  +1.56%  [サービス]
+  ++7.32円  リクルートHD(6098)  +1.63%  [サービス]
+  ++5.89円  HOYA(7741)  +0.66%  [精密機器]
+  ++4.82円  武田薬品(4502)  +2.53%  [医薬品]
+  ++4.00円  エーザイ(4523)  +2.58%  [医薬品]
 ▼ 日経225 (下落寄与TOP5)
-  -254.29円  東京エレクトロン(8035)  -10.04%  [半導体製造装置]
-  -162.86円  キーエンス(6861)  -6.16%  [電機]
-  -107.50円  アドバンテスト(6857)  -10.16%  [電機]
-  -38.50円  村田製作所(6981)  -12.83%  [電機]
-  -25.46円  ソフトバンクG(9984)  -11.96%  [通信]
+  -206.79円  東京エレクトロン(8035)  -8.17%  [半導体製造装置]
+  -113.21円  キーエンス(6861)  -4.28%  [電機]
+  -76.25円  アドバンテスト(6857)  -7.20%  [電機]
+  -27.43円  村田製作所(6981)  -9.14%  [電機]
+  -19.18円  ソフトバンクG(9984)  -9.01%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
   ++12.88pt  Apple Inc.(AAPL)  +1.76%  wt:9.67%  [Information Technology]
   ++6.26pt  Microsoft(MSFT)  +1.38%  wt:5.98%  [Information Technology]
@@ -1351,34 +1273,23 @@
   -9.73pt  Micron Technology(MU)  -5.65%  wt:2.27%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] Nextorage、全日本スーパーフォーミュラ選手権の「JRE」とパートナーシップ契約(デジカメ Watch) (07/17 14:06)
-  概要: Nextorage株式会社は、全日本スーパーフォーミュラ選手権（SUPER FORMULA）を運営する株式会社日本レースプロモーション（JRP）とパートナーシップ契約を締結したことを発表した。
-
-この
-- [Investing.com日本] Zhipu AIの株価、MoonshotがAIモデル発表後に20%超下落 (07/17 13:57)
-- [NHK経済] 株価 午後も一段と売り注文膨らむ 一時4000円以上値下がり (07/17 13:44)
-  概要: 17日の東京株式市場、午後も一段と売り注文が膨らみ、日経平均株価は4000円以上値下がりして、およそ1か月ぶりに6万3000円を割り込みました。IT大手の「グーグル」が手がける最新のAIモデルについて
-- [Investing.com日本] 後場の日経平均は2614円安でスタート、イビデンやSUMCOなどが下落 (07/17 13:15)
+- [Yahoo!ファイナンス] Tロウプライスの「アクティブ運用型暗号資産ETF」、NYSEアーカ上場(あたらしい経済) (07/17 18:33)
+  概要: 米資産運用大手Tロウプライス（T. Rowe Price）が手掛けるアクティブ運用型暗号資産（仮想通貨）のETF（上場投資信託）が、米NYSEアーカ（NYSE Arca）で取引開始された。同社が7月1
+- [Investing.com日本] 17日の香港市場概況： ハンセン指数は6日ぶり反落、ほぼ全業種下落 (07/17 18:30)
+- [NHK経済] 円相場 小幅な値動き 売り買いが交錯 (07/17 18:25)
+  概要: 17日の東京外国為替市場、円相場は小幅な値動きとなりました。
+- [Investing.com日本] 17日の中国本土市場概況：上海総合は3日続落、世界的な半導体株安や成長予想の下方修正で (07/17 18:15)
+- [Investing.com日本] GSKの株価が本日下落した理由 (07/17 18:02)
+- [NHK経済] 株価 一時4100円超下落 取引時間中の下落幅 過去3番目の大きさ (07/17 16:31)
+  概要: 17日の東京株式市場は、株高をけん引してきたAIや半導体関連の銘柄に売り注文が膨らみました。日経平均株価の取引時間中の下げ幅は、一時、4100円を超え、過去3番目に大きい記録的な下落となりました。
 - [ZUU online] 「バクネ」展開のTENTIALが一時15％超の急騰　第3四半期は売上高245億円、過去最高更新を好感 (07/17 12:02)
   概要: リカバリーウェアブランド「テンシャル（TENTIAL）」や「バクネ（BAKUNE）」を展開するTENTIALの株価が7月16日、前日比が一時、15％超と急騰した。前日の7月15日に発表した2026年8
 - [ZUU online] FX/為替「ドル/円今日の見通し｜原油価格急騰後の消費者心理に注目」 外為どっとコム トゥデイ 2026年7月17日号 (07/17 10:32)
   概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月17日8時20分執筆・監修：株式会社外
-- [ZUU online] 「個別最適」から脱却へ。パーティション大手コマニーが挑む、ものづくり根本改革の全貌 (07/17 10:00)
-  概要: 石川県小松市に本社を置き、パーティションの専業メーカーとして、オフィスや工場、病院、学校など、さまざまな場所の「間づくり」という価値を提供する、コマニー株式会社。 同社では、中期経営計画の達成に向けた
-- [ZUU online] 日々是相場［夕刊］――  2026年7月16日（木） (07/16 19:30)
-  概要: 日経平均 66,835.54円 ▼1,915.97円 為替 １ドル＝162.15円 売買高（東証プライム、以下同） 24億6,958万株 売買代金 9兆5639億84百万円 値上り銘柄数 446銘柄 
-- [ZUU online] 米ドル／円 ―― ドル以外の通貨に対する円安が続く公算が大きいことから161円台後半は堅いと見る (07/16 19:00)
-  概要: この記事は2026年7月16日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月16日（木）の午前10時ごろに外為
-- [Investing.com日本] マレーシアの第2四半期GDP成長率、輸出増加で5.8%に加速し予想を上回る (07/17 14:01)
-- [Investing.com日本] いちご---大幅反発、決算受けた前日の下落は過剰反応との見方にも (07/17 13:45)
-- [NHK経済] 台湾 TSMC 4-6月期決算 売り上げ 最終利益 ともに過去最高更新 (07/16 21:15)
-  概要: 半導体の受託生産で世界最大手の台湾のTSMCの6月までの3か月間の決算は、AI向けの半導体の販売が好調で、売り上げ、最終的な利益ともに3か月ごとの決算として、過去最高を更新しました。
-- [Yahoo!ファイナンス] 改正電気事業法が成立(共同通信) (07/17 14:06)
-  概要: 原発など大規模な発電所や送配電網の整備に公的融資を可能にする改正電気事業法が17日、参院本会議で可決、成立した。需要増加が見込まれる電力の安定供給につなげるため、民間事業者の投資を後押しする。
-- [NHK経済] 米 6月の小売業売上高 前月比0.2％増 消費堅調続くか焦点 (07/16 23:57)
-  概要: アメリカの6月の小売業の売上高は、5月と比べて0.2％増加しました。イラン情勢の影響で、原油価格が再び上昇傾向となる中、個人消費の堅調さが維持されるかが焦点となります。
-- [NHK経済] 国産AI開発「ノエトラ」 エヌビディアから新システム導入へ (07/16 23:47)
-  概要: 国産AIの開発を目指す新会社「ノエトラ」が、アメリカの半導体大手「エヌビディア」から、最新の半導体を搭載した次世代のシステムを導入すると発表しました。自律的にロボットなどを動かす「フィジカルAI」の基
+- [NHK経済] 日本で開発された種苗 海外流出を防止へ 改正種苗法が成立 (07/17 14:26)
+  概要: 日本で開発された農産物の種や苗が無断で海外に持ち出されるのを防ぐため、国に品種を登録する前でも輸出の差し止めを認めるなど規制を強化する改正種苗法が、17日の参議院本会議で可決・成立しました。
+- [Investing.com日本] ワッカー・ノイソン、好調な第2四半期を受けて2026年通期見通しを上方修正 (07/17 18:32)
+- [Investing.com日本] 米半導体株の急落を受け、欧州チップ株も大幅安 (07/17 18:16)
 
 【依頼内容】
 - 短期的なリスク要因（今後1週間以内）
