@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年07月20日 14:51 JST</span>
+    <span class="updated">更新: 2026年07月20日 19:44 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">64,141.12 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -2694.42&nbsp;&nbsp;-4.03%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">407.9 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -11.80&nbsp;&nbsp;-2.81%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">162.40 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.03&nbsp;&nbsp;+0.02%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">52,146.42 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">162.36 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -0.02&nbsp;&nbsp;-0.01%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.541 <span class="tile-unit">%</span></div>
@@ -603,7 +627,7 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">83.57 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">81.55 <span class="tile-unit">USD</span></div>
           <div class="tile-change flat">
             +0.00&nbsp;&nbsp;+0.00%
           </div>
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4015.50 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4028.50 <span class="tile-unit">USD</span></div>
           <div class="tile-change flat">
             +0.00&nbsp;&nbsp;+0.00%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">64,141.12 <span class="tile-unit">pt</span></div>
-          <div class="tile-change down">
-            -2694.42&nbsp;&nbsp;-4.03%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">407.9 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -11.80&nbsp;&nbsp;-2.81%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -915,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (14件)</div>
+    <div class="card-title">📰 最新ニュース (17件)</div>
     
     
     
@@ -925,49 +925,29 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📈 マーケット全般 (8件)</div>
+          <div class="news-group-title">📈 マーケット全般 (6件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1607659" target="_blank" rel="noopener">中国アルミニウム株が上昇、筆頭株主が最大20億元の株式取得計画を発表</a>
+                <a href="https://news.yahoo.co.jp/articles/8ea85d82f3f4956c6e4c836ad99893793e0beb17?source=rss" target="_blank" rel="noopener">アリエクスプレス制裁金1千億円　EU、違法商品対策に不備(共同通信)</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>07/20 14:01</span>
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>07/20 19:39</span>
               </div>
+              
+              <div class="news-summary">【ロンドン共同】欧州連合（EU）欧州委員会は20日、中国の電子商取引（EC）大手アリババグループのオンライン市場「アリエクスプレス」について、違法な商品の流通を防ぐ対策に不備があるとして5億5千万ユ</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1607646" target="_blank" rel="noopener">サムスンバイオロジクス、PolyPeptideを約18億ドルで買収へ――株価3%超下落</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1608075" target="_blank" rel="noopener">CoreWeaveの株価が本日上昇している理由とは</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>07/20 13:00</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1607641" target="_blank" rel="noopener">アジア株式市場はまちまち、AI投資を再評価―韓国下落、中国が堅調</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>07/20 12:25</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1607638" target="_blank" rel="noopener">方舟健客の株価が本日上昇している理由とは？</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>07/20 12:02</span>
+                <span>07/20 19:34</span>
               </div>
               
             </div>
@@ -1031,8 +1011,49 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (1件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (4件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/61e60037ddbec979b1e949cada6f8116c6bf2c31?source=rss" target="_blank" rel="noopener">【7月第3週のガソリン価格】「前週から0.2円の値下がり」大阪府の価格「169.8 円」大阪府のガソリン価格（7月13日時点）を紹介(LIMO)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>07/20 19:21</span>
+              </div>
+              
+              <div class="news-summary">不透明な世界情勢と為替の円安が影響し、原油価格の高値更新が依然として続いています。
+
+日本エネルギー経済研究所石油情報センターが行った調査によると、2026年7月13日時点の「大阪府」におけるレギュラ…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/99bafa288745c2916b8587c0a35255337a448917?source=rss" target="_blank" rel="noopener">中国、レアアース磁石の対日輸出で続く低水準　6月は128トン、前年同月比でマイナスに(産経新聞)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>07/20 19:17</span>
+              </div>
+              
+              <div class="news-summary">【北京＝三塚聖平】中国税関総署が20日公表した6月の貿易データによると、レアアース（希土類）磁石の日本への輸出量は128トンだった。前月比で4.4％増だったが、4カ月連続で200トンを下回る低水準とな…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/bb96ff5c9b5daaf1131b288ac21d7dc3cb5245ef?source=rss" target="_blank" rel="noopener">対日レアアース低水準続く　中国、6月の磁石輸出(共同通信)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>07/20 19:05</span>
+              </div>
+              
+              <div class="news-summary">【北京共同】中国税関総署が20日公表した貿易データによると、6月のレアアース（希土類）磁石の日本向け輸出量は128トンだった。前月から5トン増えたが、低い水準が続いた。中国政府が1月に始めた軍民両用</div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1054,16 +1075,27 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (1件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (2件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1607655" target="_blank" rel="noopener">香港テクノロジー株、Moonshot AIの躍進とIPO期待で上昇</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1608063" target="_blank" rel="noopener">ドミノ・ピザ株が急騰、第2四半期決算が低い予想を上回る</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>07/20 13:29</span>
+                <span>07/20 19:30</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1608036" target="_blank" rel="noopener">ジャージー・マイクス・サブス、米国IPOで最大10億9000万ドルの調達を目指す</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>07/20 19:16</span>
               </div>
               
             </div>
@@ -1075,21 +1107,30 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (4件)</div>
+          <div class="news-group-title">📌 その他 (5件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/b5e3442c443465a01643fd077d561a512d8e7862?source=rss" target="_blank" rel="noopener">父の「投資信託450万円」を相続！ 売って“子どもの教育費”にしたいけど、夫に「税金が気になる」と言われました。もう“相続税を払った”のに、まだ税金がかかるんですか？(ファイナンシャルフィールド)</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1608047" target="_blank" rel="noopener">SDICパワー傘下企業、CATLと合弁会社を設立へ――総投資額334億元の水力発電プロジェクト</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>07/20 14:40</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>07/20 19:23</span>
               </div>
               
-              <div class="news-summary">投資がより身近なものとなったことで、預金や不動産だけでなく、投資信託を相続するケースも増えています。投資信託に利益が出ている場合、売却すると税金がかかるのか疑問を持つ人もいるでしょう。
- 
-相続した投…</div>
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/302481" target="_blank" rel="noopener">儲かりそうだけで選んではいけない、投資で大切な「応援したい」の見つけ方</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>07/20 17:00</span>
+              </div>
+              
+              <div class="news-summary">本記事は、新井 和宏氏の著書『投資がうまくいく人の当たり前』（アスコム）の中から一部を抜粋・編集しています。 うまくいく人は「動機」重視。うまくいかない人は「結果」重視 「推し」がわかると、お金の使い…</div>
               
             </div>
             
@@ -1142,20 +1183,20 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-20 14:51）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-20 19:44）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 64,141.12 pt (-4.03%)
+- TOPIX (1306連動ETF): 407.9 円 (-2.81%)
+- ドル円: 162.40 円 (+0.02%)
 - S&P 500: 7,457.69 (-1.01%)
 - NASDAQ: 25,520.24 (-1.40%)
 - ダウ: 52,146.42 (-0.77%)
-- ドル円: 162.36 円 (-0.01%)
 - 米10年債利回り: 4.541 % (-0.61%)
-- WTI原油: 83.57 USD (+0.00%)
-- 金: 4015.50 USD (+0.00%)
-- 日経225: 64,141.12 pt (-4.03%)
-- TOPIX (1306連動ETF): 407.9 円 (-2.81%)
+- WTI原油: 81.55 USD (+0.00%)
+- 金: 4028.50 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1184,10 +1225,9 @@
   -7.37pt  Meta Platforms(META)  -2.79%  wt:3.51%  [Communication Services]
 
 【関連ニュース見出し】
-- [Investing.com日本] 中国アルミニウム株が上昇、筆頭株主が最大20億元の株式取得計画を発表 (07/20 14:01)
-- [Investing.com日本] サムスンバイオロジクス、PolyPeptideを約18億ドルで買収へ――株価3%超下落 (07/20 13:00)
-- [Investing.com日本] アジア株式市場はまちまち、AI投資を再評価―韓国下落、中国が堅調 (07/20 12:25)
-- [Investing.com日本] 方舟健客の株価が本日上昇している理由とは？ (07/20 12:02)
+- [Yahoo!ファイナンス] アリエクスプレス制裁金1千億円　EU、違法商品対策に不備(共同通信) (07/20 19:39)
+  概要: 【ロンドン共同】欧州連合（EU）欧州委員会は20日、中国の電子商取引（EC）大手アリババグループのオンライン市場「アリエクスプレス」について、違法な商品の流通を防ぐ対策に不備があるとして5億5千万ユ
+- [Investing.com日本] CoreWeaveの株価が本日上昇している理由とは (07/20 19:34)
 - [NHK経済] NY原油市場 1バレル＝85ドル台に上昇 1か月ぶりの高値水準 (07/20 08:02)
   概要: 19日のニューヨーク原油市場では、国際的な取り引きの指標となるWTIの先物価格が一時、1バレル＝85ドル台に上昇しました。これは6月12日以来、およそ1か月ぶりの高値水準です。アメリカとイランの対立が
 - [ZUU online] 株価だけを見るな！ 投資を長く楽しむ4つの醍醐味 (07/18 17:00)
@@ -1196,13 +1236,21 @@
   概要: 17日のニューヨーク株式市場では、中国の新興企業が新たなAIモデルを発表したことでアメリカ企業によるAIへの巨額投資などに対する懸念から売り注文が広がり、ハイテク株の比率が高いナスダックの株価指数は一
 - [ZUU online] 日々是相場［夕刊］――  2026年7月17日（金） (07/17 19:30)
   概要: 日経平均 64,141.12円 ▼2,694.42円 為替 １ドル＝162.35円 売買高（東証プライム、以下同） 31億1,322万株 売買代金 10兆9219億77百万円 値上り銘柄数 449銘柄
+- [Yahoo!ファイナンス] 【7月第3週のガソリン価格】「前週から0.2円の値下がり」大阪府の価格「169.8 円」大阪府のガソリン価格（7月13日時点）を紹介(LIMO) (07/20 19:21)
+  概要: 不透明な世界情勢と為替の円安が影響し、原油価格の高値更新が依然として続いています。
+
+日本エネルギー経済研究所石油情報センターが行った調査によると、2026年7月13日時点の「大阪府」におけるレギュラ
+- [Yahoo!ファイナンス] 中国、レアアース磁石の対日輸出で続く低水準　6月は128トン、前年同月比でマイナスに(産経新聞) (07/20 19:17)
+  概要: 【北京＝三塚聖平】中国税関総署が20日公表した6月の貿易データによると、レアアース（希土類）磁石の日本への輸出量は128トンだった。前月比で4.4％増だったが、4カ月連続で200トンを下回る低水準とな
+- [Yahoo!ファイナンス] 対日レアアース低水準続く　中国、6月の磁石輸出(共同通信) (07/20 19:05)
+  概要: 【北京共同】中国税関総署が20日公表した貿易データによると、6月のレアアース（希土類）磁石の日本向け輸出量は128トンだった。前月から5トン増えたが、低い水準が続いた。中国政府が1月に始めた軍民両用
 - [NHK経済] 米アップル 日本でiPhoneの販売価格を約10％値上げ (07/18 12:40)
   概要: アメリカのIT大手、「アップル」は、日本国内での「iPhone」の販売価格を10％程度引き上げました。円安の影響を反映したものとみられます。
-- [Investing.com日本] 香港テクノロジー株、Moonshot AIの躍進とIPO期待で上昇 (07/20 13:29)
-- [Yahoo!ファイナンス] 父の「投資信託450万円」を相続！ 売って“子どもの教育費”にしたいけど、夫に「税金が気になる」と言われました。もう“相続税を払った”のに、まだ税金がかかるんですか？(ファイナンシャルフィールド) (07/20 14:40)
-  概要: 投資がより身近なものとなったことで、預金や不動産だけでなく、投資信託を相続するケースも増えています。投資信託に利益が出ている場合、売却すると税金がかかるのか疑問を持つ人もいるでしょう。
- 
-相続した投
+- [Investing.com日本] ドミノ・ピザ株が急騰、第2四半期決算が低い予想を上回る (07/20 19:30)
+- [Investing.com日本] ジャージー・マイクス・サブス、米国IPOで最大10億9000万ドルの調達を目指す (07/20 19:16)
+- [Investing.com日本] SDICパワー傘下企業、CATLと合弁会社を設立へ――総投資額334億元の水力発電プロジェクト (07/20 19:23)
+- [ZUU online] 儲かりそうだけで選んではいけない、投資で大切な「応援したい」の見つけ方 (07/20 17:00)
+  概要: 本記事は、新井 和宏氏の著書『投資がうまくいく人の当たり前』（アスコム）の中から一部を抜粋・編集しています。 うまくいく人は「動機」重視。うまくいかない人は「結果」重視 「推し」がわかると、お金の使い
 - [ZUU online] 必ず儲かるは危険信号！ お金を出す前に疑うべき4つの罠 (07/19 17:00)
   概要: 本記事は、新井 和宏氏の著書『投資がうまくいく人の当たり前』（アスコム）の中から一部を抜粋・編集しています。 「儲かる」という言葉に人はなぜ弱いのか 詐欺は「知識不足」より「心理の穴」を狙ってくる 投
 - [NHK経済] キオクシア 米で約371億円の賠償の評決 控訴含め争う方針 (07/17 20:29)
@@ -1223,15 +1271,15 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 64,141.12 pt (-4.03%)
+- TOPIX (1306連動ETF): 407.9 円 (-2.81%)
+- ドル円: 162.40 円 (+0.02%)
 - S&P 500: 7,457.69 (-1.01%)
 - NASDAQ: 25,520.24 (-1.40%)
 - ダウ: 52,146.42 (-0.77%)
-- ドル円: 162.36 円 (-0.01%)
 - 米10年債利回り: 4.541 % (-0.61%)
-- WTI原油: 83.57 USD (+0.00%)
-- 金: 4015.50 USD (+0.00%)
-- 日経225: 64,141.12 pt (-4.03%)
-- TOPIX (1306連動ETF): 407.9 円 (-2.81%)
+- WTI原油: 81.55 USD (+0.00%)
+- 金: 4028.50 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1260,10 +1308,9 @@
   -7.37pt  Meta Platforms(META)  -2.79%  wt:3.51%  [Communication Services]
 
 【関連ニュース見出し】
-- [Investing.com日本] 中国アルミニウム株が上昇、筆頭株主が最大20億元の株式取得計画を発表 (07/20 14:01)
-- [Investing.com日本] サムスンバイオロジクス、PolyPeptideを約18億ドルで買収へ――株価3%超下落 (07/20 13:00)
-- [Investing.com日本] アジア株式市場はまちまち、AI投資を再評価―韓国下落、中国が堅調 (07/20 12:25)
-- [Investing.com日本] 方舟健客の株価が本日上昇している理由とは？ (07/20 12:02)
+- [Yahoo!ファイナンス] アリエクスプレス制裁金1千億円　EU、違法商品対策に不備(共同通信) (07/20 19:39)
+  概要: 【ロンドン共同】欧州連合（EU）欧州委員会は20日、中国の電子商取引（EC）大手アリババグループのオンライン市場「アリエクスプレス」について、違法な商品の流通を防ぐ対策に不備があるとして5億5千万ユ
+- [Investing.com日本] CoreWeaveの株価が本日上昇している理由とは (07/20 19:34)
 - [NHK経済] NY原油市場 1バレル＝85ドル台に上昇 1か月ぶりの高値水準 (07/20 08:02)
   概要: 19日のニューヨーク原油市場では、国際的な取り引きの指標となるWTIの先物価格が一時、1バレル＝85ドル台に上昇しました。これは6月12日以来、およそ1か月ぶりの高値水準です。アメリカとイランの対立が
 - [ZUU online] 株価だけを見るな！ 投資を長く楽しむ4つの醍醐味 (07/18 17:00)
@@ -1272,13 +1319,21 @@
   概要: 17日のニューヨーク株式市場では、中国の新興企業が新たなAIモデルを発表したことでアメリカ企業によるAIへの巨額投資などに対する懸念から売り注文が広がり、ハイテク株の比率が高いナスダックの株価指数は一
 - [ZUU online] 日々是相場［夕刊］――  2026年7月17日（金） (07/17 19:30)
   概要: 日経平均 64,141.12円 ▼2,694.42円 為替 １ドル＝162.35円 売買高（東証プライム、以下同） 31億1,322万株 売買代金 10兆9219億77百万円 値上り銘柄数 449銘柄
+- [Yahoo!ファイナンス] 【7月第3週のガソリン価格】「前週から0.2円の値下がり」大阪府の価格「169.8 円」大阪府のガソリン価格（7月13日時点）を紹介(LIMO) (07/20 19:21)
+  概要: 不透明な世界情勢と為替の円安が影響し、原油価格の高値更新が依然として続いています。
+
+日本エネルギー経済研究所石油情報センターが行った調査によると、2026年7月13日時点の「大阪府」におけるレギュラ
+- [Yahoo!ファイナンス] 中国、レアアース磁石の対日輸出で続く低水準　6月は128トン、前年同月比でマイナスに(産経新聞) (07/20 19:17)
+  概要: 【北京＝三塚聖平】中国税関総署が20日公表した6月の貿易データによると、レアアース（希土類）磁石の日本への輸出量は128トンだった。前月比で4.4％増だったが、4カ月連続で200トンを下回る低水準とな
+- [Yahoo!ファイナンス] 対日レアアース低水準続く　中国、6月の磁石輸出(共同通信) (07/20 19:05)
+  概要: 【北京共同】中国税関総署が20日公表した貿易データによると、6月のレアアース（希土類）磁石の日本向け輸出量は128トンだった。前月から5トン増えたが、低い水準が続いた。中国政府が1月に始めた軍民両用
 - [NHK経済] 米アップル 日本でiPhoneの販売価格を約10％値上げ (07/18 12:40)
   概要: アメリカのIT大手、「アップル」は、日本国内での「iPhone」の販売価格を10％程度引き上げました。円安の影響を反映したものとみられます。
-- [Investing.com日本] 香港テクノロジー株、Moonshot AIの躍進とIPO期待で上昇 (07/20 13:29)
-- [Yahoo!ファイナンス] 父の「投資信託450万円」を相続！ 売って“子どもの教育費”にしたいけど、夫に「税金が気になる」と言われました。もう“相続税を払った”のに、まだ税金がかかるんですか？(ファイナンシャルフィールド) (07/20 14:40)
-  概要: 投資がより身近なものとなったことで、預金や不動産だけでなく、投資信託を相続するケースも増えています。投資信託に利益が出ている場合、売却すると税金がかかるのか疑問を持つ人もいるでしょう。
- 
-相続した投
+- [Investing.com日本] ドミノ・ピザ株が急騰、第2四半期決算が低い予想を上回る (07/20 19:30)
+- [Investing.com日本] ジャージー・マイクス・サブス、米国IPOで最大10億9000万ドルの調達を目指す (07/20 19:16)
+- [Investing.com日本] SDICパワー傘下企業、CATLと合弁会社を設立へ――総投資額334億元の水力発電プロジェクト (07/20 19:23)
+- [ZUU online] 儲かりそうだけで選んではいけない、投資で大切な「応援したい」の見つけ方 (07/20 17:00)
+  概要: 本記事は、新井 和宏氏の著書『投資がうまくいく人の当たり前』（アスコム）の中から一部を抜粋・編集しています。 うまくいく人は「動機」重視。うまくいかない人は「結果」重視 「推し」がわかると、お金の使い
 - [ZUU online] 必ず儲かるは危険信号！ お金を出す前に疑うべき4つの罠 (07/19 17:00)
   概要: 本記事は、新井 和宏氏の著書『投資がうまくいく人の当たり前』（アスコム）の中から一部を抜粋・編集しています。 「儲かる」という言葉に人はなぜ弱いのか 詐欺は「知識不足」より「心理の穴」を狙ってくる 投
 - [NHK経済] キオクシア 米で約371億円の賠償の評決 控訴含め争う方針 (07/17 20:29)
@@ -1293,15 +1348,15 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 64,141.12 pt (-4.03%)
+- TOPIX (1306連動ETF): 407.9 円 (-2.81%)
+- ドル円: 162.40 円 (+0.02%)
 - S&P 500: 7,457.69 (-1.01%)
 - NASDAQ: 25,520.24 (-1.40%)
 - ダウ: 52,146.42 (-0.77%)
-- ドル円: 162.36 円 (-0.01%)
 - 米10年債利回り: 4.541 % (-0.61%)
-- WTI原油: 83.57 USD (+0.00%)
-- 金: 4015.50 USD (+0.00%)
-- 日経225: 64,141.12 pt (-4.03%)
-- TOPIX (1306連動ETF): 407.9 円 (-2.81%)
+- WTI原油: 81.55 USD (+0.00%)
+- 金: 4028.50 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1330,10 +1385,9 @@
   -7.37pt  Meta Platforms(META)  -2.79%  wt:3.51%  [Communication Services]
 
 【関連ニュース見出し】
-- [Investing.com日本] 中国アルミニウム株が上昇、筆頭株主が最大20億元の株式取得計画を発表 (07/20 14:01)
-- [Investing.com日本] サムスンバイオロジクス、PolyPeptideを約18億ドルで買収へ――株価3%超下落 (07/20 13:00)
-- [Investing.com日本] アジア株式市場はまちまち、AI投資を再評価―韓国下落、中国が堅調 (07/20 12:25)
-- [Investing.com日本] 方舟健客の株価が本日上昇している理由とは？ (07/20 12:02)
+- [Yahoo!ファイナンス] アリエクスプレス制裁金1千億円　EU、違法商品対策に不備(共同通信) (07/20 19:39)
+  概要: 【ロンドン共同】欧州連合（EU）欧州委員会は20日、中国の電子商取引（EC）大手アリババグループのオンライン市場「アリエクスプレス」について、違法な商品の流通を防ぐ対策に不備があるとして5億5千万ユ
+- [Investing.com日本] CoreWeaveの株価が本日上昇している理由とは (07/20 19:34)
 - [NHK経済] NY原油市場 1バレル＝85ドル台に上昇 1か月ぶりの高値水準 (07/20 08:02)
   概要: 19日のニューヨーク原油市場では、国際的な取り引きの指標となるWTIの先物価格が一時、1バレル＝85ドル台に上昇しました。これは6月12日以来、およそ1か月ぶりの高値水準です。アメリカとイランの対立が
 - [ZUU online] 株価だけを見るな！ 投資を長く楽しむ4つの醍醐味 (07/18 17:00)
@@ -1342,13 +1396,21 @@
   概要: 17日のニューヨーク株式市場では、中国の新興企業が新たなAIモデルを発表したことでアメリカ企業によるAIへの巨額投資などに対する懸念から売り注文が広がり、ハイテク株の比率が高いナスダックの株価指数は一
 - [ZUU online] 日々是相場［夕刊］――  2026年7月17日（金） (07/17 19:30)
   概要: 日経平均 64,141.12円 ▼2,694.42円 為替 １ドル＝162.35円 売買高（東証プライム、以下同） 31億1,322万株 売買代金 10兆9219億77百万円 値上り銘柄数 449銘柄
+- [Yahoo!ファイナンス] 【7月第3週のガソリン価格】「前週から0.2円の値下がり」大阪府の価格「169.8 円」大阪府のガソリン価格（7月13日時点）を紹介(LIMO) (07/20 19:21)
+  概要: 不透明な世界情勢と為替の円安が影響し、原油価格の高値更新が依然として続いています。
+
+日本エネルギー経済研究所石油情報センターが行った調査によると、2026年7月13日時点の「大阪府」におけるレギュラ
+- [Yahoo!ファイナンス] 中国、レアアース磁石の対日輸出で続く低水準　6月は128トン、前年同月比でマイナスに(産経新聞) (07/20 19:17)
+  概要: 【北京＝三塚聖平】中国税関総署が20日公表した6月の貿易データによると、レアアース（希土類）磁石の日本への輸出量は128トンだった。前月比で4.4％増だったが、4カ月連続で200トンを下回る低水準とな
+- [Yahoo!ファイナンス] 対日レアアース低水準続く　中国、6月の磁石輸出(共同通信) (07/20 19:05)
+  概要: 【北京共同】中国税関総署が20日公表した貿易データによると、6月のレアアース（希土類）磁石の日本向け輸出量は128トンだった。前月から5トン増えたが、低い水準が続いた。中国政府が1月に始めた軍民両用
 - [NHK経済] 米アップル 日本でiPhoneの販売価格を約10％値上げ (07/18 12:40)
   概要: アメリカのIT大手、「アップル」は、日本国内での「iPhone」の販売価格を10％程度引き上げました。円安の影響を反映したものとみられます。
-- [Investing.com日本] 香港テクノロジー株、Moonshot AIの躍進とIPO期待で上昇 (07/20 13:29)
-- [Yahoo!ファイナンス] 父の「投資信託450万円」を相続！ 売って“子どもの教育費”にしたいけど、夫に「税金が気になる」と言われました。もう“相続税を払った”のに、まだ税金がかかるんですか？(ファイナンシャルフィールド) (07/20 14:40)
-  概要: 投資がより身近なものとなったことで、預金や不動産だけでなく、投資信託を相続するケースも増えています。投資信託に利益が出ている場合、売却すると税金がかかるのか疑問を持つ人もいるでしょう。
- 
-相続した投
+- [Investing.com日本] ドミノ・ピザ株が急騰、第2四半期決算が低い予想を上回る (07/20 19:30)
+- [Investing.com日本] ジャージー・マイクス・サブス、米国IPOで最大10億9000万ドルの調達を目指す (07/20 19:16)
+- [Investing.com日本] SDICパワー傘下企業、CATLと合弁会社を設立へ――総投資額334億元の水力発電プロジェクト (07/20 19:23)
+- [ZUU online] 儲かりそうだけで選んではいけない、投資で大切な「応援したい」の見つけ方 (07/20 17:00)
+  概要: 本記事は、新井 和宏氏の著書『投資がうまくいく人の当たり前』（アスコム）の中から一部を抜粋・編集しています。 うまくいく人は「動機」重視。うまくいかない人は「結果」重視 「推し」がわかると、お金の使い
 - [ZUU online] 必ず儲かるは危険信号！ お金を出す前に疑うべき4つの罠 (07/19 17:00)
   概要: 本記事は、新井 和宏氏の著書『投資がうまくいく人の当たり前』（アスコム）の中から一部を抜粋・編集しています。 「儲かる」という言葉に人はなぜ弱いのか 詐欺は「知識不足」より「心理の穴」を狙ってくる 投
 - [NHK経済] キオクシア 米で約371億円の賠償の評決 控訴含め争う方針 (07/17 20:29)
