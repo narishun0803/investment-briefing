@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年07月23日 14:36 JST</span>
+    <span class="updated">更新: 2026年07月23日 19:13 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">66,422.60 <span class="tile-unit">pt</span></div>
+          <div class="tile-change up">
+            +307.00&nbsp;&nbsp;+0.46%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">422.1 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +1.80&nbsp;&nbsp;+0.43%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">163.37 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.18&nbsp;&nbsp;+0.11%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">52,218.58 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">163.07 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -0.11&nbsp;&nbsp;-0.07%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.657 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">88.14 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">90.12 <span class="tile-unit">USD</span></div>
           <div class="tile-change up">
-            +1.31&nbsp;&nbsp;+1.51%
+            +3.29&nbsp;&nbsp;+3.79%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4125.00 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4094.20 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -21.90&nbsp;&nbsp;-0.53%
+            -52.70&nbsp;&nbsp;-1.27%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">66,577.05 <span class="tile-unit">pt</span></div>
-          <div class="tile-change up">
-            +461.45&nbsp;&nbsp;+0.70%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">422.9 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +2.60&nbsp;&nbsp;+0.62%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -672,35 +672,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6857:TYO" target="_blank" rel="noopener">アドバンテスト</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="up">+50.18</td>
-              <td class="up">+4.75%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
-                <span class="contrib-sector">電機</span>
-              </td>
-              <td class="up">+15.00</td>
-              <td class="up">+0.58%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/8035:TYO" target="_blank" rel="noopener">東京エレクトロン</a>
-                <span class="contrib-sector">半導体製造装置</span>
-              </td>
-              <td class="up">+14.64</td>
-              <td class="up">+0.62%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/6981:TYO" target="_blank" rel="noopener">村田製作所</a>
-                <span class="contrib-sector">電機</span>
-              </td>
-              <td class="up">+13.29</td>
-              <td class="up">+4.47%</td>
+              <td class="up">+43.39</td>
+              <td class="up">+4.11%</td>
             </tr>
             
             <tr>
@@ -708,8 +681,35 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/8411:TYO" target="_blank" rel="noopener">みずほFG</a>
                 <span class="contrib-sector">銀行</span>
               </td>
-              <td class="up">+9.54</td>
-              <td class="up">+3.13%</td>
+              <td class="up">+8.46</td>
+              <td class="up">+2.78%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6981:TYO" target="_blank" rel="noopener">村田製作所</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="up">+7.89</td>
+              <td class="up">+2.66%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9984:TYO" target="_blank" rel="noopener">ソフトバンクG</a>
+                <span class="contrib-sector">通信</span>
+              </td>
+              <td class="up">+7.68</td>
+              <td class="up">+3.77%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="up">+5.36</td>
+              <td class="up">+0.21%</td>
             </tr>
             
             </tbody>
@@ -731,8 +731,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/9983:TYO" target="_blank" rel="noopener">ファーストリテイリング</a>
                 <span class="contrib-sector">小売</span>
               </td>
-              <td class="down">-47.14</td>
-              <td class="down">-1.68%</td>
+              <td class="down">-53.21</td>
+              <td class="down">-1.90%</td>
             </tr>
             
             <tr>
@@ -740,8 +740,26 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/7741:TYO" target="_blank" rel="noopener">HOYA</a>
                 <span class="contrib-sector">精密機器</span>
               </td>
-              <td class="down">-8.21</td>
-              <td class="down">-0.92%</td>
+              <td class="down">-7.32</td>
+              <td class="down">-0.82%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6367:TYO" target="_blank" rel="noopener">ダイキン</a>
+                <span class="contrib-sector">機械</span>
+              </td>
+              <td class="down">-4.46</td>
+              <td class="down">-0.52%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/4063:TYO" target="_blank" rel="noopener">信越化学</a>
+                <span class="contrib-sector">化学</span>
+              </td>
+              <td class="down">-3.75</td>
+              <td class="down">-1.48%</td>
             </tr>
             
             <tr>
@@ -749,26 +767,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/4502:TYO" target="_blank" rel="noopener">武田薬品</a>
                 <span class="contrib-sector">医薬品</span>
               </td>
-              <td class="down">-2.54</td>
-              <td class="down">-1.28%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/4661:TYO" target="_blank" rel="noopener">オリエンタルランド</a>
-                <span class="contrib-sector">サービス</span>
-              </td>
-              <td class="down">-2.11</td>
-              <td class="down">-2.21%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/6098:TYO" target="_blank" rel="noopener">リクルートHD</a>
-                <span class="contrib-sector">サービス</span>
-              </td>
-              <td class="down">-1.96</td>
-              <td class="down">-0.45%</td>
+              <td class="down">-1.68</td>
+              <td class="down">-0.85%</td>
             </tr>
             
             </tbody>
@@ -925,125 +925,128 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📈 マーケット全般 (9件)</div>
+          <div class="news-group-title">📈 マーケット全般 (10件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1612920" target="_blank" rel="noopener">ＩＮＰＥＸ---続伸、原油相場の上昇を手掛かりに</a>
+                <a href="https://news.yahoo.co.jp/articles/6a5b2cd756771733f20e2ebaec477300e0891d87?source=rss" target="_blank" rel="noopener">100株単位のトレードで退場を防ぎながら繋いだ5年間…相場に出たり入ったりを繰り返した下積み時代(みんかぶマガジン)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>07/23 19:10</span>
+              </div>
+              
+              <div class="news-summary">元手はアルバイト代のみ、社会人経験もゼロ。20歳でそんな状態から飛び込んだデイトレードの世界で、こなつ氏は5年間、ほとんど勝てなかった。大きく負けたわけではない。だが、勝てもしない。そんな停滞期を経</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/dfb98c45aba406bbbcec453b4fcfbe55a670b237?source=rss" target="_blank" rel="noopener">AIバブルはまだ「6～7合目」――専門家が語る相場の現在地(みんかぶマガジン)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>07/23 19:10</span>
+              </div>
+              
+              <div class="news-summary">NVIDIAをはじめとする半導体株や、大量のデータセンターを持つ米国の巨大IT企業の株価は歴史的な高値圏にあり、AI関連株の上昇が続いている。こうした状況を「AIバブル」と捉えている投資家や評論家は</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/57b738c10194a5e5a5ed4bcff610329e823936bc?source=rss" target="_blank" rel="noopener">EU、米グーグルに制裁金1600億円(共同通信)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>07/23 19:07</span>
+              </div>
+              
+              <div class="news-summary">【フランクフルト共同】欧州連合（EU）欧州委員会は23日、米グーグルが巨大IT規制「デジタル市場法（DMA）」に違反したとして8億9千万ユーロ（約1600億円）の制裁金を科したと発表した。DMAに基</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/302610" target="_blank" rel="noopener">米ドル／円 ―― 本日23日（木）もドル高･円安の流れが続く公算が大きい</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>07/23 19:00</span>
+              </div>
+              
+              <div class="news-summary">この記事は2026年7月23日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月23日（木）の午前10時ごろに外為…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1613280" target="_blank" rel="noopener">23日の香港市場概況：ハンセン指数は3日ぶり反発、節目の25000ptを回復</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>07/23 14:30</span>
+                <span>07/23 18:30</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/8c8f370942ca9724dcc262a56bfaeb308e7da2e5?source=rss" target="_blank" rel="noopener">ついに1ドル163円台に…新NISAで「オルカン・S&P500」を今から始めるのはアリ？円安局面での投資判断(LIMO)</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1613279" target="_blank" rel="noopener">23日の中国本土市場概況： 上海総合は4日続伸、市場支援策への期待が指数をサポート</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>07/23 14:26</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>07/23 18:30</span>
               </div>
-              
-              <div class="news-summary">2026年7月21日、ニューヨーク外国為替市場で1ドル=163円台をつけました。歴史的な円安です。
-
-「新NISAでオルカンやS＆P500を始めようと思っていたのに、こんな円安では高値掴みになるんじゃ…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/98b3a68ca97d686ca69602e47f13a33fa090005f?source=rss" target="_blank" rel="noopener">SmallRig製の「ソニーFX5」ケージキット(デジカメ Watch)</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1613274" target="_blank" rel="noopener">Relxの株価が本日上昇している理由とは</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>07/23 14:25</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>07/23 18:24</span>
               </div>
-              
-              <div class="news-summary">SmallRig Japan株式会社は7月23日（木）、8月21日（金）発売のソニーのシネマカメラ「FX5」に対応するモジュラーケージキットを発表した。8月末までに順次発送予定としている。
-
-必要に応…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260723/k10015183751000.html" target="_blank" rel="noopener">円相場 1ドル＝163円台前半中心 有事のドル買い続く</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1613263" target="_blank" rel="noopener">フフタマキ、第2四半期決算が予想を上回り株価が急騰</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>07/23 12:30</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>07/23 18:18</span>
               </div>
-              
-              <div class="news-summary">23日の東京外国為替市場、1ドル＝163円台前半を中心とした取り引きとなっています。</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260723/k10015183761000.html" target="_blank" rel="noopener">株価 午前は値上がり AI・半導体関連に買い注文</a>
+                <a href="http://www3.nhk.or.jp/news/html/20260723/k10015183751000.html" target="_blank" rel="noopener">円相場 いくぶん値下がり 1ドル＝163円台前半で推移</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">NHK経済</span>
-                <span>07/23 12:13</span>
+                <span>07/23 18:12</span>
               </div>
               
-              <div class="news-summary">23日の東京株式市場、一部のAI・半導体関連の銘柄に買い注文が入り、株価は値上がりしています。</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302595" target="_blank" rel="noopener">FX/為替「ドル/円今日の見通し｜163円値固めから高値更新を窺う」 外為どっとコム トゥデイ 2026年7月23日号</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/23 10:32</span>
-              </div>
-              
-              <div class="news-summary">主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月23日8時10分執筆・監修：株式会社外…</div>
+              <div class="news-summary">23日の東京外国為替市場、原油の先物価格が上昇したことを背景に、円を売って有事に強いとされるドルを買う動きが強まり、円相場はいくぶん値下がりしました。</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://zuuonline.com/archives/302590" target="_blank" rel="noopener">日々是相場［夕刊］――  2026年7月22日（水）</a>
+                <a href="http://www3.nhk.or.jp/news/html/20260723/k10015183761000.html" target="_blank" rel="noopener">株価 値上がり AI・半導体関連に買い注文</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/22 20:00</span>
+                <span class="news-source">NHK経済</span>
+                <span>07/23 16:15</span>
               </div>
               
-              <div class="news-summary">日経平均 66,115.60円 ▼116.59円 為替 １ドル＝163.11円 売買高（東証プライム、以下同） 25億8,002万株 売買代金 10兆4377億37百万円 値上り銘柄数 841銘柄 値…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302589" target="_blank" rel="noopener">米ドル／円 ―― 次の心理的節目の165円に向かってじりじりと上昇を続けるだろう、押し目買いから参入したい</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/22 19:30</span>
-              </div>
-              
-              <div class="news-summary">この記事は2026年7月22日（水）に「羊飼いのFXブログ」で公開された「井口喜雄氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月22日（水）の午後12時ころにトレ…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302588" target="_blank" rel="noopener">米ドル／円 ―― 一部利益確定の売りは断続的に出るだろうが利益確定を繰り返しながらロングを継続していきたい</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/22 19:00</span>
-              </div>
-              
-              <div class="news-summary">この記事は2026年7月22日（水）に「羊飼いのFXブログ」で公開された「西原宏一氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月22日（水）の午前9時すぎに、現役…</div>
+              <div class="news-summary">23日の東京株式市場、一部のAI・半導体関連の銘柄が買われ、株価は値上がりしました。</div>
               
             </div>
             
@@ -1054,19 +1057,34 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (2件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (3件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/04ce5698e0ae899aa1a1c496c0dd421604ceff4c?source=rss" target="_blank" rel="noopener">モルフォ、固定金利・固定期間レンディング「Morpho Midnight」正式提供開始(あたらしい経済)</a>
+                <a href="https://news.yahoo.co.jp/articles/4f4d1ba773c2224a108b89b2776214856930c725?source=rss" target="_blank" rel="noopener">【日本の道路で全幅2m超】トヨタや日産がアメリカ製の超大型SUVを続々と正規輸入し始める理由(carview！)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>07/23 14:30</span>
+                <span>07/23 19:02</span>
               </div>
               
-              <div class="news-summary">モルフォ（Morpho）による、固定金利・固定期間のノンカストディアル型レンディングプロトコル「モルフォミッドナイト（Morpho Midnight）」の提供開始が7月21日に発表された。同プロトコル…</div>
+              <div class="news-summary">日本メーカーのクルマなのに、作られているのはアメリカ。そんなモデルが、日本の正規販売網に並び始めている。
+
+トヨタ、日産、ホンダ、スバルといった日本の自動車メーカーが、米国で生産されるモデルの日本導入…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260723/k10015183911000.html" target="_blank" rel="noopener">関税措置めぐる日米合意から1年 輸出企業は対応迫られる</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>07/23 19:00</span>
+              </div>
+              
+              <div class="news-summary">アメリカの関税措置をめぐる日米合意から日本時間の23日で1年となりました。日米合意の内容は反映された一方で、幅広い品目に課されている関税は二転三転し、アメリカへの輸出に取り組んできた企業は対応を迫られ…</div>
               
             </div>
             
@@ -1089,52 +1107,28 @@
       
         
         
+      
+        
+        
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (3件)</div>
+          <div class="news-group-title">📌 その他 (1件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1612886" target="_blank" rel="noopener">フェロテック株が急騰、利益見通しを大幅上方修正</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>07/23 14:13</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260723/k10015183311000.html" target="_blank" rel="noopener">米テスラ 4～6月決算 EV販売増加もAI投資かさみ減益に</a>
+                <a href="http://www3.nhk.or.jp/news/html/20260723/k10015184071000.html" target="_blank" rel="noopener">経団連の夏のフォーラム “大手企業が国内の設備投資主導を”</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">NHK経済</span>
-                <span>07/23 10:14</span>
+                <span>07/23 17:11</span>
               </div>
               
-              <div class="news-summary">アメリカのEV＝電気自動車メーカー、「テスラ」が発表したことし4月から先月までの決算は、EVの販売が増えて増収となりましたが、AI関連の投資が膨らみ、営業利益は57％減少しました。</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260723/k10015183101000.html" target="_blank" rel="noopener">グーグル親会社 4～6月期決算 営業利益前年同期比30％増</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>07/23 09:19</span>
-              </div>
-              
-              <div class="news-summary">アメリカのIT大手グーグルの親会社「アルファベット」は先月までの3か月間の決算を発表し、本業のもうけを示す営業利益は前の年の同じ時期と比べて30％の増加となりました。一方、AI関連などの設備投資計画を…</div>
+              <div class="news-summary">大手企業のトップが参加する経団連の夏のフォーラムが長野県軽井沢町で始まり、筒井会長は活発な国内投資を経済成長につなげる「投資けん引型経済」の実現を目指し、大手企業が国内の設備投資を主導していくことが重…</div>
               
             </div>
             
           </div>
         </div>
-        
-      
-        
         
       
     </div>
@@ -1143,34 +1137,34 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-23 14:36）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-23 19:13）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 66,422.60 pt (+0.46%)
+- TOPIX (1306連動ETF): 422.1 円 (+0.43%)
+- ドル円: 163.37 円 (+0.11%)
 - S&P 500: 7,498.96 (-0.14%)
 - NASDAQ: 25,690.90 (-0.57%)
 - ダウ: 52,218.58 (-0.01%)
-- ドル円: 163.07 円 (-0.07%)
 - 米10年債利回り: 4.657 % (+0.63%)
-- WTI原油: 88.14 USD (+1.51%)
-- 金: 4125.00 USD (-0.53%)
-- 日経225: 66,577.05 pt (+0.70%)
-- TOPIX (1306連動ETF): 422.9 円 (+0.62%)
+- WTI原油: 90.12 USD (+3.79%)
+- 金: 4094.20 USD (-1.27%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++50.18円  アドバンテスト(6857)  +4.75%  [電機]
-  ++15.00円  キーエンス(6861)  +0.58%  [電機]
-  ++14.64円  東京エレクトロン(8035)  +0.62%  [半導体製造装置]
-  ++13.29円  村田製作所(6981)  +4.47%  [電機]
-  ++9.54円  みずほFG(8411)  +3.13%  [銀行]
+  ++43.39円  アドバンテスト(6857)  +4.11%  [電機]
+  ++8.46円  みずほFG(8411)  +2.78%  [銀行]
+  ++7.89円  村田製作所(6981)  +2.66%  [電機]
+  ++7.68円  ソフトバンクG(9984)  +3.77%  [通信]
+  ++5.36円  キーエンス(6861)  +0.21%  [電機]
 ▼ 日経225 (下落寄与TOP5)
-  -47.14円  ファーストリテイリング(9983)  -1.68%  [小売]
-  -8.21円  HOYA(7741)  -0.92%  [精密機器]
-  -2.54円  武田薬品(4502)  -1.28%  [医薬品]
-  -2.11円  オリエンタルランド(4661)  -2.21%  [サービス]
-  -1.96円  リクルートHD(6098)  -0.45%  [サービス]
+  -53.21円  ファーストリテイリング(9983)  -1.90%  [小売]
+  -7.32円  HOYA(7741)  -0.82%  [精密機器]
+  -4.46円  ダイキン(6367)  -0.52%  [機械]
+  -3.75円  信越化学(4063)  -1.48%  [化学]
+  -1.68円  武田薬品(4502)  -0.85%  [医薬品]
 ▼ S&P500 (上昇寄与TOP5)
   ++18.12pt  Nvidia(NVDA)  +2.30%  wt:10.48%  [Information Technology]
   ++7.70pt  Broadcom(AVGO)  +2.67%  wt:3.84%  [Information Technology]
@@ -1185,36 +1179,32 @@
   -4.59pt  Amazon(AMZN)  -1.09%  wt:5.61%  [Consumer Discretionary]
 
 【関連ニュース見出し】
-- [Investing.com日本] ＩＮＰＥＸ---続伸、原油相場の上昇を手掛かりに (07/23 14:30)
-- [Yahoo!ファイナンス] ついに1ドル163円台に…新NISAで「オルカン・S&P500」を今から始めるのはアリ？円安局面での投資判断(LIMO) (07/23 14:26)
-  概要: 2026年7月21日、ニューヨーク外国為替市場で1ドル=163円台をつけました。歴史的な円安です。
+- [Yahoo!ファイナンス] 100株単位のトレードで退場を防ぎながら繋いだ5年間…相場に出たり入ったりを繰り返した下積み時代(みんかぶマガジン) (07/23 19:10)
+  概要: 元手はアルバイト代のみ、社会人経験もゼロ。20歳でそんな状態から飛び込んだデイトレードの世界で、こなつ氏は5年間、ほとんど勝てなかった。大きく負けたわけではない。だが、勝てもしない。そんな停滞期を経
+- [Yahoo!ファイナンス] AIバブルはまだ「6～7合目」――専門家が語る相場の現在地(みんかぶマガジン) (07/23 19:10)
+  概要: NVIDIAをはじめとする半導体株や、大量のデータセンターを持つ米国の巨大IT企業の株価は歴史的な高値圏にあり、AI関連株の上昇が続いている。こうした状況を「AIバブル」と捉えている投資家や評論家は
+- [Yahoo!ファイナンス] EU、米グーグルに制裁金1600億円(共同通信) (07/23 19:07)
+  概要: 【フランクフルト共同】欧州連合（EU）欧州委員会は23日、米グーグルが巨大IT規制「デジタル市場法（DMA）」に違反したとして8億9千万ユーロ（約1600億円）の制裁金を科したと発表した。DMAに基
+- [ZUU online] 米ドル／円 ―― 本日23日（木）もドル高･円安の流れが続く公算が大きい (07/23 19:00)
+  概要: この記事は2026年7月23日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月23日（木）の午前10時ごろに外為
+- [Investing.com日本] 23日の香港市場概況：ハンセン指数は3日ぶり反発、節目の25000ptを回復 (07/23 18:30)
+- [Investing.com日本] 23日の中国本土市場概況： 上海総合は4日続伸、市場支援策への期待が指数をサポート (07/23 18:30)
+- [Investing.com日本] Relxの株価が本日上昇している理由とは (07/23 18:24)
+- [Investing.com日本] フフタマキ、第2四半期決算が予想を上回り株価が急騰 (07/23 18:18)
+- [NHK経済] 円相場 いくぶん値下がり 1ドル＝163円台前半で推移 (07/23 18:12)
+  概要: 23日の東京外国為替市場、原油の先物価格が上昇したことを背景に、円を売って有事に強いとされるドルを買う動きが強まり、円相場はいくぶん値下がりしました。
+- [NHK経済] 株価 値上がり AI・半導体関連に買い注文 (07/23 16:15)
+  概要: 23日の東京株式市場、一部のAI・半導体関連の銘柄が買われ、株価は値上がりしました。
+- [Yahoo!ファイナンス] 【日本の道路で全幅2m超】トヨタや日産がアメリカ製の超大型SUVを続々と正規輸入し始める理由(carview！) (07/23 19:02)
+  概要: 日本メーカーのクルマなのに、作られているのはアメリカ。そんなモデルが、日本の正規販売網に並び始めている。
 
-「新NISAでオルカンやS＆P500を始めようと思っていたのに、こんな円安では高値掴みになるんじゃ
-- [Yahoo!ファイナンス] SmallRig製の「ソニーFX5」ケージキット(デジカメ Watch) (07/23 14:25)
-  概要: SmallRig Japan株式会社は7月23日（木）、8月21日（金）発売のソニーのシネマカメラ「FX5」に対応するモジュラーケージキットを発表した。8月末までに順次発送予定としている。
-
-必要に応
-- [NHK経済] 円相場 1ドル＝163円台前半中心 有事のドル買い続く (07/23 12:30)
-  概要: 23日の東京外国為替市場、1ドル＝163円台前半を中心とした取り引きとなっています。
-- [NHK経済] 株価 午前は値上がり AI・半導体関連に買い注文 (07/23 12:13)
-  概要: 23日の東京株式市場、一部のAI・半導体関連の銘柄に買い注文が入り、株価は値上がりしています。
-- [ZUU online] FX/為替「ドル/円今日の見通し｜163円値固めから高値更新を窺う」 外為どっとコム トゥデイ 2026年7月23日号 (07/23 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月23日8時10分執筆・監修：株式会社外
-- [ZUU online] 日々是相場［夕刊］――  2026年7月22日（水） (07/22 20:00)
-  概要: 日経平均 66,115.60円 ▼116.59円 為替 １ドル＝163.11円 売買高（東証プライム、以下同） 25億8,002万株 売買代金 10兆4377億37百万円 値上り銘柄数 841銘柄 値
-- [ZUU online] 米ドル／円 ―― 次の心理的節目の165円に向かってじりじりと上昇を続けるだろう、押し目買いから参入したい (07/22 19:30)
-  概要: この記事は2026年7月22日（水）に「羊飼いのFXブログ」で公開された「井口喜雄氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月22日（水）の午後12時ころにトレ
-- [ZUU online] 米ドル／円 ―― 一部利益確定の売りは断続的に出るだろうが利益確定を繰り返しながらロングを継続していきたい (07/22 19:00)
-  概要: この記事は2026年7月22日（水）に「羊飼いのFXブログ」で公開された「西原宏一氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月22日（水）の午前9時すぎに、現役
-- [Yahoo!ファイナンス] モルフォ、固定金利・固定期間レンディング「Morpho Midnight」正式提供開始(あたらしい経済) (07/23 14:30)
-  概要: モルフォ（Morpho）による、固定金利・固定期間のノンカストディアル型レンディングプロトコル「モルフォミッドナイト（Morpho Midnight）」の提供開始が7月21日に発表された。同プロトコル
+トヨタ、日産、ホンダ、スバルといった日本の自動車メーカーが、米国で生産されるモデルの日本導入
+- [NHK経済] 関税措置めぐる日米合意から1年 輸出企業は対応迫られる (07/23 19:00)
+  概要: アメリカの関税措置をめぐる日米合意から日本時間の23日で1年となりました。日米合意の内容は反映された一方で、幅広い品目に課されている関税は二転三転し、アメリカへの輸出に取り組んできた企業は対応を迫られ
 - [NHK経済] きょうのおはBiz 7月23日(木)歴史的な円安 日本経済への影響は (07/23 14:17)
   概要: NHKニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはBiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けし
-- [Investing.com日本] フェロテック株が急騰、利益見通しを大幅上方修正 (07/23 14:13)
-- [NHK経済] 米テスラ 4～6月決算 EV販売増加もAI投資かさみ減益に (07/23 10:14)
-  概要: アメリカのEV＝電気自動車メーカー、「テスラ」が発表したことし4月から先月までの決算は、EVの販売が増えて増収となりましたが、AI関連の投資が膨らみ、営業利益は57％減少しました。
-- [NHK経済] グーグル親会社 4～6月期決算 営業利益前年同期比30％増 (07/23 09:19)
-  概要: アメリカのIT大手グーグルの親会社「アルファベット」は先月までの3か月間の決算を発表し、本業のもうけを示す営業利益は前の年の同じ時期と比べて30％の増加となりました。一方、AI関連などの設備投資計画を
+- [NHK経済] 経団連の夏のフォーラム “大手企業が国内の設備投資主導を” (07/23 17:11)
+  概要: 大手企業のトップが参加する経団連の夏のフォーラムが長野県軽井沢町で始まり、筒井会長は活発な国内投資を経済成長につなげる「投資けん引型経済」の実現を目指し、大手企業が国内の設備投資を主導していくことが重
 
 【依頼内容】
 上記の指数の動きについて、ニュースの内容と紐付けて解説してください。
@@ -1229,29 +1219,29 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 66,422.60 pt (+0.46%)
+- TOPIX (1306連動ETF): 422.1 円 (+0.43%)
+- ドル円: 163.37 円 (+0.11%)
 - S&P 500: 7,498.96 (-0.14%)
 - NASDAQ: 25,690.90 (-0.57%)
 - ダウ: 52,218.58 (-0.01%)
-- ドル円: 163.07 円 (-0.07%)
 - 米10年債利回り: 4.657 % (+0.63%)
-- WTI原油: 88.14 USD (+1.51%)
-- 金: 4125.00 USD (-0.53%)
-- 日経225: 66,577.05 pt (+0.70%)
-- TOPIX (1306連動ETF): 422.9 円 (+0.62%)
+- WTI原油: 90.12 USD (+3.79%)
+- 金: 4094.20 USD (-1.27%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++50.18円  アドバンテスト(6857)  +4.75%  [電機]
-  ++15.00円  キーエンス(6861)  +0.58%  [電機]
-  ++14.64円  東京エレクトロン(8035)  +0.62%  [半導体製造装置]
-  ++13.29円  村田製作所(6981)  +4.47%  [電機]
-  ++9.54円  みずほFG(8411)  +3.13%  [銀行]
+  ++43.39円  アドバンテスト(6857)  +4.11%  [電機]
+  ++8.46円  みずほFG(8411)  +2.78%  [銀行]
+  ++7.89円  村田製作所(6981)  +2.66%  [電機]
+  ++7.68円  ソフトバンクG(9984)  +3.77%  [通信]
+  ++5.36円  キーエンス(6861)  +0.21%  [電機]
 ▼ 日経225 (下落寄与TOP5)
-  -47.14円  ファーストリテイリング(9983)  -1.68%  [小売]
-  -8.21円  HOYA(7741)  -0.92%  [精密機器]
-  -2.54円  武田薬品(4502)  -1.28%  [医薬品]
-  -2.11円  オリエンタルランド(4661)  -2.21%  [サービス]
-  -1.96円  リクルートHD(6098)  -0.45%  [サービス]
+  -53.21円  ファーストリテイリング(9983)  -1.90%  [小売]
+  -7.32円  HOYA(7741)  -0.82%  [精密機器]
+  -4.46円  ダイキン(6367)  -0.52%  [機械]
+  -3.75円  信越化学(4063)  -1.48%  [化学]
+  -1.68円  武田薬品(4502)  -0.85%  [医薬品]
 ▼ S&P500 (上昇寄与TOP5)
   ++18.12pt  Nvidia(NVDA)  +2.30%  wt:10.48%  [Information Technology]
   ++7.70pt  Broadcom(AVGO)  +2.67%  wt:3.84%  [Information Technology]
@@ -1266,36 +1256,32 @@
   -4.59pt  Amazon(AMZN)  -1.09%  wt:5.61%  [Consumer Discretionary]
 
 【関連ニュース見出し】
-- [Investing.com日本] ＩＮＰＥＸ---続伸、原油相場の上昇を手掛かりに (07/23 14:30)
-- [Yahoo!ファイナンス] ついに1ドル163円台に…新NISAで「オルカン・S&P500」を今から始めるのはアリ？円安局面での投資判断(LIMO) (07/23 14:26)
-  概要: 2026年7月21日、ニューヨーク外国為替市場で1ドル=163円台をつけました。歴史的な円安です。
+- [Yahoo!ファイナンス] 100株単位のトレードで退場を防ぎながら繋いだ5年間…相場に出たり入ったりを繰り返した下積み時代(みんかぶマガジン) (07/23 19:10)
+  概要: 元手はアルバイト代のみ、社会人経験もゼロ。20歳でそんな状態から飛び込んだデイトレードの世界で、こなつ氏は5年間、ほとんど勝てなかった。大きく負けたわけではない。だが、勝てもしない。そんな停滞期を経
+- [Yahoo!ファイナンス] AIバブルはまだ「6～7合目」――専門家が語る相場の現在地(みんかぶマガジン) (07/23 19:10)
+  概要: NVIDIAをはじめとする半導体株や、大量のデータセンターを持つ米国の巨大IT企業の株価は歴史的な高値圏にあり、AI関連株の上昇が続いている。こうした状況を「AIバブル」と捉えている投資家や評論家は
+- [Yahoo!ファイナンス] EU、米グーグルに制裁金1600億円(共同通信) (07/23 19:07)
+  概要: 【フランクフルト共同】欧州連合（EU）欧州委員会は23日、米グーグルが巨大IT規制「デジタル市場法（DMA）」に違反したとして8億9千万ユーロ（約1600億円）の制裁金を科したと発表した。DMAに基
+- [ZUU online] 米ドル／円 ―― 本日23日（木）もドル高･円安の流れが続く公算が大きい (07/23 19:00)
+  概要: この記事は2026年7月23日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月23日（木）の午前10時ごろに外為
+- [Investing.com日本] 23日の香港市場概況：ハンセン指数は3日ぶり反発、節目の25000ptを回復 (07/23 18:30)
+- [Investing.com日本] 23日の中国本土市場概況： 上海総合は4日続伸、市場支援策への期待が指数をサポート (07/23 18:30)
+- [Investing.com日本] Relxの株価が本日上昇している理由とは (07/23 18:24)
+- [Investing.com日本] フフタマキ、第2四半期決算が予想を上回り株価が急騰 (07/23 18:18)
+- [NHK経済] 円相場 いくぶん値下がり 1ドル＝163円台前半で推移 (07/23 18:12)
+  概要: 23日の東京外国為替市場、原油の先物価格が上昇したことを背景に、円を売って有事に強いとされるドルを買う動きが強まり、円相場はいくぶん値下がりしました。
+- [NHK経済] 株価 値上がり AI・半導体関連に買い注文 (07/23 16:15)
+  概要: 23日の東京株式市場、一部のAI・半導体関連の銘柄が買われ、株価は値上がりしました。
+- [Yahoo!ファイナンス] 【日本の道路で全幅2m超】トヨタや日産がアメリカ製の超大型SUVを続々と正規輸入し始める理由(carview！) (07/23 19:02)
+  概要: 日本メーカーのクルマなのに、作られているのはアメリカ。そんなモデルが、日本の正規販売網に並び始めている。
 
-「新NISAでオルカンやS＆P500を始めようと思っていたのに、こんな円安では高値掴みになるんじゃ
-- [Yahoo!ファイナンス] SmallRig製の「ソニーFX5」ケージキット(デジカメ Watch) (07/23 14:25)
-  概要: SmallRig Japan株式会社は7月23日（木）、8月21日（金）発売のソニーのシネマカメラ「FX5」に対応するモジュラーケージキットを発表した。8月末までに順次発送予定としている。
-
-必要に応
-- [NHK経済] 円相場 1ドル＝163円台前半中心 有事のドル買い続く (07/23 12:30)
-  概要: 23日の東京外国為替市場、1ドル＝163円台前半を中心とした取り引きとなっています。
-- [NHK経済] 株価 午前は値上がり AI・半導体関連に買い注文 (07/23 12:13)
-  概要: 23日の東京株式市場、一部のAI・半導体関連の銘柄に買い注文が入り、株価は値上がりしています。
-- [ZUU online] FX/為替「ドル/円今日の見通し｜163円値固めから高値更新を窺う」 外為どっとコム トゥデイ 2026年7月23日号 (07/23 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月23日8時10分執筆・監修：株式会社外
-- [ZUU online] 日々是相場［夕刊］――  2026年7月22日（水） (07/22 20:00)
-  概要: 日経平均 66,115.60円 ▼116.59円 為替 １ドル＝163.11円 売買高（東証プライム、以下同） 25億8,002万株 売買代金 10兆4377億37百万円 値上り銘柄数 841銘柄 値
-- [ZUU online] 米ドル／円 ―― 次の心理的節目の165円に向かってじりじりと上昇を続けるだろう、押し目買いから参入したい (07/22 19:30)
-  概要: この記事は2026年7月22日（水）に「羊飼いのFXブログ」で公開された「井口喜雄氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月22日（水）の午後12時ころにトレ
-- [ZUU online] 米ドル／円 ―― 一部利益確定の売りは断続的に出るだろうが利益確定を繰り返しながらロングを継続していきたい (07/22 19:00)
-  概要: この記事は2026年7月22日（水）に「羊飼いのFXブログ」で公開された「西原宏一氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月22日（水）の午前9時すぎに、現役
-- [Yahoo!ファイナンス] モルフォ、固定金利・固定期間レンディング「Morpho Midnight」正式提供開始(あたらしい経済) (07/23 14:30)
-  概要: モルフォ（Morpho）による、固定金利・固定期間のノンカストディアル型レンディングプロトコル「モルフォミッドナイト（Morpho Midnight）」の提供開始が7月21日に発表された。同プロトコル
+トヨタ、日産、ホンダ、スバルといった日本の自動車メーカーが、米国で生産されるモデルの日本導入
+- [NHK経済] 関税措置めぐる日米合意から1年 輸出企業は対応迫られる (07/23 19:00)
+  概要: アメリカの関税措置をめぐる日米合意から日本時間の23日で1年となりました。日米合意の内容は反映された一方で、幅広い品目に課されている関税は二転三転し、アメリカへの輸出に取り組んできた企業は対応を迫られ
 - [NHK経済] きょうのおはBiz 7月23日(木)歴史的な円安 日本経済への影響は (07/23 14:17)
   概要: NHKニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはBiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けし
-- [Investing.com日本] フェロテック株が急騰、利益見通しを大幅上方修正 (07/23 14:13)
-- [NHK経済] 米テスラ 4～6月決算 EV販売増加もAI投資かさみ減益に (07/23 10:14)
-  概要: アメリカのEV＝電気自動車メーカー、「テスラ」が発表したことし4月から先月までの決算は、EVの販売が増えて増収となりましたが、AI関連の投資が膨らみ、営業利益は57％減少しました。
-- [NHK経済] グーグル親会社 4～6月期決算 営業利益前年同期比30％増 (07/23 09:19)
-  概要: アメリカのIT大手グーグルの親会社「アルファベット」は先月までの3か月間の決算を発表し、本業のもうけを示す営業利益は前の年の同じ時期と比べて30％の増加となりました。一方、AI関連などの設備投資計画を
+- [NHK経済] 経団連の夏のフォーラム “大手企業が国内の設備投資主導を” (07/23 17:11)
+  概要: 大手企業のトップが参加する経団連の夏のフォーラムが長野県軽井沢町で始まり、筒井会長は活発な国内投資を経済成長につなげる「投資けん引型経済」の実現を目指し、大手企業が国内の設備投資を主導していくことが重
 
 【依頼内容】
 - 最も動きが大きかった指標トップ3を特定
@@ -1304,29 +1290,29 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 66,422.60 pt (+0.46%)
+- TOPIX (1306連動ETF): 422.1 円 (+0.43%)
+- ドル円: 163.37 円 (+0.11%)
 - S&P 500: 7,498.96 (-0.14%)
 - NASDAQ: 25,690.90 (-0.57%)
 - ダウ: 52,218.58 (-0.01%)
-- ドル円: 163.07 円 (-0.07%)
 - 米10年債利回り: 4.657 % (+0.63%)
-- WTI原油: 88.14 USD (+1.51%)
-- 金: 4125.00 USD (-0.53%)
-- 日経225: 66,577.05 pt (+0.70%)
-- TOPIX (1306連動ETF): 422.9 円 (+0.62%)
+- WTI原油: 90.12 USD (+3.79%)
+- 金: 4094.20 USD (-1.27%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++50.18円  アドバンテスト(6857)  +4.75%  [電機]
-  ++15.00円  キーエンス(6861)  +0.58%  [電機]
-  ++14.64円  東京エレクトロン(8035)  +0.62%  [半導体製造装置]
-  ++13.29円  村田製作所(6981)  +4.47%  [電機]
-  ++9.54円  みずほFG(8411)  +3.13%  [銀行]
+  ++43.39円  アドバンテスト(6857)  +4.11%  [電機]
+  ++8.46円  みずほFG(8411)  +2.78%  [銀行]
+  ++7.89円  村田製作所(6981)  +2.66%  [電機]
+  ++7.68円  ソフトバンクG(9984)  +3.77%  [通信]
+  ++5.36円  キーエンス(6861)  +0.21%  [電機]
 ▼ 日経225 (下落寄与TOP5)
-  -47.14円  ファーストリテイリング(9983)  -1.68%  [小売]
-  -8.21円  HOYA(7741)  -0.92%  [精密機器]
-  -2.54円  武田薬品(4502)  -1.28%  [医薬品]
-  -2.11円  オリエンタルランド(4661)  -2.21%  [サービス]
-  -1.96円  リクルートHD(6098)  -0.45%  [サービス]
+  -53.21円  ファーストリテイリング(9983)  -1.90%  [小売]
+  -7.32円  HOYA(7741)  -0.82%  [精密機器]
+  -4.46円  ダイキン(6367)  -0.52%  [機械]
+  -3.75円  信越化学(4063)  -1.48%  [化学]
+  -1.68円  武田薬品(4502)  -0.85%  [医薬品]
 ▼ S&P500 (上昇寄与TOP5)
   ++18.12pt  Nvidia(NVDA)  +2.30%  wt:10.48%  [Information Technology]
   ++7.70pt  Broadcom(AVGO)  +2.67%  wt:3.84%  [Information Technology]
@@ -1341,36 +1327,32 @@
   -4.59pt  Amazon(AMZN)  -1.09%  wt:5.61%  [Consumer Discretionary]
 
 【関連ニュース見出し】
-- [Investing.com日本] ＩＮＰＥＸ---続伸、原油相場の上昇を手掛かりに (07/23 14:30)
-- [Yahoo!ファイナンス] ついに1ドル163円台に…新NISAで「オルカン・S&P500」を今から始めるのはアリ？円安局面での投資判断(LIMO) (07/23 14:26)
-  概要: 2026年7月21日、ニューヨーク外国為替市場で1ドル=163円台をつけました。歴史的な円安です。
+- [Yahoo!ファイナンス] 100株単位のトレードで退場を防ぎながら繋いだ5年間…相場に出たり入ったりを繰り返した下積み時代(みんかぶマガジン) (07/23 19:10)
+  概要: 元手はアルバイト代のみ、社会人経験もゼロ。20歳でそんな状態から飛び込んだデイトレードの世界で、こなつ氏は5年間、ほとんど勝てなかった。大きく負けたわけではない。だが、勝てもしない。そんな停滞期を経
+- [Yahoo!ファイナンス] AIバブルはまだ「6～7合目」――専門家が語る相場の現在地(みんかぶマガジン) (07/23 19:10)
+  概要: NVIDIAをはじめとする半導体株や、大量のデータセンターを持つ米国の巨大IT企業の株価は歴史的な高値圏にあり、AI関連株の上昇が続いている。こうした状況を「AIバブル」と捉えている投資家や評論家は
+- [Yahoo!ファイナンス] EU、米グーグルに制裁金1600億円(共同通信) (07/23 19:07)
+  概要: 【フランクフルト共同】欧州連合（EU）欧州委員会は23日、米グーグルが巨大IT規制「デジタル市場法（DMA）」に違反したとして8億9千万ユーロ（約1600億円）の制裁金を科したと発表した。DMAに基
+- [ZUU online] 米ドル／円 ―― 本日23日（木）もドル高･円安の流れが続く公算が大きい (07/23 19:00)
+  概要: この記事は2026年7月23日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月23日（木）の午前10時ごろに外為
+- [Investing.com日本] 23日の香港市場概況：ハンセン指数は3日ぶり反発、節目の25000ptを回復 (07/23 18:30)
+- [Investing.com日本] 23日の中国本土市場概況： 上海総合は4日続伸、市場支援策への期待が指数をサポート (07/23 18:30)
+- [Investing.com日本] Relxの株価が本日上昇している理由とは (07/23 18:24)
+- [Investing.com日本] フフタマキ、第2四半期決算が予想を上回り株価が急騰 (07/23 18:18)
+- [NHK経済] 円相場 いくぶん値下がり 1ドル＝163円台前半で推移 (07/23 18:12)
+  概要: 23日の東京外国為替市場、原油の先物価格が上昇したことを背景に、円を売って有事に強いとされるドルを買う動きが強まり、円相場はいくぶん値下がりしました。
+- [NHK経済] 株価 値上がり AI・半導体関連に買い注文 (07/23 16:15)
+  概要: 23日の東京株式市場、一部のAI・半導体関連の銘柄が買われ、株価は値上がりしました。
+- [Yahoo!ファイナンス] 【日本の道路で全幅2m超】トヨタや日産がアメリカ製の超大型SUVを続々と正規輸入し始める理由(carview！) (07/23 19:02)
+  概要: 日本メーカーのクルマなのに、作られているのはアメリカ。そんなモデルが、日本の正規販売網に並び始めている。
 
-「新NISAでオルカンやS＆P500を始めようと思っていたのに、こんな円安では高値掴みになるんじゃ
-- [Yahoo!ファイナンス] SmallRig製の「ソニーFX5」ケージキット(デジカメ Watch) (07/23 14:25)
-  概要: SmallRig Japan株式会社は7月23日（木）、8月21日（金）発売のソニーのシネマカメラ「FX5」に対応するモジュラーケージキットを発表した。8月末までに順次発送予定としている。
-
-必要に応
-- [NHK経済] 円相場 1ドル＝163円台前半中心 有事のドル買い続く (07/23 12:30)
-  概要: 23日の東京外国為替市場、1ドル＝163円台前半を中心とした取り引きとなっています。
-- [NHK経済] 株価 午前は値上がり AI・半導体関連に買い注文 (07/23 12:13)
-  概要: 23日の東京株式市場、一部のAI・半導体関連の銘柄に買い注文が入り、株価は値上がりしています。
-- [ZUU online] FX/為替「ドル/円今日の見通し｜163円値固めから高値更新を窺う」 外為どっとコム トゥデイ 2026年7月23日号 (07/23 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月23日8時10分執筆・監修：株式会社外
-- [ZUU online] 日々是相場［夕刊］――  2026年7月22日（水） (07/22 20:00)
-  概要: 日経平均 66,115.60円 ▼116.59円 為替 １ドル＝163.11円 売買高（東証プライム、以下同） 25億8,002万株 売買代金 10兆4377億37百万円 値上り銘柄数 841銘柄 値
-- [ZUU online] 米ドル／円 ―― 次の心理的節目の165円に向かってじりじりと上昇を続けるだろう、押し目買いから参入したい (07/22 19:30)
-  概要: この記事は2026年7月22日（水）に「羊飼いのFXブログ」で公開された「井口喜雄氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月22日（水）の午後12時ころにトレ
-- [ZUU online] 米ドル／円 ―― 一部利益確定の売りは断続的に出るだろうが利益確定を繰り返しながらロングを継続していきたい (07/22 19:00)
-  概要: この記事は2026年7月22日（水）に「羊飼いのFXブログ」で公開された「西原宏一氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年7月22日（水）の午前9時すぎに、現役
-- [Yahoo!ファイナンス] モルフォ、固定金利・固定期間レンディング「Morpho Midnight」正式提供開始(あたらしい経済) (07/23 14:30)
-  概要: モルフォ（Morpho）による、固定金利・固定期間のノンカストディアル型レンディングプロトコル「モルフォミッドナイト（Morpho Midnight）」の提供開始が7月21日に発表された。同プロトコル
+トヨタ、日産、ホンダ、スバルといった日本の自動車メーカーが、米国で生産されるモデルの日本導入
+- [NHK経済] 関税措置めぐる日米合意から1年 輸出企業は対応迫られる (07/23 19:00)
+  概要: アメリカの関税措置をめぐる日米合意から日本時間の23日で1年となりました。日米合意の内容は反映された一方で、幅広い品目に課されている関税は二転三転し、アメリカへの輸出に取り組んできた企業は対応を迫られ
 - [NHK経済] きょうのおはBiz 7月23日(木)歴史的な円安 日本経済への影響は (07/23 14:17)
   概要: NHKニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはBiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けし
-- [Investing.com日本] フェロテック株が急騰、利益見通しを大幅上方修正 (07/23 14:13)
-- [NHK経済] 米テスラ 4～6月決算 EV販売増加もAI投資かさみ減益に (07/23 10:14)
-  概要: アメリカのEV＝電気自動車メーカー、「テスラ」が発表したことし4月から先月までの決算は、EVの販売が増えて増収となりましたが、AI関連の投資が膨らみ、営業利益は57％減少しました。
-- [NHK経済] グーグル親会社 4～6月期決算 営業利益前年同期比30％増 (07/23 09:19)
-  概要: アメリカのIT大手グーグルの親会社「アルファベット」は先月までの3か月間の決算を発表し、本業のもうけを示す営業利益は前の年の同じ時期と比べて30％の増加となりました。一方、AI関連などの設備投資計画を
+- [NHK経済] 経団連の夏のフォーラム “大手企業が国内の設備投資主導を” (07/23 17:11)
+  概要: 大手企業のトップが参加する経団連の夏のフォーラムが長野県軽井沢町で始まり、筒井会長は活発な国内投資を経済成長につなげる「投資けん引型経済」の実現を目指し、大手企業が国内の設備投資を主導していくことが重
 
 【依頼内容】
 - 短期的なリスク要因（今後1週間以内）
