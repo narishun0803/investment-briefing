@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年07月24日 14:32 JST</span>
+    <span class="updated">更新: 2026年07月24日 19:10 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">64,611.15 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -1811.45&nbsp;&nbsp;-2.73%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">417.5 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -4.60&nbsp;&nbsp;-1.09%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">163.71 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.63&nbsp;&nbsp;+0.39%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">51,711.65 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">163.81 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.73&nbsp;&nbsp;+0.45%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.703 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">91.85 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">88.93 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -0.34&nbsp;&nbsp;-0.37%
+            -3.26&nbsp;&nbsp;-3.54%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4028.30 <span class="tile-unit">USD</span></div>
-          <div class="tile-change down">
-            -18.30&nbsp;&nbsp;-0.45%
+          <div class="tile-price">4062.40 <span class="tile-unit">USD</span></div>
+          <div class="tile-change up">
+            +15.80&nbsp;&nbsp;+0.39%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">64,537.25 <span class="tile-unit">pt</span></div>
-          <div class="tile-change down">
-            -1885.35&nbsp;&nbsp;-2.84%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">417.4 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -4.70&nbsp;&nbsp;-1.11%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -672,8 +672,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/8766:TYO" target="_blank" rel="noopener">東京海上HD</a>
                 <span class="contrib-sector">保険</span>
               </td>
-              <td class="up">+6.04</td>
-              <td class="up">+2.12%</td>
+              <td class="up">+5.64</td>
+              <td class="up">+1.99%</td>
             </tr>
             
             <tr>
@@ -681,8 +681,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/4502:TYO" target="_blank" rel="noopener">武田薬品</a>
                 <span class="contrib-sector">医薬品</span>
               </td>
-              <td class="up">+4.89</td>
-              <td class="up">+2.49%</td>
+              <td class="up">+5.11</td>
+              <td class="up">+2.60%</td>
             </tr>
             
             <tr>
@@ -690,8 +690,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/4523:TYO" target="_blank" rel="noopener">エーザイ</a>
                 <span class="contrib-sector">医薬品</span>
               </td>
-              <td class="up">+3.36</td>
-              <td class="up">+2.05%</td>
+              <td class="up">+2.64</td>
+              <td class="up">+1.62%</td>
             </tr>
             
             <tr>
@@ -699,16 +699,16 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/4661:TYO" target="_blank" rel="noopener">オリエンタルランド</a>
                 <span class="contrib-sector">サービス</span>
               </td>
-              <td class="up">+1.96</td>
-              <td class="up">+2.09%</td>
+              <td class="up">+1.88</td>
+              <td class="up">+2.00%</td>
             </tr>
             
             <tr>
               <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/4568:TYO" target="_blank" rel="noopener">第一三共</a>
-                <span class="contrib-sector">医薬品</span>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9433:TYO" target="_blank" rel="noopener">KDDI</a>
+                <span class="contrib-sector">通信</span>
               </td>
-              <td class="up">+1.79</td>
+              <td class="up">+1.86</td>
               <td class="up">+1.81%</td>
             </tr>
             
@@ -731,8 +731,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/8035:TYO" target="_blank" rel="noopener">東京エレクトロン</a>
                 <span class="contrib-sector">半導体製造装置</span>
               </td>
-              <td class="down">-128.21</td>
-              <td class="down">-5.44%</td>
+              <td class="down">-117.50</td>
+              <td class="down">-4.99%</td>
             </tr>
             
             <tr>
@@ -740,8 +740,17 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6857:TYO" target="_blank" rel="noopener">アドバンテスト</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-65.54</td>
-              <td class="down">-5.96%</td>
+              <td class="down">-66.25</td>
+              <td class="down">-6.02%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9983:TYO" target="_blank" rel="noopener">ファーストリテイリング</a>
+                <span class="contrib-sector">小売</span>
+              </td>
+              <td class="down">-31.07</td>
+              <td class="down">-1.13%</td>
             </tr>
             
             <tr>
@@ -749,8 +758,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-16.79</td>
-              <td class="down">-0.65%</td>
+              <td class="down">-15.71</td>
+              <td class="down">-0.61%</td>
             </tr>
             
             <tr>
@@ -758,17 +767,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/9984:TYO" target="_blank" rel="noopener">ソフトバンクG</a>
                 <span class="contrib-sector">通信</span>
               </td>
-              <td class="down">-15.50</td>
-              <td class="down">-7.33%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/6981:TYO" target="_blank" rel="noopener">村田製作所</a>
-                <span class="contrib-sector">電機</span>
-              </td>
-              <td class="down">-12.32</td>
-              <td class="down">-4.04%</td>
+              <td class="down">-14.93</td>
+              <td class="down">-7.06%</td>
             </tr>
             
             </tbody>
@@ -915,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (14件)</div>
+    <div class="card-title">📰 最新ニュース (12件)</div>
     
     
     
@@ -925,63 +925,91 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📈 マーケット全般 (10件)</div>
+          <div class="news-group-title">📈 マーケット全般 (8件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1614904" target="_blank" rel="noopener">ボードルア---大幅反発、採用・育成の成果が表れているとして国内証券が目標株価上げ</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1615190" target="_blank" rel="noopener">モルガン・スタンレー、香港市場は7月末から8月に回復へ</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>07/24 14:15</span>
+                <span>07/24 18:48</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1614903" target="_blank" rel="noopener">ソフトバンクＧ---大幅反落、米アルファベットの株価下落が波及へ</a>
+                <a href="https://news.yahoo.co.jp/articles/6c331c316288344e370b81c77f478f8e6a01b283?source=rss" target="_blank" rel="noopener">東京円、163円台後半　中東情勢懸念でドル買い(共同通信)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>07/24 18:46</span>
+              </div>
+              
+              <div class="news-summary">24日の東京外国為替市場の円相場は1ドル＝163円台後半で取引された。23日のニューヨーク市場では原油価格高騰などを背景に円安が進行し、一時1ドル＝163円99銭を付けた。その後の東京市場でも流れを</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1615186" target="_blank" rel="noopener">東証グロ－ス指数は大幅反落、リスク回避ムード強まる</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>07/24 14:15</span>
+                <span>07/24 18:45</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1614895" target="_blank" rel="noopener">アスタリスク---大幅続伸、東証が信用取引規制を解除</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>07/24 14:00</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1614889" target="_blank" rel="noopener">トーカイ　バリュエーションレポート：レーティング_Buy　目標株価2,910円で24.4％の上値余地</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>07/24 13:30</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260724/k10015184761000.html" target="_blank" rel="noopener">6月の消費者物価 生鮮食品除く指数 前年比+1.6％</a>
+                <a href="http://www3.nhk.or.jp/news/html/20260724/k10015185051000.html" target="_blank" rel="noopener">円相場 円安進み1ドル＝163円台後半での取り引き</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">NHK経済</span>
-                <span>07/24 13:21</span>
+                <span>07/24 18:31</span>
               </div>
               
-              <div class="news-summary">6月の全国の消費者物価指数は、天候による変動が大きい生鮮食品を除いた指数が去年の同じ月より1.6％上昇しました。上昇率は5月から0.2ポイント拡大しました。</div>
+              <div class="news-summary">24日の東京外国為替市場、イラン情勢が緊迫化する中、有事に強いとされるドルが買われた海外市場の流れを引き継いで、円相場は1ドル＝163円台後半での取り引きとなっています。</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1615176" target="_blank" rel="noopener">UBSがSFSをダウングレード、株価上昇後にリスク・リワードは均衡と判断</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>07/24 18:25</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260724/k10015184761000.html" target="_blank" rel="noopener">物価高続き「恐怖の夏休み」の声も 6月の消費者物価指数は</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>07/24 18:22</span>
+              </div>
+              
+              <div class="news-summary">先月、6月の全国の消費者物価指数は、天候による変動が大きい生鮮食品を除いた指数が2025年の同じ月より1.6％上昇しました。上昇率は5月から0.2ポイント拡大しました。物価高の影響で生活の苦しさが増す…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260724/k10015184971000.html" target="_blank" rel="noopener">株価 一時2200円超値下がり 原油価格上昇やAIへの過剰投資懸念</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>07/24 16:52</span>
+              </div>
+              
+              <div class="news-summary">24日の東京株式市場、イラン情勢を受けて原油価格が上昇したことに加え、AIに対する過剰投資の懸念が強まり、日経平均株価は、一時、2200円以上値下がりしました。</div>
               
             </div>
             
@@ -998,58 +1026,6 @@
               
             </div>
             
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260724/k10015185051000.html" target="_blank" rel="noopener">円相場 円安進み1ドル＝163円台後半での取り引き</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>07/24 12:59</span>
-              </div>
-              
-              <div class="news-summary">24日の東京外国為替市場、イラン情勢が緊迫化する中、有事に強いとされるドルが買われた海外市場の流れを引き継いで、円相場は1ドル＝163円台後半での取り引きとなっています。</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260724/k10015184971000.html" target="_blank" rel="noopener">株価 一時2000円以上値下がり 原油価格上昇と円安で</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>07/24 12:50</span>
-              </div>
-              
-              <div class="news-summary">24日の東京株式市場、イラン情勢を受けて原油価格が上昇したことに加え円安の進行で企業業績に与える影響に懸念が広がり、日経平均株価は、一時、2000円以上値下がりしています。</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302615" target="_blank" rel="noopener">FX/為替「ドル/円今日の見通し｜164円間近 介入を警戒しつつ上値を模索」 外為どっとコム トゥデイ 2026年7月24日号</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/24 10:32</span>
-              </div>
-              
-              <div class="news-summary">主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月24日8時30分執筆・監修：株式会社外…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260724/k10015184801000.html" target="_blank" rel="noopener">アメリカ財務省 “円相場の過度な変動 望ましくない”</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>07/24 09:35</span>
-              </div>
-              
-              <div class="news-summary">アメリカ財務省は、各国の通貨政策を分析する報告書を公表し、円相場について「過度な変動は望ましくない」と指摘しました。</div>
-              
-            </div>
-            
           </div>
         </div>
         
@@ -1057,7 +1033,7 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (2件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (1件)</div>
           <div class="news-list">
             
             <div class="news-item">
@@ -1066,23 +1042,10 @@
               </div>
               <div class="news-meta">
                 <span class="news-source">NHK経済</span>
-                <span>07/24 13:22</span>
+                <span>07/24 19:00</span>
               </div>
               
               <div class="news-summary">アメリカのトランプ政権は、日本を含む主要な60の貿易相手の国や地域を対象に、日本時間の24日午後1時すぎ、新たな追加関税を発動しました。日本からの輸入品には、既存の関税率とあわせて12.5％の関税を課…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302617" target="_blank" rel="noopener">アンダースロー：インフレの上振れリスクは大きくない</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>07/24 10:00</span>
-              </div>
-              
-              <div class="news-summary">この記事は2026年7月24日に配信されたメールマガジン「アンダースロー：インフレの上振れリスクは大きくない」を一部編集し、転載したものです。 目次シンカー7月ECB理事会:年内2回の追加利上げ予想を…</div>
               
             </div>
             
@@ -1093,29 +1056,16 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (2件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (1件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/ef2397f45df125e8eb416ca3f58822dd82ce0f31?source=rss" target="_blank" rel="noopener">「定年なし、何時に出社してもOK？そんなの聞いてない！」M&Aで会社を買い取った54歳社長の戦慄…契約書がない「口頭契約」の売り手企業に潜む、就業規則を無視した“超好条件”の爆弾【元銀行員・社労士が解説】(THE GOLD ONLINE（ゴールドオンライン）)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>07/24 14:30</span>
-              </div>
-              
-              <div class="news-summary">多くの中小企業M＆Aにおいて、経営者が後から最も頭を抱え、最悪の場合は会社分裂の危機にまで発展するのが、決算書には1円も表れてこない「労務（人）のリスク」です。特に注意が必要なのが、労働条件通知書や雇…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1614901" target="_blank" rel="noopener">テスＨＤ---大幅反落、業績・配当予想上方修正も出尽くし感先行</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1615192" target="_blank" rel="noopener">テネット・ヘルスケア株が急騰、好決算と業績見通し引き上げが追い風</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>07/24 14:15</span>
+                <span>07/24 18:53</span>
               </div>
               
             </div>
@@ -1126,6 +1076,39 @@
       
         
         
+        <div class="news-group">
+          <div class="news-group-title">📌 その他 (2件)</div>
+          <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260724/k10015184911000.html" target="_blank" rel="noopener">【きょうのおはBiz 7月24日(金)】どうなる原油価格【解説】</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>07/24 16:22</span>
+              </div>
+              
+              <div class="news-summary">NHKニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはBiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けし…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260724/k10015185251000.html" target="_blank" rel="noopener">経済財政白書 中東情勢の影響を分析 個人消費の動向注視を</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>07/24 15:46</span>
+              </div>
+              
+              <div class="news-summary">政府は今年度の「経済財政白書」で中東情勢の緊迫化が日本経済に与える影響について分析し、原油価格の上昇がさまざまな製品の値上がりを通じて家計の所得を押し下げる要因になるとして、個人消費の動向を注視すべき…</div>
+              
+            </div>
+            
+          </div>
+        </div>
+        
       
     </div>
     
@@ -1133,34 +1116,34 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-24 14:32）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-24 19:10）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 64,611.15 pt (-2.73%)
+- TOPIX (1306連動ETF): 417.5 円 (-1.09%)
+- ドル円: 163.71 円 (+0.39%)
 - S&P 500: 7,408.30 (-1.21%)
 - NASDAQ: 25,137.69 (-2.15%)
 - ダウ: 51,711.65 (-0.97%)
-- ドル円: 163.81 円 (+0.45%)
 - 米10年債利回り: 4.703 % (+0.99%)
-- WTI原油: 91.85 USD (-0.37%)
-- 金: 4028.30 USD (-0.45%)
-- 日経225: 64,537.25 pt (-2.84%)
-- TOPIX (1306連動ETF): 417.4 円 (-1.11%)
+- WTI原油: 88.93 USD (-3.54%)
+- 金: 4062.40 USD (+0.39%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++6.04円  東京海上HD(8766)  +2.12%  [保険]
-  ++4.89円  武田薬品(4502)  +2.49%  [医薬品]
-  ++3.36円  エーザイ(4523)  +2.05%  [医薬品]
-  ++1.96円  オリエンタルランド(4661)  +2.09%  [サービス]
-  ++1.79円  第一三共(4568)  +1.81%  [医薬品]
+  ++5.64円  東京海上HD(8766)  +1.99%  [保険]
+  ++5.11円  武田薬品(4502)  +2.60%  [医薬品]
+  ++2.64円  エーザイ(4523)  +1.62%  [医薬品]
+  ++1.88円  オリエンタルランド(4661)  +2.00%  [サービス]
+  ++1.86円  KDDI(9433)  +1.81%  [通信]
 ▼ 日経225 (下落寄与TOP5)
-  -128.21円  東京エレクトロン(8035)  -5.44%  [半導体製造装置]
-  -65.54円  アドバンテスト(6857)  -5.96%  [電機]
-  -16.79円  キーエンス(6861)  -0.65%  [電機]
-  -15.50円  ソフトバンクG(9984)  -7.33%  [通信]
-  -12.32円  村田製作所(6981)  -4.04%  [電機]
+  -117.50円  東京エレクトロン(8035)  -4.99%  [半導体製造装置]
+  -66.25円  アドバンテスト(6857)  -6.02%  [電機]
+  -31.07円  ファーストリテイリング(9983)  -1.13%  [小売]
+  -15.71円  キーエンス(6861)  -0.61%  [電機]
+  -14.93円  ソフトバンクG(9984)  -7.06%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
   ++5.41pt  Micron Technology(MU)  +3.20%  wt:2.25%  [Information Technology]
   ++3.20pt  Lilly (Eli)(LLY)  +1.97%  wt:2.17%  [Health Care]
@@ -1175,29 +1158,26 @@
   -12.24pt  Nvidia(NVDA)  -1.56%  wt:10.48%  [Information Technology]
 
 【関連ニュース見出し】
-- [Investing.com日本] ボードルア---大幅反発、採用・育成の成果が表れているとして国内証券が目標株価上げ (07/24 14:15)
-- [Investing.com日本] ソフトバンクＧ---大幅反落、米アルファベットの株価下落が波及へ (07/24 14:15)
-- [Investing.com日本] アスタリスク---大幅続伸、東証が信用取引規制を解除 (07/24 14:00)
-- [Investing.com日本] トーカイ　バリュエーションレポート：レーティング_Buy　目標株価2,910円で24.4％の上値余地 (07/24 13:30)
-- [NHK経済] 6月の消費者物価 生鮮食品除く指数 前年比+1.6％ (07/24 13:21)
-  概要: 6月の全国の消費者物価指数は、天候による変動が大きい生鮮食品を除いた指数が去年の同じ月より1.6％上昇しました。上昇率は5月から0.2ポイント拡大しました。
+- [Investing.com日本] モルガン・スタンレー、香港市場は7月末から8月に回復へ (07/24 18:48)
+- [Yahoo!ファイナンス] 東京円、163円台後半　中東情勢懸念でドル買い(共同通信) (07/24 18:46)
+  概要: 24日の東京外国為替市場の円相場は1ドル＝163円台後半で取引された。23日のニューヨーク市場では原油価格高騰などを背景に円安が進行し、一時1ドル＝163円99銭を付けた。その後の東京市場でも流れを
+- [Investing.com日本] 東証グロ－ス指数は大幅反落、リスク回避ムード強まる (07/24 18:45)
+- [NHK経済] 円相場 円安進み1ドル＝163円台後半での取り引き (07/24 18:31)
+  概要: 24日の東京外国為替市場、イラン情勢が緊迫化する中、有事に強いとされるドルが買われた海外市場の流れを引き継いで、円相場は1ドル＝163円台後半での取り引きとなっています。
+- [Investing.com日本] UBSがSFSをダウングレード、株価上昇後にリスク・リワードは均衡と判断 (07/24 18:25)
+- [NHK経済] 物価高続き「恐怖の夏休み」の声も 6月の消費者物価指数は (07/24 18:22)
+  概要: 先月、6月の全国の消費者物価指数は、天候による変動が大きい生鮮食品を除いた指数が2025年の同じ月より1.6％上昇しました。上昇率は5月から0.2ポイント拡大しました。物価高の影響で生活の苦しさが増す
+- [NHK経済] 株価 一時2200円超値下がり 原油価格上昇やAIへの過剰投資懸念 (07/24 16:52)
+  概要: 24日の東京株式市場、イラン情勢を受けて原油価格が上昇したことに加え、AIに対する過剰投資の懸念が強まり、日経平均株価は、一時、2200円以上値下がりしました。
 - [ZUU online] 「5年経ってもPMIは終わらない」ひとまいるが酒販から物流プラットフォームへM&amp;Aで挑む変革 (07/24 13:00)
   概要: 「株式会社カクヤス」を中核に、飲食店向け・家庭向けの酒類販売で基盤を築いてきたカクヤスグループが、2025年7月に「株式会社ひとまいる」へ社名を変更した。 お酒を売る会社から、独自の配送網を活かす「物
-- [NHK経済] 円相場 円安進み1ドル＝163円台後半での取り引き (07/24 12:59)
-  概要: 24日の東京外国為替市場、イラン情勢が緊迫化する中、有事に強いとされるドルが買われた海外市場の流れを引き継いで、円相場は1ドル＝163円台後半での取り引きとなっています。
-- [NHK経済] 株価 一時2000円以上値下がり 原油価格上昇と円安で (07/24 12:50)
-  概要: 24日の東京株式市場、イラン情勢を受けて原油価格が上昇したことに加え円安の進行で企業業績に与える影響に懸念が広がり、日経平均株価は、一時、2000円以上値下がりしています。
-- [ZUU online] FX/為替「ドル/円今日の見通し｜164円間近 介入を警戒しつつ上値を模索」 外為どっとコム トゥデイ 2026年7月24日号 (07/24 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月24日8時30分執筆・監修：株式会社外
-- [NHK経済] アメリカ財務省 “円相場の過度な変動 望ましくない” (07/24 09:35)
-  概要: アメリカ財務省は、各国の通貨政策を分析する報告書を公表し、円相場について「過度な変動は望ましくない」と指摘しました。
-- [NHK経済] トランプ政権 新追加関税を発動 日本は既存税率あわせ12.5％ (07/24 13:22)
+- [NHK経済] トランプ政権 新追加関税を発動 日本は既存税率あわせ12.5％ (07/24 19:00)
   概要: アメリカのトランプ政権は、日本を含む主要な60の貿易相手の国や地域を対象に、日本時間の24日午後1時すぎ、新たな追加関税を発動しました。日本からの輸入品には、既存の関税率とあわせて12.5％の関税を課
-- [ZUU online] アンダースロー：インフレの上振れリスクは大きくない (07/24 10:00)
-  概要: この記事は2026年7月24日に配信されたメールマガジン「アンダースロー：インフレの上振れリスクは大きくない」を一部編集し、転載したものです。 目次シンカー7月ECB理事会:年内2回の追加利上げ予想を
-- [Yahoo!ファイナンス] 「定年なし、何時に出社してもOK？そんなの聞いてない！」M&Aで会社を買い取った54歳社長の戦慄…契約書がない「口頭契約」の売り手企業に潜む、就業規則を無視した“超好条件”の爆弾【元銀行員・社労士が解説】(THE GOLD ONLINE（ゴールドオンライン）) (07/24 14:30)
-  概要: 多くの中小企業M＆Aにおいて、経営者が後から最も頭を抱え、最悪の場合は会社分裂の危機にまで発展するのが、決算書には1円も表れてこない「労務（人）のリスク」です。特に注意が必要なのが、労働条件通知書や雇
-- [Investing.com日本] テスＨＤ---大幅反落、業績・配当予想上方修正も出尽くし感先行 (07/24 14:15)
+- [Investing.com日本] テネット・ヘルスケア株が急騰、好決算と業績見通し引き上げが追い風 (07/24 18:53)
+- [NHK経済] 【きょうのおはBiz 7月24日(金)】どうなる原油価格【解説】 (07/24 16:22)
+  概要: NHKニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはBiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けし
+- [NHK経済] 経済財政白書 中東情勢の影響を分析 個人消費の動向注視を (07/24 15:46)
+  概要: 政府は今年度の「経済財政白書」で中東情勢の緊迫化が日本経済に与える影響について分析し、原油価格の上昇がさまざまな製品の値上がりを通じて家計の所得を押し下げる要因になるとして、個人消費の動向を注視すべき
 
 【依頼内容】
 上記の指数の動きについて、ニュースの内容と紐付けて解説してください。
@@ -1212,29 +1192,29 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 64,611.15 pt (-2.73%)
+- TOPIX (1306連動ETF): 417.5 円 (-1.09%)
+- ドル円: 163.71 円 (+0.39%)
 - S&P 500: 7,408.30 (-1.21%)
 - NASDAQ: 25,137.69 (-2.15%)
 - ダウ: 51,711.65 (-0.97%)
-- ドル円: 163.81 円 (+0.45%)
 - 米10年債利回り: 4.703 % (+0.99%)
-- WTI原油: 91.85 USD (-0.37%)
-- 金: 4028.30 USD (-0.45%)
-- 日経225: 64,537.25 pt (-2.84%)
-- TOPIX (1306連動ETF): 417.4 円 (-1.11%)
+- WTI原油: 88.93 USD (-3.54%)
+- 金: 4062.40 USD (+0.39%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++6.04円  東京海上HD(8766)  +2.12%  [保険]
-  ++4.89円  武田薬品(4502)  +2.49%  [医薬品]
-  ++3.36円  エーザイ(4523)  +2.05%  [医薬品]
-  ++1.96円  オリエンタルランド(4661)  +2.09%  [サービス]
-  ++1.79円  第一三共(4568)  +1.81%  [医薬品]
+  ++5.64円  東京海上HD(8766)  +1.99%  [保険]
+  ++5.11円  武田薬品(4502)  +2.60%  [医薬品]
+  ++2.64円  エーザイ(4523)  +1.62%  [医薬品]
+  ++1.88円  オリエンタルランド(4661)  +2.00%  [サービス]
+  ++1.86円  KDDI(9433)  +1.81%  [通信]
 ▼ 日経225 (下落寄与TOP5)
-  -128.21円  東京エレクトロン(8035)  -5.44%  [半導体製造装置]
-  -65.54円  アドバンテスト(6857)  -5.96%  [電機]
-  -16.79円  キーエンス(6861)  -0.65%  [電機]
-  -15.50円  ソフトバンクG(9984)  -7.33%  [通信]
-  -12.32円  村田製作所(6981)  -4.04%  [電機]
+  -117.50円  東京エレクトロン(8035)  -4.99%  [半導体製造装置]
+  -66.25円  アドバンテスト(6857)  -6.02%  [電機]
+  -31.07円  ファーストリテイリング(9983)  -1.13%  [小売]
+  -15.71円  キーエンス(6861)  -0.61%  [電機]
+  -14.93円  ソフトバンクG(9984)  -7.06%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
   ++5.41pt  Micron Technology(MU)  +3.20%  wt:2.25%  [Information Technology]
   ++3.20pt  Lilly (Eli)(LLY)  +1.97%  wt:2.17%  [Health Care]
@@ -1249,29 +1229,26 @@
   -12.24pt  Nvidia(NVDA)  -1.56%  wt:10.48%  [Information Technology]
 
 【関連ニュース見出し】
-- [Investing.com日本] ボードルア---大幅反発、採用・育成の成果が表れているとして国内証券が目標株価上げ (07/24 14:15)
-- [Investing.com日本] ソフトバンクＧ---大幅反落、米アルファベットの株価下落が波及へ (07/24 14:15)
-- [Investing.com日本] アスタリスク---大幅続伸、東証が信用取引規制を解除 (07/24 14:00)
-- [Investing.com日本] トーカイ　バリュエーションレポート：レーティング_Buy　目標株価2,910円で24.4％の上値余地 (07/24 13:30)
-- [NHK経済] 6月の消費者物価 生鮮食品除く指数 前年比+1.6％ (07/24 13:21)
-  概要: 6月の全国の消費者物価指数は、天候による変動が大きい生鮮食品を除いた指数が去年の同じ月より1.6％上昇しました。上昇率は5月から0.2ポイント拡大しました。
+- [Investing.com日本] モルガン・スタンレー、香港市場は7月末から8月に回復へ (07/24 18:48)
+- [Yahoo!ファイナンス] 東京円、163円台後半　中東情勢懸念でドル買い(共同通信) (07/24 18:46)
+  概要: 24日の東京外国為替市場の円相場は1ドル＝163円台後半で取引された。23日のニューヨーク市場では原油価格高騰などを背景に円安が進行し、一時1ドル＝163円99銭を付けた。その後の東京市場でも流れを
+- [Investing.com日本] 東証グロ－ス指数は大幅反落、リスク回避ムード強まる (07/24 18:45)
+- [NHK経済] 円相場 円安進み1ドル＝163円台後半での取り引き (07/24 18:31)
+  概要: 24日の東京外国為替市場、イラン情勢が緊迫化する中、有事に強いとされるドルが買われた海外市場の流れを引き継いで、円相場は1ドル＝163円台後半での取り引きとなっています。
+- [Investing.com日本] UBSがSFSをダウングレード、株価上昇後にリスク・リワードは均衡と判断 (07/24 18:25)
+- [NHK経済] 物価高続き「恐怖の夏休み」の声も 6月の消費者物価指数は (07/24 18:22)
+  概要: 先月、6月の全国の消費者物価指数は、天候による変動が大きい生鮮食品を除いた指数が2025年の同じ月より1.6％上昇しました。上昇率は5月から0.2ポイント拡大しました。物価高の影響で生活の苦しさが増す
+- [NHK経済] 株価 一時2200円超値下がり 原油価格上昇やAIへの過剰投資懸念 (07/24 16:52)
+  概要: 24日の東京株式市場、イラン情勢を受けて原油価格が上昇したことに加え、AIに対する過剰投資の懸念が強まり、日経平均株価は、一時、2200円以上値下がりしました。
 - [ZUU online] 「5年経ってもPMIは終わらない」ひとまいるが酒販から物流プラットフォームへM&amp;Aで挑む変革 (07/24 13:00)
   概要: 「株式会社カクヤス」を中核に、飲食店向け・家庭向けの酒類販売で基盤を築いてきたカクヤスグループが、2025年7月に「株式会社ひとまいる」へ社名を変更した。 お酒を売る会社から、独自の配送網を活かす「物
-- [NHK経済] 円相場 円安進み1ドル＝163円台後半での取り引き (07/24 12:59)
-  概要: 24日の東京外国為替市場、イラン情勢が緊迫化する中、有事に強いとされるドルが買われた海外市場の流れを引き継いで、円相場は1ドル＝163円台後半での取り引きとなっています。
-- [NHK経済] 株価 一時2000円以上値下がり 原油価格上昇と円安で (07/24 12:50)
-  概要: 24日の東京株式市場、イラン情勢を受けて原油価格が上昇したことに加え円安の進行で企業業績に与える影響に懸念が広がり、日経平均株価は、一時、2000円以上値下がりしています。
-- [ZUU online] FX/為替「ドル/円今日の見通し｜164円間近 介入を警戒しつつ上値を模索」 外為どっとコム トゥデイ 2026年7月24日号 (07/24 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月24日8時30分執筆・監修：株式会社外
-- [NHK経済] アメリカ財務省 “円相場の過度な変動 望ましくない” (07/24 09:35)
-  概要: アメリカ財務省は、各国の通貨政策を分析する報告書を公表し、円相場について「過度な変動は望ましくない」と指摘しました。
-- [NHK経済] トランプ政権 新追加関税を発動 日本は既存税率あわせ12.5％ (07/24 13:22)
+- [NHK経済] トランプ政権 新追加関税を発動 日本は既存税率あわせ12.5％ (07/24 19:00)
   概要: アメリカのトランプ政権は、日本を含む主要な60の貿易相手の国や地域を対象に、日本時間の24日午後1時すぎ、新たな追加関税を発動しました。日本からの輸入品には、既存の関税率とあわせて12.5％の関税を課
-- [ZUU online] アンダースロー：インフレの上振れリスクは大きくない (07/24 10:00)
-  概要: この記事は2026年7月24日に配信されたメールマガジン「アンダースロー：インフレの上振れリスクは大きくない」を一部編集し、転載したものです。 目次シンカー7月ECB理事会:年内2回の追加利上げ予想を
-- [Yahoo!ファイナンス] 「定年なし、何時に出社してもOK？そんなの聞いてない！」M&Aで会社を買い取った54歳社長の戦慄…契約書がない「口頭契約」の売り手企業に潜む、就業規則を無視した“超好条件”の爆弾【元銀行員・社労士が解説】(THE GOLD ONLINE（ゴールドオンライン）) (07/24 14:30)
-  概要: 多くの中小企業M＆Aにおいて、経営者が後から最も頭を抱え、最悪の場合は会社分裂の危機にまで発展するのが、決算書には1円も表れてこない「労務（人）のリスク」です。特に注意が必要なのが、労働条件通知書や雇
-- [Investing.com日本] テスＨＤ---大幅反落、業績・配当予想上方修正も出尽くし感先行 (07/24 14:15)
+- [Investing.com日本] テネット・ヘルスケア株が急騰、好決算と業績見通し引き上げが追い風 (07/24 18:53)
+- [NHK経済] 【きょうのおはBiz 7月24日(金)】どうなる原油価格【解説】 (07/24 16:22)
+  概要: NHKニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはBiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けし
+- [NHK経済] 経済財政白書 中東情勢の影響を分析 個人消費の動向注視を (07/24 15:46)
+  概要: 政府は今年度の「経済財政白書」で中東情勢の緊迫化が日本経済に与える影響について分析し、原油価格の上昇がさまざまな製品の値上がりを通じて家計の所得を押し下げる要因になるとして、個人消費の動向を注視すべき
 
 【依頼内容】
 - 最も動きが大きかった指標トップ3を特定
@@ -1280,29 +1257,29 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 64,611.15 pt (-2.73%)
+- TOPIX (1306連動ETF): 417.5 円 (-1.09%)
+- ドル円: 163.71 円 (+0.39%)
 - S&P 500: 7,408.30 (-1.21%)
 - NASDAQ: 25,137.69 (-2.15%)
 - ダウ: 51,711.65 (-0.97%)
-- ドル円: 163.81 円 (+0.45%)
 - 米10年債利回り: 4.703 % (+0.99%)
-- WTI原油: 91.85 USD (-0.37%)
-- 金: 4028.30 USD (-0.45%)
-- 日経225: 64,537.25 pt (-2.84%)
-- TOPIX (1306連動ETF): 417.4 円 (-1.11%)
+- WTI原油: 88.93 USD (-3.54%)
+- 金: 4062.40 USD (+0.39%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++6.04円  東京海上HD(8766)  +2.12%  [保険]
-  ++4.89円  武田薬品(4502)  +2.49%  [医薬品]
-  ++3.36円  エーザイ(4523)  +2.05%  [医薬品]
-  ++1.96円  オリエンタルランド(4661)  +2.09%  [サービス]
-  ++1.79円  第一三共(4568)  +1.81%  [医薬品]
+  ++5.64円  東京海上HD(8766)  +1.99%  [保険]
+  ++5.11円  武田薬品(4502)  +2.60%  [医薬品]
+  ++2.64円  エーザイ(4523)  +1.62%  [医薬品]
+  ++1.88円  オリエンタルランド(4661)  +2.00%  [サービス]
+  ++1.86円  KDDI(9433)  +1.81%  [通信]
 ▼ 日経225 (下落寄与TOP5)
-  -128.21円  東京エレクトロン(8035)  -5.44%  [半導体製造装置]
-  -65.54円  アドバンテスト(6857)  -5.96%  [電機]
-  -16.79円  キーエンス(6861)  -0.65%  [電機]
-  -15.50円  ソフトバンクG(9984)  -7.33%  [通信]
-  -12.32円  村田製作所(6981)  -4.04%  [電機]
+  -117.50円  東京エレクトロン(8035)  -4.99%  [半導体製造装置]
+  -66.25円  アドバンテスト(6857)  -6.02%  [電機]
+  -31.07円  ファーストリテイリング(9983)  -1.13%  [小売]
+  -15.71円  キーエンス(6861)  -0.61%  [電機]
+  -14.93円  ソフトバンクG(9984)  -7.06%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
   ++5.41pt  Micron Technology(MU)  +3.20%  wt:2.25%  [Information Technology]
   ++3.20pt  Lilly (Eli)(LLY)  +1.97%  wt:2.17%  [Health Care]
@@ -1317,29 +1294,26 @@
   -12.24pt  Nvidia(NVDA)  -1.56%  wt:10.48%  [Information Technology]
 
 【関連ニュース見出し】
-- [Investing.com日本] ボードルア---大幅反発、採用・育成の成果が表れているとして国内証券が目標株価上げ (07/24 14:15)
-- [Investing.com日本] ソフトバンクＧ---大幅反落、米アルファベットの株価下落が波及へ (07/24 14:15)
-- [Investing.com日本] アスタリスク---大幅続伸、東証が信用取引規制を解除 (07/24 14:00)
-- [Investing.com日本] トーカイ　バリュエーションレポート：レーティング_Buy　目標株価2,910円で24.4％の上値余地 (07/24 13:30)
-- [NHK経済] 6月の消費者物価 生鮮食品除く指数 前年比+1.6％ (07/24 13:21)
-  概要: 6月の全国の消費者物価指数は、天候による変動が大きい生鮮食品を除いた指数が去年の同じ月より1.6％上昇しました。上昇率は5月から0.2ポイント拡大しました。
+- [Investing.com日本] モルガン・スタンレー、香港市場は7月末から8月に回復へ (07/24 18:48)
+- [Yahoo!ファイナンス] 東京円、163円台後半　中東情勢懸念でドル買い(共同通信) (07/24 18:46)
+  概要: 24日の東京外国為替市場の円相場は1ドル＝163円台後半で取引された。23日のニューヨーク市場では原油価格高騰などを背景に円安が進行し、一時1ドル＝163円99銭を付けた。その後の東京市場でも流れを
+- [Investing.com日本] 東証グロ－ス指数は大幅反落、リスク回避ムード強まる (07/24 18:45)
+- [NHK経済] 円相場 円安進み1ドル＝163円台後半での取り引き (07/24 18:31)
+  概要: 24日の東京外国為替市場、イラン情勢が緊迫化する中、有事に強いとされるドルが買われた海外市場の流れを引き継いで、円相場は1ドル＝163円台後半での取り引きとなっています。
+- [Investing.com日本] UBSがSFSをダウングレード、株価上昇後にリスク・リワードは均衡と判断 (07/24 18:25)
+- [NHK経済] 物価高続き「恐怖の夏休み」の声も 6月の消費者物価指数は (07/24 18:22)
+  概要: 先月、6月の全国の消費者物価指数は、天候による変動が大きい生鮮食品を除いた指数が2025年の同じ月より1.6％上昇しました。上昇率は5月から0.2ポイント拡大しました。物価高の影響で生活の苦しさが増す
+- [NHK経済] 株価 一時2200円超値下がり 原油価格上昇やAIへの過剰投資懸念 (07/24 16:52)
+  概要: 24日の東京株式市場、イラン情勢を受けて原油価格が上昇したことに加え、AIに対する過剰投資の懸念が強まり、日経平均株価は、一時、2200円以上値下がりしました。
 - [ZUU online] 「5年経ってもPMIは終わらない」ひとまいるが酒販から物流プラットフォームへM&amp;Aで挑む変革 (07/24 13:00)
   概要: 「株式会社カクヤス」を中核に、飲食店向け・家庭向けの酒類販売で基盤を築いてきたカクヤスグループが、2025年7月に「株式会社ひとまいる」へ社名を変更した。 お酒を売る会社から、独自の配送網を活かす「物
-- [NHK経済] 円相場 円安進み1ドル＝163円台後半での取り引き (07/24 12:59)
-  概要: 24日の東京外国為替市場、イラン情勢が緊迫化する中、有事に強いとされるドルが買われた海外市場の流れを引き継いで、円相場は1ドル＝163円台後半での取り引きとなっています。
-- [NHK経済] 株価 一時2000円以上値下がり 原油価格上昇と円安で (07/24 12:50)
-  概要: 24日の東京株式市場、イラン情勢を受けて原油価格が上昇したことに加え円安の進行で企業業績に与える影響に懸念が広がり、日経平均株価は、一時、2000円以上値下がりしています。
-- [ZUU online] FX/為替「ドル/円今日の見通し｜164円間近 介入を警戒しつつ上値を模索」 外為どっとコム トゥデイ 2026年7月24日号 (07/24 10:32)
-  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年7月24日8時30分執筆・監修：株式会社外
-- [NHK経済] アメリカ財務省 “円相場の過度な変動 望ましくない” (07/24 09:35)
-  概要: アメリカ財務省は、各国の通貨政策を分析する報告書を公表し、円相場について「過度な変動は望ましくない」と指摘しました。
-- [NHK経済] トランプ政権 新追加関税を発動 日本は既存税率あわせ12.5％ (07/24 13:22)
+- [NHK経済] トランプ政権 新追加関税を発動 日本は既存税率あわせ12.5％ (07/24 19:00)
   概要: アメリカのトランプ政権は、日本を含む主要な60の貿易相手の国や地域を対象に、日本時間の24日午後1時すぎ、新たな追加関税を発動しました。日本からの輸入品には、既存の関税率とあわせて12.5％の関税を課
-- [ZUU online] アンダースロー：インフレの上振れリスクは大きくない (07/24 10:00)
-  概要: この記事は2026年7月24日に配信されたメールマガジン「アンダースロー：インフレの上振れリスクは大きくない」を一部編集し、転載したものです。 目次シンカー7月ECB理事会:年内2回の追加利上げ予想を
-- [Yahoo!ファイナンス] 「定年なし、何時に出社してもOK？そんなの聞いてない！」M&Aで会社を買い取った54歳社長の戦慄…契約書がない「口頭契約」の売り手企業に潜む、就業規則を無視した“超好条件”の爆弾【元銀行員・社労士が解説】(THE GOLD ONLINE（ゴールドオンライン）) (07/24 14:30)
-  概要: 多くの中小企業M＆Aにおいて、経営者が後から最も頭を抱え、最悪の場合は会社分裂の危機にまで発展するのが、決算書には1円も表れてこない「労務（人）のリスク」です。特に注意が必要なのが、労働条件通知書や雇
-- [Investing.com日本] テスＨＤ---大幅反落、業績・配当予想上方修正も出尽くし感先行 (07/24 14:15)
+- [Investing.com日本] テネット・ヘルスケア株が急騰、好決算と業績見通し引き上げが追い風 (07/24 18:53)
+- [NHK経済] 【きょうのおはBiz 7月24日(金)】どうなる原油価格【解説】 (07/24 16:22)
+  概要: NHKニュース「おはよう日本」で平日朝に放送している経済ニュースコーナー「おはBiz」。最新のビジネストレンドや働き方、お役立ちサービスやスタートアップ企業の情報など、ギュギュっとコンパクトにお届けし
+- [NHK経済] 経済財政白書 中東情勢の影響を分析 個人消費の動向注視を (07/24 15:46)
+  概要: 政府は今年度の「経済財政白書」で中東情勢の緊迫化が日本経済に与える影響について分析し、原油価格の上昇がさまざまな製品の値上がりを通じて家計の所得を押し下げる要因になるとして、個人消費の動向を注視すべき
 
 【依頼内容】
 - 短期的なリスク要因（今後1週間以内）
