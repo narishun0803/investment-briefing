@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [夜]</title>
+  <title>投資情報ブリーフィング [朝]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">夜</span>
-    <span class="slot-desc">米国寄り付き直前・経済指標・欧州市場</span>
+    <span class="slot-badge">朝</span>
+    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年07月25日 23:27 JST</span>
+    <span class="updated">更新: 2026年07月26日 06:39 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -548,9 +548,9 @@
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
         
-          <div class="tile-price">nan <span class="tile-unit"></span></div>
-          <div class="tile-change flat">
-            +nan&nbsp;&nbsp;+nan%
+          <div class="tile-price">7,411.98 <span class="tile-unit"></span></div>
+          <div class="tile-change up">
+            +3.68&nbsp;&nbsp;+0.05%
           </div>
         
         
@@ -570,9 +570,9 @@
       <div class="market-tile primary">
         <div class="tile-name">ダウ</div>
         
-          <div class="tile-price">nan <span class="tile-unit"></span></div>
-          <div class="tile-change flat">
-            +nan&nbsp;&nbsp;+nan%
+          <div class="tile-price">51,947.25 <span class="tile-unit"></span></div>
+          <div class="tile-change up">
+            +235.60&nbsp;&nbsp;+0.46%
           </div>
         
         
@@ -592,9 +592,9 @@
       <div class="market-tile primary">
         <div class="tile-name">米10年債利回り</div>
         
-          <div class="tile-price">4.703 <span class="tile-unit">%</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
+          <div class="tile-price">4.679 <span class="tile-unit">%</span></div>
+          <div class="tile-change down">
+            -0.02&nbsp;&nbsp;-0.51%
           </div>
         
         
@@ -625,9 +625,9 @@
       <div class="market-tile ">
         <div class="tile-name">日経225</div>
         
-          <div class="tile-price">66,422.60 <span class="tile-unit">pt</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
+          <div class="tile-price">64,611.15 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -1811.45&nbsp;&nbsp;-2.73%
           </div>
         
         
@@ -783,12 +783,130 @@
 
         <div class="contrib-sub">
           <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AAPL:NASDAQ" target="_blank" rel="noopener">AAPL</a>
+                <span class="contrib-sector">Apple Inc.</span>
+              </td>
+              <td class="up">+26.45</td>
+              <td class="up">+3.53%</td>
+              <td style="color:var(--text2)">10.11%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOGL:NASDAQ" target="_blank" rel="noopener">GOOGL</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="up">+4.28</td>
+              <td class="up">+0.65%</td>
+              <td style="color:var(--text2)">8.96%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOG:NASDAQ" target="_blank" rel="noopener">GOOG</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="up">+1.56</td>
+              <td class="up">+0.24%</td>
+              <td style="color:var(--text2)">8.94%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/JNJ:NYSE" target="_blank" rel="noopener">JNJ</a>
+                <span class="contrib-sector">Johnson & Johnson</span>
+              </td>
+              <td class="up">+1.49</td>
+              <td class="up">+1.59%</td>
+              <td style="color:var(--text2)">1.27%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/LLY:NYSE" target="_blank" rel="noopener">LLY</a>
+                <span class="contrib-sector">Lilly (Eli)</span>
+              </td>
+              <td class="up">+1.38</td>
+              <td class="up">+0.86%</td>
+              <td style="color:var(--text2)">2.17%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
 
         <div class="contrib-sub">
           <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/MU:NASDAQ" target="_blank" rel="noopener">MU</a>
+                <span class="contrib-sector">Micron Technology</span>
+              </td>
+              <td class="down">-11.67</td>
+              <td class="down">-6.99%</td>
+              <td style="color:var(--text2)">2.25%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/NVDA:NASDAQ" target="_blank" rel="noopener">NVDA</a>
+                <span class="contrib-sector">Nvidia</span>
+              </td>
+              <td class="down">-7.14</td>
+              <td class="down">-0.92%</td>
+              <td style="color:var(--text2)">10.48%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/TSLA:NASDAQ" target="_blank" rel="noopener">TSLA</a>
+                <span class="contrib-sector">Tesla, Inc.</span>
+              </td>
+              <td class="down">-4.67</td>
+              <td class="down">-2.08%</td>
+              <td style="color:var(--text2)">3.03%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/META:NASDAQ" target="_blank" rel="noopener">META</a>
+                <span class="contrib-sector">Meta Platforms</span>
+              </td>
+              <td class="down">-4.61</td>
+              <td class="down">-1.80%</td>
+              <td style="color:var(--text2)">3.46%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AMD:NASDAQ" target="_blank" rel="noopener">AMD</a>
+                <span class="contrib-sector">Advanced Micro Devic…</span>
+              </td>
+              <td class="down">-4.42</td>
+              <td class="down">-3.29%</td>
+              <td style="color:var(--text2)">1.82%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
       </div>
 
@@ -807,8 +925,32 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📈 マーケット全般 (5件)</div>
+          <div class="news-group-title">📈 マーケット全般 (6件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/eaea879ed7aa532dcede8a0e0626937fe35fa1f4?source=rss" target="_blank" rel="noopener">【お金の戦略】三流は「貯める」、二流は「増やす」。では超一流は？(ダイヤモンド・オンライン)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>07/26 06:36</span>
+              </div>
+              
+              <div class="news-summary">ついに日経平均が7万円を突破した。だが、中東情勢の混乱など不透明感は極まりない。一体全体、これからの資産戦略をどうすればいいのか？ そんな時にうってつけの本がある。「『金持ち父さん 貧乏父さん』以来の…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1616209" target="_blank" rel="noopener">ゴールドマン・サックス、円安見通しを背景にTOPIX12カ月目標を4,500に引き上げ</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>07/26 05:01</span>
+              </div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -820,17 +962,6 @@
               </div>
               
               <div class="news-summary">本記事は、長友 大典氏の著書『社外CFOになって、たちまち年収1200万円を稼ぐ方法』（すばる舎）の中から一部を抜粋・編集しています。 日経新聞はウェブ版ではなく紙面で読むことで銀行の人事情報がひと目…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1616108" target="_blank" rel="noopener">CFTCが予測市場契約の自己認証に関するガイダンスを発表</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>07/25 06:09</span>
-              </div>
               
             </div>
             
@@ -880,23 +1011,8 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (3件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (2件)</div>
           <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/c52561c17c4c2b52b57eb19b2d395436bd88b4aa?source=rss" target="_blank" rel="noopener">【日本株】利益も配当も成長する｢未来の増配期待株｣の2銘柄を紹介！ 利益の7割を海外で稼ぐ損保最大手の｢東京海上HD｣、シャッター首位の｢三和HD｣に注目！(ダイヤモンド・ザイ)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>07/25 21:20</span>
-              </div>
-              
-              <div class="news-summary">【高配当株】成長性があって、将来の増配が見込める高配当株は、足元の配当利回りが3.2％の「東京海上ホールディングス」と、3.8％の「三和ホールディングス」！　
-
-●海外事業が好調の「東京海上ホールデ</div>
-              
-            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -982,19 +1098,19 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-25 23:27）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-26 06:39）の投資ブリーフィング情報です。
 
-【時間帯】夜（米国寄り付き直前・経済指標・欧州市場）
+【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
 
 【マーケットデータ】
-- S&P 500: nan (+nan%)
+- S&P 500: 7,411.98 (+0.05%)
 - NASDAQ: nan (+nan%)
-- ダウ: nan (+nan%)
+- ダウ: 51,947.25 (+0.46%)
 - ドル円: 163.79 円 (+0.44%)
-- 米10年債利回り: 4.703 % (+0.00%)
+- 米10年債利回り: 4.679 % (-0.51%)
 - WTI原油: 89.31 USD (-3.12%)
 - 金: 4067.60 USD (+0.52%)
-- 日経225: 66,422.60 pt (+0.00%)
+- 日経225: 64,611.15 pt (-2.73%)
 - TOPIX (1306連動ETF): 417.5 円 (-1.09%)
 
 【個別株の寄与度ランキング】
@@ -1011,22 +1127,30 @@
   -15.71円  キーエンス(6861)  -0.61%  [電機]
   -14.93円  ソフトバンクG(9984)  -7.06%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
+  ++26.45pt  Apple Inc.(AAPL)  +3.53%  wt:10.11%  [Information Technology]
+  ++4.28pt  Alphabet Inc. (Class A)(GOOGL)  +0.65%  wt:8.96%  [Communication Services]
+  ++1.56pt  Alphabet Inc. (Class C)(GOOG)  +0.24%  wt:8.94%  [Communication Services]
+  ++1.49pt  Johnson & Johnson(JNJ)  +1.59%  wt:1.27%  [Health Care]
+  ++1.38pt  Lilly (Eli)(LLY)  +0.86%  wt:2.17%  [Health Care]
 ▼ S&P500 (下落寄与TOP5)
+  -11.67pt  Micron Technology(MU)  -6.99%  wt:2.25%  [Information Technology]
+  -7.14pt  Nvidia(NVDA)  -0.92%  wt:10.48%  [Information Technology]
+  -4.67pt  Tesla, Inc.(TSLA)  -2.08%  wt:3.03%  [Consumer Discretionary]
+  -4.61pt  Meta Platforms(META)  -1.80%  wt:3.46%  [Communication Services]
+  -4.42pt  Advanced Micro Devices(AMD)  -3.29%  wt:1.82%  [Information Technology]
 
 【関連ニュース見出し】
+- [Yahoo!ファイナンス] 【お金の戦略】三流は「貯める」、二流は「増やす」。では超一流は？(ダイヤモンド・オンライン) (07/26 06:36)
+  概要: ついに日経平均が7万円を突破した。だが、中東情勢の混乱など不透明感は極まりない。一体全体、これからの資産戦略をどうすればいいのか？ そんな時にうってつけの本がある。「『金持ち父さん 貧乏父さん』以来の
+- [Investing.com日本] ゴールドマン・サックス、円安見通しを背景にTOPIX12カ月目標を4,500に引き上げ (07/26 05:01)
 - [ZUU online] 情報に強いCFOになれ！ 日経新聞の紙面が銀行交渉の武器になる (07/25 11:00)
   概要: 本記事は、長友 大典氏の著書『社外CFOになって、たちまち年収1200万円を稼ぐ方法』（すばる舎）の中から一部を抜粋・編集しています。 日経新聞はウェブ版ではなく紙面で読むことで銀行の人事情報がひと目
-- [Investing.com日本] CFTCが予測市場契約の自己認証に関するガイダンスを発表 (07/25 06:09)
 - [NHK経済] 独フォルクスワーゲン 上半期決算は減益 中国販売減少などで (07/24 20:46)
   概要: ドイツの大手自動車メーカー、フォルクスワーゲンは、ことし上半期の決算を発表し、中国市場での販売減少などにより、最終的な利益は去年の同じ時期と比べて35％余りの減益となりました。
 - [ZUU online] 日々是相場［夕刊］――  2026年7月24日（金） (07/24 19:30)
   概要: 日経平均 64,611.15円 ▼1,811.45円 為替 １ドル＝163.79円 売買高（東証プライム、以下同） 22億3,948万株 売買代金 8兆4378億34百万円 値上り銘柄数 632銘柄 
 - [ZUU online] 「5年経ってもPMIは終わらない」ひとまいるが酒販から物流プラットフォームへM&amp;Aで挑む変革 (07/24 13:00)
   概要: 「株式会社カクヤス」を中核に、飲食店向け・家庭向けの酒類販売で基盤を築いてきたカクヤスグループが、2025年7月に「株式会社ひとまいる」へ社名を変更した。 お酒を売る会社から、独自の配送網を活かす「物
-- [Yahoo!ファイナンス] 【日本株】利益も配当も成長する｢未来の増配期待株｣の2銘柄を紹介！ 利益の7割を海外で稼ぐ損保最大手の｢東京海上HD｣、シャッター首位の｢三和HD｣に注目！(ダイヤモンド・ザイ) (07/25 21:20)
-  概要: 【高配当株】成長性があって、将来の増配が見込める高配当株は、足元の配当利回りが3.2％の「東京海上ホールディングス」と、3.8％の「三和ホールディングス」！　
-
-●海外事業が好調の「東京海上ホールデ
 - [Investing.com日本] 国内外の注目経済指標：日銀の金融政策スタンスに注目 (07/25 16:00)
 - [NHK経済] 愛媛 いよぎんHDと愛媛銀行が経営統合に向けて基本合意 (07/24 20:45)
   概要: 愛媛県の「伊予銀行」を傘下に持つ「いよぎんホールディングス」と、「愛媛銀行」は、24日に松山市で会見を開き、経営統合に向けた協議を進めることで基本合意したと発表しました。人口減少や、金利のある世界で預
@@ -1049,14 +1173,14 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
-- S&P 500: nan (+nan%)
+- S&P 500: 7,411.98 (+0.05%)
 - NASDAQ: nan (+nan%)
-- ダウ: nan (+nan%)
+- ダウ: 51,947.25 (+0.46%)
 - ドル円: 163.79 円 (+0.44%)
-- 米10年債利回り: 4.703 % (+0.00%)
+- 米10年債利回り: 4.679 % (-0.51%)
 - WTI原油: 89.31 USD (-3.12%)
 - 金: 4067.60 USD (+0.52%)
-- 日経225: 66,422.60 pt (+0.00%)
+- 日経225: 64,611.15 pt (-2.73%)
 - TOPIX (1306連動ETF): 417.5 円 (-1.09%)
 
 【個別株の寄与度ランキング】
@@ -1073,22 +1197,30 @@
   -15.71円  キーエンス(6861)  -0.61%  [電機]
   -14.93円  ソフトバンクG(9984)  -7.06%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
+  ++26.45pt  Apple Inc.(AAPL)  +3.53%  wt:10.11%  [Information Technology]
+  ++4.28pt  Alphabet Inc. (Class A)(GOOGL)  +0.65%  wt:8.96%  [Communication Services]
+  ++1.56pt  Alphabet Inc. (Class C)(GOOG)  +0.24%  wt:8.94%  [Communication Services]
+  ++1.49pt  Johnson & Johnson(JNJ)  +1.59%  wt:1.27%  [Health Care]
+  ++1.38pt  Lilly (Eli)(LLY)  +0.86%  wt:2.17%  [Health Care]
 ▼ S&P500 (下落寄与TOP5)
+  -11.67pt  Micron Technology(MU)  -6.99%  wt:2.25%  [Information Technology]
+  -7.14pt  Nvidia(NVDA)  -0.92%  wt:10.48%  [Information Technology]
+  -4.67pt  Tesla, Inc.(TSLA)  -2.08%  wt:3.03%  [Consumer Discretionary]
+  -4.61pt  Meta Platforms(META)  -1.80%  wt:3.46%  [Communication Services]
+  -4.42pt  Advanced Micro Devices(AMD)  -3.29%  wt:1.82%  [Information Technology]
 
 【関連ニュース見出し】
+- [Yahoo!ファイナンス] 【お金の戦略】三流は「貯める」、二流は「増やす」。では超一流は？(ダイヤモンド・オンライン) (07/26 06:36)
+  概要: ついに日経平均が7万円を突破した。だが、中東情勢の混乱など不透明感は極まりない。一体全体、これからの資産戦略をどうすればいいのか？ そんな時にうってつけの本がある。「『金持ち父さん 貧乏父さん』以来の
+- [Investing.com日本] ゴールドマン・サックス、円安見通しを背景にTOPIX12カ月目標を4,500に引き上げ (07/26 05:01)
 - [ZUU online] 情報に強いCFOになれ！ 日経新聞の紙面が銀行交渉の武器になる (07/25 11:00)
   概要: 本記事は、長友 大典氏の著書『社外CFOになって、たちまち年収1200万円を稼ぐ方法』（すばる舎）の中から一部を抜粋・編集しています。 日経新聞はウェブ版ではなく紙面で読むことで銀行の人事情報がひと目
-- [Investing.com日本] CFTCが予測市場契約の自己認証に関するガイダンスを発表 (07/25 06:09)
 - [NHK経済] 独フォルクスワーゲン 上半期決算は減益 中国販売減少などで (07/24 20:46)
   概要: ドイツの大手自動車メーカー、フォルクスワーゲンは、ことし上半期の決算を発表し、中国市場での販売減少などにより、最終的な利益は去年の同じ時期と比べて35％余りの減益となりました。
 - [ZUU online] 日々是相場［夕刊］――  2026年7月24日（金） (07/24 19:30)
   概要: 日経平均 64,611.15円 ▼1,811.45円 為替 １ドル＝163.79円 売買高（東証プライム、以下同） 22億3,948万株 売買代金 8兆4378億34百万円 値上り銘柄数 632銘柄 
 - [ZUU online] 「5年経ってもPMIは終わらない」ひとまいるが酒販から物流プラットフォームへM&amp;Aで挑む変革 (07/24 13:00)
   概要: 「株式会社カクヤス」を中核に、飲食店向け・家庭向けの酒類販売で基盤を築いてきたカクヤスグループが、2025年7月に「株式会社ひとまいる」へ社名を変更した。 お酒を売る会社から、独自の配送網を活かす「物
-- [Yahoo!ファイナンス] 【日本株】利益も配当も成長する｢未来の増配期待株｣の2銘柄を紹介！ 利益の7割を海外で稼ぐ損保最大手の｢東京海上HD｣、シャッター首位の｢三和HD｣に注目！(ダイヤモンド・ザイ) (07/25 21:20)
-  概要: 【高配当株】成長性があって、将来の増配が見込める高配当株は、足元の配当利回りが3.2％の「東京海上ホールディングス」と、3.8％の「三和ホールディングス」！　
-
-●海外事業が好調の「東京海上ホールデ
 - [Investing.com日本] 国内外の注目経済指標：日銀の金融政策スタンスに注目 (07/25 16:00)
 - [NHK経済] 愛媛 いよぎんHDと愛媛銀行が経営統合に向けて基本合意 (07/24 20:45)
   概要: 愛媛県の「伊予銀行」を傘下に持つ「いよぎんホールディングス」と、「愛媛銀行」は、24日に松山市で会見を開き、経営統合に向けた協議を進めることで基本合意したと発表しました。人口減少や、金利のある世界で預
@@ -1105,14 +1237,14 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
-- S&P 500: nan (+nan%)
+- S&P 500: 7,411.98 (+0.05%)
 - NASDAQ: nan (+nan%)
-- ダウ: nan (+nan%)
+- ダウ: 51,947.25 (+0.46%)
 - ドル円: 163.79 円 (+0.44%)
-- 米10年債利回り: 4.703 % (+0.00%)
+- 米10年債利回り: 4.679 % (-0.51%)
 - WTI原油: 89.31 USD (-3.12%)
 - 金: 4067.60 USD (+0.52%)
-- 日経225: 66,422.60 pt (+0.00%)
+- 日経225: 64,611.15 pt (-2.73%)
 - TOPIX (1306連動ETF): 417.5 円 (-1.09%)
 
 【個別株の寄与度ランキング】
@@ -1129,22 +1261,30 @@
   -15.71円  キーエンス(6861)  -0.61%  [電機]
   -14.93円  ソフトバンクG(9984)  -7.06%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
+  ++26.45pt  Apple Inc.(AAPL)  +3.53%  wt:10.11%  [Information Technology]
+  ++4.28pt  Alphabet Inc. (Class A)(GOOGL)  +0.65%  wt:8.96%  [Communication Services]
+  ++1.56pt  Alphabet Inc. (Class C)(GOOG)  +0.24%  wt:8.94%  [Communication Services]
+  ++1.49pt  Johnson & Johnson(JNJ)  +1.59%  wt:1.27%  [Health Care]
+  ++1.38pt  Lilly (Eli)(LLY)  +0.86%  wt:2.17%  [Health Care]
 ▼ S&P500 (下落寄与TOP5)
+  -11.67pt  Micron Technology(MU)  -6.99%  wt:2.25%  [Information Technology]
+  -7.14pt  Nvidia(NVDA)  -0.92%  wt:10.48%  [Information Technology]
+  -4.67pt  Tesla, Inc.(TSLA)  -2.08%  wt:3.03%  [Consumer Discretionary]
+  -4.61pt  Meta Platforms(META)  -1.80%  wt:3.46%  [Communication Services]
+  -4.42pt  Advanced Micro Devices(AMD)  -3.29%  wt:1.82%  [Information Technology]
 
 【関連ニュース見出し】
+- [Yahoo!ファイナンス] 【お金の戦略】三流は「貯める」、二流は「増やす」。では超一流は？(ダイヤモンド・オンライン) (07/26 06:36)
+  概要: ついに日経平均が7万円を突破した。だが、中東情勢の混乱など不透明感は極まりない。一体全体、これからの資産戦略をどうすればいいのか？ そんな時にうってつけの本がある。「『金持ち父さん 貧乏父さん』以来の
+- [Investing.com日本] ゴールドマン・サックス、円安見通しを背景にTOPIX12カ月目標を4,500に引き上げ (07/26 05:01)
 - [ZUU online] 情報に強いCFOになれ！ 日経新聞の紙面が銀行交渉の武器になる (07/25 11:00)
   概要: 本記事は、長友 大典氏の著書『社外CFOになって、たちまち年収1200万円を稼ぐ方法』（すばる舎）の中から一部を抜粋・編集しています。 日経新聞はウェブ版ではなく紙面で読むことで銀行の人事情報がひと目
-- [Investing.com日本] CFTCが予測市場契約の自己認証に関するガイダンスを発表 (07/25 06:09)
 - [NHK経済] 独フォルクスワーゲン 上半期決算は減益 中国販売減少などで (07/24 20:46)
   概要: ドイツの大手自動車メーカー、フォルクスワーゲンは、ことし上半期の決算を発表し、中国市場での販売減少などにより、最終的な利益は去年の同じ時期と比べて35％余りの減益となりました。
 - [ZUU online] 日々是相場［夕刊］――  2026年7月24日（金） (07/24 19:30)
   概要: 日経平均 64,611.15円 ▼1,811.45円 為替 １ドル＝163.79円 売買高（東証プライム、以下同） 22億3,948万株 売買代金 8兆4378億34百万円 値上り銘柄数 632銘柄 
 - [ZUU online] 「5年経ってもPMIは終わらない」ひとまいるが酒販から物流プラットフォームへM&amp;Aで挑む変革 (07/24 13:00)
   概要: 「株式会社カクヤス」を中核に、飲食店向け・家庭向けの酒類販売で基盤を築いてきたカクヤスグループが、2025年7月に「株式会社ひとまいる」へ社名を変更した。 お酒を売る会社から、独自の配送網を活かす「物
-- [Yahoo!ファイナンス] 【日本株】利益も配当も成長する｢未来の増配期待株｣の2銘柄を紹介！ 利益の7割を海外で稼ぐ損保最大手の｢東京海上HD｣、シャッター首位の｢三和HD｣に注目！(ダイヤモンド・ザイ) (07/25 21:20)
-  概要: 【高配当株】成長性があって、将来の増配が見込める高配当株は、足元の配当利回りが3.2％の「東京海上ホールディングス」と、3.8％の「三和ホールディングス」！　
-
-●海外事業が好調の「東京海上ホールデ
 - [Investing.com日本] 国内外の注目経済指標：日銀の金融政策スタンスに注目 (07/25 16:00)
 - [NHK経済] 愛媛 いよぎんHDと愛媛銀行が経営統合に向けて基本合意 (07/24 20:45)
   概要: 愛媛県の「伊予銀行」を傘下に持つ「いよぎんホールディングス」と、「愛媛銀行」は、24日に松山市で会見を開き、経営統合に向けた協議を進めることで基本合意したと発表しました。人口減少や、金利のある世界で預
