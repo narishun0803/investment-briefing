@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [夜]</title>
+  <title>投資情報ブリーフィング [朝]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">夜</span>
-    <span class="slot-desc">米国寄り付き直前・経済指標・欧州市場</span>
+    <span class="slot-badge">朝</span>
+    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年07月26日 23:25 JST</span>
+    <span class="updated">更新: 2026年07月27日 06:43 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -548,9 +548,9 @@
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
         
-          <div class="tile-price">nan <span class="tile-unit"></span></div>
-          <div class="tile-change flat">
-            +nan&nbsp;&nbsp;+nan%
+          <div class="tile-price">7,411.98 <span class="tile-unit"></span></div>
+          <div class="tile-change up">
+            +3.68&nbsp;&nbsp;+0.05%
           </div>
         
         
@@ -559,9 +559,9 @@
       <div class="market-tile primary">
         <div class="tile-name">NASDAQ</div>
         
-          <div class="tile-price">nan <span class="tile-unit"></span></div>
-          <div class="tile-change flat">
-            +nan&nbsp;&nbsp;+nan%
+          <div class="tile-price">24,975.82 <span class="tile-unit"></span></div>
+          <div class="tile-change down">
+            -161.87&nbsp;&nbsp;-0.64%
           </div>
         
         
@@ -570,9 +570,9 @@
       <div class="market-tile primary">
         <div class="tile-name">ダウ</div>
         
-          <div class="tile-price">nan <span class="tile-unit"></span></div>
-          <div class="tile-change flat">
-            +nan&nbsp;&nbsp;+nan%
+          <div class="tile-price">51,947.25 <span class="tile-unit"></span></div>
+          <div class="tile-change up">
+            +235.60&nbsp;&nbsp;+0.46%
           </div>
         
         
@@ -581,9 +581,9 @@
       <div class="market-tile primary">
         <div class="tile-name">ドル円</div>
         
-          <div class="tile-price">163.79 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.71&nbsp;&nbsp;+0.44%
+          <div class="tile-price">163.65 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -0.18&nbsp;&nbsp;-0.11%
           </div>
         
         
@@ -592,9 +592,9 @@
       <div class="market-tile primary">
         <div class="tile-name">米10年債利回り</div>
         
-          <div class="tile-price">4.703 <span class="tile-unit">%</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
+          <div class="tile-price">4.679 <span class="tile-unit">%</span></div>
+          <div class="tile-change down">
+            -0.02&nbsp;&nbsp;-0.51%
           </div>
         
         
@@ -625,9 +625,9 @@
       <div class="market-tile ">
         <div class="tile-name">日経225</div>
         
-          <div class="tile-price">66,422.60 <span class="tile-unit">pt</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
+          <div class="tile-price">64,611.15 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -1811.45&nbsp;&nbsp;-2.73%
           </div>
         
         
@@ -783,12 +783,130 @@
 
         <div class="contrib-sub">
           <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AAPL:NASDAQ" target="_blank" rel="noopener">AAPL</a>
+                <span class="contrib-sector">Apple Inc.</span>
+              </td>
+              <td class="up">+26.45</td>
+              <td class="up">+3.53%</td>
+              <td style="color:var(--text2)">10.11%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOGL:NASDAQ" target="_blank" rel="noopener">GOOGL</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="up">+4.28</td>
+              <td class="up">+0.65%</td>
+              <td style="color:var(--text2)">8.96%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOG:NASDAQ" target="_blank" rel="noopener">GOOG</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="up">+1.56</td>
+              <td class="up">+0.24%</td>
+              <td style="color:var(--text2)">8.94%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/JNJ:NYSE" target="_blank" rel="noopener">JNJ</a>
+                <span class="contrib-sector">Johnson & Johnson</span>
+              </td>
+              <td class="up">+1.49</td>
+              <td class="up">+1.59%</td>
+              <td style="color:var(--text2)">1.27%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/LLY:NYSE" target="_blank" rel="noopener">LLY</a>
+                <span class="contrib-sector">Lilly (Eli)</span>
+              </td>
+              <td class="up">+1.38</td>
+              <td class="up">+0.86%</td>
+              <td style="color:var(--text2)">2.17%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
 
         <div class="contrib-sub">
           <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/MU:NASDAQ" target="_blank" rel="noopener">MU</a>
+                <span class="contrib-sector">Micron Technology</span>
+              </td>
+              <td class="down">-11.67</td>
+              <td class="down">-6.99%</td>
+              <td style="color:var(--text2)">2.25%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AVGO:NASDAQ" target="_blank" rel="noopener">AVGO</a>
+                <span class="contrib-sector">Broadcom</span>
+              </td>
+              <td class="down">-7.65</td>
+              <td class="down">-2.69%</td>
+              <td style="color:var(--text2)">3.84%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/NVDA:NASDAQ" target="_blank" rel="noopener">NVDA</a>
+                <span class="contrib-sector">Nvidia</span>
+              </td>
+              <td class="down">-7.14</td>
+              <td class="down">-0.92%</td>
+              <td style="color:var(--text2)">10.48%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/INTC:NASDAQ" target="_blank" rel="noopener">INTC</a>
+                <span class="contrib-sector">Intel</span>
+              </td>
+              <td class="down">-6.41</td>
+              <td class="down">-7.89%</td>
+              <td style="color:var(--text2)">1.10%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/TSLA:NASDAQ" target="_blank" rel="noopener">TSLA</a>
+                <span class="contrib-sector">Tesla, Inc.</span>
+              </td>
+              <td class="down">-4.67</td>
+              <td class="down">-2.08%</td>
+              <td style="color:var(--text2)">3.03%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
       </div>
 
@@ -797,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (13件)</div>
+    <div class="card-title">📰 最新ニュース (15件)</div>
     
     
     
@@ -812,44 +930,50 @@
             
             <div class="news-item">
               <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/9eeac9c7c0e2403adf00042ac519c081f667e570?source=rss" target="_blank" rel="noopener">サイゼリヤ、6年ぶり「価格改定」検討で株価急伸、純利益12%増の好決算も追い風に(ハフポスト日本版)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>07/27 06:40</span>
+              </div>
+              
+              <div class="news-summary">外食チェーン大手のサイゼリヤは7月15日、2025年9月1日から2026年5月31日までの第3四半期累計の連結決算を発表した。売上高は2213億円（前年同期比18%増）、営業利益は133億円（同26%…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/592f642069fba90257d1ea430f8916543ab16661?source=rss" target="_blank" rel="noopener">「毎日スーツ」の時代が終わったとき、オーダー紳士服の専門店が選んだ戦略とは　量販店にできない「強み」で新市場へ(賢者の選択サクセッション)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>07/27 06:30</span>
+              </div>
+              
+              <div class="news-summary">1947年創業の紳士服店をルーツに持つ株式会社YRS（名古屋市）。かつて売上の大半をオーダースーツが占めていた同社は、現在では白衣・ユニフォーム事業を新たな柱へ育て上げた。事業承継を機に祖業を守りなが…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260727/k10015186781000.html" target="_blank" rel="noopener">米FRB会合 イラン情勢によるインフレ再加速懸念で判断注目</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>07/27 05:02</span>
+              </div>
+              
+              <div class="news-summary">アメリカのFRB＝連邦準備制度理事会は、28日からウォーシュ議長のもとで2回目となる金融政策を決める会合を開きます。金融市場ではFRBが政策金利を据え置くとの見方が出る一方、イラン情勢を背景にインフレ…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
                 <a href="https://jp.investing.com/news/stock-market-news/article-1616254" target="_blank" rel="noopener">AI時代に自社株買いに積極的な企業がS&P 500に劣後</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
                 <span>07/26 21:43</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1616226" target="_blank" rel="noopener">CXMTが98億ドルのIPOを経て上海市場に歴史的デビュー</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>07/26 13:06</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1616211" target="_blank" rel="noopener">バンク・オブ・アメリカ、サイバーセキュリティ株の目標株価を引き上げ</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>07/26 07:57</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1616209" target="_blank" rel="noopener">ゴールドマン・サックス、円安見通しを背景にTOPIX12カ月目標を4,500に引き上げ</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>07/26 05:01</span>
               </div>
               
             </div>
@@ -918,30 +1042,25 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/27c875f48333e937f2e859b562fd7c45b14572ca?source=rss" target="_blank" rel="noopener">【日本株】今期･来期で｢利益＆配当が伸びる高配当株｣の2銘柄！ ともに利回り5％前後で、当期利益予想が前期比10倍の｢グンゼ｣、前期比3倍の｢ダイセル｣に注目(ダイヤモンド・ザイ)</a>
+                <a href="http://www3.nhk.or.jp/news/html/20260727/k10015186771000.html" target="_blank" rel="noopener">日銀 今週決定会合 政策金利据え置きか 経済・物価見通し焦点</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>07/26 21:20</span>
+                <span class="news-source">NHK経済</span>
+                <span>07/27 06:24</span>
               </div>
               
-              <div class="news-summary">【高配当株】今期も来期も増益予想で、増配の可能性が高い高配当株は「グンゼ」と「ダイセル」の2銘柄！　
-
-●ROE8％達成まで総配当性向100％超を掲げる「グンゼ」と、
-累進配当の方針で安心感がある「</div>
+              <div class="news-summary">日銀は今週、金融政策決定会合を開きます。先月決定した利上げの影響を見極めるため政策金利を据え置く方向で検討するとみられ、歴史的な円安水準が続く中、今後の経済、物価の見通しや利上げのペースについてどうい…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260724/k10015185541000.html" target="_blank" rel="noopener">愛媛 いよぎんHDと愛媛銀行が経営統合に向けて基本合意</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1616262" target="_blank" rel="noopener">FOMC会合プレビュー：原油高にもかかわらずFRBは金利据え置きへ、シティはハト派的結果を予想</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>07/24 20:45</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>07/27 02:06</span>
               </div>
-              
-              <div class="news-summary">愛媛県の「伊予銀行」を傘下に持つ「いよぎんホールディングス」と、「愛媛銀行」は、24日に松山市で会見を開き、経営統合に向けた協議を進めることで基本合意したと発表しました。人口減少や、金利のある世界で預…</div>
               
             </div>
             
@@ -952,8 +1071,19 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (1件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (2件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1616261" target="_blank" rel="noopener">利益減少も売上増加、シーインが香港IPOを申請</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>07/26 23:32</span>
+              </div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -973,8 +1103,23 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (2件)</div>
+          <div class="news-group-title">📌 その他 (3件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/963be7a123e483e271283608ab8284cfd0fab6ec?source=rss" target="_blank" rel="noopener">ガソリン代が高いいま節約するならエコランよりまず「空気圧チェック」！　ヘタしたら年間数千円損してる!!(WEB CARTOP)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>07/27 06:31</span>
+              </div>
+              
+              <div class="news-summary">タイヤの空気圧を、普段どれほど意識しているだろう？　ほとんど気にしたことがない読者は多いかもしれない。
+
+　ホルムズ海峡の問題から原油価格が上昇し、ガソリン代に影響が及ぶようになった。ディーゼル車用</div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1012,19 +1157,19 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-26 23:25）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-07-27 06:43）の投資ブリーフィング情報です。
 
-【時間帯】夜（米国寄り付き直前・経済指標・欧州市場）
+【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
 
 【マーケットデータ】
-- S&P 500: nan (+nan%)
-- NASDAQ: nan (+nan%)
-- ダウ: nan (+nan%)
-- ドル円: 163.79 円 (+0.44%)
-- 米10年債利回り: 4.703 % (+0.00%)
+- S&P 500: 7,411.98 (+0.05%)
+- NASDAQ: 24,975.82 (-0.64%)
+- ダウ: 51,947.25 (+0.46%)
+- ドル円: 163.65 円 (-0.11%)
+- 米10年債利回り: 4.679 % (-0.51%)
 - WTI原油: 89.31 USD (+0.00%)
 - 金: 4070.80 USD (+0.00%)
-- 日経225: 66,422.60 pt (+0.00%)
+- 日経225: 64,611.15 pt (-2.73%)
 - TOPIX (1306連動ETF): 417.5 円 (-1.09%)
 
 【個別株の寄与度ランキング】
@@ -1041,13 +1186,26 @@
   -15.71円  キーエンス(6861)  -0.61%  [電機]
   -14.93円  ソフトバンクG(9984)  -7.06%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
+  ++26.45pt  Apple Inc.(AAPL)  +3.53%  wt:10.11%  [Information Technology]
+  ++4.28pt  Alphabet Inc. (Class A)(GOOGL)  +0.65%  wt:8.96%  [Communication Services]
+  ++1.56pt  Alphabet Inc. (Class C)(GOOG)  +0.24%  wt:8.94%  [Communication Services]
+  ++1.49pt  Johnson & Johnson(JNJ)  +1.59%  wt:1.27%  [Health Care]
+  ++1.38pt  Lilly (Eli)(LLY)  +0.86%  wt:2.17%  [Health Care]
 ▼ S&P500 (下落寄与TOP5)
+  -11.67pt  Micron Technology(MU)  -6.99%  wt:2.25%  [Information Technology]
+  -7.65pt  Broadcom(AVGO)  -2.69%  wt:3.84%  [Information Technology]
+  -7.14pt  Nvidia(NVDA)  -0.92%  wt:10.48%  [Information Technology]
+  -6.41pt  Intel(INTC)  -7.89%  wt:1.10%  [Information Technology]
+  -4.67pt  Tesla, Inc.(TSLA)  -2.08%  wt:3.03%  [Consumer Discretionary]
 
 【関連ニュース見出し】
+- [Yahoo!ファイナンス] サイゼリヤ、6年ぶり「価格改定」検討で株価急伸、純利益12%増の好決算も追い風に(ハフポスト日本版) (07/27 06:40)
+  概要: 外食チェーン大手のサイゼリヤは7月15日、2025年9月1日から2026年5月31日までの第3四半期累計の連結決算を発表した。売上高は2213億円（前年同期比18%増）、営業利益は133億円（同26%
+- [Yahoo!ファイナンス] 「毎日スーツ」の時代が終わったとき、オーダー紳士服の専門店が選んだ戦略とは　量販店にできない「強み」で新市場へ(賢者の選択サクセッション) (07/27 06:30)
+  概要: 1947年創業の紳士服店をルーツに持つ株式会社YRS（名古屋市）。かつて売上の大半をオーダースーツが占めていた同社は、現在では白衣・ユニフォーム事業を新たな柱へ育て上げた。事業承継を機に祖業を守りなが
+- [NHK経済] 米FRB会合 イラン情勢によるインフレ再加速懸念で判断注目 (07/27 05:02)
+  概要: アメリカのFRB＝連邦準備制度理事会は、28日からウォーシュ議長のもとで2回目となる金融政策を決める会合を開きます。金融市場ではFRBが政策金利を据え置くとの見方が出る一方、イラン情勢を背景にインフレ
 - [Investing.com日本] AI時代に自社株買いに積極的な企業がS&P 500に劣後 (07/26 21:43)
-- [Investing.com日本] CXMTが98億ドルのIPOを経て上海市場に歴史的デビュー (07/26 13:06)
-- [Investing.com日本] バンク・オブ・アメリカ、サイバーセキュリティ株の目標株価を引き上げ (07/26 07:57)
-- [Investing.com日本] ゴールドマン・サックス、円安見通しを背景にTOPIX12カ月目標を4,500に引き上げ (07/26 05:01)
 - [ZUU online] 情報に強いCFOになれ！ 日経新聞の紙面が銀行交渉の武器になる (07/25 11:00)
   概要: 本記事は、長友 大典氏の著書『社外CFOになって、たちまち年収1200万円を稼ぐ方法』（すばる舎）の中から一部を抜粋・編集しています。 日経新聞はウェブ版ではなく紙面で読むことで銀行の人事情報がひと目
 - [NHK経済] 独フォルクスワーゲン 上半期決算は減益 中国販売減少などで (07/24 20:46)
@@ -1056,14 +1214,15 @@
   概要: 日経平均 64,611.15円 ▼1,811.45円 為替 １ドル＝163.79円 売買高（東証プライム、以下同） 22億3,948万株 売買代金 8兆4378億34百万円 値上り銘柄数 632銘柄 
 - [ZUU online] 「5年経ってもPMIは終わらない」ひとまいるが酒販から物流プラットフォームへM&amp;Aで挑む変革 (07/24 13:00)
   概要: 「株式会社カクヤス」を中核に、飲食店向け・家庭向けの酒類販売で基盤を築いてきたカクヤスグループが、2025年7月に「株式会社ひとまいる」へ社名を変更した。 お酒を売る会社から、独自の配送網を活かす「物
-- [Yahoo!ファイナンス] 【日本株】今期･来期で｢利益＆配当が伸びる高配当株｣の2銘柄！ ともに利回り5％前後で、当期利益予想が前期比10倍の｢グンゼ｣、前期比3倍の｢ダイセル｣に注目(ダイヤモンド・ザイ) (07/26 21:20)
-  概要: 【高配当株】今期も来期も増益予想で、増配の可能性が高い高配当株は「グンゼ」と「ダイセル」の2銘柄！　
-
-●ROE8％達成まで総配当性向100％超を掲げる「グンゼ」と、
-累進配当の方針で安心感がある「
-- [NHK経済] 愛媛 いよぎんHDと愛媛銀行が経営統合に向けて基本合意 (07/24 20:45)
-  概要: 愛媛県の「伊予銀行」を傘下に持つ「いよぎんホールディングス」と、「愛媛銀行」は、24日に松山市で会見を開き、経営統合に向けた協議を進めることで基本合意したと発表しました。人口減少や、金利のある世界で預
+- [NHK経済] 日銀 今週決定会合 政策金利据え置きか 経済・物価見通し焦点 (07/27 06:24)
+  概要: 日銀は今週、金融政策決定会合を開きます。先月決定した利上げの影響を見極めるため政策金利を据え置く方向で検討するとみられ、歴史的な円安水準が続く中、今後の経済、物価の見通しや利上げのペースについてどうい
+- [Investing.com日本] FOMC会合プレビュー：原油高にもかかわらずFRBは金利据え置きへ、シティはハト派的結果を予想 (07/27 02:06)
+- [Investing.com日本] 利益減少も売上増加、シーインが香港IPOを申請 (07/26 23:32)
 - [Investing.com日本] Q2決算前にAI関連で注目の5大アナリスト動向 (07/26 18:00)
+- [Yahoo!ファイナンス] ガソリン代が高いいま節約するならエコランよりまず「空気圧チェック」！　ヘタしたら年間数千円損してる!!(WEB CARTOP) (07/27 06:31)
+  概要: タイヤの空気圧を、普段どれほど意識しているだろう？　ほとんど気にしたことがない読者は多いかもしれない。
+
+　ホルムズ海峡の問題から原油価格が上昇し、ガソリン代に影響が及ぶようになった。ディーゼル車用
 - [NHK経済] 韓国大統領府 “米韓企業が155兆円規模のAI半導体協力” (07/25 21:33)
   概要: 韓国のイ・ジェミョン（李在明）大統領は訪問先のアメリカで、エヌビディアやオープンAIなどAI関連の大手企業のCEOを前に演説し、投資を呼びかけました。このあと韓国大統領府は、半導体の生産や供給などの分
 - [NHK経済] 経団連 夏のフォーラム 「投資けん引型経済」実現へ総括文書 (07/24 23:14)
@@ -1082,14 +1241,14 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
-- S&P 500: nan (+nan%)
-- NASDAQ: nan (+nan%)
-- ダウ: nan (+nan%)
-- ドル円: 163.79 円 (+0.44%)
-- 米10年債利回り: 4.703 % (+0.00%)
+- S&P 500: 7,411.98 (+0.05%)
+- NASDAQ: 24,975.82 (-0.64%)
+- ダウ: 51,947.25 (+0.46%)
+- ドル円: 163.65 円 (-0.11%)
+- 米10年債利回り: 4.679 % (-0.51%)
 - WTI原油: 89.31 USD (+0.00%)
 - 金: 4070.80 USD (+0.00%)
-- 日経225: 66,422.60 pt (+0.00%)
+- 日経225: 64,611.15 pt (-2.73%)
 - TOPIX (1306連動ETF): 417.5 円 (-1.09%)
 
 【個別株の寄与度ランキング】
@@ -1106,13 +1265,26 @@
   -15.71円  キーエンス(6861)  -0.61%  [電機]
   -14.93円  ソフトバンクG(9984)  -7.06%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
+  ++26.45pt  Apple Inc.(AAPL)  +3.53%  wt:10.11%  [Information Technology]
+  ++4.28pt  Alphabet Inc. (Class A)(GOOGL)  +0.65%  wt:8.96%  [Communication Services]
+  ++1.56pt  Alphabet Inc. (Class C)(GOOG)  +0.24%  wt:8.94%  [Communication Services]
+  ++1.49pt  Johnson & Johnson(JNJ)  +1.59%  wt:1.27%  [Health Care]
+  ++1.38pt  Lilly (Eli)(LLY)  +0.86%  wt:2.17%  [Health Care]
 ▼ S&P500 (下落寄与TOP5)
+  -11.67pt  Micron Technology(MU)  -6.99%  wt:2.25%  [Information Technology]
+  -7.65pt  Broadcom(AVGO)  -2.69%  wt:3.84%  [Information Technology]
+  -7.14pt  Nvidia(NVDA)  -0.92%  wt:10.48%  [Information Technology]
+  -6.41pt  Intel(INTC)  -7.89%  wt:1.10%  [Information Technology]
+  -4.67pt  Tesla, Inc.(TSLA)  -2.08%  wt:3.03%  [Consumer Discretionary]
 
 【関連ニュース見出し】
+- [Yahoo!ファイナンス] サイゼリヤ、6年ぶり「価格改定」検討で株価急伸、純利益12%増の好決算も追い風に(ハフポスト日本版) (07/27 06:40)
+  概要: 外食チェーン大手のサイゼリヤは7月15日、2025年9月1日から2026年5月31日までの第3四半期累計の連結決算を発表した。売上高は2213億円（前年同期比18%増）、営業利益は133億円（同26%
+- [Yahoo!ファイナンス] 「毎日スーツ」の時代が終わったとき、オーダー紳士服の専門店が選んだ戦略とは　量販店にできない「強み」で新市場へ(賢者の選択サクセッション) (07/27 06:30)
+  概要: 1947年創業の紳士服店をルーツに持つ株式会社YRS（名古屋市）。かつて売上の大半をオーダースーツが占めていた同社は、現在では白衣・ユニフォーム事業を新たな柱へ育て上げた。事業承継を機に祖業を守りなが
+- [NHK経済] 米FRB会合 イラン情勢によるインフレ再加速懸念で判断注目 (07/27 05:02)
+  概要: アメリカのFRB＝連邦準備制度理事会は、28日からウォーシュ議長のもとで2回目となる金融政策を決める会合を開きます。金融市場ではFRBが政策金利を据え置くとの見方が出る一方、イラン情勢を背景にインフレ
 - [Investing.com日本] AI時代に自社株買いに積極的な企業がS&P 500に劣後 (07/26 21:43)
-- [Investing.com日本] CXMTが98億ドルのIPOを経て上海市場に歴史的デビュー (07/26 13:06)
-- [Investing.com日本] バンク・オブ・アメリカ、サイバーセキュリティ株の目標株価を引き上げ (07/26 07:57)
-- [Investing.com日本] ゴールドマン・サックス、円安見通しを背景にTOPIX12カ月目標を4,500に引き上げ (07/26 05:01)
 - [ZUU online] 情報に強いCFOになれ！ 日経新聞の紙面が銀行交渉の武器になる (07/25 11:00)
   概要: 本記事は、長友 大典氏の著書『社外CFOになって、たちまち年収1200万円を稼ぐ方法』（すばる舎）の中から一部を抜粋・編集しています。 日経新聞はウェブ版ではなく紙面で読むことで銀行の人事情報がひと目
 - [NHK経済] 独フォルクスワーゲン 上半期決算は減益 中国販売減少などで (07/24 20:46)
@@ -1121,14 +1293,15 @@
   概要: 日経平均 64,611.15円 ▼1,811.45円 為替 １ドル＝163.79円 売買高（東証プライム、以下同） 22億3,948万株 売買代金 8兆4378億34百万円 値上り銘柄数 632銘柄 
 - [ZUU online] 「5年経ってもPMIは終わらない」ひとまいるが酒販から物流プラットフォームへM&amp;Aで挑む変革 (07/24 13:00)
   概要: 「株式会社カクヤス」を中核に、飲食店向け・家庭向けの酒類販売で基盤を築いてきたカクヤスグループが、2025年7月に「株式会社ひとまいる」へ社名を変更した。 お酒を売る会社から、独自の配送網を活かす「物
-- [Yahoo!ファイナンス] 【日本株】今期･来期で｢利益＆配当が伸びる高配当株｣の2銘柄！ ともに利回り5％前後で、当期利益予想が前期比10倍の｢グンゼ｣、前期比3倍の｢ダイセル｣に注目(ダイヤモンド・ザイ) (07/26 21:20)
-  概要: 【高配当株】今期も来期も増益予想で、増配の可能性が高い高配当株は「グンゼ」と「ダイセル」の2銘柄！　
-
-●ROE8％達成まで総配当性向100％超を掲げる「グンゼ」と、
-累進配当の方針で安心感がある「
-- [NHK経済] 愛媛 いよぎんHDと愛媛銀行が経営統合に向けて基本合意 (07/24 20:45)
-  概要: 愛媛県の「伊予銀行」を傘下に持つ「いよぎんホールディングス」と、「愛媛銀行」は、24日に松山市で会見を開き、経営統合に向けた協議を進めることで基本合意したと発表しました。人口減少や、金利のある世界で預
+- [NHK経済] 日銀 今週決定会合 政策金利据え置きか 経済・物価見通し焦点 (07/27 06:24)
+  概要: 日銀は今週、金融政策決定会合を開きます。先月決定した利上げの影響を見極めるため政策金利を据え置く方向で検討するとみられ、歴史的な円安水準が続く中、今後の経済、物価の見通しや利上げのペースについてどうい
+- [Investing.com日本] FOMC会合プレビュー：原油高にもかかわらずFRBは金利据え置きへ、シティはハト派的結果を予想 (07/27 02:06)
+- [Investing.com日本] 利益減少も売上増加、シーインが香港IPOを申請 (07/26 23:32)
 - [Investing.com日本] Q2決算前にAI関連で注目の5大アナリスト動向 (07/26 18:00)
+- [Yahoo!ファイナンス] ガソリン代が高いいま節約するならエコランよりまず「空気圧チェック」！　ヘタしたら年間数千円損してる!!(WEB CARTOP) (07/27 06:31)
+  概要: タイヤの空気圧を、普段どれほど意識しているだろう？　ほとんど気にしたことがない読者は多いかもしれない。
+
+　ホルムズ海峡の問題から原油価格が上昇し、ガソリン代に影響が及ぶようになった。ディーゼル車用
 - [NHK経済] 韓国大統領府 “米韓企業が155兆円規模のAI半導体協力” (07/25 21:33)
   概要: 韓国のイ・ジェミョン（李在明）大統領は訪問先のアメリカで、エヌビディアやオープンAIなどAI関連の大手企業のCEOを前に演説し、投資を呼びかけました。このあと韓国大統領府は、半導体の生産や供給などの分
 - [NHK経済] 経団連 夏のフォーラム 「投資けん引型経済」実現へ総括文書 (07/24 23:14)
@@ -1141,14 +1314,14 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
-- S&P 500: nan (+nan%)
-- NASDAQ: nan (+nan%)
-- ダウ: nan (+nan%)
-- ドル円: 163.79 円 (+0.44%)
-- 米10年債利回り: 4.703 % (+0.00%)
+- S&P 500: 7,411.98 (+0.05%)
+- NASDAQ: 24,975.82 (-0.64%)
+- ダウ: 51,947.25 (+0.46%)
+- ドル円: 163.65 円 (-0.11%)
+- 米10年債利回り: 4.679 % (-0.51%)
 - WTI原油: 89.31 USD (+0.00%)
 - 金: 4070.80 USD (+0.00%)
-- 日経225: 66,422.60 pt (+0.00%)
+- 日経225: 64,611.15 pt (-2.73%)
 - TOPIX (1306連動ETF): 417.5 円 (-1.09%)
 
 【個別株の寄与度ランキング】
@@ -1165,13 +1338,26 @@
   -15.71円  キーエンス(6861)  -0.61%  [電機]
   -14.93円  ソフトバンクG(9984)  -7.06%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
+  ++26.45pt  Apple Inc.(AAPL)  +3.53%  wt:10.11%  [Information Technology]
+  ++4.28pt  Alphabet Inc. (Class A)(GOOGL)  +0.65%  wt:8.96%  [Communication Services]
+  ++1.56pt  Alphabet Inc. (Class C)(GOOG)  +0.24%  wt:8.94%  [Communication Services]
+  ++1.49pt  Johnson & Johnson(JNJ)  +1.59%  wt:1.27%  [Health Care]
+  ++1.38pt  Lilly (Eli)(LLY)  +0.86%  wt:2.17%  [Health Care]
 ▼ S&P500 (下落寄与TOP5)
+  -11.67pt  Micron Technology(MU)  -6.99%  wt:2.25%  [Information Technology]
+  -7.65pt  Broadcom(AVGO)  -2.69%  wt:3.84%  [Information Technology]
+  -7.14pt  Nvidia(NVDA)  -0.92%  wt:10.48%  [Information Technology]
+  -6.41pt  Intel(INTC)  -7.89%  wt:1.10%  [Information Technology]
+  -4.67pt  Tesla, Inc.(TSLA)  -2.08%  wt:3.03%  [Consumer Discretionary]
 
 【関連ニュース見出し】
+- [Yahoo!ファイナンス] サイゼリヤ、6年ぶり「価格改定」検討で株価急伸、純利益12%増の好決算も追い風に(ハフポスト日本版) (07/27 06:40)
+  概要: 外食チェーン大手のサイゼリヤは7月15日、2025年9月1日から2026年5月31日までの第3四半期累計の連結決算を発表した。売上高は2213億円（前年同期比18%増）、営業利益は133億円（同26%
+- [Yahoo!ファイナンス] 「毎日スーツ」の時代が終わったとき、オーダー紳士服の専門店が選んだ戦略とは　量販店にできない「強み」で新市場へ(賢者の選択サクセッション) (07/27 06:30)
+  概要: 1947年創業の紳士服店をルーツに持つ株式会社YRS（名古屋市）。かつて売上の大半をオーダースーツが占めていた同社は、現在では白衣・ユニフォーム事業を新たな柱へ育て上げた。事業承継を機に祖業を守りなが
+- [NHK経済] 米FRB会合 イラン情勢によるインフレ再加速懸念で判断注目 (07/27 05:02)
+  概要: アメリカのFRB＝連邦準備制度理事会は、28日からウォーシュ議長のもとで2回目となる金融政策を決める会合を開きます。金融市場ではFRBが政策金利を据え置くとの見方が出る一方、イラン情勢を背景にインフレ
 - [Investing.com日本] AI時代に自社株買いに積極的な企業がS&P 500に劣後 (07/26 21:43)
-- [Investing.com日本] CXMTが98億ドルのIPOを経て上海市場に歴史的デビュー (07/26 13:06)
-- [Investing.com日本] バンク・オブ・アメリカ、サイバーセキュリティ株の目標株価を引き上げ (07/26 07:57)
-- [Investing.com日本] ゴールドマン・サックス、円安見通しを背景にTOPIX12カ月目標を4,500に引き上げ (07/26 05:01)
 - [ZUU online] 情報に強いCFOになれ！ 日経新聞の紙面が銀行交渉の武器になる (07/25 11:00)
   概要: 本記事は、長友 大典氏の著書『社外CFOになって、たちまち年収1200万円を稼ぐ方法』（すばる舎）の中から一部を抜粋・編集しています。 日経新聞はウェブ版ではなく紙面で読むことで銀行の人事情報がひと目
 - [NHK経済] 独フォルクスワーゲン 上半期決算は減益 中国販売減少などで (07/24 20:46)
@@ -1180,14 +1366,15 @@
   概要: 日経平均 64,611.15円 ▼1,811.45円 為替 １ドル＝163.79円 売買高（東証プライム、以下同） 22億3,948万株 売買代金 8兆4378億34百万円 値上り銘柄数 632銘柄 
 - [ZUU online] 「5年経ってもPMIは終わらない」ひとまいるが酒販から物流プラットフォームへM&amp;Aで挑む変革 (07/24 13:00)
   概要: 「株式会社カクヤス」を中核に、飲食店向け・家庭向けの酒類販売で基盤を築いてきたカクヤスグループが、2025年7月に「株式会社ひとまいる」へ社名を変更した。 お酒を売る会社から、独自の配送網を活かす「物
-- [Yahoo!ファイナンス] 【日本株】今期･来期で｢利益＆配当が伸びる高配当株｣の2銘柄！ ともに利回り5％前後で、当期利益予想が前期比10倍の｢グンゼ｣、前期比3倍の｢ダイセル｣に注目(ダイヤモンド・ザイ) (07/26 21:20)
-  概要: 【高配当株】今期も来期も増益予想で、増配の可能性が高い高配当株は「グンゼ」と「ダイセル」の2銘柄！　
-
-●ROE8％達成まで総配当性向100％超を掲げる「グンゼ」と、
-累進配当の方針で安心感がある「
-- [NHK経済] 愛媛 いよぎんHDと愛媛銀行が経営統合に向けて基本合意 (07/24 20:45)
-  概要: 愛媛県の「伊予銀行」を傘下に持つ「いよぎんホールディングス」と、「愛媛銀行」は、24日に松山市で会見を開き、経営統合に向けた協議を進めることで基本合意したと発表しました。人口減少や、金利のある世界で預
+- [NHK経済] 日銀 今週決定会合 政策金利据え置きか 経済・物価見通し焦点 (07/27 06:24)
+  概要: 日銀は今週、金融政策決定会合を開きます。先月決定した利上げの影響を見極めるため政策金利を据え置く方向で検討するとみられ、歴史的な円安水準が続く中、今後の経済、物価の見通しや利上げのペースについてどうい
+- [Investing.com日本] FOMC会合プレビュー：原油高にもかかわらずFRBは金利据え置きへ、シティはハト派的結果を予想 (07/27 02:06)
+- [Investing.com日本] 利益減少も売上増加、シーインが香港IPOを申請 (07/26 23:32)
 - [Investing.com日本] Q2決算前にAI関連で注目の5大アナリスト動向 (07/26 18:00)
+- [Yahoo!ファイナンス] ガソリン代が高いいま節約するならエコランよりまず「空気圧チェック」！　ヘタしたら年間数千円損してる!!(WEB CARTOP) (07/27 06:31)
+  概要: タイヤの空気圧を、普段どれほど意識しているだろう？　ほとんど気にしたことがない読者は多いかもしれない。
+
+　ホルムズ海峡の問題から原油価格が上昇し、ガソリン代に影響が及ぶようになった。ディーゼル車用
 - [NHK経済] 韓国大統領府 “米韓企業が155兆円規模のAI半導体協力” (07/25 21:33)
   概要: 韓国のイ・ジェミョン（李在明）大統領は訪問先のアメリカで、エヌビディアやオープンAIなどAI関連の大手企業のCEOを前に演説し、投資を呼びかけました。このあと韓国大統領府は、半導体の生産や供給などの分
 - [NHK経済] 経団連 夏のフォーラム 「投資けん引型経済」実現へ総括文書 (07/24 23:14)
