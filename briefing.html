@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [昼]</title>
+  <title>投資情報ブリーフィング [夜]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">昼</span>
-    <span class="slot-desc">日本前場総括・セクター騰落・決算速報</span>
+    <span class="slot-badge">夜</span>
+    <span class="slot-desc">米国寄り付き直前・経済指標・欧州市場</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年08月08日 12:48 JST</span>
+    <span class="updated">更新: 2026年08月08日 22:39 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,41 +544,6 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
-      
-      <div class="market-tile primary">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">65,606.71 <span class="tile-unit">pt</span></div>
-          <div class="tile-change down">
-            -76.55&nbsp;&nbsp;-0.12%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">425.1 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +1.40&nbsp;&nbsp;+0.33%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
-        
-      </div>
-      
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">157.74 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.14&nbsp;&nbsp;+0.09%
-          </div>
-        
-        
-      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -602,7 +567,7 @@
         
       </div>
       
-      <div class="market-tile ">
+      <div class="market-tile primary">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">54,036.93 <span class="tile-unit"></span></div>
@@ -613,7 +578,18 @@
         
       </div>
       
-      <div class="market-tile ">
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">157.74 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.14&nbsp;&nbsp;+0.09%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.660 <span class="tile-unit">%</span></div>
@@ -627,9 +603,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">77.08 <span class="tile-unit">USD</span></div>
-          <div class="tile-change down">
-            -0.21&nbsp;&nbsp;-0.27%
+          <div class="tile-price">78.18 <span class="tile-unit">USD</span></div>
+          <div class="tile-change up">
+            +0.89&nbsp;&nbsp;+1.15%
           </div>
         
         
@@ -638,11 +614,35 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4401.30 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4340.70 <span class="tile-unit">USD</span></div>
           <div class="tile-change up">
-            +159.30&nbsp;&nbsp;+3.76%
+            +98.70&nbsp;&nbsp;+2.33%
           </div>
         
+        
+      </div>
+      
+      <div class="market-tile ">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">65,606.71 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -76.55&nbsp;&nbsp;-0.12%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile ">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">425.1 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +1.40&nbsp;&nbsp;+0.33%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -925,34 +925,19 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📈 マーケット全般 (10件)</div>
+          <div class="news-group-title">📈 マーケット全般 (7件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/41ce54d5bf028672f14e760d5187fd1a15e10a34?source=rss" target="_blank" rel="noopener">TOPIX新規採用候補は？元機関投資家が浮動株基準から探る(LIMO)</a>
+                <a href="https://news.yahoo.co.jp/articles/01243a5352b438a6df43650dd0cc107af90e6f6b?source=rss" target="_blank" rel="noopener">ロート製薬、2027年3月期1Q発表と通期予想の上方修正を受け株価急伸(LIMO)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/08 12:25</span>
+                <span>08/08 21:31</span>
               </div>
               
-              <div class="news-summary">日本マクドナルドホールディングスやワークマン、セリアなど、私たちの生活に密着した有名企業。誰もが知る大企業でありながら、実は現在、日本の代表的な株価指数である「TOPIX」に採用されていない銘柄が多数…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/1647ebfbf70aa30a7ba6480885f7345d83b8bb0b?source=rss" target="_blank" rel="noopener">「日経平均4〜5万円台」に逆戻りの可能性も･･･テンバガー投資家が警戒する“高市ショック”と円安の限界点(みんかぶマガジン)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/08 12:10</span>
-              </div>
-              
-              <div class="news-summary">日経平均株価が6万円から7万円台で乱高下を繰り返し、市場には期待と不安が入り交じっている。2026年の年末相場に向けて、私たちはこの荒波をどう乗りこなすべきなのか。
-
-　「これまでの常識」が通用しに</div>
+              <div class="news-summary">決算の翌日に株価が大きく動く。よくある光景だが、中身をのぞくと、増益と減益が同じ決算に同居していることは意外と少なくない。ロート製薬  が2026年8月6日に開示した2027年3月期1Qは</div>
               
             </div>
             
@@ -976,39 +961,6 @@
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
                 <span>08/08 08:15</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1639707" target="_blank" rel="noopener">アシュランド、買収関心報道受け売却検討で株価急騰</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>08/08 05:22</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-432SI-1639698" target="_blank" rel="noopener">ブレイブハート・バイオ、規模拡大のナスダックIPOで4億3990万ドルを調達</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>08/08 05:17</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-432SI-1639692" target="_blank" rel="noopener">リバー・シティ・バンク、ナスダックで1億2150万ドルの流通株式公開を完了</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>08/08 05:12</span>
               </div>
               
             </div>
@@ -1052,6 +1004,19 @@
               
             </div>
             
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/302785" target="_blank" rel="noopener">日々是相場［夕刊］――  2026年8月7日（金）</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>08/07 19:30</span>
+              </div>
+              
+              <div class="news-summary">日経平均 65,606.71円 ▼76.55円 為替 １ドル＝158.31円 売買高（東証プライム、以下同） 32億0,055万株 売買代金 10兆8960億59百万円 値上り銘柄数 940銘柄 値下…</div>
+              
+            </div>
+            
           </div>
         </div>
         
@@ -1059,8 +1024,19 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (1件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (2件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1639862" target="_blank" rel="noopener">国内外の注目経済指標：米インフレ指標を注視</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>08/08 15:00</span>
+              </div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1082,8 +1058,30 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (6件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (7件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1639902" target="_blank" rel="noopener">バークシャー・ハサウェイの純利益が2倍に、自社株買い45億ドル実施</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>08/08 21:08</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1639855" target="_blank" rel="noopener">デラウェア州裁判所、Veriskの23.5億ドルAccuLynx買収撤退を阻止</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>08/08 14:19</span>
+              </div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1137,19 +1135,6 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260807/k10015199561000.html" target="_blank" rel="noopener">ビール大手3社 中間決算 各社売り上げ増 国内のビール販売好調</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>08/07 20:54</span>
-              </div>
-              
-              <div class="news-summary">大手ビールメーカー3社のことし上半期の決算は、国内のビール販売が好調だったことなどから、いずれも売り上げが伸び、このうち2社では、この時期として過去最高となりました。</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
                 <a href="https://zuuonline.com/archives/302773" target="_blank" rel="noopener">ポーラ・オルビスHD、中間期決算は営業利益21％増　「オルビス」躍進も「スリー」は営業赤字から脱せず</a>
               </div>
               <div class="news-meta">
@@ -1168,8 +1153,19 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (1件)</div>
+          <div class="news-group-title">📌 その他 (2件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1639850" target="_blank" rel="noopener">シチュエーショナル・アウェアネス、半導体スタートアップのSource Foundryに5億ドルを投資</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>08/08 13:53</span>
+              </div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1194,20 +1190,20 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-08-08 12:48）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-08-08 22:39）の投資ブリーフィング情報です。
 
-【時間帯】昼（日本前場総括・セクター騰落・決算速報）
+【時間帯】夜（米国寄り付き直前・経済指標・欧州市場）
 
 【マーケットデータ】
-- 日経225: 65,606.71 pt (-0.12%)
-- TOPIX (1306連動ETF): 425.1 円 (+0.33%)
-- ドル円: 157.74 円 (+0.09%)
 - S&P 500: 7,757.64 (+0.62%)
 - NASDAQ: 26,690.62 (+1.30%)
 - ダウ: 54,036.93 (+0.28%)
+- ドル円: 157.74 円 (+0.09%)
 - 米10年債利回り: 4.660 % (-0.21%)
-- WTI原油: 77.08 USD (-0.27%)
-- 金: 4401.30 USD (+3.76%)
+- WTI原油: 78.18 USD (+1.15%)
+- 金: 4340.70 USD (+2.33%)
+- 日経225: 65,606.71 pt (-0.12%)
+- TOPIX (1306連動ETF): 425.1 円 (+0.33%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1236,26 +1232,24 @@
   -1.61pt  Advanced Micro Devices(AMD)  -1.21%  wt:1.73%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] TOPIX新規採用候補は？元機関投資家が浮動株基準から探る(LIMO) (08/08 12:25)
-  概要: 日本マクドナルドホールディングスやワークマン、セリアなど、私たちの生活に密着した有名企業。誰もが知る大企業でありながら、実は現在、日本の代表的な株価指数である「TOPIX」に採用されていない銘柄が多数
-- [Yahoo!ファイナンス] 「日経平均4〜5万円台」に逆戻りの可能性も･･･テンバガー投資家が警戒する“高市ショック”と円安の限界点(みんかぶマガジン) (08/08 12:10)
-  概要: 日経平均株価が6万円から7万円台で乱高下を繰り返し、市場には期待と不安が入り交じっている。2026年の年末相場に向けて、私たちはこの荒波をどう乗りこなすべきなのか。
-
-　「これまでの常識」が通用しに
+- [Yahoo!ファイナンス] ロート製薬、2027年3月期1Q発表と通期予想の上方修正を受け株価急伸(LIMO) (08/08 21:31)
+  概要: 決算の翌日に株価が大きく動く。よくある光景だが、中身をのぞくと、増益と減益が同じ決算に同居していることは意外と少なくない。ロート製薬  が2026年8月6日に開示した2027年3月期1Qは
 - [ZUU online] 「ザ・ノース・フェイス」展開のゴールドウイン株が9.15％急落　営業利益82％減と中間予想引き下げで失望売り (08/08 12:02)
   概要: 「ザ・ノース・フェイス（THE NORTH FACE）」などを展開するゴールドウインの株価が8月7日、急落した。終値は前日比209円安（9.15％安）の2,075円。前日に発表した2027年3月期第1
 - [Investing.com日本] 米国株式市場は反発、早期利上げ警戒感が後退 (08/08 08:15)
-- [Investing.com日本] アシュランド、買収関心報道受け売却検討で株価急騰 (08/08 05:22)
-- [Investing.com日本] ブレイブハート・バイオ、規模拡大のナスダックIPOで4億3990万ドルを調達 (08/08 05:17)
-- [Investing.com日本] リバー・シティ・バンク、ナスダックで1億2150万ドルの流通株式公開を完了 (08/08 05:12)
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
 - [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
   概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
+- [ZUU online] 日々是相場［夕刊］――  2026年8月7日（金） (08/07 19:30)
+  概要: 日経平均 65,606.71円 ▼76.55円 為替 １ドル＝158.31円 売買高（東証プライム、以下同） 32億0,055万株 売買代金 10兆8960億59百万円 値上り銘柄数 940銘柄 値下
+- [Investing.com日本] 国内外の注目経済指標：米インフレ指標を注視 (08/08 15:00)
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
+- [Investing.com日本] バークシャー・ハサウェイの純利益が2倍に、自社株買い45億ドル実施 (08/08 21:08)
+- [Investing.com日本] デラウェア州裁判所、Veriskの23.5億ドルAccuLynx買収撤退を阻止 (08/08 14:19)
 - [ZUU online] バルミューダの中間決算は「セイリング・ランタン」が海外でヒットも3億1400万円の営業赤字 (08/08 12:02)
   概要: 高級家電ブランド「バルミューダ（BALMUDA）」を展開するバルミューダは8月7日、2026年12月期中間決算を発表した。売上高は43億6500万円（前年同期比15.8％減）と二桁の減収となり、営業損
 - [ZUU online] ユナイテッドアローズ、第1四半期は営業利益27％増　「コーエン」売却が収益改善に寄与 (08/08 12:02)
@@ -1263,10 +1257,9 @@
 - [Investing.com日本] Formlabs、5億ドル調達を目指しIPOを検討中――関係者 (08/08 05:59)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [NHK経済] ビール大手3社 中間決算 各社売り上げ増 国内のビール販売好調 (08/07 20:54)
-  概要: 大手ビールメーカー3社のことし上半期の決算は、国内のビール販売が好調だったことなどから、いずれも売り上げが伸び、このうち2社では、この時期として過去最高となりました。
 - [ZUU online] ポーラ・オルビスHD、中間期決算は営業利益21％増　「オルビス」躍進も「スリー」は営業赤字から脱せず (08/07 13:02)
   概要: ポーラ・オルビスホールディングスは8月6日、2026年12月期の中間期決算を発表した。売上高は843億4900万円（前年同期比1.3％増）、営業利益は99億5400万円（同21.1％増）、親会社株主に
+- [Investing.com日本] シチュエーショナル・アウェアネス、半導体スタートアップのSource Foundryに5億ドルを投資 (08/08 13:53)
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
@@ -1283,15 +1276,15 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
-- 日経225: 65,606.71 pt (-0.12%)
-- TOPIX (1306連動ETF): 425.1 円 (+0.33%)
-- ドル円: 157.74 円 (+0.09%)
 - S&P 500: 7,757.64 (+0.62%)
 - NASDAQ: 26,690.62 (+1.30%)
 - ダウ: 54,036.93 (+0.28%)
+- ドル円: 157.74 円 (+0.09%)
 - 米10年債利回り: 4.660 % (-0.21%)
-- WTI原油: 77.08 USD (-0.27%)
-- 金: 4401.30 USD (+3.76%)
+- WTI原油: 78.18 USD (+1.15%)
+- 金: 4340.70 USD (+2.33%)
+- 日経225: 65,606.71 pt (-0.12%)
+- TOPIX (1306連動ETF): 425.1 円 (+0.33%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1320,26 +1313,24 @@
   -1.61pt  Advanced Micro Devices(AMD)  -1.21%  wt:1.73%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] TOPIX新規採用候補は？元機関投資家が浮動株基準から探る(LIMO) (08/08 12:25)
-  概要: 日本マクドナルドホールディングスやワークマン、セリアなど、私たちの生活に密着した有名企業。誰もが知る大企業でありながら、実は現在、日本の代表的な株価指数である「TOPIX」に採用されていない銘柄が多数
-- [Yahoo!ファイナンス] 「日経平均4〜5万円台」に逆戻りの可能性も･･･テンバガー投資家が警戒する“高市ショック”と円安の限界点(みんかぶマガジン) (08/08 12:10)
-  概要: 日経平均株価が6万円から7万円台で乱高下を繰り返し、市場には期待と不安が入り交じっている。2026年の年末相場に向けて、私たちはこの荒波をどう乗りこなすべきなのか。
-
-　「これまでの常識」が通用しに
+- [Yahoo!ファイナンス] ロート製薬、2027年3月期1Q発表と通期予想の上方修正を受け株価急伸(LIMO) (08/08 21:31)
+  概要: 決算の翌日に株価が大きく動く。よくある光景だが、中身をのぞくと、増益と減益が同じ決算に同居していることは意外と少なくない。ロート製薬  が2026年8月6日に開示した2027年3月期1Qは
 - [ZUU online] 「ザ・ノース・フェイス」展開のゴールドウイン株が9.15％急落　営業利益82％減と中間予想引き下げで失望売り (08/08 12:02)
   概要: 「ザ・ノース・フェイス（THE NORTH FACE）」などを展開するゴールドウインの株価が8月7日、急落した。終値は前日比209円安（9.15％安）の2,075円。前日に発表した2027年3月期第1
 - [Investing.com日本] 米国株式市場は反発、早期利上げ警戒感が後退 (08/08 08:15)
-- [Investing.com日本] アシュランド、買収関心報道受け売却検討で株価急騰 (08/08 05:22)
-- [Investing.com日本] ブレイブハート・バイオ、規模拡大のナスダックIPOで4億3990万ドルを調達 (08/08 05:17)
-- [Investing.com日本] リバー・シティ・バンク、ナスダックで1億2150万ドルの流通株式公開を完了 (08/08 05:12)
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
 - [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
   概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
+- [ZUU online] 日々是相場［夕刊］――  2026年8月7日（金） (08/07 19:30)
+  概要: 日経平均 65,606.71円 ▼76.55円 為替 １ドル＝158.31円 売買高（東証プライム、以下同） 32億0,055万株 売買代金 10兆8960億59百万円 値上り銘柄数 940銘柄 値下
+- [Investing.com日本] 国内外の注目経済指標：米インフレ指標を注視 (08/08 15:00)
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
+- [Investing.com日本] バークシャー・ハサウェイの純利益が2倍に、自社株買い45億ドル実施 (08/08 21:08)
+- [Investing.com日本] デラウェア州裁判所、Veriskの23.5億ドルAccuLynx買収撤退を阻止 (08/08 14:19)
 - [ZUU online] バルミューダの中間決算は「セイリング・ランタン」が海外でヒットも3億1400万円の営業赤字 (08/08 12:02)
   概要: 高級家電ブランド「バルミューダ（BALMUDA）」を展開するバルミューダは8月7日、2026年12月期中間決算を発表した。売上高は43億6500万円（前年同期比15.8％減）と二桁の減収となり、営業損
 - [ZUU online] ユナイテッドアローズ、第1四半期は営業利益27％増　「コーエン」売却が収益改善に寄与 (08/08 12:02)
@@ -1347,10 +1338,9 @@
 - [Investing.com日本] Formlabs、5億ドル調達を目指しIPOを検討中――関係者 (08/08 05:59)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [NHK経済] ビール大手3社 中間決算 各社売り上げ増 国内のビール販売好調 (08/07 20:54)
-  概要: 大手ビールメーカー3社のことし上半期の決算は、国内のビール販売が好調だったことなどから、いずれも売り上げが伸び、このうち2社では、この時期として過去最高となりました。
 - [ZUU online] ポーラ・オルビスHD、中間期決算は営業利益21％増　「オルビス」躍進も「スリー」は営業赤字から脱せず (08/07 13:02)
   概要: ポーラ・オルビスホールディングスは8月6日、2026年12月期の中間期決算を発表した。売上高は843億4900万円（前年同期比1.3％増）、営業利益は99億5400万円（同21.1％増）、親会社株主に
+- [Investing.com日本] シチュエーショナル・アウェアネス、半導体スタートアップのSource Foundryに5億ドルを投資 (08/08 13:53)
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
@@ -1361,15 +1351,15 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
-- 日経225: 65,606.71 pt (-0.12%)
-- TOPIX (1306連動ETF): 425.1 円 (+0.33%)
-- ドル円: 157.74 円 (+0.09%)
 - S&P 500: 7,757.64 (+0.62%)
 - NASDAQ: 26,690.62 (+1.30%)
 - ダウ: 54,036.93 (+0.28%)
+- ドル円: 157.74 円 (+0.09%)
 - 米10年債利回り: 4.660 % (-0.21%)
-- WTI原油: 77.08 USD (-0.27%)
-- 金: 4401.30 USD (+3.76%)
+- WTI原油: 78.18 USD (+1.15%)
+- 金: 4340.70 USD (+2.33%)
+- 日経225: 65,606.71 pt (-0.12%)
+- TOPIX (1306連動ETF): 425.1 円 (+0.33%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1398,26 +1388,24 @@
   -1.61pt  Advanced Micro Devices(AMD)  -1.21%  wt:1.73%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] TOPIX新規採用候補は？元機関投資家が浮動株基準から探る(LIMO) (08/08 12:25)
-  概要: 日本マクドナルドホールディングスやワークマン、セリアなど、私たちの生活に密着した有名企業。誰もが知る大企業でありながら、実は現在、日本の代表的な株価指数である「TOPIX」に採用されていない銘柄が多数
-- [Yahoo!ファイナンス] 「日経平均4〜5万円台」に逆戻りの可能性も･･･テンバガー投資家が警戒する“高市ショック”と円安の限界点(みんかぶマガジン) (08/08 12:10)
-  概要: 日経平均株価が6万円から7万円台で乱高下を繰り返し、市場には期待と不安が入り交じっている。2026年の年末相場に向けて、私たちはこの荒波をどう乗りこなすべきなのか。
-
-　「これまでの常識」が通用しに
+- [Yahoo!ファイナンス] ロート製薬、2027年3月期1Q発表と通期予想の上方修正を受け株価急伸(LIMO) (08/08 21:31)
+  概要: 決算の翌日に株価が大きく動く。よくある光景だが、中身をのぞくと、増益と減益が同じ決算に同居していることは意外と少なくない。ロート製薬  が2026年8月6日に開示した2027年3月期1Qは
 - [ZUU online] 「ザ・ノース・フェイス」展開のゴールドウイン株が9.15％急落　営業利益82％減と中間予想引き下げで失望売り (08/08 12:02)
   概要: 「ザ・ノース・フェイス（THE NORTH FACE）」などを展開するゴールドウインの株価が8月7日、急落した。終値は前日比209円安（9.15％安）の2,075円。前日に発表した2027年3月期第1
 - [Investing.com日本] 米国株式市場は反発、早期利上げ警戒感が後退 (08/08 08:15)
-- [Investing.com日本] アシュランド、買収関心報道受け売却検討で株価急騰 (08/08 05:22)
-- [Investing.com日本] ブレイブハート・バイオ、規模拡大のナスダックIPOで4億3990万ドルを調達 (08/08 05:17)
-- [Investing.com日本] リバー・シティ・バンク、ナスダックで1億2150万ドルの流通株式公開を完了 (08/08 05:12)
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
 - [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
   概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
+- [ZUU online] 日々是相場［夕刊］――  2026年8月7日（金） (08/07 19:30)
+  概要: 日経平均 65,606.71円 ▼76.55円 為替 １ドル＝158.31円 売買高（東証プライム、以下同） 32億0,055万株 売買代金 10兆8960億59百万円 値上り銘柄数 940銘柄 値下
+- [Investing.com日本] 国内外の注目経済指標：米インフレ指標を注視 (08/08 15:00)
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
+- [Investing.com日本] バークシャー・ハサウェイの純利益が2倍に、自社株買い45億ドル実施 (08/08 21:08)
+- [Investing.com日本] デラウェア州裁判所、Veriskの23.5億ドルAccuLynx買収撤退を阻止 (08/08 14:19)
 - [ZUU online] バルミューダの中間決算は「セイリング・ランタン」が海外でヒットも3億1400万円の営業赤字 (08/08 12:02)
   概要: 高級家電ブランド「バルミューダ（BALMUDA）」を展開するバルミューダは8月7日、2026年12月期中間決算を発表した。売上高は43億6500万円（前年同期比15.8％減）と二桁の減収となり、営業損
 - [ZUU online] ユナイテッドアローズ、第1四半期は営業利益27％増　「コーエン」売却が収益改善に寄与 (08/08 12:02)
@@ -1425,10 +1413,9 @@
 - [Investing.com日本] Formlabs、5億ドル調達を目指しIPOを検討中――関係者 (08/08 05:59)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [NHK経済] ビール大手3社 中間決算 各社売り上げ増 国内のビール販売好調 (08/07 20:54)
-  概要: 大手ビールメーカー3社のことし上半期の決算は、国内のビール販売が好調だったことなどから、いずれも売り上げが伸び、このうち2社では、この時期として過去最高となりました。
 - [ZUU online] ポーラ・オルビスHD、中間期決算は営業利益21％増　「オルビス」躍進も「スリー」は営業赤字から脱せず (08/07 13:02)
   概要: ポーラ・オルビスホールディングスは8月6日、2026年12月期の中間期決算を発表した。売上高は843億4900万円（前年同期比1.3％増）、営業利益は99億5400万円（同21.1％増）、親会社株主に
+- [Investing.com日本] シチュエーショナル・アウェアネス、半導体スタートアップのSource Foundryに5億ドルを投資 (08/08 13:53)
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
