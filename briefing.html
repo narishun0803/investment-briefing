@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [昼]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">昼</span>
+    <span class="slot-desc">日本前場総括・セクター騰落・決算速報</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年08月11日 06:27 JST</span>
+    <span class="updated">更新: 2026年08月11日 12:57 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">66,970.22 <span class="tile-unit">pt</span></div>
+          <div class="tile-change up">
+            +1363.51&nbsp;&nbsp;+2.08%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">427.6 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +2.50&nbsp;&nbsp;+0.59%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">159.19 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +1.30&nbsp;&nbsp;+0.82%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">53,975.98 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">159.21 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.80&nbsp;&nbsp;+0.51%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.699 <span class="tile-unit">%</span></div>
@@ -603,7 +627,7 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">82.30 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">82.13 <span class="tile-unit">USD</span></div>
           <div class="tile-change flat">
             +0.00&nbsp;&nbsp;+0.00%
           </div>
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4448.60 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4475.20 <span class="tile-unit">USD</span></div>
           <div class="tile-change flat">
             +0.00&nbsp;&nbsp;+0.00%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">65,606.71 <span class="tile-unit">pt</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">427.6 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +2.50&nbsp;&nbsp;+0.59%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -869,8 +869,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/AAPL:NASDAQ" target="_blank" rel="noopener">AAPL</a>
                 <span class="contrib-sector">Apple Inc.</span>
               </td>
-              <td class="down">-11.43</td>
-              <td class="down">-1.62%</td>
+              <td class="down">-10.83</td>
+              <td class="down">-1.53%</td>
               <td style="color:var(--text2)">9.10%</td>
             </tr>
             
@@ -915,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (18件)</div>
+    <div class="card-title">📰 最新ニュース (14件)</div>
     
     
     
@@ -930,59 +930,81 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/dee03cee33bacfc00e2017a655b962ae40953997?source=rss" target="_blank" rel="noopener">NY株反落、60ドル安　米イラン協議に不透明感(共同通信)</a>
+                <a href="https://news.yahoo.co.jp/articles/3445fb9cb58d6686aff1f38a16140c4f3e6c3de9?source=rss" target="_blank" rel="noopener">なぜ「二刀流」ではなく「走塁姿」？大谷翔平×ニューバランスのロゴ秘話と経済効果(LIMO)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/11 06:15</span>
+                <span>08/11 12:45</span>
               </div>
               
-              <div class="news-summary">【ニューヨーク共同】週明け10日のニューヨーク株式市場のダウ工業株30種平均は反落し、前週末比60.95ドル安の5万3975.98ドルで取引を終えた。米国とイランの戦闘終結に向けた協議の先行きに不透</div>
+              <div class="news-summary">株式会社ニューバランスジャパンは、2026年8月7日、メジャーリーグ（MLB）のロサンゼルス・ドジャースに所属する大谷翔平選手とコラボレーションしたシグネチャーコレクション「The Shohei Oh…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/3501da53e06fd198b20261f2471a62ea7a2ca9e5?source=rss" target="_blank" rel="noopener">NY原油続伸、終値82ドル台　海峡通航再開が不透明となり不安(共同通信)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/11 06:11</span>
-              </div>
-              
-              <div class="news-summary">【ニューヨーク共同】週明け10日のニューヨーク・マーカンタイル取引所の原油先物相場は3営業日続伸し、指標の米国産標準油種（WTI）の9月渡しが前週末比3.95ドル高の1バレル＝82.13ドルで取引を</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1641838" target="_blank" rel="noopener">モルガン・スタンレー、Global-eを格下げも目標株価を44ドルに引き上げ</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1642155" target="_blank" rel="noopener">アジア株式市場はまちまち、韓国が上昇・中国は下落——RBA決定に注目</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>08/11 06:04</span>
+                <span>08/11 12:33</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1641796" target="_blank" rel="noopener">Hims & Hers Healthの株価が時間外取引で下落した理由</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1642152" target="_blank" rel="noopener">Alibabaの株価が本日上昇した理由とは</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>08/11 05:51</span>
+                <span>08/11 12:30</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1641761" target="_blank" rel="noopener">CleanCore Solutionsの株価、公募増資発表を受けて急落</a>
+                <a href="https://zuuonline.com/archives/302797" target="_blank" rel="noopener">セイコーグループの株価が一時1万円突破、9％超の急騰　「J-ウォッチ」を象徴する「グランドセイコー」好調で最高益更新へ</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>08/11 12:02</span>
+              </div>
+              
+              <div class="news-summary">セイコーグループの株価が8月10日、前営業日から900円高（+9.81％）と急騰し、一時1万円の大台を突破した。8月7日に2027年3月期の通期業績予想を上方修正したことが好感され、買いが集まっている…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1642146" target="_blank" rel="noopener">アムコー、中国事業（最大15億ドル規模）の株式売却を検討――ブルームバーグ報道</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>08/11 05:36</span>
+                <span>08/11 12:00</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1642122" target="_blank" rel="noopener">ハンファがオースタルの米国部門に最大12億ドルの買収提案、株価急騰</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>08/11 10:54</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1642099" target="_blank" rel="noopener">ホルムズ海峡の不透明感が続く中、米株先物は小動き——CPI発表を控え</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>08/11 10:07</span>
               </div>
               
             </div>
@@ -1023,32 +1045,6 @@
               </div>
               
               <div class="news-summary">主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年8月10日8時30分執筆・監修：株式会社外…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260807/k10015199701000.html" target="_blank" rel="noopener">米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>08/07 23:53</span>
-              </div>
-              
-              <div class="news-summary">円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260807/k10015199591000.html" target="_blank" rel="noopener">東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>08/07 22:19</span>
-              </div>
-              
-              <div class="news-summary">株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ…</div>
               
             </div>
             
@@ -1095,23 +1091,8 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (2件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (1件)</div>
           <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/9680ffc181053684971b7556603325cffe385de6?source=rss" target="_blank" rel="noopener">「この人だからね、俺を塀の中に突き落としたのは」長女を同伴してフジ幹部と面談…村上世彰が見せた“私怨”の意味《株主総会前の攻防》(文春オンライン)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/11 06:21</span>
-              </div>
-              
-              <div class="news-summary">〈「フジテレビが手に入るよ」堀江貴文に敵対的買収を仕掛けさせ、特捜部に狙われ逮捕…村上世彰が味わった屈辱《フジテレビとの「20年前の因縁」》〉  から続く
-
-　村上世彰は2006年6月に逮捕され有…</div>
-              
-            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1133,47 +1114,8 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (4件)</div>
+          <div class="news-group-title">📌 その他 (1件)</div>
           <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302628" target="_blank" rel="noopener">金（ゴールド）投資は「やめとけ」という声の真意は？ 買う前に知るべきメリット・デメリットと4つの買い方</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>08/10 10:00</span>
-              </div>
-              
-              <div class="news-summary">この記事の結論 金投資は「増やす」ためではなく、資産を「守る」ために持つのが基本です。金投資とは、それ自体に価値がある実物資産である金を、現物や投資信託などの形で保有する投資方法です。「やめとけ」と言…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/294685" target="_blank" rel="noopener">投資用マンションの節税の仕組みを解説！「節税防止」の法改正とは</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>08/10 10:00</span>
-              </div>
-              
-              <div class="news-summary">最終更新日：2026/08/03   丸山 優太郎 日本大学法学部新聞学科卒業のライター。おもに企業系サイトで執筆。金融・経済・不動産系記事を中心に、社会情勢や経済動向を分析したトレンド記事を発信して…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302696" target="_blank" rel="noopener">不動産投資の固定資産税はいつ払う？計算方法と軽減措置を解説</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>08/10 10:00</span>
-              </div>
-              
-              <div class="news-summary">固定資産税とは、毎年1月1日時点で土地や建物などの固定資産を所有している人に対し、その資産が所在する市町村（東京23区は都）が課税する地方税です。 物件を保有している限り毎年支払い続けるランニングコス…</div>
-              
-            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1198,20 +1140,20 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-08-11 06:27）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-08-11 12:57）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】昼（日本前場総括・セクター騰落・決算速報）
 
 【マーケットデータ】
+- 日経225: 66,970.22 pt (+2.08%)
+- TOPIX (1306連動ETF): 427.6 円 (+0.59%)
+- ドル円: 159.19 円 (+0.82%)
 - S&P 500: 7,753.11 (-0.06%)
 - NASDAQ: 26,605.36 (-0.32%)
 - ダウ: 53,975.98 (-0.11%)
-- ドル円: 159.21 円 (+0.51%)
 - 米10年債利回り: 4.699 % (+0.84%)
-- WTI原油: 82.30 USD (+0.00%)
-- 金: 4448.60 USD (+0.00%)
-- 日経225: 65,606.71 pt (+0.00%)
-- TOPIX (1306連動ETF): 427.6 円 (+0.59%)
+- WTI原油: 82.13 USD (+0.00%)
+- 金: 4475.20 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1234,45 +1176,33 @@
   ++4.85pt  Alphabet Inc. (Class C)(GOOG)  +0.67%  wt:9.32%  [Communication Services]
 ▼ S&P500 (下落寄与TOP5)
   -23.03pt  Nvidia(NVDA)  -2.86%  wt:10.37%  [Information Technology]
-  -11.43pt  Apple Inc.(AAPL)  -1.62%  wt:9.10%  [Information Technology]
+  -10.83pt  Apple Inc.(AAPL)  -1.53%  wt:9.10%  [Information Technology]
   -3.88pt  Broadcom(AVGO)  -1.25%  wt:3.99%  [Information Technology]
   -3.82pt  Advanced Micro Devices(AMD)  -2.86%  wt:1.73%  [Information Technology]
   -3.23pt  Intel(INTC)  -4.06%  wt:1.02%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] NY株反落、60ドル安　米イラン協議に不透明感(共同通信) (08/11 06:15)
-  概要: 【ニューヨーク共同】週明け10日のニューヨーク株式市場のダウ工業株30種平均は反落し、前週末比60.95ドル安の5万3975.98ドルで取引を終えた。米国とイランの戦闘終結に向けた協議の先行きに不透
-- [Yahoo!ファイナンス] NY原油続伸、終値82ドル台　海峡通航再開が不透明となり不安(共同通信) (08/11 06:11)
-  概要: 【ニューヨーク共同】週明け10日のニューヨーク・マーカンタイル取引所の原油先物相場は3営業日続伸し、指標の米国産標準油種（WTI）の9月渡しが前週末比3.95ドル高の1バレル＝82.13ドルで取引を
-- [Investing.com日本] モルガン・スタンレー、Global-eを格下げも目標株価を44ドルに引き上げ (08/11 06:04)
-- [Investing.com日本] Hims & Hers Healthの株価が時間外取引で下落した理由 (08/11 05:51)
-- [Investing.com日本] CleanCore Solutionsの株価、公募増資発表を受けて急落 (08/11 05:36)
+- [Yahoo!ファイナンス] なぜ「二刀流」ではなく「走塁姿」？大谷翔平×ニューバランスのロゴ秘話と経済効果(LIMO) (08/11 12:45)
+  概要: 株式会社ニューバランスジャパンは、2026年8月7日、メジャーリーグ（MLB）のロサンゼルス・ドジャースに所属する大谷翔平選手とコラボレーションしたシグネチャーコレクション「The Shohei Oh
+- [Investing.com日本] アジア株式市場はまちまち、韓国が上昇・中国は下落——RBA決定に注目 (08/11 12:33)
+- [Investing.com日本] Alibabaの株価が本日上昇した理由とは (08/11 12:30)
+- [ZUU online] セイコーグループの株価が一時1万円突破、9％超の急騰　「J-ウォッチ」を象徴する「グランドセイコー」好調で最高益更新へ (08/11 12:02)
+  概要: セイコーグループの株価が8月10日、前営業日から900円高（+9.81％）と急騰し、一時1万円の大台を突破した。8月7日に2027年3月期の通期業績予想を上方修正したことが好感され、買いが集まっている
+- [Investing.com日本] アムコー、中国事業（最大15億ドル規模）の株式売却を検討――ブルームバーグ報道 (08/11 12:00)
+- [Investing.com日本] ハンファがオースタルの米国部門に最大12億ドルの買収提案、株価急騰 (08/11 10:54)
+- [Investing.com日本] ホルムズ海峡の不透明感が続く中、米株先物は小動き——CPI発表を控え (08/11 10:07)
 - [ZUU online] 日々是相場［夕刊］――  2026年8月10日（月） (08/10 19:30)
   概要: 日経平均 66,970.22円 △1,363.51円 為替 １ドル＝158.42円 売買高（東証プライム、以下同） 28億2,751万株 売買代金 9兆1904億61百万円 値上り銘柄数 916銘柄 
 - [ZUU online] 25日移動平均線の攻防　フジクラ好決算で上方修正！ TOPIXは4日続伸でミニGCを示現！ ―― NSJヘッドライン (08/10 11:30)
   概要: この記事は2026年8月7日に日本証券新聞で公開された「NSJHL 356 2026_0807　【日経平均株価】25日移動平均線の攻防　フジクラ好決算で上方修正！　TOPIXは4日続伸でミニGCを示現
 - [ZUU online] FX/為替「ドル/円今日の見通し｜米雇用統計の弱い結果もドル売りは一時的 次の材料の見極めへ」 外為どっとコム トゥデイ 2026年8月10日号 (08/10 10:32)
   概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年8月10日8時30分執筆・監修：株式会社外
-- [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
-  概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
-- [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
-  概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [ZUU online] アンダースロー（ウィークリー）：日銀の金融政策が長期金利を1.3％程度押し上げ (08/10 11:00)
   概要: この記事は2026年8月10日に配信されたメールマガジン「アンダースロー（ウィークリー）：日銀の金融政策が長期金利を1.3％程度押し上げ」を一部編集し、転載したものです。 目次シンカー日銀の金融政策が
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Yahoo!ファイナンス] 「この人だからね、俺を塀の中に突き落としたのは」長女を同伴してフジ幹部と面談…村上世彰が見せた“私怨”の意味《株主総会前の攻防》(文春オンライン) (08/11 06:21)
-  概要: 〈「フジテレビが手に入るよ」堀江貴文に敵対的買収を仕掛けさせ、特捜部に狙われ逮捕…村上世彰が味わった屈辱《フジテレビとの「20年前の因縁」》〉  から続く
-
-　村上世彰は2006年6月に逮捕され有
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [ZUU online] 金（ゴールド）投資は「やめとけ」という声の真意は？ 買う前に知るべきメリット・デメリットと4つの買い方 (08/10 10:00)
-  概要: この記事の結論 金投資は「増やす」ためではなく、資産を「守る」ために持つのが基本です。金投資とは、それ自体に価値がある実物資産である金を、現物や投資信託などの形で保有する投資方法です。「やめとけ」と言
-- [ZUU online] 投資用マンションの節税の仕組みを解説！「節税防止」の法改正とは (08/10 10:00)
-  概要: 最終更新日：2026/08/03   丸山 優太郎 日本大学法学部新聞学科卒業のライター。おもに企業系サイトで執筆。金融・経済・不動産系記事を中心に、社会情勢や経済動向を分析したトレンド記事を発信して
-- [ZUU online] 不動産投資の固定資産税はいつ払う？計算方法と軽減措置を解説 (08/10 10:00)
-  概要: 固定資産税とは、毎年1月1日時点で土地や建物などの固定資産を所有している人に対し、その資産が所在する市町村（東京23区は都）が課税する地方税です。 物件を保有している限り毎年支払い続けるランニングコス
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
@@ -1289,15 +1219,15 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 66,970.22 pt (+2.08%)
+- TOPIX (1306連動ETF): 427.6 円 (+0.59%)
+- ドル円: 159.19 円 (+0.82%)
 - S&P 500: 7,753.11 (-0.06%)
 - NASDAQ: 26,605.36 (-0.32%)
 - ダウ: 53,975.98 (-0.11%)
-- ドル円: 159.21 円 (+0.51%)
 - 米10年債利回り: 4.699 % (+0.84%)
-- WTI原油: 82.30 USD (+0.00%)
-- 金: 4448.60 USD (+0.00%)
-- 日経225: 65,606.71 pt (+0.00%)
-- TOPIX (1306連動ETF): 427.6 円 (+0.59%)
+- WTI原油: 82.13 USD (+0.00%)
+- 金: 4475.20 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1320,45 +1250,33 @@
   ++4.85pt  Alphabet Inc. (Class C)(GOOG)  +0.67%  wt:9.32%  [Communication Services]
 ▼ S&P500 (下落寄与TOP5)
   -23.03pt  Nvidia(NVDA)  -2.86%  wt:10.37%  [Information Technology]
-  -11.43pt  Apple Inc.(AAPL)  -1.62%  wt:9.10%  [Information Technology]
+  -10.83pt  Apple Inc.(AAPL)  -1.53%  wt:9.10%  [Information Technology]
   -3.88pt  Broadcom(AVGO)  -1.25%  wt:3.99%  [Information Technology]
   -3.82pt  Advanced Micro Devices(AMD)  -2.86%  wt:1.73%  [Information Technology]
   -3.23pt  Intel(INTC)  -4.06%  wt:1.02%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] NY株反落、60ドル安　米イラン協議に不透明感(共同通信) (08/11 06:15)
-  概要: 【ニューヨーク共同】週明け10日のニューヨーク株式市場のダウ工業株30種平均は反落し、前週末比60.95ドル安の5万3975.98ドルで取引を終えた。米国とイランの戦闘終結に向けた協議の先行きに不透
-- [Yahoo!ファイナンス] NY原油続伸、終値82ドル台　海峡通航再開が不透明となり不安(共同通信) (08/11 06:11)
-  概要: 【ニューヨーク共同】週明け10日のニューヨーク・マーカンタイル取引所の原油先物相場は3営業日続伸し、指標の米国産標準油種（WTI）の9月渡しが前週末比3.95ドル高の1バレル＝82.13ドルで取引を
-- [Investing.com日本] モルガン・スタンレー、Global-eを格下げも目標株価を44ドルに引き上げ (08/11 06:04)
-- [Investing.com日本] Hims & Hers Healthの株価が時間外取引で下落した理由 (08/11 05:51)
-- [Investing.com日本] CleanCore Solutionsの株価、公募増資発表を受けて急落 (08/11 05:36)
+- [Yahoo!ファイナンス] なぜ「二刀流」ではなく「走塁姿」？大谷翔平×ニューバランスのロゴ秘話と経済効果(LIMO) (08/11 12:45)
+  概要: 株式会社ニューバランスジャパンは、2026年8月7日、メジャーリーグ（MLB）のロサンゼルス・ドジャースに所属する大谷翔平選手とコラボレーションしたシグネチャーコレクション「The Shohei Oh
+- [Investing.com日本] アジア株式市場はまちまち、韓国が上昇・中国は下落——RBA決定に注目 (08/11 12:33)
+- [Investing.com日本] Alibabaの株価が本日上昇した理由とは (08/11 12:30)
+- [ZUU online] セイコーグループの株価が一時1万円突破、9％超の急騰　「J-ウォッチ」を象徴する「グランドセイコー」好調で最高益更新へ (08/11 12:02)
+  概要: セイコーグループの株価が8月10日、前営業日から900円高（+9.81％）と急騰し、一時1万円の大台を突破した。8月7日に2027年3月期の通期業績予想を上方修正したことが好感され、買いが集まっている
+- [Investing.com日本] アムコー、中国事業（最大15億ドル規模）の株式売却を検討――ブルームバーグ報道 (08/11 12:00)
+- [Investing.com日本] ハンファがオースタルの米国部門に最大12億ドルの買収提案、株価急騰 (08/11 10:54)
+- [Investing.com日本] ホルムズ海峡の不透明感が続く中、米株先物は小動き——CPI発表を控え (08/11 10:07)
 - [ZUU online] 日々是相場［夕刊］――  2026年8月10日（月） (08/10 19:30)
   概要: 日経平均 66,970.22円 △1,363.51円 為替 １ドル＝158.42円 売買高（東証プライム、以下同） 28億2,751万株 売買代金 9兆1904億61百万円 値上り銘柄数 916銘柄 
 - [ZUU online] 25日移動平均線の攻防　フジクラ好決算で上方修正！ TOPIXは4日続伸でミニGCを示現！ ―― NSJヘッドライン (08/10 11:30)
   概要: この記事は2026年8月7日に日本証券新聞で公開された「NSJHL 356 2026_0807　【日経平均株価】25日移動平均線の攻防　フジクラ好決算で上方修正！　TOPIXは4日続伸でミニGCを示現
 - [ZUU online] FX/為替「ドル/円今日の見通し｜米雇用統計の弱い結果もドル売りは一時的 次の材料の見極めへ」 外為どっとコム トゥデイ 2026年8月10日号 (08/10 10:32)
   概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年8月10日8時30分執筆・監修：株式会社外
-- [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
-  概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
-- [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
-  概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [ZUU online] アンダースロー（ウィークリー）：日銀の金融政策が長期金利を1.3％程度押し上げ (08/10 11:00)
   概要: この記事は2026年8月10日に配信されたメールマガジン「アンダースロー（ウィークリー）：日銀の金融政策が長期金利を1.3％程度押し上げ」を一部編集し、転載したものです。 目次シンカー日銀の金融政策が
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Yahoo!ファイナンス] 「この人だからね、俺を塀の中に突き落としたのは」長女を同伴してフジ幹部と面談…村上世彰が見せた“私怨”の意味《株主総会前の攻防》(文春オンライン) (08/11 06:21)
-  概要: 〈「フジテレビが手に入るよ」堀江貴文に敵対的買収を仕掛けさせ、特捜部に狙われ逮捕…村上世彰が味わった屈辱《フジテレビとの「20年前の因縁」》〉  から続く
-
-　村上世彰は2006年6月に逮捕され有
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [ZUU online] 金（ゴールド）投資は「やめとけ」という声の真意は？ 買う前に知るべきメリット・デメリットと4つの買い方 (08/10 10:00)
-  概要: この記事の結論 金投資は「増やす」ためではなく、資産を「守る」ために持つのが基本です。金投資とは、それ自体に価値がある実物資産である金を、現物や投資信託などの形で保有する投資方法です。「やめとけ」と言
-- [ZUU online] 投資用マンションの節税の仕組みを解説！「節税防止」の法改正とは (08/10 10:00)
-  概要: 最終更新日：2026/08/03   丸山 優太郎 日本大学法学部新聞学科卒業のライター。おもに企業系サイトで執筆。金融・経済・不動産系記事を中心に、社会情勢や経済動向を分析したトレンド記事を発信して
-- [ZUU online] 不動産投資の固定資産税はいつ払う？計算方法と軽減措置を解説 (08/10 10:00)
-  概要: 固定資産税とは、毎年1月1日時点で土地や建物などの固定資産を所有している人に対し、その資産が所在する市町村（東京23区は都）が課税する地方税です。 物件を保有している限り毎年支払い続けるランニングコス
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
@@ -1369,15 +1287,15 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 66,970.22 pt (+2.08%)
+- TOPIX (1306連動ETF): 427.6 円 (+0.59%)
+- ドル円: 159.19 円 (+0.82%)
 - S&P 500: 7,753.11 (-0.06%)
 - NASDAQ: 26,605.36 (-0.32%)
 - ダウ: 53,975.98 (-0.11%)
-- ドル円: 159.21 円 (+0.51%)
 - 米10年債利回り: 4.699 % (+0.84%)
-- WTI原油: 82.30 USD (+0.00%)
-- 金: 4448.60 USD (+0.00%)
-- 日経225: 65,606.71 pt (+0.00%)
-- TOPIX (1306連動ETF): 427.6 円 (+0.59%)
+- WTI原油: 82.13 USD (+0.00%)
+- 金: 4475.20 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1400,45 +1318,33 @@
   ++4.85pt  Alphabet Inc. (Class C)(GOOG)  +0.67%  wt:9.32%  [Communication Services]
 ▼ S&P500 (下落寄与TOP5)
   -23.03pt  Nvidia(NVDA)  -2.86%  wt:10.37%  [Information Technology]
-  -11.43pt  Apple Inc.(AAPL)  -1.62%  wt:9.10%  [Information Technology]
+  -10.83pt  Apple Inc.(AAPL)  -1.53%  wt:9.10%  [Information Technology]
   -3.88pt  Broadcom(AVGO)  -1.25%  wt:3.99%  [Information Technology]
   -3.82pt  Advanced Micro Devices(AMD)  -2.86%  wt:1.73%  [Information Technology]
   -3.23pt  Intel(INTC)  -4.06%  wt:1.02%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] NY株反落、60ドル安　米イラン協議に不透明感(共同通信) (08/11 06:15)
-  概要: 【ニューヨーク共同】週明け10日のニューヨーク株式市場のダウ工業株30種平均は反落し、前週末比60.95ドル安の5万3975.98ドルで取引を終えた。米国とイランの戦闘終結に向けた協議の先行きに不透
-- [Yahoo!ファイナンス] NY原油続伸、終値82ドル台　海峡通航再開が不透明となり不安(共同通信) (08/11 06:11)
-  概要: 【ニューヨーク共同】週明け10日のニューヨーク・マーカンタイル取引所の原油先物相場は3営業日続伸し、指標の米国産標準油種（WTI）の9月渡しが前週末比3.95ドル高の1バレル＝82.13ドルで取引を
-- [Investing.com日本] モルガン・スタンレー、Global-eを格下げも目標株価を44ドルに引き上げ (08/11 06:04)
-- [Investing.com日本] Hims & Hers Healthの株価が時間外取引で下落した理由 (08/11 05:51)
-- [Investing.com日本] CleanCore Solutionsの株価、公募増資発表を受けて急落 (08/11 05:36)
+- [Yahoo!ファイナンス] なぜ「二刀流」ではなく「走塁姿」？大谷翔平×ニューバランスのロゴ秘話と経済効果(LIMO) (08/11 12:45)
+  概要: 株式会社ニューバランスジャパンは、2026年8月7日、メジャーリーグ（MLB）のロサンゼルス・ドジャースに所属する大谷翔平選手とコラボレーションしたシグネチャーコレクション「The Shohei Oh
+- [Investing.com日本] アジア株式市場はまちまち、韓国が上昇・中国は下落——RBA決定に注目 (08/11 12:33)
+- [Investing.com日本] Alibabaの株価が本日上昇した理由とは (08/11 12:30)
+- [ZUU online] セイコーグループの株価が一時1万円突破、9％超の急騰　「J-ウォッチ」を象徴する「グランドセイコー」好調で最高益更新へ (08/11 12:02)
+  概要: セイコーグループの株価が8月10日、前営業日から900円高（+9.81％）と急騰し、一時1万円の大台を突破した。8月7日に2027年3月期の通期業績予想を上方修正したことが好感され、買いが集まっている
+- [Investing.com日本] アムコー、中国事業（最大15億ドル規模）の株式売却を検討――ブルームバーグ報道 (08/11 12:00)
+- [Investing.com日本] ハンファがオースタルの米国部門に最大12億ドルの買収提案、株価急騰 (08/11 10:54)
+- [Investing.com日本] ホルムズ海峡の不透明感が続く中、米株先物は小動き——CPI発表を控え (08/11 10:07)
 - [ZUU online] 日々是相場［夕刊］――  2026年8月10日（月） (08/10 19:30)
   概要: 日経平均 66,970.22円 △1,363.51円 為替 １ドル＝158.42円 売買高（東証プライム、以下同） 28億2,751万株 売買代金 9兆1904億61百万円 値上り銘柄数 916銘柄 
 - [ZUU online] 25日移動平均線の攻防　フジクラ好決算で上方修正！ TOPIXは4日続伸でミニGCを示現！ ―― NSJヘッドライン (08/10 11:30)
   概要: この記事は2026年8月7日に日本証券新聞で公開された「NSJHL 356 2026_0807　【日経平均株価】25日移動平均線の攻防　フジクラ好決算で上方修正！　TOPIXは4日続伸でミニGCを示現
 - [ZUU online] FX/為替「ドル/円今日の見通し｜米雇用統計の弱い結果もドル売りは一時的 次の材料の見極めへ」 外為どっとコム トゥデイ 2026年8月10日号 (08/10 10:32)
   概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年8月10日8時30分執筆・監修：株式会社外
-- [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
-  概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
-- [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
-  概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [ZUU online] アンダースロー（ウィークリー）：日銀の金融政策が長期金利を1.3％程度押し上げ (08/10 11:00)
   概要: この記事は2026年8月10日に配信されたメールマガジン「アンダースロー（ウィークリー）：日銀の金融政策が長期金利を1.3％程度押し上げ」を一部編集し、転載したものです。 目次シンカー日銀の金融政策が
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Yahoo!ファイナンス] 「この人だからね、俺を塀の中に突き落としたのは」長女を同伴してフジ幹部と面談…村上世彰が見せた“私怨”の意味《株主総会前の攻防》(文春オンライン) (08/11 06:21)
-  概要: 〈「フジテレビが手に入るよ」堀江貴文に敵対的買収を仕掛けさせ、特捜部に狙われ逮捕…村上世彰が味わった屈辱《フジテレビとの「20年前の因縁」》〉  から続く
-
-　村上世彰は2006年6月に逮捕され有
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [ZUU online] 金（ゴールド）投資は「やめとけ」という声の真意は？ 買う前に知るべきメリット・デメリットと4つの買い方 (08/10 10:00)
-  概要: この記事の結論 金投資は「増やす」ためではなく、資産を「守る」ために持つのが基本です。金投資とは、それ自体に価値がある実物資産である金を、現物や投資信託などの形で保有する投資方法です。「やめとけ」と言
-- [ZUU online] 投資用マンションの節税の仕組みを解説！「節税防止」の法改正とは (08/10 10:00)
-  概要: 最終更新日：2026/08/03   丸山 優太郎 日本大学法学部新聞学科卒業のライター。おもに企業系サイトで執筆。金融・経済・不動産系記事を中心に、社会情勢や経済動向を分析したトレンド記事を発信して
-- [ZUU online] 不動産投資の固定資産税はいつ払う？計算方法と軽減措置を解説 (08/10 10:00)
-  概要: 固定資産税とは、毎年1月1日時点で土地や建物などの固定資産を所有している人に対し、その資産が所在する市町村（東京23区は都）が課税する地方税です。 物件を保有している限り毎年支払い続けるランニングコス
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
