@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [昼]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">昼</span>
+    <span class="slot-desc">日本前場総括・セクター騰落・決算速報</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年08月19日 06:08 JST</span>
+    <span class="updated">更新: 2026年08月19日 12:17 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">65,724.25 <span class="tile-unit">pt</span></div>
+          <div class="tile-change flat">
+            +0.00&nbsp;&nbsp;+0.00%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">419.4 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -11.60&nbsp;&nbsp;-2.69%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">159.38 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.04&nbsp;&nbsp;+0.03%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">53,343.40 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">159.60 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.38&nbsp;&nbsp;+0.24%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.706 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">84.39 <span class="tile-unit">USD</span></div>
-          <div class="tile-change down">
-            -0.11&nbsp;&nbsp;-0.13%
+          <div class="tile-price">84.85 <span class="tile-unit">USD</span></div>
+          <div class="tile-change up">
+            +0.35&nbsp;&nbsp;+0.41%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4390.10 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4405.60 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -27.70&nbsp;&nbsp;-0.63%
+            -12.20&nbsp;&nbsp;-0.28%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">69,220.25 <span class="tile-unit">pt</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">nan <span class="tile-unit">円</span></div>
-          <div class="tile-change flat">
-            +nan&nbsp;&nbsp;+nan%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -660,12 +660,102 @@
 
         <div class="contrib-sub">
           <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(円)</th><th>騰落</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/4523:TYO" target="_blank" rel="noopener">エーザイ</a>
+                <span class="contrib-sector">医薬品</span>
+              </td>
+              <td class="up">+0.75</td>
+              <td class="up">+0.44%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/4502:TYO" target="_blank" rel="noopener">武田薬品</a>
+                <span class="contrib-sector">医薬品</span>
+              </td>
+              <td class="up">+0.68</td>
+              <td class="up">+0.33%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/4568:TYO" target="_blank" rel="noopener">第一三共</a>
+                <span class="contrib-sector">医薬品</span>
+              </td>
+              <td class="up">+0.55</td>
+              <td class="up">+0.57%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
 
         <div class="contrib-sub">
           <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(円)</th><th>騰落</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="down">-126.79</td>
+              <td class="down">-4.22%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/8035:TYO" target="_blank" rel="noopener">東京エレクトロン</a>
+                <span class="contrib-sector">半導体製造装置</span>
+              </td>
+              <td class="down">-62.14</td>
+              <td class="down">-3.09%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/7741:TYO" target="_blank" rel="noopener">HOYA</a>
+                <span class="contrib-sector">精密機器</span>
+              </td>
+              <td class="down">-22.86</td>
+              <td class="down">-2.43%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9984:TYO" target="_blank" rel="noopener">ソフトバンクG</a>
+                <span class="contrib-sector">通信</span>
+              </td>
+              <td class="down">-16.79</td>
+              <td class="down">-8.06%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6367:TYO" target="_blank" rel="noopener">ダイキン</a>
+                <span class="contrib-sector">機械</span>
+              </td>
+              <td class="down">-14.11</td>
+              <td class="down">-1.87%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
       </div>
 
@@ -807,7 +897,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (18件)</div>
+    <div class="card-title">📰 最新ニュース (21件)</div>
     
     
     
@@ -822,62 +912,53 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/84d338d8bf40aea015b22f2de816c4972ae7ee4c?source=rss" target="_blank" rel="noopener">ハイパー、株主優待を再開し、配当＋優待利回り＝7％超になって33％超も株価急騰！ 12月末に300株保有で5000円分の「デジタルギフト」がもらえることに！(ダイヤモンド・ザイ)</a>
+                <a href="https://news.yahoo.co.jp/articles/99675e3ba0d9cfec3ebfc38c7a7748d0308c5f29?source=rss" target="_blank" rel="noopener">相場を大幅に超える約4.5億円！ ランボルギーニ「ミウラ」市販3台目の驚異的価値(Auto Messe Web)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/19 06:05</span>
+                <span>08/19 12:10</span>
               </div>
               
-              <div class="news-summary">株式会社ハイパーが株主優待を再開することを、2026年8月18日の13時15分に発表した。
+              <div class="news-summary">2026年8月13日〜15日、米カリフォルニア州で開催された「The Monterey Auction」にて、ランボルギーニ「ミウラ P400」の市販モデル3台目（1967年式）が303万ドル（約4.…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/add2d0abbbb6157737f22038ecb73c9cdef8e9a9?source=rss" target="_blank" rel="noopener">日経平均株価 一時2100円超下落(ABEMA TIMES)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>08/19 12:06</span>
+              </div>
+              
+              <div class="news-summary">日経平均株価は一時、2100円以上値下がりし、6万6000円を割り込みました。AI・半導体関連銘柄を中心に売られています。
 
-　ハイパーの株主優待は、毎年「12月末」時点の株主が対象で、内容は「300株以上を保有する株主に、デジタ</div>
+　きょうの日経平均は値下がりして取引が始まり、下げ幅は一時、2100円を</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/1963f7e92a16dcc581e82927276198cdea0183a1?source=rss" target="_blank" rel="noopener">NY株続落、116ドル安　米イラン協議停滞を懸念(共同通信)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/19 06:02</span>
-              </div>
-              
-              <div class="news-summary">【ニューヨーク共同】18日のニューヨーク株式市場のダウ工業株30種平均は3営業日続落し、前日比116.38ドル安の5万3343.40ドルで取引を終えた。米国とイランの協議が停滞して緊張が長引けば、原</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1653053" target="_blank" rel="noopener">WhiteFiberの株価が本日急落した理由とは</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1653361" target="_blank" rel="noopener">セレンディップ・ホールディングス---自己株式取得を決定、上限13.5万株を取得</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>08/19 05:21</span>
+                <span>08/19 12:00</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1653031" target="_blank" rel="noopener">エボリューション・ペトロリアムの株価、希薄化懸念で下落</a>
+                <a href="https://zuuonline.com/archives/302889" target="_blank" rel="noopener">FX/為替「ドル/円今日の見通し｜ドル/円　円安地合い継続も米財政悪化懸念が重石」 外為どっとコム トゥデイ 2026年8月19日号</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>08/19 05:13</span>
+                <span class="news-source">ZUU online</span>
+                <span>08/19 10:32</span>
               </div>
               
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1652995" target="_blank" rel="noopener">CCCインテリジェント・ソリューションズ、買収報道で株価が8%超上昇</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>08/19 04:58</span>
-              </div>
+              <div class="news-summary">主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年8月19日8時10分執筆・監修：株式会社外…</div>
               
             </div>
             
@@ -946,6 +1027,19 @@
               
             </div>
             
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260807/k10015199591000.html" target="_blank" rel="noopener">東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>08/07 22:19</span>
+              </div>
+              
+              <div class="news-summary">株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ…</div>
+              
+            </div>
+            
           </div>
         </div>
         
@@ -958,16 +1052,14 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/5c658d1c10f88aab444b24f06203d60deb4aea30?source=rss" target="_blank" rel="noopener">【8月20日特集スタート】バブル？ スーパーサイクル？ AI･半導体、需要沸騰の行く末は…キオクシアほか注目企業を深堀り(東洋経済オンライン)</a>
+                <a href="https://zuuonline.com/archives/302891" target="_blank" rel="noopener">アンダースロー：アンダースロー：積極財政によるデフレ構造不況脱却を織り込み正常化する超長期金利</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/19 06:00</span>
+                <span class="news-source">ZUU online</span>
+                <span>08/19 10:00</span>
               </div>
               
-              <div class="news-summary">これは、いずれはじけるバブルなのだろうか、それとも、需給バランスが周期的に崩れる半導体業界特有の景気循環を超越した、スーパーサイクルの到来だろうか――。
-
-　AIの進化と普及に伴い、学習・推論のため</div>
+              <div class="news-summary">この記事は2026年8月19日に配信されたメールマガジン「アンダースロー：アンダースロー：積極財政によるデフレ構造不況脱却を織り込み正常化する超長期金利」を一部編集し、転載したものです。 目次スティー…</div>
               
             </div>
             
@@ -1004,32 +1096,63 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (3件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (6件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://zuuonline.com/archives/302876" target="_blank" rel="noopener">ヤーマンの中間期は営業・最終利益とも黒字　海外事業を成長の柱に2028年12月期には「海外売上200億円」へ</a>
+                <a href="https://news.yahoo.co.jp/articles/a33cf809323f07985cb9a5d1f05b9fe0a265cde6?source=rss" target="_blank" rel="noopener">PKSHAの決算がヤバすぎる…売上84％増の裏で進む「AI×コンサル」大変革の正体(ビジネス＋IT)</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>08/18 12:02</span>
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>08/19 12:05</span>
               </div>
               
-              <div class="news-summary">美容機器メーカーのヤーマンは8月14日、2026年12月期の中間期決算を発表した。売上高は137億2500万円、営業利益は6800万円、親会社株主に帰属する中間純利益は1億3200万円だった。なお、2…</div>
+              <div class="news-summary">PKSHA Technologyの業績が急拡大している。8月13日発表の2026年9月期第3四半期決算では、累計売上収益が前年同期比84.1％増、事業利益も46.3％増となった。プロ人財のシェアリン</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://zuuonline.com/archives/302880" target="_blank" rel="noopener">「モッズ・ヘア」運営のエム・エイチ・グループ、最終赤字1億500万円　美容室買収で今期は売上高2倍を計画</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1653354" target="_blank" rel="noopener">トーカイ Research Memo（6）：2027年3月期業績予想は不透明な事業環境を踏まえ保守的に策定</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>08/18 12:02</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>08/19 12:00</span>
               </div>
               
-              <div class="news-summary">ヘアサロン「モッズ・ヘア（Mod's Hair）」を展開するエム・エイチ・グループは8月17日、2026年6月期の通期連結決算を発表した。売上高は18億5000万円（前年比0.3％増）、営業損失は52…</div>
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1653355" target="_blank" rel="noopener">トーカイ Research Memo（8）：「成長けん引」と位置付けるシルバー事業でM&AとDXを積極推進</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>08/19 12:00</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1653356" target="_blank" rel="noopener">トーカイ Research Memo（9）：2027年3月期より配当性向の目安を35%から40%に引き上げ</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>08/19 12:00</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1653348" target="_blank" rel="noopener">バイドゥ株が約1年ぶりの安値、AI成長戦略の限界を露呈した低調な決算を受け</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>08/19 11:34</span>
+              </div>
               
             </div>
             
@@ -1058,14 +1181,14 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/686ba1dcd9a3939da3d3927ab35abe84329e2d83?source=rss" target="_blank" rel="noopener">中島合金、機械加工設備を増強。半導体装置向け部品を増産(鉄鋼新聞)</a>
+                <a href="https://news.yahoo.co.jp/articles/bf23c5c0543ecbd71e1960397b44ff5f14b1db01?source=rss" target="_blank" rel="noopener">シティ、カストディ基盤「Custody+」ローンチ。年内にビットコイン保管開始へ(あたらしい経済)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/19 06:02</span>
+                <span>08/19 12:07</span>
               </div>
               
-              <div class="news-summary">非鉄金属鋳物メーカーの中島合金（本社・東京都荒川区、社長・中島一郎氏）は、鋳物を機械加工する設備を増強する。旺盛な半導体製造装置関連の需要に対応することが狙い。9～10月にかけて製造拠点の筑波工場（</div>
+              <div class="news-summary">米金融大手シティグループ（Citigroup）の投資家向けサービス部門シティ・インベスター・サービス（Citi Investor Services）が、機関投資家向けのカストディ（資産保管・管理）ソリ…</div>
               
             </div>
             
@@ -1092,24 +1215,32 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-08-19 06:08）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-08-19 12:17）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】昼（日本前場総括・セクター騰落・決算速報）
 
 【マーケットデータ】
+- 日経225: 65,724.25 pt (+0.00%)
+- TOPIX (1306連動ETF): 419.4 円 (-2.69%)
+- ドル円: 159.38 円 (+0.03%)
 - S&P 500: 7,691.76 (-0.69%)
 - NASDAQ: 26,289.71 (-1.33%)
 - ダウ: 53,343.40 (-0.22%)
-- ドル円: 159.60 円 (+0.24%)
 - 米10年債利回り: 4.706 % (-0.38%)
-- WTI原油: 84.39 USD (-0.13%)
-- 金: 4390.10 USD (-0.63%)
-- 日経225: 69,220.25 pt (+0.00%)
-- TOPIX (1306連動ETF): nan 円 (+nan%)
+- WTI原油: 84.85 USD (+0.41%)
+- 金: 4405.60 USD (-0.28%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
+  ++0.75円  エーザイ(4523)  +0.44%  [医薬品]
+  ++0.68円  武田薬品(4502)  +0.33%  [医薬品]
+  ++0.55円  第一三共(4568)  +0.57%  [医薬品]
 ▼ 日経225 (下落寄与TOP5)
+  -126.79円  キーエンス(6861)  -4.22%  [電機]
+  -62.14円  東京エレクトロン(8035)  -3.09%  [半導体製造装置]
+  -22.86円  HOYA(7741)  -2.43%  [精密機器]
+  -16.79円  ソフトバンクG(9984)  -8.06%  [通信]
+  -14.11円  ダイキン(6367)  -1.87%  [機械]
 ▼ S&P500 (上昇寄与TOP5)
   ++10.18pt  Apple Inc.(AAPL)  +1.45%  wt:9.05%  [Information Technology]
   ++6.22pt  Lilly (Eli)(LLY)  +3.60%  wt:2.23%  [Health Care]
@@ -1124,15 +1255,15 @@
   -5.54pt  Intel(INTC)  -6.58%  wt:1.09%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] ハイパー、株主優待を再開し、配当＋優待利回り＝7％超になって33％超も株価急騰！ 12月末に300株保有で5000円分の「デジタルギフト」がもらえることに！(ダイヤモンド・ザイ) (08/19 06:05)
-  概要: 株式会社ハイパーが株主優待を再開することを、2026年8月18日の13時15分に発表した。
+- [Yahoo!ファイナンス] 相場を大幅に超える約4.5億円！ ランボルギーニ「ミウラ」市販3台目の驚異的価値(Auto Messe Web) (08/19 12:10)
+  概要: 2026年8月13日〜15日、米カリフォルニア州で開催された「The Monterey Auction」にて、ランボルギーニ「ミウラ P400」の市販モデル3台目（1967年式）が303万ドル（約4.
+- [Yahoo!ファイナンス] 日経平均株価 一時2100円超下落(ABEMA TIMES) (08/19 12:06)
+  概要: 日経平均株価は一時、2100円以上値下がりし、6万6000円を割り込みました。AI・半導体関連銘柄を中心に売られています。
 
-　ハイパーの株主優待は、毎年「12月末」時点の株主が対象で、内容は「300株以上を保有する株主に、デジタ
-- [Yahoo!ファイナンス] NY株続落、116ドル安　米イラン協議停滞を懸念(共同通信) (08/19 06:02)
-  概要: 【ニューヨーク共同】18日のニューヨーク株式市場のダウ工業株30種平均は3営業日続落し、前日比116.38ドル安の5万3343.40ドルで取引を終えた。米国とイランの協議が停滞して緊張が長引けば、原
-- [Investing.com日本] WhiteFiberの株価が本日急落した理由とは (08/19 05:21)
-- [Investing.com日本] エボリューション・ペトロリアムの株価、希薄化懸念で下落 (08/19 05:13)
-- [Investing.com日本] CCCインテリジェント・ソリューションズ、買収報道で株価が8%超上昇 (08/19 04:58)
+　きょうの日経平均は値下がりして取引が始まり、下げ幅は一時、2100円を
+- [Investing.com日本] セレンディップ・ホールディングス---自己株式取得を決定、上限13.5万株を取得 (08/19 12:00)
+- [ZUU online] FX/為替「ドル/円今日の見通し｜ドル/円　円安地合い継続も米財政悪化懸念が重石」 外為どっとコム トゥデイ 2026年8月19日号 (08/19 10:32)
+  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年8月19日8時10分執筆・監修：株式会社外
 - [ZUU online] 日々是相場［夕刊］――  2026年8月18日（火） (08/18 20:00)
   概要: 日経平均 67,460.73円 ▼1,759.52円 為替 １ドル＝159.74円 売買高（東証プライム、以下同） 25億8,390万株 売買代金 10兆1564億34百万円 値上り銘柄数 722銘柄
 - [ZUU online] 流れとしてはクロス円、米ドル／円での押し目買いの展開を想定している (08/18 19:30)
@@ -1143,24 +1274,24 @@
   概要: この記事は2026年8月14日にSBI証券で公開された「AI・半導体だけではない!?株価上昇期待の好決算銘柄」を一部編集し、転載したものです。 目次AI・半導体だけではない!?株価上昇期待の好決算銘柄
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
-- [Yahoo!ファイナンス] 【8月20日特集スタート】バブル？ スーパーサイクル？ AI･半導体、需要沸騰の行く末は…キオクシアほか注目企業を深堀り(東洋経済オンライン) (08/19 06:00)
-  概要: これは、いずれはじけるバブルなのだろうか、それとも、需給バランスが周期的に崩れる半導体業界特有の景気循環を超越した、スーパーサイクルの到来だろうか――。
-
-　AIの進化と普及に伴い、学習・推論のため
+- [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
+  概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
+- [ZUU online] アンダースロー：アンダースロー：積極財政によるデフレ構造不況脱却を織り込み正常化する超長期金利 (08/19 10:00)
+  概要: この記事は2026年8月19日に配信されたメールマガジン「アンダースロー：アンダースロー：積極財政によるデフレ構造不況脱却を織り込み正常化する超長期金利」を一部編集し、転載したものです。 目次スティー
 - [ZUU online] 対照的な日米の金融政策により1ドル＝170円超えも視野に (08/18 15:00)
   概要: この記事は2026年8月7日に「きんざいOnline：週刊金融財政事情」で公開された「対照的な日米の金融政策により1ドル＝170円超えも視野に」を一部編集し、転載したものです。 円安進行を抑える切り札
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [ZUU online] ヤーマンの中間期は営業・最終利益とも黒字　海外事業を成長の柱に2028年12月期には「海外売上200億円」へ (08/18 12:02)
-  概要: 美容機器メーカーのヤーマンは8月14日、2026年12月期の中間期決算を発表した。売上高は137億2500万円、営業利益は6800万円、親会社株主に帰属する中間純利益は1億3200万円だった。なお、2
-- [ZUU online] 「モッズ・ヘア」運営のエム・エイチ・グループ、最終赤字1億500万円　美容室買収で今期は売上高2倍を計画 (08/18 12:02)
-  概要: ヘアサロン「モッズ・ヘア（Mod's Hair）」を展開するエム・エイチ・グループは8月17日、2026年6月期の通期連結決算を発表した。売上高は18億5000万円（前年比0.3％増）、営業損失は52
+- [Yahoo!ファイナンス] PKSHAの決算がヤバすぎる…売上84％増の裏で進む「AI×コンサル」大変革の正体(ビジネス＋IT) (08/19 12:05)
+  概要: PKSHA Technologyの業績が急拡大している。8月13日発表の2026年9月期第3四半期決算では、累計売上収益が前年同期比84.1％増、事業利益も46.3％増となった。プロ人財のシェアリン
+- [Investing.com日本] トーカイ Research Memo（6）：2027年3月期業績予想は不透明な事業環境を踏まえ保守的に策定 (08/19 12:00)
+- [Investing.com日本] トーカイ Research Memo（8）：「成長けん引」と位置付けるシルバー事業でM&AとDXを積極推進 (08/19 12:00)
+- [Investing.com日本] トーカイ Research Memo（9）：2027年3月期より配当性向の目安を35%から40%に引き上げ (08/19 12:00)
+- [Investing.com日本] バイドゥ株が約1年ぶりの安値、AI成長戦略の限界を露呈した低調な決算を受け (08/19 11:34)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [Yahoo!ファイナンス] 中島合金、機械加工設備を増強。半導体装置向け部品を増産(鉄鋼新聞) (08/19 06:02)
-  概要: 非鉄金属鋳物メーカーの中島合金（本社・東京都荒川区、社長・中島一郎氏）は、鋳物を機械加工する設備を増強する。旺盛な半導体製造装置関連の需要に対応することが狙い。9～10月にかけて製造拠点の筑波工場（
-- [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
-  概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
+- [Yahoo!ファイナンス] シティ、カストディ基盤「Custody+」ローンチ。年内にビットコイン保管開始へ(あたらしい経済) (08/19 12:07)
+  概要: 米金融大手シティグループ（Citigroup）の投資家向けサービス部門シティ・インベスター・サービス（Citi Investor Services）が、機関投資家向けのカストディ（資産保管・管理）ソリ
 
 【依頼内容】
 上記の指数の動きについて、ニュースの内容と紐付けて解説してください。
@@ -1175,19 +1306,27 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 65,724.25 pt (+0.00%)
+- TOPIX (1306連動ETF): 419.4 円 (-2.69%)
+- ドル円: 159.38 円 (+0.03%)
 - S&P 500: 7,691.76 (-0.69%)
 - NASDAQ: 26,289.71 (-1.33%)
 - ダウ: 53,343.40 (-0.22%)
-- ドル円: 159.60 円 (+0.24%)
 - 米10年債利回り: 4.706 % (-0.38%)
-- WTI原油: 84.39 USD (-0.13%)
-- 金: 4390.10 USD (-0.63%)
-- 日経225: 69,220.25 pt (+0.00%)
-- TOPIX (1306連動ETF): nan 円 (+nan%)
+- WTI原油: 84.85 USD (+0.41%)
+- 金: 4405.60 USD (-0.28%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
+  ++0.75円  エーザイ(4523)  +0.44%  [医薬品]
+  ++0.68円  武田薬品(4502)  +0.33%  [医薬品]
+  ++0.55円  第一三共(4568)  +0.57%  [医薬品]
 ▼ 日経225 (下落寄与TOP5)
+  -126.79円  キーエンス(6861)  -4.22%  [電機]
+  -62.14円  東京エレクトロン(8035)  -3.09%  [半導体製造装置]
+  -22.86円  HOYA(7741)  -2.43%  [精密機器]
+  -16.79円  ソフトバンクG(9984)  -8.06%  [通信]
+  -14.11円  ダイキン(6367)  -1.87%  [機械]
 ▼ S&P500 (上昇寄与TOP5)
   ++10.18pt  Apple Inc.(AAPL)  +1.45%  wt:9.05%  [Information Technology]
   ++6.22pt  Lilly (Eli)(LLY)  +3.60%  wt:2.23%  [Health Care]
@@ -1202,15 +1341,15 @@
   -5.54pt  Intel(INTC)  -6.58%  wt:1.09%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] ハイパー、株主優待を再開し、配当＋優待利回り＝7％超になって33％超も株価急騰！ 12月末に300株保有で5000円分の「デジタルギフト」がもらえることに！(ダイヤモンド・ザイ) (08/19 06:05)
-  概要: 株式会社ハイパーが株主優待を再開することを、2026年8月18日の13時15分に発表した。
+- [Yahoo!ファイナンス] 相場を大幅に超える約4.5億円！ ランボルギーニ「ミウラ」市販3台目の驚異的価値(Auto Messe Web) (08/19 12:10)
+  概要: 2026年8月13日〜15日、米カリフォルニア州で開催された「The Monterey Auction」にて、ランボルギーニ「ミウラ P400」の市販モデル3台目（1967年式）が303万ドル（約4.
+- [Yahoo!ファイナンス] 日経平均株価 一時2100円超下落(ABEMA TIMES) (08/19 12:06)
+  概要: 日経平均株価は一時、2100円以上値下がりし、6万6000円を割り込みました。AI・半導体関連銘柄を中心に売られています。
 
-　ハイパーの株主優待は、毎年「12月末」時点の株主が対象で、内容は「300株以上を保有する株主に、デジタ
-- [Yahoo!ファイナンス] NY株続落、116ドル安　米イラン協議停滞を懸念(共同通信) (08/19 06:02)
-  概要: 【ニューヨーク共同】18日のニューヨーク株式市場のダウ工業株30種平均は3営業日続落し、前日比116.38ドル安の5万3343.40ドルで取引を終えた。米国とイランの協議が停滞して緊張が長引けば、原
-- [Investing.com日本] WhiteFiberの株価が本日急落した理由とは (08/19 05:21)
-- [Investing.com日本] エボリューション・ペトロリアムの株価、希薄化懸念で下落 (08/19 05:13)
-- [Investing.com日本] CCCインテリジェント・ソリューションズ、買収報道で株価が8%超上昇 (08/19 04:58)
+　きょうの日経平均は値下がりして取引が始まり、下げ幅は一時、2100円を
+- [Investing.com日本] セレンディップ・ホールディングス---自己株式取得を決定、上限13.5万株を取得 (08/19 12:00)
+- [ZUU online] FX/為替「ドル/円今日の見通し｜ドル/円　円安地合い継続も米財政悪化懸念が重石」 外為どっとコム トゥデイ 2026年8月19日号 (08/19 10:32)
+  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年8月19日8時10分執筆・監修：株式会社外
 - [ZUU online] 日々是相場［夕刊］――  2026年8月18日（火） (08/18 20:00)
   概要: 日経平均 67,460.73円 ▼1,759.52円 為替 １ドル＝159.74円 売買高（東証プライム、以下同） 25億8,390万株 売買代金 10兆1564億34百万円 値上り銘柄数 722銘柄
 - [ZUU online] 流れとしてはクロス円、米ドル／円での押し目買いの展開を想定している (08/18 19:30)
@@ -1221,24 +1360,24 @@
   概要: この記事は2026年8月14日にSBI証券で公開された「AI・半導体だけではない!?株価上昇期待の好決算銘柄」を一部編集し、転載したものです。 目次AI・半導体だけではない!?株価上昇期待の好決算銘柄
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
-- [Yahoo!ファイナンス] 【8月20日特集スタート】バブル？ スーパーサイクル？ AI･半導体、需要沸騰の行く末は…キオクシアほか注目企業を深堀り(東洋経済オンライン) (08/19 06:00)
-  概要: これは、いずれはじけるバブルなのだろうか、それとも、需給バランスが周期的に崩れる半導体業界特有の景気循環を超越した、スーパーサイクルの到来だろうか――。
-
-　AIの進化と普及に伴い、学習・推論のため
+- [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
+  概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
+- [ZUU online] アンダースロー：アンダースロー：積極財政によるデフレ構造不況脱却を織り込み正常化する超長期金利 (08/19 10:00)
+  概要: この記事は2026年8月19日に配信されたメールマガジン「アンダースロー：アンダースロー：積極財政によるデフレ構造不況脱却を織り込み正常化する超長期金利」を一部編集し、転載したものです。 目次スティー
 - [ZUU online] 対照的な日米の金融政策により1ドル＝170円超えも視野に (08/18 15:00)
   概要: この記事は2026年8月7日に「きんざいOnline：週刊金融財政事情」で公開された「対照的な日米の金融政策により1ドル＝170円超えも視野に」を一部編集し、転載したものです。 円安進行を抑える切り札
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [ZUU online] ヤーマンの中間期は営業・最終利益とも黒字　海外事業を成長の柱に2028年12月期には「海外売上200億円」へ (08/18 12:02)
-  概要: 美容機器メーカーのヤーマンは8月14日、2026年12月期の中間期決算を発表した。売上高は137億2500万円、営業利益は6800万円、親会社株主に帰属する中間純利益は1億3200万円だった。なお、2
-- [ZUU online] 「モッズ・ヘア」運営のエム・エイチ・グループ、最終赤字1億500万円　美容室買収で今期は売上高2倍を計画 (08/18 12:02)
-  概要: ヘアサロン「モッズ・ヘア（Mod's Hair）」を展開するエム・エイチ・グループは8月17日、2026年6月期の通期連結決算を発表した。売上高は18億5000万円（前年比0.3％増）、営業損失は52
+- [Yahoo!ファイナンス] PKSHAの決算がヤバすぎる…売上84％増の裏で進む「AI×コンサル」大変革の正体(ビジネス＋IT) (08/19 12:05)
+  概要: PKSHA Technologyの業績が急拡大している。8月13日発表の2026年9月期第3四半期決算では、累計売上収益が前年同期比84.1％増、事業利益も46.3％増となった。プロ人財のシェアリン
+- [Investing.com日本] トーカイ Research Memo（6）：2027年3月期業績予想は不透明な事業環境を踏まえ保守的に策定 (08/19 12:00)
+- [Investing.com日本] トーカイ Research Memo（8）：「成長けん引」と位置付けるシルバー事業でM&AとDXを積極推進 (08/19 12:00)
+- [Investing.com日本] トーカイ Research Memo（9）：2027年3月期より配当性向の目安を35%から40%に引き上げ (08/19 12:00)
+- [Investing.com日本] バイドゥ株が約1年ぶりの安値、AI成長戦略の限界を露呈した低調な決算を受け (08/19 11:34)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [Yahoo!ファイナンス] 中島合金、機械加工設備を増強。半導体装置向け部品を増産(鉄鋼新聞) (08/19 06:02)
-  概要: 非鉄金属鋳物メーカーの中島合金（本社・東京都荒川区、社長・中島一郎氏）は、鋳物を機械加工する設備を増強する。旺盛な半導体製造装置関連の需要に対応することが狙い。9～10月にかけて製造拠点の筑波工場（
-- [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
-  概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
+- [Yahoo!ファイナンス] シティ、カストディ基盤「Custody+」ローンチ。年内にビットコイン保管開始へ(あたらしい経済) (08/19 12:07)
+  概要: 米金融大手シティグループ（Citigroup）の投資家向けサービス部門シティ・インベスター・サービス（Citi Investor Services）が、機関投資家向けのカストディ（資産保管・管理）ソリ
 
 【依頼内容】
 - 最も動きが大きかった指標トップ3を特定
@@ -1247,19 +1386,27 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 65,724.25 pt (+0.00%)
+- TOPIX (1306連動ETF): 419.4 円 (-2.69%)
+- ドル円: 159.38 円 (+0.03%)
 - S&P 500: 7,691.76 (-0.69%)
 - NASDAQ: 26,289.71 (-1.33%)
 - ダウ: 53,343.40 (-0.22%)
-- ドル円: 159.60 円 (+0.24%)
 - 米10年債利回り: 4.706 % (-0.38%)
-- WTI原油: 84.39 USD (-0.13%)
-- 金: 4390.10 USD (-0.63%)
-- 日経225: 69,220.25 pt (+0.00%)
-- TOPIX (1306連動ETF): nan 円 (+nan%)
+- WTI原油: 84.85 USD (+0.41%)
+- 金: 4405.60 USD (-0.28%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
+  ++0.75円  エーザイ(4523)  +0.44%  [医薬品]
+  ++0.68円  武田薬品(4502)  +0.33%  [医薬品]
+  ++0.55円  第一三共(4568)  +0.57%  [医薬品]
 ▼ 日経225 (下落寄与TOP5)
+  -126.79円  キーエンス(6861)  -4.22%  [電機]
+  -62.14円  東京エレクトロン(8035)  -3.09%  [半導体製造装置]
+  -22.86円  HOYA(7741)  -2.43%  [精密機器]
+  -16.79円  ソフトバンクG(9984)  -8.06%  [通信]
+  -14.11円  ダイキン(6367)  -1.87%  [機械]
 ▼ S&P500 (上昇寄与TOP5)
   ++10.18pt  Apple Inc.(AAPL)  +1.45%  wt:9.05%  [Information Technology]
   ++6.22pt  Lilly (Eli)(LLY)  +3.60%  wt:2.23%  [Health Care]
@@ -1274,15 +1421,15 @@
   -5.54pt  Intel(INTC)  -6.58%  wt:1.09%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] ハイパー、株主優待を再開し、配当＋優待利回り＝7％超になって33％超も株価急騰！ 12月末に300株保有で5000円分の「デジタルギフト」がもらえることに！(ダイヤモンド・ザイ) (08/19 06:05)
-  概要: 株式会社ハイパーが株主優待を再開することを、2026年8月18日の13時15分に発表した。
+- [Yahoo!ファイナンス] 相場を大幅に超える約4.5億円！ ランボルギーニ「ミウラ」市販3台目の驚異的価値(Auto Messe Web) (08/19 12:10)
+  概要: 2026年8月13日〜15日、米カリフォルニア州で開催された「The Monterey Auction」にて、ランボルギーニ「ミウラ P400」の市販モデル3台目（1967年式）が303万ドル（約4.
+- [Yahoo!ファイナンス] 日経平均株価 一時2100円超下落(ABEMA TIMES) (08/19 12:06)
+  概要: 日経平均株価は一時、2100円以上値下がりし、6万6000円を割り込みました。AI・半導体関連銘柄を中心に売られています。
 
-　ハイパーの株主優待は、毎年「12月末」時点の株主が対象で、内容は「300株以上を保有する株主に、デジタ
-- [Yahoo!ファイナンス] NY株続落、116ドル安　米イラン協議停滞を懸念(共同通信) (08/19 06:02)
-  概要: 【ニューヨーク共同】18日のニューヨーク株式市場のダウ工業株30種平均は3営業日続落し、前日比116.38ドル安の5万3343.40ドルで取引を終えた。米国とイランの協議が停滞して緊張が長引けば、原
-- [Investing.com日本] WhiteFiberの株価が本日急落した理由とは (08/19 05:21)
-- [Investing.com日本] エボリューション・ペトロリアムの株価、希薄化懸念で下落 (08/19 05:13)
-- [Investing.com日本] CCCインテリジェント・ソリューションズ、買収報道で株価が8%超上昇 (08/19 04:58)
+　きょうの日経平均は値下がりして取引が始まり、下げ幅は一時、2100円を
+- [Investing.com日本] セレンディップ・ホールディングス---自己株式取得を決定、上限13.5万株を取得 (08/19 12:00)
+- [ZUU online] FX/為替「ドル/円今日の見通し｜ドル/円　円安地合い継続も米財政悪化懸念が重石」 外為どっとコム トゥデイ 2026年8月19日号 (08/19 10:32)
+  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年8月19日8時10分執筆・監修：株式会社外
 - [ZUU online] 日々是相場［夕刊］――  2026年8月18日（火） (08/18 20:00)
   概要: 日経平均 67,460.73円 ▼1,759.52円 為替 １ドル＝159.74円 売買高（東証プライム、以下同） 25億8,390万株 売買代金 10兆1564億34百万円 値上り銘柄数 722銘柄
 - [ZUU online] 流れとしてはクロス円、米ドル／円での押し目買いの展開を想定している (08/18 19:30)
@@ -1293,24 +1440,24 @@
   概要: この記事は2026年8月14日にSBI証券で公開された「AI・半導体だけではない!?株価上昇期待の好決算銘柄」を一部編集し、転載したものです。 目次AI・半導体だけではない!?株価上昇期待の好決算銘柄
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
-- [Yahoo!ファイナンス] 【8月20日特集スタート】バブル？ スーパーサイクル？ AI･半導体、需要沸騰の行く末は…キオクシアほか注目企業を深堀り(東洋経済オンライン) (08/19 06:00)
-  概要: これは、いずれはじけるバブルなのだろうか、それとも、需給バランスが周期的に崩れる半導体業界特有の景気循環を超越した、スーパーサイクルの到来だろうか――。
-
-　AIの進化と普及に伴い、学習・推論のため
+- [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
+  概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
+- [ZUU online] アンダースロー：アンダースロー：積極財政によるデフレ構造不況脱却を織り込み正常化する超長期金利 (08/19 10:00)
+  概要: この記事は2026年8月19日に配信されたメールマガジン「アンダースロー：アンダースロー：積極財政によるデフレ構造不況脱却を織り込み正常化する超長期金利」を一部編集し、転載したものです。 目次スティー
 - [ZUU online] 対照的な日米の金融政策により1ドル＝170円超えも視野に (08/18 15:00)
   概要: この記事は2026年8月7日に「きんざいOnline：週刊金融財政事情」で公開された「対照的な日米の金融政策により1ドル＝170円超えも視野に」を一部編集し、転載したものです。 円安進行を抑える切り札
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [ZUU online] ヤーマンの中間期は営業・最終利益とも黒字　海外事業を成長の柱に2028年12月期には「海外売上200億円」へ (08/18 12:02)
-  概要: 美容機器メーカーのヤーマンは8月14日、2026年12月期の中間期決算を発表した。売上高は137億2500万円、営業利益は6800万円、親会社株主に帰属する中間純利益は1億3200万円だった。なお、2
-- [ZUU online] 「モッズ・ヘア」運営のエム・エイチ・グループ、最終赤字1億500万円　美容室買収で今期は売上高2倍を計画 (08/18 12:02)
-  概要: ヘアサロン「モッズ・ヘア（Mod's Hair）」を展開するエム・エイチ・グループは8月17日、2026年6月期の通期連結決算を発表した。売上高は18億5000万円（前年比0.3％増）、営業損失は52
+- [Yahoo!ファイナンス] PKSHAの決算がヤバすぎる…売上84％増の裏で進む「AI×コンサル」大変革の正体(ビジネス＋IT) (08/19 12:05)
+  概要: PKSHA Technologyの業績が急拡大している。8月13日発表の2026年9月期第3四半期決算では、累計売上収益が前年同期比84.1％増、事業利益も46.3％増となった。プロ人財のシェアリン
+- [Investing.com日本] トーカイ Research Memo（6）：2027年3月期業績予想は不透明な事業環境を踏まえ保守的に策定 (08/19 12:00)
+- [Investing.com日本] トーカイ Research Memo（8）：「成長けん引」と位置付けるシルバー事業でM&AとDXを積極推進 (08/19 12:00)
+- [Investing.com日本] トーカイ Research Memo（9）：2027年3月期より配当性向の目安を35%から40%に引き上げ (08/19 12:00)
+- [Investing.com日本] バイドゥ株が約1年ぶりの安値、AI成長戦略の限界を露呈した低調な決算を受け (08/19 11:34)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [Yahoo!ファイナンス] 中島合金、機械加工設備を増強。半導体装置向け部品を増産(鉄鋼新聞) (08/19 06:02)
-  概要: 非鉄金属鋳物メーカーの中島合金（本社・東京都荒川区、社長・中島一郎氏）は、鋳物を機械加工する設備を増強する。旺盛な半導体製造装置関連の需要に対応することが狙い。9～10月にかけて製造拠点の筑波工場（
-- [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
-  概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
+- [Yahoo!ファイナンス] シティ、カストディ基盤「Custody+」ローンチ。年内にビットコイン保管開始へ(あたらしい経済) (08/19 12:07)
+  概要: 米金融大手シティグループ（Citigroup）の投資家向けサービス部門シティ・インベスター・サービス（Citi Investor Services）が、機関投資家向けのカストディ（資産保管・管理）ソリ
 
 【依頼内容】
 - 短期的なリスク要因（今後1週間以内）
