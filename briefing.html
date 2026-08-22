@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [昼]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">昼</span>
+    <span class="slot-desc">日本前場総括・セクター騰落・決算速報</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年08月22日 06:09 JST</span>
+    <span class="updated">更新: 2026年08月22日 12:11 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">66,016.36 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -200.43&nbsp;&nbsp;-0.30%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">424.1 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +1.30&nbsp;&nbsp;+0.31%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">158.94 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.66&nbsp;&nbsp;+0.42%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,29 +602,18 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
-          <div class="tile-price">53,277.01 <span class="tile-unit"></span></div>
+          <div class="tile-price">53,277.00 <span class="tile-unit"></span></div>
           <div class="tile-change up">
-            +517.80&nbsp;&nbsp;+0.98%
+            +517.79&nbsp;&nbsp;+0.98%
           </div>
         
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">158.86 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.59&nbsp;&nbsp;+0.37%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.738 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">86.66 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">86.64 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -1.17&nbsp;&nbsp;-1.33%
+            -1.19&nbsp;&nbsp;-1.35%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4661.20 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4661.60 <span class="tile-unit">USD</span></div>
           <div class="tile-change up">
-            +144.90&nbsp;&nbsp;+3.21%
+            +145.30&nbsp;&nbsp;+3.22%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">66,216.79 <span class="tile-unit">pt</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">nan <span class="tile-unit">円</span></div>
-          <div class="tile-change flat">
-            +nan&nbsp;&nbsp;+nan%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -660,12 +660,120 @@
 
         <div class="contrib-sub">
           <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(円)</th><th>騰落</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6857:TYO" target="_blank" rel="noopener">アドバンテスト</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="up">+19.29</td>
+              <td class="up">+1.53%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/8035:TYO" target="_blank" rel="noopener">東京エレクトロン</a>
+                <span class="contrib-sector">半導体製造装置</span>
+              </td>
+              <td class="up">+9.64</td>
+              <td class="up">+0.50%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/8031:TYO" target="_blank" rel="noopener">三井物産</a>
+                <span class="contrib-sector">商社</span>
+              </td>
+              <td class="up">+4.46</td>
+              <td class="up">+2.62%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/8766:TYO" target="_blank" rel="noopener">東京海上HD</a>
+                <span class="contrib-sector">保険</span>
+              </td>
+              <td class="up">+4.07</td>
+              <td class="up">+1.58%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/8058:TYO" target="_blank" rel="noopener">三菱商事</a>
+                <span class="contrib-sector">商社</span>
+              </td>
+              <td class="up">+3.50</td>
+              <td class="up">+2.09%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
 
         <div class="contrib-sub">
           <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(円)</th><th>騰落</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9983:TYO" target="_blank" rel="noopener">ファーストリテイリング</a>
+                <span class="contrib-sector">小売</span>
+              </td>
+              <td class="down">-98.93</td>
+              <td class="down">-3.63%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="down">-28.21</td>
+              <td class="down">-0.98%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/7741:TYO" target="_blank" rel="noopener">HOYA</a>
+                <span class="contrib-sector">精密機器</span>
+              </td>
+              <td class="down">-12.32</td>
+              <td class="down">-1.37%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6098:TYO" target="_blank" rel="noopener">リクルートHD</a>
+                <span class="contrib-sector">サービス</span>
+              </td>
+              <td class="down">-8.75</td>
+              <td class="down">-1.52%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/7974:TYO" target="_blank" rel="noopener">任天堂</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="down">-6.50</td>
+              <td class="down">-2.07%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
       </div>
 
@@ -807,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (15件)</div>
+    <div class="card-title">📰 最新ニュース (16件)</div>
     
     
     
@@ -822,76 +930,72 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/972e6173f42a2f3e0711fa053d3c96884d173cb4?source=rss" target="_blank" rel="noopener">【好決算でも一時11％超の急落】PPIH（7532）8月21日はようやく反発——来期減速見通しが重荷に(LIMO)</a>
+                <a href="https://zuuonline.com/archives/302921" target="_blank" rel="noopener">HUMAN MADEの株価が急騰、一時16％超高　上海に初の旗艦店、中国市場を本格攻略へ</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/22 06:01</span>
+                <span class="news-source">ZUU online</span>
+                <span>08/22 12:02</span>
               </div>
               
-              <div class="news-summary">米長期金利の上昇や中東情勢を巡る先行き不透明感を背景に、東京市場では軟調な地合いが続いています。
-
-そうしたなか、PPIH（パン・パシフィック・インターナショナルホールディングス、7532）の株価は8…</div>
+              <div class="news-summary">「ヒューマンメイド（HUMAN MADE）」を展開するHUMAN MADEの株価が急騰している。8月21日の取引開始後、前日に1,362円だった株価は一時、16％超の上昇となった。株価を押し上げている…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/abadcbe0bc162116e36ea0e759134f55188efe59?source=rss" target="_blank" rel="noopener">【開発秘話】禁じ手を解禁! 5.5mmオーバーピストンと一体型ダウンチューブを採用した、ホンダ「CB1100R」専用設計の凄み(WEBヤングマシン)</a>
+                <a href="https://news.yahoo.co.jp/articles/8c2d35e60f24390b6a74d1a01efe13516fecb04a?source=rss" target="_blank" rel="noopener">中国の外骨格ロボット、25年出荷は約2.6万台　7割が「歩行アシスト」向け(36Kr Japan)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/22 06:00</span>
+                <span>08/22 12:00</span>
               </div>
               
-              <div class="news-summary">ホンダ「CB1100R」は、CB900Fをベースにしながらも、通常の上級仕様とは異なり、エンジンやフレームにまで大幅な専用設計を施した特別な市販レーサーだった。右側ダウンチューブを脱着式から一体式へ変…</div>
+              <div class="news-summary">米調査会社のIDCはこのほど、報告書『中国外骨格ロボット（パワーアシストロボット）市場シェア2025』を初めて発表した。2025年の中国における医療リハビリ、消費・歩行アシスト、産業向けを合わせた市場…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/df77a6d5e1c4c791db89e14b2efa8e0897f62444?source=rss" target="_blank" rel="noopener">NY原油続伸、終値87ドル台　中東産供給不安で買い優勢(共同通信)</a>
+                <a href="https://news.yahoo.co.jp/articles/9a723a12460763c9970d16a3e22c1ec4d9e8da64?source=rss" target="_blank" rel="noopener">前後ホイールやサスペンションもカスタマイズ！　豪華メニューを取り入れたシグナスXカスタム！(MotorFan)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/22 05:57</span>
+                <span>08/22 12:00</span>
               </div>
               
-              <div class="news-summary">【ニューヨーク共同】21日のニューヨーク・マーカンタイル取引所の原油先物相場は6営業日続伸し、指標の米国産標準油種（WTI）の10月渡しが前日比0.23ドル高の1バレル＝87.06ドルで取引を終えた</div>
+              <div class="news-summary">前後にアルミ鍛造の削り出しホイールを奢り、サスペンションも社外製でカスタマイズ。ロングホイールベース化と適度なローダウンを取り入れることで全体像を整えている。デザインが目を引くヘッドライトを含む灯火類…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/6bf163ac9bad8c1b1b1f20d9d995abd041958325?source=rss" target="_blank" rel="noopener">NY株反発、517ドル高　米景気底堅いと買い安心感(共同通信)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/22 05:53</span>
-              </div>
-              
-              <div class="news-summary">【ニューヨーク共同】21日のニューヨーク株式市場のダウ工業株30種平均は反発し、前日比517.80ドル高の5万3277.01ドルで取引を終えた。朝方発表された米経済指標が米景気の底堅さを示す内容との</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1657608" target="_blank" rel="noopener">S&PグローバルがSomnigroupの格付けを引き上げ、レバレッジ低下を評価</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1657744" target="_blank" rel="noopener">FRBの株式バリュエーションモデルは再び機能しているか</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>08/22 05:01</span>
+                <span>08/22 09:37</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1657606" target="_blank" rel="noopener">S&Pがレスリーズの格付けを引き下げ、債務再編リスクを警告</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1657725" target="_blank" rel="noopener">米国株式市場は反発、良好な小売り決算や経済指標を好感</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>08/22 05:00</span>
+                <span>08/22 08:00</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1657680" target="_blank" rel="noopener">関税ニュースと現物市場の低迷で生牛先物が下落</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>08/22 06:13</span>
               </div>
               
             </div>
@@ -906,19 +1010,6 @@
               </div>
               
               <div class="news-summary">ポートフォリオとは、複数の金融資産（株式・債券・不動産など）の組み合わせ、およびその配分割合のことです。個別銘柄の単一運用に比べてリスクが分散され、中長期的に安定したリターンを目指す資産管理手法として…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302911" target="_blank" rel="noopener">松屋の株価が2日連続急騰、一時10％超高</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>08/21 12:02</span>
-              </div>
-              
-              <div class="news-summary">百貨店を展開する松屋の株価が急騰している。8月20日は取引開始後から買いが先行し、前場には一時、前日比10％を超える上昇を見せた。前日19日も6.90％高となっており、2日続けて大きく上昇している。 …</div>
               
             </div>
             
@@ -945,6 +1036,19 @@
               </div>
               
               <div class="news-summary">株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260807/k10015199721000.html" target="_blank" rel="noopener">NY外国為替市場 円高ドル安が進む 米雇用統計発表受け</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>08/07 22:14</span>
+              </div>
+              
+              <div class="news-summary">7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい…</div>
               
             </div>
             
@@ -1014,8 +1118,23 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (2件)</div>
+          <div class="news-group-title">📌 その他 (3件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/eba0620b1bd1737bc13e15bd9c11a72368ce4db8?source=rss" target="_blank" rel="noopener">「米国株」のほうがリターンは上なのに…「世界株」ファンドがみずほ銀行投資家に選ばれる理由は？(Finasee)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>08/22 11:50</span>
+              </div>
+              
+              <div class="news-summary">投資信託を選ぶ際、各販売会社が自社のサイトで公開している「売れ筋ランキング」を確認する個人投資家は多い。そのランキングを定点観測して、トレンドを追う連載。今回は、みずほ銀行。
+
+みずほ銀行の投信月間販…</div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1053,24 +1172,34 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-08-22 06:09）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-08-22 12:11）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】昼（日本前場総括・セクター騰落・決算速報）
 
 【マーケットデータ】
+- 日経225: 66,016.36 pt (-0.30%)
+- TOPIX (1306連動ETF): 424.1 円 (+0.31%)
+- ドル円: 158.94 円 (+0.42%)
 - S&P 500: 7,674.37 (+0.43%)
 - NASDAQ: 26,180.46 (+0.43%)
-- ダウ: 53,277.01 (+0.98%)
-- ドル円: 158.86 円 (+0.37%)
+- ダウ: 53,277.00 (+0.98%)
 - 米10年債利回り: 4.738 % (+0.89%)
-- WTI原油: 86.66 USD (-1.33%)
-- 金: 4661.20 USD (+3.21%)
-- 日経225: 66,216.79 pt (+0.00%)
-- TOPIX (1306連動ETF): nan 円 (+nan%)
+- WTI原油: 86.64 USD (-1.35%)
+- 金: 4661.60 USD (+3.22%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
+  ++19.29円  アドバンテスト(6857)  +1.53%  [電機]
+  ++9.64円  東京エレクトロン(8035)  +0.50%  [半導体製造装置]
+  ++4.46円  三井物産(8031)  +2.62%  [商社]
+  ++4.07円  東京海上HD(8766)  +1.58%  [保険]
+  ++3.50円  三菱商事(8058)  +2.09%  [商社]
 ▼ 日経225 (下落寄与TOP5)
+  -98.93円  ファーストリテイリング(9983)  -3.63%  [小売]
+  -28.21円  キーエンス(6861)  -0.98%  [電機]
+  -12.32円  HOYA(7741)  -1.37%  [精密機器]
+  -8.75円  リクルートHD(6098)  -1.52%  [サービス]
+  -6.50円  任天堂(7974)  -2.07%  [電機]
 ▼ S&P500 (上昇寄与TOP5)
   ++10.41pt  Tesla, Inc.(TSLA)  +5.14%  wt:2.65%  [Consumer Discretionary]
   ++8.02pt  Alphabet Inc. (Class A)(GOOGL)  +1.22%  wt:8.62%  [Communication Services]
@@ -1085,32 +1214,33 @@
   -1.25pt  Micron Technology(MU)  -0.77%  wt:2.11%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 【好決算でも一時11％超の急落】PPIH（7532）8月21日はようやく反発——来期減速見通しが重荷に(LIMO) (08/22 06:01)
-  概要: 米長期金利の上昇や中東情勢を巡る先行き不透明感を背景に、東京市場では軟調な地合いが続いています。
-
-そうしたなか、PPIH（パン・パシフィック・インターナショナルホールディングス、7532）の株価は8
-- [Yahoo!ファイナンス] 【開発秘話】禁じ手を解禁! 5.5mmオーバーピストンと一体型ダウンチューブを採用した、ホンダ「CB1100R」専用設計の凄み(WEBヤングマシン) (08/22 06:00)
-  概要: ホンダ「CB1100R」は、CB900Fをベースにしながらも、通常の上級仕様とは異なり、エンジンやフレームにまで大幅な専用設計を施した特別な市販レーサーだった。右側ダウンチューブを脱着式から一体式へ変
-- [Yahoo!ファイナンス] NY原油続伸、終値87ドル台　中東産供給不安で買い優勢(共同通信) (08/22 05:57)
-  概要: 【ニューヨーク共同】21日のニューヨーク・マーカンタイル取引所の原油先物相場は6営業日続伸し、指標の米国産標準油種（WTI）の10月渡しが前日比0.23ドル高の1バレル＝87.06ドルで取引を終えた
-- [Yahoo!ファイナンス] NY株反発、517ドル高　米景気底堅いと買い安心感(共同通信) (08/22 05:53)
-  概要: 【ニューヨーク共同】21日のニューヨーク株式市場のダウ工業株30種平均は反発し、前日比517.80ドル高の5万3277.01ドルで取引を終えた。朝方発表された米経済指標が米景気の底堅さを示す内容との
-- [Investing.com日本] S&PグローバルがSomnigroupの格付けを引き上げ、レバレッジ低下を評価 (08/22 05:01)
-- [Investing.com日本] S&Pがレスリーズの格付けを引き下げ、債務再編リスクを警告 (08/22 05:00)
+- [ZUU online] HUMAN MADEの株価が急騰、一時16％超高　上海に初の旗艦店、中国市場を本格攻略へ (08/22 12:02)
+  概要: 「ヒューマンメイド（HUMAN MADE）」を展開するHUMAN MADEの株価が急騰している。8月21日の取引開始後、前日に1,362円だった株価は一時、16％超の上昇となった。株価を押し上げている
+- [Yahoo!ファイナンス] 中国の外骨格ロボット、25年出荷は約2.6万台　7割が「歩行アシスト」向け(36Kr Japan) (08/22 12:00)
+  概要: 米調査会社のIDCはこのほど、報告書『中国外骨格ロボット（パワーアシストロボット）市場シェア2025』を初めて発表した。2025年の中国における医療リハビリ、消費・歩行アシスト、産業向けを合わせた市場
+- [Yahoo!ファイナンス] 前後ホイールやサスペンションもカスタマイズ！　豪華メニューを取り入れたシグナスXカスタム！(MotorFan) (08/22 12:00)
+  概要: 前後にアルミ鍛造の削り出しホイールを奢り、サスペンションも社外製でカスタマイズ。ロングホイールベース化と適度なローダウンを取り入れることで全体像を整えている。デザインが目を引くヘッドライトを含む灯火類
+- [Investing.com日本] FRBの株式バリュエーションモデルは再び機能しているか (08/22 09:37)
+- [Investing.com日本] 米国株式市場は反発、良好な小売り決算や経済指標を好感 (08/22 08:00)
+- [Investing.com日本] 関税ニュースと現物市場の低迷で生牛先物が下落 (08/22 06:13)
 - [ZUU online] ポートフォリオとは？　資産運用における意味とおすすめの組み方 (08/21 15:30)
   概要: ポートフォリオとは、複数の金融資産（株式・債券・不動産など）の組み合わせ、およびその配分割合のことです。個別銘柄の単一運用に比べてリスクが分散され、中長期的に安定したリターンを目指す資産管理手法として
-- [ZUU online] 松屋の株価が2日連続急騰、一時10％超高 (08/21 12:02)
-  概要: 百貨店を展開する松屋の株価が急騰している。8月20日は取引開始後から買いが先行し、前場には一時、前日比10％を超える上昇を見せた。前日19日も6.90％高となっており、2日続けて大きく上昇している。 
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
 - [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
+- [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
+  概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
 - [ZUU online] いよぎんHD・愛媛銀が来春統合へ、地銀再編が東海から今度は四国に波及 (08/21 17:32)
   概要: 「金利のある世界」の復活と軌を一にするかのように、地方銀行再編の狼煙（のろし）が今度は四国から上がった。愛媛県地盤の伊予銀行を中核とするいよぎんホールディングス（HD）と、同じ県内の愛媛銀行が経営統合
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
+- [Yahoo!ファイナンス] 「米国株」のほうがリターンは上なのに…「世界株」ファンドがみずほ銀行投資家に選ばれる理由は？(Finasee) (08/22 11:50)
+  概要: 投資信託を選ぶ際、各販売会社が自社のサイトで公開している「売れ筋ランキング」を確認する個人投資家は多い。そのランキングを定点観測して、トレンドを追う連載。今回は、みずほ銀行。
+
+みずほ銀行の投信月間販
 - [ZUU online] ユニコーン企業とは？　定義や条件、国内の代表例から投資機会までを解説 (08/21 18:00)
   概要: ユニコーン企業とは、企業評価額が10億ドル（約1,600億円※）以上で、設立10年以内の未上場ベンチャー企業のことです。創業から短期間で飛躍的な成長を遂げ、既存の産業構造に変革をもたらす存在として、世
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
@@ -1129,19 +1259,29 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 66,016.36 pt (-0.30%)
+- TOPIX (1306連動ETF): 424.1 円 (+0.31%)
+- ドル円: 158.94 円 (+0.42%)
 - S&P 500: 7,674.37 (+0.43%)
 - NASDAQ: 26,180.46 (+0.43%)
-- ダウ: 53,277.01 (+0.98%)
-- ドル円: 158.86 円 (+0.37%)
+- ダウ: 53,277.00 (+0.98%)
 - 米10年債利回り: 4.738 % (+0.89%)
-- WTI原油: 86.66 USD (-1.33%)
-- 金: 4661.20 USD (+3.21%)
-- 日経225: 66,216.79 pt (+0.00%)
-- TOPIX (1306連動ETF): nan 円 (+nan%)
+- WTI原油: 86.64 USD (-1.35%)
+- 金: 4661.60 USD (+3.22%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
+  ++19.29円  アドバンテスト(6857)  +1.53%  [電機]
+  ++9.64円  東京エレクトロン(8035)  +0.50%  [半導体製造装置]
+  ++4.46円  三井物産(8031)  +2.62%  [商社]
+  ++4.07円  東京海上HD(8766)  +1.58%  [保険]
+  ++3.50円  三菱商事(8058)  +2.09%  [商社]
 ▼ 日経225 (下落寄与TOP5)
+  -98.93円  ファーストリテイリング(9983)  -3.63%  [小売]
+  -28.21円  キーエンス(6861)  -0.98%  [電機]
+  -12.32円  HOYA(7741)  -1.37%  [精密機器]
+  -8.75円  リクルートHD(6098)  -1.52%  [サービス]
+  -6.50円  任天堂(7974)  -2.07%  [電機]
 ▼ S&P500 (上昇寄与TOP5)
   ++10.41pt  Tesla, Inc.(TSLA)  +5.14%  wt:2.65%  [Consumer Discretionary]
   ++8.02pt  Alphabet Inc. (Class A)(GOOGL)  +1.22%  wt:8.62%  [Communication Services]
@@ -1156,32 +1296,33 @@
   -1.25pt  Micron Technology(MU)  -0.77%  wt:2.11%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 【好決算でも一時11％超の急落】PPIH（7532）8月21日はようやく反発——来期減速見通しが重荷に(LIMO) (08/22 06:01)
-  概要: 米長期金利の上昇や中東情勢を巡る先行き不透明感を背景に、東京市場では軟調な地合いが続いています。
-
-そうしたなか、PPIH（パン・パシフィック・インターナショナルホールディングス、7532）の株価は8
-- [Yahoo!ファイナンス] 【開発秘話】禁じ手を解禁! 5.5mmオーバーピストンと一体型ダウンチューブを採用した、ホンダ「CB1100R」専用設計の凄み(WEBヤングマシン) (08/22 06:00)
-  概要: ホンダ「CB1100R」は、CB900Fをベースにしながらも、通常の上級仕様とは異なり、エンジンやフレームにまで大幅な専用設計を施した特別な市販レーサーだった。右側ダウンチューブを脱着式から一体式へ変
-- [Yahoo!ファイナンス] NY原油続伸、終値87ドル台　中東産供給不安で買い優勢(共同通信) (08/22 05:57)
-  概要: 【ニューヨーク共同】21日のニューヨーク・マーカンタイル取引所の原油先物相場は6営業日続伸し、指標の米国産標準油種（WTI）の10月渡しが前日比0.23ドル高の1バレル＝87.06ドルで取引を終えた
-- [Yahoo!ファイナンス] NY株反発、517ドル高　米景気底堅いと買い安心感(共同通信) (08/22 05:53)
-  概要: 【ニューヨーク共同】21日のニューヨーク株式市場のダウ工業株30種平均は反発し、前日比517.80ドル高の5万3277.01ドルで取引を終えた。朝方発表された米経済指標が米景気の底堅さを示す内容との
-- [Investing.com日本] S&PグローバルがSomnigroupの格付けを引き上げ、レバレッジ低下を評価 (08/22 05:01)
-- [Investing.com日本] S&Pがレスリーズの格付けを引き下げ、債務再編リスクを警告 (08/22 05:00)
+- [ZUU online] HUMAN MADEの株価が急騰、一時16％超高　上海に初の旗艦店、中国市場を本格攻略へ (08/22 12:02)
+  概要: 「ヒューマンメイド（HUMAN MADE）」を展開するHUMAN MADEの株価が急騰している。8月21日の取引開始後、前日に1,362円だった株価は一時、16％超の上昇となった。株価を押し上げている
+- [Yahoo!ファイナンス] 中国の外骨格ロボット、25年出荷は約2.6万台　7割が「歩行アシスト」向け(36Kr Japan) (08/22 12:00)
+  概要: 米調査会社のIDCはこのほど、報告書『中国外骨格ロボット（パワーアシストロボット）市場シェア2025』を初めて発表した。2025年の中国における医療リハビリ、消費・歩行アシスト、産業向けを合わせた市場
+- [Yahoo!ファイナンス] 前後ホイールやサスペンションもカスタマイズ！　豪華メニューを取り入れたシグナスXカスタム！(MotorFan) (08/22 12:00)
+  概要: 前後にアルミ鍛造の削り出しホイールを奢り、サスペンションも社外製でカスタマイズ。ロングホイールベース化と適度なローダウンを取り入れることで全体像を整えている。デザインが目を引くヘッドライトを含む灯火類
+- [Investing.com日本] FRBの株式バリュエーションモデルは再び機能しているか (08/22 09:37)
+- [Investing.com日本] 米国株式市場は反発、良好な小売り決算や経済指標を好感 (08/22 08:00)
+- [Investing.com日本] 関税ニュースと現物市場の低迷で生牛先物が下落 (08/22 06:13)
 - [ZUU online] ポートフォリオとは？　資産運用における意味とおすすめの組み方 (08/21 15:30)
   概要: ポートフォリオとは、複数の金融資産（株式・債券・不動産など）の組み合わせ、およびその配分割合のことです。個別銘柄の単一運用に比べてリスクが分散され、中長期的に安定したリターンを目指す資産管理手法として
-- [ZUU online] 松屋の株価が2日連続急騰、一時10％超高 (08/21 12:02)
-  概要: 百貨店を展開する松屋の株価が急騰している。8月20日は取引開始後から買いが先行し、前場には一時、前日比10％を超える上昇を見せた。前日19日も6.90％高となっており、2日続けて大きく上昇している。 
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
 - [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
+- [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
+  概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
 - [ZUU online] いよぎんHD・愛媛銀が来春統合へ、地銀再編が東海から今度は四国に波及 (08/21 17:32)
   概要: 「金利のある世界」の復活と軌を一にするかのように、地方銀行再編の狼煙（のろし）が今度は四国から上がった。愛媛県地盤の伊予銀行を中核とするいよぎんホールディングス（HD）と、同じ県内の愛媛銀行が経営統合
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
+- [Yahoo!ファイナンス] 「米国株」のほうがリターンは上なのに…「世界株」ファンドがみずほ銀行投資家に選ばれる理由は？(Finasee) (08/22 11:50)
+  概要: 投資信託を選ぶ際、各販売会社が自社のサイトで公開している「売れ筋ランキング」を確認する個人投資家は多い。そのランキングを定点観測して、トレンドを追う連載。今回は、みずほ銀行。
+
+みずほ銀行の投信月間販
 - [ZUU online] ユニコーン企業とは？　定義や条件、国内の代表例から投資機会までを解説 (08/21 18:00)
   概要: ユニコーン企業とは、企業評価額が10億ドル（約1,600億円※）以上で、設立10年以内の未上場ベンチャー企業のことです。創業から短期間で飛躍的な成長を遂げ、既存の産業構造に変革をもたらす存在として、世
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
@@ -1194,19 +1335,29 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 66,016.36 pt (-0.30%)
+- TOPIX (1306連動ETF): 424.1 円 (+0.31%)
+- ドル円: 158.94 円 (+0.42%)
 - S&P 500: 7,674.37 (+0.43%)
 - NASDAQ: 26,180.46 (+0.43%)
-- ダウ: 53,277.01 (+0.98%)
-- ドル円: 158.86 円 (+0.37%)
+- ダウ: 53,277.00 (+0.98%)
 - 米10年債利回り: 4.738 % (+0.89%)
-- WTI原油: 86.66 USD (-1.33%)
-- 金: 4661.20 USD (+3.21%)
-- 日経225: 66,216.79 pt (+0.00%)
-- TOPIX (1306連動ETF): nan 円 (+nan%)
+- WTI原油: 86.64 USD (-1.35%)
+- 金: 4661.60 USD (+3.22%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
+  ++19.29円  アドバンテスト(6857)  +1.53%  [電機]
+  ++9.64円  東京エレクトロン(8035)  +0.50%  [半導体製造装置]
+  ++4.46円  三井物産(8031)  +2.62%  [商社]
+  ++4.07円  東京海上HD(8766)  +1.58%  [保険]
+  ++3.50円  三菱商事(8058)  +2.09%  [商社]
 ▼ 日経225 (下落寄与TOP5)
+  -98.93円  ファーストリテイリング(9983)  -3.63%  [小売]
+  -28.21円  キーエンス(6861)  -0.98%  [電機]
+  -12.32円  HOYA(7741)  -1.37%  [精密機器]
+  -8.75円  リクルートHD(6098)  -1.52%  [サービス]
+  -6.50円  任天堂(7974)  -2.07%  [電機]
 ▼ S&P500 (上昇寄与TOP5)
   ++10.41pt  Tesla, Inc.(TSLA)  +5.14%  wt:2.65%  [Consumer Discretionary]
   ++8.02pt  Alphabet Inc. (Class A)(GOOGL)  +1.22%  wt:8.62%  [Communication Services]
@@ -1221,32 +1372,33 @@
   -1.25pt  Micron Technology(MU)  -0.77%  wt:2.11%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 【好決算でも一時11％超の急落】PPIH（7532）8月21日はようやく反発——来期減速見通しが重荷に(LIMO) (08/22 06:01)
-  概要: 米長期金利の上昇や中東情勢を巡る先行き不透明感を背景に、東京市場では軟調な地合いが続いています。
-
-そうしたなか、PPIH（パン・パシフィック・インターナショナルホールディングス、7532）の株価は8
-- [Yahoo!ファイナンス] 【開発秘話】禁じ手を解禁! 5.5mmオーバーピストンと一体型ダウンチューブを採用した、ホンダ「CB1100R」専用設計の凄み(WEBヤングマシン) (08/22 06:00)
-  概要: ホンダ「CB1100R」は、CB900Fをベースにしながらも、通常の上級仕様とは異なり、エンジンやフレームにまで大幅な専用設計を施した特別な市販レーサーだった。右側ダウンチューブを脱着式から一体式へ変
-- [Yahoo!ファイナンス] NY原油続伸、終値87ドル台　中東産供給不安で買い優勢(共同通信) (08/22 05:57)
-  概要: 【ニューヨーク共同】21日のニューヨーク・マーカンタイル取引所の原油先物相場は6営業日続伸し、指標の米国産標準油種（WTI）の10月渡しが前日比0.23ドル高の1バレル＝87.06ドルで取引を終えた
-- [Yahoo!ファイナンス] NY株反発、517ドル高　米景気底堅いと買い安心感(共同通信) (08/22 05:53)
-  概要: 【ニューヨーク共同】21日のニューヨーク株式市場のダウ工業株30種平均は反発し、前日比517.80ドル高の5万3277.01ドルで取引を終えた。朝方発表された米経済指標が米景気の底堅さを示す内容との
-- [Investing.com日本] S&PグローバルがSomnigroupの格付けを引き上げ、レバレッジ低下を評価 (08/22 05:01)
-- [Investing.com日本] S&Pがレスリーズの格付けを引き下げ、債務再編リスクを警告 (08/22 05:00)
+- [ZUU online] HUMAN MADEの株価が急騰、一時16％超高　上海に初の旗艦店、中国市場を本格攻略へ (08/22 12:02)
+  概要: 「ヒューマンメイド（HUMAN MADE）」を展開するHUMAN MADEの株価が急騰している。8月21日の取引開始後、前日に1,362円だった株価は一時、16％超の上昇となった。株価を押し上げている
+- [Yahoo!ファイナンス] 中国の外骨格ロボット、25年出荷は約2.6万台　7割が「歩行アシスト」向け(36Kr Japan) (08/22 12:00)
+  概要: 米調査会社のIDCはこのほど、報告書『中国外骨格ロボット（パワーアシストロボット）市場シェア2025』を初めて発表した。2025年の中国における医療リハビリ、消費・歩行アシスト、産業向けを合わせた市場
+- [Yahoo!ファイナンス] 前後ホイールやサスペンションもカスタマイズ！　豪華メニューを取り入れたシグナスXカスタム！(MotorFan) (08/22 12:00)
+  概要: 前後にアルミ鍛造の削り出しホイールを奢り、サスペンションも社外製でカスタマイズ。ロングホイールベース化と適度なローダウンを取り入れることで全体像を整えている。デザインが目を引くヘッドライトを含む灯火類
+- [Investing.com日本] FRBの株式バリュエーションモデルは再び機能しているか (08/22 09:37)
+- [Investing.com日本] 米国株式市場は反発、良好な小売り決算や経済指標を好感 (08/22 08:00)
+- [Investing.com日本] 関税ニュースと現物市場の低迷で生牛先物が下落 (08/22 06:13)
 - [ZUU online] ポートフォリオとは？　資産運用における意味とおすすめの組み方 (08/21 15:30)
   概要: ポートフォリオとは、複数の金融資産（株式・債券・不動産など）の組み合わせ、およびその配分割合のことです。個別銘柄の単一運用に比べてリスクが分散され、中長期的に安定したリターンを目指す資産管理手法として
-- [ZUU online] 松屋の株価が2日連続急騰、一時10％超高 (08/21 12:02)
-  概要: 百貨店を展開する松屋の株価が急騰している。8月20日は取引開始後から買いが先行し、前場には一時、前日比10％を超える上昇を見せた。前日19日も6.90％高となっており、2日続けて大きく上昇している。 
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
 - [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
+- [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
+  概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
 - [ZUU online] いよぎんHD・愛媛銀が来春統合へ、地銀再編が東海から今度は四国に波及 (08/21 17:32)
   概要: 「金利のある世界」の復活と軌を一にするかのように、地方銀行再編の狼煙（のろし）が今度は四国から上がった。愛媛県地盤の伊予銀行を中核とするいよぎんホールディングス（HD）と、同じ県内の愛媛銀行が経営統合
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
+- [Yahoo!ファイナンス] 「米国株」のほうがリターンは上なのに…「世界株」ファンドがみずほ銀行投資家に選ばれる理由は？(Finasee) (08/22 11:50)
+  概要: 投資信託を選ぶ際、各販売会社が自社のサイトで公開している「売れ筋ランキング」を確認する個人投資家は多い。そのランキングを定点観測して、トレンドを追う連載。今回は、みずほ銀行。
+
+みずほ銀行の投信月間販
 - [ZUU online] ユニコーン企業とは？　定義や条件、国内の代表例から投資機会までを解説 (08/21 18:00)
   概要: ユニコーン企業とは、企業評価額が10億ドル（約1,600億円※）以上で、設立10年以内の未上場ベンチャー企業のことです。創業から短期間で飛躍的な成長を遂げ、既存の産業構造に変革をもたらす存在として、世
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
