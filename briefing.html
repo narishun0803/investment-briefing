@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [昼]</title>
+  <title>投資情報ブリーフィング [夜]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">昼</span>
-    <span class="slot-desc">日本前場総括・セクター騰落・決算速報</span>
+    <span class="slot-badge">夜</span>
+    <span class="slot-desc">米国寄り付き直前・経済指標・欧州市場</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年08月23日 12:26 JST</span>
+    <span class="updated">更新: 2026年08月23日 22:26 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,41 +544,6 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
-      
-      <div class="market-tile primary">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">66,016.36 <span class="tile-unit">pt</span></div>
-          <div class="tile-change down">
-            -200.43&nbsp;&nbsp;-0.30%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">424.1 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +1.30&nbsp;&nbsp;+0.31%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
-        
-      </div>
-      
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">158.94 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.66&nbsp;&nbsp;+0.42%
-          </div>
-        
-        
-      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -602,7 +567,7 @@
         
       </div>
       
-      <div class="market-tile ">
+      <div class="market-tile primary">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">53,277.01 <span class="tile-unit"></span></div>
@@ -613,7 +578,18 @@
         
       </div>
       
-      <div class="market-tile ">
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">158.94 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.66&nbsp;&nbsp;+0.42%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.738 <span class="tile-unit">%</span></div>
@@ -628,8 +604,8 @@
         <div class="tile-name">WTI原油</div>
         
           <div class="tile-price">87.06 <span class="tile-unit">USD</span></div>
-          <div class="tile-change down">
-            -0.77&nbsp;&nbsp;-0.88%
+          <div class="tile-change flat">
+            +0.00&nbsp;&nbsp;+0.00%
           </div>
         
         
@@ -638,11 +614,35 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4624.10 <span class="tile-unit">USD</span></div>
-          <div class="tile-change up">
-            +107.80&nbsp;&nbsp;+2.39%
+          <div class="tile-price">4680.60 <span class="tile-unit">USD</span></div>
+          <div class="tile-change flat">
+            +0.00&nbsp;&nbsp;+0.00%
           </div>
         
+        
+      </div>
+      
+      <div class="market-tile ">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">66,016.36 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -200.43&nbsp;&nbsp;-0.30%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile ">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">424.1 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +1.30&nbsp;&nbsp;+0.31%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -915,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (13件)</div>
+    <div class="card-title">📰 最新ニュース (14件)</div>
     
     
     
@@ -925,19 +925,57 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📈 マーケット全般 (6件)</div>
+          <div class="news-group-title">📈 マーケット全般 (9件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/dcf56168431d54f69079987f390c8572345e2763?source=rss" target="_blank" rel="noopener">「ほぼ満点」の決算でもなぜ株価は上がらないのか……9万円台で売却した個人投資家が「妙味はあるが長期保有は危険」と断言する理由(みんかぶマガジン)</a>
+                <a href="https://news.yahoo.co.jp/articles/9a0cb0c37ab338b9846f9787d913468129783c7d?source=rss" target="_blank" rel="noopener">富士通、直近1カ月は高値圏からは調整——1Q営業益は+59.6%と株価のギャップ(LIMO)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/23 12:10</span>
+                <span>08/23 21:25</span>
               </div>
               
-              <div class="news-summary">AIブームを追い風に急騰した後、激しい下落に見舞われたキオクシアホールディングス株。アクティビスト投資家の川口佑氏は、1万円台から同社株への投資を始め、7～9万円台で売却。現在はスイングトレードで投</div>
+              <div class="news-summary">富士通＜6702＞の株価は8月21日、前日比▲2.59％（▲97円）の3,646円で取引を終えました。同じ日、TOPIXは+0.19％の4,067.29ポイント、日経平均株価は▲0.30％の66,01…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/e52f0eeae44274f097f6d2ef3bc4be7a66555a49?source=rss" target="_blank" rel="noopener">日経平均株価の「2027年8月まで」の値動きを予測！2026年･秋まで調整継続も、AI･半導体株が牽引して上昇基調に戻り、2027年には“9万円到達”との見方も(ダイヤモンド・ザイ)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>08/23 21:20</span>
+              </div>
+              
+              <div class="news-summary">【日本株】2026年8月〜2027年8月までの「日経平均株価」の値動きをプロが予測！　
+
+●企業の利益成長が続き、中長期の上昇基調は必至！　
+AI革命は始まったばかりで、関連企業はまだまだ伸びる</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1657889" target="_blank" rel="noopener">シティ、決算後にNvidiaの株価が上昇すると予想</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>08/23 20:17</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1657870" target="_blank" rel="noopener">韓国の個人投資家、歴史的株価急落後に高利回りELS商品に殺到</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>08/23 15:09</span>
+              </div>
               
             </div>
             
@@ -1011,21 +1049,8 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (2件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (1件)</div>
           <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/302779" target="_blank" rel="noopener">いよぎんHD・愛媛銀が来春統合へ、地銀再編が東海から今度は四国に波及</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>08/21 17:32</span>
-              </div>
-              
-              <div class="news-summary">「金利のある世界」の復活と軌を一にするかのように、地方銀行再編の狼煙（のろし）が今度は四国から上がった。愛媛県地盤の伊予銀行を中核とするいよぎんホールディングス（HD）と、同じ県内の愛媛銀行が経営統合…</div>
-              
-            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1070,7 +1095,7 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (4件)</div>
+          <div class="news-group-title">📌 その他 (3件)</div>
           <div class="news-list">
             
             <div class="news-item">
@@ -1080,17 +1105,6 @@
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
                 <span>08/23 03:43</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1657842" target="_blank" rel="noopener">ヘッジファンドとミューチュアルファンドが共に買い増したAI関連株3銘柄</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>08/22 20:01</span>
               </div>
               
             </div>
@@ -1131,20 +1145,20 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-08-23 12:26）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-08-23 22:26）の投資ブリーフィング情報です。
 
-【時間帯】昼（日本前場総括・セクター騰落・決算速報）
+【時間帯】夜（米国寄り付き直前・経済指標・欧州市場）
 
 【マーケットデータ】
-- 日経225: 66,016.36 pt (-0.30%)
-- TOPIX (1306連動ETF): 424.1 円 (+0.31%)
-- ドル円: 158.94 円 (+0.42%)
 - S&P 500: 7,674.37 (+0.43%)
 - NASDAQ: 26,180.46 (+0.43%)
 - ダウ: 53,277.01 (+0.98%)
+- ドル円: 158.94 円 (+0.42%)
 - 米10年債利回り: 4.738 % (+0.89%)
-- WTI原油: 87.06 USD (-0.88%)
-- 金: 4624.10 USD (+2.39%)
+- WTI原油: 87.06 USD (+0.00%)
+- 金: 4680.60 USD (+0.00%)
+- 日経225: 66,016.36 pt (-0.30%)
+- TOPIX (1306連動ETF): 424.1 円 (+0.31%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1173,8 +1187,15 @@
   -1.25pt  Micron Technology(MU)  -0.77%  wt:2.11%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 「ほぼ満点」の決算でもなぜ株価は上がらないのか……9万円台で売却した個人投資家が「妙味はあるが長期保有は危険」と断言する理由(みんかぶマガジン) (08/23 12:10)
-  概要: AIブームを追い風に急騰した後、激しい下落に見舞われたキオクシアホールディングス株。アクティビスト投資家の川口佑氏は、1万円台から同社株への投資を始め、7～9万円台で売却。現在はスイングトレードで投
+- [Yahoo!ファイナンス] 富士通、直近1カ月は高値圏からは調整——1Q営業益は+59.6%と株価のギャップ(LIMO) (08/23 21:25)
+  概要: 富士通＜6702＞の株価は8月21日、前日比▲2.59％（▲97円）の3,646円で取引を終えました。同じ日、TOPIXは+0.19％の4,067.29ポイント、日経平均株価は▲0.30％の66,01
+- [Yahoo!ファイナンス] 日経平均株価の「2027年8月まで」の値動きを予測！2026年･秋まで調整継続も、AI･半導体株が牽引して上昇基調に戻り、2027年には“9万円到達”との見方も(ダイヤモンド・ザイ) (08/23 21:20)
+  概要: 【日本株】2026年8月〜2027年8月までの「日経平均株価」の値動きをプロが予測！　
+
+●企業の利益成長が続き、中長期の上昇基調は必至！　
+AI革命は始まったばかりで、関連企業はまだまだ伸びる
+- [Investing.com日本] シティ、決算後にNvidiaの株価が上昇すると予想 (08/23 20:17)
+- [Investing.com日本] 韓国の個人投資家、歴史的株価急落後に高利回りELS商品に殺到 (08/23 15:09)
 - [Investing.com日本] CTAの株式ポジション、イラン紛争前の水準に回復――BofA (08/22 22:47)
 - [ZUU online] HUMAN MADEの株価が急騰、一時16％超高　上海に初の旗艦店、中国市場を本格攻略へ (08/22 12:02)
   概要: 「ヒューマンメイド（HUMAN MADE）」を展開するHUMAN MADEの株価が急騰している。8月21日の取引開始後、前日に1,362円だった株価は一時、16％超の上昇となった。株価を押し上げている
@@ -1184,14 +1205,11 @@
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
   概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
-- [ZUU online] いよぎんHD・愛媛銀が来春統合へ、地銀再編が東海から今度は四国に波及 (08/21 17:32)
-  概要: 「金利のある世界」の復活と軌を一にするかのように、地方銀行再編の狼煙（のろし）が今度は四国から上がった。愛媛県地盤の伊予銀行を中核とするいよぎんホールディングス（HD）と、同じ県内の愛媛銀行が経営統合
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
 - [Investing.com日本] AIの設備投資サイクルが減速した場合、何が起きるのか (08/23 03:43)
-- [Investing.com日本] ヘッジファンドとミューチュアルファンドが共に買い増したAI関連株3銘柄 (08/22 20:01)
 - [ZUU online] ユニコーン企業とは？　定義や条件、国内の代表例から投資機会までを解説 (08/21 18:00)
   概要: ユニコーン企業とは、企業評価額が10億ドル（約1,600億円※）以上で、設立10年以内の未上場ベンチャー企業のことです。創業から短期間で飛躍的な成長を遂げ、既存の産業構造に変革をもたらす存在として、世
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
@@ -1210,15 +1228,15 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
-- 日経225: 66,016.36 pt (-0.30%)
-- TOPIX (1306連動ETF): 424.1 円 (+0.31%)
-- ドル円: 158.94 円 (+0.42%)
 - S&P 500: 7,674.37 (+0.43%)
 - NASDAQ: 26,180.46 (+0.43%)
 - ダウ: 53,277.01 (+0.98%)
+- ドル円: 158.94 円 (+0.42%)
 - 米10年債利回り: 4.738 % (+0.89%)
-- WTI原油: 87.06 USD (-0.88%)
-- 金: 4624.10 USD (+2.39%)
+- WTI原油: 87.06 USD (+0.00%)
+- 金: 4680.60 USD (+0.00%)
+- 日経225: 66,016.36 pt (-0.30%)
+- TOPIX (1306連動ETF): 424.1 円 (+0.31%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1247,8 +1265,15 @@
   -1.25pt  Micron Technology(MU)  -0.77%  wt:2.11%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 「ほぼ満点」の決算でもなぜ株価は上がらないのか……9万円台で売却した個人投資家が「妙味はあるが長期保有は危険」と断言する理由(みんかぶマガジン) (08/23 12:10)
-  概要: AIブームを追い風に急騰した後、激しい下落に見舞われたキオクシアホールディングス株。アクティビスト投資家の川口佑氏は、1万円台から同社株への投資を始め、7～9万円台で売却。現在はスイングトレードで投
+- [Yahoo!ファイナンス] 富士通、直近1カ月は高値圏からは調整——1Q営業益は+59.6%と株価のギャップ(LIMO) (08/23 21:25)
+  概要: 富士通＜6702＞の株価は8月21日、前日比▲2.59％（▲97円）の3,646円で取引を終えました。同じ日、TOPIXは+0.19％の4,067.29ポイント、日経平均株価は▲0.30％の66,01
+- [Yahoo!ファイナンス] 日経平均株価の「2027年8月まで」の値動きを予測！2026年･秋まで調整継続も、AI･半導体株が牽引して上昇基調に戻り、2027年には“9万円到達”との見方も(ダイヤモンド・ザイ) (08/23 21:20)
+  概要: 【日本株】2026年8月〜2027年8月までの「日経平均株価」の値動きをプロが予測！　
+
+●企業の利益成長が続き、中長期の上昇基調は必至！　
+AI革命は始まったばかりで、関連企業はまだまだ伸びる
+- [Investing.com日本] シティ、決算後にNvidiaの株価が上昇すると予想 (08/23 20:17)
+- [Investing.com日本] 韓国の個人投資家、歴史的株価急落後に高利回りELS商品に殺到 (08/23 15:09)
 - [Investing.com日本] CTAの株式ポジション、イラン紛争前の水準に回復――BofA (08/22 22:47)
 - [ZUU online] HUMAN MADEの株価が急騰、一時16％超高　上海に初の旗艦店、中国市場を本格攻略へ (08/22 12:02)
   概要: 「ヒューマンメイド（HUMAN MADE）」を展開するHUMAN MADEの株価が急騰している。8月21日の取引開始後、前日に1,362円だった株価は一時、16％超の上昇となった。株価を押し上げている
@@ -1258,14 +1283,11 @@
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
   概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
-- [ZUU online] いよぎんHD・愛媛銀が来春統合へ、地銀再編が東海から今度は四国に波及 (08/21 17:32)
-  概要: 「金利のある世界」の復活と軌を一にするかのように、地方銀行再編の狼煙（のろし）が今度は四国から上がった。愛媛県地盤の伊予銀行を中核とするいよぎんホールディングス（HD）と、同じ県内の愛媛銀行が経営統合
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
 - [Investing.com日本] AIの設備投資サイクルが減速した場合、何が起きるのか (08/23 03:43)
-- [Investing.com日本] ヘッジファンドとミューチュアルファンドが共に買い増したAI関連株3銘柄 (08/22 20:01)
 - [ZUU online] ユニコーン企業とは？　定義や条件、国内の代表例から投資機会までを解説 (08/21 18:00)
   概要: ユニコーン企業とは、企業評価額が10億ドル（約1,600億円※）以上で、設立10年以内の未上場ベンチャー企業のことです。創業から短期間で飛躍的な成長を遂げ、既存の産業構造に変革をもたらす存在として、世
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
@@ -1278,15 +1300,15 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
-- 日経225: 66,016.36 pt (-0.30%)
-- TOPIX (1306連動ETF): 424.1 円 (+0.31%)
-- ドル円: 158.94 円 (+0.42%)
 - S&P 500: 7,674.37 (+0.43%)
 - NASDAQ: 26,180.46 (+0.43%)
 - ダウ: 53,277.01 (+0.98%)
+- ドル円: 158.94 円 (+0.42%)
 - 米10年債利回り: 4.738 % (+0.89%)
-- WTI原油: 87.06 USD (-0.88%)
-- 金: 4624.10 USD (+2.39%)
+- WTI原油: 87.06 USD (+0.00%)
+- 金: 4680.60 USD (+0.00%)
+- 日経225: 66,016.36 pt (-0.30%)
+- TOPIX (1306連動ETF): 424.1 円 (+0.31%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1315,8 +1337,15 @@
   -1.25pt  Micron Technology(MU)  -0.77%  wt:2.11%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 「ほぼ満点」の決算でもなぜ株価は上がらないのか……9万円台で売却した個人投資家が「妙味はあるが長期保有は危険」と断言する理由(みんかぶマガジン) (08/23 12:10)
-  概要: AIブームを追い風に急騰した後、激しい下落に見舞われたキオクシアホールディングス株。アクティビスト投資家の川口佑氏は、1万円台から同社株への投資を始め、7～9万円台で売却。現在はスイングトレードで投
+- [Yahoo!ファイナンス] 富士通、直近1カ月は高値圏からは調整——1Q営業益は+59.6%と株価のギャップ(LIMO) (08/23 21:25)
+  概要: 富士通＜6702＞の株価は8月21日、前日比▲2.59％（▲97円）の3,646円で取引を終えました。同じ日、TOPIXは+0.19％の4,067.29ポイント、日経平均株価は▲0.30％の66,01
+- [Yahoo!ファイナンス] 日経平均株価の「2027年8月まで」の値動きを予測！2026年･秋まで調整継続も、AI･半導体株が牽引して上昇基調に戻り、2027年には“9万円到達”との見方も(ダイヤモンド・ザイ) (08/23 21:20)
+  概要: 【日本株】2026年8月〜2027年8月までの「日経平均株価」の値動きをプロが予測！　
+
+●企業の利益成長が続き、中長期の上昇基調は必至！　
+AI革命は始まったばかりで、関連企業はまだまだ伸びる
+- [Investing.com日本] シティ、決算後にNvidiaの株価が上昇すると予想 (08/23 20:17)
+- [Investing.com日本] 韓国の個人投資家、歴史的株価急落後に高利回りELS商品に殺到 (08/23 15:09)
 - [Investing.com日本] CTAの株式ポジション、イラン紛争前の水準に回復――BofA (08/22 22:47)
 - [ZUU online] HUMAN MADEの株価が急騰、一時16％超高　上海に初の旗艦店、中国市場を本格攻略へ (08/22 12:02)
   概要: 「ヒューマンメイド（HUMAN MADE）」を展開するHUMAN MADEの株価が急騰している。8月21日の取引開始後、前日に1,362円だった株価は一時、16％超の上昇となった。株価を押し上げている
@@ -1326,14 +1355,11 @@
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
   概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
-- [ZUU online] いよぎんHD・愛媛銀が来春統合へ、地銀再編が東海から今度は四国に波及 (08/21 17:32)
-  概要: 「金利のある世界」の復活と軌を一にするかのように、地方銀行再編の狼煙（のろし）が今度は四国から上がった。愛媛県地盤の伊予銀行を中核とするいよぎんホールディングス（HD）と、同じ県内の愛媛銀行が経営統合
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
 - [Investing.com日本] AIの設備投資サイクルが減速した場合、何が起きるのか (08/23 03:43)
-- [Investing.com日本] ヘッジファンドとミューチュアルファンドが共に買い増したAI関連株3銘柄 (08/22 20:01)
 - [ZUU online] ユニコーン企業とは？　定義や条件、国内の代表例から投資機会までを解説 (08/21 18:00)
   概要: ユニコーン企業とは、企業評価額が10億ドル（約1,600億円※）以上で、設立10年以内の未上場ベンチャー企業のことです。創業から短期間で飛躍的な成長を遂げ、既存の産業構造に変革をもたらす存在として、世
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
