@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年08月31日 07:57 JST</span>
+    <span class="updated">更新: 2026年08月31日 17:44 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">66,311.93 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -93.63&nbsp;&nbsp;-0.14%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">433.5 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +1.50&nbsp;&nbsp;+0.35%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">159.65 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.33&nbsp;&nbsp;+0.21%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">53,559.99 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">160.10 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.78&nbsp;&nbsp;+0.49%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.720 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">84.87 <span class="tile-unit">USD</span></div>
-          <div class="tile-change up">
-            +1.47&nbsp;&nbsp;+1.76%
+          <div class="tile-price">85.86 <span class="tile-unit">USD</span></div>
+          <div class="tile-change flat">
+            +0.00&nbsp;&nbsp;+0.00%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4508.90 <span class="tile-unit">USD</span></div>
-          <div class="tile-change up">
-            +30.80&nbsp;&nbsp;+0.69%
+          <div class="tile-price">4486.70 <span class="tile-unit">USD</span></div>
+          <div class="tile-change flat">
+            +0.00&nbsp;&nbsp;+0.00%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">66,405.56 <span class="tile-unit">pt</span></div>
-          <div class="tile-change up">
-            +273.59&nbsp;&nbsp;+0.41%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">432.0 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +2.60&nbsp;&nbsp;+0.61%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -669,11 +669,11 @@
             
             <tr>
               <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/6098:TYO" target="_blank" rel="noopener">リクルートHD</a>
-                <span class="contrib-sector">サービス</span>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9983:TYO" target="_blank" rel="noopener">ファーストリテイリング</a>
+                <span class="contrib-sector">小売</span>
               </td>
-              <td class="up">+29.64</td>
-              <td class="up">+4.89%</td>
+              <td class="up">+42.50</td>
+              <td class="up">+1.67%</td>
             </tr>
             
             <tr>
@@ -681,26 +681,26 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="up">+28.93</td>
-              <td class="up">+0.99%</td>
+              <td class="up">+25.00</td>
+              <td class="up">+0.84%</td>
             </tr>
             
             <tr>
               <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/6857:TYO" target="_blank" rel="noopener">アドバンテスト</a>
-                <span class="contrib-sector">電機</span>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6098:TYO" target="_blank" rel="noopener">リクルートHD</a>
+                <span class="contrib-sector">サービス</span>
               </td>
-              <td class="up">+23.57</td>
-              <td class="up">+1.91%</td>
+              <td class="up">+14.82</td>
+              <td class="up">+2.33%</td>
             </tr>
             
             <tr>
               <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/7974:TYO" target="_blank" rel="noopener">任天堂</a>
-                <span class="contrib-sector">電機</span>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6367:TYO" target="_blank" rel="noopener">ダイキン</a>
+                <span class="contrib-sector">機械</span>
               </td>
-              <td class="up">+9.46</td>
-              <td class="up">+3.04%</td>
+              <td class="up">+9.29</td>
+              <td class="up">+1.24%</td>
             </tr>
             
             <tr>
@@ -708,8 +708,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/8035:TYO" target="_blank" rel="noopener">東京エレクトロン</a>
                 <span class="contrib-sector">半導体製造装置</span>
               </td>
-              <td class="up">+8.21</td>
-              <td class="up">+0.41%</td>
+              <td class="up">+7.50</td>
+              <td class="up">+0.37%</td>
             </tr>
             
             </tbody>
@@ -728,38 +728,47 @@
             
             <tr>
               <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/7741:TYO" target="_blank" rel="noopener">HOYA</a>
-                <span class="contrib-sector">精密機器</span>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6857:TYO" target="_blank" rel="noopener">アドバンテスト</a>
+                <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-2.14</td>
-              <td class="down">-0.25%</td>
+              <td class="down">-56.43</td>
+              <td class="down">-4.48%</td>
             </tr>
             
             <tr>
               <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/9984:TYO" target="_blank" rel="noopener">ソフトバンクG</a>
-                <span class="contrib-sector">通信</span>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6981:TYO" target="_blank" rel="noopener">村田製作所</a>
+                <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-1.39</td>
-              <td class="down">-0.75%</td>
+              <td class="down">-7.36</td>
+              <td class="down">-2.78%</td>
             </tr>
             
             <tr>
               <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/4502:TYO" target="_blank" rel="noopener">武田薬品</a>
-                <span class="contrib-sector">医薬品</span>
-              </td>
-              <td class="down">-0.32</td>
-              <td class="down">-0.15%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/7012:TYO" target="_blank" rel="noopener">川崎重工</a>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/7011:TYO" target="_blank" rel="noopener">三菱重工</a>
                 <span class="contrib-sector">機械</span>
               </td>
-              <td class="down">-0.12</td>
-              <td class="down">-0.13%</td>
+              <td class="down">-4.86</td>
+              <td class="down">-3.38%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6501:TYO" target="_blank" rel="noopener">日立製作所</a>
+                <span class="contrib-sector">電機</span>
+              </td>
+              <td class="down">-4.00</td>
+              <td class="down">-2.02%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/4523:TYO" target="_blank" rel="noopener">エーザイ</a>
+                <span class="contrib-sector">医薬品</span>
+              </td>
+              <td class="down">-3.00</td>
+              <td class="down">-1.74%</td>
             </tr>
             
             </tbody>
@@ -906,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (14件)</div>
+    <div class="card-title">📰 最新ニュース (17件)</div>
     
     
     
@@ -916,43 +925,93 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📈 マーケット全般 (6件)</div>
+          <div class="news-group-title">📈 マーケット全般 (10件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/54be1dc71583b1f712a985a5dee2bd19a27d1b22?source=rss" target="_blank" rel="noopener">ローソン「異色店舗」を相次ぎオープン。団地・トレーラー・既存商店を活用する新たな出店戦略の狙い(LIMO)</a>
+                <a href="https://news.yahoo.co.jp/articles/7b818f2642fe9b1dbb0dd82fcb8eaa3c4c8d62e6?source=rss" target="_blank" rel="noopener">25年度通販市場、6％増で15兆円規模に(健康産業速報)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/31 07:45</span>
+                <span>08/31 17:37</span>
               </div>
               
-              <div class="news-summary">株式会社ローソンは、2026年8月31日、宮城県石巻市北上町に「にっこり商店 with LAWSON」をオープンします。同社は8月に集合住宅型・トレーラーハウス型など、従来とは異なる形態の店舗を相次い…</div>
+              <div class="news-summary">日本通信販売協会は、2025年度の通信販売市場規模は前年度比5.9％増の15兆4085億円に上るとの推計を発表した。
+
+　衣料品・雑貨・化粧品・健康食品・食品などの物販を中心に、同協会会員375社を</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1665215" target="_blank" rel="noopener">28日のNY市場は反落</a>
+                <a href="https://news.yahoo.co.jp/articles/7f325e25e5665f92b2152edaf73fc5d011e4bf50?source=rss" target="_blank" rel="noopener">モバイル電池の検査を義務化方針　経産省、第三者機関で(共同通信)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>08/31 17:31</span>
+              </div>
+              
+              <div class="news-summary">経済産業省は31日、スマートフォンなどに使うモバイルバッテリーの安全規制を強化する方針を示した。政府の登録を受けた第三者機関による検査を義務付け、安全性を確認された製品だけが市場に流通する仕組みに改</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1665459" target="_blank" rel="noopener">東証グロ－ス指数は反落、資金は相対的に主力市場へ</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>08/31 06:15</span>
+                <span>08/31 17:15</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://zuuonline.com/archives/303007" target="_blank" rel="noopener">三陽商会が中間期予想を大幅下方修正　1億円の黒字予想から4億円の営業赤字へ、株価は3日続落</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1665456" target="_blank" rel="noopener">日経平均寄与度ランキング（大引け）～日経平均は反落、アドバンテとTDKの2銘柄で約398円押し下げ</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>08/31 17:00</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1665433" target="_blank" rel="noopener">日経平均は小反落、売り先行も次第に下げ幅縮小</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>08/31 16:30</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/303013" target="_blank" rel="noopener">一時6万5,000円回復　上げても下げてもキオクシア！ TOPIXは「4ヵ月連続高」‼ ―― NSJヘッドライン</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">ZUU online</span>
-                <span>08/29 12:02</span>
+                <span>08/31 16:30</span>
               </div>
               
-              <div class="news-summary">三陽商会は8月28日、2027年2月期の中間期業績予想を下方修正した。売上高は従来予想の276億円から257億円へ19億円引き下げ、営業利益は1億円の黒字予想から4億円の赤字、親会社株主に帰属する中間…</div>
+              <div class="news-summary">この記事は2026年8月31日に日本証券新聞で公開された「 NSJHL 355 2026_0731　【日経平均株価】一時6万5000円回復　上げても下げてもキオクシア！TOPIXは「4ヵ月連続高」‼」…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/303010" target="_blank" rel="noopener">FX/為替「ドル/円今日の見通し｜協調介入時以来の160円台回復！注目はG20会議」 外為どっとコム トゥデイ 2026年8月31日号</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>08/31 10:32</span>
+              </div>
+              
+              <div class="news-summary">主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年8月31日8時30分執筆・監修：株式会社外…</div>
               
             </div>
             
@@ -1002,42 +1061,16 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (4件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (2件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/2ef3a224ac486fb68f8302a4e1669550855a515b?source=rss" target="_blank" rel="noopener">日銀の「適切な対応」期待と米財務長官(共同通信)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/31 07:53</span>
-              </div>
-              
-              <div class="news-summary">【アッシュビル（米南部）共同】ベセント米財務長官は30日、ロイター通信に、日銀が円安対策として連続的な利上げを検討すべきかどうか問われ、植田和男総裁が「適切な対応」を取ると期待していると話した。</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/7b68055ca0ad8aa97a97ae0bcf245a98159d3307?source=rss" target="_blank" rel="noopener">中央銀行のコミュニケーション戦略④：ウォーシュFRB議長のジャクソンホール会議での発言(NRI研究員の時事解説)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>08/31 07:48</span>
-              </div>
-              
-              <div class="news-summary">米連邦準備制度理事会（FRB）のウォーシュ議長は8月28日、ジャクソンホール会議で講演した。この中でウォーシュ議長は、「物価安定の観点から見ると、（物価指標の）数値はより懸念される状況にある（But</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1665225" target="_blank" rel="noopener">NYの視点：【今週の注目イベント】米雇用統計、ISM製造業、ベージュブック、各国PMI</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1665428" target="_blank" rel="noopener">日本精機：PBR0.6倍台・配当利回り3%超の割安水準、3期連続増配と構造改革の進展を評価</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>08/31 07:45</span>
+                <span>08/31 16:15</span>
               </div>
               
             </div>
@@ -1067,12 +1100,14 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1665208" target="_blank" rel="noopener">AonがKKR傘下のUSI保険を約170億ドルで買収へ――WSJ報道</a>
+                <a href="https://zuuonline.com/archives/303015" target="_blank" rel="noopener">高級車購入による節税の仕組みと効果を最大化する方法</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>08/31 01:51</span>
+                <span class="news-source">ZUU online</span>
+                <span>08/31 15:00</span>
               </div>
+              
+              <div class="news-summary">経営者や事業主の間で「高級車を購入すると節税になる」という話を耳にしたことがある方は多いでしょう。決算期が近づくと、節税対策として高級外車や中古車の購入を検討する企業が増加します。しかし、単に高い車を…</div>
               
             </div>
             
@@ -1096,16 +1131,29 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (2件)</div>
+          <div class="news-group-title">📌 その他 (3件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1665211" target="_blank" rel="noopener">ウクライナ、防衛技術ファンドへの米国投資を求める＝FT</a>
+                <a href="https://news.yahoo.co.jp/articles/8ccb5e8185d26764f5370e2e35fec133e23f1e98?source=rss" target="_blank" rel="noopener">「全世界半導体」か米国「SOX」の投信どっちが儲かる？ 台湾セミコンダクターもASMLもまとめ買い放置で爆益狙い【NISA応援】(AERA DIGITAL)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>08/31 17:30</span>
+              </div>
+              
+              <div class="news-summary">エヌビディアは日本の半導体株以上に上昇してきた。欲をプラスして「世界の」半導体株でも爆益を狙いたい人のために2種類の投資信託を比較。台湾上場のTSMCや韓国のSKハイニックス、日本の半導体株も入った「…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1665423" target="_blank" rel="noopener">中東情勢の激化で原油が急騰、欧州株は下落</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>08/31 03:57</span>
+                <span>08/31 16:09</span>
               </div>
               
             </div>
@@ -1133,33 +1181,34 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-08-31 07:57）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-08-31 17:44）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 66,311.93 pt (-0.14%)
+- TOPIX (1306連動ETF): 433.5 円 (+0.35%)
+- ドル円: 159.65 円 (+0.21%)
 - S&P 500: 7,711.76 (-0.25%)
 - NASDAQ: 26,402.42 (-0.52%)
 - ダウ: 53,559.99 (-0.02%)
-- ドル円: 160.10 円 (+0.49%)
 - 米10年債利回り: 4.720 % (+1.03%)
-- WTI原油: 84.87 USD (+1.76%)
-- 金: 4508.90 USD (+0.69%)
-- 日経225: 66,405.56 pt (+0.41%)
-- TOPIX (1306連動ETF): 432.0 円 (+0.61%)
+- WTI原油: 85.86 USD (+0.00%)
+- 金: 4486.70 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++29.64円  リクルートHD(6098)  +4.89%  [サービス]
-  ++28.93円  キーエンス(6861)  +0.99%  [電機]
-  ++23.57円  アドバンテスト(6857)  +1.91%  [電機]
-  ++9.46円  任天堂(7974)  +3.04%  [電機]
-  ++8.21円  東京エレクトロン(8035)  +0.41%  [半導体製造装置]
+  ++42.50円  ファーストリテイリング(9983)  +1.67%  [小売]
+  ++25.00円  キーエンス(6861)  +0.84%  [電機]
+  ++14.82円  リクルートHD(6098)  +2.33%  [サービス]
+  ++9.29円  ダイキン(6367)  +1.24%  [機械]
+  ++7.50円  東京エレクトロン(8035)  +0.37%  [半導体製造装置]
 ▼ 日経225 (下落寄与TOP5)
-  -2.14円  HOYA(7741)  -0.25%  [精密機器]
-  -1.39円  ソフトバンクG(9984)  -0.75%  [通信]
-  -0.32円  武田薬品(4502)  -0.15%  [医薬品]
-  -0.12円  川崎重工(7012)  -0.13%  [機械]
+  -56.43円  アドバンテスト(6857)  -4.48%  [電機]
+  -7.36円  村田製作所(6981)  -2.78%  [電機]
+  -4.86円  三菱重工(7011)  -3.38%  [機械]
+  -4.00円  日立製作所(6501)  -2.02%  [電機]
+  -3.00円  エーザイ(4523)  -1.74%  [医薬品]
 ▼ S&P500 (上昇寄与TOP5)
   ++18.10pt  Amazon(AMZN)  +3.97%  wt:5.90%  [Consumer Discretionary]
   ++11.98pt  Alphabet Inc. (Class A)(GOOGL)  +1.74%  wt:8.89%  [Communication Services]
@@ -1174,28 +1223,35 @@
   -2.66pt  Applied Materials(AMAT)  -4.29%  wt:0.80%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] ローソン「異色店舗」を相次ぎオープン。団地・トレーラー・既存商店を活用する新たな出店戦略の狙い(LIMO) (08/31 07:45)
-  概要: 株式会社ローソンは、2026年8月31日、宮城県石巻市北上町に「にっこり商店 with LAWSON」をオープンします。同社は8月に集合住宅型・トレーラーハウス型など、従来とは異なる形態の店舗を相次い
-- [Investing.com日本] 28日のNY市場は反落 (08/31 06:15)
-- [ZUU online] 三陽商会が中間期予想を大幅下方修正　1億円の黒字予想から4億円の営業赤字へ、株価は3日続落 (08/29 12:02)
-  概要: 三陽商会は8月28日、2027年2月期の中間期業績予想を下方修正した。売上高は従来予想の276億円から257億円へ19億円引き下げ、営業利益は1億円の黒字予想から4億円の赤字、親会社株主に帰属する中間
+- [Yahoo!ファイナンス] 25年度通販市場、6％増で15兆円規模に(健康産業速報) (08/31 17:37)
+  概要: 日本通信販売協会は、2025年度の通信販売市場規模は前年度比5.9％増の15兆4085億円に上るとの推計を発表した。
+
+　衣料品・雑貨・化粧品・健康食品・食品などの物販を中心に、同協会会員375社を
+- [Yahoo!ファイナンス] モバイル電池の検査を義務化方針　経産省、第三者機関で(共同通信) (08/31 17:31)
+  概要: 経済産業省は31日、スマートフォンなどに使うモバイルバッテリーの安全規制を強化する方針を示した。政府の登録を受けた第三者機関による検査を義務付け、安全性を確認された製品だけが市場に流通する仕組みに改
+- [Investing.com日本] 東証グロ－ス指数は反落、資金は相対的に主力市場へ (08/31 17:15)
+- [Investing.com日本] 日経平均寄与度ランキング（大引け）～日経平均は反落、アドバンテとTDKの2銘柄で約398円押し下げ (08/31 17:00)
+- [Investing.com日本] 日経平均は小反落、売り先行も次第に下げ幅縮小 (08/31 16:30)
+- [ZUU online] 一時6万5,000円回復　上げても下げてもキオクシア！ TOPIXは「4ヵ月連続高」‼ ―― NSJヘッドライン (08/31 16:30)
+  概要: この記事は2026年8月31日に日本証券新聞で公開された「 NSJHL 355 2026_0731　【日経平均株価】一時6万5000円回復　上げても下げてもキオクシア！TOPIXは「4ヵ月連続高」‼」
+- [ZUU online] FX/為替「ドル/円今日の見通し｜協調介入時以来の160円台回復！注目はG20会議」 外為どっとコム トゥデイ 2026年8月31日号 (08/31 10:32)
+  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年8月31日8時30分執筆・監修：株式会社外
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
 - [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
   概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
-- [Yahoo!ファイナンス] 日銀の「適切な対応」期待と米財務長官(共同通信) (08/31 07:53)
-  概要: 【アッシュビル（米南部）共同】ベセント米財務長官は30日、ロイター通信に、日銀が円安対策として連続的な利上げを検討すべきかどうか問われ、植田和男総裁が「適切な対応」を取ると期待していると話した。
-- [Yahoo!ファイナンス] 中央銀行のコミュニケーション戦略④：ウォーシュFRB議長のジャクソンホール会議での発言(NRI研究員の時事解説) (08/31 07:48)
-  概要: 米連邦準備制度理事会（FRB）のウォーシュ議長は8月28日、ジャクソンホール会議で講演した。この中でウォーシュ議長は、「物価安定の観点から見ると、（物価指標の）数値はより懸念される状況にある（But
-- [Investing.com日本] NYの視点：【今週の注目イベント】米雇用統計、ISM製造業、ベージュブック、各国PMI (08/31 07:45)
+- [Investing.com日本] 日本精機：PBR0.6倍台・配当利回り3%超の割安水準、3期連続増配と構造改革の進展を評価 (08/31 16:15)
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Investing.com日本] AonがKKR傘下のUSI保険を約170億ドルで買収へ――WSJ報道 (08/31 01:51)
+- [ZUU online] 高級車購入による節税の仕組みと効果を最大化する方法 (08/31 15:00)
+  概要: 経営者や事業主の間で「高級車を購入すると節税になる」という話を耳にしたことがある方は多いでしょう。決算期が近づくと、節税対策として高級外車や中古車の購入を検討する企業が増加します。しかし、単に高い車を
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [Investing.com日本] ウクライナ、防衛技術ファンドへの米国投資を求める＝FT (08/31 03:57)
+- [Yahoo!ファイナンス] 「全世界半導体」か米国「SOX」の投信どっちが儲かる？ 台湾セミコンダクターもASMLもまとめ買い放置で爆益狙い【NISA応援】(AERA DIGITAL) (08/31 17:30)
+  概要: エヌビディアは日本の半導体株以上に上昇してきた。欲をプラスして「世界の」半導体株でも爆益を狙いたい人のために2種類の投資信託を比較。台湾上場のTSMCや韓国のSKハイニックス、日本の半導体株も入った「
+- [Investing.com日本] 中東情勢の激化で原油が急騰、欧州株は下落 (08/31 16:09)
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
@@ -1212,28 +1268,29 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 66,311.93 pt (-0.14%)
+- TOPIX (1306連動ETF): 433.5 円 (+0.35%)
+- ドル円: 159.65 円 (+0.21%)
 - S&P 500: 7,711.76 (-0.25%)
 - NASDAQ: 26,402.42 (-0.52%)
 - ダウ: 53,559.99 (-0.02%)
-- ドル円: 160.10 円 (+0.49%)
 - 米10年債利回り: 4.720 % (+1.03%)
-- WTI原油: 84.87 USD (+1.76%)
-- 金: 4508.90 USD (+0.69%)
-- 日経225: 66,405.56 pt (+0.41%)
-- TOPIX (1306連動ETF): 432.0 円 (+0.61%)
+- WTI原油: 85.86 USD (+0.00%)
+- 金: 4486.70 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++29.64円  リクルートHD(6098)  +4.89%  [サービス]
-  ++28.93円  キーエンス(6861)  +0.99%  [電機]
-  ++23.57円  アドバンテスト(6857)  +1.91%  [電機]
-  ++9.46円  任天堂(7974)  +3.04%  [電機]
-  ++8.21円  東京エレクトロン(8035)  +0.41%  [半導体製造装置]
+  ++42.50円  ファーストリテイリング(9983)  +1.67%  [小売]
+  ++25.00円  キーエンス(6861)  +0.84%  [電機]
+  ++14.82円  リクルートHD(6098)  +2.33%  [サービス]
+  ++9.29円  ダイキン(6367)  +1.24%  [機械]
+  ++7.50円  東京エレクトロン(8035)  +0.37%  [半導体製造装置]
 ▼ 日経225 (下落寄与TOP5)
-  -2.14円  HOYA(7741)  -0.25%  [精密機器]
-  -1.39円  ソフトバンクG(9984)  -0.75%  [通信]
-  -0.32円  武田薬品(4502)  -0.15%  [医薬品]
-  -0.12円  川崎重工(7012)  -0.13%  [機械]
+  -56.43円  アドバンテスト(6857)  -4.48%  [電機]
+  -7.36円  村田製作所(6981)  -2.78%  [電機]
+  -4.86円  三菱重工(7011)  -3.38%  [機械]
+  -4.00円  日立製作所(6501)  -2.02%  [電機]
+  -3.00円  エーザイ(4523)  -1.74%  [医薬品]
 ▼ S&P500 (上昇寄与TOP5)
   ++18.10pt  Amazon(AMZN)  +3.97%  wt:5.90%  [Consumer Discretionary]
   ++11.98pt  Alphabet Inc. (Class A)(GOOGL)  +1.74%  wt:8.89%  [Communication Services]
@@ -1248,28 +1305,35 @@
   -2.66pt  Applied Materials(AMAT)  -4.29%  wt:0.80%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] ローソン「異色店舗」を相次ぎオープン。団地・トレーラー・既存商店を活用する新たな出店戦略の狙い(LIMO) (08/31 07:45)
-  概要: 株式会社ローソンは、2026年8月31日、宮城県石巻市北上町に「にっこり商店 with LAWSON」をオープンします。同社は8月に集合住宅型・トレーラーハウス型など、従来とは異なる形態の店舗を相次い
-- [Investing.com日本] 28日のNY市場は反落 (08/31 06:15)
-- [ZUU online] 三陽商会が中間期予想を大幅下方修正　1億円の黒字予想から4億円の営業赤字へ、株価は3日続落 (08/29 12:02)
-  概要: 三陽商会は8月28日、2027年2月期の中間期業績予想を下方修正した。売上高は従来予想の276億円から257億円へ19億円引き下げ、営業利益は1億円の黒字予想から4億円の赤字、親会社株主に帰属する中間
+- [Yahoo!ファイナンス] 25年度通販市場、6％増で15兆円規模に(健康産業速報) (08/31 17:37)
+  概要: 日本通信販売協会は、2025年度の通信販売市場規模は前年度比5.9％増の15兆4085億円に上るとの推計を発表した。
+
+　衣料品・雑貨・化粧品・健康食品・食品などの物販を中心に、同協会会員375社を
+- [Yahoo!ファイナンス] モバイル電池の検査を義務化方針　経産省、第三者機関で(共同通信) (08/31 17:31)
+  概要: 経済産業省は31日、スマートフォンなどに使うモバイルバッテリーの安全規制を強化する方針を示した。政府の登録を受けた第三者機関による検査を義務付け、安全性を確認された製品だけが市場に流通する仕組みに改
+- [Investing.com日本] 東証グロ－ス指数は反落、資金は相対的に主力市場へ (08/31 17:15)
+- [Investing.com日本] 日経平均寄与度ランキング（大引け）～日経平均は反落、アドバンテとTDKの2銘柄で約398円押し下げ (08/31 17:00)
+- [Investing.com日本] 日経平均は小反落、売り先行も次第に下げ幅縮小 (08/31 16:30)
+- [ZUU online] 一時6万5,000円回復　上げても下げてもキオクシア！ TOPIXは「4ヵ月連続高」‼ ―― NSJヘッドライン (08/31 16:30)
+  概要: この記事は2026年8月31日に日本証券新聞で公開された「 NSJHL 355 2026_0731　【日経平均株価】一時6万5000円回復　上げても下げてもキオクシア！TOPIXは「4ヵ月連続高」‼」
+- [ZUU online] FX/為替「ドル/円今日の見通し｜協調介入時以来の160円台回復！注目はG20会議」 外為どっとコム トゥデイ 2026年8月31日号 (08/31 10:32)
+  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年8月31日8時30分執筆・監修：株式会社外
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
 - [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
   概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
-- [Yahoo!ファイナンス] 日銀の「適切な対応」期待と米財務長官(共同通信) (08/31 07:53)
-  概要: 【アッシュビル（米南部）共同】ベセント米財務長官は30日、ロイター通信に、日銀が円安対策として連続的な利上げを検討すべきかどうか問われ、植田和男総裁が「適切な対応」を取ると期待していると話した。
-- [Yahoo!ファイナンス] 中央銀行のコミュニケーション戦略④：ウォーシュFRB議長のジャクソンホール会議での発言(NRI研究員の時事解説) (08/31 07:48)
-  概要: 米連邦準備制度理事会（FRB）のウォーシュ議長は8月28日、ジャクソンホール会議で講演した。この中でウォーシュ議長は、「物価安定の観点から見ると、（物価指標の）数値はより懸念される状況にある（But
-- [Investing.com日本] NYの視点：【今週の注目イベント】米雇用統計、ISM製造業、ベージュブック、各国PMI (08/31 07:45)
+- [Investing.com日本] 日本精機：PBR0.6倍台・配当利回り3%超の割安水準、3期連続増配と構造改革の進展を評価 (08/31 16:15)
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Investing.com日本] AonがKKR傘下のUSI保険を約170億ドルで買収へ――WSJ報道 (08/31 01:51)
+- [ZUU online] 高級車購入による節税の仕組みと効果を最大化する方法 (08/31 15:00)
+  概要: 経営者や事業主の間で「高級車を購入すると節税になる」という話を耳にしたことがある方は多いでしょう。決算期が近づくと、節税対策として高級外車や中古車の購入を検討する企業が増加します。しかし、単に高い車を
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [Investing.com日本] ウクライナ、防衛技術ファンドへの米国投資を求める＝FT (08/31 03:57)
+- [Yahoo!ファイナンス] 「全世界半導体」か米国「SOX」の投信どっちが儲かる？ 台湾セミコンダクターもASMLもまとめ買い放置で爆益狙い【NISA応援】(AERA DIGITAL) (08/31 17:30)
+  概要: エヌビディアは日本の半導体株以上に上昇してきた。欲をプラスして「世界の」半導体株でも爆益を狙いたい人のために2種類の投資信託を比較。台湾上場のTSMCや韓国のSKハイニックス、日本の半導体株も入った「
+- [Investing.com日本] 中東情勢の激化で原油が急騰、欧州株は下落 (08/31 16:09)
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
@@ -1280,28 +1344,29 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 66,311.93 pt (-0.14%)
+- TOPIX (1306連動ETF): 433.5 円 (+0.35%)
+- ドル円: 159.65 円 (+0.21%)
 - S&P 500: 7,711.76 (-0.25%)
 - NASDAQ: 26,402.42 (-0.52%)
 - ダウ: 53,559.99 (-0.02%)
-- ドル円: 160.10 円 (+0.49%)
 - 米10年債利回り: 4.720 % (+1.03%)
-- WTI原油: 84.87 USD (+1.76%)
-- 金: 4508.90 USD (+0.69%)
-- 日経225: 66,405.56 pt (+0.41%)
-- TOPIX (1306連動ETF): 432.0 円 (+0.61%)
+- WTI原油: 85.86 USD (+0.00%)
+- 金: 4486.70 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++29.64円  リクルートHD(6098)  +4.89%  [サービス]
-  ++28.93円  キーエンス(6861)  +0.99%  [電機]
-  ++23.57円  アドバンテスト(6857)  +1.91%  [電機]
-  ++9.46円  任天堂(7974)  +3.04%  [電機]
-  ++8.21円  東京エレクトロン(8035)  +0.41%  [半導体製造装置]
+  ++42.50円  ファーストリテイリング(9983)  +1.67%  [小売]
+  ++25.00円  キーエンス(6861)  +0.84%  [電機]
+  ++14.82円  リクルートHD(6098)  +2.33%  [サービス]
+  ++9.29円  ダイキン(6367)  +1.24%  [機械]
+  ++7.50円  東京エレクトロン(8035)  +0.37%  [半導体製造装置]
 ▼ 日経225 (下落寄与TOP5)
-  -2.14円  HOYA(7741)  -0.25%  [精密機器]
-  -1.39円  ソフトバンクG(9984)  -0.75%  [通信]
-  -0.32円  武田薬品(4502)  -0.15%  [医薬品]
-  -0.12円  川崎重工(7012)  -0.13%  [機械]
+  -56.43円  アドバンテスト(6857)  -4.48%  [電機]
+  -7.36円  村田製作所(6981)  -2.78%  [電機]
+  -4.86円  三菱重工(7011)  -3.38%  [機械]
+  -4.00円  日立製作所(6501)  -2.02%  [電機]
+  -3.00円  エーザイ(4523)  -1.74%  [医薬品]
 ▼ S&P500 (上昇寄与TOP5)
   ++18.10pt  Amazon(AMZN)  +3.97%  wt:5.90%  [Consumer Discretionary]
   ++11.98pt  Alphabet Inc. (Class A)(GOOGL)  +1.74%  wt:8.89%  [Communication Services]
@@ -1316,28 +1381,35 @@
   -2.66pt  Applied Materials(AMAT)  -4.29%  wt:0.80%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] ローソン「異色店舗」を相次ぎオープン。団地・トレーラー・既存商店を活用する新たな出店戦略の狙い(LIMO) (08/31 07:45)
-  概要: 株式会社ローソンは、2026年8月31日、宮城県石巻市北上町に「にっこり商店 with LAWSON」をオープンします。同社は8月に集合住宅型・トレーラーハウス型など、従来とは異なる形態の店舗を相次い
-- [Investing.com日本] 28日のNY市場は反落 (08/31 06:15)
-- [ZUU online] 三陽商会が中間期予想を大幅下方修正　1億円の黒字予想から4億円の営業赤字へ、株価は3日続落 (08/29 12:02)
-  概要: 三陽商会は8月28日、2027年2月期の中間期業績予想を下方修正した。売上高は従来予想の276億円から257億円へ19億円引き下げ、営業利益は1億円の黒字予想から4億円の赤字、親会社株主に帰属する中間
+- [Yahoo!ファイナンス] 25年度通販市場、6％増で15兆円規模に(健康産業速報) (08/31 17:37)
+  概要: 日本通信販売協会は、2025年度の通信販売市場規模は前年度比5.9％増の15兆4085億円に上るとの推計を発表した。
+
+　衣料品・雑貨・化粧品・健康食品・食品などの物販を中心に、同協会会員375社を
+- [Yahoo!ファイナンス] モバイル電池の検査を義務化方針　経産省、第三者機関で(共同通信) (08/31 17:31)
+  概要: 経済産業省は31日、スマートフォンなどに使うモバイルバッテリーの安全規制を強化する方針を示した。政府の登録を受けた第三者機関による検査を義務付け、安全性を確認された製品だけが市場に流通する仕組みに改
+- [Investing.com日本] 東証グロ－ス指数は反落、資金は相対的に主力市場へ (08/31 17:15)
+- [Investing.com日本] 日経平均寄与度ランキング（大引け）～日経平均は反落、アドバンテとTDKの2銘柄で約398円押し下げ (08/31 17:00)
+- [Investing.com日本] 日経平均は小反落、売り先行も次第に下げ幅縮小 (08/31 16:30)
+- [ZUU online] 一時6万5,000円回復　上げても下げてもキオクシア！ TOPIXは「4ヵ月連続高」‼ ―― NSJヘッドライン (08/31 16:30)
+  概要: この記事は2026年8月31日に日本証券新聞で公開された「 NSJHL 355 2026_0731　【日経平均株価】一時6万5000円回復　上げても下げてもキオクシア！TOPIXは「4ヵ月連続高」‼」
+- [ZUU online] FX/為替「ドル/円今日の見通し｜協調介入時以来の160円台回復！注目はG20会議」 外為どっとコム トゥデイ 2026年8月31日号 (08/31 10:32)
+  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年8月31日8時30分執筆・監修：株式会社外
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
 - [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
   概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
-- [Yahoo!ファイナンス] 日銀の「適切な対応」期待と米財務長官(共同通信) (08/31 07:53)
-  概要: 【アッシュビル（米南部）共同】ベセント米財務長官は30日、ロイター通信に、日銀が円安対策として連続的な利上げを検討すべきかどうか問われ、植田和男総裁が「適切な対応」を取ると期待していると話した。
-- [Yahoo!ファイナンス] 中央銀行のコミュニケーション戦略④：ウォーシュFRB議長のジャクソンホール会議での発言(NRI研究員の時事解説) (08/31 07:48)
-  概要: 米連邦準備制度理事会（FRB）のウォーシュ議長は8月28日、ジャクソンホール会議で講演した。この中でウォーシュ議長は、「物価安定の観点から見ると、（物価指標の）数値はより懸念される状況にある（But
-- [Investing.com日本] NYの視点：【今週の注目イベント】米雇用統計、ISM製造業、ベージュブック、各国PMI (08/31 07:45)
+- [Investing.com日本] 日本精機：PBR0.6倍台・配当利回り3%超の割安水準、3期連続増配と構造改革の進展を評価 (08/31 16:15)
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Investing.com日本] AonがKKR傘下のUSI保険を約170億ドルで買収へ――WSJ報道 (08/31 01:51)
+- [ZUU online] 高級車購入による節税の仕組みと効果を最大化する方法 (08/31 15:00)
+  概要: 経営者や事業主の間で「高級車を購入すると節税になる」という話を耳にしたことがある方は多いでしょう。決算期が近づくと、節税対策として高級外車や中古車の購入を検討する企業が増加します。しかし、単に高い車を
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [Investing.com日本] ウクライナ、防衛技術ファンドへの米国投資を求める＝FT (08/31 03:57)
+- [Yahoo!ファイナンス] 「全世界半導体」か米国「SOX」の投信どっちが儲かる？ 台湾セミコンダクターもASMLもまとめ買い放置で爆益狙い【NISA応援】(AERA DIGITAL) (08/31 17:30)
+  概要: エヌビディアは日本の半導体株以上に上昇してきた。欲をプラスして「世界の」半導体株でも爆益を狙いたい人のために2種類の投資信託を比較。台湾上場のTSMCや韓国のSKハイニックス、日本の半導体株も入った「
+- [Investing.com日本] 中東情勢の激化で原油が急騰、欧州株は下落 (08/31 16:09)
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
