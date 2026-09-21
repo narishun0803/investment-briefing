@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年09月21日 07:43 JST</span>
+    <span class="updated">更新: 2026年09月21日 17:02 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">65,018.95 <span class="tile-unit">pt</span></div>
+          <div class="tile-change up">
+            +882.70&nbsp;&nbsp;+1.38%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">426.3 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -1.10&nbsp;&nbsp;-0.26%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">157.24 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +1.11&nbsp;&nbsp;+0.71%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">51,682.64 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">156.97 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.85&nbsp;&nbsp;+0.54%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.998 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">96.47 <span class="tile-unit">USD</span></div>
-          <div class="tile-change down">
-            -3.83&nbsp;&nbsp;-3.82%
+          <div class="tile-price">94.19 <span class="tile-unit">USD</span></div>
+          <div class="tile-change flat">
+            +0.00&nbsp;&nbsp;+0.00%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4414.60 <span class="tile-unit">USD</span></div>
-          <div class="tile-change down">
-            -10.30&nbsp;&nbsp;-0.23%
+          <div class="tile-price">4386.00 <span class="tile-unit">USD</span></div>
+          <div class="tile-change flat">
+            +0.00&nbsp;&nbsp;+0.00%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">65,018.95 <span class="tile-unit">pt</span></div>
-          <div class="tile-change up">
-            +882.70&nbsp;&nbsp;+1.38%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">426.3 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -1.10&nbsp;&nbsp;-0.26%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -915,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (13件)</div>
+    <div class="card-title">📰 最新ニュース (14件)</div>
     
     
     
@@ -925,52 +925,30 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📈 マーケット全般 (7件)</div>
+          <div class="news-group-title">📈 マーケット全般 (5件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1685997" target="_blank" rel="noopener">ジェフリーズ、S&P 500強気維持―2027年末に9,000到達を予測</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1686152" target="_blank" rel="noopener">BancoBPMの株価3%超上昇、UniCredit・アグリコルの共同買収検討報道受け</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>09/21 07:03</span>
+                <span>09/21 16:30</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1685995" target="_blank" rel="noopener">中間選挙：株式市場の歴史的パターンと現在の織り込み状況</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>09/21 07:01</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1685978" target="_blank" rel="noopener">株式市場のバリュエーションに「重大なリスク」をもたらす3つの要因</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>09/20 20:19</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/303217" target="_blank" rel="noopener">日々是相場［夕刊］――  2026年9月18日（金）</a>
+                <a href="https://zuuonline.com/archives/303224" target="_blank" rel="noopener">FX/為替「ドル/円今日の見通し｜日銀は期待ほどタカ派とならず　為替介入に警戒しつつ円安地合いは続く」 外為どっとコム トゥデイ 2026年9月21日号</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">ZUU online</span>
-                <span>09/18 19:30</span>
+                <span>09/21 10:32</span>
               </div>
               
-              <div class="news-summary">日経平均 65,018.95円 △882.70円 為替 １ドル＝157.12円 売買高（東証プライム、以下同） 31億5,518万株 売買代金 10兆3969億99百万円 値上り銘柄数 511銘柄 値…</div>
+              <div class="news-summary">主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年9月21日8時10分執筆・監修：株式会社外…</div>
               
             </div>
             
@@ -1020,8 +998,21 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (2件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (3件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://news.yahoo.co.jp/articles/bebd3fd22ce8bba7932bb01a1eaa99d326997c1c?source=rss" target="_blank" rel="noopener">金利上昇で前提が変わるいま「みなさん、やってますよ」に流されない　「お金の置き場所は自分の頭で決める」田内学(AERA DIGITAL)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>09/21 16:30</span>
+              </div>
+              
+              <div class="news-summary">物価高や円安、金利など、刻々と変わる私たちの経済環境。社会的金融教育家の田内学さんの連載「経済のミカタ」では、お金に縛られすぎず、日々の暮らしの“味方”になれるような、経済の新たな“見方”を示します</div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1056,8 +1047,30 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (1件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (3件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1686153" target="_blank" rel="noopener">ベレンツェン株が本日急騰、米サゼラック社による買収提案を発表</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>09/21 16:36</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1686148" target="_blank" rel="noopener">パーペチュアル、EQTによる修正買収提案を過小評価として拒否</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>09/21 16:31</span>
+              </div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1084,22 +1097,22 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1685981" target="_blank" rel="noopener">アップルとマイクロソフト株、どっちが買い？　「投資特化型AI」の回答</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1686144" target="_blank" rel="noopener">FTSE 100：イラン外交への期待で原油下落、英国株は上昇</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>09/20 21:46</span>
+                <span>09/21 16:14</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1685951" target="_blank" rel="noopener">今から買うべき日本の半導体株は？　「投資特化型AI」の結論</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1686124" target="_blank" rel="noopener">欧州株が反発、原油安が支援もドイツ政局混乱とECBタカ派が重荷</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>09/20 11:54</span>
+                <span>09/21 16:05</span>
               </div>
               
             </div>
@@ -1127,20 +1140,20 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-09-21 07:43）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-09-21 17:02）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 65,018.95 pt (+1.38%)
+- TOPIX (1306連動ETF): 426.3 円 (-0.26%)
+- ドル円: 157.24 円 (+0.71%)
 - S&P 500: 7,650.50 (+0.17%)
 - NASDAQ: 26,522.54 (+0.39%)
 - ダウ: 51,682.64 (-0.18%)
-- ドル円: 156.97 円 (+0.54%)
 - 米10年債利回り: 4.998 % (+1.03%)
-- WTI原油: 96.47 USD (-3.82%)
-- 金: 4414.60 USD (-0.23%)
-- 日経225: 65,018.95 pt (+1.38%)
-- TOPIX (1306連動ETF): 426.3 円 (-0.26%)
+- WTI原油: 94.19 USD (+0.00%)
+- 金: 4386.00 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1169,25 +1182,27 @@
   -1.91pt  Dell Technologies(DELL)  -3.46%  wt:0.72%  [Information Technology]
 
 【関連ニュース見出し】
-- [Investing.com日本] ジェフリーズ、S&P 500強気維持―2027年末に9,000到達を予測 (09/21 07:03)
-- [Investing.com日本] 中間選挙：株式市場の歴史的パターンと現在の織り込み状況 (09/21 07:01)
-- [Investing.com日本] 株式市場のバリュエーションに「重大なリスク」をもたらす3つの要因 (09/20 20:19)
-- [ZUU online] 日々是相場［夕刊］――  2026年9月18日（金） (09/18 19:30)
-  概要: 日経平均 65,018.95円 △882.70円 為替 １ドル＝157.12円 売買高（東証プライム、以下同） 31億5,518万株 売買代金 10兆3969億99百万円 値上り銘柄数 511銘柄 値
+- [Investing.com日本] BancoBPMの株価3%超上昇、UniCredit・アグリコルの共同買収検討報道受け (09/21 16:30)
+- [ZUU online] FX/為替「ドル/円今日の見通し｜日銀は期待ほどタカ派とならず　為替介入に警戒しつつ円安地合いは続く」 外為どっとコム トゥデイ 2026年9月21日号 (09/21 10:32)
+  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年9月21日8時10分執筆・監修：株式会社外
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
 - [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
   概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
+- [Yahoo!ファイナンス] 金利上昇で前提が変わるいま「みなさん、やってますよ」に流されない　「お金の置き場所は自分の頭で決める」田内学(AERA DIGITAL) (09/21 16:30)
+  概要: 物価高や円安、金利など、刻々と変わる私たちの経済環境。社会的金融教育家の田内学さんの連載「経済のミカタ」では、お金に縛られすぎず、日々の暮らしの“味方”になれるような、経済の新たな“見方”を示します
 - [ZUU online] お金を貯めるだけでは足りない、インフレ時代の資産教育 (09/20 10:00)
   概要: 本記事は、新井 亨氏の著書『トップ1%の富裕層が子どもに伝える 世界一のお金の教育』（KADOKAWA）の中から一部を抜粋・編集しています。 「お金を貯めなさい」は貧乏教育の典型 日本では長い間、子ど
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
+- [Investing.com日本] ベレンツェン株が本日急騰、米サゼラック社による買収提案を発表 (09/21 16:36)
+- [Investing.com日本] パーペチュアル、EQTによる修正買収提案を過小評価として拒否 (09/21 16:31)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [Investing.com日本] アップルとマイクロソフト株、どっちが買い？　「投資特化型AI」の回答 (09/20 21:46)
-- [Investing.com日本] 今から買うべき日本の半導体株は？　「投資特化型AI」の結論 (09/20 11:54)
+- [Investing.com日本] FTSE 100：イラン外交への期待で原油下落、英国株は上昇 (09/21 16:14)
+- [Investing.com日本] 欧州株が反発、原油安が支援もドイツ政局混乱とECBタカ派が重荷 (09/21 16:05)
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
@@ -1204,15 +1219,15 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 65,018.95 pt (+1.38%)
+- TOPIX (1306連動ETF): 426.3 円 (-0.26%)
+- ドル円: 157.24 円 (+0.71%)
 - S&P 500: 7,650.50 (+0.17%)
 - NASDAQ: 26,522.54 (+0.39%)
 - ダウ: 51,682.64 (-0.18%)
-- ドル円: 156.97 円 (+0.54%)
 - 米10年債利回り: 4.998 % (+1.03%)
-- WTI原油: 96.47 USD (-3.82%)
-- 金: 4414.60 USD (-0.23%)
-- 日経225: 65,018.95 pt (+1.38%)
-- TOPIX (1306連動ETF): 426.3 円 (-0.26%)
+- WTI原油: 94.19 USD (+0.00%)
+- 金: 4386.00 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1241,25 +1256,27 @@
   -1.91pt  Dell Technologies(DELL)  -3.46%  wt:0.72%  [Information Technology]
 
 【関連ニュース見出し】
-- [Investing.com日本] ジェフリーズ、S&P 500強気維持―2027年末に9,000到達を予測 (09/21 07:03)
-- [Investing.com日本] 中間選挙：株式市場の歴史的パターンと現在の織り込み状況 (09/21 07:01)
-- [Investing.com日本] 株式市場のバリュエーションに「重大なリスク」をもたらす3つの要因 (09/20 20:19)
-- [ZUU online] 日々是相場［夕刊］――  2026年9月18日（金） (09/18 19:30)
-  概要: 日経平均 65,018.95円 △882.70円 為替 １ドル＝157.12円 売買高（東証プライム、以下同） 31億5,518万株 売買代金 10兆3969億99百万円 値上り銘柄数 511銘柄 値
+- [Investing.com日本] BancoBPMの株価3%超上昇、UniCredit・アグリコルの共同買収検討報道受け (09/21 16:30)
+- [ZUU online] FX/為替「ドル/円今日の見通し｜日銀は期待ほどタカ派とならず　為替介入に警戒しつつ円安地合いは続く」 外為どっとコム トゥデイ 2026年9月21日号 (09/21 10:32)
+  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年9月21日8時10分執筆・監修：株式会社外
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
 - [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
   概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
+- [Yahoo!ファイナンス] 金利上昇で前提が変わるいま「みなさん、やってますよ」に流されない　「お金の置き場所は自分の頭で決める」田内学(AERA DIGITAL) (09/21 16:30)
+  概要: 物価高や円安、金利など、刻々と変わる私たちの経済環境。社会的金融教育家の田内学さんの連載「経済のミカタ」では、お金に縛られすぎず、日々の暮らしの“味方”になれるような、経済の新たな“見方”を示します
 - [ZUU online] お金を貯めるだけでは足りない、インフレ時代の資産教育 (09/20 10:00)
   概要: 本記事は、新井 亨氏の著書『トップ1%の富裕層が子どもに伝える 世界一のお金の教育』（KADOKAWA）の中から一部を抜粋・編集しています。 「お金を貯めなさい」は貧乏教育の典型 日本では長い間、子ど
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
+- [Investing.com日本] ベレンツェン株が本日急騰、米サゼラック社による買収提案を発表 (09/21 16:36)
+- [Investing.com日本] パーペチュアル、EQTによる修正買収提案を過小評価として拒否 (09/21 16:31)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [Investing.com日本] アップルとマイクロソフト株、どっちが買い？　「投資特化型AI」の回答 (09/20 21:46)
-- [Investing.com日本] 今から買うべき日本の半導体株は？　「投資特化型AI」の結論 (09/20 11:54)
+- [Investing.com日本] FTSE 100：イラン外交への期待で原油下落、英国株は上昇 (09/21 16:14)
+- [Investing.com日本] 欧州株が反発、原油安が支援もドイツ政局混乱とECBタカ派が重荷 (09/21 16:05)
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
@@ -1270,15 +1287,15 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 65,018.95 pt (+1.38%)
+- TOPIX (1306連動ETF): 426.3 円 (-0.26%)
+- ドル円: 157.24 円 (+0.71%)
 - S&P 500: 7,650.50 (+0.17%)
 - NASDAQ: 26,522.54 (+0.39%)
 - ダウ: 51,682.64 (-0.18%)
-- ドル円: 156.97 円 (+0.54%)
 - 米10年債利回り: 4.998 % (+1.03%)
-- WTI原油: 96.47 USD (-3.82%)
-- 金: 4414.60 USD (-0.23%)
-- 日経225: 65,018.95 pt (+1.38%)
-- TOPIX (1306連動ETF): 426.3 円 (-0.26%)
+- WTI原油: 94.19 USD (+0.00%)
+- 金: 4386.00 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1307,25 +1324,27 @@
   -1.91pt  Dell Technologies(DELL)  -3.46%  wt:0.72%  [Information Technology]
 
 【関連ニュース見出し】
-- [Investing.com日本] ジェフリーズ、S&P 500強気維持―2027年末に9,000到達を予測 (09/21 07:03)
-- [Investing.com日本] 中間選挙：株式市場の歴史的パターンと現在の織り込み状況 (09/21 07:01)
-- [Investing.com日本] 株式市場のバリュエーションに「重大なリスク」をもたらす3つの要因 (09/20 20:19)
-- [ZUU online] 日々是相場［夕刊］――  2026年9月18日（金） (09/18 19:30)
-  概要: 日経平均 65,018.95円 △882.70円 為替 １ドル＝157.12円 売買高（東証プライム、以下同） 31億5,518万株 売買代金 10兆3969億99百万円 値上り銘柄数 511銘柄 値
+- [Investing.com日本] BancoBPMの株価3%超上昇、UniCredit・アグリコルの共同買収検討報道受け (09/21 16:30)
+- [ZUU online] FX/為替「ドル/円今日の見通し｜日銀は期待ほどタカ派とならず　為替介入に警戒しつつ円安地合いは続く」 外為どっとコム トゥデイ 2026年9月21日号 (09/21 10:32)
+  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年9月21日8時10分執筆・監修：株式会社外
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
 - [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
   概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
+- [Yahoo!ファイナンス] 金利上昇で前提が変わるいま「みなさん、やってますよ」に流されない　「お金の置き場所は自分の頭で決める」田内学(AERA DIGITAL) (09/21 16:30)
+  概要: 物価高や円安、金利など、刻々と変わる私たちの経済環境。社会的金融教育家の田内学さんの連載「経済のミカタ」では、お金に縛られすぎず、日々の暮らしの“味方”になれるような、経済の新たな“見方”を示します
 - [ZUU online] お金を貯めるだけでは足りない、インフレ時代の資産教育 (09/20 10:00)
   概要: 本記事は、新井 亨氏の著書『トップ1%の富裕層が子どもに伝える 世界一のお金の教育』（KADOKAWA）の中から一部を抜粋・編集しています。 「お金を貯めなさい」は貧乏教育の典型 日本では長い間、子ど
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
+- [Investing.com日本] ベレンツェン株が本日急騰、米サゼラック社による買収提案を発表 (09/21 16:36)
+- [Investing.com日本] パーペチュアル、EQTによる修正買収提案を過小評価として拒否 (09/21 16:31)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [Investing.com日本] アップルとマイクロソフト株、どっちが買い？　「投資特化型AI」の回答 (09/20 21:46)
-- [Investing.com日本] 今から買うべき日本の半導体株は？　「投資特化型AI」の結論 (09/20 11:54)
+- [Investing.com日本] FTSE 100：イラン外交への期待で原油下落、英国株は上昇 (09/21 16:14)
+- [Investing.com日本] 欧州株が反発、原油安が支援もドイツ政局混乱とECBタカ派が重荷 (09/21 16:05)
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
