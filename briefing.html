@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年09月27日 08:11 JST</span>
+    <span class="updated">更新: 2026年09月27日 17:21 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">66,364.20 <span class="tile-unit">pt</span></div>
+          <div class="tile-change up">
+            +850.21&nbsp;&nbsp;+1.30%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">430.3 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +5.50&nbsp;&nbsp;+1.29%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">157.18 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -1.63&nbsp;&nbsp;-1.02%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">51,828.62 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">157.18 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -1.63&nbsp;&nbsp;-1.02%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">5.184 <span class="tile-unit">%</span></div>
@@ -604,8 +628,8 @@
         <div class="tile-name">WTI原油</div>
         
           <div class="tile-price">92.41 <span class="tile-unit">USD</span></div>
-          <div class="tile-change down">
-            -2.20&nbsp;&nbsp;-2.33%
+          <div class="tile-change flat">
+            +0.00&nbsp;&nbsp;+0.00%
           </div>
         
         
@@ -615,34 +639,10 @@
         <div class="tile-name">金</div>
         
           <div class="tile-price">4321.20 <span class="tile-unit">USD</span></div>
-          <div class="tile-change up">
-            +23.20&nbsp;&nbsp;+0.54%
+          <div class="tile-change flat">
+            +0.00&nbsp;&nbsp;+0.00%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">66,364.20 <span class="tile-unit">pt</span></div>
-          <div class="tile-change up">
-            +850.21&nbsp;&nbsp;+1.30%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">430.3 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +5.50&nbsp;&nbsp;+1.29%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -915,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (13件)</div>
+    <div class="card-title">📰 最新ニュース (15件)</div>
     
     
     
@@ -925,19 +925,30 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📈 マーケット全般 (6件)</div>
+          <div class="news-group-title">📈 マーケット全般 (7件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/3c71db5a44c432da94dd636f2da7a00dae0c8770?source=rss" target="_blank" rel="noopener">シボレーから漫画の影響でアルファ ロメオへ！ 辿り着いた「フィアット パンダ3」の流用チューン(Auto Messe Web)</a>
+                <a href="https://news.yahoo.co.jp/articles/52e7a1685680991d0907e98fb9ab0c4569b7f604?source=rss" target="_blank" rel="noopener">「ここまで下げて毎日通勤!?」49ccのリトルカブを“ペッタペタ”にローダウン【原付カスタム】(MotorFan)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>09/27 08:10</span>
+                <span>09/27 17:00</span>
               </div>
               
-              <div class="news-summary">18日連続の長雨が続いた関東地方。群馬県の館林城ゆめひろばで開催された「のらぱんだ会」のオフ会「ぱんだら」には、初代から3代目まで、3世代42台のフィアット・パンダが集結した。その中でローダウンとキャ…</div>
+              <div class="news-summary">十国峠で出会ったのは、タイヤがフェンダーに飲み込まれそうなほど低いリトルカブ。前後14インチという小柄な車体をさらにローダウンしながら、フェンダーやレッグシールドなど“カブらしさ”はしっかり残している…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1692858" target="_blank" rel="noopener">次世代CPUで注目の富士通、「AI銘柄」として株価急騰の可能性は？</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>09/27 08:45</span>
+              </div>
               
             </div>
             
@@ -1081,8 +1092,19 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (3件)</div>
+          <div class="news-group-title">📌 その他 (4件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1692904" target="_blank" rel="noopener">アナリストのAI関連主要動向5選：MetaにとってMuse AIが重要な触媒に、MSTFは格上げ</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>09/27 14:15</span>
+              </div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1131,20 +1153,20 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-09-27 08:11）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-09-27 17:21）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 66,364.20 pt (+1.30%)
+- TOPIX (1306連動ETF): 430.3 円 (+1.29%)
+- ドル円: 157.18 円 (-1.02%)
 - S&P 500: 7,743.41 (+0.51%)
 - NASDAQ: 27,068.72 (+0.48%)
 - ダウ: 51,828.62 (+0.93%)
-- ドル円: 157.18 円 (-1.02%)
 - 米10年債利回り: 5.184 % (+0.43%)
-- WTI原油: 92.41 USD (-2.33%)
-- 金: 4321.20 USD (+0.54%)
-- 日経225: 66,364.20 pt (+1.30%)
-- TOPIX (1306連動ETF): 430.3 円 (+1.29%)
+- WTI原油: 92.41 USD (+0.00%)
+- 金: 4321.20 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1173,8 +1195,9 @@
   -1.16pt  CrowdStrike(CRWD)  -2.90%  wt:0.52%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] シボレーから漫画の影響でアルファ ロメオへ！ 辿り着いた「フィアット パンダ3」の流用チューン(Auto Messe Web) (09/27 08:10)
-  概要: 18日連続の長雨が続いた関東地方。群馬県の館林城ゆめひろばで開催された「のらぱんだ会」のオフ会「ぱんだら」には、初代から3代目まで、3世代42台のフィアット・パンダが集結した。その中でローダウンとキャ
+- [Yahoo!ファイナンス] 「ここまで下げて毎日通勤!?」49ccのリトルカブを“ペッタペタ”にローダウン【原付カスタム】(MotorFan) (09/27 17:00)
+  概要: 十国峠で出会ったのは、タイヤがフェンダーに飲み込まれそうなほど低いリトルカブ。前後14インチという小柄な車体をさらにローダウンしながら、フェンダーやレッグシールドなど“カブらしさ”はしっかり残している
+- [Investing.com日本] 次世代CPUで注目の富士通、「AI銘柄」として株価急騰の可能性は？ (09/27 08:45)
 - [ZUU online] 日々是相場［夕刊］――  2026年9月25日（金） (09/25 19:30)
   概要: 日経平均 66,364.20円 △850.21円 為替 １ドル＝158.15円 売買高（東証プライム、以下同） 24億2,894万株 売買代金 7兆8008億81百万円 値上り銘柄数 1,119銘柄 
 - [ZUU online] 上場企業のM＆Aに「変調」か？ 金額ダウンが顕著に (09/25 17:32)
@@ -1191,6 +1214,7 @@
 - [Investing.com日本] ゴールド・フィールズ、ノーザン・スターに買収打診＝ブルームバーグ (09/26 21:48)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
+- [Investing.com日本] アナリストのAI関連主要動向5選：MetaにとってMuse AIが重要な触媒に、MSTFは格上げ (09/27 14:15)
 - [Investing.com日本] 【更新】1週間で36％急騰の半導体「アーム」株は買いか？　「投資特化型AI」の結論 (09/26 17:57)
 - [ZUU online] S造、RC造、SRC造、木造とは？ 構造別のメリット・デメリットや選び方 (09/25 18:02)
   概要: 不動産投資における構造理解の重要性 建物の構造は、デザインや間取りだけでなく、不動産投資の収益性にも影響がある要素です。構造の違いは、次のような項目に影響します。 入居者の満足度（遮音性などの快適さが
@@ -1210,15 +1234,15 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 66,364.20 pt (+1.30%)
+- TOPIX (1306連動ETF): 430.3 円 (+1.29%)
+- ドル円: 157.18 円 (-1.02%)
 - S&P 500: 7,743.41 (+0.51%)
 - NASDAQ: 27,068.72 (+0.48%)
 - ダウ: 51,828.62 (+0.93%)
-- ドル円: 157.18 円 (-1.02%)
 - 米10年債利回り: 5.184 % (+0.43%)
-- WTI原油: 92.41 USD (-2.33%)
-- 金: 4321.20 USD (+0.54%)
-- 日経225: 66,364.20 pt (+1.30%)
-- TOPIX (1306連動ETF): 430.3 円 (+1.29%)
+- WTI原油: 92.41 USD (+0.00%)
+- 金: 4321.20 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1247,8 +1271,9 @@
   -1.16pt  CrowdStrike(CRWD)  -2.90%  wt:0.52%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] シボレーから漫画の影響でアルファ ロメオへ！ 辿り着いた「フィアット パンダ3」の流用チューン(Auto Messe Web) (09/27 08:10)
-  概要: 18日連続の長雨が続いた関東地方。群馬県の館林城ゆめひろばで開催された「のらぱんだ会」のオフ会「ぱんだら」には、初代から3代目まで、3世代42台のフィアット・パンダが集結した。その中でローダウンとキャ
+- [Yahoo!ファイナンス] 「ここまで下げて毎日通勤!?」49ccのリトルカブを“ペッタペタ”にローダウン【原付カスタム】(MotorFan) (09/27 17:00)
+  概要: 十国峠で出会ったのは、タイヤがフェンダーに飲み込まれそうなほど低いリトルカブ。前後14インチという小柄な車体をさらにローダウンしながら、フェンダーやレッグシールドなど“カブらしさ”はしっかり残している
+- [Investing.com日本] 次世代CPUで注目の富士通、「AI銘柄」として株価急騰の可能性は？ (09/27 08:45)
 - [ZUU online] 日々是相場［夕刊］――  2026年9月25日（金） (09/25 19:30)
   概要: 日経平均 66,364.20円 △850.21円 為替 １ドル＝158.15円 売買高（東証プライム、以下同） 24億2,894万株 売買代金 7兆8008億81百万円 値上り銘柄数 1,119銘柄 
 - [ZUU online] 上場企業のM＆Aに「変調」か？ 金額ダウンが顕著に (09/25 17:32)
@@ -1265,6 +1290,7 @@
 - [Investing.com日本] ゴールド・フィールズ、ノーザン・スターに買収打診＝ブルームバーグ (09/26 21:48)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
+- [Investing.com日本] アナリストのAI関連主要動向5選：MetaにとってMuse AIが重要な触媒に、MSTFは格上げ (09/27 14:15)
 - [Investing.com日本] 【更新】1週間で36％急騰の半導体「アーム」株は買いか？　「投資特化型AI」の結論 (09/26 17:57)
 - [ZUU online] S造、RC造、SRC造、木造とは？ 構造別のメリット・デメリットや選び方 (09/25 18:02)
   概要: 不動産投資における構造理解の重要性 建物の構造は、デザインや間取りだけでなく、不動産投資の収益性にも影響がある要素です。構造の違いは、次のような項目に影響します。 入居者の満足度（遮音性などの快適さが
@@ -1278,15 +1304,15 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 66,364.20 pt (+1.30%)
+- TOPIX (1306連動ETF): 430.3 円 (+1.29%)
+- ドル円: 157.18 円 (-1.02%)
 - S&P 500: 7,743.41 (+0.51%)
 - NASDAQ: 27,068.72 (+0.48%)
 - ダウ: 51,828.62 (+0.93%)
-- ドル円: 157.18 円 (-1.02%)
 - 米10年債利回り: 5.184 % (+0.43%)
-- WTI原油: 92.41 USD (-2.33%)
-- 金: 4321.20 USD (+0.54%)
-- 日経225: 66,364.20 pt (+1.30%)
-- TOPIX (1306連動ETF): 430.3 円 (+1.29%)
+- WTI原油: 92.41 USD (+0.00%)
+- 金: 4321.20 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1315,8 +1341,9 @@
   -1.16pt  CrowdStrike(CRWD)  -2.90%  wt:0.52%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] シボレーから漫画の影響でアルファ ロメオへ！ 辿り着いた「フィアット パンダ3」の流用チューン(Auto Messe Web) (09/27 08:10)
-  概要: 18日連続の長雨が続いた関東地方。群馬県の館林城ゆめひろばで開催された「のらぱんだ会」のオフ会「ぱんだら」には、初代から3代目まで、3世代42台のフィアット・パンダが集結した。その中でローダウンとキャ
+- [Yahoo!ファイナンス] 「ここまで下げて毎日通勤!?」49ccのリトルカブを“ペッタペタ”にローダウン【原付カスタム】(MotorFan) (09/27 17:00)
+  概要: 十国峠で出会ったのは、タイヤがフェンダーに飲み込まれそうなほど低いリトルカブ。前後14インチという小柄な車体をさらにローダウンしながら、フェンダーやレッグシールドなど“カブらしさ”はしっかり残している
+- [Investing.com日本] 次世代CPUで注目の富士通、「AI銘柄」として株価急騰の可能性は？ (09/27 08:45)
 - [ZUU online] 日々是相場［夕刊］――  2026年9月25日（金） (09/25 19:30)
   概要: 日経平均 66,364.20円 △850.21円 為替 １ドル＝158.15円 売買高（東証プライム、以下同） 24億2,894万株 売買代金 7兆8008億81百万円 値上り銘柄数 1,119銘柄 
 - [ZUU online] 上場企業のM＆Aに「変調」か？ 金額ダウンが顕著に (09/25 17:32)
@@ -1333,6 +1360,7 @@
 - [Investing.com日本] ゴールド・フィールズ、ノーザン・スターに買収打診＝ブルームバーグ (09/26 21:48)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
+- [Investing.com日本] アナリストのAI関連主要動向5選：MetaにとってMuse AIが重要な触媒に、MSTFは格上げ (09/27 14:15)
 - [Investing.com日本] 【更新】1週間で36％急騰の半導体「アーム」株は買いか？　「投資特化型AI」の結論 (09/26 17:57)
 - [ZUU online] S造、RC造、SRC造、木造とは？ 構造別のメリット・デメリットや選び方 (09/25 18:02)
   概要: 不動産投資における構造理解の重要性 建物の構造は、デザインや間取りだけでなく、不動産投資の収益性にも影響がある要素です。構造の違いは、次のような項目に影響します。 入居者の満足度（遮音性などの快適さが
