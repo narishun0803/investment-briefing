@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年10月03日 09:01 JST</span>
+    <span class="updated">更新: 2026年10月03日 17:18 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">68,309.46 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -647.26&nbsp;&nbsp;-0.94%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">430.2 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -4.20&nbsp;&nbsp;-0.97%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">157.83 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -0.10&nbsp;&nbsp;-0.06%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">51,176.96 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">157.83 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.27&nbsp;&nbsp;+0.17%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">5.277 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">91.26 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">91.11 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -1.61&nbsp;&nbsp;-1.73%
+            -1.76&nbsp;&nbsp;-1.90%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4172.10 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4162.30 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -30.20&nbsp;&nbsp;-0.72%
+            -40.00&nbsp;&nbsp;-0.95%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">68,956.72 <span class="tile-unit">pt</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">430.2 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -4.20&nbsp;&nbsp;-0.97%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -765,12 +765,130 @@
 
         <div class="contrib-sub">
           <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/NVDA:NASDAQ" target="_blank" rel="noopener">NVDA</a>
+                <span class="contrib-sector">Nvidia</span>
+              </td>
+              <td class="up">+11.21</td>
+              <td class="up">+1.34%</td>
+              <td style="color:var(--text2)">10.92%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/TSLA:NASDAQ" target="_blank" rel="noopener">TSLA</a>
+                <span class="contrib-sector">Tesla, Inc.</span>
+              </td>
+              <td class="up">+10.54</td>
+              <td class="up">+4.65%</td>
+              <td style="color:var(--text2)">2.95%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOG:NASDAQ" target="_blank" rel="noopener">GOOG</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="up">+10.40</td>
+              <td class="up">+1.62%</td>
+              <td style="color:var(--text2)">8.39%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOGL:NASDAQ" target="_blank" rel="noopener">GOOGL</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="up">+10.08</td>
+              <td class="up">+1.56%</td>
+              <td style="color:var(--text2)">8.45%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AVGO:NASDAQ" target="_blank" rel="noopener">AVGO</a>
+                <span class="contrib-sector">Broadcom</span>
+              </td>
+              <td class="up">+8.69</td>
+              <td class="up">+3.35%</td>
+              <td style="color:var(--text2)">3.39%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
 
         <div class="contrib-sub">
           <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/MU:NASDAQ" target="_blank" rel="noopener">MU</a>
+                <span class="contrib-sector">Micron Technology</span>
+              </td>
+              <td class="down">-3.86</td>
+              <td class="down">-2.05%</td>
+              <td style="color:var(--text2)">2.46%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/SNDK:NASDAQ" target="_blank" rel="noopener">SNDK</a>
+                <span class="contrib-sector">Sandisk</span>
+              </td>
+              <td class="down">-1.52</td>
+              <td class="down">-3.79%</td>
+              <td style="color:var(--text2)">0.52%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/JNJ:NYSE" target="_blank" rel="noopener">JNJ</a>
+                <span class="contrib-sector">Johnson & Johnson</span>
+              </td>
+              <td class="down">-1.02</td>
+              <td class="down">-1.02%</td>
+              <td style="color:var(--text2)">1.31%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/LLY:NYSE" target="_blank" rel="noopener">LLY</a>
+                <span class="contrib-sector">Lilly (Eli)</span>
+              </td>
+              <td class="down">-0.99</td>
+              <td class="down">-0.61%</td>
+              <td style="color:var(--text2)">2.12%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/INTC:NASDAQ" target="_blank" rel="noopener">INTC</a>
+                <span class="contrib-sector">Intel</span>
+              </td>
+              <td class="down">-0.56</td>
+              <td class="down">-0.56%</td>
+              <td style="color:var(--text2)">1.30%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
       </div>
 
@@ -779,7 +897,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (16件)</div>
+    <div class="card-title">📰 最新ニュース (14件)</div>
     
     
     
@@ -794,14 +912,12 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/b57579e80622428ab58ee401ca397709a910c5ef?source=rss" target="_blank" rel="noopener">なぜ「埼玉南東部の駅」が12ランクも爆上がりしたのか？「都心直通」「子育て環境」が評価された東武鉄道沿線の正体(Merkmal)</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1700562" target="_blank" rel="noopener">国内外の注目経済指標：米ISM・ミシガン大指数に注目、米金融政策とドル相場の行方を見極め</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>10/03 08:51</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>10/03 15:45</span>
               </div>
-              
-              <div class="news-summary">埼玉県の賃貸市場で、駅ごとの人気に興味深い変化が表れている。首都圏で人口が移動し、住む場所を選ぶ際の基準は、「東京都心までの所要時間」というひとつの指標だけで決まらない。都市の交通結節性、駅周辺に集ま…</div>
               
             </div>
             
@@ -967,21 +1083,8 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (4件)</div>
+          <div class="news-group-title">📌 その他 (2件)</div>
           <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/60aa40ffcddbac7674053db6c5ed33849fbbbc57?source=rss" target="_blank" rel="noopener">G7、備蓄1億バレル放出合意　燃料高対策でIEAと協調(共同通信)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>10/03 08:54</span>
-              </div>
-              
-              <div class="news-summary">【パリ共同】先進7カ国（G7）首脳は2日、テレビ会議で燃料価格高騰への対策を協議し、パートナー国や国際エネルギー機関（IEA）と協力し今後4カ月で軽油と原油の合計で1億バレルの備蓄を放出することを決め…</div>
-              
-            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -991,19 +1094,6 @@
                 <span class="news-source">Investing.com日本</span>
                 <span>10/03 04:28</span>
               </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/303148" target="_blank" rel="noopener">人件費を投資に変える、小さな会社の評価制度の作り方</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>10/02 11:00</span>
-              </div>
-              
-              <div class="news-summary">本記事は、大神 千穂氏の著書『小さな会社の「人材育成」はなぜやりきれないのか』（アスコム）の中から一部を抜粋・編集しています。 言語化で社内のムダとリスクが減る 人件費の投資効率がアップする 「どうし…</div>
               
             </div>
             
@@ -1030,20 +1120,20 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-10-03 09:01）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-10-03 17:18）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 68,309.46 pt (-0.94%)
+- TOPIX (1306連動ETF): 430.2 円 (-0.97%)
+- ドル円: 157.83 円 (-0.06%)
 - S&P 500: 7,722.72 (+0.73%)
 - NASDAQ: 27,190.86 (+1.19%)
 - ダウ: 51,176.96 (+0.49%)
-- ドル円: 157.83 円 (+0.17%)
 - 米10年債利回り: 5.277 % (+0.76%)
-- WTI原油: 91.26 USD (-1.73%)
-- 金: 4172.10 USD (-0.72%)
-- 日経225: 68,956.72 pt (+0.00%)
-- TOPIX (1306連動ETF): 430.2 円 (-0.97%)
+- WTI原油: 91.11 USD (-1.90%)
+- 金: 4162.30 USD (-0.95%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1057,11 +1147,20 @@
   -14.29円  ダイキン(6367)  -1.91%  [機械]
   -13.96円  ソフトバンクG(9984)  -5.83%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
+  ++11.21pt  Nvidia(NVDA)  +1.34%  wt:10.92%  [Information Technology]
+  ++10.54pt  Tesla, Inc.(TSLA)  +4.65%  wt:2.95%  [Consumer Discretionary]
+  ++10.40pt  Alphabet Inc. (Class C)(GOOG)  +1.62%  wt:8.39%  [Communication Services]
+  ++10.08pt  Alphabet Inc. (Class A)(GOOGL)  +1.56%  wt:8.45%  [Communication Services]
+  ++8.69pt  Broadcom(AVGO)  +3.35%  wt:3.39%  [Information Technology]
 ▼ S&P500 (下落寄与TOP5)
+  -3.86pt  Micron Technology(MU)  -2.05%  wt:2.46%  [Information Technology]
+  -1.52pt  Sandisk(SNDK)  -3.79%  wt:0.52%  [Information Technology]
+  -1.02pt  Johnson & Johnson(JNJ)  -1.02%  wt:1.31%  [Health Care]
+  -0.99pt  Lilly (Eli)(LLY)  -0.61%  wt:2.12%  [Health Care]
+  -0.56pt  Intel(INTC)  -0.56%  wt:1.30%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] なぜ「埼玉南東部の駅」が12ランクも爆上がりしたのか？「都心直通」「子育て環境」が評価された東武鉄道沿線の正体(Merkmal) (10/03 08:51)
-  概要: 埼玉県の賃貸市場で、駅ごとの人気に興味深い変化が表れている。首都圏で人口が移動し、住む場所を選ぶ際の基準は、「東京都心までの所要時間」というひとつの指標だけで決まらない。都市の交通結節性、駅周辺に集ま
+- [Investing.com日本] 国内外の注目経済指標：米ISM・ミシガン大指数に注目、米金融政策とドル相場の行方を見極め (10/03 15:45)
 - [Investing.com日本] 米国株式市場は続伸、雇用統計受け10月FOMC据え置き期待 (10/03 08:00)
 - [Investing.com日本] サウスポート・アクイジション・コープII、NYSE IPOで2億1000万ドルを調達 (10/03 05:27)
 - [ZUU online] 日々是相場［夕刊］――  2026年10月2日（金） (10/02 19:30)
@@ -1080,11 +1179,7 @@
 - [Investing.com日本] NscaleがIPOを前にMeta幹部ジャスティン・オソフスキー氏をCOOに任命 (10/03 04:43)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [Yahoo!ファイナンス] G7、備蓄1億バレル放出合意　燃料高対策でIEAと協調(共同通信) (10/03 08:54)
-  概要: 【パリ共同】先進7カ国（G7）首脳は2日、テレビ会議で燃料価格高騰への対策を協議し、パートナー国や国際エネルギー機関（IEA）と協力し今後4カ月で軽油と原油の合計で1億バレルの備蓄を放出することを決め
 - [Investing.com日本] Bayerがオハイオ州の新製造施設に22億ドルを投資へ (10/03 04:28)
-- [ZUU online] 人件費を投資に変える、小さな会社の評価制度の作り方 (10/02 11:00)
-  概要: 本記事は、大神 千穂氏の著書『小さな会社の「人材育成」はなぜやりきれないのか』（アスコム）の中から一部を抜粋・編集しています。 言語化で社内のムダとリスクが減る 人件費の投資効率がアップする 「どうし
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
@@ -1101,15 +1196,15 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 68,309.46 pt (-0.94%)
+- TOPIX (1306連動ETF): 430.2 円 (-0.97%)
+- ドル円: 157.83 円 (-0.06%)
 - S&P 500: 7,722.72 (+0.73%)
 - NASDAQ: 27,190.86 (+1.19%)
 - ダウ: 51,176.96 (+0.49%)
-- ドル円: 157.83 円 (+0.17%)
 - 米10年債利回り: 5.277 % (+0.76%)
-- WTI原油: 91.26 USD (-1.73%)
-- 金: 4172.10 USD (-0.72%)
-- 日経225: 68,956.72 pt (+0.00%)
-- TOPIX (1306連動ETF): 430.2 円 (-0.97%)
+- WTI原油: 91.11 USD (-1.90%)
+- 金: 4162.30 USD (-0.95%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1123,11 +1218,20 @@
   -14.29円  ダイキン(6367)  -1.91%  [機械]
   -13.96円  ソフトバンクG(9984)  -5.83%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
+  ++11.21pt  Nvidia(NVDA)  +1.34%  wt:10.92%  [Information Technology]
+  ++10.54pt  Tesla, Inc.(TSLA)  +4.65%  wt:2.95%  [Consumer Discretionary]
+  ++10.40pt  Alphabet Inc. (Class C)(GOOG)  +1.62%  wt:8.39%  [Communication Services]
+  ++10.08pt  Alphabet Inc. (Class A)(GOOGL)  +1.56%  wt:8.45%  [Communication Services]
+  ++8.69pt  Broadcom(AVGO)  +3.35%  wt:3.39%  [Information Technology]
 ▼ S&P500 (下落寄与TOP5)
+  -3.86pt  Micron Technology(MU)  -2.05%  wt:2.46%  [Information Technology]
+  -1.52pt  Sandisk(SNDK)  -3.79%  wt:0.52%  [Information Technology]
+  -1.02pt  Johnson & Johnson(JNJ)  -1.02%  wt:1.31%  [Health Care]
+  -0.99pt  Lilly (Eli)(LLY)  -0.61%  wt:2.12%  [Health Care]
+  -0.56pt  Intel(INTC)  -0.56%  wt:1.30%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] なぜ「埼玉南東部の駅」が12ランクも爆上がりしたのか？「都心直通」「子育て環境」が評価された東武鉄道沿線の正体(Merkmal) (10/03 08:51)
-  概要: 埼玉県の賃貸市場で、駅ごとの人気に興味深い変化が表れている。首都圏で人口が移動し、住む場所を選ぶ際の基準は、「東京都心までの所要時間」というひとつの指標だけで決まらない。都市の交通結節性、駅周辺に集ま
+- [Investing.com日本] 国内外の注目経済指標：米ISM・ミシガン大指数に注目、米金融政策とドル相場の行方を見極め (10/03 15:45)
 - [Investing.com日本] 米国株式市場は続伸、雇用統計受け10月FOMC据え置き期待 (10/03 08:00)
 - [Investing.com日本] サウスポート・アクイジション・コープII、NYSE IPOで2億1000万ドルを調達 (10/03 05:27)
 - [ZUU online] 日々是相場［夕刊］――  2026年10月2日（金） (10/02 19:30)
@@ -1146,11 +1250,7 @@
 - [Investing.com日本] NscaleがIPOを前にMeta幹部ジャスティン・オソフスキー氏をCOOに任命 (10/03 04:43)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [Yahoo!ファイナンス] G7、備蓄1億バレル放出合意　燃料高対策でIEAと協調(共同通信) (10/03 08:54)
-  概要: 【パリ共同】先進7カ国（G7）首脳は2日、テレビ会議で燃料価格高騰への対策を協議し、パートナー国や国際エネルギー機関（IEA）と協力し今後4カ月で軽油と原油の合計で1億バレルの備蓄を放出することを決め
 - [Investing.com日本] Bayerがオハイオ州の新製造施設に22億ドルを投資へ (10/03 04:28)
-- [ZUU online] 人件費を投資に変える、小さな会社の評価制度の作り方 (10/02 11:00)
-  概要: 本記事は、大神 千穂氏の著書『小さな会社の「人材育成」はなぜやりきれないのか』（アスコム）の中から一部を抜粋・編集しています。 言語化で社内のムダとリスクが減る 人件費の投資効率がアップする 「どうし
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
@@ -1161,15 +1261,15 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 68,309.46 pt (-0.94%)
+- TOPIX (1306連動ETF): 430.2 円 (-0.97%)
+- ドル円: 157.83 円 (-0.06%)
 - S&P 500: 7,722.72 (+0.73%)
 - NASDAQ: 27,190.86 (+1.19%)
 - ダウ: 51,176.96 (+0.49%)
-- ドル円: 157.83 円 (+0.17%)
 - 米10年債利回り: 5.277 % (+0.76%)
-- WTI原油: 91.26 USD (-1.73%)
-- 金: 4172.10 USD (-0.72%)
-- 日経225: 68,956.72 pt (+0.00%)
-- TOPIX (1306連動ETF): 430.2 円 (-0.97%)
+- WTI原油: 91.11 USD (-1.90%)
+- 金: 4162.30 USD (-0.95%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1183,11 +1283,20 @@
   -14.29円  ダイキン(6367)  -1.91%  [機械]
   -13.96円  ソフトバンクG(9984)  -5.83%  [通信]
 ▼ S&P500 (上昇寄与TOP5)
+  ++11.21pt  Nvidia(NVDA)  +1.34%  wt:10.92%  [Information Technology]
+  ++10.54pt  Tesla, Inc.(TSLA)  +4.65%  wt:2.95%  [Consumer Discretionary]
+  ++10.40pt  Alphabet Inc. (Class C)(GOOG)  +1.62%  wt:8.39%  [Communication Services]
+  ++10.08pt  Alphabet Inc. (Class A)(GOOGL)  +1.56%  wt:8.45%  [Communication Services]
+  ++8.69pt  Broadcom(AVGO)  +3.35%  wt:3.39%  [Information Technology]
 ▼ S&P500 (下落寄与TOP5)
+  -3.86pt  Micron Technology(MU)  -2.05%  wt:2.46%  [Information Technology]
+  -1.52pt  Sandisk(SNDK)  -3.79%  wt:0.52%  [Information Technology]
+  -1.02pt  Johnson & Johnson(JNJ)  -1.02%  wt:1.31%  [Health Care]
+  -0.99pt  Lilly (Eli)(LLY)  -0.61%  wt:2.12%  [Health Care]
+  -0.56pt  Intel(INTC)  -0.56%  wt:1.30%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] なぜ「埼玉南東部の駅」が12ランクも爆上がりしたのか？「都心直通」「子育て環境」が評価された東武鉄道沿線の正体(Merkmal) (10/03 08:51)
-  概要: 埼玉県の賃貸市場で、駅ごとの人気に興味深い変化が表れている。首都圏で人口が移動し、住む場所を選ぶ際の基準は、「東京都心までの所要時間」というひとつの指標だけで決まらない。都市の交通結節性、駅周辺に集ま
+- [Investing.com日本] 国内外の注目経済指標：米ISM・ミシガン大指数に注目、米金融政策とドル相場の行方を見極め (10/03 15:45)
 - [Investing.com日本] 米国株式市場は続伸、雇用統計受け10月FOMC据え置き期待 (10/03 08:00)
 - [Investing.com日本] サウスポート・アクイジション・コープII、NYSE IPOで2億1000万ドルを調達 (10/03 05:27)
 - [ZUU online] 日々是相場［夕刊］――  2026年10月2日（金） (10/02 19:30)
@@ -1206,11 +1315,7 @@
 - [Investing.com日本] NscaleがIPOを前にMeta幹部ジャスティン・オソフスキー氏をCOOに任命 (10/03 04:43)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [Yahoo!ファイナンス] G7、備蓄1億バレル放出合意　燃料高対策でIEAと協調(共同通信) (10/03 08:54)
-  概要: 【パリ共同】先進7カ国（G7）首脳は2日、テレビ会議で燃料価格高騰への対策を協議し、パートナー国や国際エネルギー機関（IEA）と協力し今後4カ月で軽油と原油の合計で1億バレルの備蓄を放出することを決め
 - [Investing.com日本] Bayerがオハイオ州の新製造施設に22億ドルを投資へ (10/03 04:28)
-- [ZUU online] 人件費を投資に変える、小さな会社の評価制度の作り方 (10/02 11:00)
-  概要: 本記事は、大神 千穂氏の著書『小さな会社の「人材育成」はなぜやりきれないのか』（アスコム）の中から一部を抜粋・編集しています。 言語化で社内のムダとリスクが減る 人件費の投資効率がアップする 「どうし
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
