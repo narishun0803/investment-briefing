@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年10月30日 09:27 JST</span>
+    <span class="updated">更新: 2026年10月30日 17:46 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -546,6 +546,41 @@
     <div class="market-grid">
       
       <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">63,290.11 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -1369.36&nbsp;&nbsp;-2.12%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">416.4 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -4.90&nbsp;&nbsp;-1.16%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">157.33 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -0.50&nbsp;&nbsp;-0.32%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
         
           <div class="tile-price">7,720.39 <span class="tile-unit"></span></div>
@@ -561,13 +596,13 @@
         
           <div class="tile-price">26,184.72 <span class="tile-unit"></span></div>
           <div class="tile-change down">
-            -365.12&nbsp;&nbsp;-1.38%
+            -365.13&nbsp;&nbsp;-1.38%
           </div>
         
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">52,342.56 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">157.74 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -0.09&nbsp;&nbsp;-0.06%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.989 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">102.72 <span class="tile-unit">USD</span></div>
-          <div class="tile-change down">
-            -0.06&nbsp;&nbsp;-0.06%
+          <div class="tile-price">103.87 <span class="tile-unit">USD</span></div>
+          <div class="tile-change up">
+            +1.87&nbsp;&nbsp;+1.83%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4023.50 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">3997.20 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -28.10&nbsp;&nbsp;-0.69%
+            -34.20&nbsp;&nbsp;-0.85%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">63,889.42 <span class="tile-unit">pt</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">421.0 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -0.30&nbsp;&nbsp;-0.07%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -672,8 +672,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="up">+52.50</td>
-              <td class="up">+1.93%</td>
+              <td class="up">+58.57</td>
+              <td class="up">+2.15%</td>
             </tr>
             
             <tr>
@@ -681,8 +681,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/9983:TYO" target="_blank" rel="noopener">ファーストリテイリング</a>
                 <span class="contrib-sector">小売</span>
               </td>
-              <td class="up">+51.79</td>
-              <td class="up">+1.96%</td>
+              <td class="up">+55.00</td>
+              <td class="up">+2.09%</td>
             </tr>
             
             <tr>
@@ -690,8 +690,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6098:TYO" target="_blank" rel="noopener">リクルートHD</a>
                 <span class="contrib-sector">サービス</span>
               </td>
-              <td class="up">+12.50</td>
-              <td class="up">+1.85%</td>
+              <td class="up">+11.07</td>
+              <td class="up">+1.64%</td>
             </tr>
             
             <tr>
@@ -699,17 +699,17 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/4661:TYO" target="_blank" rel="noopener">オリエンタルランド</a>
                 <span class="contrib-sector">サービス</span>
               </td>
-              <td class="up">+9.64</td>
-              <td class="up">+8.52%</td>
+              <td class="up">+9.57</td>
+              <td class="up">+8.45%</td>
             </tr>
             
             <tr>
               <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/7974:TYO" target="_blank" rel="noopener">任天堂</a>
-                <span class="contrib-sector">電機</span>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/4502:TYO" target="_blank" rel="noopener">武田薬品</a>
+                <span class="contrib-sector">医薬品</span>
               </td>
-              <td class="up">+8.21</td>
-              <td class="up">+2.82%</td>
+              <td class="up">+6.43</td>
+              <td class="up">+2.78%</td>
             </tr>
             
             </tbody>
@@ -731,8 +731,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6857:TYO" target="_blank" rel="noopener">アドバンテスト</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-68.21</td>
-              <td class="down">-5.16%</td>
+              <td class="down">-77.50</td>
+              <td class="down">-5.86%</td>
             </tr>
             
             <tr>
@@ -740,8 +740,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6981:TYO" target="_blank" rel="noopener">村田製作所</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-15.79</td>
-              <td class="down">-6.42%</td>
+              <td class="down">-19.00</td>
+              <td class="down">-7.72%</td>
             </tr>
             
             <tr>
@@ -749,8 +749,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/8035:TYO" target="_blank" rel="noopener">東京エレクトロン</a>
                 <span class="contrib-sector">半導体製造装置</span>
               </td>
-              <td class="down">-12.36</td>
-              <td class="down">-3.45%</td>
+              <td class="down">-18.61</td>
+              <td class="down">-5.19%</td>
             </tr>
             
             <tr>
@@ -758,8 +758,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/9984:TYO" target="_blank" rel="noopener">ソフトバンクG</a>
                 <span class="contrib-sector">通信</span>
               </td>
-              <td class="down">-6.96</td>
-              <td class="down">-4.09%</td>
+              <td class="down">-10.14</td>
+              <td class="down">-5.96%</td>
             </tr>
             
             <tr>
@@ -767,8 +767,8 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6762:TYO" target="_blank" rel="noopener">TDK</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-4.79</td>
-              <td class="down">-4.83%</td>
+              <td class="down">-7.14</td>
+              <td class="down">-7.22%</td>
             </tr>
             
             </tbody>
@@ -783,12 +783,130 @@
 
         <div class="contrib-sub">
           <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/LLY:NYSE" target="_blank" rel="noopener">LLY</a>
+                <span class="contrib-sector">Lilly (Eli)</span>
+              </td>
+              <td class="up">+13.08</td>
+              <td class="up">+6.63%</td>
+              <td style="color:var(--text2)">2.55%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AAPL:NASDAQ" target="_blank" rel="noopener">AAPL</a>
+                <span class="contrib-sector">Apple Inc.</span>
+              </td>
+              <td class="up">+12.12</td>
+              <td class="up">+1.48%</td>
+              <td style="color:var(--text2)">10.60%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/META:NASDAQ" target="_blank" rel="noopener">META</a>
+                <span class="contrib-sector">Meta Platforms</span>
+              </td>
+              <td class="up">+5.04</td>
+              <td class="up">+1.96%</td>
+              <td style="color:var(--text2)">3.32%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/MA:NYSE" target="_blank" rel="noopener">MA</a>
+                <span class="contrib-sector">Mastercard</span>
+              </td>
+              <td class="up">+3.74</td>
+              <td class="up">+4.16%</td>
+              <td style="color:var(--text2)">1.16%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/WMT:NASDAQ" target="_blank" rel="noopener">WMT</a>
+                <span class="contrib-sector">Walmart</span>
+              </td>
+              <td class="up">+3.22</td>
+              <td class="up">+2.09%</td>
+              <td style="color:var(--text2)">1.99%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
 
         <div class="contrib-sub">
           <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOGL:NASDAQ" target="_blank" rel="noopener">GOOGL</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="down">-70.87</td>
+              <td class="down">-12.64%</td>
+              <td style="color:var(--text2)">7.24%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOG:NASDAQ" target="_blank" rel="noopener">GOOG</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="down">-68.44</td>
+              <td class="down">-12.29%</td>
+              <td style="color:var(--text2)">7.19%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AMZN:NASDAQ" target="_blank" rel="noopener">AMZN</a>
+                <span class="contrib-sector">Amazon</span>
+              </td>
+              <td class="down">-18.16</td>
+              <td class="down">-4.25%</td>
+              <td style="color:var(--text2)">5.52%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/MU:NASDAQ" target="_blank" rel="noopener">MU</a>
+                <span class="contrib-sector">Micron Technology</span>
+              </td>
+              <td class="down">-8.62</td>
+              <td class="down">-4.98%</td>
+              <td style="color:var(--text2)">2.24%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/NVDA:NASDAQ" target="_blank" rel="noopener">NVDA</a>
+                <span class="contrib-sector">Nvidia</span>
+              </td>
+              <td class="down">-6.64</td>
+              <td class="down">-0.80%</td>
+              <td style="color:var(--text2)">10.74%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
       </div>
 
@@ -812,101 +930,112 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/f7a1a967c572bf3441eaa73c9013d05885ccfa9c?source=rss" target="_blank" rel="noopener">東証、827円安(共同通信)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>10/30 09:23</span>
-              </div>
-              
-              <div class="news-summary">30日の東京株式市場の日経平均株価（225種）は午前9時15分現在、前日終値比827円64銭安の6万3831円83銭となった。</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/be0efdd5a0bc09fb1e52ae67a21a2be95cf48968?source=rss" target="_blank" rel="noopener">鉱工業生産2.2％上昇　9月、3カ月ぶりプラス(共同通信)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>10/30 09:17</span>
-              </div>
-              
-              <div class="news-summary">経済産業省が30日発表した9月の鉱工業生産指数速報（2020年＝100、季節調整済み）は前月より2.2％上昇し、104.1だった。プラスは3カ月ぶり。基調判断は「生産は一進一退」で据え置いた。 全15…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/b764d4153b167cb79fc37be77d6fadc1a59a48b9?source=rss" target="_blank" rel="noopener">東京株式　30日09時15分　(共同通信)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>10/30 09:16</span>
-              </div>
-              
-              <div class="news-summary">＜日経平均＞ 63831円83銭 前日比 －827円64銭 ＜TOPIX＞ 3999.61 前日比 －03.67</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1733770" target="_blank" rel="noopener">米国株式市場は反落、一部企業決算受けAI投資への懸念再燃</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1734126" target="_blank" rel="noopener">BPの株価が本日上昇した理由とは</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>10/30 09:15</span>
+                <span>10/30 17:31</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1733772" target="_blank" rel="noopener">29日のNY市場は反落</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1734116" target="_blank" rel="noopener">サンディスクの株価が本日下落している理由とは</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>10/30 09:15</span>
+                <span>10/30 17:29</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/c2f104ece577d8a57c623a3d4ff42f354c2364be?source=rss" target="_blank" rel="noopener">東証、一時800円超安(共同通信)</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1734094" target="_blank" rel="noopener">Sanofiの株価が本日急騰した理由とは</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>10/30 09:12</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>10/30 17:15</span>
               </div>
-              
-              <div class="news-summary">30日の東京株式市場で日経平均株価（225種）の下げ幅が一時800円を超え、6万4000円を割り込んだ。</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://zuuonline.com/archives/303603" target="_blank" rel="noopener">日々是相場［夕刊］――  2026年10月29日（木）</a>
+                <a href="https://zuuonline.com/archives/303368" target="_blank" rel="noopener">決済・EC・本人確認をSIでつなぐ——フライトソリューションズが描く社会インフラ</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">ZUU online</span>
-                <span>10/29 19:30</span>
+                <span>10/30 17:00</span>
               </div>
               
-              <div class="news-summary">日経平均 64,659.47円 △705.28円 為替 １ドル＝157.86円 売買高（東証プライム、以下同） 44億5,950万株 売買代金 13兆8657億43百万円 値上り銘柄数 735銘柄 値…</div>
+              <div class="news-summary">株式会社フライトソリューションズの代表取締役社長・片山圭一朗氏は、技術者としての視点を持つ経営者だ。 電気通信大学を卒業後、日本初のコンピューターグラフィックマシンの開発に携わり、1988年に前身とな…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://zuuonline.com/archives/303602" target="_blank" rel="noopener">米ドル／円 ―― 上値抵抗と化している200日移動平均線の攻防が焦点となりそうだ</a>
+                <a href="https://zuuonline.com/archives/303527" target="_blank" rel="noopener">「高く売ることだけが経営者の成功ではない」スピカコンサルティング渡部社長が考える成功するM&amp;Aの条件</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">ZUU online</span>
-                <span>10/29 19:00</span>
+                <span>10/30 14:00</span>
               </div>
               
-              <div class="news-summary">この記事は2026年10月29日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年10月29日（木）の午前10時過ぎに…</div>
+              <div class="news-summary">LPガス、製造業、調剤薬局、物流、食品、美容。この6業界に特化したM&amp;Aコンサルティングを展開するのが、2022年設立の株式会社スピカコンサルティングだ。各業界に専属のコンサルタントを置く「1…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/303468" target="_blank" rel="noopener">創業時よりIPOを意識しプライム上場企業に成長、いち早くサブスクモデルを構築、ロボット・オートメーションを強化し、FIGが目指す時価総額1000億円への道</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>10/30 14:00</span>
+              </div>
+              
+              <div class="news-summary">2002年にタクシー配車システム開発を手掛け、モバイルクリエイト株式会社を創業した村井雄司氏。リーマンショックを契機に売り切り型からサブスクリプションモデルへとビジネスモデルを転換し、強固な経営基盤を…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/303528" target="_blank" rel="noopener">自社研究所と工場が支える一貫性。カウンセリング（対面）を重要視する化粧品会社、アルソア。滝口玲子社長が語る次の100年に変えないもの</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>10/30 14:00</span>
+              </div>
+              
+              <div class="news-summary">化粧品・健康食品の研究開発をはじめ、レストランや宿泊事業などを手がける株式会社アルソア慧央グループは、山梨県・小淵沢の自然のなかに本社を構え、研究所も工場も農園も自社で持つという道を選んできた。197…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/303530" target="_blank" rel="noopener">オフィスデザインから『ワークデザイン』へ。コロナ禍の2020年3月に上場したヴィス・中村会長が貫いた「言行一致」</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>10/30 14:00</span>
+              </div>
+              
+              <div class="news-summary">働き方が大きく変わるなかで、オフィスは単なる作業場所から、企業の理念や働き方そのものを映す場へと役割を変えつつある。この領域を「デザイナーズオフィス」と名付けて切り開いてきたのが、株式会社ヴィスの創業…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://zuuonline.com/archives/303588" target="_blank" rel="noopener">丸紅が「ロムアンド」のアイファミリーに出資、韓国で条件付公開買付け　取得額は約67億円</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">ZUU online</span>
+                <span>10/30 12:02</span>
+              </div>
+              
+              <div class="news-summary">丸紅は10月29日、韓国の化粧品ブランド「ロムアンド（rom&amp;nd）」を主力ブランドとするアイファミリーSC（iFamilySC）に対し、最大28％の株式を取得すると発表した。韓国に新設した1…</div>
               
             </div>
             
@@ -923,19 +1052,6 @@
               
             </div>
             
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260807/k10015199591000.html" target="_blank" rel="noopener">東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>08/07 22:19</span>
-              </div>
-              
-              <div class="news-summary">株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ…</div>
-              
-            </div>
-            
           </div>
         </div>
         
@@ -943,32 +1059,19 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (3件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (2件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://zuuonline.com/archives/303460" target="_blank" rel="noopener">なぜ年収が高くても融資が通らない？ 銀行は返済の継続力を見ている</a>
+                <a href="https://zuuonline.com/archives/303461" target="_blank" rel="noopener">新築か中古かで迷うな！ 自分に合う不動産投資の選び方</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">ZUU online</span>
-                <span>10/29 17:00</span>
+                <span>10/30 17:00</span>
               </div>
               
-              <div class="news-summary">本記事は、水澤 健一氏の著書『インフレ時代の不動産投資 最短で成功するロードマップ』（あさ出版）の中から一部を抜粋・編集しています。 銀行が見ているのは「数字」と「人」 金融機関が融資を審査するとき、…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/303518" target="_blank" rel="noopener">日本政府が2％物価目標を撤回しない限り、円高回帰は望めず</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>10/29 15:00</span>
-              </div>
-              
-              <div class="news-summary">この記事は2026年10月16日に「きんざいOnline：週刊金融財政事情」で公開された「日本政府が2％物価目標を撤回しない限り、円高回帰は望めず」を一部編集し、転載したものです。 筆者は本誌8月11…</div>
+              <div class="news-summary">本記事は、水澤 健一氏の著書『インフレ時代の不動産投資 最短で成功するロードマップ』（あさ出版）の中から一部を抜粋・編集しています。 新築と中古、どちらから始めるべきか これから不動産賃貸経営を始めよ…</div>
               
             </div>
             
@@ -992,32 +1095,43 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (3件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (4件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/ffd50765468fb241b804f5b08e169d410e9af4c7?source=rss" target="_blank" rel="noopener">売上はトヨタの3分の1以下なのに…直近の利益で｢世界のトヨタ｣を抜き去った､意外な日本企業2社の名前(プレジデントオンライン)</a>
+                <a href="https://news.yahoo.co.jp/articles/b8aacdbb72f1fbf4ef22e8e8a443b6ba4cd872f3?source=rss" target="_blank" rel="noopener">島精機が27年3月期を51億円の損失に下方修正　中間期は横編み機の売上高が23％減(WWDJAPAN.com)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>10/30 09:15</span>
+                <span>10/30 17:40</span>
               </div>
               
-              <div class="news-summary">今、日本で一番儲けている企業はどこなのか。経営コンサルタントの平野薫さんは「2026年4〜6月期決算で比較すると、売上高1位はトヨタでしたが、利益は1兆635億円で3位。利益1位の企業は前年同期比約2…</div>
+              <div class="news-summary">横編み機大手の島精機製作所は10月30日、2027年3月期の連結業績予想を下方修正した。売上高は従来予想の410億円から343億円に、営業損益は3億円の黒字から48億円の赤字に引き下げる。営業赤字は3…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://zuuonline.com/archives/303550" target="_blank" rel="noopener">こどもNISAとは？ プロが考える活用法を完全解説！ ジュニアNISAとの違いや金融機関選び、注意点も</a>
+                <a href="https://news.yahoo.co.jp/articles/531543b5b343b10d98cc29c633f7c79ce7067b4f?source=rss" target="_blank" rel="noopener">バイナンスジャパン　暗号資産の出し入れ停止　SBI「業績への影響はない」(テレビ朝日系（ANN）)</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>10/29 19:02</span>
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>10/30 17:33</span>
               </div>
               
-              <div class="news-summary">こどもNISAとは？ NISAは、投資で得られた利益（売却益・配当金・普通分配金）にかかる20.315％の税金を一生涯ゼロにできる制度。2027年1月からは、NISAのつみたて投資枠の対象年齢が0歳ま…</div>
+              <div class="news-summary">暗号資産取引所大手「バイナンス」への不正アクセスを受けて、「バイナンスジャパン」はすべての暗号資産の出し入れを一時停止していると発表しました。 バイナンスは29日、何者かがサーバーに不正にアクセスして…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1734100" target="_blank" rel="noopener">プロクシムス株が14%急騰、通期ガイダンスを上方修正</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>10/30 17:20</span>
+              </div>
               
             </div>
             
@@ -1046,11 +1160,11 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1733749" target="_blank" rel="noopener">人工知能（AI）投資の採算性に対する警戒感が再燃</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1734096" target="_blank" rel="noopener">アマゾンとインテルのAI投資懸念で欧州株が下落</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>10/30 08:30</span>
+                <span>10/30 17:16</span>
               </div>
               
             </div>
@@ -1078,69 +1192,77 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-10-30 09:27）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-10-30 17:46）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 63,290.11 pt (-2.12%)
+- TOPIX (1306連動ETF): 416.4 円 (-1.16%)
+- ドル円: 157.33 円 (-0.32%)
 - S&P 500: 7,720.39 (-0.30%)
 - NASDAQ: 26,184.72 (-1.38%)
 - ダウ: 52,342.56 (-0.25%)
-- ドル円: 157.74 円 (-0.06%)
 - 米10年債利回り: 4.989 % (-1.11%)
-- WTI原油: 102.72 USD (-0.06%)
-- 金: 4023.50 USD (-0.69%)
-- 日経225: 63,889.42 pt (+0.00%)
-- TOPIX (1306連動ETF): 421.0 円 (-0.07%)
+- WTI原油: 103.87 USD (+1.83%)
+- 金: 3997.20 USD (-0.85%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++52.50円  キーエンス(6861)  +1.93%  [電機]
-  ++51.79円  ファーストリテイリング(9983)  +1.96%  [小売]
-  ++12.50円  リクルートHD(6098)  +1.85%  [サービス]
-  ++9.64円  オリエンタルランド(4661)  +8.52%  [サービス]
-  ++8.21円  任天堂(7974)  +2.82%  [電機]
+  ++58.57円  キーエンス(6861)  +2.15%  [電機]
+  ++55.00円  ファーストリテイリング(9983)  +2.09%  [小売]
+  ++11.07円  リクルートHD(6098)  +1.64%  [サービス]
+  ++9.57円  オリエンタルランド(4661)  +8.45%  [サービス]
+  ++6.43円  武田薬品(4502)  +2.78%  [医薬品]
 ▼ 日経225 (下落寄与TOP5)
-  -68.21円  アドバンテスト(6857)  -5.16%  [電機]
-  -15.79円  村田製作所(6981)  -6.42%  [電機]
-  -12.36円  東京エレクトロン(8035)  -3.45%  [半導体製造装置]
-  -6.96円  ソフトバンクG(9984)  -4.09%  [通信]
-  -4.79円  TDK(6762)  -4.83%  [電機]
+  -77.50円  アドバンテスト(6857)  -5.86%  [電機]
+  -19.00円  村田製作所(6981)  -7.72%  [電機]
+  -18.61円  東京エレクトロン(8035)  -5.19%  [半導体製造装置]
+  -10.14円  ソフトバンクG(9984)  -5.96%  [通信]
+  -7.14円  TDK(6762)  -7.22%  [電機]
 ▼ S&P500 (上昇寄与TOP5)
+  ++13.08pt  Lilly (Eli)(LLY)  +6.63%  wt:2.55%  [Health Care]
+  ++12.12pt  Apple Inc.(AAPL)  +1.48%  wt:10.60%  [Information Technology]
+  ++5.04pt  Meta Platforms(META)  +1.96%  wt:3.32%  [Communication Services]
+  ++3.74pt  Mastercard(MA)  +4.16%  wt:1.16%  [Financials]
+  ++3.22pt  Walmart(WMT)  +2.09%  wt:1.99%  [Consumer Staples]
 ▼ S&P500 (下落寄与TOP5)
+  -70.87pt  Alphabet Inc. (Class A)(GOOGL)  -12.64%  wt:7.24%  [Communication Services]
+  -68.44pt  Alphabet Inc. (Class C)(GOOG)  -12.29%  wt:7.19%  [Communication Services]
+  -18.16pt  Amazon(AMZN)  -4.25%  wt:5.52%  [Consumer Discretionary]
+  -8.62pt  Micron Technology(MU)  -4.98%  wt:2.24%  [Information Technology]
+  -6.64pt  Nvidia(NVDA)  -0.80%  wt:10.74%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 東証、827円安(共同通信) (10/30 09:23)
-  概要: 30日の東京株式市場の日経平均株価（225種）は午前9時15分現在、前日終値比827円64銭安の6万3831円83銭となった。
-- [Yahoo!ファイナンス] 鉱工業生産2.2％上昇　9月、3カ月ぶりプラス(共同通信) (10/30 09:17)
-  概要: 経済産業省が30日発表した9月の鉱工業生産指数速報（2020年＝100、季節調整済み）は前月より2.2％上昇し、104.1だった。プラスは3カ月ぶり。基調判断は「生産は一進一退」で据え置いた。 全15
-- [Yahoo!ファイナンス] 東京株式　30日09時15分　(共同通信) (10/30 09:16)
-  概要: ＜日経平均＞ 63831円83銭 前日比 －827円64銭 ＜TOPIX＞ 3999.61 前日比 －03.67
-- [Investing.com日本] 米国株式市場は反落、一部企業決算受けAI投資への懸念再燃 (10/30 09:15)
-- [Investing.com日本] 29日のNY市場は反落 (10/30 09:15)
-- [Yahoo!ファイナンス] 東証、一時800円超安(共同通信) (10/30 09:12)
-  概要: 30日の東京株式市場で日経平均株価（225種）の下げ幅が一時800円を超え、6万4000円を割り込んだ。
-- [ZUU online] 日々是相場［夕刊］――  2026年10月29日（木） (10/29 19:30)
-  概要: 日経平均 64,659.47円 △705.28円 為替 １ドル＝157.86円 売買高（東証プライム、以下同） 44億5,950万株 売買代金 13兆8657億43百万円 値上り銘柄数 735銘柄 値
-- [ZUU online] 米ドル／円 ―― 上値抵抗と化している200日移動平均線の攻防が焦点となりそうだ (10/29 19:00)
-  概要: この記事は2026年10月29日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年10月29日（木）の午前10時過ぎに
+- [Investing.com日本] BPの株価が本日上昇した理由とは (10/30 17:31)
+- [Investing.com日本] サンディスクの株価が本日下落している理由とは (10/30 17:29)
+- [Investing.com日本] Sanofiの株価が本日急騰した理由とは (10/30 17:15)
+- [ZUU online] 決済・EC・本人確認をSIでつなぐ——フライトソリューションズが描く社会インフラ (10/30 17:00)
+  概要: 株式会社フライトソリューションズの代表取締役社長・片山圭一朗氏は、技術者としての視点を持つ経営者だ。 電気通信大学を卒業後、日本初のコンピューターグラフィックマシンの開発に携わり、1988年に前身とな
+- [ZUU online] 「高く売ることだけが経営者の成功ではない」スピカコンサルティング渡部社長が考える成功するM&amp;Aの条件 (10/30 14:00)
+  概要: LPガス、製造業、調剤薬局、物流、食品、美容。この6業界に特化したM&amp;Aコンサルティングを展開するのが、2022年設立の株式会社スピカコンサルティングだ。各業界に専属のコンサルタントを置く「1
+- [ZUU online] 創業時よりIPOを意識しプライム上場企業に成長、いち早くサブスクモデルを構築、ロボット・オートメーションを強化し、FIGが目指す時価総額1000億円への道 (10/30 14:00)
+  概要: 2002年にタクシー配車システム開発を手掛け、モバイルクリエイト株式会社を創業した村井雄司氏。リーマンショックを契機に売り切り型からサブスクリプションモデルへとビジネスモデルを転換し、強固な経営基盤を
+- [ZUU online] 自社研究所と工場が支える一貫性。カウンセリング（対面）を重要視する化粧品会社、アルソア。滝口玲子社長が語る次の100年に変えないもの (10/30 14:00)
+  概要: 化粧品・健康食品の研究開発をはじめ、レストランや宿泊事業などを手がける株式会社アルソア慧央グループは、山梨県・小淵沢の自然のなかに本社を構え、研究所も工場も農園も自社で持つという道を選んできた。197
+- [ZUU online] オフィスデザインから『ワークデザイン』へ。コロナ禍の2020年3月に上場したヴィス・中村会長が貫いた「言行一致」 (10/30 14:00)
+  概要: 働き方が大きく変わるなかで、オフィスは単なる作業場所から、企業の理念や働き方そのものを映す場へと役割を変えつつある。この領域を「デザイナーズオフィス」と名付けて切り開いてきたのが、株式会社ヴィスの創業
+- [ZUU online] 丸紅が「ロムアンド」のアイファミリーに出資、韓国で条件付公開買付け　取得額は約67億円 (10/30 12:02)
+  概要: 丸紅は10月29日、韓国の化粧品ブランド「ロムアンド（rom&amp;nd）」を主力ブランドとするアイファミリーSC（iFamilySC）に対し、最大28％の株式を取得すると発表した。韓国に新設した1
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
-- [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
-  概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
-- [ZUU online] なぜ年収が高くても融資が通らない？ 銀行は返済の継続力を見ている (10/29 17:00)
-  概要: 本記事は、水澤 健一氏の著書『インフレ時代の不動産投資 最短で成功するロードマップ』（あさ出版）の中から一部を抜粋・編集しています。 銀行が見ているのは「数字」と「人」 金融機関が融資を審査するとき、
-- [ZUU online] 日本政府が2％物価目標を撤回しない限り、円高回帰は望めず (10/29 15:00)
-  概要: この記事は2026年10月16日に「きんざいOnline：週刊金融財政事情」で公開された「日本政府が2％物価目標を撤回しない限り、円高回帰は望めず」を一部編集し、転載したものです。 筆者は本誌8月11
+- [ZUU online] 新築か中古かで迷うな！ 自分に合う不動産投資の選び方 (10/30 17:00)
+  概要: 本記事は、水澤 健一氏の著書『インフレ時代の不動産投資 最短で成功するロードマップ』（あさ出版）の中から一部を抜粋・編集しています。 新築と中古、どちらから始めるべきか これから不動産賃貸経営を始めよ
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Yahoo!ファイナンス] 売上はトヨタの3分の1以下なのに…直近の利益で｢世界のトヨタ｣を抜き去った､意外な日本企業2社の名前(プレジデントオンライン) (10/30 09:15)
-  概要: 今、日本で一番儲けている企業はどこなのか。経営コンサルタントの平野薫さんは「2026年4〜6月期決算で比較すると、売上高1位はトヨタでしたが、利益は1兆635億円で3位。利益1位の企業は前年同期比約2
-- [ZUU online] こどもNISAとは？ プロが考える活用法を完全解説！ ジュニアNISAとの違いや金融機関選び、注意点も (10/29 19:02)
-  概要: こどもNISAとは？ NISAは、投資で得られた利益（売却益・配当金・普通分配金）にかかる20.315％の税金を一生涯ゼロにできる制度。2027年1月からは、NISAのつみたて投資枠の対象年齢が0歳ま
+- [Yahoo!ファイナンス] 島精機が27年3月期を51億円の損失に下方修正　中間期は横編み機の売上高が23％減(WWDJAPAN.com) (10/30 17:40)
+  概要: 横編み機大手の島精機製作所は10月30日、2027年3月期の連結業績予想を下方修正した。売上高は従来予想の410億円から343億円に、営業損益は3億円の黒字から48億円の赤字に引き下げる。営業赤字は3
+- [Yahoo!ファイナンス] バイナンスジャパン　暗号資産の出し入れ停止　SBI「業績への影響はない」(テレビ朝日系（ANN）) (10/30 17:33)
+  概要: 暗号資産取引所大手「バイナンス」への不正アクセスを受けて、「バイナンスジャパン」はすべての暗号資産の出し入れを一時停止していると発表しました。 バイナンスは29日、何者かがサーバーに不正にアクセスして
+- [Investing.com日本] プロクシムス株が14%急騰、通期ガイダンスを上方修正 (10/30 17:20)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [Investing.com日本] 人工知能（AI）投資の採算性に対する警戒感が再燃 (10/30 08:30)
+- [Investing.com日本] アマゾンとインテルのAI投資懸念で欧州株が下落 (10/30 17:16)
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
@@ -1157,64 +1279,72 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 63,290.11 pt (-2.12%)
+- TOPIX (1306連動ETF): 416.4 円 (-1.16%)
+- ドル円: 157.33 円 (-0.32%)
 - S&P 500: 7,720.39 (-0.30%)
 - NASDAQ: 26,184.72 (-1.38%)
 - ダウ: 52,342.56 (-0.25%)
-- ドル円: 157.74 円 (-0.06%)
 - 米10年債利回り: 4.989 % (-1.11%)
-- WTI原油: 102.72 USD (-0.06%)
-- 金: 4023.50 USD (-0.69%)
-- 日経225: 63,889.42 pt (+0.00%)
-- TOPIX (1306連動ETF): 421.0 円 (-0.07%)
+- WTI原油: 103.87 USD (+1.83%)
+- 金: 3997.20 USD (-0.85%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++52.50円  キーエンス(6861)  +1.93%  [電機]
-  ++51.79円  ファーストリテイリング(9983)  +1.96%  [小売]
-  ++12.50円  リクルートHD(6098)  +1.85%  [サービス]
-  ++9.64円  オリエンタルランド(4661)  +8.52%  [サービス]
-  ++8.21円  任天堂(7974)  +2.82%  [電機]
+  ++58.57円  キーエンス(6861)  +2.15%  [電機]
+  ++55.00円  ファーストリテイリング(9983)  +2.09%  [小売]
+  ++11.07円  リクルートHD(6098)  +1.64%  [サービス]
+  ++9.57円  オリエンタルランド(4661)  +8.45%  [サービス]
+  ++6.43円  武田薬品(4502)  +2.78%  [医薬品]
 ▼ 日経225 (下落寄与TOP5)
-  -68.21円  アドバンテスト(6857)  -5.16%  [電機]
-  -15.79円  村田製作所(6981)  -6.42%  [電機]
-  -12.36円  東京エレクトロン(8035)  -3.45%  [半導体製造装置]
-  -6.96円  ソフトバンクG(9984)  -4.09%  [通信]
-  -4.79円  TDK(6762)  -4.83%  [電機]
+  -77.50円  アドバンテスト(6857)  -5.86%  [電機]
+  -19.00円  村田製作所(6981)  -7.72%  [電機]
+  -18.61円  東京エレクトロン(8035)  -5.19%  [半導体製造装置]
+  -10.14円  ソフトバンクG(9984)  -5.96%  [通信]
+  -7.14円  TDK(6762)  -7.22%  [電機]
 ▼ S&P500 (上昇寄与TOP5)
+  ++13.08pt  Lilly (Eli)(LLY)  +6.63%  wt:2.55%  [Health Care]
+  ++12.12pt  Apple Inc.(AAPL)  +1.48%  wt:10.60%  [Information Technology]
+  ++5.04pt  Meta Platforms(META)  +1.96%  wt:3.32%  [Communication Services]
+  ++3.74pt  Mastercard(MA)  +4.16%  wt:1.16%  [Financials]
+  ++3.22pt  Walmart(WMT)  +2.09%  wt:1.99%  [Consumer Staples]
 ▼ S&P500 (下落寄与TOP5)
+  -70.87pt  Alphabet Inc. (Class A)(GOOGL)  -12.64%  wt:7.24%  [Communication Services]
+  -68.44pt  Alphabet Inc. (Class C)(GOOG)  -12.29%  wt:7.19%  [Communication Services]
+  -18.16pt  Amazon(AMZN)  -4.25%  wt:5.52%  [Consumer Discretionary]
+  -8.62pt  Micron Technology(MU)  -4.98%  wt:2.24%  [Information Technology]
+  -6.64pt  Nvidia(NVDA)  -0.80%  wt:10.74%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 東証、827円安(共同通信) (10/30 09:23)
-  概要: 30日の東京株式市場の日経平均株価（225種）は午前9時15分現在、前日終値比827円64銭安の6万3831円83銭となった。
-- [Yahoo!ファイナンス] 鉱工業生産2.2％上昇　9月、3カ月ぶりプラス(共同通信) (10/30 09:17)
-  概要: 経済産業省が30日発表した9月の鉱工業生産指数速報（2020年＝100、季節調整済み）は前月より2.2％上昇し、104.1だった。プラスは3カ月ぶり。基調判断は「生産は一進一退」で据え置いた。 全15
-- [Yahoo!ファイナンス] 東京株式　30日09時15分　(共同通信) (10/30 09:16)
-  概要: ＜日経平均＞ 63831円83銭 前日比 －827円64銭 ＜TOPIX＞ 3999.61 前日比 －03.67
-- [Investing.com日本] 米国株式市場は反落、一部企業決算受けAI投資への懸念再燃 (10/30 09:15)
-- [Investing.com日本] 29日のNY市場は反落 (10/30 09:15)
-- [Yahoo!ファイナンス] 東証、一時800円超安(共同通信) (10/30 09:12)
-  概要: 30日の東京株式市場で日経平均株価（225種）の下げ幅が一時800円を超え、6万4000円を割り込んだ。
-- [ZUU online] 日々是相場［夕刊］――  2026年10月29日（木） (10/29 19:30)
-  概要: 日経平均 64,659.47円 △705.28円 為替 １ドル＝157.86円 売買高（東証プライム、以下同） 44億5,950万株 売買代金 13兆8657億43百万円 値上り銘柄数 735銘柄 値
-- [ZUU online] 米ドル／円 ―― 上値抵抗と化している200日移動平均線の攻防が焦点となりそうだ (10/29 19:00)
-  概要: この記事は2026年10月29日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年10月29日（木）の午前10時過ぎに
+- [Investing.com日本] BPの株価が本日上昇した理由とは (10/30 17:31)
+- [Investing.com日本] サンディスクの株価が本日下落している理由とは (10/30 17:29)
+- [Investing.com日本] Sanofiの株価が本日急騰した理由とは (10/30 17:15)
+- [ZUU online] 決済・EC・本人確認をSIでつなぐ——フライトソリューションズが描く社会インフラ (10/30 17:00)
+  概要: 株式会社フライトソリューションズの代表取締役社長・片山圭一朗氏は、技術者としての視点を持つ経営者だ。 電気通信大学を卒業後、日本初のコンピューターグラフィックマシンの開発に携わり、1988年に前身とな
+- [ZUU online] 「高く売ることだけが経営者の成功ではない」スピカコンサルティング渡部社長が考える成功するM&amp;Aの条件 (10/30 14:00)
+  概要: LPガス、製造業、調剤薬局、物流、食品、美容。この6業界に特化したM&amp;Aコンサルティングを展開するのが、2022年設立の株式会社スピカコンサルティングだ。各業界に専属のコンサルタントを置く「1
+- [ZUU online] 創業時よりIPOを意識しプライム上場企業に成長、いち早くサブスクモデルを構築、ロボット・オートメーションを強化し、FIGが目指す時価総額1000億円への道 (10/30 14:00)
+  概要: 2002年にタクシー配車システム開発を手掛け、モバイルクリエイト株式会社を創業した村井雄司氏。リーマンショックを契機に売り切り型からサブスクリプションモデルへとビジネスモデルを転換し、強固な経営基盤を
+- [ZUU online] 自社研究所と工場が支える一貫性。カウンセリング（対面）を重要視する化粧品会社、アルソア。滝口玲子社長が語る次の100年に変えないもの (10/30 14:00)
+  概要: 化粧品・健康食品の研究開発をはじめ、レストランや宿泊事業などを手がける株式会社アルソア慧央グループは、山梨県・小淵沢の自然のなかに本社を構え、研究所も工場も農園も自社で持つという道を選んできた。197
+- [ZUU online] オフィスデザインから『ワークデザイン』へ。コロナ禍の2020年3月に上場したヴィス・中村会長が貫いた「言行一致」 (10/30 14:00)
+  概要: 働き方が大きく変わるなかで、オフィスは単なる作業場所から、企業の理念や働き方そのものを映す場へと役割を変えつつある。この領域を「デザイナーズオフィス」と名付けて切り開いてきたのが、株式会社ヴィスの創業
+- [ZUU online] 丸紅が「ロムアンド」のアイファミリーに出資、韓国で条件付公開買付け　取得額は約67億円 (10/30 12:02)
+  概要: 丸紅は10月29日、韓国の化粧品ブランド「ロムアンド（rom&amp;nd）」を主力ブランドとするアイファミリーSC（iFamilySC）に対し、最大28％の株式を取得すると発表した。韓国に新設した1
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
-- [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
-  概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
-- [ZUU online] なぜ年収が高くても融資が通らない？ 銀行は返済の継続力を見ている (10/29 17:00)
-  概要: 本記事は、水澤 健一氏の著書『インフレ時代の不動産投資 最短で成功するロードマップ』（あさ出版）の中から一部を抜粋・編集しています。 銀行が見ているのは「数字」と「人」 金融機関が融資を審査するとき、
-- [ZUU online] 日本政府が2％物価目標を撤回しない限り、円高回帰は望めず (10/29 15:00)
-  概要: この記事は2026年10月16日に「きんざいOnline：週刊金融財政事情」で公開された「日本政府が2％物価目標を撤回しない限り、円高回帰は望めず」を一部編集し、転載したものです。 筆者は本誌8月11
+- [ZUU online] 新築か中古かで迷うな！ 自分に合う不動産投資の選び方 (10/30 17:00)
+  概要: 本記事は、水澤 健一氏の著書『インフレ時代の不動産投資 最短で成功するロードマップ』（あさ出版）の中から一部を抜粋・編集しています。 新築と中古、どちらから始めるべきか これから不動産賃貸経営を始めよ
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Yahoo!ファイナンス] 売上はトヨタの3分の1以下なのに…直近の利益で｢世界のトヨタ｣を抜き去った､意外な日本企業2社の名前(プレジデントオンライン) (10/30 09:15)
-  概要: 今、日本で一番儲けている企業はどこなのか。経営コンサルタントの平野薫さんは「2026年4〜6月期決算で比較すると、売上高1位はトヨタでしたが、利益は1兆635億円で3位。利益1位の企業は前年同期比約2
-- [ZUU online] こどもNISAとは？ プロが考える活用法を完全解説！ ジュニアNISAとの違いや金融機関選び、注意点も (10/29 19:02)
-  概要: こどもNISAとは？ NISAは、投資で得られた利益（売却益・配当金・普通分配金）にかかる20.315％の税金を一生涯ゼロにできる制度。2027年1月からは、NISAのつみたて投資枠の対象年齢が0歳ま
+- [Yahoo!ファイナンス] 島精機が27年3月期を51億円の損失に下方修正　中間期は横編み機の売上高が23％減(WWDJAPAN.com) (10/30 17:40)
+  概要: 横編み機大手の島精機製作所は10月30日、2027年3月期の連結業績予想を下方修正した。売上高は従来予想の410億円から343億円に、営業損益は3億円の黒字から48億円の赤字に引き下げる。営業赤字は3
+- [Yahoo!ファイナンス] バイナンスジャパン　暗号資産の出し入れ停止　SBI「業績への影響はない」(テレビ朝日系（ANN）) (10/30 17:33)
+  概要: 暗号資産取引所大手「バイナンス」への不正アクセスを受けて、「バイナンスジャパン」はすべての暗号資産の出し入れを一時停止していると発表しました。 バイナンスは29日、何者かがサーバーに不正にアクセスして
+- [Investing.com日本] プロクシムス株が14%急騰、通期ガイダンスを上方修正 (10/30 17:20)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [Investing.com日本] 人工知能（AI）投資の採算性に対する警戒感が再燃 (10/30 08:30)
+- [Investing.com日本] アマゾンとインテルのAI投資懸念で欧州株が下落 (10/30 17:16)
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
@@ -1225,64 +1355,72 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 63,290.11 pt (-2.12%)
+- TOPIX (1306連動ETF): 416.4 円 (-1.16%)
+- ドル円: 157.33 円 (-0.32%)
 - S&P 500: 7,720.39 (-0.30%)
 - NASDAQ: 26,184.72 (-1.38%)
 - ダウ: 52,342.56 (-0.25%)
-- ドル円: 157.74 円 (-0.06%)
 - 米10年債利回り: 4.989 % (-1.11%)
-- WTI原油: 102.72 USD (-0.06%)
-- 金: 4023.50 USD (-0.69%)
-- 日経225: 63,889.42 pt (+0.00%)
-- TOPIX (1306連動ETF): 421.0 円 (-0.07%)
+- WTI原油: 103.87 USD (+1.83%)
+- 金: 3997.20 USD (-0.85%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++52.50円  キーエンス(6861)  +1.93%  [電機]
-  ++51.79円  ファーストリテイリング(9983)  +1.96%  [小売]
-  ++12.50円  リクルートHD(6098)  +1.85%  [サービス]
-  ++9.64円  オリエンタルランド(4661)  +8.52%  [サービス]
-  ++8.21円  任天堂(7974)  +2.82%  [電機]
+  ++58.57円  キーエンス(6861)  +2.15%  [電機]
+  ++55.00円  ファーストリテイリング(9983)  +2.09%  [小売]
+  ++11.07円  リクルートHD(6098)  +1.64%  [サービス]
+  ++9.57円  オリエンタルランド(4661)  +8.45%  [サービス]
+  ++6.43円  武田薬品(4502)  +2.78%  [医薬品]
 ▼ 日経225 (下落寄与TOP5)
-  -68.21円  アドバンテスト(6857)  -5.16%  [電機]
-  -15.79円  村田製作所(6981)  -6.42%  [電機]
-  -12.36円  東京エレクトロン(8035)  -3.45%  [半導体製造装置]
-  -6.96円  ソフトバンクG(9984)  -4.09%  [通信]
-  -4.79円  TDK(6762)  -4.83%  [電機]
+  -77.50円  アドバンテスト(6857)  -5.86%  [電機]
+  -19.00円  村田製作所(6981)  -7.72%  [電機]
+  -18.61円  東京エレクトロン(8035)  -5.19%  [半導体製造装置]
+  -10.14円  ソフトバンクG(9984)  -5.96%  [通信]
+  -7.14円  TDK(6762)  -7.22%  [電機]
 ▼ S&P500 (上昇寄与TOP5)
+  ++13.08pt  Lilly (Eli)(LLY)  +6.63%  wt:2.55%  [Health Care]
+  ++12.12pt  Apple Inc.(AAPL)  +1.48%  wt:10.60%  [Information Technology]
+  ++5.04pt  Meta Platforms(META)  +1.96%  wt:3.32%  [Communication Services]
+  ++3.74pt  Mastercard(MA)  +4.16%  wt:1.16%  [Financials]
+  ++3.22pt  Walmart(WMT)  +2.09%  wt:1.99%  [Consumer Staples]
 ▼ S&P500 (下落寄与TOP5)
+  -70.87pt  Alphabet Inc. (Class A)(GOOGL)  -12.64%  wt:7.24%  [Communication Services]
+  -68.44pt  Alphabet Inc. (Class C)(GOOG)  -12.29%  wt:7.19%  [Communication Services]
+  -18.16pt  Amazon(AMZN)  -4.25%  wt:5.52%  [Consumer Discretionary]
+  -8.62pt  Micron Technology(MU)  -4.98%  wt:2.24%  [Information Technology]
+  -6.64pt  Nvidia(NVDA)  -0.80%  wt:10.74%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 東証、827円安(共同通信) (10/30 09:23)
-  概要: 30日の東京株式市場の日経平均株価（225種）は午前9時15分現在、前日終値比827円64銭安の6万3831円83銭となった。
-- [Yahoo!ファイナンス] 鉱工業生産2.2％上昇　9月、3カ月ぶりプラス(共同通信) (10/30 09:17)
-  概要: 経済産業省が30日発表した9月の鉱工業生産指数速報（2020年＝100、季節調整済み）は前月より2.2％上昇し、104.1だった。プラスは3カ月ぶり。基調判断は「生産は一進一退」で据え置いた。 全15
-- [Yahoo!ファイナンス] 東京株式　30日09時15分　(共同通信) (10/30 09:16)
-  概要: ＜日経平均＞ 63831円83銭 前日比 －827円64銭 ＜TOPIX＞ 3999.61 前日比 －03.67
-- [Investing.com日本] 米国株式市場は反落、一部企業決算受けAI投資への懸念再燃 (10/30 09:15)
-- [Investing.com日本] 29日のNY市場は反落 (10/30 09:15)
-- [Yahoo!ファイナンス] 東証、一時800円超安(共同通信) (10/30 09:12)
-  概要: 30日の東京株式市場で日経平均株価（225種）の下げ幅が一時800円を超え、6万4000円を割り込んだ。
-- [ZUU online] 日々是相場［夕刊］――  2026年10月29日（木） (10/29 19:30)
-  概要: 日経平均 64,659.47円 △705.28円 為替 １ドル＝157.86円 売買高（東証プライム、以下同） 44億5,950万株 売買代金 13兆8657億43百万円 値上り銘柄数 735銘柄 値
-- [ZUU online] 米ドル／円 ―― 上値抵抗と化している200日移動平均線の攻防が焦点となりそうだ (10/29 19:00)
-  概要: この記事は2026年10月29日（木）に「羊飼いのFXブログ」で公開された「神田卓也氏の現在の相場観とFXトレード戦略」を一部編集し、転載したものです。 2026年10月29日（木）の午前10時過ぎに
+- [Investing.com日本] BPの株価が本日上昇した理由とは (10/30 17:31)
+- [Investing.com日本] サンディスクの株価が本日下落している理由とは (10/30 17:29)
+- [Investing.com日本] Sanofiの株価が本日急騰した理由とは (10/30 17:15)
+- [ZUU online] 決済・EC・本人確認をSIでつなぐ——フライトソリューションズが描く社会インフラ (10/30 17:00)
+  概要: 株式会社フライトソリューションズの代表取締役社長・片山圭一朗氏は、技術者としての視点を持つ経営者だ。 電気通信大学を卒業後、日本初のコンピューターグラフィックマシンの開発に携わり、1988年に前身とな
+- [ZUU online] 「高く売ることだけが経営者の成功ではない」スピカコンサルティング渡部社長が考える成功するM&amp;Aの条件 (10/30 14:00)
+  概要: LPガス、製造業、調剤薬局、物流、食品、美容。この6業界に特化したM&amp;Aコンサルティングを展開するのが、2022年設立の株式会社スピカコンサルティングだ。各業界に専属のコンサルタントを置く「1
+- [ZUU online] 創業時よりIPOを意識しプライム上場企業に成長、いち早くサブスクモデルを構築、ロボット・オートメーションを強化し、FIGが目指す時価総額1000億円への道 (10/30 14:00)
+  概要: 2002年にタクシー配車システム開発を手掛け、モバイルクリエイト株式会社を創業した村井雄司氏。リーマンショックを契機に売り切り型からサブスクリプションモデルへとビジネスモデルを転換し、強固な経営基盤を
+- [ZUU online] 自社研究所と工場が支える一貫性。カウンセリング（対面）を重要視する化粧品会社、アルソア。滝口玲子社長が語る次の100年に変えないもの (10/30 14:00)
+  概要: 化粧品・健康食品の研究開発をはじめ、レストランや宿泊事業などを手がける株式会社アルソア慧央グループは、山梨県・小淵沢の自然のなかに本社を構え、研究所も工場も農園も自社で持つという道を選んできた。197
+- [ZUU online] オフィスデザインから『ワークデザイン』へ。コロナ禍の2020年3月に上場したヴィス・中村会長が貫いた「言行一致」 (10/30 14:00)
+  概要: 働き方が大きく変わるなかで、オフィスは単なる作業場所から、企業の理念や働き方そのものを映す場へと役割を変えつつある。この領域を「デザイナーズオフィス」と名付けて切り開いてきたのが、株式会社ヴィスの創業
+- [ZUU online] 丸紅が「ロムアンド」のアイファミリーに出資、韓国で条件付公開買付け　取得額は約67億円 (10/30 12:02)
+  概要: 丸紅は10月29日、韓国の化粧品ブランド「ロムアンド（rom&amp;nd）」を主力ブランドとするアイファミリーSC（iFamilySC）に対し、最大28％の株式を取得すると発表した。韓国に新設した1
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
-- [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
-  概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
-- [ZUU online] なぜ年収が高くても融資が通らない？ 銀行は返済の継続力を見ている (10/29 17:00)
-  概要: 本記事は、水澤 健一氏の著書『インフレ時代の不動産投資 最短で成功するロードマップ』（あさ出版）の中から一部を抜粋・編集しています。 銀行が見ているのは「数字」と「人」 金融機関が融資を審査するとき、
-- [ZUU online] 日本政府が2％物価目標を撤回しない限り、円高回帰は望めず (10/29 15:00)
-  概要: この記事は2026年10月16日に「きんざいOnline：週刊金融財政事情」で公開された「日本政府が2％物価目標を撤回しない限り、円高回帰は望めず」を一部編集し、転載したものです。 筆者は本誌8月11
+- [ZUU online] 新築か中古かで迷うな！ 自分に合う不動産投資の選び方 (10/30 17:00)
+  概要: 本記事は、水澤 健一氏の著書『インフレ時代の不動産投資 最短で成功するロードマップ』（あさ出版）の中から一部を抜粋・編集しています。 新築と中古、どちらから始めるべきか これから不動産賃貸経営を始めよ
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Yahoo!ファイナンス] 売上はトヨタの3分の1以下なのに…直近の利益で｢世界のトヨタ｣を抜き去った､意外な日本企業2社の名前(プレジデントオンライン) (10/30 09:15)
-  概要: 今、日本で一番儲けている企業はどこなのか。経営コンサルタントの平野薫さんは「2026年4〜6月期決算で比較すると、売上高1位はトヨタでしたが、利益は1兆635億円で3位。利益1位の企業は前年同期比約2
-- [ZUU online] こどもNISAとは？ プロが考える活用法を完全解説！ ジュニアNISAとの違いや金融機関選び、注意点も (10/29 19:02)
-  概要: こどもNISAとは？ NISAは、投資で得られた利益（売却益・配当金・普通分配金）にかかる20.315％の税金を一生涯ゼロにできる制度。2027年1月からは、NISAのつみたて投資枠の対象年齢が0歳ま
+- [Yahoo!ファイナンス] 島精機が27年3月期を51億円の損失に下方修正　中間期は横編み機の売上高が23％減(WWDJAPAN.com) (10/30 17:40)
+  概要: 横編み機大手の島精機製作所は10月30日、2027年3月期の連結業績予想を下方修正した。売上高は従来予想の410億円から343億円に、営業損益は3億円の黒字から48億円の赤字に引き下げる。営業赤字は3
+- [Yahoo!ファイナンス] バイナンスジャパン　暗号資産の出し入れ停止　SBI「業績への影響はない」(テレビ朝日系（ANN）) (10/30 17:33)
+  概要: 暗号資産取引所大手「バイナンス」への不正アクセスを受けて、「バイナンスジャパン」はすべての暗号資産の出し入れを一時停止していると発表しました。 バイナンスは29日、何者かがサーバーに不正にアクセスして
+- [Investing.com日本] プロクシムス株が14%急騰、通期ガイダンスを上方修正 (10/30 17:20)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [Investing.com日本] 人工知能（AI）投資の採算性に対する警戒感が再燃 (10/30 08:30)
+- [Investing.com日本] アマゾンとインテルのAI投資懸念で欧州株が下落 (10/30 17:16)
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
