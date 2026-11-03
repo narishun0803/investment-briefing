@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [昼]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">昼</span>
+    <span class="slot-desc">日本前場総括・セクター騰落・決算速報</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年11月03日 07:02 JST</span>
+    <span class="updated">更新: 2026年11月03日 11:40 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -546,6 +546,41 @@
     <div class="market-grid">
       
       <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">63,081.86 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -208.25&nbsp;&nbsp;-0.33%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">413.0 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -3.40&nbsp;&nbsp;-0.82%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">157.92 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.25&nbsp;&nbsp;+0.16%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
         
           <div class="tile-price">7,541.40 <span class="tile-unit"></span></div>
@@ -559,15 +594,15 @@
       <div class="market-tile primary">
         <div class="tile-name">NASDAQ</div>
         
-          <div class="tile-price">25,164.32 <span class="tile-unit"></span></div>
+          <div class="tile-price">25,164.36 <span class="tile-unit"></span></div>
           <div class="tile-change down">
-            -272.68&nbsp;&nbsp;-1.07%
+            -272.64&nbsp;&nbsp;-1.07%
           </div>
         
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">51,983.98 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">157.85 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.05&nbsp;&nbsp;+0.03%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.894 <span class="tile-unit">%</span></div>
@@ -603,7 +627,7 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">96.21 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">96.64 <span class="tile-unit">USD</span></div>
           <div class="tile-change flat">
             +0.00&nbsp;&nbsp;+0.00%
           </div>
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">3957.30 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">3954.40 <span class="tile-unit">USD</span></div>
           <div class="tile-change flat">
             +0.00&nbsp;&nbsp;+0.00%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">63,290.11 <span class="tile-unit">pt</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">413.0 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -3.40&nbsp;&nbsp;-0.82%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -915,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (17件)</div>
+    <div class="card-title">📰 最新ニュース (14件)</div>
     
     
     
@@ -930,51 +930,58 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/c10682fda96f22ec1e790b5c221f9a294ee822c8?source=rss" target="_blank" rel="noopener">汚れた渋谷を、ハチ公が駆けて洗う。犬の日に現れた奇跡の足跡(FINDERS)</a>
+                <a href="https://news.yahoo.co.jp/articles/9f5727b6a301d6923f04fee6f9b8d396b4f4f872?source=rss" target="_blank" rel="noopener">アップル第4四半期決算、iPhone売上高9.1兆円と好調　市場予想を上回る(Forbes JAPAN)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>11/03 07:00</span>
+                <span>11/03 11:30</span>
               </div>
               
-              <div class="news-summary">ハロウィンの熱狂が去った翌朝の渋谷に、忠犬ハチ公が自ら街を駆け回って洗浄していったかのような足跡が浮かび上がった。これは、ケルヒャー ジャパン株式会社が手がける「洗伝PROJECT」の取り組みとして公…</div>
+              <div class="news-summary">アップルが発表した2026年会計年度第4四半期（7〜9月期）のiPhone売上高は、576億ドル（約9兆1000億円）に達した。これは、ジョン・ターナス新CEOの体制下で初となる四半期決算であり、時価…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1737902" target="_blank" rel="noopener">Palantirの株価が時間外取引で上昇、第3四半期決算が市場予想を大幅に上回る</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1738087" target="_blank" rel="noopener">「株式」ADR日本株ランキング～やや買い優勢、シカゴは大阪日中比180円高の62780円</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>11/03 06:49</span>
+                <span>11/03 10:15</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/a9850df07a832aefd0b6f891d49db5338014e7d4?source=rss" target="_blank" rel="noopener">NY原油反落、終値96ドル台　米イラン協議進展期待で(共同通信)</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1738081" target="_blank" rel="noopener">米国株先物は小幅上昇、アップルは決算受け下落</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>11/03 06:48</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>11/03 10:01</span>
               </div>
-              
-              <div class="news-summary">【ニューヨーク共同】週明け2日のニューヨーク・マーカンタイル取引所の原油先物相場は急反落し、指標の米国産標準油種（WTI）の12月渡しが前週末比7.66ドル安の1バレル＝96.46ドルで取引を終えた。…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/cde6430ff35e0085b1d0cecdd4df18c31f55349b?source=rss" target="_blank" rel="noopener">NY株式　　　2日終値　　　　(共同通信)</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1738068" target="_blank" rel="noopener">2日のNY市場はまちまち</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>11/03 06:45</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>11/03 09:30</span>
               </div>
               
-              <div class="news-summary">＜ダウ工業30種平均＞ 51983.98 前日比 ＋213.67</div>
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1738047" target="_blank" rel="noopener">米国株式市場はまちまち、原油安を好感もAI巨大投資懸念が存続</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>11/03 09:00</span>
+              </div>
               
             </div>
             
@@ -1043,19 +1050,6 @@
               
             </div>
             
-            <div class="news-item">
-              <div class="news-title">
-                <a href="http://www3.nhk.or.jp/news/html/20260807/k10015199701000.html" target="_blank" rel="noopener">米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">NHK経済</span>
-                <span>08/07 23:53</span>
-              </div>
-              
-              <div class="news-summary">円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が…</div>
-              
-            </div>
-            
           </div>
         </div>
         
@@ -1063,7 +1057,7 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (3件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (2件)</div>
           <div class="news-list">
             
             <div class="news-item">
@@ -1076,19 +1070,6 @@
               </div>
               
               <div class="news-summary">本記事は、水澤 健一氏の著書『インフレ時代の不動産投資 最短で成功するロードマップ』（あさ出版）の中から一部を抜粋・編集しています。 学び続け、行動し続けた人だけが成果を手にできる ここまで、物件の探…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://zuuonline.com/archives/303463" target="_blank" rel="noopener">引渡し後に差がつく、不動産オーナーの経営習慣</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">ZUU online</span>
-                <span>11/01 17:00</span>
-              </div>
-              
-              <div class="news-summary">本記事は、水澤 健一氏の著書『インフレ時代の不動産投資 最短で成功するロードマップ』（あさ出版）の中から一部を抜粋・編集しています。 物件の引渡しを受けたその日からあなたは経営者です 物件の引渡しを受…</div>
               
             </div>
             
@@ -1112,30 +1093,8 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (3件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (1件)</div>
           <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-432SI-1737822" target="_blank" rel="noopener">クレセント・エナジー、ロイヤルティ子会社のIPOを申請</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>11/03 06:27</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1737707" target="_blank" rel="noopener">オッペンハイマー、第3四半期決算前にSMidキャップSaaS銘柄を展望</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>11/03 05:31</span>
-              </div>
-              
-            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1183,20 +1142,20 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-11-03 07:02）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-11-03 11:40）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】昼（日本前場総括・セクター騰落・決算速報）
 
 【マーケットデータ】
-- S&P 500: 7,541.40 (-0.51%)
-- NASDAQ: 25,164.32 (-1.07%)
-- ダウ: 51,983.98 (+0.41%)
-- ドル円: 157.85 円 (+0.03%)
-- 米10年債利回り: 4.894 % (-0.71%)
-- WTI原油: 96.21 USD (+0.00%)
-- 金: 3957.30 USD (+0.00%)
-- 日経225: 63,290.11 pt (+0.00%)
+- 日経225: 63,081.86 pt (-0.33%)
 - TOPIX (1306連動ETF): 413.0 円 (-0.82%)
+- ドル円: 157.92 円 (+0.16%)
+- S&P 500: 7,541.40 (-0.51%)
+- NASDAQ: 25,164.36 (-1.07%)
+- ダウ: 51,983.98 (+0.41%)
+- 米10年債利回り: 4.894 % (-0.71%)
+- WTI原油: 96.64 USD (+0.00%)
+- 金: 3954.40 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1225,13 +1184,12 @@
   -9.80pt  Micron Technology(MU)  -5.78%  wt:2.24%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 汚れた渋谷を、ハチ公が駆けて洗う。犬の日に現れた奇跡の足跡(FINDERS) (11/03 07:00)
-  概要: ハロウィンの熱狂が去った翌朝の渋谷に、忠犬ハチ公が自ら街を駆け回って洗浄していったかのような足跡が浮かび上がった。これは、ケルヒャー ジャパン株式会社が手がける「洗伝PROJECT」の取り組みとして公
-- [Investing.com日本] Palantirの株価が時間外取引で上昇、第3四半期決算が市場予想を大幅に上回る (11/03 06:49)
-- [Yahoo!ファイナンス] NY原油反落、終値96ドル台　米イラン協議進展期待で(共同通信) (11/03 06:48)
-  概要: 【ニューヨーク共同】週明け2日のニューヨーク・マーカンタイル取引所の原油先物相場は急反落し、指標の米国産標準油種（WTI）の12月渡しが前週末比7.66ドル安の1バレル＝96.46ドルで取引を終えた。
-- [Yahoo!ファイナンス] NY株式　　　2日終値　　　　(共同通信) (11/03 06:45)
-  概要: ＜ダウ工業30種平均＞ 51983.98 前日比 ＋213.67
+- [Yahoo!ファイナンス] アップル第4四半期決算、iPhone売上高9.1兆円と好調　市場予想を上回る(Forbes JAPAN) (11/03 11:30)
+  概要: アップルが発表した2026年会計年度第4四半期（7〜9月期）のiPhone売上高は、576億ドル（約9兆1000億円）に達した。これは、ジョン・ターナス新CEOの体制下で初となる四半期決算であり、時価
+- [Investing.com日本] 「株式」ADR日本株ランキング～やや買い優勢、シカゴは大阪日中比180円高の62780円 (11/03 10:15)
+- [Investing.com日本] 米国株先物は小幅上昇、アップルは決算受け下落 (11/03 10:01)
+- [Investing.com日本] 2日のNY市場はまちまち (11/03 09:30)
+- [Investing.com日本] 米国株式市場はまちまち、原油安を好感もAI巨大投資懸念が存続 (11/03 09:00)
 - [ZUU online] 日々是相場［夕刊］――  2026年11月2日（金） (11/02 20:00)
   概要: 日経平均 63,081.86円 ▼208.25円 為替 １ドル＝157.87円 売買高（東証プライム、以下同） 26億6,201万株 売買代金 7兆6403億53百万円 値上り銘柄数 505銘柄 値下
 - [ZUU online] 米ドル／円  ―― 158.35～159.00円辺りのゾーンの値動きを見ながらエントリーポイントを考えていきたい (11/02 19:30)
@@ -1242,16 +1200,10 @@
   概要: この記事は2026年10月30日に日本証券新聞で公開された「 NSJHL 367 2026_1030　【日経平均株価】『赤三兵』で上放れならず　AI波乱相場が継続　米中間選挙、キオクシア決算の影響は？
 - [ZUU online] FX/為替「ドル/円今日の見通し｜FRBの12月利上げ巡りISM製造業に注目も レンジブレイクは困難か」 外為どっとコム トゥデイ 2026年11月2日号 (11/02 10:32)
   概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年11月2日8時30分執筆・監修：株式会社外
-- [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
-  概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
 - [ZUU online] 一人で頑張り続けようとするな、不動産投資で成果を出す学びの環境 (11/02 17:00)
   概要: 本記事は、水澤 健一氏の著書『インフレ時代の不動産投資 最短で成功するロードマップ』（あさ出版）の中から一部を抜粋・編集しています。 学び続け、行動し続けた人だけが成果を手にできる ここまで、物件の探
-- [ZUU online] 引渡し後に差がつく、不動産オーナーの経営習慣 (11/01 17:00)
-  概要: 本記事は、水澤 健一氏の著書『インフレ時代の不動産投資 最短で成功するロードマップ』（あさ出版）の中から一部を抜粋・編集しています。 物件の引渡しを受けたその日からあなたは経営者です 物件の引渡しを受
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Investing.com日本] クレセント・エナジー、ロイヤルティ子会社のIPOを申請 (11/03 06:27)
-- [Investing.com日本] オッペンハイマー、第3四半期決算前にSMidキャップSaaS銘柄を展望 (11/03 05:31)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
@@ -1270,15 +1222,15 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
-- S&P 500: 7,541.40 (-0.51%)
-- NASDAQ: 25,164.32 (-1.07%)
-- ダウ: 51,983.98 (+0.41%)
-- ドル円: 157.85 円 (+0.03%)
-- 米10年債利回り: 4.894 % (-0.71%)
-- WTI原油: 96.21 USD (+0.00%)
-- 金: 3957.30 USD (+0.00%)
-- 日経225: 63,290.11 pt (+0.00%)
+- 日経225: 63,081.86 pt (-0.33%)
 - TOPIX (1306連動ETF): 413.0 円 (-0.82%)
+- ドル円: 157.92 円 (+0.16%)
+- S&P 500: 7,541.40 (-0.51%)
+- NASDAQ: 25,164.36 (-1.07%)
+- ダウ: 51,983.98 (+0.41%)
+- 米10年債利回り: 4.894 % (-0.71%)
+- WTI原油: 96.64 USD (+0.00%)
+- 金: 3954.40 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1307,13 +1259,12 @@
   -9.80pt  Micron Technology(MU)  -5.78%  wt:2.24%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 汚れた渋谷を、ハチ公が駆けて洗う。犬の日に現れた奇跡の足跡(FINDERS) (11/03 07:00)
-  概要: ハロウィンの熱狂が去った翌朝の渋谷に、忠犬ハチ公が自ら街を駆け回って洗浄していったかのような足跡が浮かび上がった。これは、ケルヒャー ジャパン株式会社が手がける「洗伝PROJECT」の取り組みとして公
-- [Investing.com日本] Palantirの株価が時間外取引で上昇、第3四半期決算が市場予想を大幅に上回る (11/03 06:49)
-- [Yahoo!ファイナンス] NY原油反落、終値96ドル台　米イラン協議進展期待で(共同通信) (11/03 06:48)
-  概要: 【ニューヨーク共同】週明け2日のニューヨーク・マーカンタイル取引所の原油先物相場は急反落し、指標の米国産標準油種（WTI）の12月渡しが前週末比7.66ドル安の1バレル＝96.46ドルで取引を終えた。
-- [Yahoo!ファイナンス] NY株式　　　2日終値　　　　(共同通信) (11/03 06:45)
-  概要: ＜ダウ工業30種平均＞ 51983.98 前日比 ＋213.67
+- [Yahoo!ファイナンス] アップル第4四半期決算、iPhone売上高9.1兆円と好調　市場予想を上回る(Forbes JAPAN) (11/03 11:30)
+  概要: アップルが発表した2026年会計年度第4四半期（7〜9月期）のiPhone売上高は、576億ドル（約9兆1000億円）に達した。これは、ジョン・ターナス新CEOの体制下で初となる四半期決算であり、時価
+- [Investing.com日本] 「株式」ADR日本株ランキング～やや買い優勢、シカゴは大阪日中比180円高の62780円 (11/03 10:15)
+- [Investing.com日本] 米国株先物は小幅上昇、アップルは決算受け下落 (11/03 10:01)
+- [Investing.com日本] 2日のNY市場はまちまち (11/03 09:30)
+- [Investing.com日本] 米国株式市場はまちまち、原油安を好感もAI巨大投資懸念が存続 (11/03 09:00)
 - [ZUU online] 日々是相場［夕刊］――  2026年11月2日（金） (11/02 20:00)
   概要: 日経平均 63,081.86円 ▼208.25円 為替 １ドル＝157.87円 売買高（東証プライム、以下同） 26億6,201万株 売買代金 7兆6403億53百万円 値上り銘柄数 505銘柄 値下
 - [ZUU online] 米ドル／円  ―― 158.35～159.00円辺りのゾーンの値動きを見ながらエントリーポイントを考えていきたい (11/02 19:30)
@@ -1324,16 +1275,10 @@
   概要: この記事は2026年10月30日に日本証券新聞で公開された「 NSJHL 367 2026_1030　【日経平均株価】『赤三兵』で上放れならず　AI波乱相場が継続　米中間選挙、キオクシア決算の影響は？
 - [ZUU online] FX/為替「ドル/円今日の見通し｜FRBの12月利上げ巡りISM製造業に注目も レンジブレイクは困難か」 外為どっとコム トゥデイ 2026年11月2日号 (11/02 10:32)
   概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年11月2日8時30分執筆・監修：株式会社外
-- [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
-  概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
 - [ZUU online] 一人で頑張り続けようとするな、不動産投資で成果を出す学びの環境 (11/02 17:00)
   概要: 本記事は、水澤 健一氏の著書『インフレ時代の不動産投資 最短で成功するロードマップ』（あさ出版）の中から一部を抜粋・編集しています。 学び続け、行動し続けた人だけが成果を手にできる ここまで、物件の探
-- [ZUU online] 引渡し後に差がつく、不動産オーナーの経営習慣 (11/01 17:00)
-  概要: 本記事は、水澤 健一氏の著書『インフレ時代の不動産投資 最短で成功するロードマップ』（あさ出版）の中から一部を抜粋・編集しています。 物件の引渡しを受けたその日からあなたは経営者です 物件の引渡しを受
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Investing.com日本] クレセント・エナジー、ロイヤルティ子会社のIPOを申請 (11/03 06:27)
-- [Investing.com日本] オッペンハイマー、第3四半期決算前にSMidキャップSaaS銘柄を展望 (11/03 05:31)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
@@ -1346,15 +1291,15 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
-- S&P 500: 7,541.40 (-0.51%)
-- NASDAQ: 25,164.32 (-1.07%)
-- ダウ: 51,983.98 (+0.41%)
-- ドル円: 157.85 円 (+0.03%)
-- 米10年債利回り: 4.894 % (-0.71%)
-- WTI原油: 96.21 USD (+0.00%)
-- 金: 3957.30 USD (+0.00%)
-- 日経225: 63,290.11 pt (+0.00%)
+- 日経225: 63,081.86 pt (-0.33%)
 - TOPIX (1306連動ETF): 413.0 円 (-0.82%)
+- ドル円: 157.92 円 (+0.16%)
+- S&P 500: 7,541.40 (-0.51%)
+- NASDAQ: 25,164.36 (-1.07%)
+- ダウ: 51,983.98 (+0.41%)
+- 米10年債利回り: 4.894 % (-0.71%)
+- WTI原油: 96.64 USD (+0.00%)
+- 金: 3954.40 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1383,13 +1328,12 @@
   -9.80pt  Micron Technology(MU)  -5.78%  wt:2.24%  [Information Technology]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 汚れた渋谷を、ハチ公が駆けて洗う。犬の日に現れた奇跡の足跡(FINDERS) (11/03 07:00)
-  概要: ハロウィンの熱狂が去った翌朝の渋谷に、忠犬ハチ公が自ら街を駆け回って洗浄していったかのような足跡が浮かび上がった。これは、ケルヒャー ジャパン株式会社が手がける「洗伝PROJECT」の取り組みとして公
-- [Investing.com日本] Palantirの株価が時間外取引で上昇、第3四半期決算が市場予想を大幅に上回る (11/03 06:49)
-- [Yahoo!ファイナンス] NY原油反落、終値96ドル台　米イラン協議進展期待で(共同通信) (11/03 06:48)
-  概要: 【ニューヨーク共同】週明け2日のニューヨーク・マーカンタイル取引所の原油先物相場は急反落し、指標の米国産標準油種（WTI）の12月渡しが前週末比7.66ドル安の1バレル＝96.46ドルで取引を終えた。
-- [Yahoo!ファイナンス] NY株式　　　2日終値　　　　(共同通信) (11/03 06:45)
-  概要: ＜ダウ工業30種平均＞ 51983.98 前日比 ＋213.67
+- [Yahoo!ファイナンス] アップル第4四半期決算、iPhone売上高9.1兆円と好調　市場予想を上回る(Forbes JAPAN) (11/03 11:30)
+  概要: アップルが発表した2026年会計年度第4四半期（7〜9月期）のiPhone売上高は、576億ドル（約9兆1000億円）に達した。これは、ジョン・ターナス新CEOの体制下で初となる四半期決算であり、時価
+- [Investing.com日本] 「株式」ADR日本株ランキング～やや買い優勢、シカゴは大阪日中比180円高の62780円 (11/03 10:15)
+- [Investing.com日本] 米国株先物は小幅上昇、アップルは決算受け下落 (11/03 10:01)
+- [Investing.com日本] 2日のNY市場はまちまち (11/03 09:30)
+- [Investing.com日本] 米国株式市場はまちまち、原油安を好感もAI巨大投資懸念が存続 (11/03 09:00)
 - [ZUU online] 日々是相場［夕刊］――  2026年11月2日（金） (11/02 20:00)
   概要: 日経平均 63,081.86円 ▼208.25円 為替 １ドル＝157.87円 売買高（東証プライム、以下同） 26億6,201万株 売買代金 7兆6403億53百万円 値上り銘柄数 505銘柄 値下
 - [ZUU online] 米ドル／円  ―― 158.35～159.00円辺りのゾーンの値動きを見ながらエントリーポイントを考えていきたい (11/02 19:30)
@@ -1400,16 +1344,10 @@
   概要: この記事は2026年10月30日に日本証券新聞で公開された「 NSJHL 367 2026_1030　【日経平均株価】『赤三兵』で上放れならず　AI波乱相場が継続　米中間選挙、キオクシア決算の影響は？
 - [ZUU online] FX/為替「ドル/円今日の見通し｜FRBの12月利上げ巡りISM製造業に注目も レンジブレイクは困難か」 外為どっとコム トゥデイ 2026年11月2日号 (11/02 10:32)
   概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年11月2日8時30分執筆・監修：株式会社外
-- [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
-  概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
 - [ZUU online] 一人で頑張り続けようとするな、不動産投資で成果を出す学びの環境 (11/02 17:00)
   概要: 本記事は、水澤 健一氏の著書『インフレ時代の不動産投資 最短で成功するロードマップ』（あさ出版）の中から一部を抜粋・編集しています。 学び続け、行動し続けた人だけが成果を手にできる ここまで、物件の探
-- [ZUU online] 引渡し後に差がつく、不動産オーナーの経営習慣 (11/01 17:00)
-  概要: 本記事は、水澤 健一氏の著書『インフレ時代の不動産投資 最短で成功するロードマップ』（あさ出版）の中から一部を抜粋・編集しています。 物件の引渡しを受けたその日からあなたは経営者です 物件の引渡しを受
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Investing.com日本] クレセント・エナジー、ロイヤルティ子会社のIPOを申請 (11/03 06:27)
-- [Investing.com日本] オッペンハイマー、第3四半期決算前にSMidキャップSaaS銘柄を展望 (11/03 05:31)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
