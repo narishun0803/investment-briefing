@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [昼]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">昼</span>
+    <span class="slot-desc">日本前場総括・セクター騰落・決算速報</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年11月10日 07:48 JST</span>
+    <span class="updated">更新: 2026年11月10日 11:58 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">60,475.78 <span class="tile-unit">pt</span></div>
+          <div class="tile-change up">
+            +1700.28&nbsp;&nbsp;+2.89%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">410.6 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +8.50&nbsp;&nbsp;+2.11%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">158.04 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -0.25&nbsp;&nbsp;-0.16%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">52,389.75 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">157.89 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.39&nbsp;&nbsp;+0.25%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.864 <span class="tile-unit">%</span></div>
@@ -603,7 +627,7 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">86.38 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">86.07 <span class="tile-unit">USD</span></div>
           <div class="tile-change flat">
             +0.00&nbsp;&nbsp;+0.00%
           </div>
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">4149.50 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">4122.40 <span class="tile-unit">USD</span></div>
           <div class="tile-change flat">
             +0.00&nbsp;&nbsp;+0.00%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">57,434.77 <span class="tile-unit">pt</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">402.1 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +13.50&nbsp;&nbsp;+3.47%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -669,38 +669,29 @@
             
             <tr>
               <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/9983:TYO" target="_blank" rel="noopener">ファーストリテイリング</a>
-                <span class="contrib-sector">小売</span>
-              </td>
-              <td class="up">+102.14</td>
-              <td class="up">+3.67%</td>
-            </tr>
-            
-            <tr>
-              <td>
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6861:TYO" target="_blank" rel="noopener">キーエンス</a>
                 <span class="contrib-sector">電機</span>
               </td>
-              <td class="up">+65.36</td>
-              <td class="up">+2.62%</td>
+              <td class="up">+127.50</td>
+              <td class="up">+4.99%</td>
             </tr>
             
             <tr>
               <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/7741:TYO" target="_blank" rel="noopener">HOYA</a>
-                <span class="contrib-sector">精密機器</span>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/6857:TYO" target="_blank" rel="noopener">アドバンテスト</a>
+                <span class="contrib-sector">電機</span>
               </td>
-              <td class="up">+28.21</td>
-              <td class="up">+3.53%</td>
-            </tr>
-            
-            <tr>
-              <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/6098:TYO" target="_blank" rel="noopener">リクルートHD</a>
-                <span class="contrib-sector">サービス</span>
-              </td>
-              <td class="up">+23.75</td>
+              <td class="up">+39.64</td>
               <td class="up">+3.91%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9983:TYO" target="_blank" rel="noopener">ファーストリテイリング</a>
+                <span class="contrib-sector">小売</span>
+              </td>
+              <td class="up">+35.71</td>
+              <td class="up">+1.24%</td>
             </tr>
             
             <tr>
@@ -708,8 +699,17 @@
                 <a class="contrib-name" href="https://www.google.com/finance/quote/6367:TYO" target="_blank" rel="noopener">ダイキン</a>
                 <span class="contrib-sector">機械</span>
               </td>
-              <td class="up">+23.39</td>
-              <td class="up">+3.01%</td>
+              <td class="up">+21.07</td>
+              <td class="up">+2.63%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/9984:TYO" target="_blank" rel="noopener">ソフトバンクG</a>
+                <span class="contrib-sector">通信</span>
+              </td>
+              <td class="up">+17.68</td>
+              <td class="up">+14.56%</td>
             </tr>
             
             </tbody>
@@ -728,20 +728,47 @@
             
             <tr>
               <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/9984:TYO" target="_blank" rel="noopener">ソフトバンクG</a>
-                <span class="contrib-sector">通信</span>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/7974:TYO" target="_blank" rel="noopener">任天堂</a>
+                <span class="contrib-sector">電機</span>
               </td>
-              <td class="down">-5.32</td>
-              <td class="down">-4.20%</td>
+              <td class="down">-3.82</td>
+              <td class="down">-1.24%</td>
             </tr>
             
             <tr>
               <td>
-                <a class="contrib-name" href="https://www.google.com/finance/quote/9433:TYO" target="_blank" rel="noopener">KDDI</a>
-                <span class="contrib-sector">通信</span>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/4661:TYO" target="_blank" rel="noopener">オリエンタルランド</a>
+                <span class="contrib-sector">サービス</span>
               </td>
-              <td class="down">-0.52</td>
-              <td class="down">-0.51%</td>
+              <td class="down">-3.00</td>
+              <td class="down">-2.23%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/7203:TYO" target="_blank" rel="noopener">トヨタ</a>
+                <span class="contrib-sector">自動車</span>
+              </td>
+              <td class="down">-1.93</td>
+              <td class="down">-1.55%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/4568:TYO" target="_blank" rel="noopener">第一三共</a>
+                <span class="contrib-sector">医薬品</span>
+              </td>
+              <td class="down">-1.71</td>
+              <td class="down">-1.69%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/4502:TYO" target="_blank" rel="noopener">武田薬品</a>
+                <span class="contrib-sector">医薬品</span>
+              </td>
+              <td class="down">-1.36</td>
+              <td class="down">-0.57%</td>
             </tr>
             
             </tbody>
@@ -888,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (15件)</div>
+    <div class="card-title">📰 最新ニュース (18件)</div>
     
     
     
@@ -903,60 +930,64 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/3143e1d6acd2a3a9f7cf2ef1dbda920b0512f998?source=rss" target="_blank" rel="noopener">英国で新車の3台に1台がEVに　ガソリン高騰で販売急増　中国車『ジェイクー7』は2か月連続首位獲得(AUTOCAR JAPAN)</a>
+                <a href="https://news.yahoo.co.jp/articles/d91d203195d62c86bb8e9561fa6b822949ce6c66?source=rss" target="_blank" rel="noopener">マッチングアプリに「工業社会のロジック」が潜んでいる？　減点主義を手放した先の“評価軸”(PHPオンライン)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>11/10 07:45</span>
+                <span>11/10 11:53</span>
               </div>
               
-              <div class="news-summary">英国でEV市場の成長が続いている。10月、英国内の新車販売全体に占めるEVの割合は今年最高の約33％に達した。【写真】英国で人気沸騰する中国車【ジェイクー7を詳しく見る】 (25枚)英国自動車製造販売…</div>
+              <div class="news-summary">人気Podcast番組『学校では教えてくれない"見えない力"の授業～「大人の非認知能力」～』でパーソナリティをつとめる、株式会社OnLine代表の白石慶次さん。同番組に、教育改革やソーシャル・イノベー…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/b782b4a516bf1709216caaee911a578590886632?source=rss" target="_blank" rel="noopener">年金暮らしの父が株を売り、「40万円もうかった」と喜んでいました。証券会社で税金が引かれている場合、確定申告は気にしなくてよいのでしょうか？(ファイナンシャルフィールド)</a>
+                <a href="https://news.yahoo.co.jp/articles/25891caa8454e6624850ed11223d24f4a2ddc7ab?source=rss" target="_blank" rel="noopener">東証午前、節目の6万円を回復　米株高、原油安が追い風(共同通信)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>11/10 07:40</span>
+                <span>11/10 11:51</span>
               </div>
               
-              <div class="news-summary">年金生活中に保有株を売却し、40万円の利益が出た場合、「年金以外の所得が20万円を超えたから確定申告が必要なのでは」と心配になるかもしれません。しかし、株式の売却益は、どの口座で取引していたかによって…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1749442" target="_blank" rel="noopener">Definium Therapeuticsの株価が時間外取引で上昇した理由</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>11/10 07:12</span>
-              </div>
+              <div class="news-summary">10日午前の東京株式市場は、日経平均株価（225種）が続伸した。前日終値からの上げ幅は一時1800円を超え、節目の6万円を回復した。前日の米国株高や原油価格の下落が追い風となり、ハイテク関連銘柄を中心…</div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1749437" target="_blank" rel="noopener">AST SpaceMobileの株価が本日上昇した理由とは</a>
+                <a href="https://news.yahoo.co.jp/articles/a8e2b17ecb4d37ca1263c669710efa219d3c1a63?source=rss" target="_blank" rel="noopener">日経平均株価　6万円台回復 AI関連など買い戻し続く　一時1800円超の値上がり(テレビ朝日系（ANN）)</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Yahoo!ファイナンス</span>
+                <span>11/10 11:51</span>
+              </div>
+              
+              <div class="news-summary">日経平均株価は一時1800円余り値上がりし、6万円台を回復しました。大幅下落した反動による買い戻しが続いています。 日経平均、10日午前の終値は9日より1700円高い6万475円でした。 6日、アメリ…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1749752" target="_blank" rel="noopener">ウーシー・アップテック、米国が軍事リストから除外し株価上昇</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>11/10 07:08</span>
+                <span>11/10 11:36</span>
               </div>
               
             </div>
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1749370" target="_blank" rel="noopener">AnthropicがAI市場の変動にもかかわらず来週のIPOを目指す</a>
+                <a href="https://zuuonline.com/archives/303681" target="_blank" rel="noopener">FX/為替「ドル/円今日の見通し｜158円挟みの展開続く」 外為どっとコム トゥデイ 2026年11月10日号</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>11/10 06:38</span>
+                <span class="news-source">ZUU online</span>
+                <span>11/10 10:32</span>
               </div>
+              
+              <div class="news-summary">主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年11月10日8時30分執筆・監修：株式会社…</div>
               
             </div>
             
@@ -1037,14 +1068,14 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/01886d2f6ee2a63f544664d80facbb94d7c83b96?source=rss" target="_blank" rel="noopener">日本のGDPが世界6位になっても「悪くない」…日本人が捨てるべき大国意識と、歴史から学ぶべきこと(ダイヤモンド・オンライン)</a>
+                <a href="https://news.yahoo.co.jp/articles/aa16a4457744e42225ee9f372839f03ced4bee64?source=rss" target="_blank" rel="noopener">中国1～10月貿易黒字、1兆ドル超え(共同通信)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>11/10 07:36</span>
+                <span>11/10 11:51</span>
               </div>
               
-              <div class="news-summary">世界の警察として振る舞ってきたアメリカが、いま大きく変わろうとしている。もはや日本が、かつてのようなアメリカの庇護を期待することはできない。一方、日本では依然として大国意識が根強く、過去の歴史と向き合…</div>
+              <div class="news-summary">【北京共同】中国税関総署が10日発表した1～10月の貿易統計は、貿易黒字が1兆425億ドル（約165兆円）だった。2年連続で貿易黒字が1兆ドルを超えたことになる。</div>
               
             </div>
             
@@ -1068,8 +1099,41 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (1件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (4件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1749760" target="_blank" rel="noopener">ミクニ---中間期は2ケタ増収・経常増益、商社事業が大幅増益</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>11/10 11:45</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1749757" target="_blank" rel="noopener">和田興産 Research Memo（1）：2027年2月期業績は順調に進捗、新規事業の成果も出始める</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>11/10 11:45</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1749753" target="_blank" rel="noopener">アンソロピック、IPO詳細をバンカーに送付後に撤回―ロイター</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>11/10 11:38</span>
+              </div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1096,14 +1160,14 @@
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://zuuonline.com/archives/303349" target="_blank" rel="noopener">AI関連という名前だけで買うな、本物テーマ株を見極める5つの視点</a>
+                <a href="https://zuuonline.com/archives/303350" target="_blank" rel="noopener">何で稼ぐ会社なのか、AIで読み解く企業分析の基本</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">ZUU online</span>
-                <span>11/09 10:00</span>
+                <span>11/10 10:00</span>
               </div>
               
-              <div class="news-summary">本記事は、手塚 宏二(小次郎講師)氏,紺野 仁氏の著書『生成ＡＩでいちばんやさしく儲ける株投資』（日本実業出版社）の中から一部を抜粋・編集しています。 テーマ株のなかからほんものを見つけるコツ 「AI…</div>
+              <div class="news-summary">本記事は、手塚 宏二(小次郎講師)氏,紺野 仁氏の著書『生成ＡＩでいちばんやさしく儲ける株投資』（日本実業出版社）の中から一部を抜粋・編集しています。 企業分析の基本──どんな会社か、どこまで知ればい…</div>
               
             </div>
             
@@ -1130,31 +1194,34 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-11-10 07:48）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-11-10 11:58）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】昼（日本前場総括・セクター騰落・決算速報）
 
 【マーケットデータ】
+- 日経225: 60,475.78 pt (+2.89%)
+- TOPIX (1306連動ETF): 410.6 円 (+2.11%)
+- ドル円: 158.04 円 (-0.16%)
 - S&P 500: 7,549.94 (+2.35%)
 - NASDAQ: 25,253.14 (+2.74%)
 - ダウ: 52,389.75 (+2.15%)
-- ドル円: 157.89 円 (+0.25%)
 - 米10年債利回り: 4.864 % (+0.10%)
-- WTI原油: 86.38 USD (+0.00%)
-- 金: 4149.50 USD (+0.00%)
-- 日経225: 57,434.77 pt (+0.00%)
-- TOPIX (1306連動ETF): 402.1 円 (+3.47%)
+- WTI原油: 86.07 USD (+0.00%)
+- 金: 4122.40 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++102.14円  ファーストリテイリング(9983)  +3.67%  [小売]
-  ++65.36円  キーエンス(6861)  +2.62%  [電機]
-  ++28.21円  HOYA(7741)  +3.53%  [精密機器]
-  ++23.75円  リクルートHD(6098)  +3.91%  [サービス]
-  ++23.39円  ダイキン(6367)  +3.01%  [機械]
+  ++127.50円  キーエンス(6861)  +4.99%  [電機]
+  ++39.64円  アドバンテスト(6857)  +3.91%  [電機]
+  ++35.71円  ファーストリテイリング(9983)  +1.24%  [小売]
+  ++21.07円  ダイキン(6367)  +2.63%  [機械]
+  ++17.68円  ソフトバンクG(9984)  +14.56%  [通信]
 ▼ 日経225 (下落寄与TOP5)
-  -5.32円  ソフトバンクG(9984)  -4.20%  [通信]
-  -0.52円  KDDI(9433)  -0.51%  [通信]
+  -3.82円  任天堂(7974)  -1.24%  [電機]
+  -3.00円  オリエンタルランド(4661)  -2.23%  [サービス]
+  -1.93円  トヨタ(7203)  -1.55%  [自動車]
+  -1.71円  第一三共(4568)  -1.69%  [医薬品]
+  -1.36円  武田薬品(4502)  -0.57%  [医薬品]
 ▼ S&P500 (上昇寄与TOP5)
   ++22.02pt  Broadcom(AVGO)  +8.78%  wt:3.40%  [Information Technology]
   ++19.00pt  Apple Inc.(AAPL)  +2.43%  wt:10.60%  [Information Technology]
@@ -1169,13 +1236,15 @@
   -0.14pt  Visa Inc.(V)  -0.12%  wt:1.60%  [Financials]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 英国で新車の3台に1台がEVに　ガソリン高騰で販売急増　中国車『ジェイクー7』は2か月連続首位獲得(AUTOCAR JAPAN) (11/10 07:45)
-  概要: 英国でEV市場の成長が続いている。10月、英国内の新車販売全体に占めるEVの割合は今年最高の約33％に達した。【写真】英国で人気沸騰する中国車【ジェイクー7を詳しく見る】 (25枚)英国自動車製造販売
-- [Yahoo!ファイナンス] 年金暮らしの父が株を売り、「40万円もうかった」と喜んでいました。証券会社で税金が引かれている場合、確定申告は気にしなくてよいのでしょうか？(ファイナンシャルフィールド) (11/10 07:40)
-  概要: 年金生活中に保有株を売却し、40万円の利益が出た場合、「年金以外の所得が20万円を超えたから確定申告が必要なのでは」と心配になるかもしれません。しかし、株式の売却益は、どの口座で取引していたかによって
-- [Investing.com日本] Definium Therapeuticsの株価が時間外取引で上昇した理由 (11/10 07:12)
-- [Investing.com日本] AST SpaceMobileの株価が本日上昇した理由とは (11/10 07:08)
-- [Investing.com日本] AnthropicがAI市場の変動にもかかわらず来週のIPOを目指す (11/10 06:38)
+- [Yahoo!ファイナンス] マッチングアプリに「工業社会のロジック」が潜んでいる？　減点主義を手放した先の“評価軸”(PHPオンライン) (11/10 11:53)
+  概要: 人気Podcast番組『学校では教えてくれない"見えない力"の授業～「大人の非認知能力」～』でパーソナリティをつとめる、株式会社OnLine代表の白石慶次さん。同番組に、教育改革やソーシャル・イノベー
+- [Yahoo!ファイナンス] 東証午前、節目の6万円を回復　米株高、原油安が追い風(共同通信) (11/10 11:51)
+  概要: 10日午前の東京株式市場は、日経平均株価（225種）が続伸した。前日終値からの上げ幅は一時1800円を超え、節目の6万円を回復した。前日の米国株高や原油価格の下落が追い風となり、ハイテク関連銘柄を中心
+- [Yahoo!ファイナンス] 日経平均株価　6万円台回復 AI関連など買い戻し続く　一時1800円超の値上がり(テレビ朝日系（ANN）) (11/10 11:51)
+  概要: 日経平均株価は一時1800円余り値上がりし、6万円台を回復しました。大幅下落した反動による買い戻しが続いています。 日経平均、10日午前の終値は9日より1700円高い6万475円でした。 6日、アメリ
+- [Investing.com日本] ウーシー・アップテック、米国が軍事リストから除外し株価上昇 (11/10 11:36)
+- [ZUU online] FX/為替「ドル/円今日の見通し｜158円挟みの展開続く」 外為どっとコム トゥデイ 2026年11月10日号 (11/10 10:32)
+  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年11月10日8時30分執筆・監修：株式会社
 - [ZUU online] 日々是相場［夕刊］――  2026年11月9日（月） (11/09 20:00)
   概要: 日経平均 58,775.50円 △1,340.73円 為替 １ドル＝158.27円 売買高（東証プライム、以下同） 31億8,380万株 売買代金 8兆9118億42百万円 値上り銘柄数 1,416銘
 - [ZUU online] 米ドル／円  ―― 159円近くから売りのタイミングを計っていきたい (11/09 19:30)
@@ -1186,14 +1255,17 @@
   概要: この記事は2026年11月6日に日本証券新聞で公開された「 NSJHL 368 2026_1106　【日経平均株価】米中間選挙で波乱！日経平均一時4300円安　AI総崩れで200日移動平均線下抜け！」
 - [ZUU online] CFOからCEOへ――ミスズライフ木内氏が実践する“ルール経営”の真髄 (11/09 14:00)
   概要: 入社以来、毎日100gのきのこを食べ続けている経営者がいる。株式会社ミスズライフの代表取締役社長・木内達也氏だ。財務のプロとしてCFOを務めていた木内氏は、2025年10月、自ら手を挙げて同社のトップ
-- [Yahoo!ファイナンス] 日本のGDPが世界6位になっても「悪くない」…日本人が捨てるべき大国意識と、歴史から学ぶべきこと(ダイヤモンド・オンライン) (11/10 07:36)
-  概要: 世界の警察として振る舞ってきたアメリカが、いま大きく変わろうとしている。もはや日本が、かつてのようなアメリカの庇護を期待することはできない。一方、日本では依然として大国意識が根強く、過去の歴史と向き合
+- [Yahoo!ファイナンス] 中国1～10月貿易黒字、1兆ドル超え(共同通信) (11/10 11:51)
+  概要: 【北京共同】中国税関総署が10日発表した1～10月の貿易統計は、貿易黒字が1兆425億ドル（約165兆円）だった。2年連続で貿易黒字が1兆ドルを超えたことになる。
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
+- [Investing.com日本] ミクニ---中間期は2ケタ増収・経常増益、商社事業が大幅増益 (11/10 11:45)
+- [Investing.com日本] 和田興産 Research Memo（1）：2027年2月期業績は順調に進捗、新規事業の成果も出始める (11/10 11:45)
+- [Investing.com日本] アンソロピック、IPO詳細をバンカーに送付後に撤回―ロイター (11/10 11:38)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [ZUU online] AI関連という名前だけで買うな、本物テーマ株を見極める5つの視点 (11/09 10:00)
-  概要: 本記事は、手塚 宏二(小次郎講師)氏,紺野 仁氏の著書『生成ＡＩでいちばんやさしく儲ける株投資』（日本実業出版社）の中から一部を抜粋・編集しています。 テーマ株のなかからほんものを見つけるコツ 「AI
+- [ZUU online] 何で稼ぐ会社なのか、AIで読み解く企業分析の基本 (11/10 10:00)
+  概要: 本記事は、手塚 宏二(小次郎講師)氏,紺野 仁氏の著書『生成ＡＩでいちばんやさしく儲ける株投資』（日本実業出版社）の中から一部を抜粋・編集しています。 企業分析の基本──どんな会社か、どこまで知ればい
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
@@ -1210,26 +1282,29 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 60,475.78 pt (+2.89%)
+- TOPIX (1306連動ETF): 410.6 円 (+2.11%)
+- ドル円: 158.04 円 (-0.16%)
 - S&P 500: 7,549.94 (+2.35%)
 - NASDAQ: 25,253.14 (+2.74%)
 - ダウ: 52,389.75 (+2.15%)
-- ドル円: 157.89 円 (+0.25%)
 - 米10年債利回り: 4.864 % (+0.10%)
-- WTI原油: 86.38 USD (+0.00%)
-- 金: 4149.50 USD (+0.00%)
-- 日経225: 57,434.77 pt (+0.00%)
-- TOPIX (1306連動ETF): 402.1 円 (+3.47%)
+- WTI原油: 86.07 USD (+0.00%)
+- 金: 4122.40 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++102.14円  ファーストリテイリング(9983)  +3.67%  [小売]
-  ++65.36円  キーエンス(6861)  +2.62%  [電機]
-  ++28.21円  HOYA(7741)  +3.53%  [精密機器]
-  ++23.75円  リクルートHD(6098)  +3.91%  [サービス]
-  ++23.39円  ダイキン(6367)  +3.01%  [機械]
+  ++127.50円  キーエンス(6861)  +4.99%  [電機]
+  ++39.64円  アドバンテスト(6857)  +3.91%  [電機]
+  ++35.71円  ファーストリテイリング(9983)  +1.24%  [小売]
+  ++21.07円  ダイキン(6367)  +2.63%  [機械]
+  ++17.68円  ソフトバンクG(9984)  +14.56%  [通信]
 ▼ 日経225 (下落寄与TOP5)
-  -5.32円  ソフトバンクG(9984)  -4.20%  [通信]
-  -0.52円  KDDI(9433)  -0.51%  [通信]
+  -3.82円  任天堂(7974)  -1.24%  [電機]
+  -3.00円  オリエンタルランド(4661)  -2.23%  [サービス]
+  -1.93円  トヨタ(7203)  -1.55%  [自動車]
+  -1.71円  第一三共(4568)  -1.69%  [医薬品]
+  -1.36円  武田薬品(4502)  -0.57%  [医薬品]
 ▼ S&P500 (上昇寄与TOP5)
   ++22.02pt  Broadcom(AVGO)  +8.78%  wt:3.40%  [Information Technology]
   ++19.00pt  Apple Inc.(AAPL)  +2.43%  wt:10.60%  [Information Technology]
@@ -1244,13 +1319,15 @@
   -0.14pt  Visa Inc.(V)  -0.12%  wt:1.60%  [Financials]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 英国で新車の3台に1台がEVに　ガソリン高騰で販売急増　中国車『ジェイクー7』は2か月連続首位獲得(AUTOCAR JAPAN) (11/10 07:45)
-  概要: 英国でEV市場の成長が続いている。10月、英国内の新車販売全体に占めるEVの割合は今年最高の約33％に達した。【写真】英国で人気沸騰する中国車【ジェイクー7を詳しく見る】 (25枚)英国自動車製造販売
-- [Yahoo!ファイナンス] 年金暮らしの父が株を売り、「40万円もうかった」と喜んでいました。証券会社で税金が引かれている場合、確定申告は気にしなくてよいのでしょうか？(ファイナンシャルフィールド) (11/10 07:40)
-  概要: 年金生活中に保有株を売却し、40万円の利益が出た場合、「年金以外の所得が20万円を超えたから確定申告が必要なのでは」と心配になるかもしれません。しかし、株式の売却益は、どの口座で取引していたかによって
-- [Investing.com日本] Definium Therapeuticsの株価が時間外取引で上昇した理由 (11/10 07:12)
-- [Investing.com日本] AST SpaceMobileの株価が本日上昇した理由とは (11/10 07:08)
-- [Investing.com日本] AnthropicがAI市場の変動にもかかわらず来週のIPOを目指す (11/10 06:38)
+- [Yahoo!ファイナンス] マッチングアプリに「工業社会のロジック」が潜んでいる？　減点主義を手放した先の“評価軸”(PHPオンライン) (11/10 11:53)
+  概要: 人気Podcast番組『学校では教えてくれない"見えない力"の授業～「大人の非認知能力」～』でパーソナリティをつとめる、株式会社OnLine代表の白石慶次さん。同番組に、教育改革やソーシャル・イノベー
+- [Yahoo!ファイナンス] 東証午前、節目の6万円を回復　米株高、原油安が追い風(共同通信) (11/10 11:51)
+  概要: 10日午前の東京株式市場は、日経平均株価（225種）が続伸した。前日終値からの上げ幅は一時1800円を超え、節目の6万円を回復した。前日の米国株高や原油価格の下落が追い風となり、ハイテク関連銘柄を中心
+- [Yahoo!ファイナンス] 日経平均株価　6万円台回復 AI関連など買い戻し続く　一時1800円超の値上がり(テレビ朝日系（ANN）) (11/10 11:51)
+  概要: 日経平均株価は一時1800円余り値上がりし、6万円台を回復しました。大幅下落した反動による買い戻しが続いています。 日経平均、10日午前の終値は9日より1700円高い6万475円でした。 6日、アメリ
+- [Investing.com日本] ウーシー・アップテック、米国が軍事リストから除外し株価上昇 (11/10 11:36)
+- [ZUU online] FX/為替「ドル/円今日の見通し｜158円挟みの展開続く」 外為どっとコム トゥデイ 2026年11月10日号 (11/10 10:32)
+  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年11月10日8時30分執筆・監修：株式会社
 - [ZUU online] 日々是相場［夕刊］――  2026年11月9日（月） (11/09 20:00)
   概要: 日経平均 58,775.50円 △1,340.73円 為替 １ドル＝158.27円 売買高（東証プライム、以下同） 31億8,380万株 売買代金 8兆9118億42百万円 値上り銘柄数 1,416銘
 - [ZUU online] 米ドル／円  ―― 159円近くから売りのタイミングを計っていきたい (11/09 19:30)
@@ -1261,14 +1338,17 @@
   概要: この記事は2026年11月6日に日本証券新聞で公開された「 NSJHL 368 2026_1106　【日経平均株価】米中間選挙で波乱！日経平均一時4300円安　AI総崩れで200日移動平均線下抜け！」
 - [ZUU online] CFOからCEOへ――ミスズライフ木内氏が実践する“ルール経営”の真髄 (11/09 14:00)
   概要: 入社以来、毎日100gのきのこを食べ続けている経営者がいる。株式会社ミスズライフの代表取締役社長・木内達也氏だ。財務のプロとしてCFOを務めていた木内氏は、2025年10月、自ら手を挙げて同社のトップ
-- [Yahoo!ファイナンス] 日本のGDPが世界6位になっても「悪くない」…日本人が捨てるべき大国意識と、歴史から学ぶべきこと(ダイヤモンド・オンライン) (11/10 07:36)
-  概要: 世界の警察として振る舞ってきたアメリカが、いま大きく変わろうとしている。もはや日本が、かつてのようなアメリカの庇護を期待することはできない。一方、日本では依然として大国意識が根強く、過去の歴史と向き合
+- [Yahoo!ファイナンス] 中国1～10月貿易黒字、1兆ドル超え(共同通信) (11/10 11:51)
+  概要: 【北京共同】中国税関総署が10日発表した1～10月の貿易統計は、貿易黒字が1兆425億ドル（約165兆円）だった。2年連続で貿易黒字が1兆ドルを超えたことになる。
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
+- [Investing.com日本] ミクニ---中間期は2ケタ増収・経常増益、商社事業が大幅増益 (11/10 11:45)
+- [Investing.com日本] 和田興産 Research Memo（1）：2027年2月期業績は順調に進捗、新規事業の成果も出始める (11/10 11:45)
+- [Investing.com日本] アンソロピック、IPO詳細をバンカーに送付後に撤回―ロイター (11/10 11:38)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [ZUU online] AI関連という名前だけで買うな、本物テーマ株を見極める5つの視点 (11/09 10:00)
-  概要: 本記事は、手塚 宏二(小次郎講師)氏,紺野 仁氏の著書『生成ＡＩでいちばんやさしく儲ける株投資』（日本実業出版社）の中から一部を抜粋・編集しています。 テーマ株のなかからほんものを見つけるコツ 「AI
+- [ZUU online] 何で稼ぐ会社なのか、AIで読み解く企業分析の基本 (11/10 10:00)
+  概要: 本記事は、手塚 宏二(小次郎講師)氏,紺野 仁氏の著書『生成ＡＩでいちばんやさしく儲ける株投資』（日本実業出版社）の中から一部を抜粋・編集しています。 企業分析の基本──どんな会社か、どこまで知ればい
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
@@ -1279,26 +1359,29 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 60,475.78 pt (+2.89%)
+- TOPIX (1306連動ETF): 410.6 円 (+2.11%)
+- ドル円: 158.04 円 (-0.16%)
 - S&P 500: 7,549.94 (+2.35%)
 - NASDAQ: 25,253.14 (+2.74%)
 - ダウ: 52,389.75 (+2.15%)
-- ドル円: 157.89 円 (+0.25%)
 - 米10年債利回り: 4.864 % (+0.10%)
-- WTI原油: 86.38 USD (+0.00%)
-- 金: 4149.50 USD (+0.00%)
-- 日経225: 57,434.77 pt (+0.00%)
-- TOPIX (1306連動ETF): 402.1 円 (+3.47%)
+- WTI原油: 86.07 USD (+0.00%)
+- 金: 4122.40 USD (+0.00%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
-  ++102.14円  ファーストリテイリング(9983)  +3.67%  [小売]
-  ++65.36円  キーエンス(6861)  +2.62%  [電機]
-  ++28.21円  HOYA(7741)  +3.53%  [精密機器]
-  ++23.75円  リクルートHD(6098)  +3.91%  [サービス]
-  ++23.39円  ダイキン(6367)  +3.01%  [機械]
+  ++127.50円  キーエンス(6861)  +4.99%  [電機]
+  ++39.64円  アドバンテスト(6857)  +3.91%  [電機]
+  ++35.71円  ファーストリテイリング(9983)  +1.24%  [小売]
+  ++21.07円  ダイキン(6367)  +2.63%  [機械]
+  ++17.68円  ソフトバンクG(9984)  +14.56%  [通信]
 ▼ 日経225 (下落寄与TOP5)
-  -5.32円  ソフトバンクG(9984)  -4.20%  [通信]
-  -0.52円  KDDI(9433)  -0.51%  [通信]
+  -3.82円  任天堂(7974)  -1.24%  [電機]
+  -3.00円  オリエンタルランド(4661)  -2.23%  [サービス]
+  -1.93円  トヨタ(7203)  -1.55%  [自動車]
+  -1.71円  第一三共(4568)  -1.69%  [医薬品]
+  -1.36円  武田薬品(4502)  -0.57%  [医薬品]
 ▼ S&P500 (上昇寄与TOP5)
   ++22.02pt  Broadcom(AVGO)  +8.78%  wt:3.40%  [Information Technology]
   ++19.00pt  Apple Inc.(AAPL)  +2.43%  wt:10.60%  [Information Technology]
@@ -1313,13 +1396,15 @@
   -0.14pt  Visa Inc.(V)  -0.12%  wt:1.60%  [Financials]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] 英国で新車の3台に1台がEVに　ガソリン高騰で販売急増　中国車『ジェイクー7』は2か月連続首位獲得(AUTOCAR JAPAN) (11/10 07:45)
-  概要: 英国でEV市場の成長が続いている。10月、英国内の新車販売全体に占めるEVの割合は今年最高の約33％に達した。【写真】英国で人気沸騰する中国車【ジェイクー7を詳しく見る】 (25枚)英国自動車製造販売
-- [Yahoo!ファイナンス] 年金暮らしの父が株を売り、「40万円もうかった」と喜んでいました。証券会社で税金が引かれている場合、確定申告は気にしなくてよいのでしょうか？(ファイナンシャルフィールド) (11/10 07:40)
-  概要: 年金生活中に保有株を売却し、40万円の利益が出た場合、「年金以外の所得が20万円を超えたから確定申告が必要なのでは」と心配になるかもしれません。しかし、株式の売却益は、どの口座で取引していたかによって
-- [Investing.com日本] Definium Therapeuticsの株価が時間外取引で上昇した理由 (11/10 07:12)
-- [Investing.com日本] AST SpaceMobileの株価が本日上昇した理由とは (11/10 07:08)
-- [Investing.com日本] AnthropicがAI市場の変動にもかかわらず来週のIPOを目指す (11/10 06:38)
+- [Yahoo!ファイナンス] マッチングアプリに「工業社会のロジック」が潜んでいる？　減点主義を手放した先の“評価軸”(PHPオンライン) (11/10 11:53)
+  概要: 人気Podcast番組『学校では教えてくれない"見えない力"の授業～「大人の非認知能力」～』でパーソナリティをつとめる、株式会社OnLine代表の白石慶次さん。同番組に、教育改革やソーシャル・イノベー
+- [Yahoo!ファイナンス] 東証午前、節目の6万円を回復　米株高、原油安が追い風(共同通信) (11/10 11:51)
+  概要: 10日午前の東京株式市場は、日経平均株価（225種）が続伸した。前日終値からの上げ幅は一時1800円を超え、節目の6万円を回復した。前日の米国株高や原油価格の下落が追い風となり、ハイテク関連銘柄を中心
+- [Yahoo!ファイナンス] 日経平均株価　6万円台回復 AI関連など買い戻し続く　一時1800円超の値上がり(テレビ朝日系（ANN）) (11/10 11:51)
+  概要: 日経平均株価は一時1800円余り値上がりし、6万円台を回復しました。大幅下落した反動による買い戻しが続いています。 日経平均、10日午前の終値は9日より1700円高い6万475円でした。 6日、アメリ
+- [Investing.com日本] ウーシー・アップテック、米国が軍事リストから除外し株価上昇 (11/10 11:36)
+- [ZUU online] FX/為替「ドル/円今日の見通し｜158円挟みの展開続く」 外為どっとコム トゥデイ 2026年11月10日号 (11/10 10:32)
+  概要: 主要通貨ペア（ドル/円、ユーロ/円、豪ドル/円、ポンド/円）について前営業日の値動きをわかりやすく解説し、今後の見通しをお届けします。 作成日時　：2026年11月10日8時30分執筆・監修：株式会社
 - [ZUU online] 日々是相場［夕刊］――  2026年11月9日（月） (11/09 20:00)
   概要: 日経平均 58,775.50円 △1,340.73円 為替 １ドル＝158.27円 売買高（東証プライム、以下同） 31億8,380万株 売買代金 8兆9118億42百万円 値上り銘柄数 1,416銘
 - [ZUU online] 米ドル／円  ―― 159円近くから売りのタイミングを計っていきたい (11/09 19:30)
@@ -1330,14 +1415,17 @@
   概要: この記事は2026年11月6日に日本証券新聞で公開された「 NSJHL 368 2026_1106　【日経平均株価】米中間選挙で波乱！日経平均一時4300円安　AI総崩れで200日移動平均線下抜け！」
 - [ZUU online] CFOからCEOへ――ミスズライフ木内氏が実践する“ルール経営”の真髄 (11/09 14:00)
   概要: 入社以来、毎日100gのきのこを食べ続けている経営者がいる。株式会社ミスズライフの代表取締役社長・木内達也氏だ。財務のプロとしてCFOを務めていた木内氏は、2025年10月、自ら手を挙げて同社のトップ
-- [Yahoo!ファイナンス] 日本のGDPが世界6位になっても「悪くない」…日本人が捨てるべき大国意識と、歴史から学ぶべきこと(ダイヤモンド・オンライン) (11/10 07:36)
-  概要: 世界の警察として振る舞ってきたアメリカが、いま大きく変わろうとしている。もはや日本が、かつてのようなアメリカの庇護を期待することはできない。一方、日本では依然として大国意識が根強く、過去の歴史と向き合
+- [Yahoo!ファイナンス] 中国1～10月貿易黒字、1兆ドル超え(共同通信) (11/10 11:51)
+  概要: 【北京共同】中国税関総署が10日発表した1～10月の貿易統計は、貿易黒字が1兆425億ドル（約165兆円）だった。2年連続で貿易黒字が1兆ドルを超えたことになる。
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
+- [Investing.com日本] ミクニ---中間期は2ケタ増収・経常増益、商社事業が大幅増益 (11/10 11:45)
+- [Investing.com日本] 和田興産 Research Memo（1）：2027年2月期業績は順調に進捗、新規事業の成果も出始める (11/10 11:45)
+- [Investing.com日本] アンソロピック、IPO詳細をバンカーに送付後に撤回―ロイター (11/10 11:38)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
-- [ZUU online] AI関連という名前だけで買うな、本物テーマ株を見極める5つの視点 (11/09 10:00)
-  概要: 本記事は、手塚 宏二(小次郎講師)氏,紺野 仁氏の著書『生成ＡＩでいちばんやさしく儲ける株投資』（日本実業出版社）の中から一部を抜粋・編集しています。 テーマ株のなかからほんものを見つけるコツ 「AI
+- [ZUU online] 何で稼ぐ会社なのか、AIで読み解く企業分析の基本 (11/10 10:00)
+  概要: 本記事は、手塚 宏二(小次郎講師)氏,紺野 仁氏の著書『生成ＡＩでいちばんやさしく儲ける株投資』（日本実業出版社）の中から一部を抜粋・編集しています。 企業分析の基本──どんな会社か、どこまで知ればい
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
