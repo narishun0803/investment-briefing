@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年11月14日 10:05 JST</span>
+    <span class="updated">更新: 2026年11月14日 18:06 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">61,142.35 <span class="tile-unit">pt</span></div>
+          <div class="tile-change up">
+            +322.99&nbsp;&nbsp;+0.53%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">415.5 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +1.20&nbsp;&nbsp;+0.29%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">159.88 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.14&nbsp;&nbsp;+0.09%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">52,347.55 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">159.88 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.14&nbsp;&nbsp;+0.09%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">5.154 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">88.92 <span class="tile-unit">USD</span></div>
-          <div class="tile-change up">
-            +0.18&nbsp;&nbsp;+0.20%
+          <div class="tile-price">88.56 <span class="tile-unit">USD</span></div>
+          <div class="tile-change down">
+            -0.18&nbsp;&nbsp;-0.20%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">3887.60 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">3886.30 <span class="tile-unit">USD</span></div>
           <div class="tile-change up">
-            +2.30&nbsp;&nbsp;+0.06%
+            +1.00&nbsp;&nbsp;+0.03%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">60,819.36 <span class="tile-unit">pt</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">415.5 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +1.20&nbsp;&nbsp;+0.29%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -783,12 +783,130 @@
 
         <div class="contrib-sub">
           <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/META:NASDAQ" target="_blank" rel="noopener">META</a>
+                <span class="contrib-sector">Meta Platforms</span>
+              </td>
+              <td class="up">+7.49</td>
+              <td class="up">+2.90%</td>
+              <td style="color:var(--text2)">3.40%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AAPL:NASDAQ" target="_blank" rel="noopener">AAPL</a>
+                <span class="contrib-sector">Apple Inc.</span>
+              </td>
+              <td class="up">+3.25</td>
+              <td class="up">+0.39%</td>
+              <td style="color:var(--text2)">10.94%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/LLY:NYSE" target="_blank" rel="noopener">LLY</a>
+                <span class="contrib-sector">Lilly (Eli)</span>
+              </td>
+              <td class="up">+2.59</td>
+              <td class="up">+1.26%</td>
+              <td style="color:var(--text2)">2.71%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/WMT:NASDAQ" target="_blank" rel="noopener">WMT</a>
+                <span class="contrib-sector">Walmart</span>
+              </td>
+              <td class="up">+2.41</td>
+              <td class="up">+1.51%</td>
+              <td style="color:var(--text2)">2.11%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/V:NYSE" target="_blank" rel="noopener">V</a>
+                <span class="contrib-sector">Visa Inc.</span>
+              </td>
+              <td class="up">+1.66</td>
+              <td class="up">+1.30%</td>
+              <td style="color:var(--text2)">1.68%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
 
         <div class="contrib-sub">
           <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/NVDA:NASDAQ" target="_blank" rel="noopener">NVDA</a>
+                <span class="contrib-sector">Nvidia</span>
+              </td>
+              <td class="down">-13.56</td>
+              <td class="down">-2.01%</td>
+              <td style="color:var(--text2)">8.88%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AMD:NASDAQ" target="_blank" rel="noopener">AMD</a>
+                <span class="contrib-sector">Advanced Micro Devic…</span>
+              </td>
+              <td class="down">-12.76</td>
+              <td class="down">-8.75%</td>
+              <td style="color:var(--text2)">1.92%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AVGO:NASDAQ" target="_blank" rel="noopener">AVGO</a>
+                <span class="contrib-sector">Broadcom</span>
+              </td>
+              <td class="down">-12.62</td>
+              <td class="down">-4.76%</td>
+              <td style="color:var(--text2)">3.49%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOGL:NASDAQ" target="_blank" rel="noopener">GOOGL</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="down">-5.69</td>
+              <td class="down">-0.98%</td>
+              <td style="color:var(--text2)">7.64%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/GOOG:NASDAQ" target="_blank" rel="noopener">GOOG</a>
+                <span class="contrib-sector">Alphabet Inc. (Class…</span>
+              </td>
+              <td class="down">-5.50</td>
+              <td class="down">-0.96%</td>
+              <td style="color:var(--text2)">7.57%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
       </div>
 
@@ -797,7 +915,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (17件)</div>
+    <div class="card-title">📰 最新ニュース (16件)</div>
     
     
     
@@ -839,28 +957,6 @@
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
                 <span>11/14 07:27</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1757350" target="_blank" rel="noopener">デルタ航空の株価が本日下落した理由とは</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>11/14 07:07</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1757348" target="_blank" rel="noopener">アメリカン航空グループの株価が本日下落した理由</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>11/14 07:07</span>
               </div>
               
             </div>
@@ -930,6 +1026,32 @@
               
             </div>
             
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260807/k10015199591000.html" target="_blank" rel="noopener">東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>08/07 22:19</span>
+              </div>
+              
+              <div class="news-summary">株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ…</div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="http://www3.nhk.or.jp/news/html/20260807/k10015199721000.html" target="_blank" rel="noopener">NY外国為替市場 円高ドル安が進む 米雇用統計発表受け</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">NHK経済</span>
+                <span>08/07 22:14</span>
+              </div>
+              
+              <div class="news-summary">7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい…</div>
+              
+            </div>
+            
           </div>
         </div>
         
@@ -937,29 +1059,16 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (3件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (2件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/ae2a79b9acc2861d776c2ad9ca925126b45a353f?source=rss" target="_blank" rel="noopener">エヌビディア問題議論せず　米中、マスク氏同行へ(共同通信)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>11/14 10:00</span>
-              </div>
-              
-              <div class="news-summary">【ワシントン共同】米政府関係者は13日、トランプ米大統領の中国訪問中、米エヌビディアを巡る半導体の輸出管理の問題を中国側と協議しない方針を示した。エヌビディアのジェンスン・フアン前最高経営責任者（CE…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-93CH-1757309" target="_blank" rel="noopener">AIリスクが金融安定性の最大懸念事項に、FRBが報告</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1757465" target="_blank" rel="noopener">国内外の注目経済指標：各国の景気・物価動向に注目、日米12月追加利上げ観測が焦点</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
-                <span>11/14 06:26</span>
+                <span>11/14 12:45</span>
               </div>
               
             </div>
@@ -984,21 +1093,8 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (3件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (2件)</div>
           <div class="news-list">
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/e6b466ca0ee3c766686b73cdbdc025930010ad91?source=rss" target="_blank" rel="noopener">3メガバンクG 中間決算で過去最高益(ABEMA TIMES)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>11/14 10:03</span>
-              </div>
-              
-              <div class="news-summary">メガバンクを傘下に持つ金融グループ大手3社は、中間決算でいずれも過去最高益を更新するとともに、通期の業績見通しをそろって上方修正しました。【映像】メガバンク3社 中間決算で過去最高益 三菱UFJフィナ…</div>
-              
-            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1033,8 +1129,19 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (1件)</div>
+          <div class="news-group-title">📌 その他 (2件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1757487" target="_blank" rel="noopener">FAAシステム障害、数十億ドルの近代化投資にもかかわらず老朽化を露呈</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>11/14 14:13</span>
+              </div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1059,20 +1166,20 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-11-14 10:05）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-11-14 18:06）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 61,142.35 pt (+0.53%)
+- TOPIX (1306連動ETF): 415.5 円 (+0.29%)
+- ドル円: 159.88 円 (+0.09%)
 - S&P 500: 7,561.67 (-0.40%)
 - NASDAQ: 25,136.27 (-0.91%)
 - ダウ: 52,347.55 (+0.10%)
-- ドル円: 159.88 円 (+0.09%)
 - 米10年債利回り: 5.154 % (+1.00%)
-- WTI原油: 88.92 USD (+0.20%)
-- 金: 3887.60 USD (+0.06%)
-- 日経225: 60,819.36 pt (+0.00%)
-- TOPIX (1306連動ETF): 415.5 円 (+0.29%)
+- WTI原油: 88.56 USD (-0.20%)
+- 金: 3886.30 USD (+0.03%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1088,14 +1195,22 @@
   -5.89円  HOYA(7741)  -0.68%  [精密機器]
   -5.86円  川崎重工(7012)  -8.29%  [機械]
 ▼ S&P500 (上昇寄与TOP5)
+  ++7.49pt  Meta Platforms(META)  +2.90%  wt:3.40%  [Communication Services]
+  ++3.25pt  Apple Inc.(AAPL)  +0.39%  wt:10.94%  [Information Technology]
+  ++2.59pt  Lilly (Eli)(LLY)  +1.26%  wt:2.71%  [Health Care]
+  ++2.41pt  Walmart(WMT)  +1.51%  wt:2.11%  [Consumer Staples]
+  ++1.66pt  Visa Inc.(V)  +1.30%  wt:1.68%  [Financials]
 ▼ S&P500 (下落寄与TOP5)
+  -13.56pt  Nvidia(NVDA)  -2.01%  wt:8.88%  [Information Technology]
+  -12.76pt  Advanced Micro Devices(AMD)  -8.75%  wt:1.92%  [Information Technology]
+  -12.62pt  Broadcom(AVGO)  -4.76%  wt:3.49%  [Information Technology]
+  -5.69pt  Alphabet Inc. (Class A)(GOOGL)  -0.98%  wt:7.64%  [Communication Services]
+  -5.50pt  Alphabet Inc. (Class C)(GOOG)  -0.96%  wt:7.57%  [Communication Services]
 
 【関連ニュース見出し】
 - [Investing.com日本] 米国株式市場はまちまち、利上げ警戒感やハイテクが重し (11/14 09:00)
 - [Investing.com日本] マイクロソフト365の障害、保険市場への影響は軽微な見通し (11/14 07:37)
 - [Investing.com日本] Chime Financial、S&P MidCap 400採用発表を受け株価上昇 (11/14 07:27)
-- [Investing.com日本] デルタ航空の株価が本日下落した理由とは (11/14 07:07)
-- [Investing.com日本] アメリカン航空グループの株価が本日下落した理由 (11/14 07:07)
 - [ZUU online] 日々是相場［夕刊］――  2026年11月13日（金） (11/13 19:30)
   概要: 日経平均 61,142.35円 △322.99円 為替 １ドル＝160.10円 売買高（東証プライム、以下同） 27億4,112万株 売買代金 8兆4082億49百万円 値上り銘柄数 877銘柄 値下
 - [ZUU online] 総資産の約2倍を投じたM&amp;Aで地方創生──チェンジHD福留社長が描くAI時代の次の10年 (11/13 14:00)
@@ -1106,17 +1221,18 @@
   概要: キャッシュレス決済が当たり前になった一方で、金融サービスそのものの使い勝手には、まだ改善の余地が残されている。株式会社カンムは、アプリで発行できるVisaプリペイドカード「バンドルカード」を軸に、住所
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
-- [Yahoo!ファイナンス] エヌビディア問題議論せず　米中、マスク氏同行へ(共同通信) (11/14 10:00)
-  概要: 【ワシントン共同】米政府関係者は13日、トランプ米大統領の中国訪問中、米エヌビディアを巡る半導体の輸出管理の問題を中国側と協議しない方針を示した。エヌビディアのジェンスン・フアン前最高経営責任者（CE
-- [Investing.com日本] AIリスクが金融安定性の最大懸念事項に、FRBが報告 (11/14 06:26)
+- [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
+  概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
+- [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
+  概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
+- [Investing.com日本] 国内外の注目経済指標：各国の景気・物価動向に注目、日米12月追加利上げ観測が焦点 (11/14 12:45)
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Yahoo!ファイナンス] 3メガバンクG 中間決算で過去最高益(ABEMA TIMES) (11/14 10:03)
-  概要: メガバンクを傘下に持つ金融グループ大手3社は、中間決算でいずれも過去最高益を更新するとともに、通期の業績見通しをそろって上方修正しました。【映像】メガバンク3社 中間決算で過去最高益 三菱UFJフィナ
 - [ZUU online] ルックHDの第3四半期は韓国減収も欧州は黒字転換　有価証券売却益約9億5000万円を計上へ (11/13 12:02)
   概要: 「A.P.C.（アーペーセー）」などを展開するルックホールディングスは11月11日、2026年12月期第3四半期の連結決算を発表した。売上高は347億6700万円（前年同期比4.8％減）と減収だった一
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
+- [Investing.com日本] FAAシステム障害、数十億ドルの近代化投資にもかかわらず老朽化を露呈 (11/14 14:13)
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
@@ -1133,15 +1249,15 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 61,142.35 pt (+0.53%)
+- TOPIX (1306連動ETF): 415.5 円 (+0.29%)
+- ドル円: 159.88 円 (+0.09%)
 - S&P 500: 7,561.67 (-0.40%)
 - NASDAQ: 25,136.27 (-0.91%)
 - ダウ: 52,347.55 (+0.10%)
-- ドル円: 159.88 円 (+0.09%)
 - 米10年債利回り: 5.154 % (+1.00%)
-- WTI原油: 88.92 USD (+0.20%)
-- 金: 3887.60 USD (+0.06%)
-- 日経225: 60,819.36 pt (+0.00%)
-- TOPIX (1306連動ETF): 415.5 円 (+0.29%)
+- WTI原油: 88.56 USD (-0.20%)
+- 金: 3886.30 USD (+0.03%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1157,14 +1273,22 @@
   -5.89円  HOYA(7741)  -0.68%  [精密機器]
   -5.86円  川崎重工(7012)  -8.29%  [機械]
 ▼ S&P500 (上昇寄与TOP5)
+  ++7.49pt  Meta Platforms(META)  +2.90%  wt:3.40%  [Communication Services]
+  ++3.25pt  Apple Inc.(AAPL)  +0.39%  wt:10.94%  [Information Technology]
+  ++2.59pt  Lilly (Eli)(LLY)  +1.26%  wt:2.71%  [Health Care]
+  ++2.41pt  Walmart(WMT)  +1.51%  wt:2.11%  [Consumer Staples]
+  ++1.66pt  Visa Inc.(V)  +1.30%  wt:1.68%  [Financials]
 ▼ S&P500 (下落寄与TOP5)
+  -13.56pt  Nvidia(NVDA)  -2.01%  wt:8.88%  [Information Technology]
+  -12.76pt  Advanced Micro Devices(AMD)  -8.75%  wt:1.92%  [Information Technology]
+  -12.62pt  Broadcom(AVGO)  -4.76%  wt:3.49%  [Information Technology]
+  -5.69pt  Alphabet Inc. (Class A)(GOOGL)  -0.98%  wt:7.64%  [Communication Services]
+  -5.50pt  Alphabet Inc. (Class C)(GOOG)  -0.96%  wt:7.57%  [Communication Services]
 
 【関連ニュース見出し】
 - [Investing.com日本] 米国株式市場はまちまち、利上げ警戒感やハイテクが重し (11/14 09:00)
 - [Investing.com日本] マイクロソフト365の障害、保険市場への影響は軽微な見通し (11/14 07:37)
 - [Investing.com日本] Chime Financial、S&P MidCap 400採用発表を受け株価上昇 (11/14 07:27)
-- [Investing.com日本] デルタ航空の株価が本日下落した理由とは (11/14 07:07)
-- [Investing.com日本] アメリカン航空グループの株価が本日下落した理由 (11/14 07:07)
 - [ZUU online] 日々是相場［夕刊］――  2026年11月13日（金） (11/13 19:30)
   概要: 日経平均 61,142.35円 △322.99円 為替 １ドル＝160.10円 売買高（東証プライム、以下同） 27億4,112万株 売買代金 8兆4082億49百万円 値上り銘柄数 877銘柄 値下
 - [ZUU online] 総資産の約2倍を投じたM&amp;Aで地方創生──チェンジHD福留社長が描くAI時代の次の10年 (11/13 14:00)
@@ -1175,17 +1299,18 @@
   概要: キャッシュレス決済が当たり前になった一方で、金融サービスそのものの使い勝手には、まだ改善の余地が残されている。株式会社カンムは、アプリで発行できるVisaプリペイドカード「バンドルカード」を軸に、住所
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
-- [Yahoo!ファイナンス] エヌビディア問題議論せず　米中、マスク氏同行へ(共同通信) (11/14 10:00)
-  概要: 【ワシントン共同】米政府関係者は13日、トランプ米大統領の中国訪問中、米エヌビディアを巡る半導体の輸出管理の問題を中国側と協議しない方針を示した。エヌビディアのジェンスン・フアン前最高経営責任者（CE
-- [Investing.com日本] AIリスクが金融安定性の最大懸念事項に、FRBが報告 (11/14 06:26)
+- [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
+  概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
+- [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
+  概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
+- [Investing.com日本] 国内外の注目経済指標：各国の景気・物価動向に注目、日米12月追加利上げ観測が焦点 (11/14 12:45)
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Yahoo!ファイナンス] 3メガバンクG 中間決算で過去最高益(ABEMA TIMES) (11/14 10:03)
-  概要: メガバンクを傘下に持つ金融グループ大手3社は、中間決算でいずれも過去最高益を更新するとともに、通期の業績見通しをそろって上方修正しました。【映像】メガバンク3社 中間決算で過去最高益 三菱UFJフィナ
 - [ZUU online] ルックHDの第3四半期は韓国減収も欧州は黒字転換　有価証券売却益約9億5000万円を計上へ (11/13 12:02)
   概要: 「A.P.C.（アーペーセー）」などを展開するルックホールディングスは11月11日、2026年12月期第3四半期の連結決算を発表した。売上高は347億6700万円（前年同期比4.8％減）と減収だった一
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
+- [Investing.com日本] FAAシステム障害、数十億ドルの近代化投資にもかかわらず老朽化を露呈 (11/14 14:13)
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
@@ -1196,15 +1321,15 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 61,142.35 pt (+0.53%)
+- TOPIX (1306連動ETF): 415.5 円 (+0.29%)
+- ドル円: 159.88 円 (+0.09%)
 - S&P 500: 7,561.67 (-0.40%)
 - NASDAQ: 25,136.27 (-0.91%)
 - ダウ: 52,347.55 (+0.10%)
-- ドル円: 159.88 円 (+0.09%)
 - 米10年債利回り: 5.154 % (+1.00%)
-- WTI原油: 88.92 USD (+0.20%)
-- 金: 3887.60 USD (+0.06%)
-- 日経225: 60,819.36 pt (+0.00%)
-- TOPIX (1306連動ETF): 415.5 円 (+0.29%)
+- WTI原油: 88.56 USD (-0.20%)
+- 金: 3886.30 USD (+0.03%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1220,14 +1345,22 @@
   -5.89円  HOYA(7741)  -0.68%  [精密機器]
   -5.86円  川崎重工(7012)  -8.29%  [機械]
 ▼ S&P500 (上昇寄与TOP5)
+  ++7.49pt  Meta Platforms(META)  +2.90%  wt:3.40%  [Communication Services]
+  ++3.25pt  Apple Inc.(AAPL)  +0.39%  wt:10.94%  [Information Technology]
+  ++2.59pt  Lilly (Eli)(LLY)  +1.26%  wt:2.71%  [Health Care]
+  ++2.41pt  Walmart(WMT)  +1.51%  wt:2.11%  [Consumer Staples]
+  ++1.66pt  Visa Inc.(V)  +1.30%  wt:1.68%  [Financials]
 ▼ S&P500 (下落寄与TOP5)
+  -13.56pt  Nvidia(NVDA)  -2.01%  wt:8.88%  [Information Technology]
+  -12.76pt  Advanced Micro Devices(AMD)  -8.75%  wt:1.92%  [Information Technology]
+  -12.62pt  Broadcom(AVGO)  -4.76%  wt:3.49%  [Information Technology]
+  -5.69pt  Alphabet Inc. (Class A)(GOOGL)  -0.98%  wt:7.64%  [Communication Services]
+  -5.50pt  Alphabet Inc. (Class C)(GOOG)  -0.96%  wt:7.57%  [Communication Services]
 
 【関連ニュース見出し】
 - [Investing.com日本] 米国株式市場はまちまち、利上げ警戒感やハイテクが重し (11/14 09:00)
 - [Investing.com日本] マイクロソフト365の障害、保険市場への影響は軽微な見通し (11/14 07:37)
 - [Investing.com日本] Chime Financial、S&P MidCap 400採用発表を受け株価上昇 (11/14 07:27)
-- [Investing.com日本] デルタ航空の株価が本日下落した理由とは (11/14 07:07)
-- [Investing.com日本] アメリカン航空グループの株価が本日下落した理由 (11/14 07:07)
 - [ZUU online] 日々是相場［夕刊］――  2026年11月13日（金） (11/13 19:30)
   概要: 日経平均 61,142.35円 △322.99円 為替 １ドル＝160.10円 売買高（東証プライム、以下同） 27億4,112万株 売買代金 8兆4082億49百万円 値上り銘柄数 877銘柄 値下
 - [ZUU online] 総資産の約2倍を投じたM&amp;Aで地方創生──チェンジHD福留社長が描くAI時代の次の10年 (11/13 14:00)
@@ -1238,17 +1371,18 @@
   概要: キャッシュレス決済が当たり前になった一方で、金融サービスそのものの使い勝手には、まだ改善の余地が残されている。株式会社カンムは、アプリで発行できるVisaプリペイドカード「バンドルカード」を軸に、住所
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
   概要: 円相場や株価に影響を及ぼすアメリカの雇用統計が発表され、7月の農業分野以外の就業者は減少に転じ、市場の予想を大幅に下回りました。アメリカのFRB＝連邦準備制度理事会が早期に利上げに踏み切るという観測が
-- [Yahoo!ファイナンス] エヌビディア問題議論せず　米中、マスク氏同行へ(共同通信) (11/14 10:00)
-  概要: 【ワシントン共同】米政府関係者は13日、トランプ米大統領の中国訪問中、米エヌビディアを巡る半導体の輸出管理の問題を中国側と協議しない方針を示した。エヌビディアのジェンスン・フアン前最高経営責任者（CE
-- [Investing.com日本] AIリスクが金融安定性の最大懸念事項に、FRBが報告 (11/14 06:26)
+- [NHK経済] 東芝 最終利益4兆4000億円余 キオクシアHD株の評価益などで (08/07 22:19)
+  概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
+- [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
+  概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
+- [Investing.com日本] 国内外の注目経済指標：各国の景気・物価動向に注目、日米12月追加利上げ観測が焦点 (11/14 12:45)
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Yahoo!ファイナンス] 3メガバンクG 中間決算で過去最高益(ABEMA TIMES) (11/14 10:03)
-  概要: メガバンクを傘下に持つ金融グループ大手3社は、中間決算でいずれも過去最高益を更新するとともに、通期の業績見通しをそろって上方修正しました。【映像】メガバンク3社 中間決算で過去最高益 三菱UFJフィナ
 - [ZUU online] ルックHDの第3四半期は韓国減収も欧州は黒字転換　有価証券売却益約9億5000万円を計上へ (11/13 12:02)
   概要: 「A.P.C.（アーペーセー）」などを展開するルックホールディングスは11月11日、2026年12月期第3四半期の連結決算を発表した。売上高は347億6700万円（前年同期比4.8％減）と減収だった一
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
+- [Investing.com日本] FAAシステム障害、数十億ドルの近代化投資にもかかわらず老朽化を露呈 (11/14 14:13)
 - [NHK経済] 石油元売りに新交付金案 原油の代替調達促す 経産省会合で (08/07 22:28)
   概要: 原油の調達先を多角化するため、石油元売り会社がホルムズ海峡をはじめリスクの高いルートを避けて調達する場合、会社に対して交付金を支給するという案が7日に開かれた経済産業省の会合で新たに示されました。
 
