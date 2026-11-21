@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="投資ブリーフィング" />
   <link rel="apple-touch-icon" href="icon.png" />
-  <title>投資情報ブリーフィング [朝]</title>
+  <title>投資情報ブリーフィング [夕]</title>
   <style>
     :root[data-theme="dark"] {
       --bg: #0f1117;
@@ -521,11 +521,11 @@
 <header>
   <div class="header-left">
     <h1>📊 投資情報ブリーフィング</h1>
-    <span class="slot-badge">朝</span>
-    <span class="slot-desc">米国市場結果・ADR・先物・夜間ニュース</span>
+    <span class="slot-badge">夕</span>
+    <span class="slot-desc">日本大引け総括・主要決算・米国市場プレビュー</span>
   </div>
   <div class="header-right">
-    <span class="updated">更新: 2026年11月21日 10:48 JST</span>
+    <span class="updated">更新: 2026年11月21日 18:58 JST</span>
     <div class="claude-btns">
       <button class="btn-claude" onclick="copyClip('clip-overview', this)" title="全体の動きをニュースと紐付けて解説依頼">📊 全体解説を依頼</button>
       <button class="btn-claude" onclick="copyClip('clip-deep', this)" title="特に動きが大きかった指標の深掘り依頼">🔍 個別の動きを深掘り</button>
@@ -544,6 +544,41 @@
   <section class="card market-section">
     <div class="card-title">📈 マーケットデータ</div>
     <div class="market-grid">
+      
+      <div class="market-tile primary">
+        <div class="tile-name">日経225</div>
+        
+          <div class="tile-price">56,436.65 <span class="tile-unit">pt</span></div>
+          <div class="tile-change down">
+            -3007.56&nbsp;&nbsp;-5.06%
+          </div>
+        
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">TOPIX (1306連動ETF)</div>
+        
+          <div class="tile-price">386.2 <span class="tile-unit">円</span></div>
+          <div class="tile-change down">
+            -16.00&nbsp;&nbsp;-3.98%
+          </div>
+        
+        
+          <div class="tile-note">TOPIX指数連動ETF</div>
+        
+      </div>
+      
+      <div class="market-tile primary">
+        <div class="tile-name">ドル円</div>
+        
+          <div class="tile-price">159.71 <span class="tile-unit">円</span></div>
+          <div class="tile-change up">
+            +0.33&nbsp;&nbsp;+0.20%
+          </div>
+        
+        
+      </div>
       
       <div class="market-tile primary">
         <div class="tile-name">S&P 500</div>
@@ -567,7 +602,7 @@
         
       </div>
       
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">ダウ</div>
         
           <div class="tile-price">48,147.33 <span class="tile-unit"></span></div>
@@ -578,18 +613,7 @@
         
       </div>
       
-      <div class="market-tile primary">
-        <div class="tile-name">ドル円</div>
-        
-          <div class="tile-price">159.71 <span class="tile-unit">円</span></div>
-          <div class="tile-change up">
-            +0.33&nbsp;&nbsp;+0.20%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile primary">
+      <div class="market-tile ">
         <div class="tile-name">米10年債利回り</div>
         
           <div class="tile-price">4.912 <span class="tile-unit">%</span></div>
@@ -603,9 +627,9 @@
       <div class="market-tile ">
         <div class="tile-name">WTI原油</div>
         
-          <div class="tile-price">83.62 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">83.98 <span class="tile-unit">USD</span></div>
           <div class="tile-change up">
-            +0.41&nbsp;&nbsp;+0.49%
+            +0.77&nbsp;&nbsp;+0.93%
           </div>
         
         
@@ -614,35 +638,11 @@
       <div class="market-tile ">
         <div class="tile-name">金</div>
         
-          <div class="tile-price">3539.00 <span class="tile-unit">USD</span></div>
+          <div class="tile-price">3515.40 <span class="tile-unit">USD</span></div>
           <div class="tile-change down">
-            -146.50&nbsp;&nbsp;-3.98%
+            -170.10&nbsp;&nbsp;-4.62%
           </div>
         
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">日経225</div>
-        
-          <div class="tile-price">59,444.21 <span class="tile-unit">pt</span></div>
-          <div class="tile-change flat">
-            +0.00&nbsp;&nbsp;+0.00%
-          </div>
-        
-        
-      </div>
-      
-      <div class="market-tile ">
-        <div class="tile-name">TOPIX (1306連動ETF)</div>
-        
-          <div class="tile-price">386.2 <span class="tile-unit">円</span></div>
-          <div class="tile-change down">
-            -16.00&nbsp;&nbsp;-3.98%
-          </div>
-        
-        
-          <div class="tile-note">TOPIX指数連動ETF</div>
         
       </div>
       
@@ -756,12 +756,130 @@
 
         <div class="contrib-sub">
           <div class="contrib-sub-label up">▲ 上昇寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/WMT:NASDAQ" target="_blank" rel="noopener">WMT</a>
+                <span class="contrib-sector">Walmart</span>
+              </td>
+              <td class="up">+2.42</td>
+              <td class="up">+1.52%</td>
+              <td style="color:var(--text2)">2.22%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/UNH:NYSE" target="_blank" rel="noopener">UNH</a>
+                <span class="contrib-sector">UnitedHealth Group</span>
+              </td>
+              <td class="up">+1.40</td>
+              <td class="up">+2.84%</td>
+              <td style="color:var(--text2)">0.69%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/JNJ:NYSE" target="_blank" rel="noopener">JNJ</a>
+                <span class="contrib-sector">Johnson & Johnson</span>
+              </td>
+              <td class="up">+1.29</td>
+              <td class="up">+1.25%</td>
+              <td style="color:var(--text2)">1.45%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/ABBV:NYSE" target="_blank" rel="noopener">ABBV</a>
+                <span class="contrib-sector">AbbVie</span>
+              </td>
+              <td class="up">+0.75</td>
+              <td class="up">+0.94%</td>
+              <td style="color:var(--text2)">1.11%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/XOM:NYSE" target="_blank" rel="noopener">XOM</a>
+                <span class="contrib-sector">ExxonMobil</span>
+              </td>
+              <td class="up">+0.69</td>
+              <td class="up">+0.67%</td>
+              <td style="color:var(--text2)">1.44%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
 
         <div class="contrib-sub">
           <div class="contrib-sub-label down">▼ 下落寄与 TOP5</div>
-          <p class="contrib-empty">データなし</p>
+          
+          <table class="contrib-table">
+            <thead><tr>
+              <th>銘柄</th><th>寄与(pt)</th><th>騰落</th><th>比率</th>
+            </tr></thead>
+            <tbody>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/NVDA:NASDAQ" target="_blank" rel="noopener">NVDA</a>
+                <span class="contrib-sector">Nvidia</span>
+              </td>
+              <td class="down">-80.67</td>
+              <td class="down">-14.01%</td>
+              <td style="color:var(--text2)">8.03%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AVGO:NASDAQ" target="_blank" rel="noopener">AVGO</a>
+                <span class="contrib-sector">Broadcom</span>
+              </td>
+              <td class="down">-32.53</td>
+              <td class="down">-12.19%</td>
+              <td style="color:var(--text2)">3.72%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AMZN:NASDAQ" target="_blank" rel="noopener">AMZN</a>
+                <span class="contrib-sector">Amazon</span>
+              </td>
+              <td class="down">-18.75</td>
+              <td class="down">-4.10%</td>
+              <td style="color:var(--text2)">6.37%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/AMD:NASDAQ" target="_blank" rel="noopener">AMD</a>
+                <span class="contrib-sector">Advanced Micro Devic…</span>
+              </td>
+              <td class="down">-18.36</td>
+              <td class="down">-13.25%</td>
+              <td style="color:var(--text2)">1.93%</td>
+            </tr>
+            
+            <tr>
+              <td>
+                <a class="contrib-name" href="https://www.google.com/finance/quote/TSLA:NASDAQ" target="_blank" rel="noopener">TSLA</a>
+                <span class="contrib-sector">Tesla, Inc.</span>
+              </td>
+              <td class="down">-18.30</td>
+              <td class="down">-7.64%</td>
+              <td style="color:var(--text2)">3.34%</td>
+            </tr>
+            
+            </tbody>
+          </table>
+          
         </div>
       </div>
 
@@ -770,7 +888,7 @@
 
   <!-- News -->
   <section class="card news-section">
-    <div class="card-title">📰 最新ニュース (17件)</div>
+    <div class="card-title">📰 最新ニュース (16件)</div>
     
     
     
@@ -780,32 +898,19 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📈 マーケット全般 (9件)</div>
+          <div class="news-group-title">📈 マーケット全般 (6件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/1d45d026fc2becb56fede2993311d9e5b39d967c?source=rss" target="_blank" rel="noopener">S&P500が7カ月ぶりの安値に急落、ハイテク株とAIへの懸念が売りを加速(Forbes JAPAN)</a>
+                <a href="https://news.yahoo.co.jp/articles/ec0dbf811c2f448ca789cd3ad370eedd6c7768b0?source=rss" target="_blank" rel="noopener">【子どもの学校外の学び】公立中学校に通う子どもの学習塾費は年23万385円。教室が少ない街の1位は東京都江戸川区(LIMO)</a>
               </div>
               <div class="news-meta">
                 <span class="news-source">Yahoo!ファイナンス</span>
-                <span>11/21 10:30</span>
+                <span>11/21 18:10</span>
               </div>
               
-              <div class="news-summary">米株式市場で、S&amp;P500種株価指数は現地時間11月20日に3％超急落し、7カ月ぶりの安値を付けた。テクノロジーや消費財、通信分野の巨頭による人工知能（AI）への巨額の負債を伴う投資に対する懸…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/e402d00ee6dfef5183f4c60a32cbc8251915a298?source=rss" target="_blank" rel="noopener">【地方公務員の給料水準ランキング】最も低い青森県は「96.8」（国家公務員を100とする）。あなたの住む都道府県はどの位置にあるのか(LIMO)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>11/21 10:20</span>
-              </div>
-              
-              <div class="news-summary">地方公務員の給与が国家公務員と比べて高いのか低いのかは、総務省が毎年公表する「ラスパイレス指数」で確かめられます。国家公務員の俸給を100として、都道府県や市区町村の職員の給料の水準を示す指数です。◆…</div>
+              <div class="news-summary">出店支援サービスを提供するエムディー株式会社が2026年11月18日に公表した分析で、子どもの数に比べて教育サービスの事業所が少ない街の1位は東京都江戸川区でした。文部科学省の「令和5年度子供の学習費…</div>
               
             </div>
             
@@ -816,28 +921,6 @@
               <div class="news-meta">
                 <span class="news-source">Investing.com日本</span>
                 <span>11/21 08:00</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1766365" target="_blank" rel="noopener">株価急落のエヌビディア、時価総額で米国4位に転落、グーグルに抜かれる</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>11/21 07:31</span>
-              </div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://jp.investing.com/news/stock-market-news/article-1766673" target="_blank" rel="noopener">OracleがOpenAIとの契約資金調達完了を発表、市場の懸念に対応</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Investing.com日本</span>
-                <span>11/21 07:13</span>
               </div>
               
             </div>
@@ -901,8 +984,19 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">🌐 マクロ・金利 (1件)</div>
+          <div class="news-group-title">🌐 マクロ・金利 (2件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1766823" target="_blank" rel="noopener">国内外の注目経済指標：景気・物価指標に注目、各国の金融政策の行方を探る</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>11/21 14:45</span>
+              </div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -924,32 +1018,17 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📋 決算・個別銘柄 (3件)</div>
+          <div class="news-group-title">📋 決算・個別銘柄 (2件)</div>
           <div class="news-list">
             
             <div class="news-item">
               <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/f5c4d7ec6e65ea5bda8faf44fea2cca5d808333e?source=rss" target="_blank" rel="noopener">アリババ7～9月期、AIクラウド53％増収　主力の中国ECは5％減収(36Kr Japan)</a>
+                <a href="https://jp.investing.com/news/stock-market-news/article-1766856" target="_blank" rel="noopener">インテーザサンパオロ、モンテ・デイ・パスキに345億ユーロの買収提案を開始</a>
               </div>
               <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>11/21 10:30</span>
+                <span class="news-source">Investing.com日本</span>
+                <span>11/21 17:56</span>
               </div>
-              
-              <div class="news-summary">アリババ集団は、2026年7～9月期（2027年3月期第2四半期）決算を発表した。売上高は前年同期比10％増の2715億1900万元（約6兆5000億円）、営業利益は約5.4倍の291億1600万元（…</div>
-              
-            </div>
-            
-            <div class="news-item">
-              <div class="news-title">
-                <a href="https://news.yahoo.co.jp/articles/176ce0dc7c80ab75bc897f015f26b13e73f1602a?source=rss" target="_blank" rel="noopener">中国「ラッキンコーヒー」決算、1日4.8億円稼ぐ　店頭受け取りへのシフトで純利益45％増(36Kr Japan)</a>
-              </div>
-              <div class="news-meta">
-                <span class="news-source">Yahoo!ファイナンス</span>
-                <span>11/21 10:30</span>
-              </div>
-              
-              <div class="news-summary">中国の大手コーヒーチェーン「瑞幸咖啡（luckin coffee、ラッキンコーヒー）」が11月3日、2026年7～9月期決算を発表した。純売上高は前年同期比17.0％増の178億9100万元（約430…</div>
               
             </div>
             
@@ -973,8 +1052,30 @@
         
         
         <div class="news-group">
-          <div class="news-group-title">📌 その他 (4件)</div>
+          <div class="news-group-title">📌 その他 (6件)</div>
           <div class="news-list">
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1766812" target="_blank" rel="noopener">変革的イノベーションへの投資戦略：UBSが3つのテーマを提示</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>11/21 13:52</span>
+              </div>
+              
+            </div>
+            
+            <div class="news-item">
+              <div class="news-title">
+                <a href="https://jp.investing.com/news/stock-market-news/article-1762101" target="_blank" rel="noopener">【更新】今買い時の米国株「割安ハイテク銘柄」5選、100万円の投資がいくらになる?</a>
+              </div>
+              <div class="news-meta">
+                <span class="news-source">Investing.com日本</span>
+                <span>11/21 12:53</span>
+              </div>
+              
+            </div>
             
             <div class="news-item">
               <div class="news-title">
@@ -1032,20 +1133,20 @@
 </main>
 
 <!-- Hidden clipboard data -->
-<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-11-21 10:48）の投資ブリーフィング情報です。
+<textarea id="clip-overview" readonly style="position:absolute;left:-9999px;top:0">以下は本日（2026-11-21 18:58）の投資ブリーフィング情報です。
 
-【時間帯】朝（米国市場結果・ADR・先物・夜間ニュース）
+【時間帯】夕（日本大引け総括・主要決算・米国市場プレビュー）
 
 【マーケットデータ】
+- 日経225: 56,436.65 pt (-5.06%)
+- TOPIX (1306連動ETF): 386.2 円 (-3.98%)
+- ドル円: 159.71 円 (+0.20%)
 - S&P 500: 6,910.39 (-3.70%)
 - NASDAQ: 22,617.73 (-5.28%)
 - ダウ: 48,147.33 (-1.93%)
-- ドル円: 159.71 円 (+0.20%)
 - 米10年債利回り: 4.912 % (-2.77%)
-- WTI原油: 83.62 USD (+0.49%)
-- 金: 3539.00 USD (-3.98%)
-- 日経225: 59,444.21 pt (+0.00%)
-- TOPIX (1306連動ETF): 386.2 円 (-3.98%)
+- WTI原油: 83.98 USD (+0.93%)
+- 金: 3515.40 USD (-4.62%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1058,16 +1159,22 @@
   -24.46円  HOYA(7741)  -2.91%  [精密機器]
   -23.75円  キーエンス(6861)  -4.53%  [電機]
 ▼ S&P500 (上昇寄与TOP5)
+  ++2.42pt  Walmart(WMT)  +1.52%  wt:2.22%  [Consumer Staples]
+  ++1.40pt  UnitedHealth Group(UNH)  +2.84%  wt:0.69%  [Health Care]
+  ++1.29pt  Johnson & Johnson(JNJ)  +1.25%  wt:1.45%  [Health Care]
+  ++0.75pt  AbbVie(ABBV)  +0.94%  wt:1.11%  [Health Care]
+  ++0.69pt  ExxonMobil(XOM)  +0.67%  wt:1.44%  [Energy]
 ▼ S&P500 (下落寄与TOP5)
+  -80.67pt  Nvidia(NVDA)  -14.01%  wt:8.03%  [Information Technology]
+  -32.53pt  Broadcom(AVGO)  -12.19%  wt:3.72%  [Information Technology]
+  -18.75pt  Amazon(AMZN)  -4.10%  wt:6.37%  [Consumer Discretionary]
+  -18.36pt  Advanced Micro Devices(AMD)  -13.25%  wt:1.93%  [Information Technology]
+  -18.30pt  Tesla, Inc.(TSLA)  -7.64%  wt:3.34%  [Consumer Discretionary]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] S&P500が7カ月ぶりの安値に急落、ハイテク株とAIへの懸念が売りを加速(Forbes JAPAN) (11/21 10:30)
-  概要: 米株式市場で、S&amp;P500種株価指数は現地時間11月20日に3％超急落し、7カ月ぶりの安値を付けた。テクノロジーや消費財、通信分野の巨頭による人工知能（AI）への巨額の負債を伴う投資に対する懸
-- [Yahoo!ファイナンス] 【地方公務員の給料水準ランキング】最も低い青森県は「96.8」（国家公務員を100とする）。あなたの住む都道府県はどの位置にあるのか(LIMO) (11/21 10:20)
-  概要: 地方公務員の給与が国家公務員と比べて高いのか低いのかは、総務省が毎年公表する「ラスパイレス指数」で確かめられます。国家公務員の俸給を100として、都道府県や市区町村の職員の給料の水準を示す指数です。◆
+- [Yahoo!ファイナンス] 【子どもの学校外の学び】公立中学校に通う子どもの学習塾費は年23万385円。教室が少ない街の1位は東京都江戸川区(LIMO) (11/21 18:10)
+  概要: 出店支援サービスを提供するエムディー株式会社が2026年11月18日に公表した分析で、子どもの数に比べて教育サービスの事業所が少ない街の1位は東京都江戸川区でした。文部科学省の「令和5年度子供の学習費
 - [Investing.com日本] 米国株式市場は続落、世界的なハイテク売り (11/21 08:00)
-- [Investing.com日本] 株価急落のエヌビディア、時価総額で米国4位に転落、グーグルに抜かれる (11/21 07:31)
-- [Investing.com日本] OracleがOpenAIとの契約資金調達完了を発表、市場の懸念に対応 (11/21 07:13)
 - [ZUU online] 日々是相場［夕刊］――  2026年11月20日（金） (11/20 19:30)
   概要: 日経平均 56,436.65円 ▼3,007.56円 為替 １ドル＝159.17円 売買高（東証プライム、以下同） 32億6,252万株 売買代金 8兆6389億61百万円 値上り銘柄数 90銘柄 値
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
@@ -1076,14 +1183,14 @@
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
   概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
+- [Investing.com日本] 国内外の注目経済指標：景気・物価指標に注目、各国の金融政策の行方を探る (11/21 14:45)
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Yahoo!ファイナンス] アリババ7～9月期、AIクラウド53％増収　主力の中国ECは5％減収(36Kr Japan) (11/21 10:30)
-  概要: アリババ集団は、2026年7～9月期（2027年3月期第2四半期）決算を発表した。売上高は前年同期比10％増の2715億1900万元（約6兆5000億円）、営業利益は約5.4倍の291億1600万元（
-- [Yahoo!ファイナンス] 中国「ラッキンコーヒー」決算、1日4.8億円稼ぐ　店頭受け取りへのシフトで純利益45％増(36Kr Japan) (11/21 10:30)
-  概要: 中国の大手コーヒーチェーン「瑞幸咖啡（luckin coffee、ラッキンコーヒー）」が11月3日、2026年7～9月期決算を発表した。純売上高は前年同期比17.0％増の178億9100万元（約430
+- [Investing.com日本] インテーザサンパオロ、モンテ・デイ・パスキに345億ユーロの買収提案を開始 (11/21 17:56)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
+- [Investing.com日本] 変革的イノベーションへの投資戦略：UBSが3つのテーマを提示 (11/21 13:52)
+- [Investing.com日本] 【更新】今買い時の米国株「割安ハイテク銘柄」5選、100万円の投資がいくらになる? (11/21 12:53)
 - [Investing.com日本] UBSは商品投資の堅調な見通しを維持、原油供給プレミアムの緩和にもかかわらず (11/21 10:28)
 - [Investing.com日本] ハイテク株急落の今こそ使いたい「AI投資ツール」、55％オフで提供中 (11/21 08:29)
 - [Investing.com日本] エヌビディアの「80兆円資金調達」に暗雲、AI半導体株の一段安を米アナリストが警告 (11/21 07:45)
@@ -1103,15 +1210,15 @@
 特に動きが大きかった指標について、その背景をニュースから推測して解説してください。
 
 【マーケットデータ】
+- 日経225: 56,436.65 pt (-5.06%)
+- TOPIX (1306連動ETF): 386.2 円 (-3.98%)
+- ドル円: 159.71 円 (+0.20%)
 - S&P 500: 6,910.39 (-3.70%)
 - NASDAQ: 22,617.73 (-5.28%)
 - ダウ: 48,147.33 (-1.93%)
-- ドル円: 159.71 円 (+0.20%)
 - 米10年債利回り: 4.912 % (-2.77%)
-- WTI原油: 83.62 USD (+0.49%)
-- 金: 3539.00 USD (-3.98%)
-- 日経225: 59,444.21 pt (+0.00%)
-- TOPIX (1306連動ETF): 386.2 円 (-3.98%)
+- WTI原油: 83.98 USD (+0.93%)
+- 金: 3515.40 USD (-4.62%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1124,16 +1231,22 @@
   -24.46円  HOYA(7741)  -2.91%  [精密機器]
   -23.75円  キーエンス(6861)  -4.53%  [電機]
 ▼ S&P500 (上昇寄与TOP5)
+  ++2.42pt  Walmart(WMT)  +1.52%  wt:2.22%  [Consumer Staples]
+  ++1.40pt  UnitedHealth Group(UNH)  +2.84%  wt:0.69%  [Health Care]
+  ++1.29pt  Johnson & Johnson(JNJ)  +1.25%  wt:1.45%  [Health Care]
+  ++0.75pt  AbbVie(ABBV)  +0.94%  wt:1.11%  [Health Care]
+  ++0.69pt  ExxonMobil(XOM)  +0.67%  wt:1.44%  [Energy]
 ▼ S&P500 (下落寄与TOP5)
+  -80.67pt  Nvidia(NVDA)  -14.01%  wt:8.03%  [Information Technology]
+  -32.53pt  Broadcom(AVGO)  -12.19%  wt:3.72%  [Information Technology]
+  -18.75pt  Amazon(AMZN)  -4.10%  wt:6.37%  [Consumer Discretionary]
+  -18.36pt  Advanced Micro Devices(AMD)  -13.25%  wt:1.93%  [Information Technology]
+  -18.30pt  Tesla, Inc.(TSLA)  -7.64%  wt:3.34%  [Consumer Discretionary]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] S&P500が7カ月ぶりの安値に急落、ハイテク株とAIへの懸念が売りを加速(Forbes JAPAN) (11/21 10:30)
-  概要: 米株式市場で、S&amp;P500種株価指数は現地時間11月20日に3％超急落し、7カ月ぶりの安値を付けた。テクノロジーや消費財、通信分野の巨頭による人工知能（AI）への巨額の負債を伴う投資に対する懸
-- [Yahoo!ファイナンス] 【地方公務員の給料水準ランキング】最も低い青森県は「96.8」（国家公務員を100とする）。あなたの住む都道府県はどの位置にあるのか(LIMO) (11/21 10:20)
-  概要: 地方公務員の給与が国家公務員と比べて高いのか低いのかは、総務省が毎年公表する「ラスパイレス指数」で確かめられます。国家公務員の俸給を100として、都道府県や市区町村の職員の給料の水準を示す指数です。◆
+- [Yahoo!ファイナンス] 【子どもの学校外の学び】公立中学校に通う子どもの学習塾費は年23万385円。教室が少ない街の1位は東京都江戸川区(LIMO) (11/21 18:10)
+  概要: 出店支援サービスを提供するエムディー株式会社が2026年11月18日に公表した分析で、子どもの数に比べて教育サービスの事業所が少ない街の1位は東京都江戸川区でした。文部科学省の「令和5年度子供の学習費
 - [Investing.com日本] 米国株式市場は続落、世界的なハイテク売り (11/21 08:00)
-- [Investing.com日本] 株価急落のエヌビディア、時価総額で米国4位に転落、グーグルに抜かれる (11/21 07:31)
-- [Investing.com日本] OracleがOpenAIとの契約資金調達完了を発表、市場の懸念に対応 (11/21 07:13)
 - [ZUU online] 日々是相場［夕刊］――  2026年11月20日（金） (11/20 19:30)
   概要: 日経平均 56,436.65円 ▼3,007.56円 為替 １ドル＝159.17円 売買高（東証プライム、以下同） 32億6,252万株 売買代金 8兆6389億61百万円 値上り銘柄数 90銘柄 値
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
@@ -1142,14 +1255,14 @@
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
   概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
+- [Investing.com日本] 国内外の注目経済指標：景気・物価指標に注目、各国の金融政策の行方を探る (11/21 14:45)
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Yahoo!ファイナンス] アリババ7～9月期、AIクラウド53％増収　主力の中国ECは5％減収(36Kr Japan) (11/21 10:30)
-  概要: アリババ集団は、2026年7～9月期（2027年3月期第2四半期）決算を発表した。売上高は前年同期比10％増の2715億1900万元（約6兆5000億円）、営業利益は約5.4倍の291億1600万元（
-- [Yahoo!ファイナンス] 中国「ラッキンコーヒー」決算、1日4.8億円稼ぐ　店頭受け取りへのシフトで純利益45％増(36Kr Japan) (11/21 10:30)
-  概要: 中国の大手コーヒーチェーン「瑞幸咖啡（luckin coffee、ラッキンコーヒー）」が11月3日、2026年7～9月期決算を発表した。純売上高は前年同期比17.0％増の178億9100万元（約430
+- [Investing.com日本] インテーザサンパオロ、モンテ・デイ・パスキに345億ユーロの買収提案を開始 (11/21 17:56)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
+- [Investing.com日本] 変革的イノベーションへの投資戦略：UBSが3つのテーマを提示 (11/21 13:52)
+- [Investing.com日本] 【更新】今買い時の米国株「割安ハイテク銘柄」5選、100万円の投資がいくらになる? (11/21 12:53)
 - [Investing.com日本] UBSは商品投資の堅調な見通しを維持、原油供給プレミアムの緩和にもかかわらず (11/21 10:28)
 - [Investing.com日本] ハイテク株急落の今こそ使いたい「AI投資ツール」、55％オフで提供中 (11/21 08:29)
 - [Investing.com日本] エヌビディアの「80兆円資金調達」に暗雲、AI半導体株の一段安を米アナリストが警告 (11/21 07:45)
@@ -1163,15 +1276,15 @@
 <textarea id="clip-risk"     readonly style="position:absolute;left:-9999px;top:0">以下の情報から、投資判断において注視すべきリスクと注目点を抽出してください。
 
 【マーケットデータ】
+- 日経225: 56,436.65 pt (-5.06%)
+- TOPIX (1306連動ETF): 386.2 円 (-3.98%)
+- ドル円: 159.71 円 (+0.20%)
 - S&P 500: 6,910.39 (-3.70%)
 - NASDAQ: 22,617.73 (-5.28%)
 - ダウ: 48,147.33 (-1.93%)
-- ドル円: 159.71 円 (+0.20%)
 - 米10年債利回り: 4.912 % (-2.77%)
-- WTI原油: 83.62 USD (+0.49%)
-- 金: 3539.00 USD (-3.98%)
-- 日経225: 59,444.21 pt (+0.00%)
-- TOPIX (1306連動ETF): 386.2 円 (-3.98%)
+- WTI原油: 83.98 USD (+0.93%)
+- 金: 3515.40 USD (-4.62%)
 
 【個別株の寄与度ランキング】
 ▼ 日経225 (上昇寄与TOP5)
@@ -1184,16 +1297,22 @@
   -24.46円  HOYA(7741)  -2.91%  [精密機器]
   -23.75円  キーエンス(6861)  -4.53%  [電機]
 ▼ S&P500 (上昇寄与TOP5)
+  ++2.42pt  Walmart(WMT)  +1.52%  wt:2.22%  [Consumer Staples]
+  ++1.40pt  UnitedHealth Group(UNH)  +2.84%  wt:0.69%  [Health Care]
+  ++1.29pt  Johnson & Johnson(JNJ)  +1.25%  wt:1.45%  [Health Care]
+  ++0.75pt  AbbVie(ABBV)  +0.94%  wt:1.11%  [Health Care]
+  ++0.69pt  ExxonMobil(XOM)  +0.67%  wt:1.44%  [Energy]
 ▼ S&P500 (下落寄与TOP5)
+  -80.67pt  Nvidia(NVDA)  -14.01%  wt:8.03%  [Information Technology]
+  -32.53pt  Broadcom(AVGO)  -12.19%  wt:3.72%  [Information Technology]
+  -18.75pt  Amazon(AMZN)  -4.10%  wt:6.37%  [Consumer Discretionary]
+  -18.36pt  Advanced Micro Devices(AMD)  -13.25%  wt:1.93%  [Information Technology]
+  -18.30pt  Tesla, Inc.(TSLA)  -7.64%  wt:3.34%  [Consumer Discretionary]
 
 【関連ニュース見出し】
-- [Yahoo!ファイナンス] S&P500が7カ月ぶりの安値に急落、ハイテク株とAIへの懸念が売りを加速(Forbes JAPAN) (11/21 10:30)
-  概要: 米株式市場で、S&amp;P500種株価指数は現地時間11月20日に3％超急落し、7カ月ぶりの安値を付けた。テクノロジーや消費財、通信分野の巨頭による人工知能（AI）への巨額の負債を伴う投資に対する懸
-- [Yahoo!ファイナンス] 【地方公務員の給料水準ランキング】最も低い青森県は「96.8」（国家公務員を100とする）。あなたの住む都道府県はどの位置にあるのか(LIMO) (11/21 10:20)
-  概要: 地方公務員の給与が国家公務員と比べて高いのか低いのかは、総務省が毎年公表する「ラスパイレス指数」で確かめられます。国家公務員の俸給を100として、都道府県や市区町村の職員の給料の水準を示す指数です。◆
+- [Yahoo!ファイナンス] 【子どもの学校外の学び】公立中学校に通う子どもの学習塾費は年23万385円。教室が少ない街の1位は東京都江戸川区(LIMO) (11/21 18:10)
+  概要: 出店支援サービスを提供するエムディー株式会社が2026年11月18日に公表した分析で、子どもの数に比べて教育サービスの事業所が少ない街の1位は東京都江戸川区でした。文部科学省の「令和5年度子供の学習費
 - [Investing.com日本] 米国株式市場は続落、世界的なハイテク売り (11/21 08:00)
-- [Investing.com日本] 株価急落のエヌビディア、時価総額で米国4位に転落、グーグルに抜かれる (11/21 07:31)
-- [Investing.com日本] OracleがOpenAIとの契約資金調達完了を発表、市場の懸念に対応 (11/21 07:13)
 - [ZUU online] 日々是相場［夕刊］――  2026年11月20日（金） (11/20 19:30)
   概要: 日経平均 56,436.65円 ▼3,007.56円 為替 １ドル＝159.17円 売買高（東証プライム、以下同） 32億6,252万株 売買代金 8兆6389億61百万円 値上り銘柄数 90銘柄 値
 - [NHK経済] 米就業者 市場予想に反し減少 利上げ観測後退で円高ドル安進む (08/07 23:53)
@@ -1202,14 +1321,14 @@
   概要: 株式を非上場化して経営の立て直しを進めている東芝は、ことし4月から6月までの決算を発表し、株式を保有する半導体大手、キオクシアホールディングスの評価益などの影響で、最終的な利益が前の年の同じ時期のおよ
 - [NHK経済] NY外国為替市場 円高ドル安が進む 米雇用統計発表受け (08/07 22:14)
   概要: 7日のニューヨーク外国為替市場では、アメリカの雇用統計の発表を受けて、労働市場が減速しているという受け止めからドルを売って円を買う動きが強まりました。発表前、円相場は1ドル＝158円台前半で推移してい
+- [Investing.com日本] 国内外の注目経済指標：景気・物価指標に注目、各国の金融政策の行方を探る (11/21 14:45)
 - [NHK経済] 千葉 銚子 輸入サバ高騰で加工業者の約2割が倒産や廃業状態に (08/08 07:28)
   概要: サバの加工が盛んな千葉県銚子市では、原料の大半を占めるノルウェー産などの輸入サバの価格高騰で水産加工業者の採算が悪化し、およそ2割が倒産や、事実上の廃業状態にあることが分かりました。
-- [Yahoo!ファイナンス] アリババ7～9月期、AIクラウド53％増収　主力の中国ECは5％減収(36Kr Japan) (11/21 10:30)
-  概要: アリババ集団は、2026年7～9月期（2027年3月期第2四半期）決算を発表した。売上高は前年同期比10％増の2715億1900万元（約6兆5000億円）、営業利益は約5.4倍の291億1600万元（
-- [Yahoo!ファイナンス] 中国「ラッキンコーヒー」決算、1日4.8億円稼ぐ　店頭受け取りへのシフトで純利益45％増(36Kr Japan) (11/21 10:30)
-  概要: 中国の大手コーヒーチェーン「瑞幸咖啡（luckin coffee、ラッキンコーヒー）」が11月3日、2026年7～9月期決算を発表した。純売上高は前年同期比17.0％増の178億9100万元（約430
+- [Investing.com日本] インテーザサンパオロ、モンテ・デイ・パスキに345億ユーロの買収提案を開始 (11/21 17:56)
 - [NHK経済] KDDI 楽天への回線提供の契約 9月で終了 一部では提供継続 (08/08 00:04)
   概要: KDDIが楽天モバイルに回線を貸し出す「ローミング契約」について、KDDIの松田浩路社長は、決算会見で、現在の契約は9月末で終了するものの、過疎地などエリアを限定して通信回線の提供を続ける考えを明らか
+- [Investing.com日本] 変革的イノベーションへの投資戦略：UBSが3つのテーマを提示 (11/21 13:52)
+- [Investing.com日本] 【更新】今買い時の米国株「割安ハイテク銘柄」5選、100万円の投資がいくらになる? (11/21 12:53)
 - [Investing.com日本] UBSは商品投資の堅調な見通しを維持、原油供給プレミアムの緩和にもかかわらず (11/21 10:28)
 - [Investing.com日本] ハイテク株急落の今こそ使いたい「AI投資ツール」、55％オフで提供中 (11/21 08:29)
 - [Investing.com日本] エヌビディアの「80兆円資金調達」に暗雲、AI半導体株の一段安を米アナリストが警告 (11/21 07:45)
